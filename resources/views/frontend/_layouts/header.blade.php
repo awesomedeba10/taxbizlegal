@@ -69,7 +69,7 @@
                                                 <div class="group mod-items-center mod-flex mod-items-start mod-py-2 mod-pl-4 mod-dropdown-menu-item "
                                                     style="">
                                                     <div class="mod-w-2/12">
-                                                        <img src="https://assets1.cleartax-cdn.com/cleartax/images/1683876414_cimplyfive.png"
+                                                        <img src="{{ asset('images/img/targeted_icon_5671641') }}"
                                                             height="42" width="42" alt="Cimplyfive">
                                                     </div>
                                                     <div class="mod-w-10/12">
@@ -81,9 +81,8 @@
                                         </div>
                                         <div class="mod-w-1/2 mod-px-4 mod-dropdown-submenu"
                                             style="background:#F4F9FF">
-                                            <a data-label="ITR Filing" target="_blank"
-                                                href="https://cleartax.in/income-tax-efiling?utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar"
-                                                referrerpolicy="no-referrer-when-downgrade">
+                                            <a data-label="ITR Filing"
+                                                href="{{ route('front.itr') }}">
                                                 <div class="group mod-items-center mod-flex mod-items-start mod-py-2 mod-pl-4 mod-dropdown-menu-item "
                                                     style="">
                                                     <div class="mod-w-2/12">
@@ -150,7 +149,7 @@
                                 <div class="mod-w-full">
                                     <a target="_blank"
                                         class="mod-text-font-500 mod-flex mod-items-start mod-gap-2 mod-w-full mod-px-2"
-                                        href="https://www.clear.in/s/about-us?utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar">
+                                        href="">
 
                                         <span>About us</span>
                                     </a>
@@ -164,7 +163,7 @@
                                     <a onclick="handleTrack({label: 'navbar_Company_Dropdown_button', obj: this})"
                                         target="_blank"
                                         class="mod-text-font-500 mod-flex mod-items-start mod-gap-2 mod-w-full mod-px-2"
-                                        href="https://www.clear.in/s/careers?utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar">
+                                        href="">
 
                                         <span>Careers</span>
                                     </a>
@@ -178,7 +177,7 @@
                                     <a onclick="handleTrack({label: 'navbar_Company_Dropdown_button', obj: this})"
                                         target="_blank"
                                         class="mod-text-font-500 mod-flex mod-items-start mod-gap-2 mod-w-full mod-px-2"
-                                        href="https://www.clear.in/s/press?utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar">
+                                        href="">
 
                                         <span>Media &amp; Press</span>
                                     </a>
@@ -192,7 +191,7 @@
                                     <a onclick="handleTrack({label: 'navbar_Company_Dropdown_button', obj: this})"
                                         target="_blank"
                                         class="mod-text-font-500 mod-flex mod-items-start mod-gap-2 mod-w-full mod-px-2"
-                                        href="https://cleartax.in/s/trust?utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar">
+                                        href="https:/taxbizlegal.com/s/trust?utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar">
 
                                         <span>Trust &amp; Safety</span>
                                     </a>
@@ -224,7 +223,7 @@
                                 <a onclick="handleTrack({label: 'navbar_My Account_Dropdown_button', obj: this})"
                                     target="_blank"
                                     class="mod-text-font-500 mod-flex mod-items-start mod-gap-2 mod-w-full mod-px-2"
-                                    href="https://cleartax.in/filing/itr-filings?utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar">
+                                    href="https:/taxbizlegal.com/filing/itr-filings?utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar">
 
                                     <span>My tax returns</span>
                                 </a>
@@ -238,7 +237,7 @@
                                 <a onclick="handleTrack({label: 'navbar_My Account_Dropdown_button', obj: this})"
                                     target="_blank"
                                     class="mod-text-font-500 mod-flex mod-items-start mod-gap-2 mod-w-full mod-px-2"
-                                    href="https://cleartax.in/save/dashboard/portfolio?ref=static-login-dropdown&amp;utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar">
+                                    href="https:/taxbizlegal.com/save/dashboard/portfolio?ref=static-login-dropdown&amp;utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar">
 
                                     <span>My investments</span>
                                 </a>
@@ -252,7 +251,7 @@
                                 <a onclick="handleTrack({label: 'navbar_My Account_Dropdown_button', obj: this})"
                                     target="_blank"
                                     class="mod-text-font-500 mod-flex mod-items-start mod-gap-2 mod-w-full mod-px-2"
-                                    href="https://cleartax.in/services/my_orders?utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar">
+                                    href="https:/taxbizlegal.com/services/my_orders?utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar">
 
                                     <span>My orders</span>
                                 </a>
@@ -280,7 +279,7 @@
                                 <a onclick="handleTrack({label: 'navbar_My Account_Dropdown_button', obj: this})"
                                     target="_blank"
                                     class="mod-text-font-500 mod-flex mod-items-start mod-gap-2 mod-w-full mod-px-2"
-                                    href="https://cleartax.in/launchpad?source=home&amp;utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar">
+                                    href="https:/taxbizlegal.com/launchpad?source=home&amp;utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar">
 
                                     <span>All Products</span>
                                 </a>
@@ -294,7 +293,7 @@
                                 <a onclick="handleTrack({label: 'navbar_My Account_Dropdown_button', obj: this})"
                                     target="_blank"
                                     class="mod-text-font-500 mod-flex mod-items-start mod-gap-2 mod-w-full mod-px-2"
-                                    href="https://cleartax.in/filing/profile?utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar">
+                                    href="https:/taxbizlegal.com/filing/profile?utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar">
 
                                     <span>Profile</span>
                                 </a>
@@ -303,7 +302,7 @@
                         </div>
                         <div class="mod-p-4 mod-text-font-500 mod-text-base">
                             <a class="hover:mod-text-blue-350"
-                                href="https://cleartax.in/?utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar#"
+                                href="https:/taxbizlegal.com/?utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar#"
                                 onclick="logout()">Logout</a>
                         </div>
                     </div>
@@ -348,7 +347,7 @@
                                 <a data-label="Accounts Payable"
                                     onclick="handleTrack({label: 'navbar_Products_Dropdown_button_INDIVIDUAL PRODUCTS', obj: this})"
                                     target="_blank"
-                                    href="https://www.clear.in/ap-automation-software?utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar"
+                                    href=""
                                     referrerpolicy="no-referrer-when-downgrade">
                                     <div class="mod-flex mod-items-center mod-p-2">
                                         <div class="mod-w-1/12">
@@ -364,7 +363,7 @@
                                 <a data-label="Vendor Management"
                                     onclick="handleTrack({label: 'navbar_Products_Dropdown_button_INDIVIDUAL PRODUCTS', obj: this})"
                                     target="_blank"
-                                    href="https://cleartax.in/vendor-management-software?utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar"
+                                    href="https:/taxbizlegal.com/vendor-management-software?utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar"
                                     referrerpolicy="no-referrer-when-downgrade">
                                     <div class="mod-flex mod-items-center mod-p-2">
                                         <div class="mod-w-1/12">
@@ -395,7 +394,7 @@
                                 <a data-label="E-Invoicing &amp; E-Way Bill"
                                     onclick="handleTrack({label: 'navbar_Products_Dropdown_button_INDIVIDUAL PRODUCTS', obj: this})"
                                     target="_blank"
-                                    href="https://cleartax.in/s/e-invoicing-enterprise-software?utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar"
+                                    href="https:/taxbizlegal.com/s/e-invoicing-enterprise-software?utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar"
                                     referrerpolicy="no-referrer-when-downgrade">
                                     <div class="mod-flex mod-items-center mod-p-2">
                                         <div class="mod-w-1/12">
@@ -411,7 +410,7 @@
                                 <a data-label="TDS"
                                     onclick="handleTrack({label: 'navbar_Products_Dropdown_button_INDIVIDUAL PRODUCTS', obj: this})"
                                     target="_blank"
-                                    href="https://cleartax.in/tds?utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar"
+                                    href="https:/taxbizlegal.com/tds?utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar"
                                     referrerpolicy="no-referrer-when-downgrade">
                                     <div class="mod-flex mod-items-center mod-p-2">
                                         <div class="mod-w-1/12">
@@ -426,7 +425,7 @@
                                 <a data-label="Invoice Discounting"
                                     onclick="handleTrack({label: 'navbar_Products_Dropdown_button_INDIVIDUAL PRODUCTS', obj: this})"
                                     target="_blank"
-                                    href="https://clear.in/invoice-discounting?utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar"
+                                    href=""
                                     referrerpolicy="no-referrer-when-downgrade">
                                     <div class="mod-flex mod-items-center mod-p-2">
                                         <div class="mod-w-1/12">
@@ -442,7 +441,7 @@
                                 <a data-label="Financing"
                                     onclick="handleTrack({label: 'navbar_Products_Dropdown_button_INDIVIDUAL PRODUCTS', obj: this})"
                                     target="_blank"
-                                    href="https://www.clear.in/invoice-financing?utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar"
+                                    href=""
                                     referrerpolicy="no-referrer-when-downgrade">
                                     <div class="mod-flex mod-items-center mod-p-2">
                                         <div class="mod-w-1/12">
@@ -481,7 +480,7 @@
                                 <a data-label="Clear Finance Cloud"
                                     onclick="handleTrack({label: 'navbar_Products_Dropdown_button_PRODUCT SUITES', obj: this})"
                                     target="_blank"
-                                    href="https://www.clear.in/clear-finance-cloud?utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar"
+                                    href=""
                                     referrerpolicy="no-referrer-when-downgrade">
                                     <div class="mod-flex mod-items-center mod-p-2">
                                         <div class="mod-w-1/12">
@@ -497,7 +496,7 @@
                                 <a data-label="Clear Compliance Cloud"
                                     onclick="handleTrack({label: 'navbar_Products_Dropdown_button_PRODUCT SUITES', obj: this})"
                                     target="_blank"
-                                    href="https://cleartax.in/s/clear-compliance-cloud?utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar"
+                                    href="https:/taxbizlegal.com/s/clear-compliance-cloud?utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar"
                                     referrerpolicy="no-referrer-when-downgrade">
                                     <div class="mod-flex mod-items-center mod-p-2">
                                         <div class="mod-w-1/12">
@@ -513,7 +512,7 @@
                                 <a data-label="Clear Supply Chain Cloud"
                                     onclick="handleTrack({label: 'navbar_Products_Dropdown_button_PRODUCT SUITES', obj: this})"
                                     target="_blank"
-                                    href="https://cleartax.in/supply-chain-automation-solution?utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar"
+                                    href=""
                                     referrerpolicy="no-referrer-when-downgrade">
                                     <div class="mod-flex mod-items-center mod-p-2">
                                         <div class="mod-w-1/12">
@@ -538,7 +537,7 @@
                                 <a data-label="ITR Filing"
                                     onclick="handleTrack({label: 'navbar_Products_Dropdown_button_CONSUMER PRODUCTS', obj: this})"
                                     target="_blank"
-                                    href="https://cleartax.in/income-tax-efiling?utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar"
+                                    href="https:/taxbizlegal.com/income-tax-efiling?utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar"
                                     referrerpolicy="no-referrer-when-downgrade">
                                     <div class="mod-flex mod-items-center mod-p-2">
                                         <div class="mod-w-1/12">
@@ -553,7 +552,7 @@
                                 <a data-label="Tax Consultant Services"
                                     onclick="handleTrack({label: 'navbar_Products_Dropdown_button_CONSUMER PRODUCTS', obj: this})"
                                     target="_blank"
-                                    href="https://cleartax.in/services/?utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar"
+                                    href="https:/taxbizlegal.com/services/?utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar"
                                     referrerpolicy="no-referrer-when-downgrade">
                                     <div class="mod-flex mod-items-center mod-p-2">
                                         <div class="mod-w-1/12">
@@ -605,7 +604,7 @@
                                 <div class="mod-p-2 mod-text-font-500 mod-text-s-14 mod-font-medium">
                                     <a onclick="handleTrack({label: 'navbar_Company_Dropdown_button', obj: this})"
                                         target="_blank" class="hover:mod-text-blue-350"
-                                        href="https://cleartax.in/s/trust?utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar">Trust
+                                        href="https:/taxbizlegal.com/s/trust?utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar">Trust
                                         &amp; Safety</a>
                                 </div>
                             </div>
@@ -630,19 +629,19 @@
                                 <div class="mod-p-2 mod-text-font-500 mod-text-s-14 mod-font-medium">
                                     <a onclick="handleTrack({label: 'navbar_My Account_Dropdown_button', obj: this})"
                                         target="_blank" class="hover:mod-text-blue-350"
-                                        href="https://cleartax.in/filing/itr-filings?utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar">My
+                                        href="https:/taxbizlegal.com/filing/itr-filings?utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar">My
                                         tax returns</a>
                                 </div>
                                 <div class="mod-p-2 mod-text-font-500 mod-text-s-14 mod-font-medium">
                                     <a onclick="handleTrack({label: 'navbar_My Account_Dropdown_button', obj: this})"
                                         target="_blank" class="hover:mod-text-blue-350"
-                                        href="https://cleartax.in/save/dashboard/portfolio?ref=static-login-dropdown&amp;utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar">My
+                                        href="https:/taxbizlegal.com/save/dashboard/portfolio?ref=static-login-dropdown&amp;utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar">My
                                         investments</a>
                                 </div>
                                 <div class="mod-p-2 mod-text-font-500 mod-text-s-14 mod-font-medium">
                                     <a onclick="handleTrack({label: 'navbar_My Account_Dropdown_button', obj: this})"
                                         target="_blank" class="hover:mod-text-blue-350"
-                                        href="https://cleartax.in/services/my_orders?utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar">My
+                                        href="https:/taxbizlegal.com/services/my_orders?utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar">My
                                         orders</a>
                                 </div>
                                 <div class="mod-p-2 mod-text-font-500 mod-text-s-14 mod-font-medium">
@@ -654,16 +653,16 @@
                                 <div class="mod-p-2 mod-text-font-500 mod-text-s-14 mod-font-medium">
                                     <a onclick="handleTrack({label: 'navbar_My Account_Dropdown_button', obj: this})"
                                         target="_blank" class="hover:mod-text-blue-350"
-                                        href="https://cleartax.in/launchpad?source=home&amp;utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar">All
+                                        href="https:/taxbizlegal.com/launchpad?source=home&amp;utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar">All
                                         Products</a>
                                 </div>
                                 <div class="mod-p-2 mod-text-font-500 mod-text-s-14 mod-font-medium">
                                     <a onclick="handleTrack({label: 'navbar_My Account_Dropdown_button', obj: this})"
                                         target="_blank" class="hover:mod-text-blue-350"
-                                        href="https://cleartax.in/filing/profile?utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar">Profile</a>
+                                        href="https:/taxbizlegal.com/filing/profile?utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar">Profile</a>
                                 </div>
                                 <div class="mod-w-full mod-p-2 nav-logged-in-container mod-hidden">
-                                    <a href="https://cleartax.in/?utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar#"
+                                    <a href="https:/taxbizlegal.com/?utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar#"
                                         onclick="logout()">
                                         <p class="mod-inline-block mod-text-font-500 mod-text-s-14 mod-font-medium">
                                             Logout</p>

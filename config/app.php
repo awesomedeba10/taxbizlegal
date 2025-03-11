@@ -121,6 +121,8 @@ return [
     'maintenance' => [
         'driver' => env('APP_MAINTENANCE_DRIVER', 'file'),
         'store' => env('APP_MAINTENANCE_STORE', 'database'),
+        'mode' => (bool) env('APP_MAINTENANCE_MODE', false),
+        'access_code' => env('MAINTENANCE_ACCESS_CODE', null)
     ],
 
 ];

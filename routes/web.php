@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\MaintenanceController;
 
 Route::get('/', [PageController::class, 'index'])->name('front.home');
 Route::get('contact-us', [PageController::class, 'contact'])->name('front.contact');
@@ -16,6 +17,9 @@ Route::group(['prefix' => 'meta'], function(){
 Route::group(['prefix' => 'services'], function(){
     Route::get('income-tax-file', [ServiceController::class, 'itr'])->name('front.itr');
 });
+
+Route::get('coming-soon', [MaintenanceController::class, 'up'])->name('maintenance');
+Route::post('coming-soon', [MaintenanceController::class, 'access'])->name('maintenance.access');
 
 
 

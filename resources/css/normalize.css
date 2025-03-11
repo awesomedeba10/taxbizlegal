@@ -746,6 +746,9 @@ img, video {
     .mod-container {
     max-width: 1280px;
 }
+.mod-bg-none {
+    background: none;
+}
 }.mod-bg-transparent {
     background-color: transparent;
 }
@@ -918,6 +921,9 @@ img, video {
 .mod-bg-opacity-50 {
     --bg-opacity:  0.5;
 }
+.mod-border-none {
+    border: none;
+}
 .mod-border-collapse {
     border-collapse: collapse;
 }
@@ -1063,6 +1069,13 @@ img, video {
 .mod-cursor-pointer {
     cursor: pointer;
 }
+.mod-grid-2 {
+    -moz-column-gap: clamp(40px,2.5vw,48px);
+    column-gap: clamp(40px,2.5vw,48px);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: clamp(40px,2.5vw,48px);
+}
 .mod-grid-12 {
     -moz-column-gap: clamp(16px, 1.25vw, 24px);
     column-gap: clamp(16px, 1.25vw, 24px);
@@ -1096,6 +1109,9 @@ img, video {
 }
 .mod-flex-wrap {
     flex-wrap: wrap;
+}
+.mod-flex-nowwrap {
+    flex-wrap: nowrap;
 }
 .mod-items-start {
     align-items: flex-start;
@@ -1275,6 +1291,9 @@ img, video {
 }
 .mod-leading-loose {
     line-height: 1.5;
+}
+.mod-space-semi {
+    letter-spacing: 0.5px;
 }
 .mod-list-inside {
     list-style-position: inside;
@@ -1513,6 +1532,9 @@ img, video {
 .mod-ml-16 {
     margin-left: 4rem;
 }
+.mod-mb-16 {
+    margin-bottom:4rem;
+}
 .mod-mt-20 {
     margin-top: 5rem;
 }
@@ -1580,6 +1602,10 @@ img, video {
     -o-object-fit: contain;
     object-fit: contain;
 }
+.mod-object-contain {
+    -o-object-fit: cover;
+    object-fit: cover;
+}
 .mod-object-none {
     -o-object-fit: none;
     object-fit: none;
@@ -1590,6 +1616,9 @@ img, video {
 }
 .mod-opacity-50 {
     opacity: 0.5;
+}
+.mod-opacity-75 {
+    opacity: 0.75;
 }
 .mod-outline-none {
     outline: 0;
@@ -2178,6 +2207,9 @@ img, video {
 .mod-line-through {
     text-decoration: line-through;
 }
+.mod-text-none {
+    text-decoration: none;
+}
 .hover\:mod-underline:hover {
     text-decoration: underline;
 }
@@ -2290,6 +2322,10 @@ img, video {
 .mod-gap-2 {
     grid-gap: 0.5rem;
     gap: 0.5rem;
+}
+.mod-gap-3 {
+    grid-gap: 0.75rem;
+    gap: 0.75rem;
 }
 .mod-gap-4 {
     grid-gap: 1rem;
