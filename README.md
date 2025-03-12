@@ -24,4 +24,17 @@ cat id_rsa.pub
 ```
 Copy the public key and paste in GitHub --> Repo --> Settings --> Deploy keys [Allow write access]
 
-Copy git ssh address and clone in cPanel
+Copy git ssh address and clone in cPanel.
+
+Add .cpanel.yml -> ```/bin/cp -r . $DEPLOYPATH``` -> ```npm run build``` -> ```composer install```
+
+In case node installation
+```
+curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.4/install.sh | bash
+source ~/.bashrc
+nvm install --lts
+```
+```
+node -v
+npm -v
+```
