@@ -3,7 +3,7 @@
 @section('content')
     <main class="flex-grow-1">
         <section class="slideshow bg-blue-100">
-            <div class="splide" id="homeSlideshow" aria-label="Představení aplikace Huntee.net">
+            <div class="splide" id="homeSlideshow" aria-label="Představení aplikace">
                 <div class="splide__track">
                     <div class="splide__list">
 

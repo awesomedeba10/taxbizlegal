@@ -11,9 +11,9 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="current-path" content="{{ url()->current() }}">
 
-    <title id="snippet--seoTitle">Tax Biz Legal</title>
+    <title>@yield('title')@hasSection('title') | @endif Tax Biz Legal</title>
 
-    {{-- <meta name="robots" content="index,follow">
+    {{-- <meta name="robots" content="index,follow">    
     <meta name="description"
         content="Vytvořte profesionální životopis a zvyšte své šance na pohovor! Už žádné složité formátování, díky jednoduchému editor CV.">
     <link rel="canonical" href="index.html"> --}}
@@ -39,13 +39,13 @@
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('images/favicon/apple-touch-icon.png') }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/favicon/favicon-32x32.png') }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('images/favicon/favicon-16x16.png') }}">
-    <link rel="manifest" href="{{ asset('images/favicon/site.html') }}">
+    <link rel="manifest" href="{{ asset('images/favicon/manifest.json') }}">
     <link rel="mask-icon" href="{{ asset('images/favicon/safari-pinned-tab.svg') }}" color="#006EEC">
     <link rel="shortcut icon" href="{{ asset('images/favicon/favicon.ico') }}">
 
     <meta name="msapplication-TileColor" content="#006eec">
     <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
+    <meta name="theme-color" content="#3e78c6">
 
     @vite(['resources/js/app.js'])
 

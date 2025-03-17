@@ -16,6 +16,7 @@ Route::group(['prefix' => 'meta'], function(){
 
 Route::group(['prefix' => 'services'], function(){
     Route::get('income-tax-file', [ServiceController::class, 'itr'])->name('front.itr');
+    Route::get('company-registration', [ServiceController::class, 'pvt'])->name('front.company');
 });
 
 Route::get('coming-soon', [MaintenanceController::class, 'up'])->name('maintenance');

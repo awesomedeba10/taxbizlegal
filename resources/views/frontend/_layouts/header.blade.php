@@ -45,7 +45,7 @@
 
                                     <div class="mod-flex ">
                                         <div class="mod-w-1/2 mod-px-4 mod-dropdown-submenu" style="background:#FFFFFF">
-                                            <a data-label="Company Registration" target="_blank" href=""
+                                            <a data-label="Company Registration" target="_blank" href="{{ route('front.company') }}"
                                                 referrerpolicy="no-referrer-when-downgrade">
                                                 <div class="group mod-items-center mod-flex mod-items-start mod-py-2 mod-pl-4 mod-dropdown-menu-item "
                                                     style="">
@@ -629,18 +629,6 @@
                                 <div class="mod-p-2 mod-text-font-500 mod-text-s-14 mod-font-medium">
                                     <a onclick="handleTrack({label: 'navbar_My Account_Dropdown_button', obj: this})"
                                         target="_blank" class="hover:mod-text-blue-350"
-                                        href="https:/taxbizlegal.com/filing/itr-filings?utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar">My
-                                        tax returns</a>
-                                </div>
-                                <div class="mod-p-2 mod-text-font-500 mod-text-s-14 mod-font-medium">
-                                    <a onclick="handleTrack({label: 'navbar_My Account_Dropdown_button', obj: this})"
-                                        target="_blank" class="hover:mod-text-blue-350"
-                                        href="https:/taxbizlegal.com/save/dashboard/portfolio?ref=static-login-dropdown&amp;utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar">My
-                                        investments</a>
-                                </div>
-                                <div class="mod-p-2 mod-text-font-500 mod-text-s-14 mod-font-medium">
-                                    <a onclick="handleTrack({label: 'navbar_My Account_Dropdown_button', obj: this})"
-                                        target="_blank" class="hover:mod-text-blue-350"
                                         href="https:/taxbizlegal.com/services/my_orders?utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar">My
                                         orders</a>
                                 </div>
@@ -655,11 +643,6 @@
                                         target="_blank" class="hover:mod-text-blue-350"
                                         href="https:/taxbizlegal.com/launchpad?source=home&amp;utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar">All
                                         Products</a>
-                                </div>
-                                <div class="mod-p-2 mod-text-font-500 mod-text-s-14 mod-font-medium">
-                                    <a onclick="handleTrack({label: 'navbar_My Account_Dropdown_button', obj: this})"
-                                        target="_blank" class="hover:mod-text-blue-350"
-                                        href="https:/taxbizlegal.com/filing/profile?utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar">Profile</a>
                                 </div>
                                 <div class="mod-w-full mod-p-2 nav-logged-in-container mod-hidden">
                                     <a href="https:/taxbizlegal.com/?utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar#"

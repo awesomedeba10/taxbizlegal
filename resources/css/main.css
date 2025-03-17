@@ -1983,6 +1983,14 @@ textarea.form-control {
     color: #0d1d4a;
     grid-area: 1 / 9 / 2 / 13
 }
+@media (max-width: 960px) {
+    .services-intro .section-content {
+        grid-area: 1 / 8 / 2 / 13
+    }
+    .services-intro .section-heading {
+        grid-area: 1 / 1 / 2 / 7;
+    }
+}
 .card {
     --bs-card-spacer-y: 1.5rem;
     --bs-card-spacer-x: 1.5rem;

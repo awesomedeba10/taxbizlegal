@@ -16,7 +16,7 @@ class ReviewsSlide extends Component
      */
     public function __construct()
     {
-        $this->testimonials = Cache::remember('testimonials', now()->addHours(6), function () {
+        $this->testimonials = Cache::remember('testimonials', now()->addHours(24), function () {
             return Testimonial::inRandomOrder()->get();
         });
     }
@@ -26,7 +26,6 @@ class ReviewsSlide extends Component
      */
     public function render(): View|Closure|string
     {
-        // dd(Testimonial::inRandomOrder()->get());
         return view('components.reviews-slide');
     }
 }

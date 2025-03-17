@@ -2339,6 +2339,18 @@ img, video {
     grid-gap: 2.5rem;
     gap: 2.5rem;
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+    .md\:mod-gap-10 {
+        grid-gap: 2.5rem;
+        gap: 2.5rem;
+    }
+}
+@media (max-width: 767px) {
+    .sm\:mod-gap-10 {
+        grid-gap: 2.5rem;
+        gap: 2.5rem;
+    }
+}
 .mod-transform {
     --transform-translate-x:  0;
     --transform-translate-y:  0;
@@ -2898,6 +2910,10 @@ select {
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
+.sm\:mod-px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
 .sm\:mod-py-10 {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
@@ -3118,7 +3134,7 @@ select {
     --transform-translate-x:  0;
 }
 }@media (min-width: 768px) and (max-width: 1023px) {
-    .md\: mod-flex {
+    .md\:mod-flex {
     display: flex;
 }
 .md\:mod-hidden {
@@ -3288,9 +3304,17 @@ select {
     padding-left: 2rem;
     padding-right: 2rem;
 }
+.md\:mod-px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
 .md\:mod-py-12 {
     padding-top: 3rem;
     padding-bottom: 3rem;
+}
+.md\:mod-px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
 }
 .md\:mod-py-16 {
     padding-top: 4rem;

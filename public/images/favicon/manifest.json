@@ -1,6 +1,12 @@
 {
-    "name": "Huntee",
-    "short_name": "Huntee",
+    "name": "TaxBizLegal",
+    "short_name": "TaxBizLegal",
+    "description": "Simplifying business registration and tax filings in India.",
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#3e78c6",
+    "background_color": "#ffffff",
+    "orientation": "portrait",
     "icons": [
         {
             "src": "/build/favicon/android-chrome-192x192.png",
@@ -12,8 +18,5 @@
             "sizes": "512x512",
             "type": "image/png"
         }
-    ],
-    "theme_color": "#ffffff",
-    "background_color": "#ffffff",
-    "display": "standalone"
+    ]
 }
