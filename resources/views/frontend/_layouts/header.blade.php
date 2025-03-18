@@ -13,114 +13,61 @@
         <div class="header-right-cta sm:mod-hidden mod-flex mod-items-center mod-justify-end mod-h-full mod-w-4/12">
             <div class="mod-flex mod-items-center mod-h-full">
                 <div class="mod-flex mod-items-center mod-h-full mod-pr-4">
+                    @foreach (config('headers') as $headers)
                     <div class="sm:mod-hidden fit-content  ">
-                        <div
-                            class="multi-dropdown-menu mod-flex mod-items-center mod-mx-4 sm:mod-mx-3 mod-py-8 mod-dropdown nav-dropdown md:mod-px-0">
+                        <div class="multi-dropdown-menu mod-flex mod-items-center mod-mx-4 sm:mod-mx-3 mod-py-8 mod-dropdown nav-dropdown md:mod-px-0">
                             <div
                                 class="mod-font-medium mod-nav-text mod-cursor-pointer mod-text-base mod-whitespace-no-wrap">
-                                Services
+                                {{ $headers['title'] }}
                                 <span class="mod-inline-block mod-caret mod-caret-down mod-ml-1 md:mod-ml-0"></span>
                             </div>
                             <div class="mod-dropdown-menu mod-cursor-pointer mod-rounded-lg mod-mt-0 mod-mb-2 mod-dropdown-full-menu low-res-scroll dropdown-size-limit box-shadow-xl"
-                                style="">
+                            style="">
                                 <div class="menu-wrapper">
-                                    <div class="mod-flex mod-flex-wrap nav-menu-sticky nav-menu-container">
-                                        <div class="mod-w-1/2 mod-pl-8 mod-flex mod-pt-2 mod-items-center mod-pt-6"
-                                            style="background:#FFFFFF">
+                                    <div class="mod-flex mod-flex-wrap nav-menu-sticky nav-menu-container mod-uppercase">
+                                        @foreach($headers['sub_headers'] as $sub)
+                                        <div class="{{ count($headers['sub_headers']) == 2 ? 'mod-w-1/2' : 'mod-w-1/3' }} mod-pl-8 mod-flex mod-pt-2 mod-items-center mod-pt-6"
+                                            style="background: {{ $sub['background'] }}">
                                             <div class="mod-w-full">
                                                 <h6 class="mod-text-base mod-text-font-200 mod-pb-4">
-                                                    BUSINESS</h6>
+                                                    {{ $sub['title'] }}</h6>
                                                 <hr class="divider">
                                             </div>
                                         </div>
-                                        <div class="mod-w-1/2 mod-pl-8 mod-flex mod-pt-2 mod-items-center mod-pt-6"
-                                            style="background:#F4F9FF">
-                                            <div class="mod-w-full">
-                                                <h6 class="mod-text-base mod-text-font-200 mod-pb-4">
-                                                    INDIVIDUAL</h6>
-                                                <hr class="divider">
-                                            </div>
-                                        </div>
+                                        @endforeach
                                     </div>
 
                                     <div class="mod-flex ">
-                                        <div class="mod-w-1/2 mod-px-4 mod-dropdown-submenu" style="background:#FFFFFF">
-                                            <a data-label="Company Registration" target="_blank" href="{{ route('front.company') }}"
+                                        @foreach($headers['sub_headers'] as $sub)
+                                        <div class="{{ count($headers['sub_headers']) == 2 ? 'mod-w-1/2' : 'mod-w-1/3' }} mod-px-4 mod-dropdown-submenu" style="background: {{ $sub['background'] }}">
+                                            @foreach ($sub['services'] as $service)
+                                            <a data-label="{{ $service['name'] }}" target="_blank" href="{{ route('front.company') }}"
                                                 referrerpolicy="no-referrer-when-downgrade">
-                                                <div class="group mod-items-center mod-flex mod-items-start mod-py-2 mod-pl-4 mod-dropdown-menu-item "
-                                                    style="">
+                                                <div class="group mod-items-center mod-flex mod-items-start mod-py-2 mod-pl-4 mod-dropdown-menu-item ">
                                                     <div class="mod-w-2/12">
-                                                        <img src="https://cdn.prod.website-files.com/6093bce33d9b4bae841b04e3/667addb87d1a644b52ef6af2_Vendor%20management%20(1).png"
+                                                        <img src="{{ asset('images/img/navbar_icon.png') }}"
                                                             height="42" width="42" alt="GST">
                                                     </div>
                                                     <div class="mod-w-10/12">
                                                         <p
                                                             class="mod-text-s-14 mod-font-medium mod-text-font-500 mod-my-2">
-                                                            Company Registration</p>
+                                                            {{ $service['name'] }}</p>
                                                         <p
                                                             class="mod-text-s-12 mod-text-medium mod-hidden childDisplayHover">
-                                                            Register your company with Approved Experts</p>
+                                                            {{ $service['description'] }}</p>
                                                     </div>
                                                 </div>
                                             </a>
-
-                                            <a data-label="Cimplyfive"
-                                                href="javascript:void(0)">
-                                                <div class="group mod-items-center mod-flex mod-items-start mod-py-2 mod-pl-4 mod-dropdown-menu-item "
-                                                    style="">
-                                                    <div class="mod-w-2/12">
-                                                        <img src="{{ asset('images/img/targeted_icon_5671641') }}"
-                                                            height="42" width="42" alt="Cimplyfive">
-                                                    </div>
-                                                    <div class="mod-w-10/12">
-                                                        <p class="mod-text-s-14 mod-text-font-500 mod-my-2">
-                                                            More Services Coming Soon ... </p>
-                                                    </div>
-                                                </div>
-                                            </a>
+                                            @endforeach
                                         </div>
-                                        <div class="mod-w-1/2 mod-px-4 mod-dropdown-submenu"
-                                            style="background:#F4F9FF">
-                                            <a data-label="ITR Filing"
-                                                href="{{ route('front.itr') }}">
-                                                <div class="group mod-items-center mod-flex mod-items-start mod-py-2 mod-pl-4 mod-dropdown-menu-item "
-                                                    style="">
-                                                    <div class="mod-w-2/12">
-                                                        <img src="https://assets1.cleartax-cdn.com/cleartax/images/1683875678_fileitr.png"
-                                                            height="42" width="42" alt="ITR Filing">
-                                                    </div>
-                                                    <div class="mod-w-10/12">
-                                                        <p
-                                                            class="mod-text-s-14 mod-font-medium mod-text-font-500 mod-my-2">
-                                                            ITR Filing</p>
-                                                        <p
-                                                            class="mod-text-s-12 mod-text-medium mod-hidden childDisplayHover">
-                                                            File ITR in 3 minutes</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-
-                                            <a data-label="Cimplyfive"
-                                                target="_blank"
-                                                href="javascript:void(0)">
-                                                <div class="group mod-items-center mod-flex mod-items-start mod-py-2 mod-pl-4 mod-dropdown-menu-item "
-                                                    style="">
-                                                    <div class="mod-w-2/12">
-                                                        <img src="https://assets1.cleartax-cdn.com/cleartax/images/1683876414_cimplyfive.png"
-                                                            height="42" width="42" alt="Cimplyfive">
-                                                    </div>
-                                                    <div class="mod-w-10/12">
-                                                        <p class="mod-text-s-14 mod-text-font-500 mod-my-2">
-                                                            More Services Coming Soon ... </p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
+                                        @endforeach
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    @endforeach
+
                     <div
                         class="multi-dropdown-menu mod-flex mod-items-center mod-h-full mod-dropdown nav-dropdown mod-mx-4 sm:mod-mx-3 mod-py-8 md:mod-mx-1  hide-onsearch">
                         <div
