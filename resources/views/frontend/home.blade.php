@@ -14,7 +14,8 @@
                                 <p class="mb-0 slideshow-fade">Register your company with ease and compliance. Get expert
                                     guidance, end-to-end documentation, and fast approvals.</p>
                                 <div class="slideshow-fade">
-                                    <a href="registrace/adept.html" class="d-block btn btn-lg btn-primary">Register Now</a>
+                                    <a href="{{ route('front.services.company-registration') }}" class="d-block btn btn-lg btn-primary">Register
+                                        Now</a>
                                 </div>
                             </div>
                             <div class="slideshow-media slideshow-media--custom">
@@ -45,46 +46,6 @@
                                 </figure>
                             </div>
                         </div>
-                        <div class="splide__slide slideshow-slide">
-                            <div class="slideshow-content">
-                                <p class="h5 text-primary mb-0">Pracovní profil</p>
-                                <h2 class="h1 mb-0" data-slideshow-title>Why Do Customers Love Us?</h2>
-                                <p class="mb-0 slideshow-fade">Nechcete, aby váš zaměstnavatel věděl, že hledáte lepší
-                                    práci? Bez problému</p>
-                                <div class="slideshow-fade">
-                                    <a href="registrace/adept.html" class="d-block btn btn-lg btn-primary">Vytvořit
-                                        profil</a>
-                                </div>
-                            </div>
-                            <div class="slideshow-media slideshow-media--icon">
-                                <figure class="slideshow-figure slideshow-figure--icon">
-
-                                    <img alt="Soukromí na prvním místě" class="slideshow-img slideshow-img--icon"
-                                        src="images/svg/secured-colored.svg" width="800" height="800">
-                                </figure>
-                            </div>
-                        </div>
-                        <div class="splide__slide slideshow-slide">
-                            <div class="slideshow-content">
-                                <p class="h5 text-primary mb-0">Knihovna kontaktů</p>
-                                <h2 class="h1 mb-0" data-slideshow-title>Víte, koho hledáte? Ušetřete čas i kredity.
-                                </h2>
-                                <p class="mb-0 slideshow-fade">Seznamte se s pracovními profily kandidátů ještě
-                                    předtím, než utratíte jediný kredit.</p>
-                                <div class="slideshow-fade">
-                                    <a href="registrace/lovec.html" class="d-block btn btn-lg btn-primary">Hledat
-                                        zaměstnance</a>
-                                </div>
-                            </div>
-                            <div class="slideshow-media slideshow-media--custom">
-                                <figure class="slideshow-figure slideshow-figure--custom">
-
-                                    <img alt="Víte, koho hledáte? Ušetřete čas i kredity."
-                                        class="slideshow-img slideshow-img--custom"
-                                        src="images/img/home/hledat-kandidaty.png" width="1184" height="701">
-                                </figure>
-                            </div>
-                        </div>
 
                     </div>
                 </div>
@@ -96,7 +57,6 @@
                                 d="M15.7071 21.7071C15.3166 22.0976 14.6834 22.0976 14.2929 21.7071L5.29289 12.7071C4.90237 12.3166 4.90237 11.6834 5.29289 11.2929L14.2929 2.29289C14.6834 1.90237 15.3166 1.90237 15.7071 2.29289C16.0976 2.68342 16.0976 3.31658 15.7071 3.70711L7.41421 12L15.7071 20.2929C16.0976 20.6834 16.0976 21.3166 15.7071 21.7071Z"
                                 clip-rule="evenodd" />
                         </svg>
-                        <span class="visually-hidden">Předchozí slide</span>
                     </button>
                     <button type="button" class="btn btn-rounded icon-hover-right splide__arrow splide__arrow--next">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
@@ -105,7 +65,6 @@
                                 d="M8.29289 2.29289C8.68342 1.90237 9.31658 1.90237 9.70711 2.29289L18.7071 11.2929C19.0976 11.6834 19.0976 12.3166 18.7071 12.7071L9.70711 21.7071C9.31658 22.0976 8.68342 22.0976 8.29289 21.7071C7.90237 21.3166 7.90237 20.6834 8.29289 20.2929L16.5858 12L8.29289 3.70711C7.90237 3.31658 7.90237 2.68342 8.29289 2.29289Z"
                                 clip-rule="evenodd" />
                         </svg>
-                        <span class="visually-hidden">Další slide</span>
                     </button>
                 </div>
             </div>
@@ -118,24 +77,25 @@
                     <div class="col-md-4">
 
                         <div class="h-100 shadow-primary rounded-35 bg-white p-4 p-lg-32">
-                            <p class="display-6 fw-bold mb-2 text-primary"><span data-counter="10">0</span> Lc+</p>
-                            <p class="mb-0">Customers Served</p>
+                            <p class="display-6 mod-font-semibold mb-2 text-primary">Recognized by Govt. of India</p>
+                            <p class="mb-0">Ensuring compliance with government regulations for your business needs</p>
                         </div>
 
                     </div>
                     <div class="col-md-4">
 
                         <div class="h-100 shadow-primary rounded-35 bg-white p-4 p-lg-32">
-                            <p class="display-6 fw-bold mb-2 text-primary"><span data-counter="8000">0</span> Cr+</p>
-                            <p class="mb-0">Worth of Businesses Registered</p>
+                            <p class="display-6 mod-font-semibold mb-2 text-primary"><span data-counter="100">0</span> %
+                                Moneyback Gurantee</p>
+                            <p class="mb-0">Zero-risk Moneyback Guranteed with our hassle free Full-Refund policy</p>
                         </div>
 
                     </div>
                     <div class="col-md-4">
 
                         <div class="h-100 shadow-primary rounded-35 bg-white p-4 p-lg-32">
-                            <p class="display-6 fw-bold mb-2 text-primary"><span data-counter="25">0</span> k+</p>
-                            <p class="mb-0">Tax Returns Filed</p>
+                            <p class="display-6 mod-font-semibold mb-2 text-primary">Expert Guidance</p>
+                            <p class="mb-0">Get Profesisons helps from our Trusted Experts for all your business needs</p>
                         </div>
 
                     </div>
@@ -143,22 +103,20 @@
             </div>
         </section>
         <section class="container my-80">
-            <h2 class="h6 mb-3 mb-lg-32 text-center">We're partnered with</h2>
-            <div class="row g-3 gx-lg-5 gy-xxl-4 gx-xxl-80 justify-content-center align-items-center">
-                <div class="col-4 col-lg-auto text-center">
-                    <img alt="Multisport" class="img-fluid opacity-40" src="images/svg/partners/multisport.svg"
-                        width="150" height="150">
-                </div>
-                <div class="col-4 col-lg-auto text-center">
-                    <img alt="Teta drogerie" class="img-fluid opacity-40" src="images/svg/partners/teta-drogerie.svg"
-                        width="150" height="150">
-                </div>
-                <div class="col-4 col-lg-auto text-center">
-                    <img alt="Equans" class="img-fluid opacity-40" src="images/svg/partners/equans.svg" width="150"
-                        height="150">
+            <p class="text-center"><strong>We've partnered with</strong></p>
+            <div class="partner-box-logo-scroller">
+                <div class="slide-track">
+                @for ($i = 0; $i < 3; $i++)
+                    <div class="slide"><img src="{{ asset('images/svg/meta.svg') }}" alt="" /></div>
+                    <div class="slide"><img src="{{ asset('images/svg/google.svg') }}" alt="" /></div>
+                    <div class="slide"><img src="{{ asset('images/svg/godaddy.svg') }}" alt="" /></div>
+                    <div class="slide"><img src="{{ asset('images/svg/payu.svg') }}" alt="" /></div>
+                    <div class="slide"><img src="{{ asset('images/svg/trustpilot.svg') }}" alt="" /></div>
+                @endfor
                 </div>
             </div>
         </section>
+        
         <section class="container mod-my-16 lg:mod-my-24">
             <article class="banner bg-blue-100 pb-40 px-4 p-lg-5 p-xxl-80">
                 <div class="row gy-4 gx-lg-4 justify-content-center justify-content-lg-between align-items-center">
@@ -452,6 +410,33 @@
                                 <p class="text-h3 mt-1 mb-2 mb-sm-3 mt-lg-3">Seamless and hassle-free! Registered my
                                     company in no time. Highly recommend!</p>
                                 <cite class="text-h5 text-secondary">#user2</cite>
+                            </div>
+                        </div>
+                    </blockquote>
+
+                </div>
+
+                <div class="col-9 col-md-8 ms-auto pb-2 mod-mt-24">
+
+                    <blockquote class="rounded-2 bg-blue-100 px-4 pb-4 p-lg-32 pt-lg-40 px-xl-40 mb-0">
+
+                        <div class="row gx-4">
+                            <div class="col-7 col-lg-4 mt-n5 mt-lg-n80 ms-auto">
+                                <figure class="mt-n3 mb-n2 ms-auto mt-xl-n20 ratio max-w-scale scale-120 scale-lg-auto"
+                                    style="--bs-aspect-ratio:104%">
+                                    <img alt="Monika, Náborářka" src="images/img/home/monika.png" width="476"
+                                        height="496">
+                                </figure>
+                            </div>
+                            <div class="col-12 col-lg-8 svg-scale scale-32 scale-lg-auto">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="54" height="34" fill="none"
+                                    viewBox="0 0 32 20">
+                                    <path fill="#006EEC" fill-opacity=".08"
+                                        d="M1.59483 20C1.12229 20 0.738348 19.8512 0.443009 19.5536C0.14767 19.1964 0 18.8095 0 18.3929C0 17.9167 0.0590678 17.5 0.177204 17.1429L5.93632 2.32143C6.29072 1.60714 6.67467 1.04167 7.08814 0.625003C7.50162 0.208334 8.09229 0 8.86017 0H13.4675C13.9991 0 14.4126 0.178571 14.7079 0.535713C15.0032 0.892858 15.1214 1.36905 15.0623 1.96429L12.6701 17.1429C12.5519 17.9762 12.2566 18.6607 11.784 19.1964C11.3115 19.7321 10.6617 20 9.83479 20H1.59483ZM18.5178 20C18.1043 20 17.7204 19.8512 17.3659 19.5536C17.0706 19.1964 16.9229 18.8095 16.9229 18.3929C16.9229 18.0952 17.0115 17.6786 17.1887 17.1429L22.9479 2.32143C23.5385 0.77381 24.5131 0 25.8717 0H30.479C30.9515 0 31.3355 0.178571 31.6308 0.535713C31.9262 0.892858 32.0443 1.36905 31.9852 1.96429L29.6816 17.1429C29.3272 19.0476 28.3526 20 26.7577 20H18.5178Z" />
+                                </svg>
+                                <p class="text-h3 mt-1 mb-2 mb-sm-3 mt-lg-3">Filing my ITR was so easy! Quick process and
+                                    great support.</p>
+                                <cite class="text-h5 text-secondary">#User3</cite>
                             </div>
                         </div>
                     </blockquote>

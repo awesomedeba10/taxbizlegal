@@ -41,7 +41,7 @@
                                         @foreach($headers['sub_headers'] as $sub)
                                         <div class="{{ count($headers['sub_headers']) == 2 ? 'mod-w-1/2' : 'mod-w-1/3' }} mod-px-4 mod-dropdown-submenu" style="background: {{ $sub['background'] }}">
                                             @foreach ($sub['services'] as $service)
-                                            <a data-label="{{ $service['name'] }}" target="_blank" href="{{ route('front.company') }}"
+                                            <a data-label="{{ $service['name'] }}" target="_blank" href="{{ Route::has($routeName = 'front.services.' . Str::slug($service['name'], '-')) ? route($routeName) : null }}"
                                                 referrerpolicy="no-referrer-when-downgrade">
                                                 <div class="group mod-items-center mod-flex mod-items-start mod-py-2 mod-pl-4 mod-dropdown-menu-item ">
                                                     <div class="mod-w-2/12">
@@ -73,7 +73,7 @@
                         <div
                             class="mod-font-medium mod-nav-text mod-nav-text mod-cursor-pointer mod-text-base mod-whitespace-no-wrap">
 
-                            <span class="mod-pl-2">Company</span>
+                            <span class="mod-pl-2">Explore Us</span>
                             <span class="mod-inline-block mod-caret mod-caret-down mod-ml-1 md:mod-mx-0"></span>
                         </div>
                         <div id="" class="mod-dropdown-menu ">
@@ -96,7 +96,7 @@
                                 <div class="mod-w-full">
                                     <a target="_blank"
                                         class="mod-text-font-500 mod-flex mod-items-start mod-gap-2 mod-w-full mod-px-2"
-                                        href="">
+                                        href="{{ route('front.about') }}">
 
                                         <span>About us</span>
                                     </a>
@@ -107,7 +107,7 @@
                                 style="margin-top: 0px; margin-bottom: 0px; align-items: flex-start;">
 
                                 <div class="mod-w-full">
-                                    <a onclick="handleTrack({label: 'navbar_Company_Dropdown_button', obj: this})"
+                                    <a
                                         target="_blank"
                                         class="mod-text-font-500 mod-flex mod-items-start mod-gap-2 mod-w-full mod-px-2"
                                         href="">
@@ -121,7 +121,7 @@
                                 style="margin-top: 0px; margin-bottom: 0px; align-items: flex-start;">
 
                                 <div class="mod-w-full">
-                                    <a onclick="handleTrack({label: 'navbar_Company_Dropdown_button', obj: this})"
+                                    <a
                                         target="_blank"
                                         class="mod-text-font-500 mod-flex mod-items-start mod-gap-2 mod-w-full mod-px-2"
                                         href="">
@@ -135,7 +135,7 @@
                                 style="margin-top: 0px; margin-bottom: 0px; align-items: flex-start;">
 
                                 <div class="mod-w-full">
-                                    <a onclick="handleTrack({label: 'navbar_Company_Dropdown_button', obj: this})"
+                                    <a
                                         target="_blank"
                                         class="mod-text-font-500 mod-flex mod-items-start mod-gap-2 mod-w-full mod-px-2"
                                         href="https:/taxbizlegal.com/s/trust?utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar">
@@ -212,7 +212,7 @@
                                 <a onclick="handleTrack({label: 'navbar_My Account_Dropdown_button', obj: this})"
                                     target="_blank"
                                     class="mod-text-font-500 mod-flex mod-items-start mod-gap-2 mod-w-full mod-px-2"
-                                    href="https://gst.cleartax.in/n?ref=static-login-dropdown&amp;utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar">
+                                    href="">
 
                                     <span>My GST</span>
                                 </a>
@@ -326,7 +326,7 @@
                                 <a data-label="MaxITC"
                                     onclick="handleTrack({label: 'navbar_Products_Dropdown_button_INDIVIDUAL PRODUCTS', obj: this})"
                                     target="_blank"
-                                    href="http://cleartax.in/s/max-itc?utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar"
+                                    href=""
                                     referrerpolicy="no-referrer-when-downgrade">
                                     <div class="mod-flex mod-items-center mod-p-2">
                                         <div class="mod-w-1/12">
@@ -403,7 +403,7 @@
                                 <a data-label="Cimplyfive"
                                     onclick="handleTrack({label: 'navbar_Products_Dropdown_button_INDIVIDUAL PRODUCTS', obj: this})"
                                     target="_blank"
-                                    href="https://www.cimplyfive.com/?utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar"
+                                    href=""
                                     referrerpolicy="no-referrer-when-downgrade">
                                     <div class="mod-flex mod-items-center mod-p-2">
                                         <div class="mod-w-1/12">
@@ -532,7 +532,7 @@
                                 <div class="mod-flex mod-items-center">
                                     <p
                                         class="mod-w-11/12 mod-text-base mod-ml-4 mod-my-0 mod-text-font-500 mod-font-medium focus:mod-text-blue-350">
-                                        Company</p>
+                                        Explore Us</p>
                                     <div class="mod-w-1/12 mod-accordian-caret mod-order-3 mod-ml-auto"></div>
                                 </div>
                             </summary>
@@ -582,7 +582,7 @@
                                 <div class="mod-p-2 mod-text-font-500 mod-text-s-14 mod-font-medium">
                                     <a onclick="handleTrack({label: 'navbar_My Account_Dropdown_button', obj: this})"
                                         target="_blank" class="hover:mod-text-blue-350"
-                                        href="https://gst.cleartax.in/n?ref=static-login-dropdown&amp;utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar">My
+                                        href="">My
                                         GST</a>
                                 </div>
                                 <div class="mod-p-2 mod-text-font-500 mod-text-s-14 mod-font-medium">

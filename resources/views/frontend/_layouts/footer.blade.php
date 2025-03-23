@@ -13,7 +13,7 @@
             </div>
             <div class="col-sm-6 col-lg-3 order-sm-4 order-lg-0">
                 <h3 class="mb-3 mb-lg-4 pb-lg-2">Useful</h3>
-                <p><a href="{{ route('front.itr') }}">ITR Filings</a></p>
+                <p><a href="">ITR Filings</a></p>
                 {{-- <p><a href="registrace/adept.html">Vytvořit pracovní profil</a></p> --}}
                 <p><a href="{{ route('front.contact') }}">Contact Us</a></p>
                 <p><a href="blog.html">Blog</a></p>

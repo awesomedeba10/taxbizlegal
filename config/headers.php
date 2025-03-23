@@ -9,16 +9,24 @@ return [
                 "background" => "#ffffff",
                 "services" => [
                     [
+                        "name" => "Sole Proprietorship",
+                        "description" => "Start your business easily with minimal compliance and full control!"
+                    ],
+                    [
+                        "name" => "One Person Private Limited Company",
+                        "description" => "Enjoy the benefits of a private limited company while being the sole owner!"
+                    ],
+                    [
                         "name" => "Private Limited Company",
                         "description" => "Start your business with the most trusted company structure in India!"
                     ],
                     [
-                        "name" => "Public Limited Company",
-                        "description" => "Register a public company and raise funds easily from investors."
+                        "name" => "Limited Liability Partnership Company",
+                        "description" => "Combine the benefits of a partnership with limited liability protection!"
                     ],
                     [
-                        "name" => "Limited Liability Partnership",
-                        "description" => "Enjoy the flexibility of a partnership with limited liability protection!"
+                        "name" => "Public Limited Company Registration",
+                        "description" => "Expand your business with public investment and greater credibility!"
                     ]
                 ]
             ],
@@ -27,12 +35,16 @@ return [
                 "background" => "#ffffff",
                 "services" => [
                     [
-                        "name" => "Non Profit Organization",
-                        "description" => "Establish an NGO or Section 8 company to drive social impact legally."
+                        "name" => "Section 8 Company",
+                        "description" => "Register a non-profit company to drive social initiatives legally!"
                     ],
                     [
-                        "name" => "Nidhi Company",
-                        "description" => "Launch your finance business with a legally recognized Nidhi company."
+                        "name" => "Nidhi Company Registration",
+                        "description" => "Launch your finance business with a legally recognized Nidhi company!"
+                    ],
+                    [
+                        "name" => "NGO & Trust Registration",
+                        "description" => "Register your NGO or trust to make a lasting social impact!"
                     ]
                 ]
             ]

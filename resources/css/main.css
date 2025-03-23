@@ -8415,6 +8415,308 @@ nav.odin-menu-actions {
     color: var(--bs-gray-1100);
 }
 
+/* General Styling */
+.partner-box-logo-scroller {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background: transparent;
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
+}
+
+/* Gradient fading effect on sides */
+.partner-box-logo-scroller::before, 
+.partner-box-logo-scroller::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    top: 0;
+    z-index: 2;
+}
+
+.partner-box-logo-scroller::after {
+    right: 0;
+    transform: rotateZ(180deg);
+}
+
+.partner-box-logo-scroller::before {
+    left: 0;
+}
+
+.partner-box-logo-scroller .slide-track {
+    display: flex;
+    width: calc(250px * 14);
+    animation: infinitePartnerScroll 30s linear infinite;
+}
+
+.partner-box-logo-scroller .slide {
+    width: 250px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem 0 2rem;
+}
+
+.partner-box-logo-scroller .slide img {
+    width: 100%;
+    height: auto;
+}
+
+/* Animation Keyframes */
+@keyframes infinitePartnerScroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-250px * 7)); }
+}
+
+.btn-float { 
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    z-index: 1000;
+  }
+
+.btn-float .contact-icon {
+    background-color: #42db87;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    font-size:30px;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translatey(0px);
+    box-shadow: 0 0 0 0 #42db87;
+    font-weight: normal;
+    font-family: sans-serif;
+    text-decoration: none !important;
+    transition: all 300ms ease-in-out;
+}
+
+.btn-float .text-icon {
+    margin-top: 8px;
+    color: #707070;
+    font-size: 13px;
+}
+
+module-image-description__image:after {
+    background-color: #90c4ff;
+    border-radius: 20px;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: calc(100% - 20px);
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.module-image-description__content {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 20px;
+}
+
+@media only screen and (min-width: 1025px) {
+    .module-image-description__icon {
+        bottom: 40px;
+        margin-left: 0;
+        right: 40px;
+        width: 130px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .module-image-description__icon {
+        bottom: 10px;
+        position: absolute;
+        right: 50px;
+    }
+}
+
+.about-values {
+    margin-top: -345px;
+}
+
+.about-values__container {
+    background-color: #1746a2;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 70px;
+    padding-top: 425px;
+}
+
+@media only screen and (min-width: 1025px) {
+    .about-values__container {
+        padding-bottom: 115px;
+    }
+}
+
+.about-values__wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media only screen and (min-width: 600px) {
+    .about-values__wrapper {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .about-values__wrapper {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1600px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+.about-values__products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 70px 30px 0;
+}
+
+@media only screen and (min-width: 1025px) {
+    .about-values__products {
+        padding: 110px 0 0;
+    }
+}
+
+.about-values__title {
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+@media only screen and (min-width: 600px) {
+    .about-values__title {
+        font-size: 30px;
+        margin-bottom: 25px;
+        margin-left: 25%;
+        margin-right: 25%;
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .about-values__title {
+        font-size: 60px;
+        margin-bottom: 45px;
+    }
+}
+
+.about-values__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 30px;
+}
+
+.about-values__item {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-values__item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.about-values__item-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1746a2;
+}
+
+.about-values__item-text {
+    font-size: 16px;
+    color: #333;
+}
+
+@media only screen and (min-width: 1025px) {
+    .about-values__items {
+        justify-content: space-between;
+        padding: 0 50px;
+    }
+
+    .about-values__item {
+        max-width: 350px;
+    }
+}
+
+.about-values__button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #ff731d, #ff731d 50%, #f8f1f1 0, #f8f1f1);
+    border-radius: 9px;
+    color: #1746a2;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 12px 20px;
+    position: relative;
+    text-decoration: none;
+    transition: .3s ease;
+}
+
+.about-values__button:hover {
+    background-position: 0;
+    color: #fff;
+    padding-left: 44px;
+}
+
+.about-values__button:after {
+    content: "";
+    background-image: url(/wp-content/themes/assurancevisiteurs/assets/src/svg/button-arrow.svg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    height: 10px;
+    left: 20px;
+    opacity: 0;
+    position: absolute;
+    transform: translateX(-5px);
+    transition: .3s ease;
+    width: 6px;
+}
+
+.about-values__button:hover:after {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+
+
+
+
 
 
 

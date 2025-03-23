@@ -61,6 +61,15 @@
 
     @include('frontend._layouts.footer')
 
+    <div class="btn-float">
+        <a target="_blank" href="https://wa.me/7098908674?text=Hello,%20I%20need%20some%20assistance!">
+            <div class="contact-icon">
+                <img src="{{ asset('images/svg/whatsapp.svg') }}" alt="">
+            </div>
+        </a>
+        <p class="text_icon">Talk to us?</p>
+    </div>
+
     <div id="snippet-logInModal-modal">
     </div>
     <div id="snippet-lostPasswordModal-modal">
