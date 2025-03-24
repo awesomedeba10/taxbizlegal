@@ -2,6 +2,7 @@
 
 @section('content')
     <main class="flex-grow-1">
+
         <section class="slideshow bg-blue-100">
             <div class="splide" id="homeSlideshow" aria-label="Představení aplikace">
                 <div class="splide__track">
@@ -14,7 +15,8 @@
                                 <p class="mb-0 slideshow-fade">Register your company with ease and compliance. Get expert
                                     guidance, end-to-end documentation, and fast approvals.</p>
                                 <div class="slideshow-fade">
-                                    <a href="{{ route('front.services.company-registration') }}" class="d-block btn btn-lg btn-primary">Register
+                                    <a href="{{ route('front.services.company-registration') }}"
+                                        class="d-block btn btn-lg btn-primary">Register
                                         Now</a>
                                 </div>
                             </div>
@@ -71,6 +73,7 @@
 
             <p class="slideshow-typewriter h1 mb-0" hidden data-slideshow-writer></p>
         </section>
+
         <section class="position-relative z-2 pt-40 pt-md-0 mt-md-n40 text-center">
             <div class="container">
                 <div class="row gy-3 gy-md-0 gx-lg-40">
@@ -102,21 +105,42 @@
                 </div>
             </div>
         </section>
-        <section class="container my-80">
-            <p class="text-center"><strong>We've partnered with</strong></p>
-            <div class="partner-box-logo-scroller">
-                <div class="slide-track">
-                @for ($i = 0; $i < 3; $i++)
-                    <div class="slide"><img src="{{ asset('images/svg/meta.svg') }}" alt="" /></div>
-                    <div class="slide"><img src="{{ asset('images/svg/google.svg') }}" alt="" /></div>
-                    <div class="slide"><img src="{{ asset('images/svg/godaddy.svg') }}" alt="" /></div>
-                    <div class="slide"><img src="{{ asset('images/svg/payu.svg') }}" alt="" /></div>
-                    <div class="slide"><img src="{{ asset('images/svg/trustpilot.svg') }}" alt="" /></div>
-                @endfor
+
+        <section class="container my-80 top-services">
+            <div class="mod-flex mod-flex-wrap mod-items-center mod-my-20">
+                <div class="col-3 col-label"> <span class="label">Explore our Top Services
+                    </span>
+                </div>
+                <div class="col-9 mod-flex mod-flex-grow mod-w-auto mod-justify-around md:mod-flex-wrap sm:mod-flex-wra md:mod-gap-4 sm:mod-gap-4"> 
+                    <span class="mod-flex mod-justify-center mod-items-center"> 
+                        <img width="124" height="49"
+                            src="https://mo.work/wp-content/uploads/2024/10/ovo-energy-2.png"
+                            class="attachment-full size-full" alt="" loading="lazy" decoding="async">
+                    </span>
+                    <span class="mod-flex mod-justify-center mod-items-center">
+                            <img width="137" height="37"
+                                src="https://mo.work/wp-content/uploads/2024/10/gocarcredit.png"
+                                class="attachment-full size-full" alt="" loading="lazy" decoding="async"> 
+                    </span> 
+                    <span class="mod-flex mod-justify-center mod-items-center"> 
+                            <img width="51" height="55"
+                            src="https://mo.work/wp-content/uploads/2024/10/tottenham-1.png"
+                            class="attachment-full size-full" alt="" loading="lazy" decoding="async"> 
+                    </span>
+                    <span class="mod-flex mod-justify-center mod-items-center"> 
+                        <img width="51" height="55"
+                        src="https://mo.work/wp-content/uploads/2024/10/tottenham-1.png"
+                        class="attachment-full size-full" alt="" loading="lazy" decoding="async"> 
+                    </span>
+                    <span class="mod-flex mod-justify-center mod-items-center"> 
+                        <img width="51" height="55"
+                        src="https://mo.work/wp-content/uploads/2024/10/tottenham-1.png"
+                        class="attachment-full size-full" alt="" loading="lazy" decoding="async"> 
+                    </span>
                 </div>
             </div>
         </section>
-        
+
         <section class="container mod-my-16 lg:mod-my-24">
             <article class="banner bg-blue-100 pb-40 px-4 p-lg-5 p-xxl-80">
                 <div class="row gy-4 gx-lg-4 justify-content-center justify-content-lg-between align-items-center">
@@ -175,189 +199,171 @@
                 </div>
             </article>
         </section>
-        <section class="container my-80 my-xxl-120">
-            <article class="banner bg-blue-100 py-40 px-4 p-lg-5 px-xxl-80 pb-xxl-4">
-                <div class="row gy-4 gx-xl-40 justify-content-center justify-content-lg-between align-items-center">
-                    <div class="col-md-9 col-lg-6 d-flex flex-column gap-3 gap-lg-4">
-                        <h2 class="display-6 fw-bold mb-0">Zvyšte šance na nové zaměstnání</h2>
-                        <p class="text-lg mb-0 pe-xl-80 me-xxl-4">Řekněte personalistům, jakou práci hledáte a určete
-                            za jakých podmínek chcete pracovat. Třeba získáte práci snů.</p>
-                        <div
-                            class="d-flex justify-content-center justify-content-lg-start gap-2 gap-sm-3 gap-xl-4 text-center svg-scale scale-4 mb-0 order-first order-lg-0">
-                            <figure class="mb-0" style="width:3.5rem">
-                                <span class="text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                        height="24" fill="none" viewBox="0 0 24 24">
-                                        <path fill="currentColor"
-                                            d="M1 20V17.2C1 16.6333 1.14583 16.1125 1.4375 15.6375C1.72917 15.1625 2.11667 14.8 2.6 14.55C3.63333 14.0333 4.68333 13.6458 5.75 13.3875C6.81667 13.1292 7.9 13 9 13C10.1 13 11.1833 13.1292 12.25 13.3875C13.3167 13.6458 14.3667 14.0333 15.4 14.55C15.8833 14.8 16.2708 15.1625 16.5625 15.6375C16.8542 16.1125 17 16.6333 17 17.2V20H1ZM19 20V17C19 16.2667 18.7958 15.5625 18.3875 14.8875C17.9792 14.2125 17.4 13.6333 16.65 13.15C17.5 13.25 18.3 13.4208 19.05 13.6625C19.8 13.9042 20.5 14.2 21.15 14.55C21.75 14.8833 22.2083 15.2542 22.525 15.6625C22.8417 16.0708 23 16.5167 23 17V20H19ZM9 12C7.9 12 6.95833 11.6083 6.175 10.825C5.39167 10.0417 5 9.1 5 8C5 6.9 5.39167 5.95833 6.175 5.175C6.95833 4.39167 7.9 4 9 4C10.1 4 11.0417 4.39167 11.825 5.175C12.6083 5.95833 13 6.9 13 8C13 9.1 12.6083 10.0417 11.825 10.825C11.0417 11.6083 10.1 12 9 12ZM19 8C19 9.1 18.6083 10.0417 17.825 10.825C17.0417 11.6083 16.1 12 15 12C14.8167 12 14.5833 11.9792 14.3 11.9375C14.0167 11.8958 13.7833 11.85 13.6 11.8C14.05 11.2667 14.3958 10.675 14.6375 10.025C14.8792 9.375 15 8.7 15 8C15 7.3 14.8792 6.625 14.6375 5.975C14.3958 5.325 14.05 4.73333 13.6 4.2C13.8333 4.11667 14.0667 4.0625 14.3 4.0375C14.5333 4.0125 14.7667 4 15 4C16.1 4 17.0417 4.39167 17.825 5.175C18.6083 5.95833 19 6.9 19 8ZM3 18H15V17.2C15 17.0167 14.9542 16.85 14.8625 16.7C14.7708 16.55 14.65 16.4333 14.5 16.35C13.6 15.9 12.6917 15.5625 11.775 15.3375C10.8583 15.1125 9.93333 15 9 15C8.06667 15 7.14167 15.1125 6.225 15.3375C5.30833 15.5625 4.4 15.9 3.5 16.35C3.35 16.4333 3.22917 16.55 3.1375 16.7C3.04583 16.85 3 17.0167 3 17.2V18ZM9 10C9.55 10 10.0208 9.80417 10.4125 9.4125C10.8042 9.02083 11 8.55 11 8C11 7.45 10.8042 6.97917 10.4125 6.5875C10.0208 6.19583 9.55 6 9 6C8.45 6 7.97917 6.19583 7.5875 6.5875C7.19583 6.97917 7 7.45 7 8C7 8.55 7.19583 9.02083 7.5875 9.4125C7.97917 9.80417 8.45 10 9 10Z" />
-                                    </svg></span>
-                                <figcaption class="text-h6 mt-2">Pozice</figcaption>
-                            </figure>
-                            <figure class="mb-0" style="width:3.5rem">
-                                <span class="text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="25"
-                                        height="24" fill="none" viewBox="0 0 25 24">
-                                        <path fill="currentColor"
-                                            d="M14.5 13C13.6667 13 12.9583 12.7083 12.375 12.125C11.7917 11.5417 11.5 10.8333 11.5 10C11.5 9.16667 11.7917 8.45833 12.375 7.875C12.9583 7.29167 13.6667 7 14.5 7C15.3333 7 16.0417 7.29167 16.625 7.875C17.2083 8.45833 17.5 9.16667 17.5 10C17.5 10.8333 17.2083 11.5417 16.625 12.125C16.0417 12.7083 15.3333 13 14.5 13ZM7.5 16C6.95 16 6.47917 15.8042 6.0875 15.4125C5.69583 15.0208 5.5 14.55 5.5 14V6C5.5 5.45 5.69583 4.97917 6.0875 4.5875C6.47917 4.19583 6.95 4 7.5 4H21.5C22.05 4 22.5208 4.19583 22.9125 4.5875C23.3042 4.97917 23.5 5.45 23.5 6V14C23.5 14.55 23.3042 15.0208 22.9125 15.4125C22.5208 15.8042 22.05 16 21.5 16H7.5ZM9.5 14H19.5C19.5 13.45 19.6958 12.9792 20.0875 12.5875C20.4792 12.1958 20.95 12 21.5 12V8C20.95 8 20.4792 7.80417 20.0875 7.4125C19.6958 7.02083 19.5 6.55 19.5 6H9.5C9.5 6.55 9.30417 7.02083 8.9125 7.4125C8.52083 7.80417 8.05 8 7.5 8V12C8.05 12 8.52083 12.1958 8.9125 12.5875C9.30417 12.9792 9.5 13.45 9.5 14ZM20.5 20H3.5C2.95 20 2.47917 19.8042 2.0875 19.4125C1.69583 19.0208 1.5 18.55 1.5 18V7H3.5V18H20.5V20Z" />
-                                    </svg></span>
-                                <figcaption class="text-h6 mt-2">Mzda</figcaption>
-                            </figure>
-                            <figure class="mb-0" style="width:3.5rem">
-                                <span class="text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                        height="24" fill="none" viewBox="0 0 24 24">
-                                        <path fill="currentColor"
-                                            d="M12 12C12.55 12 13.0208 11.8042 13.4125 11.4125C13.8042 11.0208 14 10.55 14 10C14 9.45 13.8042 8.97917 13.4125 8.5875C13.0208 8.19583 12.55 8 12 8C11.45 8 10.9792 8.19583 10.5875 8.5875C10.1958 8.97917 10 9.45 10 10C10 10.55 10.1958 11.0208 10.5875 11.4125C10.9792 11.8042 11.45 12 12 12ZM12 19.35C14.0333 17.4833 15.5417 15.7875 16.525 14.2625C17.5083 12.7375 18 11.3833 18 10.2C18 8.38333 17.4208 6.89583 16.2625 5.7375C15.1042 4.57917 13.6833 4 12 4C10.3167 4 8.89583 4.57917 7.7375 5.7375C6.57917 6.89583 6 8.38333 6 10.2C6 11.3833 6.49167 12.7375 7.475 14.2625C8.45833 15.7875 9.96667 17.4833 12 19.35ZM12 22C9.31667 19.7167 7.3125 17.5958 5.9875 15.6375C4.6625 13.6792 4 11.8667 4 10.2C4 7.7 4.80417 5.70833 6.4125 4.225C8.02083 2.74167 9.88333 2 12 2C14.1167 2 15.9792 2.74167 17.5875 4.225C19.1958 5.70833 20 7.7 20 10.2C20 11.8667 19.3375 13.6792 18.0125 15.6375C16.6875 17.5958 14.6833 19.7167 12 22Z" />
-                                    </svg></span>
-                                <figcaption class="text-h6 mt-2">Lokality</figcaption>
-                            </figure>
-                            <figure class="mb-0" style="width:3.5rem">
-                                <span class="text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                        height="24" fill="none" viewBox="0 0 49 48">
-                                        <path fill="currentColor"
-                                            d="M24.083 40.9998C24.2497 40.9998 24.4413 40.9581 24.658 40.8748C24.8747 40.7915 25.0497 40.6831 25.183 40.5498L42.033 23.6498C42.4663 23.2165 42.7913 22.722 43.008 22.1665C43.2247 21.6109 43.333 21.0554 43.333 20.4998C43.333 19.9331 43.2247 19.3665 43.008 18.7998C42.7913 18.2331 42.4663 17.7331 42.033 17.2998L33.033 8.2998C32.5997 7.86647 32.0997 7.54147 31.533 7.3248C30.9663 7.10814 30.3997 6.9998 29.833 6.9998C29.2774 6.9998 28.7219 7.10814 28.1664 7.3248C27.6108 7.54147 27.1163 7.86647 26.683 8.2998L25.783 9.1998L29.833 13.2998C30.2663 13.7665 30.6497 14.3081 30.983 14.9248C31.3163 15.5415 31.483 16.2165 31.483 16.9498C31.483 18.2165 30.9913 19.3331 30.008 20.2998C29.0247 21.2665 27.8997 21.7498 26.633 21.7498C25.7997 21.7498 25.108 21.6248 24.558 21.3748C24.008 21.1248 23.5049 20.7691 23.0488 20.3078L19.383 16.6498L10.333 25.6998C10.1663 25.8665 10.0497 26.0419 9.98301 26.2261C9.91634 26.4103 9.88301 26.6077 9.88301 26.8182C9.88301 27.2393 10.0247 27.5915 10.308 27.8748C10.5913 28.1581 10.9441 28.2998 11.3664 28.2998C11.5775 28.2998 11.7747 28.2498 11.958 28.1498C12.1413 28.0498 12.2997 27.9331 12.433 27.7998L19.333 20.8998L21.433 22.9998L14.583 29.8498C14.4163 30.0165 14.2997 30.1998 14.233 30.3998C14.1663 30.5998 14.133 30.7998 14.133 30.9998C14.133 31.3998 14.283 31.7498 14.583 32.0498C14.883 32.3498 15.233 32.4998 15.633 32.4998C15.833 32.4998 16.0247 32.4581 16.208 32.3748C16.3913 32.2915 16.5497 32.1831 16.683 32.0498L23.583 25.1498L25.683 27.2498L18.833 34.0998C18.6997 34.2331 18.5913 34.4054 18.508 34.6165C18.4247 34.8276 18.383 35.0387 18.383 35.2498C18.383 35.6498 18.533 35.9998 18.833 36.2998C19.133 36.5998 19.483 36.7498 19.883 36.7498C20.083 36.7498 20.2663 36.7165 20.433 36.6498C20.5997 36.5831 20.7663 36.4665 20.933 36.2998L27.833 29.3998L29.933 31.4998L23.033 38.3998C22.8663 38.5665 22.7497 38.7498 22.683 38.9498C22.6163 39.1498 22.583 39.3331 22.583 39.4998C22.583 39.9665 22.7163 40.3331 22.983 40.5998C23.2497 40.8665 23.6163 40.9998 24.083 40.9998ZM24.0862 43.9998C22.9841 43.9998 21.9997 43.5915 21.133 42.7748C20.2663 41.9581 19.7497 40.9478 19.583 39.7439C18.4497 39.5812 17.4997 39.1165 16.733 38.3498C15.9663 37.5831 15.4997 36.6331 15.333 35.4998C14.1997 35.3331 13.258 34.8581 12.508 34.0748C11.758 33.2915 11.2997 32.3498 11.133 31.2498C9.89967 31.0831 8.88301 30.5831 8.08301 29.7498C7.28301 28.9165 6.88301 27.9165 6.88301 26.7498C6.88301 26.1831 6.99507 25.6157 7.21921 25.0474C7.44334 24.4791 7.76461 23.9799 8.18301 23.5498L19.383 12.3498L24.883 17.8498C25.1497 18.1165 25.4386 18.3248 25.7497 18.4748C26.0608 18.6248 26.3719 18.6998 26.683 18.6998C27.1163 18.6998 27.5247 18.5081 27.908 18.1248C28.2913 17.7415 28.483 17.3306 28.483 16.8921C28.483 16.6972 28.4247 16.4748 28.308 16.2248C28.1913 15.9748 27.9997 15.7165 27.733 15.4498L20.583 8.2998C20.1497 7.86647 19.6497 7.54147 19.083 7.3248C18.5163 7.10814 17.9497 6.9998 17.383 6.9998C16.8274 6.9998 16.2719 7.10814 15.7164 7.3248C15.1608 7.54147 14.6673 7.86409 14.236 8.29265L6.63301 15.8998C6.16634 16.3665 5.84134 16.8581 5.65801 17.3748C5.47467 17.8915 5.36634 18.4748 5.33301 19.1248C5.29967 19.7748 5.42467 20.4081 5.70801 21.0248C5.99134 21.6415 6.33301 22.1998 6.73301 22.6998L4.58301 24.8498C3.91634 24.1165 3.37467 23.2331 2.95801 22.1998C2.54134 21.1665 2.33301 20.1165 2.33301 19.0498C2.33301 18.0498 2.52467 17.0915 2.90801 16.1748C3.29134 15.2581 3.83301 14.4498 4.53301 13.7498L12.083 6.1998C12.8163 5.46647 13.6462 4.9248 14.5727 4.5748C15.4991 4.2248 16.4491 4.0498 17.4227 4.0498C18.3962 4.0498 19.3413 4.2248 20.258 4.5748C21.1747 4.9248 21.9997 5.46647 22.733 6.1998L23.633 7.0998L24.533 6.1998C25.2663 5.46647 26.0962 4.9248 27.0227 4.5748C27.9491 4.2248 28.8991 4.0498 29.8727 4.0498C30.8462 4.0498 31.7913 4.2248 32.708 4.5748C33.6247 4.9248 34.4497 5.46647 35.183 6.1998L44.133 15.1498C44.8663 15.8831 45.4163 16.717 45.783 17.6515C46.1497 18.5859 46.333 19.5359 46.333 20.5015C46.333 21.467 46.1497 22.4081 45.783 23.3248C45.4163 24.2415 44.8663 25.0665 44.133 25.7998L27.283 42.6498C26.8497 43.0831 26.3575 43.4165 25.8064 43.6498C25.2553 43.8831 24.6819 43.9998 24.0862 43.9998Z" />
-                                    </svg></span>
-                                <figcaption class="text-h6 mt-2">Pracovní vztah</figcaption>
-                            </figure>
-                            <figure class="mb-0" style="width:3.5rem">
-                                <span class="text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                        height="24" fill="none" viewBox="0 0 24 24">
-                                        <path fill="currentColor"
-                                            d="M13 17.5L16.5 14C16.6833 13.8167 16.8292 13.6 16.9375 13.35C17.0458 13.1 17.1 12.8333 17.1 12.55C17.1 11.9833 16.9 11.5 16.5 11.1C16.1 10.7 15.6167 10.5 15.05 10.5C14.7333 10.5 14.4208 10.5917 14.1125 10.775C13.8042 10.9583 13.4333 11.2667 13 11.7C12.5 11.2333 12.1083 10.9167 11.825 10.75C11.5417 10.5833 11.25 10.5 10.95 10.5C10.3833 10.5 9.9 10.7 9.5 11.1C9.1 11.5 8.9 11.9833 8.9 12.55C8.9 12.8333 8.95417 13.1 9.0625 13.35C9.17083 13.6 9.31667 13.8167 9.5 14L13 17.5ZM21.4 14.25L14.25 21.4C14.05 21.6 13.825 21.75 13.575 21.85C13.325 21.95 13.075 22 12.825 22C12.575 22 12.325 21.95 12.075 21.85C11.825 21.75 11.6 21.6 11.4 21.4L2.575 12.575C2.39167 12.3917 2.25 12.1792 2.15 11.9375C2.05 11.6958 2 11.4417 2 11.175V4C2 3.45 2.19583 2.97917 2.5875 2.5875C2.97917 2.19583 3.45 2 4 2H11.175C11.4417 2 11.7 2.05417 11.95 2.1625C12.2 2.27083 12.4167 2.41667 12.6 2.6L21.4 11.425C21.6 11.625 21.7458 11.85 21.8375 12.1C21.9292 12.35 21.975 12.6 21.975 12.85C21.975 13.1 21.9292 13.3458 21.8375 13.5875C21.7458 13.8292 21.6 14.05 21.4 14.25ZM12.825 20L19.975 12.85L11.15 4H4V11.15L12.825 20ZM6.5 8C6.91667 8 7.27083 7.85417 7.5625 7.5625C7.85417 7.27083 8 6.91667 8 6.5C8 6.08333 7.85417 5.72917 7.5625 5.4375C7.27083 5.14583 6.91667 5 6.5 5C6.08333 5 5.72917 5.14583 5.4375 5.4375C5.14583 5.72917 5 6.08333 5 6.5C5 6.91667 5.14583 7.27083 5.4375 7.5625C5.72917 7.85417 6.08333 8 6.5 8Z" />
-                                    </svg></span>
-                                <figcaption class="text-h6 mt-2">Benefity</figcaption>
-                            </figure>
-                        </div>
-                        <div>
-                            <a href="registrace/adept.html"
-                                class="btn btn-primary icon-hover-right d-flex d-lg-inline-flex">
-                                Chci to zkusit
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
-                                    viewBox="0 0 24 24">
-                                    <path fill="currentColor"
-                                        d="M16.175 13L10.575 18.6L12 20L20 12L12 4L10.575 5.4L16.175 11L4 11L4 13L16.175 13Z" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-8 col-lg-6 order-first order-lg-last">
-                        {{-- <figure class="ratio mb-0" style="--bs-aspect-ratio:86.7%">
 
-                            <img alt="Ukázka nastavení požadavků na vaše nové zaměstnání"
-                                src="images/img/home/requests.png" width="1112" height="964">
-                        </figure> --}}
-                    </div>
-                </div>
-            </article>
-        </section>
-        <section class="container my-80 my-xxl-120">
-            <h2 class="display-6 fw-bold mb-32">Jak to funguje?</h2>
-
-            <div class="row gy-40 gx-lg-40">
-                <div class="col-lg-4">
-                    <div class="d-flex flex-column gap-12 gap-lg-3 mx-auto">
-                        <figure class="text-primary svg-scale scale-40 mb-0"><svg xmlns="http://www.w3.org/2000/svg"
-                                width="24" height="24" fill="none" viewBox="0 0 49 48">
-                                <path fill="currentColor"
-                                    d="M24.083 40.9998C24.2497 40.9998 24.4413 40.9581 24.658 40.8748C24.8747 40.7915 25.0497 40.6831 25.183 40.5498L42.033 23.6498C42.4663 23.2165 42.7913 22.722 43.008 22.1665C43.2247 21.6109 43.333 21.0554 43.333 20.4998C43.333 19.9331 43.2247 19.3665 43.008 18.7998C42.7913 18.2331 42.4663 17.7331 42.033 17.2998L33.033 8.2998C32.5997 7.86647 32.0997 7.54147 31.533 7.3248C30.9663 7.10814 30.3997 6.9998 29.833 6.9998C29.2774 6.9998 28.7219 7.10814 28.1664 7.3248C27.6108 7.54147 27.1163 7.86647 26.683 8.2998L25.783 9.1998L29.833 13.2998C30.2663 13.7665 30.6497 14.3081 30.983 14.9248C31.3163 15.5415 31.483 16.2165 31.483 16.9498C31.483 18.2165 30.9913 19.3331 30.008 20.2998C29.0247 21.2665 27.8997 21.7498 26.633 21.7498C25.7997 21.7498 25.108 21.6248 24.558 21.3748C24.008 21.1248 23.5049 20.7691 23.0488 20.3078L19.383 16.6498L10.333 25.6998C10.1663 25.8665 10.0497 26.0419 9.98301 26.2261C9.91634 26.4103 9.88301 26.6077 9.88301 26.8182C9.88301 27.2393 10.0247 27.5915 10.308 27.8748C10.5913 28.1581 10.9441 28.2998 11.3664 28.2998C11.5775 28.2998 11.7747 28.2498 11.958 28.1498C12.1413 28.0498 12.2997 27.9331 12.433 27.7998L19.333 20.8998L21.433 22.9998L14.583 29.8498C14.4163 30.0165 14.2997 30.1998 14.233 30.3998C14.1663 30.5998 14.133 30.7998 14.133 30.9998C14.133 31.3998 14.283 31.7498 14.583 32.0498C14.883 32.3498 15.233 32.4998 15.633 32.4998C15.833 32.4998 16.0247 32.4581 16.208 32.3748C16.3913 32.2915 16.5497 32.1831 16.683 32.0498L23.583 25.1498L25.683 27.2498L18.833 34.0998C18.6997 34.2331 18.5913 34.4054 18.508 34.6165C18.4247 34.8276 18.383 35.0387 18.383 35.2498C18.383 35.6498 18.533 35.9998 18.833 36.2998C19.133 36.5998 19.483 36.7498 19.883 36.7498C20.083 36.7498 20.2663 36.7165 20.433 36.6498C20.5997 36.5831 20.7663 36.4665 20.933 36.2998L27.833 29.3998L29.933 31.4998L23.033 38.3998C22.8663 38.5665 22.7497 38.7498 22.683 38.9498C22.6163 39.1498 22.583 39.3331 22.583 39.4998C22.583 39.9665 22.7163 40.3331 22.983 40.5998C23.2497 40.8665 23.6163 40.9998 24.083 40.9998ZM24.0862 43.9998C22.9841 43.9998 21.9997 43.5915 21.133 42.7748C20.2663 41.9581 19.7497 40.9478 19.583 39.7439C18.4497 39.5812 17.4997 39.1165 16.733 38.3498C15.9663 37.5831 15.4997 36.6331 15.333 35.4998C14.1997 35.3331 13.258 34.8581 12.508 34.0748C11.758 33.2915 11.2997 32.3498 11.133 31.2498C9.89967 31.0831 8.88301 30.5831 8.08301 29.7498C7.28301 28.9165 6.88301 27.9165 6.88301 26.7498C6.88301 26.1831 6.99507 25.6157 7.21921 25.0474C7.44334 24.4791 7.76461 23.9799 8.18301 23.5498L19.383 12.3498L24.883 17.8498C25.1497 18.1165 25.4386 18.3248 25.7497 18.4748C26.0608 18.6248 26.3719 18.6998 26.683 18.6998C27.1163 18.6998 27.5247 18.5081 27.908 18.1248C28.2913 17.7415 28.483 17.3306 28.483 16.8921C28.483 16.6972 28.4247 16.4748 28.308 16.2248C28.1913 15.9748 27.9997 15.7165 27.733 15.4498L20.583 8.2998C20.1497 7.86647 19.6497 7.54147 19.083 7.3248C18.5163 7.10814 17.9497 6.9998 17.383 6.9998C16.8274 6.9998 16.2719 7.10814 15.7164 7.3248C15.1608 7.54147 14.6673 7.86409 14.236 8.29265L6.63301 15.8998C6.16634 16.3665 5.84134 16.8581 5.65801 17.3748C5.47467 17.8915 5.36634 18.4748 5.33301 19.1248C5.29967 19.7748 5.42467 20.4081 5.70801 21.0248C5.99134 21.6415 6.33301 22.1998 6.73301 22.6998L4.58301 24.8498C3.91634 24.1165 3.37467 23.2331 2.95801 22.1998C2.54134 21.1665 2.33301 20.1165 2.33301 19.0498C2.33301 18.0498 2.52467 17.0915 2.90801 16.1748C3.29134 15.2581 3.83301 14.4498 4.53301 13.7498L12.083 6.1998C12.8163 5.46647 13.6462 4.9248 14.5727 4.5748C15.4991 4.2248 16.4491 4.0498 17.4227 4.0498C18.3962 4.0498 19.3413 4.2248 20.258 4.5748C21.1747 4.9248 21.9997 5.46647 22.733 6.1998L23.633 7.0998L24.533 6.1998C25.2663 5.46647 26.0962 4.9248 27.0227 4.5748C27.9491 4.2248 28.8991 4.0498 29.8727 4.0498C30.8462 4.0498 31.7913 4.2248 32.708 4.5748C33.6247 4.9248 34.4497 5.46647 35.183 6.1998L44.133 15.1498C44.8663 15.8831 45.4163 16.717 45.783 17.6515C46.1497 18.5859 46.333 19.5359 46.333 20.5015C46.333 21.467 46.1497 22.4081 45.783 23.3248C45.4163 24.2415 44.8663 25.0665 44.133 25.7998L27.283 42.6498C26.8497 43.0831 26.3575 43.4165 25.8064 43.6498C25.2553 43.8831 24.6819 43.9998 24.0862 43.9998Z" />
-                            </svg></figure>
-                        <h3 class="mb-0">Pracovní profil</h3>
-                        <p class="mb-0 text-lg">Ušetřete čas. Nechte se ulovit. Řekněte personalistům jaké zaměstnání
-                            hledáte. Třeba získáte práci snů.</p>
-                        <div class="mx-n1">
-                            <a href="registrace/adept.html" class="btn btn-link">Přidat pracovní profil</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="d-flex flex-column gap-12 gap-lg-3 mx-auto">
-                        <figure class="text-primary svg-scale scale-40 mb-0"><svg xmlns="http://www.w3.org/2000/svg"
-                                width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                <path fill="currentColor"
-                                    d="M19.95 21C17.8667 21 15.8083 20.5458 13.775 19.6375C11.7417 18.7292 9.89167 17.4417 8.225 15.775C6.55833 14.1083 5.27083 12.2583 4.3625 10.225C3.45417 8.19167 3 6.13333 3 4.05C3 3.75 3.1 3.5 3.3 3.3C3.5 3.1 3.75 3 4.05 3H8.1C8.33333 3 8.54167 3.07917 8.725 3.2375C8.90833 3.39583 9.01667 3.58333 9.05 3.8L9.7 7.3C9.73333 7.56667 9.725 7.79167 9.675 7.975C9.625 8.15833 9.53333 8.31667 9.4 8.45L6.975 10.9C7.30833 11.5167 7.70417 12.1125 8.1625 12.6875C8.62083 13.2625 9.125 13.8167 9.675 14.35C10.1917 14.8667 10.7333 15.3458 11.3 15.7875C11.8667 16.2292 12.4667 16.6333 13.1 17L15.45 14.65C15.6 14.5 15.7958 14.3875 16.0375 14.3125C16.2792 14.2375 16.5167 14.2167 16.75 14.25L20.2 14.95C20.4333 15.0167 20.625 15.1375 20.775 15.3125C20.925 15.4875 21 15.6833 21 15.9V19.95C21 20.25 20.9 20.5 20.7 20.7C20.5 20.9 20.25 21 19.95 21ZM6.025 9L7.675 7.35L7.25 5H5.025C5.10833 5.68333 5.225 6.35833 5.375 7.025C5.525 7.69167 5.74167 8.35 6.025 9ZM14.975 17.95C15.625 18.2333 16.2875 18.4583 16.9625 18.625C17.6375 18.7917 18.3167 18.9 19 18.95V16.75L16.65 16.275L14.975 17.95Z" />
-                            </svg></figure>
-                        <h3 class="mb-0">Soukromí na 1. místě</h3>
-                        <p class="mb-0 text-lg">Zadejte společnosti, které neuvidí váš pracovní profil, nebo uveďte,
-                            kdy a jak vás mohou personalisté kontaktovat.</p>
-                        <div class="mx-n1">
-                            <a href="registrace/adept.html" class="btn btn-link">Chci to zkusit</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="d-flex flex-column gap-12 gap-lg-3 mx-auto">
-                        <figure class="text-primary svg-scale scale-40 mb-0"><svg xmlns="http://www.w3.org/2000/svg"
-                                width="24" height="24" fill="none" viewBox="0 0 48 48">
-                                <path fill="currentColor"
-                                    d="M13.85 34.05H27.6V31.05H13.85V34.05ZM13.85 25.5H34.15V22.5H13.85V25.5ZM13.85 16.95H34.15V13.95H13.85V16.95ZM9 42C8.2 42 7.5 41.7 6.9 41.1C6.3 40.5 6 39.8 6 39V9C6 8.2 6.3 7.5 6.9 6.9C7.5 6.3 8.2 6 9 6H39C39.8 6 40.5 6.3 41.1 6.9C41.7 7.5 42 8.2 42 9V39C42 39.8 41.7 40.5 41.1 41.1C40.5 41.7 39.8 42 39 42H9ZM9 39H39V9H9V39Z" />
-                            </svg></figure>
-                        <h3 class="mb-0">Dokonalý životopis</h3>
-                        <p class="mb-0 text-lg">Provedeme vás tvorbou profesionálního CV. Životopis můžete kdykoliv
-                            upravit a stáhnout jako PDF. Máte vlastní? Můžete ho nahrát.</p>
-                        <div class="mx-n1">
-                            <a href="registrace/adept.html" class="btn btn-link">To se mi líbí</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-        </section>
-        <section class="container my-80 my-xxl-120">
-            <article class="banner bg-blue-100 pb-40 px-4 p-lg-5 p-xxl-80">
-                <div class="row gy-4 gx-lg-4 justify-content-center justify-content-lg-between align-items-center">
-                    <div class="col-md-9 col-lg-8 d-flex flex-column gap-3 gap-lg-4">
-                        <h2 class="display-6 fw-bold mb-0">Why Do Customers Love Us?</h2>
-                        <p class="text-lg mb-0">We provide hassle-free legal and financial solutions with expert
-                            assistance, ensuring transparency and efficiency at every step.</p>
-                        <div class="row gx-3 gx-lg-40 svg-scale scale-4 text-sm">
-                            <div class="col-4">
-                                <figure class="mb-12 text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                        height="24" fill="none" viewBox="0 0 24 24">
-                                        <path fill="currentColor"
-                                            d="M12 22C10.6167 22 9.31667 21.7375 8.1 21.2125C6.88333 20.6875 5.825 19.975 4.925 19.075C4.025 18.175 3.3125 17.1167 2.7875 15.9C2.2625 14.6833 2 13.3833 2 12C2 10.6167 2.2625 9.31667 2.7875 8.1C3.3125 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.3125 8.1 2.7875C9.31667 2.2625 10.6167 2 12 2C13.3833 2 14.6833 2.2625 15.9 2.7875C17.1167 3.3125 18.175 4.025 19.075 4.925C19.975 5.825 20.6875 6.88333 21.2125 8.1C21.7375 9.31667 22 10.6167 22 12C22 13.3833 21.7375 14.6833 21.2125 15.9C20.6875 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6875 15.9 21.2125C14.6833 21.7375 13.3833 22 12 22ZM12 20C12.9 20 13.7667 19.8542 14.6 19.5625C15.4333 19.2708 16.2 18.85 16.9 18.3L5.7 7.1C5.15 7.8 4.72917 8.56667 4.4375 9.4C4.14583 10.2333 4 11.1 4 12C4 14.2333 4.775 16.125 6.325 17.675C7.875 19.225 9.76667 20 12 20ZM18.3 16.9C18.85 16.2 19.2708 15.4333 19.5625 14.6C19.8542 13.7667 20 12.9 20 12C20 9.76667 19.225 7.875 17.675 6.325C16.125 4.775 14.2333 4 12 4C11.1 4 10.2333 4.14583 9.4 4.4375C8.56667 4.72917 7.8 5.15 7.1 5.7L18.3 16.9Z" />
-                                    </svg></figure>
-                                <h3 class="h6 mb-2">Affordable Professional Services</h3>
-                                <p>Get expert legal and financial assistance at competitive prices, tailored to your needs.
-                                </p>
+        <section class="container mod-my-16 lg:mod-my-24">
+            <div class="mod-mr-auto mod-ml-auto mod-w-full">
+                <div class="mod-flex mod-items-center mod-flex-col mod-flex-nowwrap mod-justify-start">
+                    <div
+                        class="process mod-flex mod-items-center mod-flex-col mod-flex-nowwrap mod-justify-start mod-mr-auto mod-ml-auto mod-text-center">
+                        <h1 class="mod-text-s-32 md:mod-text-s-20 sm:mod-text-s-20 text-blue">Simple. Fast. Hassle-Free
+                        </h1>
+                        <h2> Get Started with Us in Just <span class="text-blue">4 simple steps</span> curated Just for
+                            <span class="text-blue">You</span>
+                        </h2>
+                        <div class="timeline-content">
+                            <div class="timeline-progress">
+                                <div class="timeline-fade-overlay-top"></div><img
+                                    src="https://cdn.prod.website-files.com/670e055571ec3fdaefa6c351/67af2969208b102a44ad93a2_hor-golf-balls.svg"
+                                    loading="lazy" alt="golf balls" class="timeline-line">
+                                <div class="timeline-fade-overlay-bottom"></div>
+                                <div class="timeline-progress-line-cover"></div>
                             </div>
-                            <div class="col-4">
-                                <figure class="mb-12 text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                        height="24" fill="none" viewBox="0 0 20 21">
-                                        <path fill="currentColor"
-                                            d="M12.7917 14.0417L13.8542 12.9792L10.75 9.875V5.5H9.25V10.5L12.7917 14.0417ZM10 18.5C8.89756 18.5 7.86153 18.2917 6.89192 17.875C5.92231 17.4583 5.07292 16.8854 4.34375 16.1562C3.61458 15.4271 3.04167 14.5767 2.625 13.605C2.20833 12.6334 2 11.5952 2 10.4905C2 9.38571 2.20833 8.34722 2.625 7.375C3.04167 6.40278 3.61458 5.55556 4.34375 4.83333C5.07292 4.11111 5.92332 3.54167 6.89496 3.125C7.86661 2.70833 8.90481 2.5 10.0095 2.5C11.1143 2.5 12.1528 2.71 13.1251 3.13C14.0974 3.55 14.9432 4.12 15.6625 4.84C16.3817 5.56 16.9511 6.40667 17.3707 7.38C17.7902 8.35333 18 9.39333 18 10.5C18 11.6024 17.7917 12.6385 17.375 13.6081C16.9583 14.5777 16.3889 15.4271 15.6667 16.1562C14.9444 16.8854 14.0963 17.4583 13.1223 17.875C12.1482 18.2917 11.1075 18.5 10 18.5ZM10.0099 17C11.8082 17 13.3395 16.3646 14.6037 15.0938C15.8679 13.8229 16.5 12.2884 16.5 10.4901C16.5 8.69177 15.8679 7.16052 14.6037 5.89631C13.3395 4.6321 11.8082 4 10.0099 4C8.21165 4 6.67708 4.6321 5.40625 5.89631C4.13542 7.16052 3.5 8.69177 3.5 10.4901C3.5 12.2884 4.13542 13.8229 5.40625 15.0938C6.67708 16.3646 8.21165 17 10.0099 17Z" />
-                                    </svg></figure>
-                                <h3 class="h6 mb-2">Diverse Expert Network</h3>
-                                <p>Consult top-tier lawyers, CA, and secretaries for seamless compliance and advisory</p>
-                            </div>
-                            <div class="col-4">
-                                <figure class="mb-12 text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                        height="24" fill="none" viewBox="0 0 24 24">
-                                        <path fill="currentColor"
-                                            d="M10.6 16.6L17.65 9.55L16.25 8.15L10.6 13.8L7.75 10.95L6.35 12.35L10.6 16.6ZM12 22C10.6167 22 9.31667 21.7375 8.1 21.2125C6.88333 20.6875 5.825 19.975 4.925 19.075C4.025 18.175 3.3125 17.1167 2.7875 15.9C2.2625 14.6833 2 13.3833 2 12C2 10.6167 2.2625 9.31667 2.7875 8.1C3.3125 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.3125 8.1 2.7875C9.31667 2.2625 10.6167 2 12 2C13.3833 2 14.6833 2.2625 15.9 2.7875C17.1167 3.3125 18.175 4.025 19.075 4.925C19.975 5.825 20.6875 6.88333 21.2125 8.1C21.7375 9.31667 22 10.6167 22 12C22 13.3833 21.7375 14.6833 21.2125 15.9C20.6875 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6875 15.9 21.2125C14.6833 21.7375 13.3833 22 12 22ZM12 20C14.2333 20 16.125 19.225 17.675 17.675C19.225 16.125 20 14.2333 20 12C20 9.76667 19.225 7.875 17.675 6.325C16.125 4.775 14.2333 4 12 4C9.76667 4 7.875 4.775 6.325 6.325C4.775 7.875 4 9.76667 4 12C4 14.2333 4.775 16.125 6.325 17.675C7.875 19.225 9.76667 20 12 20Z" />
-                                    </svg></figure>
-                                <h3 class="h6 mb-2">Quick Customer Support</h3>
-                                <p>We value your time—get responses to your queries within 24 hours* with dedicated support.
-                                </p>
+                            <div class="timeline-content-right">
+                                <div class="mod-relative">
+                                    <div class="timeline-circle-wrapper">
+                                        <div class="timeline-circle">
+                                            <div>1</div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="mod-text-left">
+                                            <h1 class="mod-mb-4">Book a Free Consultation</h1>
+                                            <p>Tell us what you need! Our experts will connect with you to understand your
+                                                requirements and guide you through the process.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mod-relative">
+                                    <div class="timeline-circle-wrapper">
+                                        <div class="timeline-circle">
+                                            <div>2</div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="mod-text-left">
+                                            <h1 class="mod-mb-4">Pick the Right Service</h1>
+                                            <p>
+                                                No Hidden Fess - Select from a wide range of professional services tailored
+                                                to your needs. Our transparent process ensures you get exactly what you’re
+                                                looking for.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mod-relative">
+                                    <div class="timeline-circle-wrapper">
+                                        <div class="timeline-circle">
+                                            <div>3</div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="mod-text-left">
+                                            <h1 class="mod-mb-4">Share Your Details – We Handle the Rest!</h1>
+                                            <p>
+                                                Skip the paperwork! Our experts will ask for the necessary documents & we'll
+                                                take care of everything for you.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mod-relative">
+                                    <div class="timeline-circle-wrapper">
+                                        <div class="timeline-circle">
+                                            <img
+                                                src="https://cdn.prod.website-files.com/670e055571ec3fdaefa6c351/679cac16a679337a4633d8cb_success-icon.svg"
+                                                loading="lazy" alt="golf success icon" class="timeline-icon">
+                                        </div>
+                                        <img src="https://cdn.prod.website-files.com/670e055571ec3fdaefa6c351/679caf900953594022ab7eac_arrow-down.svg"
+                                            loading="lazy" alt="arrow down" class="timeline-last-arrow">
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="mod-text-left">
+                                            <h1 class="mod-mb-4">We Handle It, You Relax</h1>
+                                            <p>
+                                                Stay in the loop with real-time updates while we handle the heavy lifting.
+                                                Once everything is processed, you’ll receive confirmations securely &
+                                                hassle-free!
+                                            </p>
+                                        </div>
+                                        <div id="w-node-_86eb85cf-5873-2916-7991-48c17ff6deeb-65a559f1"
+                                            class="spacer-large"></div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div>
-                            <a href="{{ route('front.contact') }}"
+                        <div class="mod-flex mod-justify-start mod-w-full mod-mt-16">
+                            <a href="http://127.0.0.1:8000/contact-us"
                                 class="btn btn-primary icon-hover-right d-flex d-lg-inline-flex">
                                 Talk to Expert Now
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
                                     viewBox="0 0 24 24">
                                     <path fill="currentColor"
-                                        d="M16.175 13L10.575 18.6L12 20L20 12L12 4L10.575 5.4L16.175 11L4 11L4 13L16.175 13Z" />
+                                        d="M16.175 13L10.575 18.6L12 20L20 12L12 4L10.575 5.4L16.175 11L4 11L4 13L16.175 13Z">
+                                    </path>
                                 </svg>
                             </a>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-4 col-xl-4 order-first order-lg-last">
-                        <figure class="ratio text-primary mx-auto my-20" style="--bs-aspect-ratio:100%;">
-                            <img src="{{ asset('images/img/home/cusss.png') }}">
-                        </figure>
+                </div>
+        </section>
+
+        <section class="container my-80">
+            <p class="text-center"><strong>We've partnered with</strong></p>
+            <div class="partner-box-logo-scroller">
+                <div class="slide-track">
+                    @for ($i = 0; $i < 3; $i++)
+                        <div class="slide"><img src="{{ asset('images/svg/meta.svg') }}" alt="" /></div>
+                        <div class="slide"><img src="{{ asset('images/svg/google.svg') }}" alt="" /></div>
+                        <div class="slide"><img src="{{ asset('images/svg/godaddy.svg') }}" alt="" /></div>
+                        <div class="slide"><img src="{{ asset('images/svg/payu.svg') }}" alt="" /></div>
+                        <div class="slide"><img src="{{ asset('images/svg/trustpilot.svg') }}" alt="" /></div>
+                    @endfor
+                </div>
+            </div>
+        </section>
+
+        <section class="container my-8 mod-relative mod-max-w-full">
+            <div class="services-extra-container mod-relative mod-py-20 mod-ml-auto mod-mr-auto mod-w-full mod-px-20">
+                <div
+                    class="mod-flex mod-items-center mod-justify-start mod-flex-nowwrap mod-flex-col mod-mb-12 mod-ml-auto mod-mr-auto sm:mod-py-20">
+                    <h1 class="mod-font-black mod-space-loose">
+                        Stress-Free <span class="text-blue">Services</span> Handled by <span
+                            class="text-blue">Experts</span>
+                    </h1>
+                </div>
+                <div class="services-extra-component">
+                    <div class="services-extra-item-wrap">
+                        <img src="{{ asset('images/svg/services-extra-business-handshake.svg') }}" loading="lazy"
+                            alt="Step 1" class="services-extra-item-image">
+                        <h3 class="services-extra-title">Tell Us Your Needs</h3>
+                        <p>Simply submit your request, and we’ll take it from there. No paperwork, no confusion.</p>
+                    </div>
+                    <div id="w-node-step1" class="services-extra-sign-wrap">
+                        <img src="{{ asset('images/svg/services-extra-cross.svg') }}" loading="lazy" alt="plus icon"
+                            class="services-extra-sign">
+                    </div>
+                    <div class="services-extra-item-wrap">
+                        <img src="{{ asset('images/svg/services-extra-business-doc.svg') }}" loading="lazy"
+                            alt="Step 2" class="services-extra-item-image">
+                        <h3 class="services-extra-title">We Handle Everything</h3>
+                        <p>Our experts manage the entire process—documentation, verification, and submission.</p>
+                    </div>
+                    <div id="w-node-step2" class="services-extra-sign-wrap">
+                        <img src="{{ asset('images/svg/services-extra-equal.svg') }}" loading="lazy" alt="equals icon"
+                            class="services-extra-sign">
+                    </div>
+                    <div class="services-extra-item-wrap">
+                        <img src="{{ asset('images/svg/services-extra-business-result.svg') }}" loading="lazy"
+                            alt="Step 3" class="services-extra-item-image">
+                        <h3 class="services-extra-title">Relax & Get Results</h3>
+                        <p>Sit back while we complete the process. You'll be updated every step of the way!</p>
                     </div>
                 </div>
-            </article>
+            </div>
+            <div class="section-bg-wrap is-gradient"></div>
         </section>
+
+
         <section class="container my-80 mt-lg-120 mb-xxl-120">
             <div class="row gy-5 gx-20 gx-lg-40">
                 <h2 class="display-6 fw-bold col-lg-4 pe-120 pe-lg-3 mb-2">Hear from our customers</h2>
@@ -444,78 +450,7 @@
                 </div>
             </div>
         </section>
-        <section class="container my-80 my-xxl-120">
-            <article class="banner bg-blue-100 py-40 px-4 p-lg-5 p-xxl-80">
-                <div class="row gy-32 justify-content-center justify-content-lg-between">
-                    <div class="col-md-9 col-lg-6 col-xl-5 text-center text-lg-start">
-                        <h2 class="display-6 fw-bold mb-3 mb-xl-4">Přehledný editor&nbsp;CV</h2>
-                        <p class="text-lg mb-3 mb-xl-4">Přidejte k vašemu profilu životopis. Vytvořit ho můžete zdarma,
-                            s neomezeným stahováním v PDF a&nbsp;dalšími vychytávkami.</p>
-                        <div
-                            class="d-flex justify-content-center justify-content-lg-start gap-3 text-center svg-scale scale-4 mb-32 mb-xxl-40">
-                            <figure class="mb-0" style="width:3.75rem">
-                                <span class="text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                        height="24" fill="none" viewBox="0 0 24 24">
-                                        <path fill="currentColor"
-                                            d="M12 16L7 11L8.4 9.55L11 12.15V4H13V12.15L15.6 9.55L17 11L12 16ZM6 20C5.45 20 4.97917 19.8042 4.5875 19.4125C4.19583 19.0208 4 18.55 4 18V15H6V18H18V15H20V18C20 18.55 19.8042 19.0208 19.4125 19.4125C19.0208 19.8042 18.55 20 18 20H6Z" />
-                                    </svg></span>
-                                <figcaption class="text-h6 mt-2">Formát PDF</figcaption>
-                            </figure>
-                            <figure class="mb-0 d-none d-sm-block" style="width:3.75rem">
-                                <span class="text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                        height="24" fill="none" viewBox="0 0 24 24">
-                                        <path fill="currentColor"
-                                            d="M10.6 16.6L17.65 9.55L16.25 8.15L10.6 13.8L7.75 10.95L6.35 12.35L10.6 16.6ZM12 22C10.6167 22 9.31667 21.7375 8.1 21.2125C6.88333 20.6875 5.825 19.975 4.925 19.075C4.025 18.175 3.3125 17.1167 2.7875 15.9C2.2625 14.6833 2 13.3833 2 12C2 10.6167 2.2625 9.31667 2.7875 8.1C3.3125 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.3125 8.1 2.7875C9.31667 2.2625 10.6167 2 12 2C13.3833 2 14.6833 2.2625 15.9 2.7875C17.1167 3.3125 18.175 4.025 19.075 4.925C19.975 5.825 20.6875 6.88333 21.2125 8.1C21.7375 9.31667 22 10.6167 22 12C22 13.3833 21.7375 14.6833 21.2125 15.9C20.6875 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6875 15.9 21.2125C14.6833 21.7375 13.3833 22 12 22ZM12 20C14.2333 20 16.125 19.225 17.675 17.675C19.225 16.125 20 14.2333 20 12C20 9.76667 19.225 7.875 17.675 6.325C16.125 4.775 14.2333 4 12 4C9.76667 4 7.875 4.775 6.325 6.325C4.775 7.875 4 9.76667 4 12C4 14.2333 4.775 16.125 6.325 17.675C7.875 19.225 9.76667 20 12 20Z" />
-                                    </svg></span>
-                                <figcaption class="text-h6 mt-2">Snadné úpravy</figcaption>
-                            </figure>
-                            <figure class="mb-0" style="width:3.75rem">
-                                <span class="text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                        height="24" fill="none" viewBox="0 0 24 24">
-                                        <path fill="currentColor"
-                                            d="M19 19H8C7.45 19 6.97917 18.8042 6.5875 18.4125C6.19583 18.0208 6 17.55 6 17V3C6 2.45 6.19583 1.97917 6.5875 1.5875C6.97917 1.19583 7.45 1 8 1H15L21 7V17C21 17.55 20.8042 18.0208 20.4125 18.4125C20.0208 18.8042 19.55 19 19 19ZM14 8V3H8V17H19V8H14ZM4 23C3.45 23 2.97917 22.8042 2.5875 22.4125C2.19583 22.0208 2 21.55 2 21V7H4V21H15V23H4Z" />
-                                    </svg></span>
-                                <figcaption class="text-h6 mt-2">Změňte šablonu</figcaption>
-                            </figure>
-                            <figure class="mb-0" style="width:3.75rem">
-                                <span class="text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                        height="24" fill="none" viewBox="0 0 24 24">
-                                        <path fill="currentColor"
-                                            d="M8.65 20.5L2.5 14.35C2.33333 14.1833 2.20833 14 2.125 13.8C2.04167 13.6 2 13.3917 2 13.175C2 12.9583 2.04167 12.75 2.125 12.55C2.20833 12.35 2.33333 12.1667 2.5 12L8.25 6.275L5.6 3.625L7.15 2L17.15 12C17.3167 12.1667 17.4375 12.35 17.5125 12.55C17.5875 12.75 17.625 12.9583 17.625 13.175C17.625 13.3917 17.5875 13.6 17.5125 13.8C17.4375 14 17.3167 14.1833 17.15 14.35L11 20.5C10.8333 20.6667 10.65 20.7917 10.45 20.875C10.25 20.9583 10.0417 21 9.825 21C9.60833 21 9.4 20.9583 9.2 20.875C9 20.7917 8.81667 20.6667 8.65 20.5ZM9.825 7.85L4.475 13.2H15.175L9.825 7.85ZM19.8 21C19.2 21 18.6917 20.7875 18.275 20.3625C17.8583 19.9375 17.65 19.4167 17.65 18.8C17.65 18.35 17.7625 17.925 17.9875 17.525C18.2125 17.125 18.4667 16.7333 18.75 16.35L19.8 15L20.9 16.35C21.1667 16.7333 21.4167 17.125 21.65 17.525C21.8833 17.925 22 18.35 22 18.8C22 19.4167 21.7833 19.9375 21.35 20.3625C20.9167 20.7875 20.4 21 19.8 21Z" />
-                                    </svg></span>
-                                <figcaption class="text-h6 mt-2">Vyberte barvu</figcaption>
-                            </figure>
-                            <figure class="mb-0" style="width:3.75rem">
-                                <span class="text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                        height="24" fill="none" viewBox="0 0 24 24">
-                                        <path fill="currentColor"
-                                            d="M11 22V16H13V18H21V20H13V22H11ZM3 20V18H9V20H3ZM6.425 14H8.5L9.6 10.925H14.425L15.5 14H17.575L13.075 2H10.925L6.425 14ZM10.2 9.2L11.95 4.225H12.05L13.8 9.2H10.2Z" />
-                                    </svg></span>
-                                <figcaption class="text-h6 mt-2">Zvolte písmo</figcaption>
-                            </figure>
-                        </div>
-                        <div>
-                            <a href="registrace/adept.html"
-                                class="btn btn-primary icon-hover-right d-flex d-lg-inline-flex">
-                                Vytvořte si své CV
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
-                                    viewBox="0 0 24 24">
-                                    <path fill="currentColor"
-                                        d="M16.175 13L10.575 18.6L12 20L20 12L12 4L10.575 5.4L16.175 11L4 11L4 13L16.175 13Z" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-8 col-lg-6 col-xl-7 order-first order-lg-last ps-xxl-0">
-                        <figure class="ratio mb-0" style="--bs-aspect-ratio:60.2%">
 
-                            <img alt="Ukázka CV editor na počítači a telefonu"
-                                src="{{ asset('images/img/home/hledat-kandidaty.png') }}" width="1274" height="786">
-                        </figure>
-                    </div>
-                </div>
-            </article>
-        </section>
         <section class="templateShowcase my-80 my-xxl-120">
             <div class="container">
                 <h2 class="mb-20 mb-md-40 pb-md-1 pe-md-120">What do Customers huss about Us?</h2>
