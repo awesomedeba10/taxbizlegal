@@ -198,7 +198,7 @@
                         <h3 class="about-values__title">Découvrez dès maintenant tous
                             nos produits</h3>
                         <a class="about-values__button"
-                            href="http://assurancevisiteurs.ca/produits/"
+                            href="produits"
                             target>Découvrir nos produits</a>
                     </div>
                 </div>
