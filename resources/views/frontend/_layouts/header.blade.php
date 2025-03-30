@@ -256,6 +256,7 @@
                 </div>
             </div>
         </div>
+
         {{-- Mobile Header Starts here --}}
         <div class="mod-hidden sm:mod-flex mod-h-full mod-w-3/4">
             <a data-label="Clear" class="mod-flex mod-items-center" href="{{ route('front.home') }}">
@@ -266,9 +267,9 @@
 
             </a>
 
-            <div class="mod-text-s-14 mod-font-medium mod-py-3 mod-cursor-pointer mod-w-1/3  mobile-spcl-sidenav-toggle">
+            <div class="mod-flex mod-text-s-14 mod-font-medium mod-py-3 mod-cursor-pointer mod-w-1/3  mobile-spcl-sidenav-toggle">
                 Services
-                <span class="mod-inline-block mod-caret mod-caret-down mod-ml-1 md:mod-ml-0"></span>
+                <span class="mod-inline-block mod-caret mod-caret-down mod-ml-3 md:mod-ml-0"></span>
             </div>
             <div class="mod-sidenav mod-p-4 header-sidenav mobile-spcl-sidenav">
                 <div class="mod-flex mod-flex-wrap mod-pb-8 mod-mb-8">
@@ -518,7 +519,7 @@
                 </div>
             </div>
         </div>
-        <div class="mod-w-2/5 mod-hidden mod-items-center sm:mod-flex sm:mod-justify-end mobile-sidenav">
+        <div class="mod-w-1/5 mod-hidden mod-items-center sm:mod-flex sm:mod-justify-end mobile-sidenav">
             <div class="mod-toggle mobile-sidenav-bc">
                 <div class="mod-toggle-bar"></div>
                 <div class="mod-toggle-bar"></div>

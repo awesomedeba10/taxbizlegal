@@ -10,6 +10,49 @@
 
                         <div class="splide__slide slideshow-slide">
                             <div class="slideshow-content">
+                                <p class="h5 text-primary mb-0">Get Company Registration & Compliance Solutions Under One
+                                    Roof!</p>
+                                <h1 class="h1 mb-0" data-slideshow-title>Top-Rated Business Services in Just a Few Taps</h1>
+
+                                <div class="slideshow-fade">
+                                    <div class="service-grid">
+                                        <div class="service-item">
+                                            <a href="{{ route('front.services.company-registration') }}">
+                                                <img src="{{ asset('images/svg/service-company.svg') }}">Company
+                                                Registration
+                                            </a>
+                                        </div>
+                                        <div class="service-item">
+                                            <a href="{{ route('front.services.company-registration') }}">
+                                                <img src="{{ asset('images/svg/service-gst.svg') }}">
+                                                GST & Tax Filings</a>
+                                        </div>
+                                        <div class="service-item">
+                                            <a href="{{ route('front.services.company-registration') }}">
+                                                <img src="{{ asset('images/svg/service-trademark.svg') }}">
+                                                Trademark Registration
+                                            </a>
+                                        </div>
+                                        <div class="service-item">
+                                            <a href="{{ route('front.services.company-registration') }}">
+                                                <img src="{{ asset('images/svg/service-legal.svg') }}">
+                                                Legal & Compliance
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slideshow-media slideshow-media--custom">
+                                <figure class="slideshow-figure slideshow-figure--custom">
+                                    <img alt="Business Solutions Made Easy" class="slideshow-img slideshow-img--custom"
+                                        src="{{ asset('images/img/home/banner-home-first.svg') }}" width="1184"
+                                        height="837">
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="splide__slide slideshow-slide">
+                            <div class="slideshow-content">
                                 <p class="h5 text-primary mb-0">Start Your Business Today!</p>
                                 <h1 class="h1 mb-0" data-slideshow-title>Start Your Private Limited Company Hassle-Free</h1>
                                 <p class="mb-0 slideshow-fade">Register your company with ease and compliance. Get expert
@@ -24,7 +67,7 @@
                                 <figure class="slideshow-figure slideshow-figure--custom">
                                     <img alt="Kdo řekl, že novou práci musíte hledat?"
                                         class="slideshow-img slideshow-img--custom"
-                                        src="{{ asset('images/img/organic-flat-people-business-training-illustration - Copy.webp') }}"
+                                        src="{{ asset('images/img/home/home-banner-company.webp') }}"
                                         width="1184" height="837">
                                 </figure>
                             </div>
@@ -44,7 +87,7 @@
                                 <figure class="slideshow-figure slideshow-figure--custom">
                                     <img alt="Kdo řekl, že novou práci musíte hledat?"
                                         class="slideshow-img slideshow-img--custom"
-                                        src="{{ asset('images/img/11235935_11116.png') }}" width="1184" height="837">
+                                        src="{{ asset('images/img/home/home-banner-itr.webp') }}" width="1184" height="837">
                                 </figure>
                             </div>
                         </div>
@@ -88,9 +131,13 @@
                     <div class="col-md-4">
 
                         <div class="h-100 shadow-primary rounded-35 bg-white p-4 p-lg-32">
-                            <p class="display-6 mod-font-semibold mb-2 text-primary"><span data-counter="100">0</span> %
+                            <p class="display-6 mod-font-semibold mb-2 text-primary"><span data-counter="100">1</span> %
                                 Moneyback Gurantee</p>
-                            <p class="mb-0">Zero-risk Moneyback Guranteed with our hassle free Full-Refund policy</p>
+                            <p class="mb-0">Zero-risk Moneyback Guranteed with our hassle free Full-Refund policy
+                                <span
+                                    class="mod-absolute mod-pb-3 mod-pl-3 mod-font-semibold moneyback-conditon">*Conditions
+                                    Apply</span>
+                            </p>
                         </div>
 
                     </div>
@@ -98,7 +145,8 @@
 
                         <div class="h-100 shadow-primary rounded-35 bg-white p-4 p-lg-32">
                             <p class="display-6 mod-font-semibold mb-2 text-primary">Expert Guidance</p>
-                            <p class="mb-0">Get Profesisons helps from our Trusted Experts for all your business needs</p>
+                            <p class="mb-0">Get Profesisons helps from our Trusted Experts for all your business needs
+                            </p>
                         </div>
 
                     </div>
@@ -106,7 +154,7 @@
             </div>
         </section>
 
-        <section class="container my-80 top-services">
+        {{-- <section class="container my-80 top-services">
             <div class="mod-flex mod-flex-wrap mod-items-center mod-my-20">
                 <div class="col-3 col-label"> <span class="label">Explore our Top Services
                     </span>
@@ -139,13 +187,13 @@
                     </span>
                 </div>
             </div>
-        </section>
+        </section> --}}
 
         <section class="container mod-my-16 lg:mod-my-24">
             <article class="banner bg-blue-100 pb-40 px-4 p-lg-5 p-xxl-80">
                 <div class="row gy-4 gx-lg-4 justify-content-center justify-content-lg-between align-items-center">
                     <div class="col-md-9 col-lg-8 d-flex flex-column gap-3 gap-lg-4">
-                        <h2 class="display-6 fw-bold mb-0">Why Do Customers Love Us?</h2>
+                        <h2 class="display-6 mod-font-semibold mb-0">Why Do Customers Love Us?</h2>
                         <p class="text-lg mb-0">We provide hassle-free legal and financial solutions with expert
                             assistance, ensuring transparency and efficiency at every step.</p>
                         <div class="row gx-3 gx-lg-40 svg-scale scale-4 text-sm">
@@ -193,7 +241,7 @@
                     </div>
                     <div class="col-12 col-lg-4 col-xl-4 order-first order-lg-last">
                         <figure class="ratio text-primary mx-auto my-20" style="--bs-aspect-ratio:100%;">
-                            <img src="{{ asset('images/img/13184991_5138237.png') }}">
+                            <img src="{{ asset('images/img/13184991_5138237.webp') }}">
                         </figure>
                     </div>
                 </div>
@@ -222,7 +270,7 @@
                                 <div class="mod-relative">
                                     <div class="timeline-circle-wrapper">
                                         <div class="timeline-circle">
-                                            <div>1</div>
+                                            <img src="{{ asset('images/svg/count-number-1.svg') }}" loading="lazy" alt="golf success icon" class="timeline-icon">
                                         </div>
                                     </div>
                                     <div class="timeline-item">
@@ -236,7 +284,7 @@
                                 <div class="mod-relative">
                                     <div class="timeline-circle-wrapper">
                                         <div class="timeline-circle">
-                                            <div>2</div>
+                                            <img src="{{ asset('images/svg/count-number-2.svg') }}" loading="lazy" alt="golf success icon" class="timeline-icon">
                                         </div>
                                     </div>
                                     <div class="timeline-item">
@@ -253,7 +301,7 @@
                                 <div class="mod-relative">
                                     <div class="timeline-circle-wrapper">
                                         <div class="timeline-circle">
-                                            <div>3</div>
+                                            <img src="{{ asset('images/svg/count-number-3.svg') }}" loading="lazy" alt="golf success icon" class="timeline-icon">
                                         </div>
                                     </div>
                                     <div class="timeline-item">
@@ -269,9 +317,8 @@
                                 <div class="mod-relative">
                                     <div class="timeline-circle-wrapper">
                                         <div class="timeline-circle">
-                                            <img
-                                                src="https://cdn.prod.website-files.com/670e055571ec3fdaefa6c351/679cac16a679337a4633d8cb_success-icon.svg"
-                                                loading="lazy" alt="golf success icon" class="timeline-icon">
+                                            <img src="https://cdn.prod.website-files.com/670e055571ec3fdaefa6c351/679cac16a679337a4633d8cb_success-icon.svg"
+                                                loading="lazy" alt="golf success icon">
                                         </div>
                                         <img src="https://cdn.prod.website-files.com/670e055571ec3fdaefa6c351/679caf900953594022ab7eac_arrow-down.svg"
                                             loading="lazy" alt="arrow down" class="timeline-last-arrow">
@@ -307,6 +354,111 @@
                 </div>
         </section>
 
+        <section class="container mod-my-16 lg:mod-my-24">
+            <div class="mod-mr-auto mod-ml-auto mod-w-full">
+                <h2 class="display-6 mod-font-semibold mb-32">Explore out Top-rated Services</h2>
+
+                <div class="row">
+                    <div class="col-12 col-lg-4 mb-3 col-md-6">
+                        <div class="top-service-card-grid mod-relative mod-rounded-xxl mod-p-8 md:mod-p-4 sm:mod-p-4">
+                            <h2 class="mod-flex mod-justify-start mod-gap-4 mod-items-center mod-mb-4">
+                                <img decoding="async" width="129" height="110" src="{{ asset('images/svg/service-gst.svg') }}" alt="" loading="lazy">
+                                GST Registration
+                                <span class="arrow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM297 385c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l71-71L120 280c-13.3 0-24-10.7-24-24s10.7-24 24-24l214.1 0-71-71c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L409 239c9.4 9.4 9.4 24.6 0 33.9L297 385z"></path>
+                                    </svg>
+                                </span>
+                            </h2>
+                            <p>Get your GST registration done quickly and effortlessly with our expert assistance.</p>
+                            <a href="your-service-url"> <span class="visually-hidden"> Read More</span> </a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 mb-3 col-md-6">
+                        <div class="top-service-card-grid mod-relative mod-rounded-xxl mod-p-8 md:mod-p-4 sm:mod-p-4">
+                            <h2 class="mod-flex mod-justify-start mod-gap-4 mod-items-center mod-mb-4">
+                                <img decoding="async" width="129" height="110" src="{{ asset('images/svg/service-company.svg') }}" alt="" loading="lazy">
+                                Company Registration
+                                <span class="arrow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM297 385c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l71-71L120 280c-13.3 0-24-10.7-24-24s10.7-24 24-24l214.1 0-71-71c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L409 239c9.4 9.4 9.4 24.6 0 33.9L297 385z"></path>
+                                    </svg>
+                                </span>
+                            </h2>
+                            <p>Start your business the right way with hassle-free company registration services.</p>
+                            <a href="your-service-url"> <span class="visually-hidden"> Read More</span> </a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 mb-3 col-md-6">
+                        <div class="top-service-card-grid mod-relative mod-rounded-xxl mod-p-8 md:mod-p-4 sm:mod-p-4">
+                            <h2 class="mod-flex mod-justify-start mod-gap-4 mod-items-center mod-mb-4">
+                                <img decoding="async" width="129" height="110" src="{{ asset('images/svg/service-compliance.svg') }}" alt="" loading="lazy">
+                                Compliance Services
+                                <span class="arrow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM297 385c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l71-71L120 280c-13.3 0-24-10.7-24-24s10.7-24 24-24l214.1 0-71-71c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L409 239c9.4 9.4 9.4 24.6 0 33.9L297 385z"></path>
+                                    </svg>
+                                </span>
+                            </h2>
+                            <p>Ensure legal compliance with expert solutions tailored to your business needs.</p>
+                            <a href="your-service-url"> <span class="visually-hidden"> Read More</span> </a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 mb-3 col-md-6">
+                        <div class="top-service-card-grid mod-relative mod-rounded-xxl mod-p-8 md:mod-p-4 sm:mod-p-4">
+                            <h2 class="mod-flex mod-justify-start mod-gap-4 mod-items-center mod-mb-4">
+                                <img decoding="async" width="129" height="110" src="{{ asset('images/svg/service-trademark.svg') }}" alt="" loading="lazy">
+                                Trademark Registration
+                                <span class="arrow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM297 385c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l71-71L120 280c-13.3 0-24-10.7-24-24s10.7-24 24-24l214.1 0-71-71c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L409 239c9.4 9.4 9.4 24.6 0 33.9L297 385z"></path>
+                                    </svg>
+                                </span>
+                            </h2>
+                            <p>Protect your brand identity with a hassle-free trademark registration process.</p>
+                            <a href="your-service-url"> <span class="visually-hidden"> Read More</span> </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 mb-3 col-md-6">
+                        <div class="top-service-card-grid mod-relative mod-rounded-xxl mod-p-8 md:mod-p-4 sm:mod-p-4">
+                            <h2 class="mod-flex mod-justify-start mod-gap-4 mod-items-center mod-mb-4">
+                                <img decoding="async" width="129" height="110" src="{{ asset('images/svg/service-tax.svg') }}" alt="" loading="lazy">
+                                Income Tax Return
+                                <span class="arrow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM297 385c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l71-71L120 280c-13.3 0-24-10.7-24-24s10.7-24 24-24l214.1 0-71-71c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L409 239c9.4 9.4 9.4 24.6 0 33.9L297 385z"></path>
+                                    </svg>
+                                </span>
+                            </h2>
+                            <p>File your Income Tax Return accurately and on time with our expert assistance.</p>
+                            <a href="your-service-url"> <span class="visually-hidden"> Read More</span> </a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 mb-3 col-md-6">
+                        <div class="top-service-card-grid mod-relative mod-rounded-xxl mod-p-8 md:mod-p-4 sm:mod-p-4">
+                            <h2 class="mod-flex mod-justify-start mod-gap-4 mod-items-center mod-mb-4">
+                                <img decoding="async" width="129" height="110" src="{{ asset('images/svg/service-legal.svg') }}" alt="" loading="lazy">
+                                Legal Drafting
+                                <span class="arrow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM297 385c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l71-71L120 280c-13.3 0-24-10.7-24-24s10.7-24 24-24l214.1 0-71-71c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L409 239c9.4 9.4 9.4 24.6 0 33.9L297 385z"></path>
+                                    </svg>
+                                </span>
+                            </h2>
+                            <p>Get professionally drafted legal documents tailored to your business needs.</p>
+                            <a href="your-service-url"> <span class="visually-hidden"> Read More</span> </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
         <section class="container my-80">
             <p class="text-center"><strong>We've partnered with</strong></p>
             <div class="partner-box-logo-scroller">
@@ -322,51 +474,10 @@
             </div>
         </section>
 
-        <section class="container my-8 mod-relative mod-max-w-full">
-            <div class="services-extra-container mod-relative mod-py-20 mod-ml-auto mod-mr-auto mod-w-full mod-px-20">
-                <div
-                    class="mod-flex mod-items-center mod-justify-start mod-flex-nowwrap mod-flex-col mod-mb-12 mod-ml-auto mod-mr-auto sm:mod-py-20">
-                    <h1 class="mod-font-black mod-space-loose">
-                        Stress-Free <span class="text-blue">Services</span> Handled by <span
-                            class="text-blue">Experts</span>
-                    </h1>
-                </div>
-                <div class="services-extra-component">
-                    <div class="services-extra-item-wrap">
-                        <img src="{{ asset('images/svg/services-extra-business-handshake.svg') }}" loading="lazy"
-                            alt="Step 1" class="services-extra-item-image">
-                        <h3 class="services-extra-title">Tell Us Your Needs</h3>
-                        <p>Simply submit your request, and we’ll take it from there. No paperwork, no confusion.</p>
-                    </div>
-                    <div id="w-node-step1" class="services-extra-sign-wrap">
-                        <img src="{{ asset('images/svg/services-extra-cross.svg') }}" loading="lazy" alt="plus icon"
-                            class="services-extra-sign">
-                    </div>
-                    <div class="services-extra-item-wrap">
-                        <img src="{{ asset('images/svg/services-extra-business-doc.svg') }}" loading="lazy"
-                            alt="Step 2" class="services-extra-item-image">
-                        <h3 class="services-extra-title">We Handle Everything</h3>
-                        <p>Our experts manage the entire process—documentation, verification, and submission.</p>
-                    </div>
-                    <div id="w-node-step2" class="services-extra-sign-wrap">
-                        <img src="{{ asset('images/svg/services-extra-equal.svg') }}" loading="lazy" alt="equals icon"
-                            class="services-extra-sign">
-                    </div>
-                    <div class="services-extra-item-wrap">
-                        <img src="{{ asset('images/svg/services-extra-business-result.svg') }}" loading="lazy"
-                            alt="Step 3" class="services-extra-item-image">
-                        <h3 class="services-extra-title">Relax & Get Results</h3>
-                        <p>Sit back while we complete the process. You'll be updated every step of the way!</p>
-                    </div>
-                </div>
-            </div>
-            <div class="section-bg-wrap is-gradient"></div>
-        </section>
 
-
-        <section class="container my-80 mt-lg-120 mb-xxl-120">
+        <section class="container my-80 mt-lg-120 mb-xxl-80 mod-pt-12 md:mod-pt-4 sm:mod-pt-0">
             <div class="row gy-5 gx-20 gx-lg-40">
-                <h2 class="display-6 fw-bold col-lg-4 pe-120 pe-lg-3 mb-2">Hear from our customers</h2>
+                <h2 class="display-6 mod-font-semibold col-lg-4 pe-120 pe-lg-3 mb-2">Hear from our customers</h2>
 
                 <div class="col-9 col-md-8 ms-auto pb-2">
 
@@ -403,7 +514,7 @@
                             <div class="col-7 col-lg-4 mt-n32 mt-lg-n80">
                                 <figure class="mt-xl-n20 ratio max-w-scale scale-120 scale-lg-auto"
                                     style="--bs-aspect-ratio:104%">
-                                    <img alt="Jaroslav, Projektant" src="images/img/home/jaroslav.png" width="476"
+                                    <img alt="" src="images/img/home/jaroslav.png" width="476"
                                         height="496">
                                 </figure>
                             </div>
@@ -421,40 +532,10 @@
                     </blockquote>
 
                 </div>
-
-                <div class="col-9 col-md-8 ms-auto pb-2 mod-mt-24">
-
-                    <blockquote class="rounded-2 bg-blue-100 px-4 pb-4 p-lg-32 pt-lg-40 px-xl-40 mb-0">
-
-                        <div class="row gx-4">
-                            <div class="col-7 col-lg-4 mt-n5 mt-lg-n80 ms-auto">
-                                <figure class="mt-n3 mb-n2 ms-auto mt-xl-n20 ratio max-w-scale scale-120 scale-lg-auto"
-                                    style="--bs-aspect-ratio:104%">
-                                    <img alt="Monika, Náborářka" src="images/img/home/monika.png" width="476"
-                                        height="496">
-                                </figure>
-                            </div>
-                            <div class="col-12 col-lg-8 svg-scale scale-32 scale-lg-auto">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="54" height="34" fill="none"
-                                    viewBox="0 0 32 20">
-                                    <path fill="#006EEC" fill-opacity=".08"
-                                        d="M1.59483 20C1.12229 20 0.738348 19.8512 0.443009 19.5536C0.14767 19.1964 0 18.8095 0 18.3929C0 17.9167 0.0590678 17.5 0.177204 17.1429L5.93632 2.32143C6.29072 1.60714 6.67467 1.04167 7.08814 0.625003C7.50162 0.208334 8.09229 0 8.86017 0H13.4675C13.9991 0 14.4126 0.178571 14.7079 0.535713C15.0032 0.892858 15.1214 1.36905 15.0623 1.96429L12.6701 17.1429C12.5519 17.9762 12.2566 18.6607 11.784 19.1964C11.3115 19.7321 10.6617 20 9.83479 20H1.59483ZM18.5178 20C18.1043 20 17.7204 19.8512 17.3659 19.5536C17.0706 19.1964 16.9229 18.8095 16.9229 18.3929C16.9229 18.0952 17.0115 17.6786 17.1887 17.1429L22.9479 2.32143C23.5385 0.77381 24.5131 0 25.8717 0H30.479C30.9515 0 31.3355 0.178571 31.6308 0.535713C31.9262 0.892858 32.0443 1.36905 31.9852 1.96429L29.6816 17.1429C29.3272 19.0476 28.3526 20 26.7577 20H18.5178Z" />
-                                </svg>
-                                <p class="text-h3 mt-1 mb-2 mb-sm-3 mt-lg-3">Filing my ITR was so easy! Quick process and
-                                    great support.</p>
-                                <cite class="text-h5 text-secondary">#User3</cite>
-                            </div>
-                        </div>
-                    </blockquote>
-
-                </div>
             </div>
         </section>
 
-        <section class="templateShowcase my-80 my-xxl-120">
-            <div class="container">
-                <h2 class="mb-20 mb-md-40 pb-md-1 pe-md-120">What do Customers huss about Us?</h2>
-            </div>
+        <section class="templateShowcase mb-80 mb-xxl-120">
 
             <div class="splide" id="templateShowcase" aria-label="Ukázka šablon CV">
                 <div class="splide__arrows">

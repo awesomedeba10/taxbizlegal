@@ -310,7 +310,7 @@ img, video {
 .mod-caret-down {
     border-top: none;
     border-left: none;
-    top: -2px;
+    top: 4px;
     transform: translateX(0) translateY(0) rotate(45deg) skewX(0) skewY(0) scaleX(1) scaleY(1);
     position: relative;
     border-bottom-width: 2px;
@@ -327,6 +327,11 @@ img, video {
     --transform-scale-y:  1;
     transform: translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));
     --transform-rotate:  45deg;
+}
+@media (min-width: 576px) {
+    .mod-caret-down  {
+        top: -2px;
+    }
 }
 .mod-input:hover, .mod-input:focus {
     outline: 0;
@@ -1687,6 +1692,9 @@ img, video {
 .mod-p-20 {
     padding: 5rem;
 }
+.mod-p-24 {
+    padding: 6rem;
+}
 .mod-py-0 {
     padding-top: 0;
     padding-bottom: 0;
@@ -2064,6 +2072,15 @@ img, video {
 .mod-text-right {
     text-align: right;
 }
+.mod-text-justify {
+    text-align: justify;
+}
+.mod-text-indent-4rem {
+    text-indent: 4rem;
+}
+.mod-text-indent-5rem {
+    text-indent: 5rem;
+}
 .mod-text-blue-200 {
     --text-opacity:  1;
     color: #8ABBFD;
@@ -2231,6 +2248,9 @@ img, video {
 }
 .mod-align-top {
     vertical-align: top;
+}
+.mod-align-bottom {
+    vertical-align: bottom;
 }
 .mod-align-middle {
     vertical-align: middle;
@@ -3372,6 +3392,9 @@ select {
 }
 .md\:mod-pt-3 {
     padding-top: 0.75rem;
+}
+.md\:mod-pt-4 {
+    padding-top: 1rem;
 }
 .md\:mod-pr-4 {
     padding-right: 1rem;

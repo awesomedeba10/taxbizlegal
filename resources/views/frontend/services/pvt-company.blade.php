@@ -24,11 +24,6 @@
                             Platform.</p>
                     </div>
                 </div>
-                <div class="section-image mod-overflow-hidden md:mod-hidden sm:mod-hidden" data-fade="in" style="opacity: 1; visibility: inherit;">
-                    <img decoding="async" width="480" height="480" src="{{ asset('images/img/5259884_20619.png') }}"
-                        class="mod-mt-12 attachment-medium_large size-medium_large wp-post-image" alt=""
-                        sizes="auto, (max-width: 480px) 100vw, 480px" loading="lazy">
-                </div>
                 <div class="section-content mod-pr-12 md:mod-pr-0 sm:mod-pr-0">
                     <div class="row justify-content-center">
                         <div class="col-md-12">
