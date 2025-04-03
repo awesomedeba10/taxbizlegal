@@ -1,17 +1,6 @@
 import $ from 'jquery';
 
 $(function() {
-    $(".multi-dropdown-menu").hover(
-        function () {
-            $(this).addClass("mod-dropdown-open"); // On mouse enter
-        },
-        function () {
-            $(this).removeClass("mod-dropdown-open"); // On mouse leave
-        }
-    );
-});
-
-$(function() {
     $(".mod-flex > .mod-dropdown-submenu > a").hover(
         function () {
             $(this).find(".childDisplayHover").removeClass("mod-hidden");
@@ -22,13 +11,24 @@ $(function() {
     );
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const navList = document.querySelector(".services-nav-ul");
+    const itemsCount = navList.children.length;
+    navList.style.setProperty("--items", itemsCount);
+});
+
 $(function() {
     $(".multi-dropdown-menu").hover(
         function () {
             $(this).addClass("mod-dropdown-open"); // On mouse enter
         },
         function () {
-            $(this).removeClass("mod-dropdown-open"); // On mouse leave
+            let $this = $(this);
+            if (!$this.is(":hover") && !$(".services-shortcut").is(":hover")) {
+                $this.removeClass("mod-dropdown-open"); // Remove class only if shortcut-container is not hovered
+            } else {
+                console.log('uooo')
+            }
         }
     );
 
@@ -51,7 +51,7 @@ document.querySelectorAll('.services-nav-item').forEach(item => {
 
         if (targetElement) {
             window.scrollTo({
-                top: targetElement.offsetTop - 180, // Adjust for navbar height if needed
+                top: targetElement.offsetTop - 135, // Adjust for navbar height if needed
                 behavior: 'smooth' // Enables smooth scrolling effect
             });
         }

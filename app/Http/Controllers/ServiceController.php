@@ -3,14 +3,17 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class ServiceController extends Controller
 {
-    public function itr() {
-        return view('frontend.services.itr');
-    }
+    public function reroute($slug) {
+        $title = Str::title(str_replace('-', ' ', $slug)); 
 
-    public function pvt() {
-        return view('frontend.services.pvt-company');
+        if (!view()->exists('frontend.services.' . $slug)) {
+            abort(404);
+        }
+
+        return view('frontend.service', ['slug' => $slug]);
     }
 }

@@ -877,11 +877,11 @@ class Kt {
         t == null || t.addEventListener("hide.bs.offcanvas", () => (n == null ? void 0 : n.classList.remove("active")) || document.body.classList.remove("topMenu-opened"))
     }
     _checkNavbar() {
-        const s = document.documentElement.scrollTop
-          , t = s > this.lastScroll
-          , n = document.body.classList.contains("topMenu-hidden");
-        s >= this.scrollLimit && t && !n ? document.body.classList.add("topMenu-hidden") : (s < this.scrollLimit || !t) && n && document.body.classList.remove("topMenu-hidden"),
-        this.lastScroll = s <= 0 ? 0 : s
+        // const s = document.documentElement.scrollTop
+        //   , t = s > this.lastScroll
+        //   , n = document.body.classList.contains("topMenu-hidden");
+        // s >= this.scrollLimit && t && !n ? document.body.classList.add("topMenu-hidden") : (s < this.scrollLimit || !t) && n && document.body.classList.remove("topMenu-hidden"),
+        // this.lastScroll = s <= 0 ? 0 : s
     }
 }
 class Qt {

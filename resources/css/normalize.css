@@ -183,9 +183,7 @@ img, video {
     background-color: transparent;
 }
 .mod-nav-text {
-    --text-opacity:  1;
-    color: #314259;
-    color: rgba(49,  66,  89,  var(--text-opacity));
+    color: #001c35;
 }
 .mod-dropdown {
     position: relative;
@@ -1081,12 +1079,38 @@ img, video {
     grid-template-columns: repeat(2, 1fr);
     row-gap: clamp(40px,2.5vw,48px);
 }
+.mod-grid-3 {
+    -moz-column-gap: clamp(32px,2.3vw,44px);
+    column-gap: clamp(32px,2.3vw,44px);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: clamp(40px,2.5vw,72px);
+}
+.mod-grid-4 {
+    -moz-column-gap: clamp(24px,2.0833333333vw,40px);
+    column-gap: clamp(24px,2.0833333333vw,40px);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: clamp(40px,5vw,96px);
+}
 .mod-grid-12 {
     -moz-column-gap: clamp(16px, 1.25vw, 24px);
     column-gap: clamp(16px, 1.25vw, 24px);
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     row-gap: clamp(40px, 3.3333333333vw, 64px);
+}
+.mod-grid-template-col-2 {
+    grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 768px) {
+    .mod-grid-12 {
+        display: flex;
+        flex-direction: column;
+    }
+    .sm\:mod-grid-template-col-2 {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 .mod-block {
     display: block;
@@ -1099,6 +1123,9 @@ img, video {
 }
 .mod-flex {
     display: flex;
+}
+.mod-inline {
+    display: inline;
 }
 .mod-inline-flex {
     display: inline-flex;
@@ -1245,7 +1272,14 @@ img, video {
     height: auto;
 }
 .mod-h-full {
-    height: 100%}
+    height: 100%
+}
+.mod-word-break-normal {
+    word-break: normal;
+}
+.mod-text-compact {
+    font-size: clamp(12px, .9375vw, 18px);
+}
 .mod-text-s-10 {
     font-size: 10px;
 }
@@ -1300,8 +1334,14 @@ img, video {
 .mod-leading-light-loose {
     line-height: 1.75;
 }
+.mod-space-normal {
+    letter-spacing: normal;
+}
 .mod-space-semi {
     letter-spacing: 0.5px;
+}
+.mod-space-light-semi {
+    letter-spacing: 1px;
 }
 .mod-space-loose {
     letter-spacing: 2px;
@@ -1387,6 +1427,10 @@ img, video {
 .mod-my-8 {
     margin-top: 2rem;
     margin-bottom: 2rem;
+}
+.mod-mx-8 {
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 .mod-my-10 {
     margin-top: 2.5rem;
@@ -2347,6 +2391,10 @@ img, video {
 .mod-max-w-full {
     max-width: 100%;
 }
+.mod-max-w-9\/12 {
+    max-width: 75%}
+.mod-max-w-10\/12 {
+    max-width: 83.333333%}
 .mod-z-0 {
     z-index: 0;
 }
@@ -2513,8 +2561,8 @@ select {
     .mod-container {
     width: 100%;
     max-width: 1440px;
-    padding-left: 135px;
-    padding-right: 135px;
+    padding-left: 3rem;
+    padding-right: 3rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -3042,6 +3090,9 @@ select {
 .sm\:mod-pb-4 {
     padding-bottom: 1rem;
 }
+.sm\:mod-pr-4 {
+    padding-right: 1rem;
+}
 .sm\:mod-pl-4 {
     padding-left: 1rem;
 }
@@ -3074,6 +3125,9 @@ select {
 }
 .sm\:mod-pt-12 {
     padding-top: 3rem;
+}
+.sm\:mod-pr-12 {
+    padding-right: 3rem;
 }
 .sm\:mod-pb-12 {
     padding-bottom: 3rem;
@@ -3261,6 +3315,10 @@ select {
 .md\:mod-my-5 {
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
+}
+.md\:mod-mx-8 { 
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 .md\:mod-my-24 {
     margin-top: 6rem;
@@ -3524,6 +3582,10 @@ select {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
 }
+.lg\:mod-mx-8 { 
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
 .lg\:mod-my-16 {
     margin-top: 4rem;
     margin-bottom: 4rem;
@@ -3584,9 +3646,15 @@ select {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
 }
+.lg\:mod-pr-8 {
+    padding-right: 2rem;
+}
 .lg\:mod-px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
+}
+.lg\:mod-pr-12 {
+    padding-right: 3rem;
 }
 .lg\:mod-px-12 {
     padding-left: 3rem;
@@ -3606,6 +3674,9 @@ select {
 }
 .lg\:mod-pt-10 {
     padding-top: 2.5rem;
+}
+.lg\:mod-pr-20 {
+    padding-right: 5rem;
 }
 .lg\:mod-pt-24 {
     padding-top: 6rem;
@@ -3713,6 +3784,9 @@ select {
 .xl\:mod-py-24 {
     padding-top: 6rem;
     padding-bottom: 6rem;
+}
+.xl\:mod-pr-20 {
+    padding-right: 5rem;
 }
 .xl\:mod-pt-24 {
     padding-top: 6rem;

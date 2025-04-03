@@ -17,24 +17,24 @@
                                 <div class="slideshow-fade">
                                     <div class="service-grid">
                                         <div class="service-item">
-                                            <a href="{{ route('front.services.company-registration') }}">
+                                            <a href="{{ route('front.services', ['slug' => Str::slug('Private Limited Company', '-')]) }}">
                                                 <img src="{{ asset('images/svg/service-company.svg') }}">Company
                                                 Registration
                                             </a>
                                         </div>
                                         <div class="service-item">
-                                            <a href="{{ route('front.services.company-registration') }}">
+                                            <a href="{{ route('front.services', ['slug' => Str::slug('GST Registration', '-')]) }}">
                                                 <img src="{{ asset('images/svg/service-gst.svg') }}">
                                                 GST & Tax Filings</a>
                                         </div>
                                         <div class="service-item">
-                                            <a href="{{ route('front.services.company-registration') }}">
+                                            <a href="{{ route('front.services', ['slug' => Str::slug('Trademark Registration', '-')]) }}">
                                                 <img src="{{ asset('images/svg/service-trademark.svg') }}">
                                                 Trademark Registration
                                             </a>
                                         </div>
                                         <div class="service-item">
-                                            <a href="{{ route('front.services.company-registration') }}">
+                                            <a href="{{ route('front.services', ['slug' => Str::slug('ROC Search Reports', '-')]) }}">
                                                 <img src="{{ asset('images/svg/service-legal.svg') }}">
                                                 Legal & Compliance
                                             </a>
@@ -58,7 +58,7 @@
                                 <p class="mb-0 slideshow-fade">Register your company with ease and compliance. Get expert
                                     guidance, end-to-end documentation, and fast approvals.</p>
                                 <div class="slideshow-fade">
-                                    <a href="{{ route('front.services.company-registration') }}"
+                                    <a href="{{ route('front.services', ['slug' => Str::slug('Private Limited Company', '-')]) }}"
                                         class="d-block btn btn-lg btn-primary">Register
                                         Now</a>
                                 </div>
