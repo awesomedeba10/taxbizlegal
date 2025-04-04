@@ -383,13 +383,14 @@
             <button class="mt-6 bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-2 px-6 rounded-lg">Get Help with Compliance</button>
             <div class="mod-flex mod-items-start mod-flex-col mod-mt-6">
                 <h4>Other Non-ROC Business Compliances</h4>
-                <ul class="mod-grid mod-gap-2">
-                    <li>TDS/TCS Payment</li>
-                    <li>GST Payment & GST Filing</li>
-                    <li>Filing of quarterly TDS Teturns</li>
-                    <li>Filing of IT Returns</li>
-                    <li>Filing of Tax Audit Reports</li>
-                </ul>
+                <div class="mod-grid mod-gap-2">
+                    <span>TDS/TCS Payment</span>
+                    <span>GST Payment & GST Filing</span>
+                    <span>Filing of quarterly TDS Teturns</span>
+                    <span>Advanced Tax Payment</span>
+                    <span>Filing of IT Returns</span>
+                    <span>Filing of Tax Audit Reports</span>
+                </div>
             </div>
         </div>
         <div class="mod-px-2 mod-flex mod-flex-col mod-gap-2">
