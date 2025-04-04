@@ -11,23 +11,20 @@ $(function() {
     );
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-    const navList = document.querySelector(".services-nav-ul");
-    const itemsCount = navList.children.length;
-    navList.style.setProperty("--items", itemsCount);
-});
-
 $(function() {
     $(".multi-dropdown-menu").hover(
         function () {
             $(this).addClass("mod-dropdown-open"); // On mouse enter
         },
         function () {
-            let $this = $(this);
-            if (!$this.is(":hover") && !$(".services-shortcut").is(":hover")) {
-                $this.removeClass("mod-dropdown-open"); // Remove class only if shortcut-container is not hovered
-            } else {
-                console.log('uooo')
+            try {
+                let $this = $(this);
+                if (!$this.is(":hover") && !$(".services-shortcut").is(":hover")) {
+                    $this.removeClass("mod-dropdown-open");
+                }
+            }
+            catch(err) {
+                $(this).removeClass("mod-dropdown-open");
             }
         }
     );

@@ -2427,6 +2427,10 @@ img, video {
     grid-gap: 2.5rem;
     gap: 2.5rem;
 }
+.mod-gap-12 {
+    grid-gap: 3rem;
+    gap: 3rem;
+}
 @media (min-width: 768px) and (max-width: 1023px) {
     .md\:mod-gap-10 {
         grid-gap: 2.5rem;
@@ -3815,7 +3819,9 @@ select {
     width: 100%;
     padding-top: .5rem;
 }
-
+.mod-border-bottom-2 {
+    border-bottom: 2px solid #ddd;
+}
 .dropdown-size-limit {
     
     max-width: 85%;

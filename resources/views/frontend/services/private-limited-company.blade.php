@@ -330,7 +330,7 @@
 
 <section class="bg-blue-100 py-40 py-xxl-40">
     <div class="doc-required container mod-flex mod-flex-col mod-gap-8">
-        <h2 class="mod-font-semibold mod-text-s-28 mod-leading-semi-loose mod-space-light-semi">
+        <h2 class="mod-font-semibold mod-text-s-28 mod-mb-0 mod-leading-semi-loose mod-space-light-semi">
             Documents Required for Registering <span class="text-blue">Your</span> Pvt Ltd. Company
         </h2>
         <div class="section-content mod-grid-12">
@@ -374,39 +374,44 @@
 <section class="container my-40">
     <h1 class="display-6 mb-32 mod-font-semibold mod-text-s-28">Compliance Required for Forming a Private Limited Company</h1>
 
-    <div class="mod-grid mod-mt-4 mod-gap-4 mod-grid-template-col-2 sm:mod-grid-template-col-2">
-        <div>
-            <h3 class="text-2xl font-semibold">Why Compliance Matters</h3>
-            <p class="text-gray-600 mt-2">
+    <div class="mod-grid mod-mt-4 mod-gap-8 mod-grid-template-col-2 sm:mod-grid-template-col-2">
+        <div class="mod-pr-8 mod-flex mod-flex-col">
+            <h3 class="mod-font-semibold mod-leading-loose">Why Compliance Matters</h3>
+            <p class="mod-mt-2 mod-pr-24">
                 Staying compliant not only builds credibility for your private limited company but also ensures smooth functioning, legal protection, and better funding opportunities. Here’s a quick guide to help you understand what’s needed right after registration.
             </p>
             <button class="mt-6 bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-2 px-6 rounded-lg">Get Help with Compliance</button>
+            <div class="mod-flex mod-items-start mod-flex-col mod-mt-6">
+                <h4>Other Non-ROC Business Compliances</h4>
+                <ul class="mod-grid mod-gap-2">
+                    <li>TDS/TCS Payment</li>
+                    <li>GST Payment & GST Filing</li>
+                    <li>Filing of quarterly TDS Teturns</li>
+                    <li>Filing of IT Returns</li>
+                    <li>Filing of Tax Audit Reports</li>
+                </ul>
+            </div>
         </div>
-        <div class="space-y-6">
-            <div class="flex items-start border-b pb-4">
-                <span class="text-xl font-semibold">Board Meetings</span>
-                <span class="ml-auto text-gray-700">At least 2 board meetings each year with a minimum of 2 directors or 1/3rd of the total. Proper minutes must be recorded.</span>
-                <i class="fas fa-check-circle text-yellow-400 ml-2"></i>
+        <div class="mod-px-2 mod-flex mod-flex-col mod-gap-2">
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-gap-12 mod-px-2 mod-py-4 mod-border-bottom-2">
+                <h3 class="mod-mb-0">Board Meetings</h3>
+                <p class="mod-ml-16 mod-mb-0 mod-text-right">At least 2 board meetings each year with a minimum of 2 directors or 1/3rd of the total.</p>
             </div>
-            <div class="flex items-start border-b pb-4">
-                <span class="text-xl font-semibold">Annual General Meeting (AGM)</span>
-                <span class="ml-auto text-gray-700">Must be held once every year, with a gap of no more than 15 months between two AGMs.</span>
-                <i class="fas fa-check-circle text-yellow-400 ml-2"></i>
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-gap-12 mod-px-2 mod-py-4 mod-border-bottom-2">
+                <h3 class="mod-mb-0">Annual General Meeting (AGM)</h3>
+                <p class="mod-ml-16 mod-mb-0 mod-text-right">Must be held once every year, with a gap of no more than 15 months between two AGMs.</p>
             </div>
-            <div class="flex items-start border-b pb-4">
-                <span class="text-xl font-semibold">Auditor Appointment</span>
-                <span class="ml-auto text-gray-700">An auditor must be appointed within 15 days of incorporation by filing Form ADT-1 with the RoC.</span>
-                <i class="fas fa-check-circle text-yellow-400 ml-2"></i>
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-gap-12 mod-px-2 mod-py-4 mod-border-bottom-2">
+                <h3 class="mod-mb-0">Auditor Appointment</h3>
+                <p class="mod-ml-16 mod-mb-0 mod-text-right">An auditor must be appointed within 15 days of incorporation by filing Form ADT-1 with the RoC.</p>
             </div>
-            <div class="flex items-start border-b pb-4">
-                <span class="text-xl font-semibold">Financial Reporting</span>
-                <span class="ml-auto text-gray-700">File annual returns (Form MGT-7) and financial statements (Form AOC-4) every financial year.</span>
-                <i class="fas fa-check-circle text-yellow-400 ml-2"></i>
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-gap-12 mod-px-2 mod-py-4 mod-border-bottom-2">
+                <h3 class="mod-mb-0">Financial Reporting</h3>
+                <p class="mod-ml-16 mod-mb-0 mod-text-right">File annual returns (Form MGT-7) and financial statements (Form AOC-4) every financial year.</p>
             </div>
-            <div class="flex items-start">
-                <span class="text-xl font-semibold">Statutory Records</span>
-                <span class="ml-auto text-gray-700">Maintain key registers and ensure accounts are audited by a certified statutory auditor.</span>
-                <i class="fas fa-check-circle text-yellow-400 ml-2"></i>
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-gap-12 mod-px-2 mod-py-4">
+                <h3 class="mod-mb-0">Statutory Records</h3>
+                <p class="mod-ml-16 mod-mb-0 mod-text-right">Maintain key registers and ensure accounts are audited by a certified statutory auditor.</p>
             </div>
         </div>
     </div>
