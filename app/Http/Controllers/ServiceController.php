@@ -8,8 +8,6 @@ use Illuminate\Support\Str;
 class ServiceController extends Controller
 {
     public function reroute($slug) {
-        $title = Str::title(str_replace('-', ' ', $slug)); 
-
         if (!view()->exists('frontend.services.' . $slug)) {
             abort(404);
         }

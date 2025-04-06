@@ -34,9 +34,9 @@
                 </div>
                 <div class="col-lg-2 col-md-2 col-sm-6 col-12">
                     <div class="footer-items">
-                        <h3>Services</h3>
-                        <p><a href="{{ route('front.about') }}">About Us</a></p>
-                        <p><a href="contact.html">Contact Us</a></p>
+                        <h3>Company Registration</h3>
+                        <p><a href="{{ route('front.services', ['slug' => Str::slug('Private Limited Company', '-')]) }}">Private Limited Company</a></p>
+                        <p><a href="{{ route('front.services', ['slug' => Str::slug('One Person Company', '-')]) }}">One Person Company</a></p>
                         <p><a href="{{ route('front.privacy') }}">Privacy Policy</a></p>
                         <p><a href="{{ route('front.terms') }}">Terms &amp; conditions</a></p>
                     </div>

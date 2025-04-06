@@ -8885,7 +8885,7 @@ nav.odin-menu-actions {
 }
 @media only screen and (min-width: 1025px) {
     .about-values .content-wrapper {
-        padding-bottom: 6rem;
+        padding-bottom: 4rem;
         max-width: 1600px;
     }
     .about-values .content-wrapper .product .title {

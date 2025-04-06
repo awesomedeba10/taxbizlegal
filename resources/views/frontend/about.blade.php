@@ -94,7 +94,7 @@
                     <h4 class="mod-leading-light-loose text-blue">
                         By offering seamless digital solutions, we aim to be a trusted partner in every business journey, fostering success through compliance and strategic insights.
                     </h4>
-                    <img src="https://assurancevisiteurs.ca/wp-content/uploads/2024/01/Icone-tranquilite-d-esprit.svg"
+                    <img src="{{ asset('images/img/trust-badge.jpg') }}"
                         alt="Assurance">
                 </div>
             </div>
