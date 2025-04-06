@@ -13,7 +13,7 @@ return [
                         "description" => "Start your business easily with minimal compliance and full control!"
                     ],
                     [
-                        "name" => "One Person Private Limited Company",
+                        "name" => "One Person Company",
                         "description" => "Enjoy the benefits of a private limited company while being the sole owner!"
                     ],
                     [

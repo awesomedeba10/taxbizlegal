@@ -2398,6 +2398,9 @@ img, video {
 .mod-z-0 {
     z-index: 0;
 }
+.mod-z-9 {
+    z-index: 9;
+}
 .mod-z-10 {
     z-index: 10;
 }

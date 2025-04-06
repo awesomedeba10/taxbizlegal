@@ -8,8 +8,7 @@
                             <img alt="taxbizlegal.com logo" src="{{ asset('images/img/logo.png') }}" width="205" height="61">
                         </a>
                         <p class="mod-space-light-semi mod-leading-loose">
-                            It is long established fact that will distracted the readable
-                            content of a page when looking at its layout.
+                            Top-Rated Business Services in Just a Few Taps — Fast, Transparent & Hassle-Free Solutions Tailored for You.
                         </p>
                         <div class="footer-social-area">
                             <ul class="mod-m-0 mod-p-0 mod-list-none">

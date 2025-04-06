@@ -3,7 +3,7 @@
         class="mod-items-center mod-px-24 mod-grid-12 mod-w-full sm:mod-gap-10 sm:mod-flex sm:mod-flex-col
         sm:mod-px-10 md:mod-px-12 md:mod-items-start ">
         <div class="section-heading">
-            <p class="h5 text-primary mb-2">Start Your Private Limited Company with Ease!</p>
+            <p class="h5 text-primary mb-2">Start Your One Person Company with Ease!</p>
             <h1 class="section-title mod-font-bold mod-leading-semi-loose mod-space-light-semi mod-mb-8" data-fade="up">
                 Register Your Private Limited Company & Unlock Growth Opportunities!</h1>
             <div class="mod-flex mod-flex-col mod-gap-10">
@@ -122,7 +122,7 @@
         <div
             class="mod-flex services-nav-container mod-items-center mod-justify-between mod-cursor-pointer mod-rounded-lg mod-border-sm mod-overflow-hidden mod-text-s-14 mod-font-medium">
             <div class="mod-whitespace-nowrap mod-py-4 mod-sticky mod-left-0">
-                <span class="services-nav-title mod-pl-6 mod-pr-3 mod-border-r-sm">PVT LTD COMPANY</span>
+                <span class="services-nav-title mod-pl-6 mod-pr-3 mod-border-r-sm">ONE PERSON COMPANY</span>
             </div>
             <ul class="services-nav-ul mod-flex mod-items-center mod-my-0 mod-justify-center mod-list-none">
                 <li data-target="pricing"
