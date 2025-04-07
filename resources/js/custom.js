@@ -1,4 +1,14 @@
 import $ from 'jquery';
+import ScrollReveal from 'scrollreveal';
+
+ScrollReveal().reveal('.reveal-me', {
+    interval: 200,
+    reset: true,
+    distance: '50px',
+    origin: 'bottom',
+    duration: 800,
+    easing: 'ease-in-out',
+});
 
 $(function() {
     $(".mod-flex > .mod-dropdown-submenu > a").hover(

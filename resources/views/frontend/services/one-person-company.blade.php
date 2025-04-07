@@ -3,20 +3,21 @@
         class="mod-items-center mod-px-24 mod-grid-12 mod-w-full sm:mod-gap-10 sm:mod-flex sm:mod-flex-col
         sm:mod-px-10 md:mod-px-12 md:mod-items-start ">
         <div class="section-heading">
-            <p class="h5 text-primary mb-2">Start Your One Person Company with Ease!</p>
+            <p class="h5 text-primary mb-2">Start Your One Person Company in Just a Few Clicks!</p>
             <h1 class="section-title mod-font-bold mod-leading-semi-loose mod-space-light-semi mod-mb-8" data-fade="up">
-                Register Your Private Limited Company & Unlock Growth Opportunities!</h1>
+                Register Your One Person Company & Step Into Formal Entrepreneurship!</h1>
             <div class="mod-flex mod-flex-col mod-gap-10">
                 <div class="text mod-font-medium mod-leading-loose" data-fade="up">
                     <ul class="mod-ml-0 mod-mb-1 mod-pl-1 mod-list-none mod-flex mod-flex-col mod-gap-2 mod-text-base">
-                        <li>👉 100% Online, Hassle-Free Registration Process</li>
-                        <li>👉 Expert Guidance & Legal Compliance Assistance</li>
-                        <li>👉 Quick Turnaround & Transparent Pricing</li>
+                        <li>👉 Fully Online Registration with End-to-End Assistance</li>
+                        <li>👉 Ideal for Solo Entrepreneurs & Startups</li>
+                        <li>👉 Expert Legal Guidance with Complete Documentation Support</li>
                     </ul>
                 </div>
-                <p class="mb-0 mod-leading-light-loose">Experience seamless private limited company registration with
-                    our expert consultants. We handle paperwork, legal formalities, and compliance, ensuring a smooth
-                    process. Focus on growth while we simplify your journey. Get started today!</p>
+                <p class="mb-0 mod-leading-light-loose">Launch your One Person Company (OPC) effortlessly with our experienced consultants.
+                    From DIN, DSC to Certificate of Incorporation and PAN – we’ve got it covered. Ensure limited liability,
+                    separate legal identity, and easy funding options while you focus on building your dream venture.
+                    Begin your entrepreneurial journey today!</p>
             </div>
         </div>
         <div class="section-content mod-pr-12 md:mod-pr-0 sm:mod-pr-0">
@@ -934,21 +935,10 @@
         <div class="col-12 col-md-6 col-xxl-5 sm:mod-order-2">
             <div class="mod-py-8">
 
-                <h1 class="mod-text-s-24">All you need to know about Private Limted Company Registration</h1>
-                <p>A Private Limited Company (PLC) in India is one of the most popular and simplest forms of company
-                    registration. It offers limited liability and legal protection to its shareholders, making it an
-                    ideal choice for many entrepreneurs. Positioned as a hybrid entity between a partnership firm and a
-                    public company, it allows businesses to enjoy the benefits of both forms.</p>
-                <p>To register a PLC, at least two individuals are required, and one individual can serve both as the
-                    director and shareholder. The liability of the company’s members is confined to the value of their
-                    shares, providing protection for personal assets. Once the Certificate of Incorporation is received,
-                    the company can commence its operations. The entire registration process typically takes around 15
-                    working days to complete.</p>
-                <p>Taxbizlegal.com is a trusted platform that provides end-to-end services for Private Limited Company
-                    registration, including incorporation, compliance, advisory, and consultancy. The process is quick,
-                    affordable, and simple. Additionally, we offer services for Partnership Registration, LLP
-                    Incorporation, One Person Company registration, and more. Contact us for a free consultation at
-                    info@taxbizlegal.com or call our compliance manager at 09*********.</p>
+                <h1 class="mod-text-s-24">All you need to know about One Person Company Registration</h1>
+                <p>A One Person Company (OPC) is a unique form of business structure introduced to support solo entrepreneurs who want to operate as a company with limited liability. It allows a single individual to run a business with the benefits of a corporate framework, such as legal protection and separate legal identity, without requiring partners or co-founders.</p>
+                <p>To register an OPC, only one person is needed as both the shareholder and director. However, a nominee is required in case the sole member becomes incapacitated. The OPC structure is ideal for small businesses and startups looking for a straightforward incorporation process with minimal compliance burden. Once incorporated, the company receives a Certificate of Incorporation and can start operations. The registration process usually takes around 10–15 working days.</p>
+                <p>Taxbizlegal.com simplifies One Person Company registration with comprehensive, end-to-end support. From obtaining DSC and DIN to filing the incorporation documents and ensuring compliance, we make it fast, affordable, and stress-free. We also offer services for Private Limited Company, LLP, Partnership Registration, and more. Reach out to us at info@taxbizlegal.com or call our compliance manager at 09********* for a free consultation.</p>
 
             </div>
         </div>
@@ -1011,7 +1001,8 @@
                 data-fade="up"
                 style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1; visibility: inherit;">
                 <div class="item-icon">
-                    <?xml version="1.0" encoding="utf-8"?><svg version="1.1" id="Layer_1"
+                    <?xml version="1.0" encoding="utf-8"?>
+                        <svg version="1.1" id="Layer_1"
                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                         viewBox="0 0 122.88 68.04" style="enable-background:new 0 0 122.88 68.04"
                         xml:space="preserve">

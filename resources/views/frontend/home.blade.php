@@ -189,7 +189,7 @@
             </div>
         </section> --}}
 
-        <section class="container mod-my-16 lg:mod-my-24">
+        <section class="container mod-my-16 lg:mod-my-24 reveal-me">
             <article class="banner bg-blue-100 pb-40 px-4 p-lg-5 p-xxl-80">
                 <div class="row gy-4 gx-lg-4 justify-content-center justify-content-lg-between align-items-center">
                     <div class="col-md-9 col-lg-8 d-flex flex-column gap-3 gap-lg-4">
@@ -354,9 +354,9 @@
                 </div>
         </section>
 
-        <section class="container mod-my-16 lg:mod-my-24">
+        <section class="container mod-my-16 lg:mod-my-24 reveal-me">
             <div class="mod-mr-auto mod-ml-auto mod-w-full">
-                <h2 class="display-6 mod-font-semibold mb-32">Explore out Top-rated Services</h2>
+                <h2 class="display-6 mod-font-semibold mb-32">Explore our Top-rated Services</h2>
 
                 <div class="row">
                     <div class="col-12 col-lg-4 mb-3 col-md-6">

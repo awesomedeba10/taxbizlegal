@@ -16,6 +16,7 @@
     },
     "dependencies": {
         "jquery": "^3.7.1",
+        "scrollreveal": "^4.0.9",
         "swiper": "^11.2.6"
     }
 }
