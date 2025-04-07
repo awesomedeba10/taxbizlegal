@@ -1289,6 +1289,9 @@ img, video {
 .mod-text-s-14 {
     font-size: 14px;
 }
+.mod-text-s-15 {
+    font-size: 15px;
+}
 .mod-text-base {
     font-size: 16px;
 }
@@ -2729,6 +2732,9 @@ select {
 .sm\:mod-text-s-14 {
     font-size: 14px;
 }
+.sm\:mod-text-s-15 {
+    font-size: 15px;
+}
 .sm\:mod-text-base {
     font-size: 16px;
 }
@@ -3569,6 +3575,9 @@ select {
 }
 .lg\:mod-text-s-14 {
     font-size: 14px;
+}
+.lg\:mod-text-s-15 {
+    font-size: 15px;
 }
 .lg\:mod-text-base {
     font-size: 16px;

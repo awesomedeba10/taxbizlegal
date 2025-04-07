@@ -3,8 +3,9 @@
 @section('content')
     <main class="flex-grow-1">
         <section class="container my-80 my-xxl-120 mod-relative">
-            <div class="halfs mod-items-start mod-gap-8">
-                <div class="about-hero__header">
+            <div class="about-hero halfs mod-items-start mod-gap-8">
+                <div class="mod-py-3">
+                    <p class="h5 text-primary mb-2">WHO WE ARE</p>
                     <h1 class="mod-font-semibold mod-leading-semi-loose mod-mb-6">About <span
                             class="text-blue">TaxBixLegal</span></h1>
                     <h3 class="mod-mb-4 mod-leading-light-loose mod-space-semi mod-text-justify mod-text-indent-rem">
@@ -14,9 +15,8 @@
                         procedures at TaxBizLegal.com so you can concentrate on expanding your company. Our committed group
                         of experts provides full-service legal advice, taxation, regulatory compliance, and business
                         registration and licensing. For companies of all sizes, from start-ups to well-established
-                        corporations, we aim to deliver smooth, dependable, and effective solutions.</h3>
-                </div>
-                <div>
+                        corporations, we aim to deliver smooth, dependable, and effective solutions.
+                    </h3>
                     <h3 class="mod-mb-4 mod-leading-light-loose mod-space-semi mod-text-justify mod-text-indent-rem">
                         At TaxBizLegal.com, we understand that navigating legal, tax, and compliance landscapes can be
                         complex and time-consuming. Our team of experienced professionals—lawyers, chartered accountants,
@@ -31,6 +31,12 @@
                         compliance. At TaxBizLegal.com, we offer more than services—we provide peace of mind, so you can
                         focus on growing your business.
                     </h3>
+                </div>
+                <div class="description mod-flex mod-p-4">
+                    <div class="mod-max-w-full">
+                        <img src="{{ asset('images/img/about-diverse-people-having-business-meeting-scaled.webp') }}"
+                            width="2560" height="1707">
+                    </div>
                 </div>
             </div>
         </section>
@@ -56,8 +62,8 @@
                             class="services-extra-sign">
                     </div>
                     <div class="services-extra-item-wrap">
-                        <img src="{{ asset('images/svg/services-extra-business-doc.svg') }}" loading="lazy"
-                            alt="Step 2" class="services-extra-item-image">
+                        <img src="{{ asset('images/svg/services-extra-business-doc.svg') }}" loading="lazy" alt="Step 2"
+                            class="services-extra-item-image">
                         <h3 class="services-extra-title">We Handle Everything</h3>
                         <p>Our experts manage the entire process—documentation, verification, and submission.</p>
                     </div>
@@ -87,15 +93,18 @@
                         Our <span class="text-blue">Mission</span>
                     </h1>
                     <h4 class="mod-leading-light-loose text-blue">
-                        At TaxBizLegal.com, our mission is to simplify legal, tax, and compliance processes, making them accessible and hassle-free for businesses of all sizes. We are committed to providing expert guidance with efficiency, transparency, and affordability.
+                        At TaxBizLegal.com, our mission is to simplify legal, tax, and compliance processes, making them
+                        accessible and hassle-free for businesses of all sizes. We are committed to providing expert
+                        guidance with efficiency, transparency, and affordability.
                     </h4>
                     <h4 class="mod-leading-light-loose text-blue">
-                        We strive to empower entrepreneurs by handling complex regulations so they can focus on growth. Our dedicated professionals ensure accuracy, reliability, and timely support.
-                    <h4 class="mod-leading-light-loose text-blue">
-                        By offering seamless digital solutions, we aim to be a trusted partner in every business journey, fostering success through compliance and strategic insights.
-                    </h4>
-                    <img src="{{ asset('images/img/trust-badge.jpg') }}"
-                        alt="Assurance">
+                        We strive to empower entrepreneurs by handling complex regulations so they can focus on growth. Our
+                        dedicated professionals ensure accuracy, reliability, and timely support.
+                        <h4 class="mod-leading-light-loose text-blue">
+                            By offering seamless digital solutions, we aim to be a trusted partner in every business
+                            journey, fostering success through compliance and strategic insights.
+                        </h4>
+                        <img src="{{ asset('images/img/trust-badge.jpg') }}" alt="Assurance">
                 </div>
             </div>
         </section>
@@ -109,77 +118,59 @@
                             <div class="even"
                                 style="will-change: transform; transform: translate3d(0px, -98px, 0px); transition: transform 0.6s cubic-bezier(0, 0, 0, 1);">
                                 <div class="items">
-                                    <img class="items-img"
-                                        width="50" height="50"
-                                        src="https://assurancevisiteurs.ca/wp-content/uploads/2024/01/Icone-nous-innovons.svg"
-                                        alt="Nous innovons avec audace">
+                                    <img class="items-img" width="50" height="50"
+                                        src="{{ asset('images/svg/about-values-icons-1.svg') }}"
+                                        alt="Quick and Easy Process">
                                     <div class="items-desc">
-                                        <h2>Nous
-                                            innovons avec audace</h2>
-                                        <p>Nous
-                                            encourageons la créativité et
-                                            l’audace pour offrir des produits
-                                            novateurs qui répondent aux
-                                            exigences des clients et
-                                            partenaires.</p>
+                                        <h2>Quick and Easy Process</h2>
+                                        <p>Forget tedious paperwork and long queues. Our digital platform ensures that your
+                                            legal work is completed quickly, efficiently, and without hassle—saving you time
+                                            and energy.</p>
                                     </div>
                                 </div>
                                 <div class="items">
-                                    <img class="items-img"
-                                        width="50" height="50"
-                                        src="https://assurancevisiteurs.ca/wp-content/uploads/2024/01/Icone-nous-sommes-authentiques.svg"
-                                        alt="Nous sommes authentiques et intègres">
+                                    <img class="items-img" width="50" height="50"
+                                        src="{{ asset('images/svg/about-values-icons-2.svg') }}"
+                                        alt="Expert Guidance You Can Trust">
                                     <div class="items-desc">
-                                        <h2>Nous
-                                            sommes authentiques et intègres</h2>
-                                        <p>Nous
-                                            sommes transparents et vrais. Nous
-                                            agissons avec honnêteté et éthique,
-                                            en fournissant des informations
-                                            claires et compréhensibles.</p>
+                                        <h2>Managed by Professionals</h2>
+                                        <p>Every service is handled by skilled legal experts. We ensure accuracy,
+                                            compliance, and attention to detail in every step, giving you peace of mind and
+                                            reliable outcomes.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="odd"
                                 style="will-change: transform; transform: translate3d(0px, 98px, 0px); transition: transform 0.6s cubic-bezier(0, 0, 0, 1);">
                                 <div class="items">
-                                    <img class="items-img"
-                                        width="50" height="50"
-                                        src="https://assurancevisiteurs.ca/wp-content/uploads/2024/01/Icone-nous-simplifions-la-vie-des-gens.svg"
-                                        alt="Nous simplifions la vie des gens">
+                                    <img class="items-img" width="50" height="50"
+                                        src="{{ asset('images/svg/about-values-icons-3.svg') }}"
+                                        alt="Client First Approach">
                                     <div class="items-desc">
-                                        <h2>Nous
-                                            simplifions la vie des gens</h2>
-                                        <p>Vous
-                                            êtes au cœur de nos préoccupations.
-                                            Nous nous efforçons de comprendre
-                                            vos besoins spécifiques et d’offrir
-                                            la meilleure solution
-                                            d’assurance.</p>
+                                        <h2>Complete Service Dedication</h2>
+                                        <p>We are committed to customer satisfaction. Our team supports you at every step,
+                                            ensuring your needs are met with care, clarity, and consistent communication
+                                            throughout the process.</p>
                                     </div>
                                 </div>
                                 <div class="items">
-                                    <img class="items-img"
-                                        width="50" height="50"
-                                        src="https://assurancevisiteurs.ca/wp-content/uploads/2024/01/Icone-service-de-confiance.svg"
-                                        alt="Nous offrons un service de confiance">
+                                    <img class="items-img" width="50" height="50"
+                                        src="{{ asset('images/svg/about-values-icons-4.svg') }}"
+                                        alt="Timely and Trusted Delivery">
                                     <div class="items-desc">
-                                        <h2>Nous
-                                            offrons un service de confiance</h2>
-                                        <p>Notre
-                                            équipe dévouée fournit un service
-                                            rapide et efficace. Nous voulons que
-                                            vous puissiez profiter de votre
-                                            séjour en toute tranquillité
-                                            d’esprit.</p>
+                                        <h2>Delivered On Time</h2>
+                                        <p>Your deadlines matter to us. We prioritize punctuality and ensure all services
+                                            are delivered within committed timelines, avoiding unnecessary delays or
+                                            disruptions in your legal journey.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="module-about__empty-space"></div>
                         </div>
+
                         <img class="banner-image sm:mod-hidden md:mod-hidden"
-                        src="https://assurancevisiteurs.ca/wp-content/uploads/2024/01/Image-sans-fond-nos-valeurs.webp"
-                        alt="Our Values">
+                            src="https://assurancevisiteurs.ca/wp-content/uploads/2024/01/Image-sans-fond-nos-valeurs.webp"
+                            alt="Our Values">
                     </div>
                 </div>
                 <div class="product mod-flex mod-flex-col mod-gap-2 mod-items-center mod-justify-center mod-flex-wrap">
@@ -190,8 +181,11 @@
                     <a class="btn-custom-medium" href="http://127.0.0.1:8000/contact-us" target="_self">
                         <span class="btn-text btn-text--back">Get In Touch</span>
                         <span class="btn-icon btn-icon--red">
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4a1 1 0 0 1 0-2h11v11a1 1 0 1 1-2 0V5.414l-8.293 8.293a1 1 0 0 1-1.414-1.414L10.586 4H3Z" fill="white"></path>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M3 4a1 1 0 0 1 0-2h11v11a1 1 0 1 1-2 0V5.414l-8.293 8.293a1 1 0 0 1-1.414-1.414L10.586 4H3Z"
+                                    fill="white"></path>
                             </svg>
                             <span class="btn-text btn-text--front">Request a Callback</span>
                         </span>
@@ -199,6 +193,6 @@
                 </div>
             </div>
         </section>
-        
+
     </main>
 @endsection

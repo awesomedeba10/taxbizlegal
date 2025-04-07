@@ -3,21 +3,21 @@
         class="mod-items-center mod-px-24 mod-grid-12 mod-w-full sm:mod-gap-10 sm:mod-flex sm:mod-flex-col
         sm:mod-px-10 md:mod-px-12 md:mod-items-start ">
         <div class="section-heading">
-            <p class="h5 text-primary mb-2">Start Your One Person Company in Just a Few Clicks!</p>
+            <p class="h5 text-primary mb-2">Start Your One Person Company with Ease!</p>
             <h1 class="section-title mod-font-bold mod-leading-semi-loose mod-space-light-semi mod-mb-8" data-fade="up">
-                Register Your One Person Company & Step Into Formal Entrepreneurship!</h1>
+                Register Your <span class="text-blue">One Person Company</span> & Step Into Formal Entrepreneurship!</h1>
             <div class="mod-flex mod-flex-col mod-gap-10">
                 <div class="text mod-font-medium mod-leading-loose" data-fade="up">
                     <ul class="mod-ml-0 mod-mb-1 mod-pl-1 mod-list-none mod-flex mod-flex-col mod-gap-2 mod-text-base">
-                        <li>👉 Fully Online Registration with End-to-End Assistance</li>
-                        <li>👉 Ideal for Solo Entrepreneurs & Startups</li>
-                        <li>👉 Expert Legal Guidance with Complete Documentation Support</li>
+                        <li>👉 100% Online, Hassle-Free Registration Process</li>
+                        <li>👉 Expert Guidance & Legal Compliance Assistance</li>
+                        <li>👉 Quick Turnaround & Transparent Pricing</li>
                     </ul>
                 </div>
-                <p class="mb-0 mod-leading-light-loose">Launch your One Person Company (OPC) effortlessly with our experienced consultants.
-                    From DIN, DSC to Certificate of Incorporation and PAN – we’ve got it covered. Ensure limited liability,
-                    separate legal identity, and easy funding options while you focus on building your dream venture.
-                    Begin your entrepreneurial journey today!</p>
+                <p class="mb-0 mod-leading-light-loose">Launch your One Person Company (OPC) effortlessly with our
+                    experience consultants. Ensure limited liability & seperate legal identit while focusing on
+                    building your dream venture. Begin Your entrepreneurial journey today with Us!
+                </p>
             </div>
         </div>
         <div class="section-content mod-pr-12 md:mod-pr-0 sm:mod-pr-0">
@@ -25,7 +25,7 @@
                 <div class="col-md-12">
                     <h1 class="h2 mb-lg-20">
                         <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;">Register Today, Secure Your Future</font>
+                            <font style="vertical-align: inherit;">Register Today, Build Your Venture</font>
                         </font>
                     </h1>
                     <form action="/registrace/adept" method="post" id="frm-adeptRegistrationForm-form"
@@ -139,6 +139,12 @@
                     data-target="resources">
                     Resources</li>
                 <li class="services-nav-item mod-px-5 mod-py-4 mod-border-t-md mod-border-none mod-whitespace-nowrap mod-font-medium text-blue-350 border-blue-350"
+                    data-target="doc-required">
+                    Required Documents</li>
+                <li class="services-nav-item mod-px-5 mod-py-4 mod-border-t-md mod-border-none mod-whitespace-nowrap mod-font-medium text-blue-350 border-blue-350"
+                    data-target="compliances">
+                    Compliances to Follow</li>
+                <li class="services-nav-item mod-px-5 mod-py-4 mod-border-t-md mod-border-none mod-whitespace-nowrap mod-font-medium text-blue-350 border-blue-350"
                     data-target="faq">
                     FAQ</li>
             </ul>
@@ -170,716 +176,20 @@
                 class="mod-text-s-32 mod-nav-text mod-font-semibold mod-word-break-normal mod-text-center mod-leading-loose">
                 <span>Choose the Right Plan</span>
                 <div class="mod-text-s-44">
-                    For your <span class="text-blue">Private Limited Company</span>
+                    For your <span class="text-blue">One Person Company</span>
                 </div>
             </h1>
             <p class="mod-nav-text mod-mt-2 mod-leading-loose mod-text-center">
-                Get your Private Limited Company registered effortlessly with our tailored pricing plans. Start your
+                Get your One Person Company registered effortlessly with our tailored pricing plans. Start your
                 journey today!
             </p>
         </div>
     </div>
+
     <div class="pricing-wrapper mod-relative">
-        <div class="mod-w-full">
-            <div class="mod-pt-8 sm:mod-flex mod-grid-3 mod-flex-col">
-                <div class="card-plan">
-                    <div class="card-plan-title">
-                        <img alt="Basic" class="mod-inline" src="{{ asset('images/svg/pricing-icon-basic.svg') }}"
-                            width="64" height="64" decoding="async" data-nimg="future" loading="lazy">
-                        <h3 class="plan-title">Basic</h3>
-                        <p class="plan-desc">Essential features <br>to kickstart your business effortlessly.</p>
-                        <p class="plan-price">₹3999
-                            <span class="plan-gst">+ 18% GST</span>
-                        </p>
-                        {{-- <p type="body_s" color="500" class="sc-db2ccae4-0 bRuJUa">Billed <!-- -->annually</p> --}}
-                        <a href="http://127.0.0.1:8000/contact-us"
-                            class="mod-flex btn btn-sm btn-primary icon-hover-right">
-                            Get Basic
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
-                                viewBox="0 0 24 24">
-                                <path fill="currentColor"
-                                    d="M16.175 13L10.575 18.6L12 20L20 12L12 4L10.575 5.4L16.175 11L4 11L4 13L16.175 13Z">
-                                </path>
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="card-plan-features">
-                        <div class="features-list">
-                            <span class="flashinglight" size="24" role="img">
-                                <svg viewBox="0 0 24 24" fill="none" width="24">
-                                    <path
-                                        d="M12.6946 10.6113H17.5557L11.3057 19.639V13.389H6.44458L12.6946 4.36127V10.6113Z"
-                                        fill="currentColor"></path>
-                                </svg>
-                            </span>
-                            <p class="mod-mb-0">Company Registration</p>
-                        </div>
-                        <div class="features-list">
-                            <span class="checkline" size="24" role="img">
-                                <svg viewBox="0 0 24 24" fill="none" width="24">
-                                    <path
-                                        d="M11.1693 15.3332L17.0609 9.44066L15.8826 8.26233L11.1693 12.9765L8.81176 10.619L7.63342 11.7973L11.1693 15.3332Z"
-                                        fill="currentColor">
-                                    </path>
-                                </svg>
-                            </span>
-                            <p class="mod-mb-0">Drafting & Filing by CA/CS</p>
-                        </div>
-                        <div class="features-list">
-                            <span class="checkline" size="24" role="img">
-                                <svg viewBox="0 0 24 24" fill="none" width="24">
-                                    <path
-                                        d="M11.1693 15.3332L17.0609 9.44066L15.8826 8.26233L11.1693 12.9765L8.81176 10.619L7.63342 11.7973L11.1693 15.3332Z"
-                                        fill="currentColor">
-                                    </path>
-                                </svg>
-                            </span>
-                            <p class="mod-mb-0">MCA Processing & CIN</p>
-                        </div>
-                        <div class="features-list">
-                            <span class="checkline" size="24" role="img">
-                                <svg viewBox="0 0 24 24" fill="none" width="24">
-                                    <path
-                                        d="M11.1693 15.3332L17.0609 9.44066L15.8826 8.26233L11.1693 12.9765L8.81176 10.619L7.63342 11.7973L11.1693 15.3332Z"
-                                        fill="currentColor">
-                                    </path>
-                                </svg>
-                            </span>
-                            <p class="mod-mb-0">Company PAN & TAN</p>
-                        </div>
-                        <div class="features-list">
-                            <span class="checkline" size="24" role="img">
-                                <svg viewBox="0 0 24 24" fill="none" width="24">
-                                    <path
-                                        d="M11.1693 15.3332L17.0609 9.44066L15.8826 8.26233L11.1693 12.9765L8.81176 10.619L7.63342 11.7973L11.1693 15.3332Z"
-                                        fill="currentColor">
-                                    </path>
-                                </svg>
-                            </span>
-                            <p class="mod-mb-0">MOA & AOA</p>
-                        </div>
-                        <div class="features-list">
-                            <span class="checkline" size="24" role="img">
-                                <svg viewBox="0 0 24 24" fill="none" width="24">
-                                    <path
-                                        d="M11.1693 15.3332L17.0609 9.44066L15.8826 8.26233L11.1693 12.9765L8.81176 10.619L7.63342 11.7973L11.1693 15.3332Z"
-                                        fill="currentColor">
-                                    </path>
-                                </svg>
-                            </span>
-                            <p class="mod-mb-0">Allotment of 2 DINs</p>
-                        </div>
-                        <div class="features-list">
-                            <span class="checkline" size="24" role="img">
-                                <svg viewBox="0 0 24 24" fill="none" width="24">
-                                    <path
-                                        d="M11.1693 15.3332L17.0609 9.44066L15.8826 8.26233L11.1693 12.9765L8.81176 10.619L7.63342 11.7973L11.1693 15.3332Z"
-                                        fill="currentColor">
-                                    </path>
-                                </svg>
-                            </span>
-                            <p class="mod-mb-0">Share Certificate</p>
-                        </div>
-                        <div class="features-list">
-                            <span class="checkline" size="24" role="img">
-                                <svg viewBox="0 0 24 24" fill="none" width="24">
-                                    <path
-                                        d="M11.1693 15.3332L17.0609 9.44066L15.8826 8.26233L11.1693 12.9765L8.81176 10.619L7.63342 11.7973L11.1693 15.3332Z"
-                                        fill="currentColor">
-                                    </path>
-                                </svg>
-                            </span>
-                            <p class="mod-mb-0">ESI & PF Registration</p>
-                        </div>
-                        <div class="features-list is-disabled">
-                            <span class="closeline" size="24" role="img">
-                                <svg viewBox="0 0 24 24" fill="none" width="24">
-                                    <path
-                                        d="M11.9997 10.8223L9.64303 8.46484L8.46387 9.64401L10.8214 12.0007L8.46387 14.3573L9.64303 15.5365L11.9997 13.179L14.3564 15.5365L15.5355 14.3573L13.178 12.0007L15.5355 9.64401L14.3564 8.46484L11.9997 10.8223Z"
-                                        fill="currentColor">
-                                    </path>
-                                </svg>
-                            </span>
-                            <p class="mod-mb-0">GST Registration</p>
-                        </div>
-                        <div class="features-list is-disabled">
-                            <span class="closeline" size="24" role="img">
-                                <svg viewBox="0 0 24 24" fill="none" width="24">
-                                    <path
-                                        d="M11.9997 10.8223L9.64303 8.46484L8.46387 9.64401L10.8214 12.0007L8.46387 14.3573L9.64303 15.5365L11.9997 13.179L14.3564 15.5365L15.5355 14.3573L13.178 12.0007L15.5355 9.64401L14.3564 8.46484L11.9997 10.8223Z"
-                                        fill="currentColor">
-                                    </path>
-                                </svg>
-                            </span>
-                            <p class="mod-mb-0">ADT-1</p>
-                        </div>
-                        <div class="features-list is-disabled">
-                            <span class="closeline" size="24" role="img">
-                                <svg viewBox="0 0 24 24" fill="none" width="24">
-                                    <path
-                                        d="M11.9997 10.8223L9.64303 8.46484L8.46387 9.64401L10.8214 12.0007L8.46387 14.3573L9.64303 15.5365L11.9997 13.179L14.3564 15.5365L15.5355 14.3573L13.178 12.0007L15.5355 9.64401L14.3564 8.46484L11.9997 10.8223Z"
-                                        fill="currentColor">
-                                    </path>
-                                </svg>
-                            </span>
-                            <p class="mod-mb-0">INC-20A (Commencement of Business)</p>
-                        </div>
-                        <div class="features-list is-disabled">
-                            <span class="closeline" size="24" role="img">
-                                <svg viewBox="0 0 24 24" fill="none" width="24">
-                                    <path
-                                        d="M11.9997 10.8223L9.64303 8.46484L8.46387 9.64401L10.8214 12.0007L8.46387 14.3573L9.64303 15.5365L11.9997 13.179L14.3564 15.5365L15.5355 14.3573L13.178 12.0007L15.5355 9.64401L14.3564 8.46484L11.9997 10.8223Z"
-                                        fill="currentColor">
-                                    </path>
-                                </svg>
-                            </span>
-                            <p class="mod-mb-0">MGT-7</p>
-                        </div>
-                        <div class="features-list is-disabled">
-                            <span class="closeline" size="24" role="img">
-                                <svg viewBox="0 0 24 24" fill="none" width="24">
-                                    <path
-                                        d="M11.9997 10.8223L9.64303 8.46484L8.46387 9.64401L10.8214 12.0007L8.46387 14.3573L9.64303 15.5365L11.9997 13.179L14.3564 15.5365L15.5355 14.3573L13.178 12.0007L15.5355 9.64401L14.3564 8.46484L11.9997 10.8223Z"
-                                        fill="currentColor">
-                                    </path>
-                                </svg>
-                            </span>
-                            <p class="mod-mb-0">AOC-4</p>
-                        </div>
-                        <div class="features-list is-disabled">
-                            <span class="closeline" size="24" role="img">
-                                <svg viewBox="0 0 24 24" fill="none" width="24">
-                                    <path
-                                        d="M11.9997 10.8223L9.64303 8.46484L8.46387 9.64401L10.8214 12.0007L8.46387 14.3573L9.64303 15.5365L11.9997 13.179L14.3564 15.5365L15.5355 14.3573L13.178 12.0007L15.5355 9.64401L14.3564 8.46484L11.9997 10.8223Z"
-                                        fill="currentColor">
-                                    </path>
-                                </svg>
-                            </span>
-                            <p class="mod-mb-0">DIR 3 KYC</p>
-                        </div>
-                        <div class="features-list is-disabled">
-                            <span class="closeline" size="24" role="img">
-                                <svg viewBox="0 0 24 24" fill="none" width="24">
-                                    <path
-                                        d="M11.9997 10.8223L9.64303 8.46484L8.46387 9.64401L10.8214 12.0007L8.46387 14.3573L9.64303 15.5365L11.9997 13.179L14.3564 15.5365L15.5355 14.3573L13.178 12.0007L15.5355 9.64401L14.3564 8.46484L11.9997 10.8223Z"
-                                        fill="currentColor">
-                                    </path>
-                                </svg>
-                            </span>
-                            <p class="mod-mb-0">First Board Resolution</p>
-                        </div>
-                        <div class="features-list is-disabled">
-                            <span class="closeline" size="24" role="img">
-                                <svg viewBox="0 0 24 24" fill="none" width="24">
-                                    <path
-                                        d="M11.9997 10.8223L9.64303 8.46484L8.46387 9.64401L10.8214 12.0007L8.46387 14.3573L9.64303 15.5365L11.9997 13.179L14.3564 15.5365L15.5355 14.3573L13.178 12.0007L15.5355 9.64401L14.3564 8.46484L11.9997 10.8223Z"
-                                        fill="currentColor">
-                                    </path>
-                                </svg>
-                            </span>
-                            <p class="mod-mb-0">Trademark Registration</p>
-                        </div>
-                        <div class="features-list is-disabled">
-                            <span class="closeline" size="24" role="img">
-                                <svg viewBox="0 0 24 24" fill="none" width="24">
-                                    <path
-                                        d="M11.9997 10.8223L9.64303 8.46484L8.46387 9.64401L10.8214 12.0007L8.46387 14.3573L9.64303 15.5365L11.9997 13.179L14.3564 15.5365L15.5355 14.3573L13.178 12.0007L15.5355 9.64401L14.3564 8.46484L11.9997 10.8223Z"
-                                        fill="currentColor">
-                                    </path>
-                                </svg>
-                            </span>
-                            <p class="mod-mb-0">GST Return Filing 3 Months</p>
-                        </div>
-                        <div class="features-list is-disabled">
-                            <span class="closeline" size="24" role="img">
-                                <svg viewBox="0 0 24 24" fill="none" width="24">
-                                    <path
-                                        d="M11.9997 10.8223L9.64303 8.46484L8.46387 9.64401L10.8214 12.0007L8.46387 14.3573L9.64303 15.5365L11.9997 13.179L14.3564 15.5365L15.5355 14.3573L13.178 12.0007L15.5355 9.64401L14.3564 8.46484L11.9997 10.8223Z"
-                                        fill="currentColor">
-                                    </path>
-                                </svg>
-                            </span>
-                            <p class="mod-mb-0">Income Tax Filings</p>
-                        </div>
-                    </div>
-                    <a href="http://127.0.0.1:8000/contact-us"
-                        class="mod-flex btn btn-sm btn-primary mod-mt-4 icon-hover-right">
-                        Get Basic
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
-                            viewBox="0 0 24 24">
-                            <path fill="currentColor"
-                                d="M16.175 13L10.575 18.6L12 20L20 12L12 4L10.575 5.4L16.175 11L4 11L4 13L16.175 13Z">
-                            </path>
-                        </svg>
-                    </a>
-                </div>
-                <div class="card-plan card-plan-popular">
-                    <div class="tag-popular">POPULAR</div>
-                    <div class="card-plan-title">
-                        <img alt="Standard" class="mod-inline"
-                            src="{{ asset('images/svg/pricing-icon-standard.svg') }}" width="64" height="64"
-                            decoding="async" data-nimg="future" loading="lazy">
-                        <h3 class="plan-title">Standard</h3>
-                        <p class="plan-desc">
-                            Enhanced services <br>for smooth business operations.
-                        </p>
-                        <p class="plan-price">₹6999
-                            <span class="plan-gst">+ 18% GST</span>
-                        </p>
-                        <a href="http://127.0.0.1:8000/contact-us"
-                            class="mod-flex btn btn-sm btn-primary icon-hover-right">
-                            Get Standard
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
-                                viewBox="0 0 24 24">
-                                <path fill="currentColor"
-                                    d="M16.175 13L10.575 18.6L12 20L20 12L12 4L10.575 5.4L16.175 11L4 11L4 13L16.175 13Z">
-                                </path>
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="card-plan-features">
-                        <div class="features-list">
-                            <span class="flashinglight" size="24" role="img">
-                                <svg viewBox="0 0 24 24" fill="none" width="24">
-                                    <path
-                                        d="M12.6946 10.6113H17.5557L11.3057 19.639V13.389H6.44458L12.6946 4.36127V10.6113Z"
-                                        fill="currentColor"></path>
-                                </svg>
-                            </span>
-                            <p class="mod-mb-0">Company Registration</p>
-                        </div>
-                        <div class="features-list">
-                            <span class="checkline" size="24" role="img">
-                                <svg viewBox="0 0 24 24" fill="none" width="24">
-                                    <path
-                                        d="M11.1693 15.3332L17.0609 9.44066L15.8826 8.26233L11.1693 12.9765L8.81176 10.619L7.63342 11.7973L11.1693 15.3332Z"
-                                        fill="currentColor">
-                                    </path>
-                                </svg>
-                            </span>
-                            <p class="mod-mb-0">Drafting & Filing by CA/CS</p>
-                        </div>
-                        <div class="features-list">
-                            <span class="checkline" size="24" role="img">
-                                <svg viewBox="0 0 24 24" fill="none" width="24">
-                                    <path
-                                        d="M11.1693 15.3332L17.0609 9.44066L15.8826 8.26233L11.1693 12.9765L8.81176 10.619L7.63342 11.7973L11.1693 15.3332Z"
-                                        fill="currentColor">
-                                    </path>
-                                </svg>
-                            </span>
-                            <p class="mod-mb-0">MCA Processing & CIN</p>
-                        </div>
-                        <div class="features-list">
-                            <span class="checkline" size="24" role="img">
-                                <svg viewBox="0 0 24 24" fill="none" width="24">
-                                    <path
-                                        d="M11.1693 15.3332L17.0609 9.44066L15.8826 8.26233L11.1693 12.9765L8.81176 10.619L7.63342 11.7973L11.1693 15.3332Z"
-                                        fill="currentColor">
-                                    </path>
-                                </svg>
-                            </span>
-                            <p class="mod-mb-0">Company PAN & TAN</p>
-                        </div>
-                        <div class="features-list">
-                            <span class="checkline" size="24" role="img">
-                                <svg viewBox="0 0 24 24" fill="none" width="24">
-                                    <path
-                                        d="M11.1693 15.3332L17.0609 9.44066L15.8826 8.26233L11.1693 12.9765L8.81176 10.619L7.63342 11.7973L11.1693 15.3332Z"
-                                        fill="currentColor">
-                                    </path>
-                                </svg>
-                            </span>
-                            <p class="mod-mb-0">MOA & AOA</p>
-                        </div>
-                        <div class="features-list">
-                            <span class="checkline" size="24" role="img">
-                                <svg viewBox="0 0 24 24" fill="none" width="24">
-                                    <path
-                                        d="M11.1693 15.3332L17.0609 9.44066L15.8826 8.26233L11.1693 12.9765L8.81176 10.619L7.63342 11.7973L11.1693 15.3332Z"
-                                        fill="currentColor">
-                                    </path>
-                                </svg>
-                            </span>
-                            <p class="mod-mb-0">Allotment of 2 DINs</p>
-                        </div>
-                        <div class="features-list">
-                            <span class="checkline" size="24" role="img">
-                                <svg viewBox="0 0 24 24" fill="none" width="24">
-                                    <path
-                                        d="M11.1693 15.3332L17.0609 9.44066L15.8826 8.26233L11.1693 12.9765L8.81176 10.619L7.63342 11.7973L11.1693 15.3332Z"
-                                        fill="currentColor">
-                                    </path>
-                                </svg>
-                            </span>
-                            <p class="mod-mb-0">Share Certificate</p>
-                        </div>
-                        <div class="features-list">
-                            <span class="checkline" size="24" role="img">
-                                <svg viewBox="0 0 24 24" fill="none" width="24">
-                                    <path
-                                        d="M11.1693 15.3332L17.0609 9.44066L15.8826 8.26233L11.1693 12.9765L8.81176 10.619L7.63342 11.7973L11.1693 15.3332Z"
-                                        fill="currentColor">
-                                    </path>
-                                </svg>
-                            </span>
-                            <p class="mod-mb-0">ESI & PF Registration</p>
-                        </div>
-                        <div class="features-list">
-                            <span class="checkline" size="24" role="img">
-                                <svg viewBox="0 0 24 24" fill="none" width="24">
-                                    <path
-                                        d="M11.1693 15.3332L17.0609 9.44066L15.8826 8.26233L11.1693 12.9765L8.81176 10.619L7.63342 11.7973L11.1693 15.3332Z"
-                                        fill="currentColor">
-                                    </path>
-                                </svg>
-                            </span>
-                            <p class="mod-mb-0">GST Registration</p>
-                        </div>
-                        <div class="features-list">
-                            <span class="checkline" size="24" role="img">
-                                <svg viewBox="0 0 24 24" fill="none" width="24">
-                                    <path
-                                        d="M11.1693 15.3332L17.0609 9.44066L15.8826 8.26233L11.1693 12.9765L8.81176 10.619L7.63342 11.7973L11.1693 15.3332Z"
-                                        fill="currentColor">
-                                    </path>
-                                </svg>
-                            </span>
-                            <p class="mod-mb-0">ADT-1</p>
-                        </div>
-                        <div class="features-list">
-                            <span class="checkline" size="24" role="img">
-                                <svg viewBox="0 0 24 24" fill="none" width="24">
-                                    <path
-                                        d="M11.1693 15.3332L17.0609 9.44066L15.8826 8.26233L11.1693 12.9765L8.81176 10.619L7.63342 11.7973L11.1693 15.3332Z"
-                                        fill="currentColor">
-                                    </path>
-                                </svg>
-                            </span>
-                            <p class="mod-mb-0">INC-20A (Commencement of Business)</p>
-                        </div>
-                        <div class="features-list is-disabled">
-                            <span class="closeline" size="24" role="img">
-                                <svg viewBox="0 0 24 24" fill="none" width="24">
-                                    <path
-                                        d="M11.9997 10.8223L9.64303 8.46484L8.46387 9.64401L10.8214 12.0007L8.46387 14.3573L9.64303 15.5365L11.9997 13.179L14.3564 15.5365L15.5355 14.3573L13.178 12.0007L15.5355 9.64401L14.3564 8.46484L11.9997 10.8223Z"
-                                        fill="currentColor">
-                                    </path>
-                                </svg>
-                            </span>
-                            <p class="mod-mb-0">MGT-7</p>
-                        </div>
-                        <div class="features-list is-disabled">
-                            <span class="closeline" size="24" role="img">
-                                <svg viewBox="0 0 24 24" fill="none" width="24">
-                                    <path
-                                        d="M11.9997 10.8223L9.64303 8.46484L8.46387 9.64401L10.8214 12.0007L8.46387 14.3573L9.64303 15.5365L11.9997 13.179L14.3564 15.5365L15.5355 14.3573L13.178 12.0007L15.5355 9.64401L14.3564 8.46484L11.9997 10.8223Z"
-                                        fill="currentColor">
-                                    </path>
-                                </svg>
-                            </span>
-                            <p class="mod-mb-0">AOC-4</p>
-                        </div>
-                        <div class="features-list is-disabled">
-                            <span class="closeline" size="24" role="img">
-                                <svg viewBox="0 0 24 24" fill="none" width="24">
-                                    <path
-                                        d="M11.9997 10.8223L9.64303 8.46484L8.46387 9.64401L10.8214 12.0007L8.46387 14.3573L9.64303 15.5365L11.9997 13.179L14.3564 15.5365L15.5355 14.3573L13.178 12.0007L15.5355 9.64401L14.3564 8.46484L11.9997 10.8223Z"
-                                        fill="currentColor">
-                                    </path>
-                                </svg>
-                            </span>
-                            <p class="mod-mb-0">DIR 3 KYC</p>
-                        </div>
-                        <div class="features-list is-disabled">
-                            <span class="closeline" size="24" role="img">
-                                <svg viewBox="0 0 24 24" fill="none" width="24">
-                                    <path
-                                        d="M11.9997 10.8223L9.64303 8.46484L8.46387 9.64401L10.8214 12.0007L8.46387 14.3573L9.64303 15.5365L11.9997 13.179L14.3564 15.5365L15.5355 14.3573L13.178 12.0007L15.5355 9.64401L14.3564 8.46484L11.9997 10.8223Z"
-                                        fill="currentColor">
-                                    </path>
-                                </svg>
-                            </span>
-                            <p class="mod-mb-0">First Board Resolution</p>
-                        </div>
-                        <div class="features-list is-disabled">
-                            <span class="closeline" size="24" role="img">
-                                <svg viewBox="0 0 24 24" fill="none" width="24">
-                                    <path
-                                        d="M11.9997 10.8223L9.64303 8.46484L8.46387 9.64401L10.8214 12.0007L8.46387 14.3573L9.64303 15.5365L11.9997 13.179L14.3564 15.5365L15.5355 14.3573L13.178 12.0007L15.5355 9.64401L14.3564 8.46484L11.9997 10.8223Z"
-                                        fill="currentColor">
-                                    </path>
-                                </svg>
-                            </span>
-                            <p class="mod-mb-0">Trademark Registration</p>
-                        </div>
-                        <div class="features-list is-disabled">
-                            <span class="closeline" size="24" role="img">
-                                <svg viewBox="0 0 24 24" fill="none" width="24">
-                                    <path
-                                        d="M11.9997 10.8223L9.64303 8.46484L8.46387 9.64401L10.8214 12.0007L8.46387 14.3573L9.64303 15.5365L11.9997 13.179L14.3564 15.5365L15.5355 14.3573L13.178 12.0007L15.5355 9.64401L14.3564 8.46484L11.9997 10.8223Z"
-                                        fill="currentColor">
-                                    </path>
-                                </svg>
-                            </span>
-                            <p class="mod-mb-0">GST Return Filing 3 Months</p>
-                        </div>
-                        <div class="features-list is-disabled">
-                            <span class="closeline" size="24" role="img">
-                                <svg viewBox="0 0 24 24" fill="none" width="24">
-                                    <path
-                                        d="M11.9997 10.8223L9.64303 8.46484L8.46387 9.64401L10.8214 12.0007L8.46387 14.3573L9.64303 15.5365L11.9997 13.179L14.3564 15.5365L15.5355 14.3573L13.178 12.0007L15.5355 9.64401L14.3564 8.46484L11.9997 10.8223Z"
-                                        fill="currentColor">
-                                    </path>
-                                </svg>
-                            </span>
-                            <p class="mod-mb-0">Income Tax Filings</p>
-                        </div>
-                    </div>
-                    <a href="http://127.0.0.1:8000/contact-us"
-                        class="mod-flex btn btn-sm btn-primary mod-mt-4 icon-hover-right">
-                        Get Standard
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
-                            viewBox="0 0 24 24">
-                            <path fill="currentColor"
-                                d="M16.175 13L10.575 18.6L12 20L20 12L12 4L10.575 5.4L16.175 11L4 11L4 13L16.175 13Z">
-                            </path>
-                        </svg>
-                    </a>
-                </div>
-                <div class="card-plan">
-                    <div class="card-plan-title">
-                        <img alt="Premium" class="mod-inline"
-                            src="{{ asset('images/svg/pricing-icon-premium.svg') }}" width="64" height="64"
-                            decoding="async" data-nimg="future" loading="lazy">
-                        <h3 class="plan-title">PREMIUM</h3>
-                        <p class="plan-desc">Comprehensive solutions <br>for business growth and success</p>
-                        <p class="plan-price">₹19999
-                            <span class="plan-gst">+ 18% GST</span>
-                        </p>
-                        <a href="http://127.0.0.1:8000/contact-us"
-                            class="mod-flex btn btn-sm btn-primary icon-hover-right">
-                            Get Premium
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
-                                viewBox="0 0 24 24">
-                                <path fill="currentColor"
-                                    d="M16.175 13L10.575 18.6L12 20L20 12L12 4L10.575 5.4L16.175 11L4 11L4 13L16.175 13Z">
-                                </path>
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="card-plan-features">
-                        <div class="features-list">
-                            <span class="flashinglight" size="24" role="img">
-                                <svg viewBox="0 0 24 24" fill="none" width="24">
-                                    <path
-                                        d="M12.6946 10.6113H17.5557L11.3057 19.639V13.389H6.44458L12.6946 4.36127V10.6113Z"
-                                        fill="currentColor"></path>
-                                </svg>
-                            </span>
-                            <p class="mod-mb-0">Company Registration</p>
-                        </div>
-                        <div class="features-list">
-                            <span class="checkline" size="24" role="img">
-                                <svg viewBox="0 0 24 24" fill="none" width="24">
-                                    <path
-                                        d="M11.1693 15.3332L17.0609 9.44066L15.8826 8.26233L11.1693 12.9765L8.81176 10.619L7.63342 11.7973L11.1693 15.3332Z"
-                                        fill="currentColor">
-                                    </path>
-                                </svg>
-                            </span>
-                            <p class="mod-mb-0">Drafting & Filing by CA/CS</p>
-                        </div>
-                        <div class="features-list">
-                            <span class="checkline" size="24" role="img">
-                                <svg viewBox="0 0 24 24" fill="none" width="24">
-                                    <path
-                                        d="M11.1693 15.3332L17.0609 9.44066L15.8826 8.26233L11.1693 12.9765L8.81176 10.619L7.63342 11.7973L11.1693 15.3332Z"
-                                        fill="currentColor">
-                                    </path>
-                                </svg>
-                            </span>
-                            <p class="mod-mb-0">MCA Processing & CIN</p>
-                        </div>
-                        <div class="features-list">
-                            <span class="checkline" size="24" role="img">
-                                <svg viewBox="0 0 24 24" fill="none" width="24">
-                                    <path
-                                        d="M11.1693 15.3332L17.0609 9.44066L15.8826 8.26233L11.1693 12.9765L8.81176 10.619L7.63342 11.7973L11.1693 15.3332Z"
-                                        fill="currentColor">
-                                    </path>
-                                </svg>
-                            </span>
-                            <p class="mod-mb-0">Company PAN & TAN</p>
-                        </div>
-                        <div class="features-list">
-                            <span class="checkline" size="24" role="img">
-                                <svg viewBox="0 0 24 24" fill="none" width="24">
-                                    <path
-                                        d="M11.1693 15.3332L17.0609 9.44066L15.8826 8.26233L11.1693 12.9765L8.81176 10.619L7.63342 11.7973L11.1693 15.3332Z"
-                                        fill="currentColor">
-                                    </path>
-                                </svg>
-                            </span>
-                            <p class="mod-mb-0">MOA & AOA</p>
-                        </div>
-                        <div class="features-list">
-                            <span class="checkline" size="24" role="img">
-                                <svg viewBox="0 0 24 24" fill="none" width="24">
-                                    <path
-                                        d="M11.1693 15.3332L17.0609 9.44066L15.8826 8.26233L11.1693 12.9765L8.81176 10.619L7.63342 11.7973L11.1693 15.3332Z"
-                                        fill="currentColor">
-                                    </path>
-                                </svg>
-                            </span>
-                            <p class="mod-mb-0">Allotment of 2 DINs</p>
-                        </div>
-                        <div class="features-list">
-                            <span class="checkline" size="24" role="img">
-                                <svg viewBox="0 0 24 24" fill="none" width="24">
-                                    <path
-                                        d="M11.1693 15.3332L17.0609 9.44066L15.8826 8.26233L11.1693 12.9765L8.81176 10.619L7.63342 11.7973L11.1693 15.3332Z"
-                                        fill="currentColor">
-                                    </path>
-                                </svg>
-                            </span>
-                            <p class="mod-mb-0">Share Certificate</p>
-                        </div>
-                        <div class="features-list">
-                            <span class="checkline" size="24" role="img">
-                                <svg viewBox="0 0 24 24" fill="none" width="24">
-                                    <path
-                                        d="M11.1693 15.3332L17.0609 9.44066L15.8826 8.26233L11.1693 12.9765L8.81176 10.619L7.63342 11.7973L11.1693 15.3332Z"
-                                        fill="currentColor">
-                                    </path>
-                                </svg>
-                            </span>
-                            <p class="mod-mb-0">ESI & PF Registration</p>
-                        </div>
-                        <div class="features-list">
-                            <span class="checkline" size="24" role="img">
-                                <svg viewBox="0 0 24 24" fill="none" width="24">
-                                    <path
-                                        d="M11.1693 15.3332L17.0609 9.44066L15.8826 8.26233L11.1693 12.9765L8.81176 10.619L7.63342 11.7973L11.1693 15.3332Z"
-                                        fill="currentColor">
-                                    </path>
-                                </svg>
-                            </span>
-                            <p class="mod-mb-0">GST Registration</p>
-                        </div>
-                        <div class="features-list">
-                            <span class="checkline" size="24" role="img">
-                                <svg viewBox="0 0 24 24" fill="none" width="24">
-                                    <path
-                                        d="M11.1693 15.3332L17.0609 9.44066L15.8826 8.26233L11.1693 12.9765L8.81176 10.619L7.63342 11.7973L11.1693 15.3332Z"
-                                        fill="currentColor">
-                                    </path>
-                                </svg>
-                            </span>
-                            <p class="mod-mb-0">ADT-1</p>
-                        </div>
-                        <div class="features-list">
-                            <span class="checkline" size="24" role="img">
-                                <svg viewBox="0 0 24 24" fill="none" width="24">
-                                    <path
-                                        d="M11.1693 15.3332L17.0609 9.44066L15.8826 8.26233L11.1693 12.9765L8.81176 10.619L7.63342 11.7973L11.1693 15.3332Z"
-                                        fill="currentColor">
-                                    </path>
-                                </svg>
-                            </span>
-                            <p class="mod-mb-0">INC-20A (Commencement of Business)</p>
-                        </div>
-                        <div class="features-list">
-                            <span class="checkline" size="24" role="img">
-                                <svg viewBox="0 0 24 24" fill="none" width="24">
-                                    <path
-                                        d="M11.1693 15.3332L17.0609 9.44066L15.8826 8.26233L11.1693 12.9765L8.81176 10.619L7.63342 11.7973L11.1693 15.3332Z"
-                                        fill="currentColor">
-                                    </path>
-                                </svg>
-                            </span>
-                            <p class="mod-mb-0">MGT-7</p>
-                        </div>
-                        <div class="features-list">
-                            <span class="checkline" size="24" role="img">
-                                <svg viewBox="0 0 24 24" fill="none" width="24">
-                                    <path
-                                        d="M11.1693 15.3332L17.0609 9.44066L15.8826 8.26233L11.1693 12.9765L8.81176 10.619L7.63342 11.7973L11.1693 15.3332Z"
-                                        fill="currentColor">
-                                    </path>
-                                </svg>
-                            </span>
-                            <p class="mod-mb-0">AOC-4</p>
-                        </div>
-                        <div class="features-list">
-                            <span class="checkline" size="24" role="img">
-                                <svg viewBox="0 0 24 24" fill="none" width="24">
-                                    <path
-                                        d="M11.1693 15.3332L17.0609 9.44066L15.8826 8.26233L11.1693 12.9765L8.81176 10.619L7.63342 11.7973L11.1693 15.3332Z"
-                                        fill="currentColor">
-                                    </path>
-                                </svg>
-                            </span>
-                            <p class="mod-mb-0">DIR 3 KYC</p>
-                        </div>
-                        <div class="features-list">
-                            <span class="checkline" size="24" role="img">
-                                <svg viewBox="0 0 24 24" fill="none" width="24">
-                                    <path
-                                        d="M11.1693 15.3332L17.0609 9.44066L15.8826 8.26233L11.1693 12.9765L8.81176 10.619L7.63342 11.7973L11.1693 15.3332Z"
-                                        fill="currentColor">
-                                    </path>
-                                </svg>
-                            </span>
-                            <p class="mod-mb-0">First Board Resolution</p>
-                        </div>
-                        <div class="features-list">
-                            <span class="checkline" size="24" role="img">
-                                <svg viewBox="0 0 24 24" fill="none" width="24">
-                                    <path
-                                        d="M11.1693 15.3332L17.0609 9.44066L15.8826 8.26233L11.1693 12.9765L8.81176 10.619L7.63342 11.7973L11.1693 15.3332Z"
-                                        fill="currentColor">
-                                    </path>
-                                </svg>
-                            </span>
-                            <p class="mod-mb-0">Trademark Registration</p>
-                        </div>
-                        <div class="features-list">
-                            <span class="checkline" size="24" role="img">
-                                <svg viewBox="0 0 24 24" fill="none" width="24">
-                                    <path
-                                        d="M11.1693 15.3332L17.0609 9.44066L15.8826 8.26233L11.1693 12.9765L8.81176 10.619L7.63342 11.7973L11.1693 15.3332Z"
-                                        fill="currentColor">
-                                    </path>
-                                </svg>
-                            </span>
-                            <p class="mod-mb-0">GST Return Filing 3 Months</p>
-                        </div>
-                        <div class="features-list">
-                            <span class="checkline" size="24" role="img">
-                                <svg viewBox="0 0 24 24" fill="none" width="24">
-                                    <path
-                                        d="M11.1693 15.3332L17.0609 9.44066L15.8826 8.26233L11.1693 12.9765L8.81176 10.619L7.63342 11.7973L11.1693 15.3332Z"
-                                        fill="currentColor">
-                                    </path>
-                                </svg>
-                            </span>
-                            <p class="mod-mb-0">Income Tax Filings</p>
-                        </div>
-                    </div>
-                    <a href="http://127.0.0.1:8000/contact-us"
-                        class="mod-flex btn btn-sm btn-primary mod-mt-4 icon-hover-right">
-                        Get Premium
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
-                            viewBox="0 0 24 24">
-                            <path fill="currentColor"
-                                d="M16.175 13L10.575 18.6L12 20L20 12L12 4L10.575 5.4L16.175 11L4 11L4 13L16.175 13Z">
-                            </path>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </div>
+
+        <x-pricing-wrapper page="{{ $slug }}"></x-pricing-wrapper>
+
         <div class="card-more-plan bg-blue-100 mod-flex mod-w-full mod-justify-center mod-items-center mod-overflow-hidden mod-relative mod-mt-12 mod-py-12" data-theme="dark">
             <div class="mod-flex mod-flex-col mod-items-center">
                 <h4 class="mod-text-s-32 mod-font-semibold mod-word-break-normal mod-text-center mod-leading-semi-loose">
@@ -928,6 +238,7 @@
             </div>
         </div>
     </div>
+
 </section>
 
 <section class="container mod-my-20 lg:mod-my-24" id="overview">
@@ -935,10 +246,21 @@
         <div class="col-12 col-md-6 col-xxl-5 sm:mod-order-2">
             <div class="mod-py-8">
 
-                <h1 class="mod-text-s-24">All you need to know about One Person Company Registration</h1>
-                <p>A One Person Company (OPC) is a unique form of business structure introduced to support solo entrepreneurs who want to operate as a company with limited liability. It allows a single individual to run a business with the benefits of a corporate framework, such as legal protection and separate legal identity, without requiring partners or co-founders.</p>
-                <p>To register an OPC, only one person is needed as both the shareholder and director. However, a nominee is required in case the sole member becomes incapacitated. The OPC structure is ideal for small businesses and startups looking for a straightforward incorporation process with minimal compliance burden. Once incorporated, the company receives a Certificate of Incorporation and can start operations. The registration process usually takes around 10–15 working days.</p>
-                <p>Taxbizlegal.com simplifies One Person Company registration with comprehensive, end-to-end support. From obtaining DSC and DIN to filing the incorporation documents and ensuring compliance, we make it fast, affordable, and stress-free. We also offer services for Private Limited Company, LLP, Partnership Registration, and more. Reach out to us at info@taxbizlegal.com or call our compliance manager at 09********* for a free consultation.</p>
+                <h1 class="mod-text-s-24">All you need to know about Private Limted Company Registration</h1>
+                <p>A Private Limited Company (PLC) in India is one of the most popular and simplest forms of company
+                    registration. It offers limited liability and legal protection to its shareholders, making it an
+                    ideal choice for many entrepreneurs. Positioned as a hybrid entity between a partnership firm and a
+                    public company, it allows businesses to enjoy the benefits of both forms.</p>
+                <p>To register a PLC, at least two individuals are required, and one individual can serve both as the
+                    director and shareholder. The liability of the company’s members is confined to the value of their
+                    shares, providing protection for personal assets. Once the Certificate of Incorporation is received,
+                    the company can commence its operations. The entire registration process typically takes around 15
+                    working days to complete.</p>
+                <p>Taxbizlegal.com is a trusted platform that provides end-to-end services for Private Limited Company
+                    registration, including incorporation, compliance, advisory, and consultancy. The process is quick,
+                    affordable, and simple. Additionally, we offer services for Partnership Registration, LLP
+                    Incorporation, One Person Company registration, and more. Contact us for a free consultation at
+                    info@taxbizlegal.com or call our compliance manager at 09*********.</p>
 
             </div>
         </div>
@@ -1001,8 +323,7 @@
                 data-fade="up"
                 style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1; visibility: inherit;">
                 <div class="item-icon">
-                    <?xml version="1.0" encoding="utf-8"?>
-                        <svg version="1.1" id="Layer_1"
+                    <?xml version="1.0" encoding="utf-8"?><svg version="1.1" id="Layer_1"
                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                         viewBox="0 0 122.88 68.04" style="enable-background:new 0 0 122.88 68.04"
                         xml:space="preserve">
@@ -1088,7 +409,7 @@
 
 </section>
 
-<section class="bg-blue-100 py-40 py-xxl-40">
+<section class="bg-blue-100 py-40 py-xxl-40" id="doc-required">
     <div class="doc-required container mod-flex mod-flex-col mod-gap-8">
         <h2 class="mod-font-semibold mod-text-s-28 mod-mb-0 mod-leading-semi-loose mod-space-light-semi">
             Documents Required for Registering <span class="text-blue">Your</span> Pvt Ltd. Company
@@ -1131,7 +452,7 @@
     </div>
 </section>
 
-<section class="container my-40">
+<section class="container my-40" id="compliances">
     <h1 class="display-6 mb-32 mod-font-semibold mod-text-s-28">Compliance Required for Forming a Private Limited Company</h1>
 
     <div class="mod-grid mod-mt-4 mod-gap-8 mod-grid-template-col-2 sm:mod-grid-template-col-2">

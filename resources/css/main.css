@@ -8673,7 +8673,26 @@ nav.odin-menu-actions {
 }
 
 
-
+.about-hero .description {
+    border: 1px solid #241a30;
+    border-radius: 24px;
+}
+.about-hero .description img {
+    width: 1000px;
+    height: 970px;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.65;
+    filter: brightness(100%) contrast(75%) saturate(1.5) blur(0.5px) hue-rotate(0deg);
+    transition-duration: 1s;
+    border-radius: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.about-hero .description:hover img {
+    opacity: 0.85;
+    filter: brightness(100%) contrast(100%) saturate(100%) blur(0px) hue-rotate(0deg);
+}
 .about-mission {
     padding-left: 10px;
     padding-right: 10px;
@@ -8709,6 +8728,11 @@ nav.odin-menu-actions {
 .about-mission .content-wrapper img {
     margin-left: calc(100% - 85px);
     width: 85px;
+}
+@media (max-width: 767px) {
+    .about-hero .description img {
+        height: 250px;
+    }
 }
 @media (min-width: 767px) {
     .about-mission {
