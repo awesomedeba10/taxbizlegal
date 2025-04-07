@@ -85,7 +85,7 @@
         <section class="container my-80 my-xxl-120 mod-relative">
             <div class="about-mission mod-mx-auto">
                 <div class="img-wrapper">
-                    <img src="https://assurancevisiteurs.ca/wp-content/uploads/2024/01/Image-sans-fond-notre-mission.webp"
+                    <img src="{{ asset('images/img/about-mission-1.webp') }}"
                         alt="Our mission">
                 </div>
                 <div class="content-wrapper mod-bg-white">
@@ -169,7 +169,7 @@
                         </div>
 
                         <img class="banner-image sm:mod-hidden md:mod-hidden"
-                            src="https://assurancevisiteurs.ca/wp-content/uploads/2024/01/Image-sans-fond-nos-valeurs.webp"
+                            src="{{ asset('images/img/about-mission-2.webp') }}"
                             alt="Our Values">
                     </div>
                 </div>
