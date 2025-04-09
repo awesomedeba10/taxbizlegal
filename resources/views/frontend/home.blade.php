@@ -123,7 +123,7 @@
                     <div class="col-md-4">
 
                         <div class="h-100 shadow-primary rounded-35 bg-white p-4 p-lg-32">
-                            <p class="display-6 mod-font-semibold mb-2 text-primary">Recognized by Govt. of India</p>
+                            <p class="display-6 mod-font-semibold mb-2 text-primary">Recognized by MCA</p>
                             <p class="mb-0">Ensuring compliance with government regulations for your business needs</p>
                         </div>
 
