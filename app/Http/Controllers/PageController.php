@@ -8,7 +8,6 @@ class PageController extends Controller
 {
     public function index()
     {
-        readCsv();
         return view('frontend.home');
     }
 
