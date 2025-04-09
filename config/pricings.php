@@ -3,11 +3,11 @@
 return [
     "private-limited-company" => [
         [
-            "plan_name" => "Basic",
-            "price" => 3999,
+            "plan_name"   => "Basic",
+            "price"       => 3999,
             "description" => "Essential features to kickstart<br> your business effortlessly.",
-            "is_popular" => false,
-            "services" => [
+            "is_popular"  => false,
+            "services"    => [
                 ["name" => "Company Registration", "is_active" => 2],
                 ["name" => "Drafting & Filing by CA/CS", "is_active" => 1],
                 ["name" => "MCA Processing & CIN", "is_active" => 1],
@@ -26,14 +26,14 @@ return [
                 ["name" => "Trademark Registration", "is_active" => 0],
                 ["name" => "GST Return Filing 3 Months", "is_active" => 0],
                 ["name" => "Income Tax Filings", "is_active" => 0],
-            ]
+            ],
         ],
         [
-            "plan_name" => "Standard",
-            "price" => 6999,
+            "plan_name"   => "Standard",
+            "price"       => 6999,
             "description" => "Enhanced services <br>for smooth business operations.",
-            "is_popular" => true,
-            "services" => [
+            "is_popular"  => true,
+            "services"    => [
                 ["name" => "Company Registration", "is_active" => 2],
                 ["name" => "Drafting & Filing by CA/CS", "is_active" => 1],
                 ["name" => "MCA Processing & CIN", "is_active" => 1],
@@ -52,14 +52,14 @@ return [
                 ["name" => "Trademark Registration", "is_active" => 0],
                 ["name" => "GST Return Filing 3 Months", "is_active" => 0],
                 ["name" => "Income Tax Filings", "is_active" => 0],
-            ]
+            ],
         ],
         [
-            "plan_name" => "Premium",
-            "price" => 19999,
+            "plan_name"   => "Premium",
+            "price"       => 19999,
             "description" => "Comprehensive solutions<br> for business growth and success.",
-            "is_popular" => false,
-            "services" => [
+            "is_popular"  => false,
+            "services"    => [
                 ["name" => "Company Registration", "is_active" => 2],
                 ["name" => "Drafting & Filing by CA/CS", "is_active" => 1],
                 ["name" => "MCA Processing & CIN", "is_active" => 1],
@@ -78,16 +78,16 @@ return [
                 ["name" => "Trademark Registration", "is_active" => 1],
                 ["name" => "GST Return Filing 3 Months", "is_active" => 1],
                 ["name" => "Income Tax Filings", "is_active" => 1],
-            ]
-        ]
+            ],
+        ],
     ],
-    "one-person-company" => [
+    "one-person-company"      => [
         [
-            "plan_name" => "Basic",
-            "price" => 4999,
+            "plan_name"   => "Basic",
+            "price"       => 4999,
             "description" => "Essential features to kickstart<br> your business effortlessly.",
-            "is_popular" => false,
-            "services" => [
+            "is_popular"  => false,
+            "services"    => [
                 ["name" => "DSC", "is_active" => 1],
                 ["name" => "Allotment of DIN", "is_active" => 1],
                 ["name" => "Name approval through Form SPICe+", "is_active" => 1],
@@ -108,15 +108,15 @@ return [
                 ["name" => "MGT-7 filing", "is_active" => 0],
                 ["name" => "AOC-4 filing", "is_active" => 0],
                 ["name" => "DIN KYC of director", "is_active" => 0],
-                ["name" => "GST return filing for 6 months<br>(2 directors)", "is_active" => 0]
-            ]
+                ["name" => "GST return filing for 6 months<br>(2 directors)", "is_active" => 0],
+            ],
         ],
         [
-            "plan_name" => "Standard",
-            "price" => 8999,
+            "plan_name"   => "Standard",
+            "price"       => 8999,
             "description" => "Enhanced services <br>for smooth business operations.",
-            "is_popular" => true,
-            "services" => [
+            "is_popular"  => true,
+            "services"    => [
                 ["name" => "DSC", "is_active" => 1],
                 ["name" => "Allotment of DIN", "is_active" => 1],
                 ["name" => "Name approval through Form SPICe+", "is_active" => 1],
@@ -137,15 +137,15 @@ return [
                 ["name" => "MGT-7 filing", "is_active" => 0],
                 ["name" => "AOC-4 filing", "is_active" => 0],
                 ["name" => "DIN KYC of director", "is_active" => 0],
-                ["name" => "GST return filing for 6 months<br>(2 directors)", "is_active" => 0]
-            ]
+                ["name" => "GST return filing for 6 months<br>(2 directors)", "is_active" => 0],
+            ],
         ],
         [
-            "plan_name" => "Premium",
-            "price" => 17999,
+            "plan_name"   => "Premium",
+            "price"       => 17999,
             "description" => "Comprehensive solutions<br> for business growth and success.",
-            "is_popular" => false,
-            "services" => [
+            "is_popular"  => false,
+            "services"    => [
                 ["name" => "DSC", "is_active" => 1],
                 ["name" => "Allotment of DIN", "is_active" => 1],
                 ["name" => "Name approval through Form SPICe+", "is_active" => 1],
@@ -166,8 +166,94 @@ return [
                 ["name" => "MGT-7 filing", "is_active" => 1],
                 ["name" => "AOC-4 filing", "is_active" => 1],
                 ["name" => "DIN KYC of director", "is_active" => 1],
-                ["name" => "GST return filing for 6 months<br>(2 directors)", "is_active" => 1]
-            ]
+                ["name" => "GST return filing for 6 months<br>(2 directors)", "is_active" => 1],
+            ],
+        ],
+    ],
+    "public-limited-company"  => [
+        [
+            "plan_name"   => "Basic",
+            "price"       => 16899,
+            "description" => "Essential features to kickstart<br> your business effortlessly.",
+            "is_popular"  => false,
+            "services"    => [
+                ["name" => "Company Registration", "is_active" => 2],
+                ["name" => "Drafting & Filing by CA/CS", "is_active" => 1],
+                ["name" => "MCA processing and CIN", "is_active" => 1],
+                ["name" => "Company PAN & TAN", "is_active" => 1],
+                ["name" => "MOA", "is_active" => 1],
+                ["name" => "AOA", "is_active" => 1],
+                ["name" => "Share Certificate", "is_active" => 1],
+                ["name" => "DIN Allotment", "is_active" => 1],
+                ["name" => "ESI & PF Registration", "is_active" => 1],
+                ["name" => "INC-20A", "is_active" => 0],
+                ["name" => "MGT-7", "is_active" => 0],
+                ["name" => "AOC-4", "is_active" => 0],
+                ["name" => "DIR 3 KYC", "is_active" => 0],
+            ],
+        ],
+        [
+            "plan_name"   => "Smart",
+            "price"       => 39899,
+            "description" => "Essential features to kickstart<br> your business effortlessly.",
+            "is_popular"  => false,
+            "services"    => [
+                ["name" => "Company Registration", "is_active" => 2],
+                ["name" => "Drafting & Filing by CA/CS", "is_active" => 1],
+                ["name" => "MCA processing and CIN", "is_active" => 1],
+                ["name" => "Company PAN & TAN", "is_active" => 1],
+                ["name" => "MOA", "is_active" => 1],
+                ["name" => "AOA", "is_active" => 1],
+                ["name" => "Share Certificate", "is_active" => 1],
+                ["name" => "DIN Allotment", "is_active" => 1],
+                ["name" => "ESI & PF Registration", "is_active" => 1],
+                ["name" => "INC-20A", "is_active" => 0],
+                ["name" => "MGT-7", "is_active" => 0],
+                ["name" => "AOC-4", "is_active" => 0],
+                ["name" => "DIR 3 KYC", "is_active" => 0],
+            ],
+        ],
+        [
+            "plan_name"   => "Mega",
+            "price"       => 49899,
+            "description" => "Essential features to kickstart<br> your business effortlessly.",
+            "is_popular"  => false,
+            "services"    => [
+                ["name" => "Company Registration", "is_active" => 2],
+                ["name" => "Drafting & Filing by CA/CS", "is_active" => 1],
+                ["name" => "MCA processing and CIN", "is_active" => 1],
+                ["name" => "Company PAN & TAN", "is_active" => 1],
+                ["name" => "MOA", "is_active" => 1],
+                ["name" => "AOA", "is_active" => 1],
+                ["name" => "Share Certificate", "is_active" => 1],
+                ["name" => "DIN Allotment", "is_active" => 1],
+                ["name" => "ESI & PF Registration", "is_active" => 1],
+                ["name" => "INC-20A", "is_active" => 0],
+                ["name" => "MGT-7", "is_active" => 0],
+                ["name" => "AOC-4", "is_active" => 0],
+                ["name" => "DIR 3 KYC", "is_active" => 0],
+            ],
         ]
-    ]
+    ],
+    "section-8-company"       => [
+        [
+            "plan_name"   => "Basic",
+            "price"       => 6999,
+            "description" => "Essential features to kickstart<br> your business effortlessly.",
+            "is_popular"  => false,
+            "services"    => [
+                ["name" => "Company Registration", "is_active" => 2],
+                ["name" => "Section 8 License Approval", "is_active" => 1],
+                ["name" => "Drafting & Filing by CA/CS", "is_active" => 1],
+                ["name" => "Company PAN & TAN", "is_active" => 1],
+                ["name" => "MOA", "is_active" => 1],
+                ["name" => "AOA", "is_active" => 1],
+                ["name" => "DIN Allotment", "is_active" => 1],
+                ["name" => "INC-20A", "is_active" => 0],
+                ["name" => "MGT-7", "is_active" => 0],
+                ["name" => "AOC-4", "is_active" => 0],
+                ["name" => "DIR 3 KYC", "is_active" => 0],
+            ],
+        ],
+    ],
 ];

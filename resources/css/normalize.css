@@ -2143,6 +2143,9 @@ img, video {
     color: #1678FB;
     color: rgba(22,  120,  251,  var(--text-opacity));
 }
+.mod-text-blue-400 {
+    color: #0658a3;
+}
 .mod-text-green-250 {
     --text-opacity:  1;
     color: #4ADF93;

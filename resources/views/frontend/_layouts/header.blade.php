@@ -31,7 +31,7 @@
                                                 <div class="{{ count($headers['sub_headers']) == 2 ? 'mod-w-1/2' : 'mod-w-1/3' }} mod-pl-8 mod-flex mod-pt-2 mod-items-center mod-pt-6"
                                                     style="background: {{ $sub['background'] }}">
                                                     <div class="mod-w-full">
-                                                        <h6 class="mod-text-compact mod-text-font-200 mod-pb-4">
+                                                        <h6 class="mod-text-compact mod-text-blue-400 mod-pb-4">
                                                             {{ $sub['title'] }}</h6>
                                                         <hr class="divider">
                                                     </div>
