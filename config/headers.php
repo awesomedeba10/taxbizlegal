@@ -25,7 +25,7 @@ return [
                         "description" => "Combine the benefits of a partnership with limited liability protection!"
                     ],
                     [
-                        "name" => "Public Limited Company Registration",
+                        "name" => "Public Limited Company",
                         "description" => "Expand your business with public investment and greater credibility!"
                     ]
                 ]
@@ -39,7 +39,7 @@ return [
                         "description" => "Register a non-profit company to drive social initiatives legally!"
                     ],
                     [
-                        "name" => "Nidhi Company Registration",
+                        "name" => "Nidhi Company",
                         "description" => "Launch your finance business with a legally recognized Nidhi company!"
                     ],
                     [
