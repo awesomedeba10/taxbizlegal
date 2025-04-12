@@ -18,8 +18,8 @@ const getFiles = (dir, ext, fileList = []) => {
     return fileList;
 };
 
-const cssFiles = getFiles('resources/css', '.css');
-const jsFiles = getFiles('resources/js', '.js');
+// const cssFiles = getFiles('resources/css', '.css');
+// const jsFiles = getFiles('resources/js', '.js');
 
 export default defineConfig({
     plugins: [

@@ -9,3 +9,4 @@ import '../css/normalize.css';
 import './main.js';
 import './home.js';
 import './custom.js';
+import './forms.js';
