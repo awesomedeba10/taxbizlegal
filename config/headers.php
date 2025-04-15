@@ -9,20 +9,20 @@ return [
                 "background" => "#ffffff",
                 "services" => [
                     [
-                        "name" => "Sole Proprietorship",
-                        "description" => "Start your business easily with minimal compliance and full control!"
+                        "name" => "Private Limited Company",
+                        "description" => "Start your business with the most trusted company structure in India!"
                     ],
                     [
                         "name" => "One Person Company",
                         "description" => "Enjoy the benefits of a private limited company while being the sole owner!"
                     ],
                     [
-                        "name" => "Private Limited Company",
-                        "description" => "Start your business with the most trusted company structure in India!"
-                    ],
-                    [
                         "name" => "Limited Liability Partnership Company",
                         "description" => "Combine the benefits of a partnership with limited liability protection!"
+                    ],
+                    [
+                        "name" => "Sole Proprietorship",
+                        "description" => "Start your business easily with minimal compliance and full control!"
                     ],
                     [
                         "name" => "Public Limited Company",
@@ -47,112 +47,165 @@ return [
                         "description" => "Register your NGO or trust to make a lasting social impact!"
                     ]
                 ]
-            ]
-        ]
-    ],
-    [
-        "title" => "Tax & Compliances",
-        "sub_headers" => [
-            [
-                "title" => "Tax Registrations",
-                "background" => "#ffffff",
-                "services" => [
-                    [
-                        "name" => "GST Registration",
-                        "description" => "Get your GSTIN hassle-free and start collecting GST today!"
-                    ],
-                    [
-                        "name" => "GST Modification",
-                        "description" => "Update your GST details easily and stay compliant with tax laws."
-                    ],
-                    [
-                        "name" => "PAN Application/Modification",
-                        "description" => "Apply for a new PAN or update your existing PAN effortlessly!"
-                    ],
-                    [
-                        "name" => "TAN Application/Modification",
-                        "description" => "Get your Tax Deduction Account Number (TAN) in no time!"
-                    ]
-                ]
             ],
             [
-                "title" => "GST Services",
-                "background" => "#ffffff",
-                "services" => [
-                    [
-                        "name" => "GST Return",
-                        "description" => "File your monthly, quarterly, and annual GST returns with ease!"
-                    ],
-                    [
-                        "name" => "GSTR 9 & 9C",
-                        "description" => "Ensure compliance by filing your annual GST return & audit report."
-                    ],
-                    [
-                        "name" => "GST LUT Letter",
-                        "description" => "Export goods & services without paying IGST with LUT registration."
-                    ],
-                    [
-                        "name" => "GST Cancellation",
-                        "description" => "Close your GST registration seamlessly with expert assistance."
-                    ]
-                ]
-            ],
-            [
-                "title" => "Annual Filings",
+                "title" => "Company Services",
                 "background" => "#F4F9FF",
                 "services" => [
                     [
-                        "name" => "Private Limited Company Annual Filing",
-                        "description" => "Stay compliant with MCA and tax authorities effortlessly!"
+                        "name" => "DIN Services",
+                        "description" => "Apply for or update Director Identification Number (DIN) for legal compliance."
                     ],
                     [
-                        "name" => "LLP Annual Filing",
-                        "description" => "Ensure smooth LLP compliance with accurate and timely filings."
+                        "name" => "Company Name Change",
+                        "description" => "Legally change your company’s registered name with ROC compliance."
                     ],
                     [
-                        "name" => "NPO/Section 8 Annual Filing",
-                        "description" => "Keep your NGO compliant with hassle-free annual filings."
+                        "name" => "Appointment/Removal of Director",
+                        "description" => "Add or remove directors in accordance with company law and ROC norms."
                     ],
                     [
-                        "name" => "Nidhi Company Annual Filing",
-                        "description" => "Maintain legal compliance for your Nidhi company with ease."
+                        "name" => "Increase in Authorized Capital",
+                        "description" => "Expand your company’s authorized capital to raise more funds or issue new shares."
+                    ],
+                    [
+                        "name" => "Register Office Change",
+                        "description" => "Change your company’s registered office address legally and efficiently."
+                    ],
+                    [
+                        "name" => "Closing Company",
+                        "description" => "Voluntarily wind up and close your company with complete legal compliance."
                     ]
                 ]
             ]
         ]
     ],
     [
-        "title" => "IPR",
+        "title" => "Trademark & IP",
         "sub_headers" => [
             [
-                "title" => "Trademark",
+                "title" => "Trademark Services",
                 "background" => "#ffffff",
                 "services" => [
                     [
                         "name" => "Trademark Registration",
-                        "description" => "Secure your brand identity with legal trademark protection."
+                        "description" => "Protect your brand identity by registering your trademark legally and securely."
                     ],
                     [
-                        "name" => "Trademark Objections",
-                        "description" => "Resolve trademark objections quickly and secure your rights!"
+                        "name" => "Trademark Objection",
+                        "description" => "Respond to trademark objections effectively to avoid registration delays."
+                    ],
+                    [
+                        "name" => "Trademark Opposition",
+                        "description" => "Defend your brand rights against third-party opposition claims."
                     ],
                     [
                         "name" => "Trademark Renewal",
-                        "description" => "Renew your trademark hassle-free and protect your brand forever!"
+                        "description" => "Renew your trademark registration to maintain your brand's legal protection."
                     ]
                 ]
             ],
             [
-                "title" => "Special Services",
+                "title" => "Brand & Name Registration",
                 "background" => "#F4F9FF",
                 "services" => [
                     [
-                        "name" => "Legal Drafting",
-                        "description" => "Get professionally drafted legal documents for your business."
+                        "name" => "Brand Name Registration",
+                        "description" => "Secure exclusive rights over your brand name to stand out in the market."
                     ],
                     [
-                        "name" => "ROC Search Reports",
-                        "description" => "Obtain company search reports from the ROC for legal compliance."
+                        "name" => "Register Your Brand",
+                        "description" => "Make your brand legally recognized and protect it from misuse."
+                    ],
+                    [
+                        "name" => "Business Name Registration",
+                        "description" => "Register your business name with proper legal backing and brand value."
+                    ]
+                ]
+            ]
+        ]
+    ],
+    [
+        "title" => "GST Services",
+        "sub_headers" => [
+            [
+                "title" => "GST Registration & Filing",
+                "background" => "#ffffff",
+                "services" => [
+                    [
+                        "name" => "GST Registration",
+                        "description" => "Get your GSTIN and become a compliant business in India."
+                    ],
+                    [
+                        "name" => "GST Return Filing",
+                        "description" => "File your monthly, quarterly or annual GST returns with ease."
+                    ],
+                    [
+                        "name" => "GSTR-9 Annual Filing",
+                        "description" => "Fulfill your annual compliance by filing GSTR-9 accurately."
+                    ]
+                ]
+            ],
+            [
+                "title" => "Additional GST Services",
+                "background" => "#F4F9FF",
+                "services" => [
+                    [
+                        "name" => "GST Modification",
+                        "description" => "Make changes to your GST registration details whenever needed."
+                    ],
+                    [
+                        "name" => "GST LUT Filing",
+                        "description" => "Submit LUT and export services without payment of IGST."
+                    ]
+                ]
+            ]
+        ]
+    ],
+    [
+        "title" => "Compliance & Licenses",
+        "sub_headers" => [
+            [
+                "title" => "Tax & Legal Compliance",
+                "background" => "#ffffff",
+                "services" => [
+                    [
+                        "name" => "Annual Filing/ROC Compliance",
+                        "description" => "Stay compliant with MCA by submitting mandatory filings on time."
+                    ],
+                    [
+                        "name" => "ITR Return Filing",
+                        "description" => "File your income tax returns quickly and accurately."
+                    ],
+                    [
+                        "name" => "TDS Return Filing",
+                        "description" => "File quarterly TDS returns and avoid penalties."
+                    ],
+                    [
+                        "name" => "PF Return Filing",
+                        "description" => "Submit employee PF returns and stay compliant with EPFO norms."
+                    ]
+                ]
+            ],
+            [
+                "title" => "Licenses & Registrations",
+                "background" => "#F4F9FF",
+                "services" => [
+                    [
+                        "name" => "FSSAI Registration",
+                        "description" => "Get your food business legally certified with FSSAI registration."
+                    ],
+                    [
+                        "name" => "FSSAI Renewal",
+                        "description" => "Renew your FSSAI license before expiry to ensure continuity."
+                    ],
+                    [
+                        "name" => "FSSAI Modification",
+                        "description" => "Make updates to your FSSAI license details quickly."
+                    ],
+                    [
+                        "name" => "IEC Code Registration",
+                        "description" => "Start importing/exporting by obtaining your Import Export Code (IEC)."
                     ]
                 ]
             ]

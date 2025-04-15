@@ -105,12 +105,7 @@ return array (
         array (
           'name' => 'GST Return filing for 12 months',
           'is_active' => 0,
-        ),
-        19 => 
-        array (
-          'name' => 'Register your Private Limited Company with the Ministry of Corporate Affairs',
-          'is_active' => 1,
-        ),
+        )
       ),
     ),
     1 => 
@@ -976,7 +971,7 @@ return array (
         0 => 
         array (
           'name' => 'Registering a LLP with Ministry of Corporate affairs',
-          'is_active' => 1,
+          'is_active' => 2,
         ),
         1 => 
         array (
@@ -1051,7 +1046,7 @@ return array (
         0 => 
         array (
           'name' => 'Registering a LLP with Ministry of Corporate affairs',
-          'is_active' => 1,
+          'is_active' => 2,
         ),
         1 => 
         array (
@@ -1126,7 +1121,7 @@ return array (
         0 => 
         array (
           'name' => 'Registering a LLP with Ministry of Corporate affairs',
-          'is_active' => 1,
+          'is_active' => 2,
         ),
         1 => 
         array (

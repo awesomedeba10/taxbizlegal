@@ -5,7 +5,7 @@
             <a data-label="Clear" class="mod-flex mod-items-center" href="{{ route('front.home') }}">
 
                 <img class="mod-mr-6 sm:mod-m-0 sm:mod-w-10/12" width="150" height="50"
-                    src="{{ asset('images/img/logo web.png') }}" alt="clear">
+                    src="{{ asset('images/svg/tbl_logo.svg') }}" alt="clear">
 
 
             </a>
@@ -306,7 +306,7 @@
             <a data-label="Clear" class="mod-flex mod-items-center" href="{{ route('front.home') }}">
 
                 <img class="mod-mr-6 sm:mod-m-0 sm:mod-w-10/12" width="136"
-                    src="{{ asset('images/img/logo web.png') }}" alt="clear">
+                    src="{{ asset('images/svg/tbl_logo.svg') }}" alt="clear">
 
 
             </a>

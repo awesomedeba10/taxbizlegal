@@ -22,7 +22,7 @@
             <div class="col-12 col-lg-4 mb-4">
                 <div class="mod-flex mod-flex-col card card--lg card--white article">
                     <div class="article-card-image">
-                        <div class="mod-absolute mod-z-10 tags">
+                        <div class="mod-absolute mod-z-5 tags">
                             <a href="" class="tag">
                                 Savings </a>
                         </div>
@@ -74,7 +74,7 @@
             <div class="col-12 col-lg-4 mb-4">
                 <div class="mod-flex mod-flex-col card card--lg card--white article">
                     <div class="article-card-image">
-                        <div class="mod-absolute mod-z-10 tags">
+                        <div class="mod-absolute mod-z-5 tags">
                             <a href="" class="tag">
                                 Tax </a>
                         </div>
@@ -126,7 +126,7 @@
             <div class="col-12 col-lg-4 mb-4">
                 <div class="mod-flex mod-flex-col card card--lg card--white article">
                     <div class="article-card-image">
-                        <div class="mod-absolute mod-z-10 tags">
+                        <div class="mod-absolute mod-z-5 tags">
                             <a href="" class="tag">
                                 Tax </a>
                         </div>

@@ -65,5 +65,63 @@ return [
                 </ul>'
         ]
 
+    ],
+    "one-person-company" => [
+        [
+            "question" => "What is a One Person Company (OPC)?",
+            "answer" => "A One Person Company (OPC) is a type of company in India that allows a single individual to form a company. It is a separate legal entity, offering limited liability protection to the sole owner (called the member)."
+        ],
+        [
+            "question" => "What are the key benefits of registering a One Person Company?",
+            "answer" => "<p>Registering an OPC offers several advantages, including:</p>
+                                <ul>
+                                    <li>Single ownership with limited liability protection</li>
+                                    <li>Complete control over decision-making</li>
+                                    <li>Separate legal entity, distinct from the owner</li>
+                                    <li>Easy to raise funds and take loans</li>
+                                    <li>No requirement for a minimum capital investment</li>
+                                </ul>"
+        ],
+        [
+            "question" => "What are the minimum requirements for registering a One Person Company?",
+            "answer" => "<p>The following minimum requirements must be met for registering an OPC:</p>
+                                <ul>
+                                    <li>Only one director is required (who must be a resident of India)</li>
+                                    <li>The sole member must be an individual or a Hindu Undivided Family (HUF)</li>
+                                    <li>A registered office address in India</li>
+                                    <li>Director Identification Number (DIN) and Digital Signature Certificate (DSC)</li>
+                                    <li>Nominee details of the member must be submitted</li>
+                                </ul>"
+        ],
+        [
+            'question' => 'How long does it take to register a One Person Company in India?',
+            'answer' => 'The registration process for an OPC typically takes 7 to 10 business days, depending on the document submission and government processing times.'
+        ],
+        [
+            'question' => 'Can a Foreign National Be a Director in an OPC?',
+            'answer' => 'No, only an Indian resident can be the sole director in an OPC. However, a foreign national can be appointed as a nominee for the OPC.'
+        ],
+        [
+            'question' => 'Can an OPC Be Converted into a Private Limited Company?',
+            'answer' => 'Yes, an OPC can be converted into a Private Limited Company once it meets the conditions set by the Ministry of Corporate Affairs (MCA), such as having a paid-up capital exceeding Rs. 50 lakhs or having more than one member.'
+        ],
+        [
+            'question' => 'Can an OPC Have Employees?',
+            'answer' => 'Yes, an OPC can hire employees, but it cannot have more than one member. The director can also be an employee of the company.'
+        ],
+        [
+            'question' => 'What are the compliance requirements for a One Person Company?',
+            'answer' => "<p>OPCs are required to comply with certain regulations, including:</p>
+                                <ul>
+                                    <li>Hold at least one Board Meeting each year</li>
+                                    <li>File annual returns and financial statements with the Registrar of Companies (RoC)</li>
+                                    <li>Appoint a nominee for the sole member at the time of incorporation</li>
+                                    <li>File Form AOC-4 and MGT-7 with the RoC for annual compliance</li>
+                                </ul>"
+        ],
+        [
+            'question' => 'Can a One Person Company have more than one director?',
+            'answer' => 'No, a One Person Company (OPC) can have only one director, who must be a resident of India. However, the company can appoint a nominee who will assume control in the event of the sole member’s death or incapacity.'
+        ]
     ]
 ];

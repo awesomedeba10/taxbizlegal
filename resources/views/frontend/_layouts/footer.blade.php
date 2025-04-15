@@ -5,7 +5,7 @@
                 <div class="col-lg-4 col-md-4 col-sm-6 col-12">
                     <div class="mod-grid mod-gap-8 sm:mod-gap-4">
                         <a href="{{ route('front.home') }}" class="footer-logo">
-                            <img alt="taxbizlegal.com logo" src="{{ asset('images/img/logo.png') }}" width="205" height="61">
+                            <img alt="taxbizlegal.com logo" src="{{ asset('images/svg/tbl_logo.svg') }}" width="205" height="61">
                         </a>
                         <p class="mod-space-light-semi mod-leading-loose">
                             Top-Rated Business Services in Just a Few Taps — Fast, Transparent & Hassle-Free Solutions Tailored for You.
