@@ -41,10 +41,6 @@ return [
                     [
                         "name" => "Nidhi Company",
                         "description" => "Launch your finance business with a legally recognized Nidhi company!"
-                    ],
-                    [
-                        "name" => "NGO & Trust Registration",
-                        "description" => "Register your NGO or trust to make a lasting social impact!"
                     ]
                 ]
             ],

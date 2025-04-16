@@ -3,9 +3,9 @@
         class="mod-items-center mod-px-24 mod-grid-12 mod-w-full sm:mod-gap-10 sm:mod-flex sm:mod-flex-col
         sm:mod-px-10 md:mod-px-12 md:mod-items-start ">
         <div class="section-heading">
-            <p class="h5 text-primary mb-2">Start Your LLP Company with Ease!</p>
+            <p class="h5 text-primary mb-2">Start Your Nidhi Company with Ease!</p>
             <h1 class="section-title mod-font-bold mod-leading-semi-loose mod-space-light-semi mod-mb-8" data-fade="up">
-                Register Your <span class="text-blue">Limited Liability Partnership Company</span> & Unlock Growth
+                Register Your <span class="text-blue">Nidhi Company</span> & Unlock Growth
                 Opportunities!</h1>
             <div class="mod-flex mod-flex-col mod-gap-10">
                 <div class="text mod-font-medium mod-leading-loose" data-fade="up">
@@ -15,7 +15,7 @@
                         <li>👉 Quick Turnaround & Transparent Pricing</li>
                     </ul>
                 </div>
-                <p class="mb-0 mod-leading-light-loose">Experience seamless limited liability partnership company
+                <p class="mb-0 mod-leading-light-loose">Experience seamless nidhi company
                     registration with
                     our expert consultants. We handle paperwork, legal formalities, and compliance, ensuring a smooth
                     process. Focus on growth while we simplify your journey. Get started today!</p>
@@ -43,7 +43,7 @@
         <div
             class="mod-flex services-nav-container mod-items-center mod-justify-between mod-cursor-pointer mod-rounded-lg mod-border-sm mod-overflow-hidden mod-text-s-14 mod-font-medium">
             <div class="mod-whitespace-nowrap mod-py-4 mod-sticky mod-left-0">
-                <span class="services-nav-title mod-pl-6 mod-pr-3 mod-border-r-sm">LLP COMPANY</span>
+                <span class="services-nav-title mod-pl-6 mod-pr-3 mod-border-r-sm">NIDHI COMPANY</span>
             </div>
             <ul class="services-nav-ul mod-flex mod-items-center mod-my-0 mod-justify-center mod-list-none">
                 <li data-target="pricing"
@@ -96,11 +96,11 @@
                 class="mod-text-s-32 mod-nav-text mod-font-semibold mod-word-break-normal mod-text-center mod-leading-loose">
                 <span>Choose the Right Plan</span>
                 <div class="mod-text-s-44">
-                    For your <span class="text-blue">Limited Liability Partnership Company</span>
+                    For your <span class="text-blue">Nidhi Company</span>
                 </div>
             </h1>
             <p class="mod-nav-text mod-mt-2 mod-leading-loose mod-text-center">
-                Get your Limited Liability Partnership Company registered effortlessly with our tailored pricing plans.
+                Get your Nidhi Company registered effortlessly with our tailored pricing plans.
                 Start your
                 journey today!
             </p>
@@ -170,22 +170,15 @@
         <div class="col-12 col-md-6 col-xxl-5 sm:mod-order-2">
             <div class="mod-py-8">
 
-                <h1 class="mod-text-s-24">All you need to know about Limted Liabilty Partnerhsip Company Registration
+                <h1 class="mod-text-s-24">All you need to know about Nidhi Company Registration
                 </h1>
-                <p>A Limited Liability Partnership (LLP) is a hybrid business structure introduced in India through the
-                    LLP Act, 2008. It combines the operational flexibility of a partnership with the benefits of limited
-                    liability offered by a company. An LLP exists as a separate legal entity, distinct from its
-                    partners, and is ideally suited for small and medium-sized businesses, professionals, and startups
-                    looking for a low-compliance, scalable, and liability-protected structure.</p>
-                <p>LLPs offer limited liability protection, flexible internal management through an LLP Agreement, and
-                    no restriction on the number of partners (minimum 2 required). Moreover, LLPs are not required to
-                    maintain complex compliance like companies and can be formed with relatively low cost and ease.</p>
-                <p>Taxbizlegal.com is a trusted platform that provides end-to-end services for Limited Liability
-                    Partnership Company
-                    registration, including incorporation, compliance, advisory, and consultancy. The process is quick,
-                    affordable, and simple. Additionally, we offer services for Pvt Ltd Company Registration, One Person
-                    Company registration, and more. Contact us for a free consultation at
-                    info@taxbizlegal.com or call our compliance manager at 09*********.</p>
+                <p>A Nidhi Company is a type of non-banking financial company (NBFC) established with the primary objective of promoting the habit of saving among its members. These companies primarily engage in borrowing and lending activities between their members. The term "Nidhi" is derived from a Hindi word meaning "treasure" or "fund," and a Nidhi company is often referred to as a "mutual benefit society." They operate under the provisions of the Companies Act, 2013, and are governed by specific regulations outlined by the Ministry of Corporate Affairs (MCA) and the Reserve Bank of India (RBI).</p>
+                <p>Nidhi companies are formed to cultivate a habit of thrift and savings among their members. They offer an easy and reliable source of borrowing and lending within the community of members, and they operate primarily for mutual benefit rather than for profit. The operations of a Nidhi company are restricted to its members, and they cannot engage in external lending or investment activities.</p>
+                <p>Taxbizlegal.com provides comprehensive services for Nidhi Company registration, covering every
+                    step from documentation and filing to compliance and post-incorporation support. Our team ensures a
+                    smooth and hassle-free experience at an affordable cost. We also offer assistance with Private
+                    Limited Company registration, LLP incorporation, GST filings, and more. For a free consultation,
+                    write to us at info@taxbizlegal.com or connect with our compliance manager at 09*********.</p>
 
             </div>
         </div>
@@ -202,7 +195,7 @@
         <div class="section-heading">
             <h2 class="section-title mod-text-s-28 mod-font-bold mod-leading-semi-loose mod-space-light-semi"
                 data-fade="up">
-                Advantages of Limited Liability Partnership Company
+                Advantages of Nidhi Company
             </h2>
         </div>
         <div class="section-content mod-grid-4">
@@ -224,8 +217,8 @@
                     </svg>
                 </div>
                 <div class="item-content">
-                    <h3 class="item-title">Limited Liability</h3>
-                    <p class="item-text">Partners' personal assets are protected; liability is limited to their agreed contribution.</p>
+                    <h3 class="item-title">Promotes Savings Culture</h3>
+                    <p class="item-text">Nidhi companies encourage savings and financial independence among their members, promoting a culture of thrift.</p>
                 </div>
             </div>
             <div class="mod-flex mod-flex-col mod-gap-4 xl:mod-pr-20 lg:mod-pr-8 sm:mod-pr-4 sm:mod-flex-row"
@@ -238,8 +231,8 @@
                             fill="#0B1126"></path>
                     </svg></div>
                 <div class="item-content">
-                    <h3 class="item-title">Separate Legal Entity</h3>
-                    <p class="item-text">The LLP can own property, enter contracts, sue or be sued in its own name.</p>
+                    <h3 class="item-title">Limited Liability</h3>
+                    <p class="item-text">Shareholders enjoy limited liability, which means their personal assets are protected from the company’s debts and liabilities.</p>
                 </div>
             </div>
             <div class="mod-flex mod-flex-col mod-gap-4 xl:mod-pr-20 lg:mod-pr-8 sm:mod-pr-4 sm:mod-flex-row"
@@ -257,8 +250,8 @@
                     </svg>
                 </div>
                 <div class="item-content">
-                    <h3 class="item-title">Flexible Management</h3>
-                    <p class="item-text">Governed by the LLP Agreement, offering more flexibility in management structure than a company.</p>
+                    <h3 class="item-title">Low Operational Costs</h3>
+                    <p class="item-text">Since Nidhi companies deal only with their members, they have lower operational and regulatory compliance costs compared to other financial institutions.</p>
                 </div>
             </div>
             <div class="mod-flex mod-flex-col mod-gap-4 xl:mod-pr-20 lg:mod-pr-8 sm:mod-pr-4 sm:mod-flex-row"
@@ -273,9 +266,9 @@
                     </svg>
                 </div>
                 <div class="item-content">
-                    <h3 class="item-title">No Minimum Capital Requirement</h3>
+                    <h3 class="item-title">No External Borrowing</h3>
                     <p class="item-text">
-                        Can be started with any amount of capital.
+                        Nidhi companies are not allowed to borrow funds from outside sources reducing the risk associated with external borrowing.
                     </p>
                 </div>
             </div>
@@ -294,8 +287,8 @@
                     </svg>
                 </div>
                 <div class="item-content">
-                    <h3 class="item-title">Lesser Compliance</h3>
-                    <p class="item-text">Fewer filings and formalities compared to private limited companies.</p>
+                    <h3 class="item-title">Easy Access to Loans for Members</h3>
+                    <p class="item-text">Members of Nidhi companies can access loans with fewer formalities and at better rates compared to banks or other financial institutions.</p>
                 </div>
             </div>
             <div class="mod-flex mod-flex-col mod-gap-4 xl:mod-pr-20 lg:mod-pr-8 sm:mod-pr-4 sm:mod-flex-row"
@@ -312,7 +305,7 @@
                 <div class="item-content">
                     <h3 class="item-title">Tax Benefits</h3>
                     <p class="item-text">
-                        No dividend distribution tax; only profit share is taxed in the hands of the LLP.
+                        Nidhi companies are subject to specific tax exemptions and benefits under Indian tax laws, provided they meet the necessary criteria.
                     </p>
                 </div>
             </div>
@@ -323,44 +316,39 @@
 <section class="container my-80 my-xxl-120" id="resources">
 
     <h1 class="display-6 mb-32 mod-font-semibold mod-text-s-24">
-        Selecting the Ideal Business Structure for Your Company
+        Key Features of a <span class="text-primary mod-font-bold">Nidhi Company</span>
     </h1>
     <div class="row gy-40 gx-lg-40">
         <div class="col-lg-4">
             <div class="d-flex flex-column gap-12 gap-lg-3 mx-auto">
-                <h2 class="mb-0">Separate Legal
-                    <span class="text-primary mod-font-bold">Entity</span>
-                </h2>
-                <p class="mb-0 text-lg">An LLP is recognized as a separate legal entity, distinct from its partners. It can own property, sue, and be sued in its own name, ensuring continuity even when partners change.</p>
-                <p class="mb-0 text-lg">The structure enables the LLP to function independently, providing business credibility and allowing it to enter into contracts and own assets under its own identity.</p>
+                <h2 class="mb-0">Members <span class="text-primary mod-font-bold">Only</span></h2>
+                <p class="mb-0 text-lg">Nidhi companies exclusively transact with their members, meaning borrowing and lending are restricted to individuals who are part of the company. This fosters a community-based financial ecosystem where only members have access to funds raised within the company.</p>
+                <p class="mb-0 text-lg">The primary objective is to promote savings and lend to members for their mutual benefit, creating a responsible and beneficial financial environment.</p>
             </div>
         </div>
         <div class="col-lg-4">
             <div class="d-flex flex-column gap-12 gap-lg-3 mx-auto">
-                <h2 class="mb-0">Limited
-                    <span class="text-primary mod-font-bold">Liability</span>
-                </h2>
-                <p class="mb-0 text-lg">Each partner’s liability is limited to the amount they agree to contribute, protecting their personal assets from business debts or losses incurred by the LLP.</p>
-                <p class="mb-0 text-lg">Unless voluntarily agreed otherwise, no partner is liable for the independent actions or misconduct of other partners, ensuring reduced individual risk.</p>
+                <h2 class="mb-0">Legal <span class="text-primary mod-font-bold">Status</span></h2>
+                <p class="mb-0 text-lg">Nidhi companies are registered as public limited companies and must include the words "Nidhi Limited" in their name. This ensures they are recognized under a specific legal framework and operate with distinct governance norms that differentiate them from other public companies.</p>
+                <p class="mb-0 text-lg">This special legal status ensures a structured and regulated environment for their operations, guided by the Ministry of Corporate Affairs (MCA) and the Reserve Bank of India (RBI).</p>
             </div>
         </div>
         <div class="col-lg-4">
             <div class="d-flex flex-column gap-12 gap-lg-3 mx-auto">
-                <h2 class="mb-0">
-                    <span class="text-primary mod-font-bold">Taxation</span> & Compliance
-                </h2>
-                <p class="mb-0 text-lg">LLPs enjoy simplified compliance, with audit requirements only applicable if turnover exceeds ₹40 lakhs or capital contribution exceeds ₹25 lakhs.</p>
-                <p class="mb-0 text-lg">They are taxed at a flat rate of 30% (plus applicable surcharge and cess), and profit shares are exempt in the hands of the partners, making LLPs tax-efficient for many businesses.</p>
+                <h2 class="mb-0">Borrowing & <span class="text-primary mod-font-bold">Lending</span></h2>
+                <p class="mb-0 text-lg">Nidhi companies are only permitted to raise funds from their members and lend exclusively to them. They cannot lend money to the general public, ensuring that their activities are restricted to the mutual benefit of their members.</p>
+                <p class="mb-0 text-lg">This restricted borrowing and lending policy maintains the focus on financial stability within the membership, fostering responsible financial behavior and ensuring safety for all members.</p>
             </div>
         </div>
     </div>
 
 </section>
 
+
 <section class="bg-blue-100 py-40 py-xxl-40" id="doc-required">
     <div class="doc-required container mod-flex mod-flex-col mod-gap-8">
         <h2 class="mod-font-semibold mod-text-s-28 mod-mb-0 mod-leading-semi-loose mod-space-light-semi">
-            Documents Required for Registering <span class="text-blue">Your</span> LLP Company
+            Documents Required for Registering <span class="text-blue">Your</span> Nidhi Company
         </h2>
         <div class="section-content mod-grid-12">
             <div class="img mod-flex mod-justify-center mod-overflow-hidden mod-items-center" data-fade="in">
@@ -378,10 +366,9 @@
                     <div class="item-number">02.</div>
                     <p class="item-text">Individual PAN Card</p>
                 </div>
-                <div class="mod-flex mod-flex-col mod-gap-2" data-fade="up"
-                    style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1; visibility: inherit;">
+                <div class="mod-flex mod-flex-col mod-gap-2" data-fade="up">
                     <div class="item-number">03.</div>
-                    <p class="item-text">Registered Office Proof + NOC</p>
+                    <p class="item-text">Registered Office Proof + No Objection Certificate (NOC)</p>
                 </div>
                 <div class="mod-flex mod-flex-col mod-gap-2" data-fade="up">
                     <div class="item-number">04.</div>
@@ -389,13 +376,14 @@
                 </div>
                 <div class="mod-flex mod-flex-col mod-gap-2" data-fade="up">
                     <div class="item-number">05.</div>
-                    <p class="item-text">Address Proof</p>
+                    <p class="item-text">Address Proof (Utility Bill/Bank Statement)</p>
                 </div>
                 <div class="mod-flex mod-flex-col mod-gap-2" data-fade="up">
                     <div class="item-number">06.</div>
-                    <p class="item-text">Digital Signature Certificate (DSC)</p>
+                    <p class="item-text">Digital Signature Certificate (DSC) for all Directors</p>
                 </div>
             </div>
+            
         </div>
     </div>
 </section>
@@ -408,18 +396,18 @@
         <div class="mod-pr-8 mod-flex mod-flex-col">
             <h3 class="mod-font-semibold mod-leading-loose">Why Compliance Matters</h3>
             <p class="mod-mt-2 mod-pr-24">
-                Staying compliant is essential for the smooth operation of your Limited Liability Partnership (LLP). 
-                It strengthens business credibility, ensures adherence to legal requirements, and promotes long-term 
-                sustainability. Here’s a quick guide on the key compliance requirements to follow after registering your LLP.
+                Staying compliant is essential for the smooth operation of your Nidhi Company. 
+                It builds business credibility, ensures adherence to legal requirements, and fosters long-term 
+                sustainability. Here’s a quick guide on the key compliance requirements to follow after registering your Nidhi Company.
             </p>
             <div class="mod-grid mod-items-start mod-my-6">
-                <h4>Other Non-ROC Business Compliances for LLP</h4>
+                <h4>Other Non-ROC Business Compliances for Nidhi Companies</h4>
                 <div class="mod-grid-2 mod-gap-2">
                     <span class="mod-items-center mod-py-2 mod-space-semi">TDS Deduction & Payment (if applicable)</span>
                     <span class="mod-items-center mod-py-2 mod-space-semi">GST Registration (if turnover exceeds threshold)</span>
                     <span class="mod-items-center mod-py-2 mod-space-semi">Monthly/Quarterly GST Returns Filing</span>
                     <span class="mod-items-center mod-py-2 mod-space-semi">Advance Tax Payment (if liable)</span>
-                    <span class="mod-items-center mod-py-2 mod-space-semi">Filing of Income Tax Return (ITR-5)</span>
+                    <span class="mod-items-center mod-py-2 mod-space-semi">Filing of Income Tax Return (ITR-6)</span>
                     <span class="mod-items-center mod-py-2 mod-space-semi">Tax Audit Report (if turnover exceeds ₹1 crore)</span>
                 </div>
             </div>
@@ -439,34 +427,29 @@
             </div>
         </div>
         <div class="mod-px-2 mod-flex mod-flex-col mod-gap-2">
-            <div
-                class="mod-flex mod-items-center mod-justify-space-between mod-gap-12 mod-px-2 mod-py-4 mod-border-bottom-2">
-                <h3 class="mod-mb-0">Board Meetings</h3>
-                <p class="mod-ml-16 mod-mb-0 mod-text-right">At least 2 board meetings each year with a minimum of 2
-                    directors or 1/3rd of the total.</p>
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-gap-12 mod-px-2 mod-py-4 mod-border-bottom-2">
+                <h3 class="mod-mb-0">Annual Financial Statements</h3>
+                <p class="mod-ml-16 mod-mb-0 mod-text-right">Form AOC-4 to be submitted within 30 days from the Annual General Meeting (AGM)</p>
             </div>
-            <div
-                class="mod-flex mod-items-center mod-justify-space-between mod-gap-12 mod-px-2 mod-py-4 mod-border-bottom-2">
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-gap-12 mod-px-2 mod-py-4 mod-border-bottom-2">
+                <h3 class="mod-mb-0">Annual Return Filing</h3>
+                <p class="mod-ml-16 mod-mb-0 mod-text-right">Form MGT-7 to be submitted within 60 days from the AGM</p>
+            </div>
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-gap-12 mod-px-2 mod-py-4 mod-border-bottom-2">
+                <h3 class="mod-mb-0">Income Tax Returns</h3>
+                <p class="mod-ml-16 mod-mb-0 mod-text-right">ITR-6 to be filed by 31st July of the assessment year</p>
+            </div>
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-gap-12 mod-px-2 mod-py-4 mod-border-bottom-2">
+                <h3 class="mod-mb-0">Filing of Director’s Report</h3>
+                <p class="mod-ml-16 mod-mb-0 mod-text-right">To be filed as part of the AGM process</p>
+            </div>
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-gap-12 mod-px-2 mod-py-4 mod-border-bottom-2">
                 <h3 class="mod-mb-0">Annual General Meeting (AGM)</h3>
-                <p class="mod-ml-16 mod-mb-0 mod-text-right">Must be held once every year, with a gap of no more than
-                    15 months between two AGMs.</p>
-            </div>
-            <div
-                class="mod-flex mod-items-center mod-justify-space-between mod-gap-12 mod-px-2 mod-py-4 mod-border-bottom-2">
-                <h3 class="mod-mb-0">Auditor Appointment</h3>
-                <p class="mod-ml-16 mod-mb-0 mod-text-right">An auditor must be appointed within 15 days of
-                    incorporation by filing Form ADT-1 with the RoC.</p>
-            </div>
-            <div
-                class="mod-flex mod-items-center mod-justify-space-between mod-gap-12 mod-px-2 mod-py-4 mod-border-bottom-2">
-                <h3 class="mod-mb-0">Financial Reporting</h3>
-                <p class="mod-ml-16 mod-mb-0 mod-text-right">File annual returns (Form MGT-7) and financial statements
-                    (Form AOC-4) every financial year.</p>
+                <p class="mod-ml-16 mod-mb-0 mod-text-right">To be held within 6 months from the end of the financial year</p>
             </div>
             <div class="mod-flex mod-items-center mod-justify-space-between mod-gap-12 mod-px-2 mod-py-4">
-                <h3 class="mod-mb-0">Statutory Records</h3>
-                <p class="mod-ml-16 mod-mb-0 mod-text-right">Maintain key registers and ensure accounts are audited by
-                    a certified statutory auditor.</p>
+                <h3 class="mod-mb-0">Audit of Financial Statements</h3>
+                <p class="mod-ml-16 mod-mb-0 mod-text-right">Must be conducted by a qualified auditor</p>
             </div>
         </div>
         
@@ -478,10 +461,10 @@
     <article class="banner bg-blue-100 mod-overflow-hidden py-40 px-4 p-lg-5 lg:mod-px-12 pb-xxl-4">
         <div class="row gy-32 gx-xl-40 mod-relative justify-content-center align-items-center">
             <div class="col-lg-12 d-flex flex-column mod-gap-8">
-                <h2 class="display-6 fw-bold mb-0">Register your Limited Liability Partnership Company with <span
+                <h2 class="display-6 fw-bold mb-0">Register your Nidhi Company with <span
                         class="text-blue mod-font-semibold">Us</span> in 5 Simple Steps</h2>
-                <p class="text-lg mb-0 pe-xl-80 me-xxl-4 mod-w-5/6 sm:mod-w-full">Starting your own limited
-                    liability partnership company is now easier than ever! Just follow these 5 simple steps, and we will handle the process
+                <p class="text-lg mb-0 pe-xl-80 me-xxl-4 mod-w-5/6 sm:mod-w-full">Starting your own Nidhi
+                    company is now easier than ever! Just follow these 5 simple steps, and we will handle the process
                     with accuracy and efficiency. Let us guide you through every step!</p>
                 <div
                     class="d-flex justify-content-center mod-mt-4 justify-content-lg-start gap-2 gap-sm-3 gap-xl-4 text-center svg-scale scale-4 sm:mod-flex-col sm:mod-w-full">
@@ -492,9 +475,9 @@
                                     <path fill="currentColor"
                                         d="M1 20V17.2C1 16.6333 1.14583 16.1125 1.4375 15.6375C1.72917 15.1625 2.11667 14.8 2.6 14.55C3.63333 14.0333 4.68333 13.6458 5.75 13.3875C6.81667 13.1292 7.9 13 9 13C10.1 13 11.1833 13.1292 12.25 13.3875C13.3167 13.6458 14.3667 14.0333 15.4 14.55C15.8833 14.8 16.2708 15.1625 16.5625 15.6375C16.8542 16.1125 17 16.6333 17 17.2V20H1ZM19 20V17C19 16.2667 18.7958 15.5625 18.3875 14.8875C17.9792 14.2125 17.4 13.6333 16.65 13.15C17.5 13.25 18.3 13.4208 19.05 13.6625C19.8 13.9042 20.5 14.2 21.15 14.55C21.75 14.8833 22.2083 15.2542 22.525 15.6625C22.8417 16.0708 23 16.5167 23 17V20H19ZM9 12C7.9 12 6.95833 11.6083 6.175 10.825C5.39167 10.0417 5 9.1 5 8C5 6.9 5.39167 5.95833 6.175 5.175C6.95833 4.39167 7.9 4 9 4C10.1 4 11.0417 4.39167 11.825 5.175C12.6083 5.95833 13 6.9 13 8C13 9.1 12.6083 10.0417 11.825 10.825C11.0417 11.6083 10.1 12 9 12ZM19 8C19 9.1 18.6083 10.0417 17.825 10.825C17.0417 11.6083 16.1 12 15 12C14.8167 12 14.5833 11.9792 14.3 11.9375C14.0167 11.8958 13.7833 11.85 13.6 11.8C14.05 11.2667 14.3958 10.675 14.6375 10.025C14.8792 9.375 15 8.7 15 8C15 7.3 14.8792 6.625 14.6375 5.975C14.3958 5.325 14.05 4.73333 13.6 4.2C13.8333 4.11667 14.0667 4.0625 14.3 4.0375C14.5333 4.0125 14.7667 4 15 4C16.1 4 17.0417 4.39167 17.825 5.175C18.6083 5.95833 19 6.9 19 8ZM3 18H15V17.2C15 17.0167 14.9542 16.85 14.8625 16.7C14.7708 16.55 14.65 16.4333 14.5 16.35C13.6 15.9 12.6917 15.5625 11.775 15.3375C10.8583 15.1125 9.93333 15 9 15C8.06667 15 7.14167 15.1125 6.225 15.3375C5.30833 15.5625 4.4 15.9 3.5 16.35C3.35 16.4333 3.22917 16.55 3.1375 16.7C3.04583 16.85 3 17.0167 3 17.2V18ZM9 10C9.55 10 10.0208 9.80417 10.4125 9.4125C10.8042 9.02083 11 8.55 11 8C11 7.45 10.8042 6.97917 10.4125 6.5875C10.0208 6.19583 9.55 6 9 6C8.45 6 7.97917 6.19583 7.5875 6.5875C7.19583 6.97917 7 7.45 7 8C7 8.55 7.19583 9.02083 7.5875 9.4125C7.97917 9.80417 8.45 10 9 10Z" />
                                 </svg></span>
-                            <figcaption class="text-h6 mod-pl-3">1. Choose a Company Name</figcaption>
+                            <figcaption class="text-h6 mod-pl-3">1. Apply for Digital Signature Certificate (DSC)</figcaption>
                         </div>
-                        <p class="mod-mt-1 text-gray-600">Ensure that the name is available and complies with legal rules.</p>
+                        <p class="mod-mt-1 text-gray-600">Obtain DSC for all proposed directors for the electronic filing of documents with the Registrar of Companies (RoC)</p>
                     </figure>
                     <figure class="mb-0 mod-flex mod-flex-col mod-items-start mod-text-left mod-gap-4">
                         <div class="mod-flex ">
@@ -503,9 +486,9 @@
                                     <path fill="currentColor"
                                         d="M1 20V17.2C1 16.6333 1.14583 16.1125 1.4375 15.6375C1.72917 15.1625 2.11667 14.8 2.6 14.55C3.63333 14.0333 4.68333 13.6458 5.75 13.3875C6.81667 13.1292 7.9 13 9 13C10.1 13 11.1833 13.1292 12.25 13.3875C13.3167 13.6458 14.3667 14.0333 15.4 14.55C15.8833 14.8 16.2708 15.1625 16.5625 15.6375C16.8542 16.1125 17 16.6333 17 17.2V20H1ZM19 20V17C19 16.2667 18.7958 15.5625 18.3875 14.8875C17.9792 14.2125 17.4 13.6333 16.65 13.15C17.5 13.25 18.3 13.4208 19.05 13.6625C19.8 13.9042 20.5 14.2 21.15 14.55C21.75 14.8833 22.2083 15.2542 22.525 15.6625C22.8417 16.0708 23 16.5167 23 17V20H19ZM9 12C7.9 12 6.95833 11.6083 6.175 10.825C5.39167 10.0417 5 9.1 5 8C5 6.9 5.39167 5.95833 6.175 5.175C6.95833 4.39167 7.9 4 9 4C10.1 4 11.0417 4.39167 11.825 5.175C12.6083 5.95833 13 6.9 13 8C13 9.1 12.6083 10.0417 11.825 10.825C11.0417 11.6083 10.1 12 9 12ZM19 8C19 9.1 18.6083 10.0417 17.825 10.825C17.0417 11.6083 16.1 12 15 12C14.8167 12 14.5833 11.9792 14.3 11.9375C14.0167 11.8958 13.7833 11.85 13.6 11.8C14.05 11.2667 14.3958 10.675 14.6375 10.025C14.8792 9.375 15 8.7 15 8C15 7.3 14.8792 6.625 14.6375 5.975C14.3958 5.325 14.05 4.73333 13.6 4.2C13.8333 4.11667 14.0667 4.0625 14.3 4.0375C14.5333 4.0125 14.7667 4 15 4C16.1 4 17.0417 4.39167 17.825 5.175C18.6083 5.95833 19 6.9 19 8ZM3 18H15V17.2C15 17.0167 14.9542 16.85 14.8625 16.7C14.7708 16.55 14.65 16.4333 14.5 16.35C13.6 15.9 12.6917 15.5625 11.775 15.3375C10.8583 15.1125 9.93333 15 9 15C8.06667 15 7.14167 15.1125 6.225 15.3375C5.30833 15.5625 4.4 15.9 3.5 16.35C3.35 16.4333 3.22917 16.55 3.1375 16.7C3.04583 16.85 3 17.0167 3 17.2V18ZM9 10C9.55 10 10.0208 9.80417 10.4125 9.4125C10.8042 9.02083 11 8.55 11 8C11 7.45 10.8042 6.97917 10.4125 6.5875C10.0208 6.19583 9.55 6 9 6C8.45 6 7.97917 6.19583 7.5875 6.5875C7.19583 6.97917 7 7.45 7 8C7 8.55 7.19583 9.02083 7.5875 9.4125C7.97917 9.80417 8.45 10 9 10Z" />
                                 </svg></span>
-                            <figcaption class="text-h6 mod-pl-3">2. Obtain Director Identification Number (DIN)</figcaption>
+                            <figcaption class="text-h6 mod-pl-3">2. Name Reservation (SPICe+ Part A)</figcaption>
                         </div>
-                        <p class="mod-mt-1 text-gray-600">If not already obtained, the sole director must apply for a DIN.</p>
+                        <p class="mod-mt-1 text-gray-600">Choose a unique name for the company. The name must include “Nidhi Limited” and meet the required naming conventions. File for name reservation through SPICe+ Part A with the RoC.</p>
                     </figure>
                     <figure class="mb-0 mod-flex mod-flex-col mod-items-start mod-text-left mod-gap-4">
                         <div class="mod-flex ">
@@ -514,9 +497,9 @@
                                     <path fill="currentColor"
                                         d="M1 20V17.2C1 16.6333 1.14583 16.1125 1.4375 15.6375C1.72917 15.1625 2.11667 14.8 2.6 14.55C3.63333 14.0333 4.68333 13.6458 5.75 13.3875C6.81667 13.1292 7.9 13 9 13C10.1 13 11.1833 13.1292 12.25 13.3875C13.3167 13.6458 14.3667 14.0333 15.4 14.55C15.8833 14.8 16.2708 15.1625 16.5625 15.6375C16.8542 16.1125 17 16.6333 17 17.2V20H1ZM19 20V17C19 16.2667 18.7958 15.5625 18.3875 14.8875C17.9792 14.2125 17.4 13.6333 16.65 13.15C17.5 13.25 18.3 13.4208 19.05 13.6625C19.8 13.9042 20.5 14.2 21.15 14.55C21.75 14.8833 22.2083 15.2542 22.525 15.6625C22.8417 16.0708 23 16.5167 23 17V20H19ZM9 12C7.9 12 6.95833 11.6083 6.175 10.825C5.39167 10.0417 5 9.1 5 8C5 6.9 5.39167 5.95833 6.175 5.175C6.95833 4.39167 7.9 4 9 4C10.1 4 11.0417 4.39167 11.825 5.175C12.6083 5.95833 13 6.9 13 8C13 9.1 12.6083 10.0417 11.825 10.825C11.0417 11.6083 10.1 12 9 12ZM19 8C19 9.1 18.6083 10.0417 17.825 10.825C17.0417 11.6083 16.1 12 15 12C14.8167 12 14.5833 11.9792 14.3 11.9375C14.0167 11.8958 13.7833 11.85 13.6 11.8C14.05 11.2667 14.3958 10.675 14.6375 10.025C14.8792 9.375 15 8.7 15 8C15 7.3 14.8792 6.625 14.6375 5.975C14.3958 5.325 14.05 4.73333 13.6 4.2C13.8333 4.11667 14.0667 4.0625 14.3 4.0375C14.5333 4.0125 14.7667 4 15 4C16.1 4 17.0417 4.39167 17.825 5.175C18.6083 5.95833 19 6.9 19 8ZM3 18H15V17.2C15 17.0167 14.9542 16.85 14.8625 16.7C14.7708 16.55 14.65 16.4333 14.5 16.35C13.6 15.9 12.6917 15.5625 11.775 15.3375C10.8583 15.1125 9.93333 15 9 15C8.06667 15 7.14167 15.1125 6.225 15.3375C5.30833 15.5625 4.4 15.9 3.5 16.35C3.35 16.4333 3.22917 16.55 3.1375 16.7C3.04583 16.85 3 17.0167 3 17.2V18ZM9 10C9.55 10 10.0208 9.80417 10.4125 9.4125C10.8042 9.02083 11 8.55 11 8C11 7.45 10.8042 6.97917 10.4125 6.5875C10.0208 6.19583 9.55 6 9 6C8.45 6 7.97917 6.19583 7.5875 6.5875C7.19583 6.97917 7 7.45 7 8C7 8.55 7.19583 9.02083 7.5875 9.4125C7.97917 9.80417 8.45 10 9 10Z" />
                                 </svg></span>
-                            <figcaption class="text-h6 mod-pl-3">3. Prepare and File Documentsn</figcaption>
+                            <figcaption class="text-h6 mod-pl-3">3. Prepare and Submit Documents</figcaption>
                         </div>
-                        <p class="mod-mt-1 text-gray-600">Submit the MOA, AOA, and other necessary forms with the Registrar of Companies.
+                        <p class="mod-mt-1 text-gray-600">Prepare the Memorandum of Association (MOA) and Articles of Association (AOA) outlining the company's objectives and governance. Submit required forms like SPICe+ Part B, INC-9 (affidavit), DIR-2 (director consent), and proof of registered office.
                         </p>
                     </figure>
                     <figure class="mb-0 mod-flex mod-flex-col mod-items-start mod-text-left mod-gap-4">
@@ -526,9 +509,9 @@
                                     <path fill="currentColor"
                                         d="M1 20V17.2C1 16.6333 1.14583 16.1125 1.4375 15.6375C1.72917 15.1625 2.11667 14.8 2.6 14.55C3.63333 14.0333 4.68333 13.6458 5.75 13.3875C6.81667 13.1292 7.9 13 9 13C10.1 13 11.1833 13.1292 12.25 13.3875C13.3167 13.6458 14.3667 14.0333 15.4 14.55C15.8833 14.8 16.2708 15.1625 16.5625 15.6375C16.8542 16.1125 17 16.6333 17 17.2V20H1ZM19 20V17C19 16.2667 18.7958 15.5625 18.3875 14.8875C17.9792 14.2125 17.4 13.6333 16.65 13.15C17.5 13.25 18.3 13.4208 19.05 13.6625C19.8 13.9042 20.5 14.2 21.15 14.55C21.75 14.8833 22.2083 15.2542 22.525 15.6625C22.8417 16.0708 23 16.5167 23 17V20H19ZM9 12C7.9 12 6.95833 11.6083 6.175 10.825C5.39167 10.0417 5 9.1 5 8C5 6.9 5.39167 5.95833 6.175 5.175C6.95833 4.39167 7.9 4 9 4C10.1 4 11.0417 4.39167 11.825 5.175C12.6083 5.95833 13 6.9 13 8C13 9.1 12.6083 10.0417 11.825 10.825C11.0417 11.6083 10.1 12 9 12ZM19 8C19 9.1 18.6083 10.0417 17.825 10.825C17.0417 11.6083 16.1 12 15 12C14.8167 12 14.5833 11.9792 14.3 11.9375C14.0167 11.8958 13.7833 11.85 13.6 11.8C14.05 11.2667 14.3958 10.675 14.6375 10.025C14.8792 9.375 15 8.7 15 8C15 7.3 14.8792 6.625 14.6375 5.975C14.3958 5.325 14.05 4.73333 13.6 4.2C13.8333 4.11667 14.0667 4.0625 14.3 4.0375C14.5333 4.0125 14.7667 4 15 4C16.1 4 17.0417 4.39167 17.825 5.175C18.6083 5.95833 19 6.9 19 8ZM3 18H15V17.2C15 17.0167 14.9542 16.85 14.8625 16.7C14.7708 16.55 14.65 16.4333 14.5 16.35C13.6 15.9 12.6917 15.5625 11.775 15.3375C10.8583 15.1125 9.93333 15 9 15C8.06667 15 7.14167 15.1125 6.225 15.3375C5.30833 15.5625 4.4 15.9 3.5 16.35C3.35 16.4333 3.22917 16.55 3.1375 16.7C3.04583 16.85 3 17.0167 3 17.2V18ZM9 10C9.55 10 10.0208 9.80417 10.4125 9.4125C10.8042 9.02083 11 8.55 11 8C11 7.45 10.8042 6.97917 10.4125 6.5875C10.0208 6.19583 9.55 6 9 6C8.45 6 7.97917 6.19583 7.5875 6.5875C7.19583 6.97917 7 7.45 7 8C7 8.55 7.19583 9.02083 7.5875 9.4125C7.97917 9.80417 8.45 10 9 10Z" />
                                 </svg></span>
-                            <figcaption class="text-h6 mod-pl-3">4. Nominee Director</figcaption>
+                            <figcaption class="text-h6 mod-pl-3">4. Obtain License from MCA</figcaption>
                         </div>
-                        <p class="mod-mt-1 text-gray-600">Appoint a nominee director who will take over in case the sole member is incapacitated or passes away.</p>
+                        <p class="mod-mt-1 text-gray-600">After approval of the documents, the Ministry of Corporate Affairs (MCA) issues the Certificate of Incorporation along with the Nidhi license.</p>
                     </figure>
                     <figure class="mb-0 mod-flex mod-flex-col mod-items-start mod-text-left mod-gap-4">
                         <div class="mod-flex ">
@@ -537,9 +520,9 @@
                                     <path fill="currentColor"
                                         d="M1 20V17.2C1 16.6333 1.14583 16.1125 1.4375 15.6375C1.72917 15.1625 2.11667 14.8 2.6 14.55C3.63333 14.0333 4.68333 13.6458 5.75 13.3875C6.81667 13.1292 7.9 13 9 13C10.1 13 11.1833 13.1292 12.25 13.3875C13.3167 13.6458 14.3667 14.0333 15.4 14.55C15.8833 14.8 16.2708 15.1625 16.5625 15.6375C16.8542 16.1125 17 16.6333 17 17.2V20H1ZM19 20V17C19 16.2667 18.7958 15.5625 18.3875 14.8875C17.9792 14.2125 17.4 13.6333 16.65 13.15C17.5 13.25 18.3 13.4208 19.05 13.6625C19.8 13.9042 20.5 14.2 21.15 14.55C21.75 14.8833 22.2083 15.2542 22.525 15.6625C22.8417 16.0708 23 16.5167 23 17V20H19ZM9 12C7.9 12 6.95833 11.6083 6.175 10.825C5.39167 10.0417 5 9.1 5 8C5 6.9 5.39167 5.95833 6.175 5.175C6.95833 4.39167 7.9 4 9 4C10.1 4 11.0417 4.39167 11.825 5.175C12.6083 5.95833 13 6.9 13 8C13 9.1 12.6083 10.0417 11.825 10.825C11.0417 11.6083 10.1 12 9 12ZM19 8C19 9.1 18.6083 10.0417 17.825 10.825C17.0417 11.6083 16.1 12 15 12C14.8167 12 14.5833 11.9792 14.3 11.9375C14.0167 11.8958 13.7833 11.85 13.6 11.8C14.05 11.2667 14.3958 10.675 14.6375 10.025C14.8792 9.375 15 8.7 15 8C15 7.3 14.8792 6.625 14.6375 5.975C14.3958 5.325 14.05 4.73333 13.6 4.2C13.8333 4.11667 14.0667 4.0625 14.3 4.0375C14.5333 4.0125 14.7667 4 15 4C16.1 4 17.0417 4.39167 17.825 5.175C18.6083 5.95833 19 6.9 19 8ZM3 18H15V17.2C15 17.0167 14.9542 16.85 14.8625 16.7C14.7708 16.55 14.65 16.4333 14.5 16.35C13.6 15.9 12.6917 15.5625 11.775 15.3375C10.8583 15.1125 9.93333 15 9 15C8.06667 15 7.14167 15.1125 6.225 15.3375C5.30833 15.5625 4.4 15.9 3.5 16.35C3.35 16.4333 3.22917 16.55 3.1375 16.7C3.04583 16.85 3 17.0167 3 17.2V18ZM9 10C9.55 10 10.0208 9.80417 10.4125 9.4125C10.8042 9.02083 11 8.55 11 8C11 7.45 10.8042 6.97917 10.4125 6.5875C10.0208 6.19583 9.55 6 9 6C8.45 6 7.97917 6.19583 7.5875 6.5875C7.19583 6.97917 7 7.45 7 8C7 8.55 7.19583 9.02083 7.5875 9.4125C7.97917 9.80417 8.45 10 9 10Z" />
                                 </svg></span>
-                            <figcaption class="text-h6 mod-pl-3">5. Get Certificate of Incorporation</figcaption>
+                            <figcaption class="text-h6 mod-pl-3">5. Issue Certificate of Incorporation</figcaption>
                         </div>
-                        <p class="mod-mt-1 text-gray-600">After the Registrar approves the submission, the Certificate of Incorporation is issued.</p>
+                        <p class="mod-mt-1 text-gray-600">Once approved, the company is officially incorporated, and the Certificate of Incorporation is issued, confirming the company as a registered Nidhi company.</p>
                     </figure>
                 </div>
                 <div>

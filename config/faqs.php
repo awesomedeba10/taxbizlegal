@@ -123,5 +123,80 @@ return [
             'question' => 'Can a One Person Company have more than one director?',
             'answer' => 'No, a One Person Company (OPC) can have only one director, who must be a resident of India. However, the company can appoint a nominee who will assume control in the event of the sole member’s death or incapacity.'
         ]
+    ],
+    "limited-liability-partnership-company" => [
+        [
+            'question' => 'Can foreign nationals be partners in an LLP?',
+            'answer' => 'Yes, foreign nationals and foreign companies can become partners in an LLP, subject to FDI guidelines and appointment of a designated partner resident in India.'
+        ],
+        [
+            'question' => 'Is audit mandatory for LLPs?',
+            'answer' => 'No, unless the annual turnover exceeds ₹40 lakhs or capital exceeds ₹25 lakhs. Below this threshold, audit is not required.'
+        ],
+        [
+            'question' => 'Can LLPs raise funds from investors?',
+            'answer' => 'LLPs cannot raise equity capital from the public like companies. However, they can raise funds through partner contributions, loans, or private arrangements.'
+        ],
+        [
+            'question' => 'Can an LLP be converted into a Private Limited Company?',
+            'answer' => 'Yes, an LLP can be converted into a private limited company, following the conditions under the Companies Act, including approval from ROC and re-incorporation.'
+        ],
+        [
+            'question' => 'Can an LLP be closed?',
+            'answer' => 'Yes, through voluntary winding up or striking off via Form 24, provided there are no pending liabilities and the LLP has not carried out business for at least 1 year.'
+        ],
+        [
+            'question' => 'Can LLP have employees?',
+            'answer' => 'Yes, an LLP can hire employees and comply with applicable labor laws like EPF, ESI, and Shops & Establishment Act.'
+        ],
+        [
+            'question' => 'What is the difference between an LLP and a Private Limited Company?',
+            'answer' => '<p>The key differences between an LLP and a Private Limited Company include:</p>
+                    <ul>
+                        <li><strong>Compliance:</strong> LLPs have lower compliance requirements compared to private limited companies</li>
+                        <li><strong>Ownership:</strong> LLPs have flexible profit-sharing structures, whereas private limited companies have fixed shareholding patterns</li>
+                        <li><strong>Taxation:</strong> LLPs are not subject to Dividend Distribution Tax (DDT); tax is only levied on profits</li>
+                        <li><strong>Fundraising:</strong> Private limited companies can raise capital by issuing shares; LLPs cannot issue shares to raise equity capital</li>
+                        <li><strong>Governance:</strong> LLPs operate based on an LLP Agreement, while companies are governed by their Articles and Memorandum of Association (AoA/MoA)</li>
+                    </ul>'
+        ]
+        ],
+"nidhi-company" => [
+    [
+        'question' => 'What is a Nidhi Company?',
+        'answer' => 'A Nidhi company is a non-banking financial institution created to promote the habit of saving and mutual lending among its members. It can only lend money to its members and cannot borrow from external sources.'
+    ],
+    [
+        'question' => 'Can Nidhi companies lend to non-members?',
+        'answer' => 'No, Nidhi companies can only lend to their members and cannot lend to non-members or the public.'
+    ],
+    [
+        'question' => 'What is the minimum number of members required for a Nidhi Company?',
+        'answer' => 'A Nidhi company must have at least 7 members at the time of incorporation. Furthermore, the company must have at least 200 members within one year of its formation.'
+    ],
+    [
+        'question' => 'What is the capital requirement for starting a Nidhi Company?',
+        'answer' => 'There is no specific minimum capital requirement for a Nidhi company. However, the company must ensure that it has a sufficient amount of paid-up capital to support its operations, typically in the range of INR 5 lakh or more.'
+    ],
+    [
+        'question' => 'Can a Nidhi Company become a public limited company?',
+        'answer' => 'No, a Nidhi company cannot convert into a public limited company as its operations are restricted to mutual benefit and are limited to its members.'
+    ],
+    [
+        'question' => 'What are the tax implications for Nidhi Companies?',
+        'answer' => 'Nidhi companies are taxed similarly to other companies under the Income Tax Act. However, they may qualify for certain exemptions based on the nature of their operations, especially concerning deposits and loans from members.'
+    ],
+    [
+        'question' => 'Can a foreigner be a member or director of a Nidhi Company?',
+        'answer' => 'No, Nidhi companies are restricted to Indian citizens and residents as their members and directors. Foreign nationals cannot be members or directors of Nidhi companies.'
+    ],
+    [
+        'question' => 'Can a Nidhi Company take deposits from the general public?',
+        'answer' => 'No, Nidhi companies are only allowed to take deposits from their members and cannot raise funds from the general public.'
+    ],
+    [
+        'question' => 'Can a Nidhi Company be converted into a private or public limited company?',
+        'answer' => 'No, Nidhi companies cannot be converted into private or public limited companies as their activities are restricted to mutual benefit among members.'
     ]
+]
 ];
