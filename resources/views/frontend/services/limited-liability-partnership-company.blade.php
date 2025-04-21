@@ -331,8 +331,8 @@
                 <h2 class="mb-0">Separate Legal
                     <span class="text-primary mod-font-bold">Entity</span>
                 </h2>
-                <p class="mb-0 text-lg">An LLP is recognized as a separate legal entity, distinct from its partners. It can own property, sue, and be sued in its own name, ensuring continuity even when partners change.</p>
-                <p class="mb-0 text-lg">The structure enables the LLP to function independently, providing business credibility and allowing it to enter into contracts and own assets under its own identity.</p>
+                <p class="mb-0 text-lg mod-text-justify">An LLP is recognized as a separate legal entity, distinct from its partners. It can own property, sue, and be sued in its own name, ensuring continuity even when partners change.</p>
+                <p class="mb-0 text-lg mod-text-justify">The structure enables the LLP to function independently, providing business credibility and allowing it to enter into contracts and own assets under its own identity.</p>
             </div>
         </div>
         <div class="col-lg-4">
@@ -340,8 +340,8 @@
                 <h2 class="mb-0">Limited
                     <span class="text-primary mod-font-bold">Liability</span>
                 </h2>
-                <p class="mb-0 text-lg">Each partner’s liability is limited to the amount they agree to contribute, protecting their personal assets from business debts or losses incurred by the LLP.</p>
-                <p class="mb-0 text-lg">Unless voluntarily agreed otherwise, no partner is liable for the independent actions or misconduct of other partners, ensuring reduced individual risk.</p>
+                <p class="mb-0 text-lg mod-text-justify">Each partner’s liability is limited to the amount they agree to contribute, protecting their personal assets from business debts or losses incurred by the LLP.</p>
+                <p class="mb-0 text-lg mod-text-justify">Unless voluntarily agreed otherwise, no partner is liable for the independent actions or misconduct of other partners, ensuring reduced individual risk.</p>
             </div>
         </div>
         <div class="col-lg-4">
@@ -349,8 +349,8 @@
                 <h2 class="mb-0">
                     <span class="text-primary mod-font-bold">Taxation</span> & Compliance
                 </h2>
-                <p class="mb-0 text-lg">LLPs enjoy simplified compliance, with audit requirements only applicable if turnover exceeds ₹40 lakhs or capital contribution exceeds ₹25 lakhs.</p>
-                <p class="mb-0 text-lg">They are taxed at a flat rate of 30% (plus applicable surcharge and cess), and profit shares are exempt in the hands of the partners, making LLPs tax-efficient for many businesses.</p>
+                <p class="mb-0 text-lg mod-text-justify">LLPs enjoy simplified compliance, with audit requirements only applicable if turnover exceeds ₹40 lakhs or capital contribution exceeds ₹25 lakhs.</p>
+                <p class="mb-0 text-lg mod-text-justify">They are taxed at a flat rate of 30% (plus applicable surcharge and cess), and profit shares are exempt in the hands of the partners, making LLPs tax-efficient for many businesses.</p>
             </div>
         </div>
     </div>

@@ -301,10 +301,10 @@
                 <h2 class="mb-0">One Person
                     <span class="text-primary mod-font-bold">Company (OPC)</span>
                 </h2>
-                <p class="mb-0 text-lg">An OPC is a type of company that allows a single individual to enjoy the
+                <p class="mb-0 text-lg mod-text-justify">An OPC is a type of company that allows a single individual to enjoy the
                     benefits of a corporate structure without needing partners or co-founders. It is ideal for solo
                     entrepreneurs looking to operate with limited liability and full control.</p>
-                <p class="mb-0 text-lg">Registered under the Companies Act, 2013, OPCs are recognized as separate legal
+                <p class="mb-0 text-lg mod-text-justify">Registered under the Companies Act, 2013, OPCs are recognized as separate legal
                     entities and can own assets, enter contracts, and sue or be sued independently of the owner.</p>
             </div>
         </div>
@@ -313,10 +313,10 @@
                 <h2 class="mb-0">Sole
                     <span class="text-primary mod-font-bold">Proprietorship</span>
                 </h2>
-                <p class="mb-0 text-lg">A sole proprietorship is the simplest form of business, where the business and
+                <p class="mb-0 text-lg mod-text-justify">A sole proprietorship is the simplest form of business, where the business and
                     owner are legally the same. It requires minimal regulatory compliance and is easy to start and
                     manage.</p>
-                <p class="mb-0 text-lg">However, the owner bears unlimited liability, meaning personal assets can be
+                <p class="mb-0 text-lg mod-text-justify">However, the owner bears unlimited liability, meaning personal assets can be
                     used to settle business debts. It's best suited for small-scale or low-risk businesses.</p>
             </div>
         </div>
@@ -325,10 +325,10 @@
                 <h2 class="mb-0">Private Limited
                     <span class="text-primary mod-font-bold">Company</span>
                 </h2>
-                <p class="mb-0 text-lg">A private limited company requires at least two directors and shareholders.
+                <p class="mb-0 text-lg mod-text-justify">A private limited company requires at least two directors and shareholders.
                     While it offers strong credibility and attracts investors, it is not suitable for solo founders by
                     default.</p>
-                <p class="mb-0 text-lg">However, OPCs can be converted into private limited companies once the business
+                <p class="mb-0 text-lg mod-text-justify">However, OPCs can be converted into private limited companies once the business
                     grows, allowing for future scalability without compromising compliance or governance standards.</p>
             </div>
         </div>

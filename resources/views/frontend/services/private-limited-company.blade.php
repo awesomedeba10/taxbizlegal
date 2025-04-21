@@ -291,10 +291,10 @@
                 <h2 class="mb-0">Company Limited by
                     <span class="text-primary mod-font-bold">Shares</span>
                 </h2>
-                <p class="mb-0 text-lg">A company limited by shares is a distinct legal entity from its shareholders
+                <p class="mb-0 text-lg mod-text-justify">A company limited by shares is a distinct legal entity from its shareholders
                     and directors. It can enter into contracts, own assets, and operate independently under its business
                     name.</p>
-                <p class="mb-0 text-lg">Shareholders’ liability is limited to their investment, ensuring their
+                <p class="mb-0 text-lg mod-text-justify">Shareholders’ liability is limited to their investment, ensuring their
                     personal assets remain protected from the company’s financial obligations. This structure is widely
                     chosen for its security and credibility.</p>
             </div>
@@ -304,10 +304,10 @@
                 <h2 class="mb-0">Company Limited by
                     <span class="text-primary mod-font-bold">Guarantee</span>
                 </h2>
-                <p class="mb-0 text-lg">A company limited by guarantee does not have shareholders or share capital.
+                <p class="mb-0 text-lg mod-text-justify">A company limited by guarantee does not have shareholders or share capital.
                     Instead, it is backed by guarantors who commit a fixed amount towards company debts if necessary.
                 </p>
-                <p class="mb-0 text-lg">Such companies usually operate as non-profits, with profits reinvested into
+                <p class="mb-0 text-lg mod-text-justify">Such companies usually operate as non-profits, with profits reinvested into
                     the business to support its objectives. Guarantors do not receive a share of the profits.</p>
             </div>
         </div>
@@ -316,9 +316,9 @@
                 <h2 class="mb-0">
                     <span class="text-primary mod-font-bold">Unlimited</span> Company
                 </h2>
-                <p class="mb-0 text-lg">An unlimited company, as per Section 2(92) of the Companies Act, 2013, does
+                <p class="mb-0 text-lg mod-text-justify">An unlimited company, as per Section 2(92) of the Companies Act, 2013, does
                     not impose financial liability limits on its shareholders.</p>
-                <p class="mb-0 text-lg">In case of dissolution, shareholders are fully responsible for covering all
+                <p class="mb-0 text-lg mod-text-justify">In case of dissolution, shareholders are fully responsible for covering all
                     company debts, even beyond their initial investment. This structure offers operational flexibility
                     but comes with higher financial risk.</p>
             </div>

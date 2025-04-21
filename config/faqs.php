@@ -160,43 +160,43 @@ return [
                         <li><strong>Governance:</strong> LLPs operate based on an LLP Agreement, while companies are governed by their Articles and Memorandum of Association (AoA/MoA)</li>
                     </ul>'
         ]
+    ],
+    "nidhi-company" => [
+        [
+            'question' => 'What is a Nidhi Company?',
+            'answer' => 'A Nidhi company is a non-banking financial institution created to promote the habit of saving and mutual lending among its members. It can only lend money to its members and cannot borrow from external sources.'
         ],
-"nidhi-company" => [
-    [
-        'question' => 'What is a Nidhi Company?',
-        'answer' => 'A Nidhi company is a non-banking financial institution created to promote the habit of saving and mutual lending among its members. It can only lend money to its members and cannot borrow from external sources.'
-    ],
-    [
-        'question' => 'Can Nidhi companies lend to non-members?',
-        'answer' => 'No, Nidhi companies can only lend to their members and cannot lend to non-members or the public.'
-    ],
-    [
-        'question' => 'What is the minimum number of members required for a Nidhi Company?',
-        'answer' => 'A Nidhi company must have at least 7 members at the time of incorporation. Furthermore, the company must have at least 200 members within one year of its formation.'
-    ],
-    [
-        'question' => 'What is the capital requirement for starting a Nidhi Company?',
-        'answer' => 'There is no specific minimum capital requirement for a Nidhi company. However, the company must ensure that it has a sufficient amount of paid-up capital to support its operations, typically in the range of INR 5 lakh or more.'
-    ],
-    [
-        'question' => 'Can a Nidhi Company become a public limited company?',
-        'answer' => 'No, a Nidhi company cannot convert into a public limited company as its operations are restricted to mutual benefit and are limited to its members.'
-    ],
-    [
-        'question' => 'What are the tax implications for Nidhi Companies?',
-        'answer' => 'Nidhi companies are taxed similarly to other companies under the Income Tax Act. However, they may qualify for certain exemptions based on the nature of their operations, especially concerning deposits and loans from members.'
-    ],
-    [
-        'question' => 'Can a foreigner be a member or director of a Nidhi Company?',
-        'answer' => 'No, Nidhi companies are restricted to Indian citizens and residents as their members and directors. Foreign nationals cannot be members or directors of Nidhi companies.'
-    ],
-    [
-        'question' => 'Can a Nidhi Company take deposits from the general public?',
-        'answer' => 'No, Nidhi companies are only allowed to take deposits from their members and cannot raise funds from the general public.'
-    ],
-    [
-        'question' => 'Can a Nidhi Company be converted into a private or public limited company?',
-        'answer' => 'No, Nidhi companies cannot be converted into private or public limited companies as their activities are restricted to mutual benefit among members.'
+        [
+            'question' => 'Can Nidhi companies lend to non-members?',
+            'answer' => 'No, Nidhi companies can only lend to their members and cannot lend to non-members or the public.'
+        ],
+        [
+            'question' => 'What is the minimum number of members required for a Nidhi Company?',
+            'answer' => 'A Nidhi company must have at least 7 members at the time of incorporation. Furthermore, the company must have at least 200 members within one year of its formation.'
+        ],
+        [
+            'question' => 'What is the capital requirement for starting a Nidhi Company?',
+            'answer' => 'There is no specific minimum capital requirement for a Nidhi company. However, the company must ensure that it has a sufficient amount of paid-up capital to support its operations, typically in the range of INR 5 lakh or more.'
+        ],
+        [
+            'question' => 'Can a Nidhi Company become a public limited company?',
+            'answer' => 'No, a Nidhi company cannot convert into a public limited company as its operations are restricted to mutual benefit and are limited to its members.'
+        ],
+        [
+            'question' => 'What are the tax implications for Nidhi Companies?',
+            'answer' => 'Nidhi companies are taxed similarly to other companies under the Income Tax Act. However, they may qualify for certain exemptions based on the nature of their operations, especially concerning deposits and loans from members.'
+        ],
+        [
+            'question' => 'Can a foreigner be a member or director of a Nidhi Company?',
+            'answer' => 'No, Nidhi companies are restricted to Indian citizens and residents as their members and directors. Foreign nationals cannot be members or directors of Nidhi companies.'
+        ],
+        [
+            'question' => 'Can a Nidhi Company take deposits from the general public?',
+            'answer' => 'No, Nidhi companies are only allowed to take deposits from their members and cannot raise funds from the general public.'
+        ],
+        [
+            'question' => 'Can a Nidhi Company be converted into a private or public limited company?',
+            'answer' => 'No, Nidhi companies cannot be converted into private or public limited companies as their activities are restricted to mutual benefit among members.'
+        ]
     ]
-]
 ];

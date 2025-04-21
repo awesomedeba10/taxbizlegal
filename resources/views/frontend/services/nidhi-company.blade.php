@@ -322,22 +322,22 @@
         <div class="col-lg-4">
             <div class="d-flex flex-column gap-12 gap-lg-3 mx-auto">
                 <h2 class="mb-0">Members <span class="text-primary mod-font-bold">Only</span></h2>
-                <p class="mb-0 text-lg">Nidhi companies exclusively transact with their members, meaning borrowing and lending are restricted to individuals who are part of the company. This fosters a community-based financial ecosystem where only members have access to funds raised within the company.</p>
-                <p class="mb-0 text-lg">The primary objective is to promote savings and lend to members for their mutual benefit, creating a responsible and beneficial financial environment.</p>
+                <p class="mb-0 text-lg mod-text-justify">Nidhi companies exclusively transact with their members, meaning borrowing and lending are restricted to individuals who are part of the company. This fosters a community-based financial ecosystem where only members have access to funds raised within the company.</p>
+                <p class="mb-0 text-lg mod-text-justify">The primary objective is to promote savings and lend to members for their mutual benefit, creating a responsible and beneficial financial environment.</p>
             </div>
         </div>
         <div class="col-lg-4">
             <div class="d-flex flex-column gap-12 gap-lg-3 mx-auto">
                 <h2 class="mb-0">Legal <span class="text-primary mod-font-bold">Status</span></h2>
-                <p class="mb-0 text-lg">Nidhi companies are registered as public limited companies and must include the words "Nidhi Limited" in their name. This ensures they are recognized under a specific legal framework and operate with distinct governance norms that differentiate them from other public companies.</p>
-                <p class="mb-0 text-lg">This special legal status ensures a structured and regulated environment for their operations, guided by the Ministry of Corporate Affairs (MCA) and the Reserve Bank of India (RBI).</p>
+                <p class="mb-0 text-lg mod-text-justify">Nidhi companies are registered as public limited companies and must include the words "Nidhi Limited" in their name. This ensures they are recognized under a specific legal framework and operate with distinct governance norms that differentiate them from other public companies.</p>
+                <p class="mb-0 text-lg mod-text-justify">This special legal status ensures a structured and regulated environment for their operations, guided by the Ministry of Corporate Affairs (MCA) and the Reserve Bank of India (RBI).</p>
             </div>
         </div>
         <div class="col-lg-4">
             <div class="d-flex flex-column gap-12 gap-lg-3 mx-auto">
                 <h2 class="mb-0">Borrowing & <span class="text-primary mod-font-bold">Lending</span></h2>
-                <p class="mb-0 text-lg">Nidhi companies are only permitted to raise funds from their members and lend exclusively to them. They cannot lend money to the general public, ensuring that their activities are restricted to the mutual benefit of their members.</p>
-                <p class="mb-0 text-lg">This restricted borrowing and lending policy maintains the focus on financial stability within the membership, fostering responsible financial behavior and ensuring safety for all members.</p>
+                <p class="mb-0 text-lg mod-text-justify">Nidhi companies are only permitted to raise funds from their members and lend exclusively to them. They cannot lend money to the general public, ensuring that their activities are restricted to the mutual benefit of their members.</p>
+                <p class="mb-0 text-lg mod-text-justify">This restricted borrowing and lending policy maintains the focus on financial stability within the membership, fostering responsible financial behavior and ensuring safety for all members.</p>
             </div>
         </div>
     </div>
