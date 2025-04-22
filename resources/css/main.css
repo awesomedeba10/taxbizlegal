@@ -6558,7 +6558,7 @@ fieldset:disabled .btn-close {
     width: 1.5rem;
     height: 1.5rem;
     margin: -.0625rem 0 0!important;
-    background: transparent url(/build/svg/caret-down.svg) no-repeat center center;
+    background: transparent url(/images/svg/caret-down.svg) no-repeat center center;
     background-size: cover;
     border: none;
     transform: translateY(var(--choices-caret-move));

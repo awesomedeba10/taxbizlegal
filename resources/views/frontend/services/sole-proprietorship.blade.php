@@ -3,9 +3,9 @@
         class="mod-items-center mod-px-24 mod-grid-12 mod-w-full sm:mod-gap-10 sm:mod-flex sm:mod-flex-col
         sm:mod-px-10 md:mod-px-12 md:mod-items-start ">
         <div class="section-heading">
-            <p class="h5 text-primary mb-2">Start Your Public Limited Company with Ease!</p>
+            <p class="h5 text-primary mb-2">Start Your Sole Proprietorship Company with Ease!</p>
             <h1 class="section-title mod-font-bold mod-leading-semi-loose mod-space-light-semi mod-mb-8" data-fade="up">
-                Register Your <span class="text-blue">Public Limited Company</span> & Unlock Growth Opportunities!</h1>
+                Register Your <span class="text-blue">Sole Proprietorship Company</span> & Unlock Growth Opportunities!</h1>
             <div class="mod-flex mod-flex-col mod-gap-10">
                 <div class="text mod-font-medium mod-leading-loose" data-fade="up">
                     <ul class="mod-ml-0 mod-mb-1 mod-pl-1 mod-list-none mod-flex mod-flex-col mod-gap-2 mod-text-base">
@@ -41,8 +41,7 @@
         <div
             class="mod-flex services-nav-container mod-items-center mod-justify-between mod-cursor-pointer mod-rounded-lg mod-border-sm mod-overflow-hidden mod-text-s-14 mod-font-medium">
             <div class="mod-whitespace-nowrap mod-py-4 mod-sticky mod-left-0 mod-pl-6">
-                <span class="services-nav-title mod-pl-6 mod-pr-3 mod-border-r-sm mod-contents">PUBLIC LTD
-                    COMPANY</span>
+                <span class="services-nav-title mod-pl-6 mod-pr-3 mod-border-r-sm mod-contents">SOLE PROPRIETORSHIP</span>
             </div>
             <ul class="services-nav-ul mod-flex mod-items-center mod-my-0 mod-justify-center mod-list-none">
                 <li data-target="pricing"
@@ -95,11 +94,11 @@
                 class="mod-text-s-32 mod-nav-text mod-font-semibold mod-word-break-normal mod-text-center mod-leading-loose">
                 <span>Choose the Right Plan</span>
                 <div class="mod-text-s-44">
-                    For your <span class="text-blue">Public Limited Company</span>
+                    For your <span class="text-blue">Sole Proprietorship Company</span>
                 </div>
             </h1>
             <p class="mod-nav-text mod-mt-2 mod-leading-loose mod-text-center">
-                Get your Public Limited Company registered effortlessly with our tailored pricing plans. Start your
+                Get your Sole Proprietorship Company registered effortlessly with our tailored pricing plans. Start your
                 journey today!
             </p>
         </div>
@@ -169,15 +168,8 @@
             <div class="mod-py-8">
 
                 <h1 class="mod-text-s-24">All you need to know about Public Limted Company Registration</h1>
-                <p>A Public Limited Company (PLC) is a company registered under the Companies Act, 2013, which is
-                    allowed to offer its shares to the general public through a stock exchange (if listed) or otherwise.
-                    It is a separate legal entity, distinct from its shareholders, and can raise capital from the
-                    public, making it ideal for large businesses aiming for expansion and diversification.</p>
-                <p>This structure is suitable for large-scale enterprises seeking to raise significant capital and
-                    enhance their market presence. However, public companies are subject to stricter regulatory
-                    requirements, transparency norms, and more complex compliance compared to private limited companies
-                    or LLPs.</p>
-                <p>Taxbizlegal.com is a trusted platform that provides end-to-end services for Public Limited Company
+                <p>A Sole Proprietorship is one of the simplest and most common forms of business structures in India. As the name suggests, it is owned, managed, and controlled by a single individual. It is not a separate legal entity like a private limited company or LLP but a business run by an individual. The owner has complete control over the business, makes all decisions, and retains all profits. This structure is best suited for small-scale businesses, freelancers, and individual entrepreneurs. It is easy to set up and offers flexibility in terms of operations but comes with the drawback of unlimited liability for the owner.</p>
+                <p>Taxbizlegal.com is a trusted platform that provides end-to-end services for Sole Proprietorship Company
                     registration, including incorporation, compliance, advisory, and consultancy. The process is quick,
                     affordable, and simple. Additionally, we offer services for Partnership Registration, LLP
                     Incorporation, One Person Company registration, and more. Contact us for a free consultation at
@@ -197,7 +189,7 @@
         <div class="section-heading">
             <h2 class="section-title mod-text-s-28 mod-font-bold mod-leading-semi-loose mod-space-light-semi"
                 data-fade="up">
-                Advantages of Public Limited Company
+                Advantages of Sole Proprietorship Company
             </h2>
         </div>
         <div class="section-content mod-grid-4">
@@ -219,9 +211,8 @@
                     </svg>
                 </div>
                 <div class="item-content">
-                    <h3 class="item-title">Access to Public Capital</h3>
-                    <p class="item-text">Can raise funds from the public via shares, debentures, or public deposits.
-                    </p>
+                    <h3 class="item-title">Simple to Establish</h3>
+                    <p class="item-text">Minimal paperwork and formalities are required for registration, making it an easy choice for entrepreneurs.</p>
                 </div>
             </div>
             <div class="mod-flex mod-flex-col mod-gap-4 xl:mod-pr-20 lg:mod-pr-8 sm:mod-pr-4 sm:mod-flex-row"
@@ -235,9 +226,8 @@
                     </svg>
                 </div>
                 <div class="item-content">
-                    <h3 class="item-title">Limited Liability</h3>
-                    <p class="item-text">Shareholders are liable only up to their shareholding; personal assets are
-                        protected.</p>
+                    <h3 class="item-title">Complete Control</h3>
+                    <p class="item-text">The owner has full control over business decisions and operations.</p>
                 </div>
             </div>
             <div class="mod-flex mod-flex-col mod-gap-4 xl:mod-pr-20 lg:mod-pr-8 sm:mod-pr-4 sm:mod-flex-row"
@@ -255,8 +245,8 @@
                     </svg>
                 </div>
                 <div class="item-content">
-                    <h3 class="item-title">Separate Legal Entity</h3>
-                    <p class="item-text">Distinct from its members, the company can own property, sue, or be sued.</p>
+                    <h3 class="item-title">Flexibility</h3>
+                    <p class="item-text">The proprietor has the freedom to make quick decisions and changes without the need for approvals.</p>
                 </div>
             </div>
             <div class="mod-flex mod-flex-col mod-gap-4 xl:mod-pr-20 lg:mod-pr-8 sm:mod-pr-4 sm:mod-flex-row"
@@ -271,8 +261,8 @@
                     </svg>
                 </div>
                 <div class="item-content">
-                    <h3 class="item-title">Transferability of Shares</h3>
-                    <p class="item-text">Shares are freely transferable (especially if listed).</p>
+                    <h3 class="item-title">Low Compliance Costs</h3>
+                    <p class="item-text">There are fewer legal obligations, such as mandatory audits or annual meetings, making it a cost-effective choice for small businesses.</p>
                 </div>
             </div>
             <div class="mod-flex mod-flex-col mod-gap-4 xl:mod-pr-20 lg:mod-pr-8 sm:mod-pr-4 sm:mod-flex-row"
@@ -287,9 +277,8 @@
                     </svg>
                 </div>
                 <div class="item-content">
-                    <h3 class="item-title">Perpetual Succession</h3>
-                    <p class="item-text">Company continues to exist regardless of changes in ownership or management.
-                    </p>
+                    <h3 class="item-title">Taxation</h3>
+                    <p class="item-text">The income generated by the business is taxed as personal income, avoiding double taxation (common in corporations).</p>
                 </div>
             </div>
             <div class="mod-flex mod-flex-col mod-gap-4 xl:mod-pr-20 lg:mod-pr-8 sm:mod-pr-4 sm:mod-flex-row"
@@ -304,8 +293,8 @@
                     </svg>
                 </div>
                 <div class="item-content">
-                    <h3 class="item-title">Credibility & Transparency</h3>
-                    <p class="item-text">High public trust due to regulatory compliance and disclosures.</p>
+                    <h3 class="item-title">Direct Profits</h3>
+                    <p class="item-text">The owner retains all profits generated by the business.</p>
                 </div>
             </div>
         </div>
@@ -315,39 +304,28 @@
 <section class="container my-80 my-xxl-120" id="resources">
 
     <h1 class="display-6 mb-32 mod-font-semibold mod-text-s-24">
-        Key Features of a <span class="text-primary mod-font-bold">Public Limited Company</span>
+        Key Features of a <span class="text-primary mod-font-bold">Sole Proprietorship</span>
     </h1>
     <div class="row gy-40 gx-lg-40">
         <div class="col-lg-4">
             <div class="d-flex flex-column gap-12 gap-lg-3 mx-auto">
-                <h2 class="mb-0">Legal <span class="text-primary mod-font-bold">Status</span></h2>
-                <p class="mb-0 text-lg mod-text-justify">A public limited company is recognized as a distinct legal
-                    entity under the Companies Act, 2013. It enjoys independent legal standing, which means it can own
-                    property, sue, or be sued in its own name—separate from its shareholders and directors.</p>
-                <p class="mb-0 text-lg mod-text-justify">This separation provides long-term sustainability and enhanced
-                    operational autonomy, giving investors and stakeholders more confidence in its structure and
-                    regulations.</p>
+                <h2 class="mb-0">Single Owner, <span class="text-primary mod-font-bold">Full Control</span></h2>
+                <p class="mb-0 text-lg mod-text-justify">A sole proprietorship is owned and managed by a single individual who exercises full control over all business operations and decision-making.</p>
+                <p class="mb-0 text-lg mod-text-justify">It’s the simplest and most direct form of business ownership, making it ideal for small or low-risk ventures.</p>
             </div>
         </div>
         <div class="col-lg-4">
             <div class="d-flex flex-column gap-12 gap-lg-3 mx-auto">
-                <h2 class="mb-0">Shareholding & <span class="text-primary mod-font-bold">Directorship</span></h2>
-                <p class="mb-0 text-lg mod-text-justify">A minimum of 7 shareholders and 3 directors are required to
-                    form a public limited company. There is no cap on the maximum number of shareholders, allowing
-                    widespread ownership and investment opportunities.</p>
-                <p class="mb-0 text-lg mod-text-justify">At least one director must be a resident of India, ensuring
-                    domestic representation and compliance with local regulatory norms under Indian corporate law.</p>
+                <h2 class="mb-0">No Legal Separation & <span class="text-primary mod-font-bold">Unlimited Liability</span></h2>
+                <p class="mb-0 text-lg mod-text-justify">The business and the owner are legally the same. This means the owner is personally responsible for all debts, liabilities, or legal issues arising from the business.</p>
+                <p class="mb-0 text-lg mod-text-justify">There is also no mandatory share capital or formal governance structure required to operate the business.</p>
             </div>
         </div>
         <div class="col-lg-4">
             <div class="d-flex flex-column gap-12 gap-lg-3 mx-auto">
-                <h2 class="mb-0">Fundraising & <span class="text-primary mod-font-bold">Compliance</span></h2>
-                <p class="mb-0 text-lg mod-text-justify">Public limited companies can raise capital from the general
-                    public by issuing shares or debentures. They can also choose to list on stock exchanges like NSE or
-                    BSE after fulfilling SEBI criteria.</p>
-                <p class="mb-0 text-lg mod-text-justify">Once listed, they must comply with stringent regulatory
-                    requirements, including quarterly and annual disclosures, ensuring transparency, accountability, and
-                    public trust.</p>
+                <h2 class="mb-0">Simple Operations & <span class="text-primary mod-font-bold">Limited Scalability</span></h2>
+                <p class="mb-0 text-lg mod-text-justify">Sole proprietorships are easy to start and close, involving minimal compliance and formalities, making them highly flexible.</p>
+                <p class="mb-0 text-lg mod-text-justify">However, growth potential is limited, and scaling may require shifting to a more structured entity like an LLP or private limited company.</p>
             </div>
         </div>
     </div>
@@ -370,27 +348,28 @@
             <div class="items mod-grid-4">
                 <div class="mod-flex mod-flex-col mod-gap-2" data-fade="up">
                     <div class="item-number">01.</div>
-                    <p class="item-text">PAN, Aadhaar</p>
+                    <p class="item-text">Aadhar or Passport</p>
                 </div>
                 <div class="mod-flex mod-flex-col mod-gap-2" data-fade="up">
                     <div class="item-number">02.</div>
-                    <p class="item-text">Address proof: Utility bills or bank statements</p>
+                    <p class="item-text">Individual PAN Card</p>
                 </div>
-                <div class="mod-flex mod-flex-col mod-gap-2" data-fade="up">
+                <div class="mod-flex mod-flex-col mod-gap-2" data-fade="up"
+                    style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1; visibility: inherit;">
                     <div class="item-number">03.</div>
-                    <p class="item-text">Passport-size photos</p>
+                    <p class="item-text">Registered Office Proof</p>
                 </div>
                 <div class="mod-flex mod-flex-col mod-gap-2" data-fade="up">
                     <div class="item-number">04.</div>
-                    <p class="item-text">Proof of registered office</p>
+                    <p class="item-text">Proof of Business Activity</p>
                 </div>
                 <div class="mod-flex mod-flex-col mod-gap-2" data-fade="up">
                     <div class="item-number">05.</div>
-                    <p class="item-text">No Objection Certificate / NOC</p>
+                    <p class="item-text">Address Proof</p>
                 </div>
                 <div class="mod-flex mod-flex-col mod-gap-2" data-fade="up">
                     <div class="item-number">06.</div>
-                    <p class="item-text">Passport (for foreign nationals) of directors/shareholders</p>
+                    <p class="item-text">GST Registration / Professional Tax</p>
                 </div>
             </div>
         </div>
@@ -398,26 +377,26 @@
 </section>
 
 <section class="container my-40" id="compliances">
-    <h1 class="display-6 mb-32 mod-font-semibold mod-text-s-28">Compliance Required for Forming a Public Limited
+    <h1 class="display-6 mb-32 mod-font-semibold mod-text-s-28">Compliance Required for Forming a Sole Proprietorship
         Company</h1>
 
     <div class="mod-grid mod-mt-4 mod-gap-8 mod-grid-template-col-2 sm:mod-grid-template-col-2">
         <div class="mod-pr-8 mod-flex mod-flex-col">
             <h3 class="mod-font-semibold mod-leading-loose">Why Compliance Matters</h3>
             <p class="mod-mt-2 mod-pr-24">
-                For a public limited company, compliance plays a crucial role in maintaining transparency, building investor confidence,
-                and ensuring smooth regulatory oversight. Adhering to non-ROC business compliances also prevents legal issues and promotes
-                business continuity.
+                For sole proprietors, compliance ensures smooth business operations, reduces legal risks, and builds credibility with
+                customers, vendors, and lenders. While there’s no need for ROC filings, adhering to financial and tax obligations is
+                crucial to avoid penalties and stay eligible for government schemes and loans.
             </p>
             <div class="mod-grid mod-items-start mod-my-6">
                 <h4>Other Non-ROC Business Compliances</h4>
                 <div class="mod-grid-2 mod-gap-2">
-                    <span class="mod-items-center mod-py-2 mod-space-semi">TDS Deduction & Timely Payment</span>
+                    <span class="mod-items-center mod-py-2 mod-space-semi">Income Tax Return Filing (ITR-3/ITR-4)</span>
+                    <span class="mod-items-center mod-py-2 mod-space-semi">GST Registration & Filing (if applicable)</span>
+                    <span class="mod-items-center mod-py-2 mod-space-semi">TDS Deduction & Payment (if liable)</span>
                     <span class="mod-items-center mod-py-2 mod-space-semi">Quarterly TDS Return Filing</span>
-                    <span class="mod-items-center mod-py-2 mod-space-semi">GST Payment & Filing (if registered)</span>
                     <span class="mod-items-center mod-py-2 mod-space-semi">Advance Tax Payment (if applicable)</span>
-                    <span class="mod-items-center mod-py-2 mod-space-semi">Income Tax Return Filing (ITR-6)</span>
-                    <span class="mod-items-center mod-py-2 mod-space-semi">Filing of Tax Audit Report</span>
+                    <span class="mod-items-center mod-py-2 mod-space-semi">Professional Tax (if applicable in your state)</span>
                 </div>
             </div>
             <div>
@@ -437,30 +416,27 @@
         </div>
         <div class="mod-px-2 mod-flex mod-flex-col mod-gap-2">
             <div class="mod-flex mod-items-center mod-justify-space-between mod-gap-12 mod-px-2 mod-py-4 mod-border-bottom-2">
-                <h3 class="mod-mb-0">Financial Statements</h3>
-                <p class="mod-ml-16 mod-mb-0 mod-text-right">Form AOC-4 must be filed within 30 days from the date of the AGM.</p>
+                <h3 class="mod-mb-0">Income Tax Returns</h3>
+                <p class="mod-ml-16 mod-mb-0 mod-text-right">Form ITR-3 to be filed by 31st July of the assessment year.</p>
             </div>
             <div class="mod-flex mod-items-center mod-justify-space-between mod-gap-12 mod-px-2 mod-py-4 mod-border-bottom-2">
-                <h3 class="mod-mb-0">Annual Return</h3>
-                <p class="mod-ml-16 mod-mb-0 mod-text-right">Form MGT-7 to be filed within 60 days from the AGM date.</p>
+                <h3 class="mod-mb-0">GST Returns (if applicable)</h3>
+                <p class="mod-ml-16 mod-mb-0 mod-text-right">Forms GSTR-1 and GSTR-3B must be filed monthly or quarterly based on turnover.</p>
             </div>
             <div class="mod-flex mod-items-center mod-justify-space-between mod-gap-12 mod-px-2 mod-py-4 mod-border-bottom-2">
-                <h3 class="mod-mb-0">Annual General Meeting (AGM)</h3>
-                <p class="mod-ml-16 mod-mb-0 mod-text-right">Must be held within 6 months from the end of the financial year.</p>
+                <h3 class="mod-mb-0">Professional Tax</h3>
+                <p class="mod-ml-16 mod-mb-0 mod-text-right">Compliances vary by state, usually quarterly or annually.</p>
             </div>
             <div class="mod-flex mod-items-center mod-justify-space-between mod-gap-12 mod-px-2 mod-py-4 mod-border-bottom-2">
-                <h3 class="mod-mb-0">Board Meetings</h3>
-                <p class="mod-ml-16 mod-mb-0 mod-text-right">Minimum of 4 board meetings must be conducted every year.</p>
+                <h3 class="mod-mb-0">Maintain Books of Accounts</h3>
+                <p class="mod-ml-16 mod-mb-0 mod-text-right">Financial records should be updated regularly as per business activity.</p>
             </div>
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-gap-12 mod-px-2 mod-py-4 mod-border-bottom-2">
-                <h3 class="mod-mb-0">Auditor’s Appointment</h3>
-                <p class="mod-ml-16 mod-mb-0 mod-text-right">Form ADT-1 must be filed within 15 days of the AGM.</p>
-            </div>
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-gap-12 mod-px-2 mod-py-4 mod-border-bottom-2">
-                <h3 class="mod-mb-0">Income Tax Return</h3>
-                <p class="mod-ml-16 mod-mb-0 mod-text-right">Form ITR-6 is to be filed by 30th September (if audited).</p>
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-gap-12 mod-px-2 mod-py-4">
+                <h3 class="mod-mb-0">Audit Requirement</h3>
+                <p class="mod-ml-16 mod-mb-0 mod-text-right">Applicable only if turnover exceeds ₹1 crore (GST) or ₹50 lakh (business income).</p>
             </div>
         </div>
+        
     </div>
 </section>
 
@@ -469,7 +445,7 @@
     <article class="banner bg-blue-100 mod-overflow-hidden py-40 px-4 p-lg-5 lg:mod-px-12 pb-xxl-4">
         <div class="row gy-32 gx-xl-40 mod-relative justify-content-center align-items-center">
             <div class="col-lg-12 d-flex flex-column mod-gap-8">
-                <h2 class="display-6 fw-bold mb-0">Register your Public Limited Company with <span
+                <h2 class="display-6 fw-bold mb-0">Register your Sole Proprietorship Company with <span
                         class="text-blue mod-font-semibold">Us</span> in 5 Simple Steps</h2>
                 <p class="text-lg mb-0 pe-xl-80 me-xxl-4 mod-w-5/6 sm:mod-w-full">Starting your own public limited
                     company is now easier than ever! Just follow these 5 simple steps, and we will handle the process
@@ -483,11 +459,9 @@
                                     <path fill="currentColor"
                                         d="M1 20V17.2C1 16.6333 1.14583 16.1125 1.4375 15.6375C1.72917 15.1625 2.11667 14.8 2.6 14.55C3.63333 14.0333 4.68333 13.6458 5.75 13.3875C6.81667 13.1292 7.9 13 9 13C10.1 13 11.1833 13.1292 12.25 13.3875C13.3167 13.6458 14.3667 14.0333 15.4 14.55C15.8833 14.8 16.2708 15.1625 16.5625 15.6375C16.8542 16.1125 17 16.6333 17 17.2V20H1ZM19 20V17C19 16.2667 18.7958 15.5625 18.3875 14.8875C17.9792 14.2125 17.4 13.6333 16.65 13.15C17.5 13.25 18.3 13.4208 19.05 13.6625C19.8 13.9042 20.5 14.2 21.15 14.55C21.75 14.8833 22.2083 15.2542 22.525 15.6625C22.8417 16.0708 23 16.5167 23 17V20H19ZM9 12C7.9 12 6.95833 11.6083 6.175 10.825C5.39167 10.0417 5 9.1 5 8C5 6.9 5.39167 5.95833 6.175 5.175C6.95833 4.39167 7.9 4 9 4C10.1 4 11.0417 4.39167 11.825 5.175C12.6083 5.95833 13 6.9 13 8C13 9.1 12.6083 10.0417 11.825 10.825C11.0417 11.6083 10.1 12 9 12ZM19 8C19 9.1 18.6083 10.0417 17.825 10.825C17.0417 11.6083 16.1 12 15 12C14.8167 12 14.5833 11.9792 14.3 11.9375C14.0167 11.8958 13.7833 11.85 13.6 11.8C14.05 11.2667 14.3958 10.675 14.6375 10.025C14.8792 9.375 15 8.7 15 8C15 7.3 14.8792 6.625 14.6375 5.975C14.3958 5.325 14.05 4.73333 13.6 4.2C13.8333 4.11667 14.0667 4.0625 14.3 4.0375C14.5333 4.0125 14.7667 4 15 4C16.1 4 17.0417 4.39167 17.825 5.175C18.6083 5.95833 19 6.9 19 8ZM3 18H15V17.2C15 17.0167 14.9542 16.85 14.8625 16.7C14.7708 16.55 14.65 16.4333 14.5 16.35C13.6 15.9 12.6917 15.5625 11.775 15.3375C10.8583 15.1125 9.93333 15 9 15C8.06667 15 7.14167 15.1125 6.225 15.3375C5.30833 15.5625 4.4 15.9 3.5 16.35C3.35 16.4333 3.22917 16.55 3.1375 16.7C3.04583 16.85 3 17.0167 3 17.2V18ZM9 10C9.55 10 10.0208 9.80417 10.4125 9.4125C10.8042 9.02083 11 8.55 11 8C11 7.45 10.8042 6.97917 10.4125 6.5875C10.0208 6.19583 9.55 6 9 6C8.45 6 7.97917 6.19583 7.5875 6.5875C7.19583 6.97917 7 7.45 7 8C7 8.55 7.19583 9.02083 7.5875 9.4125C7.97917 9.80417 8.45 10 9 10Z" />
                                 </svg></span>
-                            <figcaption class="text-h6 mod-pl-3">1. Obtain DSC (Digital Signature Certificate)
-                            </figcaption>
+                            <figcaption class="text-h6 mod-pl-3">1. Choose a Business Name</figcaption>
                         </div>
-                        <p class="mod-mt-1 text-gray-600">Get DSCs for all proposed directors. It is mandatory for
-                            signing e-forms during the registration process.</p>
+                        <p class="mod-mt-1 text-gray-600">Decide on a suitable business name, either your own name or a unique one. Ensure it doesn't conflict with existing registered businesses.</p>
                     </figure>
                     <figure class="mb-0 mod-flex mod-flex-col mod-items-start mod-text-left mod-gap-4">
                         <div class="mod-flex ">
@@ -496,11 +470,9 @@
                                     <path fill="currentColor"
                                         d="M1 20V17.2C1 16.6333 1.14583 16.1125 1.4375 15.6375C1.72917 15.1625 2.11667 14.8 2.6 14.55C3.63333 14.0333 4.68333 13.6458 5.75 13.3875C6.81667 13.1292 7.9 13 9 13C10.1 13 11.1833 13.1292 12.25 13.3875C13.3167 13.6458 14.3667 14.0333 15.4 14.55C15.8833 14.8 16.2708 15.1625 16.5625 15.6375C16.8542 16.1125 17 16.6333 17 17.2V20H1ZM19 20V17C19 16.2667 18.7958 15.5625 18.3875 14.8875C17.9792 14.2125 17.4 13.6333 16.65 13.15C17.5 13.25 18.3 13.4208 19.05 13.6625C19.8 13.9042 20.5 14.2 21.15 14.55C21.75 14.8833 22.2083 15.2542 22.525 15.6625C22.8417 16.0708 23 16.5167 23 17V20H19ZM9 12C7.9 12 6.95833 11.6083 6.175 10.825C5.39167 10.0417 5 9.1 5 8C5 6.9 5.39167 5.95833 6.175 5.175C6.95833 4.39167 7.9 4 9 4C10.1 4 11.0417 4.39167 11.825 5.175C12.6083 5.95833 13 6.9 13 8C13 9.1 12.6083 10.0417 11.825 10.825C11.0417 11.6083 10.1 12 9 12ZM19 8C19 9.1 18.6083 10.0417 17.825 10.825C17.0417 11.6083 16.1 12 15 12C14.8167 12 14.5833 11.9792 14.3 11.9375C14.0167 11.8958 13.7833 11.85 13.6 11.8C14.05 11.2667 14.3958 10.675 14.6375 10.025C14.8792 9.375 15 8.7 15 8C15 7.3 14.8792 6.625 14.6375 5.975C14.3958 5.325 14.05 4.73333 13.6 4.2C13.8333 4.11667 14.0667 4.0625 14.3 4.0375C14.5333 4.0125 14.7667 4 15 4C16.1 4 17.0417 4.39167 17.825 5.175C18.6083 5.95833 19 6.9 19 8ZM3 18H15V17.2C15 17.0167 14.9542 16.85 14.8625 16.7C14.7708 16.55 14.65 16.4333 14.5 16.35C13.6 15.9 12.6917 15.5625 11.775 15.3375C10.8583 15.1125 9.93333 15 9 15C8.06667 15 7.14167 15.1125 6.225 15.3375C5.30833 15.5625 4.4 15.9 3.5 16.35C3.35 16.4333 3.22917 16.55 3.1375 16.7C3.04583 16.85 3 17.0167 3 17.2V18ZM9 10C9.55 10 10.0208 9.80417 10.4125 9.4125C10.8042 9.02083 11 8.55 11 8C11 7.45 10.8042 6.97917 10.4125 6.5875C10.0208 6.19583 9.55 6 9 6C8.45 6 7.97917 6.19583 7.5875 6.5875C7.19583 6.97917 7 7.45 7 8C7 8.55 7.19583 9.02083 7.5875 9.4125C7.97917 9.80417 8.45 10 9 10Z" />
                                 </svg></span>
-                            <figcaption class="text-h6 mod-pl-3">2. Apply for DIN (Director Identification Number)
-                            </figcaption>
+                            <figcaption class="text-h6 mod-pl-3">2. Apply for PAN and TAN</figcaption>
                         </div>
-                        <p class="mod-mt-1 text-gray-600">Apply through the SPICe+ form or separately if not obtained
-                            earlier. Each director must have a valid DIN.</p>
+                        <p class="mod-mt-1 text-gray-600">Get a PAN for the proprietor for tax filing. TAN is needed only if your business is liable to deduct taxes at source (TDS).</p>
                     </figure>
                     <figure class="mb-0 mod-flex mod-flex-col mod-items-start mod-text-left mod-gap-4">
                         <div class="mod-flex ">
@@ -509,10 +481,9 @@
                                     <path fill="currentColor"
                                         d="M1 20V17.2C1 16.6333 1.14583 16.1125 1.4375 15.6375C1.72917 15.1625 2.11667 14.8 2.6 14.55C3.63333 14.0333 4.68333 13.6458 5.75 13.3875C6.81667 13.1292 7.9 13 9 13C10.1 13 11.1833 13.1292 12.25 13.3875C13.3167 13.6458 14.3667 14.0333 15.4 14.55C15.8833 14.8 16.2708 15.1625 16.5625 15.6375C16.8542 16.1125 17 16.6333 17 17.2V20H1ZM19 20V17C19 16.2667 18.7958 15.5625 18.3875 14.8875C17.9792 14.2125 17.4 13.6333 16.65 13.15C17.5 13.25 18.3 13.4208 19.05 13.6625C19.8 13.9042 20.5 14.2 21.15 14.55C21.75 14.8833 22.2083 15.2542 22.525 15.6625C22.8417 16.0708 23 16.5167 23 17V20H19ZM9 12C7.9 12 6.95833 11.6083 6.175 10.825C5.39167 10.0417 5 9.1 5 8C5 6.9 5.39167 5.95833 6.175 5.175C6.95833 4.39167 7.9 4 9 4C10.1 4 11.0417 4.39167 11.825 5.175C12.6083 5.95833 13 6.9 13 8C13 9.1 12.6083 10.0417 11.825 10.825C11.0417 11.6083 10.1 12 9 12ZM19 8C19 9.1 18.6083 10.0417 17.825 10.825C17.0417 11.6083 16.1 12 15 12C14.8167 12 14.5833 11.9792 14.3 11.9375C14.0167 11.8958 13.7833 11.85 13.6 11.8C14.05 11.2667 14.3958 10.675 14.6375 10.025C14.8792 9.375 15 8.7 15 8C15 7.3 14.8792 6.625 14.6375 5.975C14.3958 5.325 14.05 4.73333 13.6 4.2C13.8333 4.11667 14.0667 4.0625 14.3 4.0375C14.5333 4.0125 14.7667 4 15 4C16.1 4 17.0417 4.39167 17.825 5.175C18.6083 5.95833 19 6.9 19 8ZM3 18H15V17.2C15 17.0167 14.9542 16.85 14.8625 16.7C14.7708 16.55 14.65 16.4333 14.5 16.35C13.6 15.9 12.6917 15.5625 11.775 15.3375C10.8583 15.1125 9.93333 15 9 15C8.06667 15 7.14167 15.1125 6.225 15.3375C5.30833 15.5625 4.4 15.9 3.5 16.35C3.35 16.4333 3.22917 16.55 3.1375 16.7C3.04583 16.85 3 17.0167 3 17.2V18ZM9 10C9.55 10 10.0208 9.80417 10.4125 9.4125C10.8042 9.02083 11 8.55 11 8C11 7.45 10.8042 6.97917 10.4125 6.5875C10.0208 6.19583 9.55 6 9 6C8.45 6 7.97917 6.19583 7.5875 6.5875C7.19583 6.97917 7 7.45 7 8C7 8.55 7.19583 9.02083 7.5875 9.4125C7.97917 9.80417 8.45 10 9 10Z" />
                                 </svg></span>
-                            <figcaption class="text-h6 mod-pl-3">3. Reserve Company Name (SPICe+ Part A)</figcaption>
+                            <figcaption class="text-h6 mod-pl-3">3. Register for GST (if applicable)</figcaption>
                         </div>
-                        <p class="mod-mt-1 text-gray-600">Choose a unique company name and apply via the MCA portal.
-                            Upon approval, the name is reserved for 20 days.
+                        <p class="mod-mt-1 text-gray-600">Mandatory if turnover exceeds ₹40 lakh (₹20 lakh for services). GST registration helps you collect tax and avail input tax credit.
                         </p>
                     </figure>
                     <figure class="mb-0 mod-flex mod-flex-col mod-items-start mod-text-left mod-gap-4">
@@ -522,10 +493,9 @@
                                     <path fill="currentColor"
                                         d="M1 20V17.2C1 16.6333 1.14583 16.1125 1.4375 15.6375C1.72917 15.1625 2.11667 14.8 2.6 14.55C3.63333 14.0333 4.68333 13.6458 5.75 13.3875C6.81667 13.1292 7.9 13 9 13C10.1 13 11.1833 13.1292 12.25 13.3875C13.3167 13.6458 14.3667 14.0333 15.4 14.55C15.8833 14.8 16.2708 15.1625 16.5625 15.6375C16.8542 16.1125 17 16.6333 17 17.2V20H1ZM19 20V17C19 16.2667 18.7958 15.5625 18.3875 14.8875C17.9792 14.2125 17.4 13.6333 16.65 13.15C17.5 13.25 18.3 13.4208 19.05 13.6625C19.8 13.9042 20.5 14.2 21.15 14.55C21.75 14.8833 22.2083 15.2542 22.525 15.6625C22.8417 16.0708 23 16.5167 23 17V20H19ZM9 12C7.9 12 6.95833 11.6083 6.175 10.825C5.39167 10.0417 5 9.1 5 8C5 6.9 5.39167 5.95833 6.175 5.175C6.95833 4.39167 7.9 4 9 4C10.1 4 11.0417 4.39167 11.825 5.175C12.6083 5.95833 13 6.9 13 8C13 9.1 12.6083 10.0417 11.825 10.825C11.0417 11.6083 10.1 12 9 12ZM19 8C19 9.1 18.6083 10.0417 17.825 10.825C17.0417 11.6083 16.1 12 15 12C14.8167 12 14.5833 11.9792 14.3 11.9375C14.0167 11.8958 13.7833 11.85 13.6 11.8C14.05 11.2667 14.3958 10.675 14.6375 10.025C14.8792 9.375 15 8.7 15 8C15 7.3 14.8792 6.625 14.6375 5.975C14.3958 5.325 14.05 4.73333 13.6 4.2C13.8333 4.11667 14.0667 4.0625 14.3 4.0375C14.5333 4.0125 14.7667 4 15 4C16.1 4 17.0417 4.39167 17.825 5.175C18.6083 5.95833 19 6.9 19 8ZM3 18H15V17.2C15 17.0167 14.9542 16.85 14.8625 16.7C14.7708 16.55 14.65 16.4333 14.5 16.35C13.6 15.9 12.6917 15.5625 11.775 15.3375C10.8583 15.1125 9.93333 15 9 15C8.06667 15 7.14167 15.1125 6.225 15.3375C5.30833 15.5625 4.4 15.9 3.5 16.35C3.35 16.4333 3.22917 16.55 3.1375 16.7C3.04583 16.85 3 17.0167 3 17.2V18ZM9 10C9.55 10 10.0208 9.80417 10.4125 9.4125C10.8042 9.02083 11 8.55 11 8C11 7.45 10.8042 6.97917 10.4125 6.5875C10.0208 6.19583 9.55 6 9 6C8.45 6 7.97917 6.19583 7.5875 6.5875C7.19583 6.97917 7 7.45 7 8C7 8.55 7.19583 9.02083 7.5875 9.4125C7.97917 9.80417 8.45 10 9 10Z" />
                                 </svg></span>
-                            <figcaption class="text-h6 mod-pl-3">4. File SPICe+ Part B with Linked Forms</figcaption>
+                            <figcaption class="text-h6 mod-pl-3">4. Shop & Establishment Registration</figcaption>
                         </div>
-                        <p class="mod-mt-1 text-gray-600">Submit forms including MOA, AOA, AGILE-PRO-S, INC-9, DIR-2,
-                            INC-22, along with PAN and TAN applications for your company.</p>
+                        <p class="mod-mt-1 text-gray-600">Apply for this registration if you have a physical shop or office. It regulates working conditions and employee rights, as per state laws.</p>
                     </figure>
                     <figure class="mb-0 mod-flex mod-flex-col mod-items-start mod-text-left mod-gap-4">
                         <div class="mod-flex ">
@@ -534,11 +504,9 @@
                                     <path fill="currentColor"
                                         d="M1 20V17.2C1 16.6333 1.14583 16.1125 1.4375 15.6375C1.72917 15.1625 2.11667 14.8 2.6 14.55C3.63333 14.0333 4.68333 13.6458 5.75 13.3875C6.81667 13.1292 7.9 13 9 13C10.1 13 11.1833 13.1292 12.25 13.3875C13.3167 13.6458 14.3667 14.0333 15.4 14.55C15.8833 14.8 16.2708 15.1625 16.5625 15.6375C16.8542 16.1125 17 16.6333 17 17.2V20H1ZM19 20V17C19 16.2667 18.7958 15.5625 18.3875 14.8875C17.9792 14.2125 17.4 13.6333 16.65 13.15C17.5 13.25 18.3 13.4208 19.05 13.6625C19.8 13.9042 20.5 14.2 21.15 14.55C21.75 14.8833 22.2083 15.2542 22.525 15.6625C22.8417 16.0708 23 16.5167 23 17V20H19ZM9 12C7.9 12 6.95833 11.6083 6.175 10.825C5.39167 10.0417 5 9.1 5 8C5 6.9 5.39167 5.95833 6.175 5.175C6.95833 4.39167 7.9 4 9 4C10.1 4 11.0417 4.39167 11.825 5.175C12.6083 5.95833 13 6.9 13 8C13 9.1 12.6083 10.0417 11.825 10.825C11.0417 11.6083 10.1 12 9 12ZM19 8C19 9.1 18.6083 10.0417 17.825 10.825C17.0417 11.6083 16.1 12 15 12C14.8167 12 14.5833 11.9792 14.3 11.9375C14.0167 11.8958 13.7833 11.85 13.6 11.8C14.05 11.2667 14.3958 10.675 14.6375 10.025C14.8792 9.375 15 8.7 15 8C15 7.3 14.8792 6.625 14.6375 5.975C14.3958 5.325 14.05 4.73333 13.6 4.2C13.8333 4.11667 14.0667 4.0625 14.3 4.0375C14.5333 4.0125 14.7667 4 15 4C16.1 4 17.0417 4.39167 17.825 5.175C18.6083 5.95833 19 6.9 19 8ZM3 18H15V17.2C15 17.0167 14.9542 16.85 14.8625 16.7C14.7708 16.55 14.65 16.4333 14.5 16.35C13.6 15.9 12.6917 15.5625 11.775 15.3375C10.8583 15.1125 9.93333 15 9 15C8.06667 15 7.14167 15.1125 6.225 15.3375C5.30833 15.5625 4.4 15.9 3.5 16.35C3.35 16.4333 3.22917 16.55 3.1375 16.7C3.04583 16.85 3 17.0167 3 17.2V18ZM9 10C9.55 10 10.0208 9.80417 10.4125 9.4125C10.8042 9.02083 11 8.55 11 8C11 7.45 10.8042 6.97917 10.4125 6.5875C10.0208 6.19583 9.55 6 9 6C8.45 6 7.97917 6.19583 7.5875 6.5875C7.19583 6.97917 7 7.45 7 8C7 8.55 7.19583 9.02083 7.5875 9.4125C7.97917 9.80417 8.45 10 9 10Z" />
                                 </svg></span>
-                            <figcaption class="text-h6 mod-pl-3">5. Certificate of Incorporation & Business
-                                Commencement</figcaption>
+                            <figcaption class="text-h6 mod-pl-3">5. Open a Business Bank Account</figcaption>
                         </div>
-                        <p class="mod-mt-1 text-gray-600">Receive the Certificate of Incorporation containing CIN, PAN,
-                            and TAN. File INC-20A within 180 days to declare business commencement.</p>
+                        <p class="mod-mt-1 text-gray-600">Set up a current account in your business or personal name. This helps in separating personal and business transactions efficiently.</p>
                     </figure>
                 </div>
                 <div>

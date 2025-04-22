@@ -198,5 +198,134 @@ return [
             'question' => 'Can a Nidhi Company be converted into a private or public limited company?',
             'answer' => 'No, Nidhi companies cannot be converted into private or public limited companies as their activities are restricted to mutual benefit among members.'
         ]
+    ],
+    "public-limited-company" => [
+        [
+            'question' => 'Can a public company be started with just 7 shareholders?',
+            'answer' => 'Yes. The minimum requirement is 7 shareholders and 3 directors. There\'s no cap on the maximum number of shareholders.'
+        ],
+        [
+            'question' => 'Can a public limited company raise funds from the public?',
+            'answer' => 'Yes, it can raise funds through public offerings (IPO/FPO), private placements, or rights issues—but only after complying with SEBI and stock exchange requirements.'
+        ],
+        [
+            'question' => 'What is the difference between a Private Ltd and Public Ltd company?',
+            'answer' => '<table border="1" cellpadding="8" cellspacing="0">
+                                <thead>
+                                    <tr>
+                                        <th>Feature</th>
+                                        <th>Private Limited</th>
+                                        <th>Public Limited</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Shareholders</td>
+                                        <td>2–200</td>
+                                        <td>Minimum 7, no maximum</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Share Transfer</td>
+                                        <td>Restricted</td>
+                                        <td>Freely transferable</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Public Fundraising</td>
+                                        <td>Not allowed</td>
+                                        <td>Allowed via stock exchange</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Listing</td>
+                                        <td>Not listed</td>
+                                        <td>Can be listed</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Compliance</td>
+                                        <td>Moderate</td>
+                                        <td>High</td>
+                                    </tr>
+                                </tbody>
+                            </table>'
+        ],
+        [
+            'question' => 'Can a public company be converted into a private company?',
+            'answer' => 'Yes, subject to shareholder approval and approval from the Registrar of Companies (ROC) and, if listed, from SEBI and the stock exchange.'
+        ],
+        [
+            'question' => 'Can foreign nationals be shareholders or directors?',
+            'answer' => 'Yes. Foreign nationals and foreign entities can be shareholders or directors, subject to FDI norms. Directors must have valid DIN and certified documents.'
+        ],
+        [
+            'question' => 'Is audit mandatory for public companies?',
+            'answer' => 'Yes, all public limited companies must appoint a statutory auditor and get their financial statements audited annually.'
+        ],
+        [
+            'question' => 'Can a public limited company be closed or wound up?',
+            'answer' => 'Yes, via voluntary winding up, NCLT order, or Fast Track Exit (for inactive companies), following clearance of debts and filing of final returns.'
+        ]
+    ],
+    "section-8-company" => [
+        [
+            'question' => 'What is a Public Limited Company?',
+            'answer' => 'A Public Limited Company is a type of company whose shares are publicly traded on stock exchanges, and it can offer its shares to the general public. It is subject to strict regulations and requires a minimum of seven members to start.'
+        ],
+        [
+            'question' => 'What are the requirements to register a Public Limited Company?',
+            'answer' => 'To register a Public Limited Company, you need at least seven members and a minimum authorized share capital, as per the regulatory requirements. The company must have at least three directors, two of whom must be Indian citizens.'
+        ],
+        [
+            'question' => 'What are the advantages of a Public Limited Company?',
+            'answer' => 'Public Limited Companies offer several advantages such as:\n<ul><li>Ability to raise capital through the public sale of shares.</li><li>Limited liability for shareholders, which protects their personal assets.</li><li>Increased credibility and trust due to stricter regulatory oversight.</li><li>Broader access to financing options from investors and banks.</li></ul>'
+        ],
+        [
+            'question' => 'What is the process of listing a Public Limited Company on the stock exchange?',
+            'answer' => 'The process of listing a Public Limited Company on a stock exchange includes the following steps:\n<ol><li>Preparation of a prospectus and approval from regulatory authorities.</li><li>Due diligence and compliance with the stock exchange listing requirements.</li><li>Public offering of shares (IPO) and trading of shares on the stock exchange.</li></ol>'
+        ],
+        [
+            'question' => 'What is the minimum capital required for a Public Limited Company?',
+            'answer' => 'The minimum authorized share capital required for a Public Limited Company is Rs. 5 lakh, as per the Companies Act. However, the actual capital needed may vary depending on the company’s nature and its financial goals.'
+        ],
+        [
+            'question' => 'What are the compliance requirements for a Public Limited Company?',
+            'answer' => 'A Public Limited Company has to adhere to stringent compliance requirements, including:\n<ul><li>Annual filing of financial statements with the Ministry of Corporate Affairs (MCA).</li><li>Regular disclosures to the stock exchange if the company is listed.</li><li>Holding Annual General Meetings (AGMs) and passing necessary resolutions.</li><li>Maintaining proper corporate governance practices.</li></ul>'
+        ],
+        [
+            'question' => 'Can a Public Limited Company raise funds from foreign investors?',
+            'answer' => 'Yes, a Public Limited Company can raise funds from foreign investors through Foreign Direct Investment (FDI) or by offering shares in public offerings (IPOs) as per government regulations and guidelines.'
+        ]
+    ],
+    "sole-proprietorship" => [
+        [
+            'question' => 'What is a sole proprietorship?',
+            'answer' => 'A sole proprietorship is a business owned and operated by a single individual. The owner is responsible for all decisions, liabilities, and profits. It is the simplest form of business in India.'
+        ],
+        [
+            'question' => 'How is a sole proprietorship different from other business structures?',
+            'answer' => 'A sole proprietorship differs from LLPs and private limited companies in that it is not a separate legal entity from the owner. The owner has unlimited liability, unlike limited liability structures where the owner’s personal assets are protected.'
+        ],
+        [
+            'question' => 'What are the tax implications for a sole proprietorship?',
+            'answer' => 'In a sole proprietorship, the income is taxed as personal income of the proprietor. There is no separate tax on the business. The proprietor must file personal income tax returns and report business income under the applicable tax slab.'
+        ],
+        [
+            'question' => 'How is a sole proprietorship registered?',
+            'answer' => 'While a sole proprietorship does not require formal registration with the government, businesses must obtain a PAN card, GST registration (if applicable), and any necessary licenses or tax registrations based on the nature of the business.'
+        ],
+        [
+            'question' => 'Can I have employees in a sole proprietorship?',
+            'answer' => 'Yes, you can hire employees, but you will need to comply with labor laws, including paying employee salaries, professional tax, and statutory contributions such as Provident Fund (PF) and Employee State Insurance (ESI) if applicable.'
+        ],
+        [
+            'question' => 'Can a sole proprietorship be converted into a private limited company?',
+            'answer' => 'Yes, a sole proprietorship can be converted into a private limited company. This involves transferring assets and liabilities, applying for a new PAN, and following the incorporation process as per the Companies Act, 2013.'
+        ],
+        [
+            'question' => 'What are the disadvantages of a sole proprietorship?',
+            'answer' => '<p>The key disadvantages of a sole proprietorship include:<ul><li>Unlimited Liability: The owner’s personal assets are at risk if the business incurs debts or liabilities.</li><li>Limited Growth Potential: Sole proprietorships may face difficulties in raising capital and scaling the business compared to limited liability structures.</li><li>Lack of Continuity: The business may cease to exist upon the death or incapacity of the proprietor.</li></ul></p>'
+        ],
+        [
+            'question' => 'Can a foreigner start a sole proprietorship in India?',
+            'answer' => 'Yes, a foreigner can start a sole proprietorship in India, but they need to meet the FDI (Foreign Direct Investment) regulations if applicable. Additionally, foreign nationals must apply for a PAN card, and a valid visa may be required for residency.'
+        ]
     ]
 ];

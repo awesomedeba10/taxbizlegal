@@ -42,8 +42,8 @@
         class="mod-w-full mod-max-w-screen-xl mod-px-32 mod-mx-auto mod-overflow-hidden md:mod-px-5 lg:mod-px-6 sm:mod-px-0">
         <div
             class="mod-flex services-nav-container mod-items-center mod-justify-between mod-cursor-pointer mod-rounded-lg mod-border-sm mod-overflow-hidden mod-text-s-14 mod-font-medium">
-            <div class="mod-whitespace-nowrap mod-py-4 mod-sticky mod-left-0">
-                <span class="services-nav-title mod-pl-6 mod-pr-3 mod-border-r-sm">NIDHI COMPANY</span>
+            <div class="mod-whitespace-nowrap mod-py-4 mod-sticky mod-left-0 mod-pl-6">
+                <span class="services-nav-title mod-pl-6 mod-pr-3 mod-border-r-sm mod-contents">NIDHI COMPANY</span>
             </div>
             <ul class="services-nav-ul mod-flex mod-items-center mod-my-0 mod-justify-center mod-list-none">
                 <li data-target="pricing"

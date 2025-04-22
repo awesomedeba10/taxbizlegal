@@ -132,8 +132,8 @@
 
                         <div class="h-100 shadow-primary rounded-35 bg-white p-4 p-lg-32">
                             <p class="display-6 mod-font-semibold mb-2 text-primary"><span data-counter="100">1</span> %
-                                Moneyback Gurantee</p>
-                            <p class="mb-0">Zero-risk Moneyback Guranteed with our hassle free Full-Refund policy
+                                Moneyback Guarantee</p>
+                            <p class="mb-0">Zero-risk Moneyback Guaranteed with our hassle free Full-Refund policy
                                 <span
                                     class="mod-absolute mod-pb-3 mod-pl-3 mod-font-semibold moneyback-conditon">*Conditions
                                     Apply</span>
