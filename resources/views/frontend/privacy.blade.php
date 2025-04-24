@@ -33,7 +33,7 @@
                     </p>
                     <p>
                         <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;">1.3 The domain name legalbharatservices.com ("Website"), is owned and operated by LBS LEGAL WORKS PRIVATE LIMITED and having its&nbsp;office at 3RD-FR FL-2, 19/C, Ibrahim Road, Kolkata, Kolkata, West Bengal, 700023, where such expression shall, unless repugnant to the context thereof, be deemed to include its respective representatives, administrators, employees.</font>
+                            <font style="vertical-align: inherit;">1.3 The domain name taxbizlegal.com ("Website"), is owned and operated by [COMPANY_NAME] and having its&nbsp;office at [office_address], where such expression shall, unless repugnant to the context thereof, be deemed to include its respective representatives, administrators, employees.</font>
                         </font>
                     </p>
                     <p>
@@ -78,7 +78,7 @@
                     </p>
                     <p>
                         <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;">1.6 The use of the Website by the User is solely governed by this Policy as well as the Terms of Use of the Website (“Terms”, available at www. legalbharatservices), and any modifications or amendments made thereto by the Website&nbsp;from time to time, at its sole discretion. Visiting the home page of the Website and/or using any of the services provided on the Website shall be deemed to signify the User’s unequivocal acceptance of this Policy and the aforementioned Terms, and the User expressly agrees to be bound by the same. The User expressly agrees and acknowledges that the Terms and Policy are co-terminus, and that expiry/termination of either one will lead to the termination of the other.</font>
+                            <font style="vertical-align: inherit;">1.6 The use of the Website by the User is solely governed by this Policy as well as the Terms of Use of the Website (“Terms”, available at <a href="{{ route('front.terms') }}">{{ route('front.terms') }}</a>), and any modifications or amendments made thereto by the Website&nbsp;from time to time, at its sole discretion. Visiting the home page of the Website and/or using any of the services provided on the Website shall be deemed to signify the User’s unequivocal acceptance of this Policy and the aforementioned Terms, and the User expressly agrees to be bound by the same. The User expressly agrees and acknowledges that the Terms and Policy are co-terminus, and that expiry/termination of either one will lead to the termination of the other.</font>
                         </font>
                     </p>
                     <p>

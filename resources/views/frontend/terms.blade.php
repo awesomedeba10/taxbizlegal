@@ -13,112 +13,188 @@
 
                     <p>
                         <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;"><strong>Legal Bharat Services</strong>, Operated from <strong>Kidderpore Fancy Market, 3RD-FR FL-2, 19/C, Ibrahim Road, Kolkata, pin code 700023 West Bengal</strong>, offers various resources, services, and products through its website. By visiting and using our platform, you agree to comply with the terms and conditions outlined in this User Agreement, as well as those in our Privacy Policy.</font>
+                            <font style="vertical-align: inherit;">Welcome to <strong>taxBizLegal</strong>. These <strong>Terms & Conditions (“Terms”)</strong> govern your access to and use of our website and services. By accessing or using our platform, you agree to comply with and be bound by these Terms. If you do not agree, please do not use our services.</font>
                         </font>
                     </p>
                     <p>
                         <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;">We reserve the right to modify this User Agreement without prior notice. It is your responsibility to review these terms periodically, and your continued use of our site constitutes acceptance of any changes.</font>
+                            <font style="vertical-align: inherit;">We reserve the right to modify this User Agreement
+                                without prior notice. It is your responsibility to review these terms periodically, and your
+                                continued use of our site constitutes acceptance of any changes.</font>
                         </font>
                     </p>
                     <br>
                     <p>
-                        <strong>
+                        <h2>
                             <font style="vertical-align: inherit;">
-                                <font style="vertical-align: inherit;">Responsible Use and Conduct :</font>
+                                <font style="vertical-align: inherit;">About Us :</font>
                             </font>
-                        </strong>
-                        <br>
+                        </h2>
                         <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;">To access our resources, you may need to provide accurate and up-to-date information during registration. Unauthorized duplication, resale, or misuse of our resources is strictly prohibited, and you are solely responsible for any resulting consequences.</font>
+                            <font style="vertical-align: inherit;">TaxBixLegal is a professional services provider offering legal, tax, and compliance-related services including but not limited to:</font>
                         </font>
                         <br>
                         <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;">While we offer open communication tools like comments and forums, we do not monitor all user-generated content. You agree not to post any illegal, offensive, or infringing material. We reserve the right to remove objectionable content and are not liable for any delay in doing so.</font>
+                            <ul>
+                                <li>MCA (Ministry of Corporate Affairs) compliances</li>
+                                <li>Income tax and GST filing</li>
+                                <li>Business and company registration</li>
+                                <li>Legal and financial advisory related to startups and businesses</li>
+                            </ul>
+                        </font>
+                        <font style="vertical-align: inherit;">
+                            We are not a law firm or a chartered accountancy firm but work in collaboration with licensed professionals and consultants.
                         </font>
                     </p>
                     <br>
                     <p>
-                        <strong>
+                        <h2>
                             <font style="vertical-align: inherit;">
-                                <font style="vertical-align: inherit;">Privacy :</font>
+                                <font style="vertical-align: inherit;">Eligibility :</font>
                             </font>
-                        </strong>
+                        </h2>
+                        <font style="vertical-align: inherit;">
+                            By using our services, you confirm that you:
+                        </font>
                         <br>
                         <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;">Your privacy is paramount to us, and our Privacy Policy details how we handle your personal information.</font>
+                            <ul>
+                                <li>Are at least 18 years of age</li>
+                                <li>Have the legal capacity to enter into a binding agreement</li>
+                                <li>Are using our services for lawful purposes only</li>
+                            </ul>
                         </font>
                     </p>
                     <br>
                     <p>
-                        <strong>
+                        <h2>
                             <font style="vertical-align: inherit;">
-                                <font style="vertical-align: inherit;">Limitation of Warranties :</font>
+                                <font style="vertical-align: inherit;">Scope of Services :</font>
                             </font>
-                        </strong>
-                        <br>
+                        </h2>
                         <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;">All resources provided on our site are offered on an "as is" and "as available" basis, without any warranties.</font>
+                            TaxBixLegal assists in the preparation, filing, and submission of various legal and tax documents. However:
+                        </font>
+                        <font style="vertical-align: inherit;">
+                            <ul>
+                                <li>We do not represent clients in court or before government authorities unless explicitly stated</li>
+                                <li>Our services are subject to the availability of required information and cooperation from the client</li>
+                                <li>Timelines provided are indicative and may vary based on external regulatory authorities</li>
+                            </ul>
                         </font>
                     </p>
                     <br>
                     <p>
-                        <strong>
+                        <h2>
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">User Responsibilities :</font>
+                            </font>
+                        </h2>
+                        <font style="vertical-align: inherit;">
+                            You agree to:
+                        </font>
+                        <font style="vertical-align: inherit">
+                            <ul>
+                                <li>Provide accurate and complete information when requested</li>
+                                <li>Keep your account and communication confidential and secure</li>
+                                <li>Comply with applicable laws and regulations</li>
+                                <li>Not use our services for any fraudulent or unlawful activity</li>
+                            </ul>
+                        </font>
+                    </p>
+                    <br>
+                    <p>
+                        <h2>
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Payments and Refunds :</font>
+                            </font>
+                        </h2>
+                        <font style="vertical-align: inherit;">
+                            <ul>
+                                <li>All payments for services are to be made in advance unless otherwise agreed</li>
+                                <li>Fees once paid are non-refundable, except under exceptional circumstances and at our sole discretion</li>
+                                <li>In case of any service delay or issues, you may contact our support team for resolution</li>
+                            </ul>
+                        </font>
+                    </p>
+                    <br>
+                    <p>
+                        <h2>
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Intellectual Property :</font>
+                            </font>
+                        </h2>
+                        <font style="vertical-align: inherit;">
+                            All content on this website including text, graphics, logos, icons, and software is the property of TaxBixLegal and protected by applicable intellectual property laws. You may not reproduce, copy, or exploit any part of the site without our written permission.
+                        </font>
+                    </p>
+                    <br>
+                    <p>
+                        <h2>
                             <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;">Limitation of Liability :</font>
                             </font>
-                        </strong>
-                        <br>
+                        </h2>
                         <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;">We are not liable for any direct or indirect losses incurred from using our resources. Our liability is limited to the amount paid, if any, for our services.</font>
+                            While we strive for accuracy and timely service, TaxBixLegal shall not be held liable for:
+                        </font>
+                        <font style="vertical-align: inherit;">
+                            <ul>
+                                <li>Any loss or damage arising due to reliance on information provided by us</li>
+                                <li>Delays or non-performance due to third-party or government-related issues</li>
+                                <li>Errors caused by incomplete or incorrect information provided by you</li>
+                            </ul>
                         </font>
                     </p>
                     <br>
                     <p>
-                        <strong>
+                        <h2>
                             <font style="vertical-align: inherit;">
-                                <font style="vertical-align: inherit;">Copyrights / Trademarks :</font>
+                                <font style="vertical-align: inherit;">Third Party Links :</font>
                             </font>
-                        </strong>
-                        <br>
+                        </h2>
                         <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;">Some content on our site, including text, graphics, and logos, is our intellectual property and protected by copyright and trademark laws. We also use some open source content including digital art, graphics, font style, javascript libraries etc. which are free to use.</font>
+                            Our site may contain links to third-party websites or services. We do not endorse or take responsibility for the content, terms, or privacy policies of those external websites.
                         </font>
                     </p>
                     <br>
                     <p>
-                        <strong>
+                        <h2>
                             <font style="vertical-align: inherit;">
-                                <font style="vertical-align: inherit;">Termination of Use :</font>
+                                <font style="vertical-align: inherit;">Modification of Terms :</font>
                             </font>
-                        </strong>
-                        <br>
+                        </h2>
                         <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;">We reserve the right to suspend or terminate your access to our site for any reason, including breaches of this User Agreement.</font>
+                            We reserve the right to modify these Terms at any time. Changes will be posted on this page with the revised “Effective Date.” Continued use of our services after changes constitutes your acceptance of the revised terms.
                         </font>
                     </p>
                     <br>
                     <p>
-                        <strong>
+                        <h2>
                             <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;">Governing Law :</font>
                             </font>
-                        </strong>
-                        <br>
+                        </h2>
                         <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;">By using our site, you agree that the laws of Kolkata, India, govern these terms and any disputes. Any legal action will be brought in Kolkata, India.</font>
+                            These Terms shall be governed by and construed in accordance with the laws of India. Any disputes arising shall be subject to the jurisdiction of the courts located in India.
                         </font>
                     </p>
                     <br>
                     <p>
-                        <strong>
+                        <h2>
                             <font style="vertical-align: inherit;">
-                                <font style="vertical-align: inherit;">Consumer Complaint Service :</font>
+                                <font style="vertical-align: inherit;">Contact Us :</font>
                             </font>
-                        </strong>
-                        <br>
+                        </h2>
                         <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;">While we aim to resolve complaints, we cannot guarantee a resolution. If necessary, consumers can file complaints with consumer forums.</font>
+                            If you have any questions or concerns about these Terms & Conditions, please contact us at:
+                        </font>
+                        <font style="vertical-align: inherit;">
+                            <ul>
+                                <li><strong>Email: </strong></li>
+                                <li><strong>Phone: </strong></li>
+                                <li><strong>Address: </strong></li>
+                            </ul>
                         </font>
                     </p>
                 </div>

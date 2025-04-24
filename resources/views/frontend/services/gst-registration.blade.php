@@ -41,7 +41,7 @@
         <div
             class="mod-flex services-nav-container mod-items-center mod-justify-between mod-cursor-pointer mod-rounded-lg mod-border-sm mod-overflow-hidden mod-text-s-14 mod-font-medium">
             <div class="mod-whitespace-nowrap mod-py-4 mod-sticky mod-left-0">
-                <span class="services-nav-title mod-pl-6 mod-pr-3 mod-border-r-sm">PVT LTD COMPANY</span>
+                <span class="services-nav-title mod-pl-6 mod-pr-3 mod-border-r-sm">GST REGISTRATION</span>
             </div>
             <ul class="services-nav-ul mod-flex mod-items-center mod-my-0 mod-justify-center mod-list-none">
                 <li data-target="pricing"
@@ -94,11 +94,11 @@
                 class="mod-text-s-32 mod-nav-text mod-font-semibold mod-word-break-normal mod-text-center mod-leading-loose">
                 <span>Choose the Right Plan</span>
                 <div class="mod-text-s-44">
-                    For your <span class="text-blue">Private Limited Company</span>
+                    For your <span class="text-blue">GST Registration</span>
                 </div>
             </h1>
             <p class="mod-nav-text mod-mt-2 mod-leading-loose mod-text-center">
-                Get your Private Limited Company registered effortlessly with our tailored pricing plans. Start your
+                Get your GST Registration completed effortlessly with our tailored pricing plans. Start your
                 journey today!
             </p>
         </div>
@@ -164,18 +164,12 @@
         <div class="col-12 col-md-6 col-xxl-5 sm:mod-order-2">
             <div class="mod-py-8">
 
-                <h1 class="mod-text-s-24">All you need to know about Private Limted Company Registration</h1>
-                <p>A Private Limited Company (PLC) in India is one of the most popular and simplest forms of company
-                    registration. It offers limited liability and legal protection to its shareholders, making it an
-                    ideal choice for many entrepreneurs. Positioned as a hybrid entity between a partnership firm and a
-                    public company, it allows businesses to enjoy the benefits of both forms.</p>
-                <p>To register a PLC, at least two individuals are required, and one individual can serve both as the
-                    director and shareholder. The liability of the company’s members is confined to the value of their
-                    shares, providing protection for personal assets. Once the Certificate of Incorporation is received,
-                    the company can commence its operations. The entire registration process typically takes around 15
-                    working days to complete.</p>
-                <p>Taxbizlegal.com is a trusted platform that provides end-to-end services for Private Limited Company
-                    registration, including incorporation, compliance, advisory, and consultancy. The process is quick,
+                <h1 class="mod-text-s-24">All you need to know about GST Registration</h1>
+                <p>Goods and Services Tax (GST) Registration is a legal requirement under the GST Act, 2017 for businesses involved in the supply of goods or services in India. Any individual or entity whose annual turnover exceeds the prescribed threshold must register for GST. However, even businesses with lower turnover may opt for voluntary registration to avail benefits such as Input Tax Credit (ITC) and enhanced credibility.</p>
+                <p>Upon successful registration, businesses are issued a unique GST Identification Number (GSTIN) which enables them to legally collect GST from customers and remit it to the government. GST registration provides official recognition to businesses, facilitates seamless interstate trade, and ensures compliance with tax laws.</p>
+                <p>Registered businesses are required to file regular GST returns and comply with ongoing obligations as per the Central Goods and Services Tax (CGST) Act and associated rules. Any subsequent changes in business particulars—such as address, legal name, ownership structure, or contact information—must be reported through a formal process of GST modification.</p>
+                <p>Taxbizlegal.com is a trusted platform that provides end-to-end services for GST 
+                    Registration. The process is quick,
                     affordable, and simple. Additionally, we offer services for Partnership Registration, LLP
                     Incorporation, One Person Company registration, and more. Contact us for a free consultation at
                     info@taxbizlegal.com or call our compliance manager at 09*********.</p>
@@ -217,9 +211,8 @@
                     </svg>
                 </div>
                 <div class="item-content">
-                    <h3 class="item-title">No Minimum Capital Requirement</h3>
-                    <p class="item-text">A Private Limited Company can be registered with a minimum authorized share
-                        capital of just Rs. 10,000, making it highly accessible for startups and small businesses.</p>
+                    <h3 class="item-title">Legal Recognition</h3>
+                    <p class="item-text">GST registration grants legal status to businesses, allowing them to operate lawfully and comply with tax regulations under the GST regime.</p>
                 </div>
             </div>
             <div class="mod-flex mod-flex-col mod-gap-4 xl:mod-pr-20 lg:mod-pr-8 sm:mod-pr-4 sm:mod-flex-row"
