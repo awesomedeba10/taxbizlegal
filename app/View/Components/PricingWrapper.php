@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Crypt;
 use Illuminate\View\Component;
 use Illuminate\Support\Arr;
+use Illuminate\Support\Facades\File;
 
 class PricingWrapper extends Component
 {
@@ -26,7 +27,7 @@ class PricingWrapper extends Component
      */
     public function render(): View|Closure|string
     {
-        $decryptedData = Crypt::decryptString(Storage::disk('public')->get($this->file));
+        $decryptedData = Crypt::decryptString(File::get(public_path('storage/' . $this->file)));
 
         $plans = Arr::get(unserialize($decryptedData), $this->page, []);
 
