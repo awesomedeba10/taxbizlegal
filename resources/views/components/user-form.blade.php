@@ -95,7 +95,7 @@
     </div>
 
 
-    <div class="form-check required mt-40">
+    <div class="form-check required mt-4">
         <input type="checkbox" name="_comply" class="form-check-input" id="frm-enquiryForm-form-_comply"
             required=""
             data-nette-rules="[

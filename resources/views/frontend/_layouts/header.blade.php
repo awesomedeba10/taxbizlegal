@@ -12,7 +12,7 @@
         </div>
         <div class="header-right-cta sm:mod-hidden mod-flex mod-items-center mod-justify-end mod-h-full mod-w-4/5">
             <div class="mod-flex mod-items-center mod-h-full">
-                <div class="mod-flex mod-items-center mod-h-full mod-pr-8">
+                <div class="mod-flex mod-items-center mod-h-full mod-pr-4">
                     @foreach (config('headers') as $headers)
                         <div class="sm:mod-hidden fit-content  ">
                             <div

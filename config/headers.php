@@ -100,6 +100,28 @@ return [
         ]
     ],
     [
+        "title" => "IP & Legal",
+        "sub_headers" => [
+            [
+                "title" => "Trademark Services",
+                "background" => "#ffffff",
+                "services" => [
+                    ["name" => "Trademark Registration", "description" => "Protect your brand identity with trademark registration."],
+                    ["name" => "Trademark Objection", "description" => "Handle trademark objections professionally and effectively."],
+                    ["name" => "Trademark Renewal", "description" => "Renew your trademark on time to keep your rights secured."]
+                ]
+            ],
+            [
+                "title" => "Legal Support",
+                "background" => "#F4F9FF",
+                "services" => [
+                    ["name" => "Legal Drafting", "description" => "Get contracts, agreements, and policies drafted legally."],
+                    ["name" => "ROC Search Report", "description" => "Access company financials with a reliable ROC search report."]
+                ]
+            ]
+        ]
+    ],
+    [
         "title" => "Other Reg.",
         "sub_headers" => [
             [
@@ -130,28 +152,6 @@ return [
                     ["name" => "Strike Off LLP", "description" => "Easily strike off your non-operational LLP."],
                     ["name" => "Dissolution of Firms", "description" => "Dissolve your partnership firm legally and formally."],
                     ["name" => "Strike Off OPC", "description" => "Close your One Person Company (OPC) effortlessly."]
-                ]
-            ]
-        ]
-    ],
-    [
-        "title" => "IP & Legal",
-        "sub_headers" => [
-            [
-                "title" => "Trademark Services",
-                "background" => "#ffffff",
-                "services" => [
-                    ["name" => "Trademark Registration", "description" => "Protect your brand identity with trademark registration."],
-                    ["name" => "Trademark Objection", "description" => "Handle trademark objections professionally and effectively."],
-                    ["name" => "Trademark Renewal", "description" => "Renew your trademark on time to keep your rights secured."]
-                ]
-            ],
-            [
-                "title" => "Legal Support",
-                "background" => "#F4F9FF",
-                "services" => [
-                    ["name" => "Legal Drafting", "description" => "Get contracts, agreements, and policies drafted legally."],
-                    ["name" => "ROC Search Report", "description" => "Access company financials with a reliable ROC search report."]
                 ]
             ]
         ]

@@ -3,20 +3,18 @@
         class="mod-items-center mod-px-24 mod-grid-12 mod-w-full sm:mod-gap-10 sm:mod-flex sm:mod-flex-col
         sm:mod-px-10 md:mod-px-12 md:mod-items-start ">
         <div class="section-heading">
-            <p class="h5 text-primary mb-2">Start Your Private Limited Company with Ease!</p>
+            <p class="h5 text-primary mb-2">Protect Your Brand with Confidence!</p>
             <h1 class="section-title mod-font-bold mod-leading-semi-loose mod-space-light-semi mod-mb-8" data-fade="up">
-                Register Your <span class="text-blue">Private Limited Company</span> & Unlock Growth Opportunities!</h1>
+                Secure Your <span class="text-blue">Trademark Registration</span> Effortlessly!</h1>
             <div class="mod-flex mod-flex-col mod-gap-10">
                 <div class="text mod-font-medium mod-leading-loose" data-fade="up">
                     <ul class="mod-ml-0 mod-mb-1 mod-pl-1 mod-list-none mod-flex mod-flex-col mod-gap-2 mod-text-base">
-                        <li>👉 100% Online, Hassle-Free Registration Process</li>
-                        <li>👉 Expert Guidance & Legal Compliance Assistance</li>
-                        <li>👉 Quick Turnaround & Transparent Pricing</li>
+                        <li>👉 100% Online Filing with Expert Support</li>
+                        <li>👉 Safeguard Your Brand Identity & Legal Rights</li>
+                        <li>👉 Fast Processing & Complete Transparency</li>
                     </ul>
                 </div>
-                <p class="mb-0 mod-leading-light-loose">Experience seamless private limited company registration with
-                    our expert consultants. We handle paperwork, legal formalities, and compliance, ensuring a smooth
-                    process. Focus on growth while we simplify your journey. Get started today!</p>
+                <p class="mb-0 mod-leading-light-loose">Give your brand the protection it deserves with our hassle-free trademark registration services. From application to approval, our experts ensure every step is smooth and secure. Build trust, stand out, and own your identity — start your trademark journey today!</p>
             </div>
         </div>
         <div class="section-content mod-pr-12 md:mod-pr-0 sm:mod-pr-0">

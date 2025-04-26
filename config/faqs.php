@@ -124,7 +124,7 @@ return [
             'answer' => 'No, a One Person Company (OPC) can have only one director, who must be a resident of India. However, the company can appoint a nominee who will assume control in the event of the sole member’s death or incapacity.'
         ]
     ],
-    "limited-liability-partnership-company" => [
+    "limited-liability-partnership" => [
         [
             'question' => 'Can foreign nationals be partners in an LLP?',
             'answer' => 'Yes, foreign nationals and foreign companies can become partners in an LLP, subject to FDI guidelines and appointment of a designated partner resident in India.'

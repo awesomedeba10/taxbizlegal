@@ -135,7 +135,7 @@
                                 Moneyback Guarantee</p>
                             <p class="mb-0">Zero-risk Moneyback Guaranteed with our hassle free Full-Refund policy
                                 <span
-                                    class="mod-absolute mod-pb-3 mod-pl-3 mod-font-semibold moneyback-conditon">*Conditions
+                                    class="mod-pl-3 mod-font-semibold moneyback-conditon">*Conditions
                                     Apply</span>
                             </p>
                         </div>

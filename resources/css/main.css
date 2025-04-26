@@ -6023,7 +6023,7 @@ fieldset:disabled .btn-close {
     align-items: center;
     grid-template-columns: 1.25rem 1fr;
     gap: 0.5em;
-    padding: 0 0 0 0.5em;
+    padding: 0 0 0 0.2em;
 }
 .form-check > :not(.form-check-input):not(.form-check-label) {
     grid-column: 1/-1;
@@ -7125,7 +7125,7 @@ fieldset + fieldset:not(.accordion-item) {
 .form-check + .form-floating,
 .form-check + .form-monthYear,
 .form-check + .form-check {
-    margin-top: 1rem;
+    margin-top: 0.75rem;
 }
 .form-check + .form-check {
     margin-top: 0.5rem;
@@ -7168,7 +7168,7 @@ fieldset + fieldset:not(.accordion-item) {
     margin-bottom: 2rem;
 }
 .form-submit {
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 .accordion + .form-submit {
     margin-top: 1.5rem;

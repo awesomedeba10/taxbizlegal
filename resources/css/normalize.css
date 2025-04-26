@@ -525,7 +525,7 @@ img, video {
     outline: 0;
 }
 @media (hover: none) {
-    .mod-tab>a: hover {
+    .mod-tab>a:hover {
     --text-opacity:  1;
     color: #314259;
     color: rgba(49,  66,  89,  var(--text-opacity));
@@ -3861,16 +3861,12 @@ select {
     
 }
 .nav-dropdown .mod-dropdown-menu  {
-    
     top:  3.5rem;
-    
 }
 
-.nav-dropdown: before  {
-    
+.nav-dropdown:before  {
     /* based on position of menu */
     top:  3rem;
-    
 }
 .nav-bg  {
     
