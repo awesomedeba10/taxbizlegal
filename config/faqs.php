@@ -349,5 +349,27 @@ return [
             'question' => 'Can changes be made offline?',
             'answer' => 'No. All registration modifications are to be filed online only.'
         ]
+    ],
+    'trademark-registration' => [
+        [
+            'question' => 'Can I use TM symbol without registration?',
+            'answer' => 'Yes, after applying, you may use the ™ symbol.',
+        ],
+        [
+            'question' => 'Is trademark registration mandatory?',
+            'answer' => 'No, but it’s strongly recommended to protect your brand legally.',
+        ],
+        [
+            'question' => 'What if someone opposes my trademark?',
+            'answer' => 'You must respond to the opposition and attend hearings if needed.',
+        ],
+        [
+            'question' => 'Can trademarks be registered in multiple classes?',
+            'answer' => 'Yes, separate applications or class combinations can be filed.',
+        ],
+        [
+            'question' => 'How long does a trademark last?',
+            'answer' => '10 years from the date of application, renewable indefinitely.',
+        ],
     ]
 ];
