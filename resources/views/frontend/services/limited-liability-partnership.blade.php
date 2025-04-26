@@ -401,11 +401,11 @@
 </section>
 
 <section class="container my-40" id="compliances">
-    <h1 class="display-6 mb-32 mod-font-semibold mod-text-s-28">Compliance Required for Forming a Limited
+    <h1 class="display-6 mb-32 mod-font-semibold mod-text-s-28">Annual Compliance for Limited
         Liability Partnership Company</h1>
 
-    <div class="mod-grid mod-mt-4 mod-gap-8 mod-grid-template-col-2 sm:mod-grid-template-col-2">
-        <div class="mod-pr-8 mod-flex mod-flex-col">
+    <div class="mod-grid mod-mt-4 mod-gap-8 mod-grid-template-col-2 sm:mod-grid-template-col-1">
+        <div class="mod-pr-8 mod-flex mod-flex-col sm:mod-order-2">
             <h3 class="mod-font-semibold mod-leading-loose">Why Compliance Matters</h3>
             <p class="mod-mt-2 mod-pr-24">
                 Staying compliant is essential for the smooth operation of your Limited Liability Partnership (LLP). 
@@ -438,32 +438,32 @@
                 </a>
             </div>
         </div>
-        <div class="mod-px-2 mod-flex mod-flex-col mod-gap-2">
+        <div class="mod-px-2 mod-flex mod-flex-col mod-gap-2 sm:mod-order-1">
             <div
-                class="mod-flex mod-items-center mod-justify-space-between mod-gap-12 mod-px-2 mod-py-4 mod-border-bottom-2">
+                class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
                 <h3 class="mod-mb-0">Board Meetings</h3>
                 <p class="mod-ml-16 mod-mb-0 mod-text-right">At least 2 board meetings each year with a minimum of 2
                     directors or 1/3rd of the total.</p>
             </div>
             <div
-                class="mod-flex mod-items-center mod-justify-space-between mod-gap-12 mod-px-2 mod-py-4 mod-border-bottom-2">
+                class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
                 <h3 class="mod-mb-0">Annual General Meeting (AGM)</h3>
                 <p class="mod-ml-16 mod-mb-0 mod-text-right">Must be held once every year, with a gap of no more than
                     15 months between two AGMs.</p>
             </div>
             <div
-                class="mod-flex mod-items-center mod-justify-space-between mod-gap-12 mod-px-2 mod-py-4 mod-border-bottom-2">
+                class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
                 <h3 class="mod-mb-0">Auditor Appointment</h3>
                 <p class="mod-ml-16 mod-mb-0 mod-text-right">An auditor must be appointed within 15 days of
                     incorporation by filing Form ADT-1 with the RoC.</p>
             </div>
             <div
-                class="mod-flex mod-items-center mod-justify-space-between mod-gap-12 mod-px-2 mod-py-4 mod-border-bottom-2">
+                class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
                 <h3 class="mod-mb-0">Financial Reporting</h3>
                 <p class="mod-ml-16 mod-mb-0 mod-text-right">File annual returns (Form MGT-7) and financial statements
                     (Form AOC-4) every financial year.</p>
             </div>
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-gap-12 mod-px-2 mod-py-4">
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4">
                 <h3 class="mod-mb-0">Statutory Records</h3>
                 <p class="mod-ml-16 mod-mb-0 mod-text-right">Maintain key registers and ensure accounts are audited by
                     a certified statutory auditor.</p>

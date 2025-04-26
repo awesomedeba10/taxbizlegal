@@ -389,10 +389,10 @@
 </section>
 
 <section class="container my-40" id="compliances">
-    <h1 class="display-6 mb-32 mod-font-semibold mod-text-s-28">Compliance Required for Forming a One Person Company (OPC)</h1>
+    <h1 class="display-6 mb-32 mod-font-semibold mod-text-s-28">Annual Compliance for One Person Company (OPC)</h1>
 
-    <div class="mod-grid mod-mt-4 mod-gap-8 mod-grid-template-col-2 sm:mod-grid-template-col-2">
-        <div class="mod-pr-8 mod-flex mod-flex-col">
+    <div class="mod-grid mod-mt-4 mod-gap-8 mod-grid-template-col-2 sm:mod-grid-template-col-1">
+        <div class="mod-pr-8 mod-flex mod-flex-col sm:mod-order-2">
             <h3 class="mod-font-semibold mod-leading-loose">Why Compliance Matters</h3>
             <p class="mod-mt-2 mod-pr-24">
                 Staying compliant is essential for the seamless functioning of your One Person Company (OPC). It enhances business credibility, avoids legal penalties, and supports long-term sustainability. Here’s a quick guide on what you need to comply with after registering your OPC.
@@ -423,24 +423,24 @@
                 </a>
             </div>
         </div>
-        <div class="mod-px-2 mod-flex mod-flex-col mod-gap-2">
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-gap-12 mod-px-2 mod-py-4 mod-border-bottom-2">
+        <div class="mod-px-2 mod-flex mod-flex-col mod-gap-2 sm:mod-order-1">
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
                 <h3 class="mod-mb-0">Board Resolution</h3>
                 <p class="mod-ml-16 mod-mb-0 mod-text-right">Though there's only one member, board resolutions are required for key business decisions.</p>
             </div>
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-gap-12 mod-px-2 mod-py-4 mod-border-bottom-2">
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
                 <h3 class="mod-mb-0">Annual Return Filing</h3>
                 <p class="mod-ml-16 mod-mb-0 mod-text-right">File Form MGT-7A annually with the Registrar of Companies (RoC).</p>
             </div>
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-gap-12 mod-px-2 mod-py-4 mod-border-bottom-2">
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
                 <h3 class="mod-mb-0">Financial Statements</h3>
                 <p class="mod-ml-16 mod-mb-0 mod-text-right">File Form AOC-4 containing the balance sheet, profit & loss, and auditor's report.</p>
             </div>
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-gap-12 mod-px-2 mod-py-4 mod-border-bottom-2">
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
                 <h3 class="mod-mb-0">Auditor Appointment</h3>
                 <p class="mod-ml-16 mod-mb-0 mod-text-right">Appoint a statutory auditor within 15 days of incorporation via Form ADT-1.</p>
             </div>
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-gap-12 mod-px-2 mod-py-4">
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4">
                 <h3 class="mod-mb-0">Statutory Registers & Books</h3>
                 <p class="mod-ml-16 mod-mb-0 mod-text-right">Maintain proper books of accounts, minutes of decisions, and statutory registers.</p>
             </div>

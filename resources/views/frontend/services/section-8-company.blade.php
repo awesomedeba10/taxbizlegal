@@ -392,11 +392,11 @@
 </section>
 
 <section class="container my-40" id="compliances">
-    <h1 class="display-6 mb-32 mod-font-semibold mod-text-s-28">Compliance Required for Forming a Section 8 Company
+    <h1 class="display-6 mb-32 mod-font-semibold mod-text-s-28">Annual Compliance for Section 8 Company
     </h1>
 
-    <div class="mod-grid mod-mt-4 mod-gap-8 mod-grid-template-col-2 sm:mod-grid-template-col-2">
-        <div class="mod-pr-8 mod-flex mod-flex-col">
+    <div class="mod-grid mod-mt-4 mod-gap-8 mod-grid-template-col-2 sm:mod-grid-template-col-1">
+        <div class="mod-pr-8 mod-flex mod-flex-col sm:mod-order-2">
             <h3 class="mod-font-semibold mod-leading-loose">Why Compliance Matters</h3>
             <p class="mod-mt-2 mod-pr-24">
                 For Section 8 Companies, maintaining compliance is essential not just for legal validity, but also to uphold trust,
@@ -429,28 +429,28 @@
                 </a>
             </div>
         </div>
-        <div class="mod-px-2 mod-flex mod-flex-col mod-gap-2">
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-gap-12 mod-px-2 mod-py-4 mod-border-bottom-2">
+        <div class="mod-px-2 mod-flex mod-flex-col mod-gap-2 sm:mod-order-1">
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
                 <h3 class="mod-mb-0">Annual Financial Statements</h3>
                 <p class="mod-ml-16 mod-mb-0 mod-text-right">Form AOC-4 must be filed within 30 days from the AGM.</p>
             </div>
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-gap-12 mod-px-2 mod-py-4 mod-border-bottom-2">
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
                 <h3 class="mod-mb-0">Annual Return Filing</h3>
                 <p class="mod-ml-16 mod-mb-0 mod-text-right">Form MGT-7 should be filed within 60 days from the AGM.</p>
             </div>
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-gap-12 mod-px-2 mod-py-4 mod-border-bottom-2">
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
                 <h3 class="mod-mb-0">Income Tax Returns</h3>
                 <p class="mod-ml-16 mod-mb-0 mod-text-right">Form ITR-7 is due by 31st July of the assessment year.</p>
             </div>
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-gap-12 mod-px-2 mod-py-4 mod-border-bottom-2">
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
                 <h3 class="mod-mb-0">Filing of Director’s Report</h3>
                 <p class="mod-ml-16 mod-mb-0 mod-text-right">Included as part of the AGM process.</p>
             </div>
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-gap-12 mod-px-2 mod-py-4 mod-border-bottom-2">
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
                 <h3 class="mod-mb-0">Board Meetings</h3>
                 <p class="mod-ml-16 mod-mb-0 mod-text-right">At least one board meeting every 120 days is required.</p>
             </div>
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-gap-12 mod-px-2 mod-py-4 mod-border-bottom-2">
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
                 <h3 class="mod-mb-0">Annual General Meeting (AGM)</h3>
                 <p class="mod-ml-16 mod-mb-0 mod-text-right">To be held within 6 months from the end of the financial year.</p>
             </div>

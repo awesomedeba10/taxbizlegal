@@ -1111,6 +1111,9 @@ img, video {
     .sm\:mod-grid-template-col-2 {
         grid-template-columns: 1fr 1fr;
     }
+    .sm\:mod-grid-template-col-1 {
+        grid-template-columns: 1fr;
+    }
 }
 .mod-block {
     display: block;
@@ -1577,6 +1580,9 @@ img, video {
 }
 .mod-ml-10 {
     margin-left: 2.5rem;
+}
+.mod-ml-12 {
+    margin-left: 3rem;
 }
 .mod-mt-12 {
     margin-top: 3rem;
@@ -2580,8 +2586,8 @@ select {
     .mod-container {
     width: 100%;
     max-width: 1440px;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     margin-left: auto;
     margin-right: auto;
 }

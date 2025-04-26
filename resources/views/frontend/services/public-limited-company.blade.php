@@ -398,11 +398,11 @@
 </section>
 
 <section class="container my-40" id="compliances">
-    <h1 class="display-6 mb-32 mod-font-semibold mod-text-s-28">Compliance Required for Forming a Public Limited
+    <h1 class="display-6 mb-32 mod-font-semibold mod-text-s-28">Annual Compliance for Public Limited
         Company</h1>
 
-    <div class="mod-grid mod-mt-4 mod-gap-8 mod-grid-template-col-2 sm:mod-grid-template-col-2">
-        <div class="mod-pr-8 mod-flex mod-flex-col">
+    <div class="mod-grid mod-mt-4 mod-gap-8 mod-grid-template-col-2 sm:mod-grid-template-col-1">
+        <div class="mod-pr-8 mod-flex mod-flex-col sm:mod-order-2">
             <h3 class="mod-font-semibold mod-leading-loose">Why Compliance Matters</h3>
             <p class="mod-mt-2 mod-pr-24">
                 For a public limited company, compliance plays a crucial role in maintaining transparency, building investor confidence,
@@ -435,28 +435,28 @@
                 </a>
             </div>
         </div>
-        <div class="mod-px-2 mod-flex mod-flex-col mod-gap-2">
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-gap-12 mod-px-2 mod-py-4 mod-border-bottom-2">
+        <div class="mod-px-2 mod-flex mod-flex-col mod-gap-2 sm:mod-order-1">
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
                 <h3 class="mod-mb-0">Financial Statements</h3>
                 <p class="mod-ml-16 mod-mb-0 mod-text-right">Form AOC-4 must be filed within 30 days from the date of the AGM.</p>
             </div>
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-gap-12 mod-px-2 mod-py-4 mod-border-bottom-2">
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
                 <h3 class="mod-mb-0">Annual Return</h3>
                 <p class="mod-ml-16 mod-mb-0 mod-text-right">Form MGT-7 to be filed within 60 days from the AGM date.</p>
             </div>
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-gap-12 mod-px-2 mod-py-4 mod-border-bottom-2">
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
                 <h3 class="mod-mb-0">Annual General Meeting (AGM)</h3>
                 <p class="mod-ml-16 mod-mb-0 mod-text-right">Must be held within 6 months from the end of the financial year.</p>
             </div>
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-gap-12 mod-px-2 mod-py-4 mod-border-bottom-2">
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
                 <h3 class="mod-mb-0">Board Meetings</h3>
                 <p class="mod-ml-16 mod-mb-0 mod-text-right">Minimum of 4 board meetings must be conducted every year.</p>
             </div>
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-gap-12 mod-px-2 mod-py-4 mod-border-bottom-2">
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
                 <h3 class="mod-mb-0">Auditor’s Appointment</h3>
                 <p class="mod-ml-16 mod-mb-0 mod-text-right">Form ADT-1 must be filed within 15 days of the AGM.</p>
             </div>
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-gap-12 mod-px-2 mod-py-4 mod-border-bottom-2">
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
                 <h3 class="mod-mb-0">Income Tax Return</h3>
                 <p class="mod-ml-16 mod-mb-0 mod-text-right">Form ITR-6 is to be filed by 30th September (if audited).</p>
             </div>

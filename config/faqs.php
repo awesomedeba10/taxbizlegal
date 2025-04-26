@@ -327,5 +327,27 @@ return [
             'question' => 'Can a foreigner start a sole proprietorship in India?',
             'answer' => 'Yes, a foreigner can start a sole proprietorship in India, but they need to meet the FDI (Foreign Direct Investment) regulations if applicable. Additionally, foreign nationals must apply for a PAN card, and a valid visa may be required for residency.'
         ]
+    ],
+    "gst-registration" => [
+        [
+            'question' => 'Is GST registration mandatory for all businesses?',
+            'answer' => 'No, only for businesses exceeding prescribed turnover or dealing in specific supplies.'
+        ],
+        [
+            'question' => 'Can one business have multiple GST registrations?',
+            'answer' => 'Yes, for multiple states or for separate business verticals in one state.'
+        ],
+        [
+            'question' => 'Is modification of GST details mandatory?',
+            'answer' => 'Yes, changes must be updated within 15 days of the event.'
+        ],
+        [
+            'question' => 'Is fresh registration needed for address change?',
+            'answer' => 'No, you can apply for amendment if it’s within the same state.'
+        ],
+        [
+            'question' => 'Can changes be made offline?',
+            'answer' => 'No. All registration modifications are to be filed online only.'
+        ]
     ]
 ];

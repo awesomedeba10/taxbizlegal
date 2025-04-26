@@ -3,20 +3,18 @@
         class="mod-items-center mod-px-24 mod-grid-12 mod-w-full sm:mod-gap-10 sm:mod-flex sm:mod-flex-col
         sm:mod-px-10 md:mod-px-12 md:mod-items-start ">
         <div class="section-heading">
-            <p class="h5 text-primary mb-2">Start Your Private Limited Company with Ease!</p>
+            <p class="h5 text-primary mb-2">Get Your GST Registration Done Effortlessly!</p>
             <h1 class="section-title mod-font-bold mod-leading-semi-loose mod-space-light-semi mod-mb-8" data-fade="up">
-                Register Your <span class="text-blue">Private Limited Company</span> & Unlock Growth Opportunities!</h1>
+                Register Your <span class="text-blue">Business for GST</span> & Stay Compliant with Ease!</h1>
             <div class="mod-flex mod-flex-col mod-gap-10">
                 <div class="text mod-font-medium mod-leading-loose" data-fade="up">
                     <ul class="mod-ml-0 mod-mb-1 mod-pl-1 mod-list-none mod-flex mod-flex-col mod-gap-2 mod-text-base">
-                        <li>👉 100% Online, Hassle-Free Registration Process</li>
-                        <li>👉 Expert Guidance & Legal Compliance Assistance</li>
-                        <li>👉 Quick Turnaround & Transparent Pricing</li>
+                        <li>👉 100% Online, Hassle-Free GST Registration Process</li>
+                        <li>👉 Expert Assistance & Complete Documentation Support</li>
+                        <li>👉 Quick Approval & Transparent Pricing</li>
                     </ul>
                 </div>
-                <p class="mb-0 mod-leading-light-loose">Experience seamless private limited company registration with
-                    our expert consultants. We handle paperwork, legal formalities, and compliance, ensuring a smooth
-                    process. Focus on growth while we simplify your journey. Get started today!</p>
+                <p class="mb-0 mod-leading-light-loose">Experience seamless GST registration with our expert consultants. We manage documentation, government filings, and compliance, ensuring a smooth and stress-free process. Focus on running your business while we handle your GST needs. Get started today!</p>
             </div>
         </div>
         <div class="section-content mod-pr-12 md:mod-pr-0 sm:mod-pr-0">
@@ -189,7 +187,7 @@
         <div class="section-heading">
             <h2 class="section-title mod-text-s-28 mod-font-bold mod-leading-semi-loose mod-space-light-semi"
                 data-fade="up">
-                Advantages of Private Limited Company
+                Advantages of GST Registration
             </h2>
         </div>
         <div class="section-content mod-grid-4">
@@ -211,8 +209,8 @@
                     </svg>
                 </div>
                 <div class="item-content">
-                    <h3 class="item-title">Legal Recognition</h3>
-                    <p class="item-text">GST registration grants legal status to businesses, allowing them to operate lawfully and comply with tax regulations under the GST regime.</p>
+                    <h3 class="item-title">Legally Compliant</h3>
+                    <p class="item-text">GST registration ensures that your business operates lawfully under the GST Act, meeting all required tax regulations and government mandates.</p>
                 </div>
             </div>
             <div class="mod-flex mod-flex-col mod-gap-4 xl:mod-pr-20 lg:mod-pr-8 sm:mod-pr-4 sm:mod-flex-row"
@@ -225,9 +223,8 @@
                             fill="#0B1126"></path>
                     </svg></div>
                 <div class="item-content">
-                    <h3 class="item-title">Limited Liability</h3>
-                    <p class="item-text">It operates as an independent legal entity, ensuring that directors' personal
-                        assets remain safeguarded against company debts or financial obligations.</p>
+                    <h3 class="item-title">Input Tax Credit Benefit</h3>
+                    <p class="item-text">Registered businesses can claim Input Tax Credit (ITC) on GST paid for purchases, helping reduce overall tax liability and improve profitability.</p>
                 </div>
             </div>
             <div class="mod-flex mod-flex-col mod-gap-4 xl:mod-pr-20 lg:mod-pr-8 sm:mod-pr-4 sm:mod-flex-row"
@@ -245,9 +242,8 @@
                     </svg>
                 </div>
                 <div class="item-content">
-                    <h3 class="item-title">Fundraising Opportunities</h3>
-                    <p class="item-text">Its structured legal framework makes it easier to secure funding from venture
-                        capitalists, angel investors, and financial institutions, enhancing growth opportunities.</p>
+                    <h3 class="item-title">Facilitates B2B Transactions</h3>
+                    <p class="item-text">GST registration is essential for businesses looking to deal with registered vendors and clients, ensuring smoother B2B operations and credibility.</p>
                 </div>
             </div>
             <div class="mod-flex mod-flex-col mod-gap-4 xl:mod-pr-20 lg:mod-pr-8 sm:mod-pr-4 sm:mod-flex-row"
@@ -262,10 +258,9 @@
                     </svg>
                 </div>
                 <div class="item-content">
-                    <h3 class="item-title">Enhanced Credibility</h3>
+                    <h3 class="item-title">Ease in Banking & Funding</h3>
                     <p class="item-text">
-                        Since company information is publicly available, it builds trust and credibility among
-                        customers, investors, and financial partners, improving business reputation.
+                        Having a GST registration makes it easier to open a current bank account, apply for business loans, and secure funding from financial institutions.
                     </p>
                 </div>
             </div>
@@ -276,44 +271,36 @@
 <section class="container my-80 my-xxl-120" id="resources">
 
     <h1 class="display-6 mb-32 mod-font-semibold mod-text-s-24">
-        Selecting the Ideal Business Structure for Your Company
+        Key Features of GST Registration
     </h1>
     <div class="row gy-40 gx-lg-40">
-        <div class="col-lg-4">
-            <div class="d-flex flex-column gap-12 gap-lg-3 mx-auto">
-                <h2 class="mb-0">Company Limited by
-                    <span class="text-primary mod-font-bold">Shares</span>
-                </h2>
-                <p class="mb-0 text-lg">A company limited by shares is a distinct legal entity from its shareholders
-                    and directors. It can enter into contracts, own assets, and operate independently under its business
-                    name.</p>
-                <p class="mb-0 text-lg">Shareholders’ liability is limited to their investment, ensuring their
-                    personal assets remain protected from the company’s financial obligations. This structure is widely
-                    chosen for its security and credibility.</p>
+        <div class="row gy-40 gx-lg-40">
+            <div class="col-lg-4">
+                <div class="d-flex flex-column gap-12 gap-lg-3 mx-auto">
+                    <h2 class="mb-0">PAN-Based 
+                        <span class="text-primary mod-font-bold">State Registration</span>
+                    </h2>
+                    <p class="mb-0 text-lg">GST registration is PAN-based and required separately for each state where a business operates. A unique 15-digit GSTIN is allotted post-registration.</p>
+                    <p class="mb-0 text-lg">This system ensures proper tax compliance across states and allows businesses to manage interstate operations efficiently under a unified tax regime.</p>
+                </div>
             </div>
-        </div>
-        <div class="col-lg-4">
-            <div class="d-flex flex-column gap-12 gap-lg-3 mx-auto">
-                <h2 class="mb-0">Company Limited by
-                    <span class="text-primary mod-font-bold">Guarantee</span>
-                </h2>
-                <p class="mb-0 text-lg">A company limited by guarantee does not have shareholders or share capital.
-                    Instead, it is backed by guarantors who commit a fixed amount towards company debts if necessary.
-                </p>
-                <p class="mb-0 text-lg">Such companies usually operate as non-profits, with profits reinvested into
-                    the business to support its objectives. Guarantors do not receive a share of the profits.</p>
+            <div class="col-lg-4">
+                <div class="d-flex flex-column gap-12 gap-lg-3 mx-auto">
+                    <h2 class="mb-0">Threshold-Based 
+                        <span class="text-primary mod-font-bold">Registration</span>
+                    </h2>
+                    <p class="mb-0 text-lg">Businesses must register for GST once their aggregate turnover exceeds ₹40 lakh, ₹20 lakh, or ₹10 lakh, depending on their state and type of goods or services.</p>
+                    <p class="mb-0 text-lg">Additionally, GST registration is mandatory for interstate suppliers, e-commerce operators, and businesses engaged in notified activities, regardless of turnover.</p>
+                </div>
             </div>
-        </div>
-        <div class="col-lg-4">
-            <div class="d-flex flex-column gap-12 gap-lg-3 mx-auto">
-                <h2 class="mb-0">
-                    <span class="text-primary mod-font-bold">Unlimited</span> Company
-                </h2>
-                <p class="mb-0 text-lg">An unlimited company, as per Section 2(92) of the Companies Act, 2013, does
-                    not impose financial liability limits on its shareholders.</p>
-                <p class="mb-0 text-lg">In case of dissolution, shareholders are fully responsible for covering all
-                    company debts, even beyond their initial investment. This structure offers operational flexibility
-                    but comes with higher financial risk.</p>
+            <div class="col-lg-4">
+                <div class="d-flex flex-column gap-12 gap-lg-3 mx-auto">
+                    <h2 class="mb-0">Digital 
+                        <span class="text-primary mod-font-bold">Certificate Issuance</span>
+                    </h2>
+                    <p class="mb-0 text-lg">After successful registration, a digital GST Registration Certificate is issued via the GST portal, eliminating the need for physical copies.</p>
+                    <p class="mb-0 text-lg">The GSTIN enables businesses to file returns, claim input tax credit, issue GST-compliant invoices, and strengthen their market credibility with ease.</p>
+                </div>
             </div>
         </div>
     </div>
@@ -335,28 +322,28 @@
             <div class="items mod-grid-4">
                 <div class="mod-flex mod-flex-col mod-gap-2" data-fade="up">
                     <div class="item-number">01.</div>
-                    <p class="item-text">Passport Size Photograph</p>
+                    <p class="item-text">Proof of Business Address</p>
                 </div>
                 <div class="mod-flex mod-flex-col mod-gap-2" data-fade="up">
                     <div class="item-number">02.</div>
-                    <p class="item-text">Individual PAN Card</p>
+                    <p class="item-text">PAN Card Individual/Business</p>
                 </div>
                 <div class="mod-flex mod-flex-col mod-gap-2" data-fade="up"
                     style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1; visibility: inherit;">
                     <div class="item-number">03.</div>
-                    <p class="item-text">Registered Office Proof</p>
+                    <p class="item-text">Passport size Photograph</p>
                 </div>
                 <div class="mod-flex mod-flex-col mod-gap-2" data-fade="up">
                     <div class="item-number">04.</div>
-                    <p class="item-text">Aadhar Card</p>
+                    <p class="item-text">Identity & Address Proof</p>
                 </div>
                 <div class="mod-flex mod-flex-col mod-gap-2" data-fade="up">
                     <div class="item-number">05.</div>
-                    <p class="item-text">Address Proof</p>
+                    <p class="item-text">Bank A/c Details</p>
                 </div>
                 <div class="mod-flex mod-flex-col mod-gap-2" data-fade="up">
                     <div class="item-number">06.</div>
-                    <p class="item-text">No Objection Certificate / NOC</p>
+                    <p class="item-text">Business Constitution Documents</p>
                 </div>
             </div>
         </div>
@@ -366,21 +353,23 @@
 <section class="container my-40" id="compliances">
     <h1 class="display-6 mb-32 mod-font-semibold mod-text-s-28">Compliance Required for Forming a Private Limited Company</h1>
 
-    <div class="mod-grid mod-mt-4 mod-gap-8 mod-grid-template-col-2 sm:mod-grid-template-col-2">
-        <div class="mod-pr-8 mod-flex mod-flex-col">
+    <div class="mod-grid mod-mt-4 mod-gap-8 mod-grid-template-col-2 sm:mod-grid-template-col-1">
+        <div class="mod-pr-8 mod-flex mod-flex-col sm:mod-order-2">
             <h3 class="mod-font-semibold mod-leading-loose">Why Compliance Matters</h3>
             <p class="mod-mt-2 mod-pr-24">
-                Staying compliant not only builds credibility for your private limited company but also ensures smooth functioning, legal protection, and better funding opportunities. Here’s a quick guide to help you understand what’s needed right after registration.
+                Proper GST compliance strengthens your business credibility, avoids penalties, ensures seamless operations, and boosts trust with customers and partners. Here’s what you need to manage after GST registration.
             </p>
             <div class="mod-grid mod-items-start mod-my-6">
                 <h4>Other Non-ROC Business Compliances</h4>
                 <div class="mod-grid-2 mod-gap-2">
-                    <span class="mod-items-center mod-py-2 mod-space-semi">TDS/TCS Payment</span>
-                    <span class="mod-items-center mod-py-2 mod-space-semi">GST Payment & GST Filing</span>
-                    <span class="mod-items-center mod-py-2 mod-space-semi">Filing of quarterly TDS Teturns</span>
-                    <span class="mod-items-center mod-py-2 mod-space-semi">Advanced Tax Payment</span>
-                    <span class="mod-items-center mod-py-2 mod-space-semi">Filing of IT Returns</span>
-                    <span class="mod-items-center mod-py-2 mod-space-semi">Filing of Tax Audit Reports</span>
+                    <span class="mod-items-center mod-py-2 mod-space-semi">GST Return Filingt</span>
+                    <span class="mod-items-center mod-py-2 mod-space-semi">Timely payment of GST liabilities</span>
+                    <span class="mod-items-center mod-py-2 mod-space-semi">Maintenance of Books & Records</span>
+                    <span class="mod-items-center mod-py-2 mod-space-semi">Input Tax Credit (ITC) Reconciliation</span>
+                    <span class="mod-items-center mod-py-2 mod-space-semi">Filing Income Tax Return (ITR)</span>
+                    <span class="mod-items-center mod-py-2 mod-space-semi">Authorized Signatory Details (if applicable)</span>
+                    <span class="mod-items-center mod-py-2 mod-space-semi">TDS under GST (If applicable)</span>
+                    <span class="mod-items-center mod-py-2 mod-space-semi">E-Invoicing (If applicable)</span>
                 </div>
             </div>
             <div>
@@ -398,26 +387,26 @@
                 </a>
             </div>
         </div>
-        <div class="mod-px-2 mod-flex mod-flex-col mod-gap-2">
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-gap-12 mod-px-2 mod-py-4 mod-border-bottom-2">
-                <h3 class="mod-mb-0">Board Meetings</h3>
-                <p class="mod-ml-16 mod-mb-0 mod-text-right">At least 2 board meetings each year with a minimum of 2 directors or 1/3rd of the total.</p>
+        <div class="mod-px-2 mod-flex mod-flex-col mod-gap-2 sm:mod-order-1">
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
+                <h3 class="mod-mb-0">Maintain Proper Records</h3>
+                <p class="mod-ml-16 mod-mb-0 mod-text-right">Keep detailed records of all sales, purchases, and input-output tax credits as per GST laws.</p>
             </div>
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-gap-12 mod-px-2 mod-py-4 mod-border-bottom-2">
-                <h3 class="mod-mb-0">Annual General Meeting (AGM)</h3>
-                <p class="mod-ml-16 mod-mb-0 mod-text-right">Must be held once every year, with a gap of no more than 15 months between two AGMs.</p>
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
+                <h3 class="mod-mb-0">Issue GST-Compliant Invoices</h3>
+                <p class="mod-ml-16 mod-mb-0 mod-text-right">Generate and issue invoices with correct GST details for every taxable sale of goods or services.</p>
             </div>
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-gap-12 mod-px-2 mod-py-4 mod-border-bottom-2">
-                <h3 class="mod-mb-0">Auditor Appointment</h3>
-                <p class="mod-ml-16 mod-mb-0 mod-text-right">An auditor must be appointed within 15 days of incorporation by filing Form ADT-1 with the RoC.</p>
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
+                <h3 class="mod-mb-0">Timely GST Payment</h3>
+                <p class="mod-ml-16 mod-mb-0 mod-text-right">Pay GST dues accurately and on time based on the tax periods applicable to your business.</p>
             </div>
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-gap-12 mod-px-2 mod-py-4 mod-border-bottom-2">
-                <h3 class="mod-mb-0">Financial Reporting</h3>
-                <p class="mod-ml-16 mod-mb-0 mod-text-right">File annual returns (Form MGT-7) and financial statements (Form AOC-4) every financial year.</p>
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
+                <h3 class="mod-mb-0">File GST Returns</h3>
+                <p class="mod-ml-16 mod-mb-0 mod-text-right">Submit monthly, quarterly, and annual GST returns (like GSTR-1, GSTR-3B, GSTR-9) within due dates.</p>
             </div>
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-gap-12 mod-px-2 mod-py-4">
-                <h3 class="mod-mb-0">Statutory Records</h3>
-                <p class="mod-ml-16 mod-mb-0 mod-text-right">Maintain key registers and ensure accounts are audited by a certified statutory auditor.</p>
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4">
+                <h3 class="mod-mb-0">Annual Reconciliation</h3>
+                <p class="mod-ml-16 mod-mb-0 mod-text-right">Perform yearly reconciliation of GST returns with financial statements and file GST Annual Return.</p>
             </div>
         </div>
     </div>
@@ -428,11 +417,11 @@
     <article class="banner bg-blue-100 mod-overflow-hidden py-40 px-4 p-lg-5 lg:mod-px-12 pb-xxl-4">
         <div class="row gy-32 gx-xl-40 mod-relative justify-content-center align-items-center">
             <div class="col-lg-12 d-flex flex-column mod-gap-8">
-                <h2 class="display-6 fw-bold mb-0">Register your Private Limited Company with <span
-                        class="text-blue mod-font-semibold">Us</span> in 5 Simple Steps</h2>
-                <p class="text-lg mb-0 pe-xl-80 me-xxl-4 mod-w-5/6 sm:mod-w-full">Starting your own private limited
-                    company is now easier than ever! Just follow these 5 simple steps, and we will handle the process
-                    with accuracy and efficiency. Let us guide you through every step!</p>
+                <h2 class="display-6 fw-bold mb-0">Register for GST with 
+                    <span class="text-blue mod-font-semibold">Us</span> in 5 Simple Steps
+                </h2>
+                <p class="text-lg mb-0 pe-xl-80 me-xxl-4 mod-w-5/6 sm:mod-w-full">Registering for GST is now a hassle-free process! Simply follow these 5 easy steps, and we will take care of everything for you. From filing the required forms to obtaining your GSTIN, we ensure a smooth and efficient process at every step!
+                </p>
                 <div
                     class="d-flex justify-content-center mod-mt-4 justify-content-lg-start gap-2 gap-sm-3 gap-xl-4 text-center svg-scale scale-4 sm:mod-flex-col sm:mod-w-full">
                     <figure class="mb-0 mod-flex mod-flex-col mod-items-start mod-text-left mod-gap-4">
@@ -442,10 +431,9 @@
                                     <path fill="currentColor"
                                         d="M1 20V17.2C1 16.6333 1.14583 16.1125 1.4375 15.6375C1.72917 15.1625 2.11667 14.8 2.6 14.55C3.63333 14.0333 4.68333 13.6458 5.75 13.3875C6.81667 13.1292 7.9 13 9 13C10.1 13 11.1833 13.1292 12.25 13.3875C13.3167 13.6458 14.3667 14.0333 15.4 14.55C15.8833 14.8 16.2708 15.1625 16.5625 15.6375C16.8542 16.1125 17 16.6333 17 17.2V20H1ZM19 20V17C19 16.2667 18.7958 15.5625 18.3875 14.8875C17.9792 14.2125 17.4 13.6333 16.65 13.15C17.5 13.25 18.3 13.4208 19.05 13.6625C19.8 13.9042 20.5 14.2 21.15 14.55C21.75 14.8833 22.2083 15.2542 22.525 15.6625C22.8417 16.0708 23 16.5167 23 17V20H19ZM9 12C7.9 12 6.95833 11.6083 6.175 10.825C5.39167 10.0417 5 9.1 5 8C5 6.9 5.39167 5.95833 6.175 5.175C6.95833 4.39167 7.9 4 9 4C10.1 4 11.0417 4.39167 11.825 5.175C12.6083 5.95833 13 6.9 13 8C13 9.1 12.6083 10.0417 11.825 10.825C11.0417 11.6083 10.1 12 9 12ZM19 8C19 9.1 18.6083 10.0417 17.825 10.825C17.0417 11.6083 16.1 12 15 12C14.8167 12 14.5833 11.9792 14.3 11.9375C14.0167 11.8958 13.7833 11.85 13.6 11.8C14.05 11.2667 14.3958 10.675 14.6375 10.025C14.8792 9.375 15 8.7 15 8C15 7.3 14.8792 6.625 14.6375 5.975C14.3958 5.325 14.05 4.73333 13.6 4.2C13.8333 4.11667 14.0667 4.0625 14.3 4.0375C14.5333 4.0125 14.7667 4 15 4C16.1 4 17.0417 4.39167 17.825 5.175C18.6083 5.95833 19 6.9 19 8ZM3 18H15V17.2C15 17.0167 14.9542 16.85 14.8625 16.7C14.7708 16.55 14.65 16.4333 14.5 16.35C13.6 15.9 12.6917 15.5625 11.775 15.3375C10.8583 15.1125 9.93333 15 9 15C8.06667 15 7.14167 15.1125 6.225 15.3375C5.30833 15.5625 4.4 15.9 3.5 16.35C3.35 16.4333 3.22917 16.55 3.1375 16.7C3.04583 16.85 3 17.0167 3 17.2V18ZM9 10C9.55 10 10.0208 9.80417 10.4125 9.4125C10.8042 9.02083 11 8.55 11 8C11 7.45 10.8042 6.97917 10.4125 6.5875C10.0208 6.19583 9.55 6 9 6C8.45 6 7.97917 6.19583 7.5875 6.5875C7.19583 6.97917 7 7.45 7 8C7 8.55 7.19583 9.02083 7.5875 9.4125C7.97917 9.80417 8.45 10 9 10Z" />
                                 </svg></span>
-                            <figcaption class="text-h6 mod-pl-3">1. Submit Your Documents</figcaption>
+                            <figcaption class="text-h6 mod-pl-3">1. Online Application</figcaption>
                         </div>
-                        <p class="mod-mt-1 text-gray-600">Share your documents with us, and we’ll verify them for the
-                            next steps in the process.</p>
+                        <p class="mod-mt-1 text-gray-600">Start by visiting the GST portal and filling out the GST REG-01 form. Provide necessary business details, including PAN card, nature of business, and other required information.</p>
                     </figure>
                     <figure class="mb-0 mod-flex mod-flex-col mod-items-start mod-text-left mod-gap-4">
                         <div class="mod-flex ">
@@ -454,10 +442,9 @@
                                     <path fill="currentColor"
                                         d="M1 20V17.2C1 16.6333 1.14583 16.1125 1.4375 15.6375C1.72917 15.1625 2.11667 14.8 2.6 14.55C3.63333 14.0333 4.68333 13.6458 5.75 13.3875C6.81667 13.1292 7.9 13 9 13C10.1 13 11.1833 13.1292 12.25 13.3875C13.3167 13.6458 14.3667 14.0333 15.4 14.55C15.8833 14.8 16.2708 15.1625 16.5625 15.6375C16.8542 16.1125 17 16.6333 17 17.2V20H1ZM19 20V17C19 16.2667 18.7958 15.5625 18.3875 14.8875C17.9792 14.2125 17.4 13.6333 16.65 13.15C17.5 13.25 18.3 13.4208 19.05 13.6625C19.8 13.9042 20.5 14.2 21.15 14.55C21.75 14.8833 22.2083 15.2542 22.525 15.6625C22.8417 16.0708 23 16.5167 23 17V20H19ZM9 12C7.9 12 6.95833 11.6083 6.175 10.825C5.39167 10.0417 5 9.1 5 8C5 6.9 5.39167 5.95833 6.175 5.175C6.95833 4.39167 7.9 4 9 4C10.1 4 11.0417 4.39167 11.825 5.175C12.6083 5.95833 13 6.9 13 8C13 9.1 12.6083 10.0417 11.825 10.825C11.0417 11.6083 10.1 12 9 12ZM19 8C19 9.1 18.6083 10.0417 17.825 10.825C17.0417 11.6083 16.1 12 15 12C14.8167 12 14.5833 11.9792 14.3 11.9375C14.0167 11.8958 13.7833 11.85 13.6 11.8C14.05 11.2667 14.3958 10.675 14.6375 10.025C14.8792 9.375 15 8.7 15 8C15 7.3 14.8792 6.625 14.6375 5.975C14.3958 5.325 14.05 4.73333 13.6 4.2C13.8333 4.11667 14.0667 4.0625 14.3 4.0375C14.5333 4.0125 14.7667 4 15 4C16.1 4 17.0417 4.39167 17.825 5.175C18.6083 5.95833 19 6.9 19 8ZM3 18H15V17.2C15 17.0167 14.9542 16.85 14.8625 16.7C14.7708 16.55 14.65 16.4333 14.5 16.35C13.6 15.9 12.6917 15.5625 11.775 15.3375C10.8583 15.1125 9.93333 15 9 15C8.06667 15 7.14167 15.1125 6.225 15.3375C5.30833 15.5625 4.4 15.9 3.5 16.35C3.35 16.4333 3.22917 16.55 3.1375 16.7C3.04583 16.85 3 17.0167 3 17.2V18ZM9 10C9.55 10 10.0208 9.80417 10.4125 9.4125C10.8042 9.02083 11 8.55 11 8C11 7.45 10.8042 6.97917 10.4125 6.5875C10.0208 6.19583 9.55 6 9 6C8.45 6 7.97917 6.19583 7.5875 6.5875C7.19583 6.97917 7 7.45 7 8C7 8.55 7.19583 9.02083 7.5875 9.4125C7.97917 9.80417 8.45 10 9 10Z" />
                                 </svg></span>
-                            <figcaption class="text-h6 mod-pl-3">2. Name Approval</figcaption>
+                            <figcaption class="text-h6 mod-pl-3">2. Documents Submission</figcaption>
                         </div>
-                        <p class="mod-mt-1 text-gray-600">Suggest two names, and we’ll apply for name approval through
-                            the SPICe Plus form.</p>
+                        <p class="mod-mt-1 text-gray-600">Upload the required documents such as proof of identity, address, and business constitution as per GST guidelines.</p>
                     </figure>
                     <figure class="mb-0 mod-flex mod-flex-col mod-items-start mod-text-left mod-gap-4">
                         <div class="mod-flex ">
@@ -466,10 +453,9 @@
                                     <path fill="currentColor"
                                         d="M1 20V17.2C1 16.6333 1.14583 16.1125 1.4375 15.6375C1.72917 15.1625 2.11667 14.8 2.6 14.55C3.63333 14.0333 4.68333 13.6458 5.75 13.3875C6.81667 13.1292 7.9 13 9 13C10.1 13 11.1833 13.1292 12.25 13.3875C13.3167 13.6458 14.3667 14.0333 15.4 14.55C15.8833 14.8 16.2708 15.1625 16.5625 15.6375C16.8542 16.1125 17 16.6333 17 17.2V20H1ZM19 20V17C19 16.2667 18.7958 15.5625 18.3875 14.8875C17.9792 14.2125 17.4 13.6333 16.65 13.15C17.5 13.25 18.3 13.4208 19.05 13.6625C19.8 13.9042 20.5 14.2 21.15 14.55C21.75 14.8833 22.2083 15.2542 22.525 15.6625C22.8417 16.0708 23 16.5167 23 17V20H19ZM9 12C7.9 12 6.95833 11.6083 6.175 10.825C5.39167 10.0417 5 9.1 5 8C5 6.9 5.39167 5.95833 6.175 5.175C6.95833 4.39167 7.9 4 9 4C10.1 4 11.0417 4.39167 11.825 5.175C12.6083 5.95833 13 6.9 13 8C13 9.1 12.6083 10.0417 11.825 10.825C11.0417 11.6083 10.1 12 9 12ZM19 8C19 9.1 18.6083 10.0417 17.825 10.825C17.0417 11.6083 16.1 12 15 12C14.8167 12 14.5833 11.9792 14.3 11.9375C14.0167 11.8958 13.7833 11.85 13.6 11.8C14.05 11.2667 14.3958 10.675 14.6375 10.025C14.8792 9.375 15 8.7 15 8C15 7.3 14.8792 6.625 14.6375 5.975C14.3958 5.325 14.05 4.73333 13.6 4.2C13.8333 4.11667 14.0667 4.0625 14.3 4.0375C14.5333 4.0125 14.7667 4 15 4C16.1 4 17.0417 4.39167 17.825 5.175C18.6083 5.95833 19 6.9 19 8ZM3 18H15V17.2C15 17.0167 14.9542 16.85 14.8625 16.7C14.7708 16.55 14.65 16.4333 14.5 16.35C13.6 15.9 12.6917 15.5625 11.775 15.3375C10.8583 15.1125 9.93333 15 9 15C8.06667 15 7.14167 15.1125 6.225 15.3375C5.30833 15.5625 4.4 15.9 3.5 16.35C3.35 16.4333 3.22917 16.55 3.1375 16.7C3.04583 16.85 3 17.0167 3 17.2V18ZM9 10C9.55 10 10.0208 9.80417 10.4125 9.4125C10.8042 9.02083 11 8.55 11 8C11 7.45 10.8042 6.97917 10.4125 6.5875C10.0208 6.19583 9.55 6 9 6C8.45 6 7.97917 6.19583 7.5875 6.5875C7.19583 6.97917 7 7.45 7 8C7 8.55 7.19583 9.02083 7.5875 9.4125C7.97917 9.80417 8.45 10 9 10Z" />
                                 </svg></span>
-                            <figcaption class="text-h6 mod-pl-3">3. Company Registration</figcaption>
+                            <figcaption class="text-h6 mod-pl-3">3. GST Application Reference Number (ARN)</figcaption>
                         </div>
-                        <p class="mod-mt-1 text-gray-600">We’ll file MOA, AOA, and SPICe Plus form, and submit to MCA
-                            for company registration.
+                        <p class="mod-mt-1 text-gray-600">After submission, an ARN (GST Application Reference Number) will be generated. This number allows you to track your application status.
                         </p>
                     </figure>
                     <figure class="mb-0 mod-flex mod-flex-col mod-items-start mod-text-left mod-gap-4">
@@ -479,10 +465,9 @@
                                     <path fill="currentColor"
                                         d="M1 20V17.2C1 16.6333 1.14583 16.1125 1.4375 15.6375C1.72917 15.1625 2.11667 14.8 2.6 14.55C3.63333 14.0333 4.68333 13.6458 5.75 13.3875C6.81667 13.1292 7.9 13 9 13C10.1 13 11.1833 13.1292 12.25 13.3875C13.3167 13.6458 14.3667 14.0333 15.4 14.55C15.8833 14.8 16.2708 15.1625 16.5625 15.6375C16.8542 16.1125 17 16.6333 17 17.2V20H1ZM19 20V17C19 16.2667 18.7958 15.5625 18.3875 14.8875C17.9792 14.2125 17.4 13.6333 16.65 13.15C17.5 13.25 18.3 13.4208 19.05 13.6625C19.8 13.9042 20.5 14.2 21.15 14.55C21.75 14.8833 22.2083 15.2542 22.525 15.6625C22.8417 16.0708 23 16.5167 23 17V20H19ZM9 12C7.9 12 6.95833 11.6083 6.175 10.825C5.39167 10.0417 5 9.1 5 8C5 6.9 5.39167 5.95833 6.175 5.175C6.95833 4.39167 7.9 4 9 4C10.1 4 11.0417 4.39167 11.825 5.175C12.6083 5.95833 13 6.9 13 8C13 9.1 12.6083 10.0417 11.825 10.825C11.0417 11.6083 10.1 12 9 12ZM19 8C19 9.1 18.6083 10.0417 17.825 10.825C17.0417 11.6083 16.1 12 15 12C14.8167 12 14.5833 11.9792 14.3 11.9375C14.0167 11.8958 13.7833 11.85 13.6 11.8C14.05 11.2667 14.3958 10.675 14.6375 10.025C14.8792 9.375 15 8.7 15 8C15 7.3 14.8792 6.625 14.6375 5.975C14.3958 5.325 14.05 4.73333 13.6 4.2C13.8333 4.11667 14.0667 4.0625 14.3 4.0375C14.5333 4.0125 14.7667 4 15 4C16.1 4 17.0417 4.39167 17.825 5.175C18.6083 5.95833 19 6.9 19 8ZM3 18H15V17.2C15 17.0167 14.9542 16.85 14.8625 16.7C14.7708 16.55 14.65 16.4333 14.5 16.35C13.6 15.9 12.6917 15.5625 11.775 15.3375C10.8583 15.1125 9.93333 15 9 15C8.06667 15 7.14167 15.1125 6.225 15.3375C5.30833 15.5625 4.4 15.9 3.5 16.35C3.35 16.4333 3.22917 16.55 3.1375 16.7C3.04583 16.85 3 17.0167 3 17.2V18ZM9 10C9.55 10 10.0208 9.80417 10.4125 9.4125C10.8042 9.02083 11 8.55 11 8C11 7.45 10.8042 6.97917 10.4125 6.5875C10.0208 6.19583 9.55 6 9 6C8.45 6 7.97917 6.19583 7.5875 6.5875C7.19583 6.97917 7 7.45 7 8C7 8.55 7.19583 9.02083 7.5875 9.4125C7.97917 9.80417 8.45 10 9 10Z" />
                                 </svg></span>
-                            <figcaption class="text-h6 mod-pl-3">4. Incorporation Certificate</figcaption>
+                            <figcaption class="text-h6 mod-pl-3">4. Verification and Approval</figcaption>
                         </div>
-                        <p class="mod-mt-1 text-gray-600">MCA approves the registration, and you’ll receive your
-                            Incorporation Certificate, CIN, PAN, and TAN.</p>
+                        <p class="mod-mt-1 text-gray-600">The GST department will verify the application and documents. If everything is in order, your GST registration will be approved, and you will receive your GSTIN.</p>
                     </figure>
                     <figure class="mb-0 mod-flex mod-flex-col mod-items-start mod-text-left mod-gap-4">
                         <div class="mod-flex ">
@@ -491,10 +476,9 @@
                                     <path fill="currentColor"
                                         d="M1 20V17.2C1 16.6333 1.14583 16.1125 1.4375 15.6375C1.72917 15.1625 2.11667 14.8 2.6 14.55C3.63333 14.0333 4.68333 13.6458 5.75 13.3875C6.81667 13.1292 7.9 13 9 13C10.1 13 11.1833 13.1292 12.25 13.3875C13.3167 13.6458 14.3667 14.0333 15.4 14.55C15.8833 14.8 16.2708 15.1625 16.5625 15.6375C16.8542 16.1125 17 16.6333 17 17.2V20H1ZM19 20V17C19 16.2667 18.7958 15.5625 18.3875 14.8875C17.9792 14.2125 17.4 13.6333 16.65 13.15C17.5 13.25 18.3 13.4208 19.05 13.6625C19.8 13.9042 20.5 14.2 21.15 14.55C21.75 14.8833 22.2083 15.2542 22.525 15.6625C22.8417 16.0708 23 16.5167 23 17V20H19ZM9 12C7.9 12 6.95833 11.6083 6.175 10.825C5.39167 10.0417 5 9.1 5 8C5 6.9 5.39167 5.95833 6.175 5.175C6.95833 4.39167 7.9 4 9 4C10.1 4 11.0417 4.39167 11.825 5.175C12.6083 5.95833 13 6.9 13 8C13 9.1 12.6083 10.0417 11.825 10.825C11.0417 11.6083 10.1 12 9 12ZM19 8C19 9.1 18.6083 10.0417 17.825 10.825C17.0417 11.6083 16.1 12 15 12C14.8167 12 14.5833 11.9792 14.3 11.9375C14.0167 11.8958 13.7833 11.85 13.6 11.8C14.05 11.2667 14.3958 10.675 14.6375 10.025C14.8792 9.375 15 8.7 15 8C15 7.3 14.8792 6.625 14.6375 5.975C14.3958 5.325 14.05 4.73333 13.6 4.2C13.8333 4.11667 14.0667 4.0625 14.3 4.0375C14.5333 4.0125 14.7667 4 15 4C16.1 4 17.0417 4.39167 17.825 5.175C18.6083 5.95833 19 6.9 19 8ZM3 18H15V17.2C15 17.0167 14.9542 16.85 14.8625 16.7C14.7708 16.55 14.65 16.4333 14.5 16.35C13.6 15.9 12.6917 15.5625 11.775 15.3375C10.8583 15.1125 9.93333 15 9 15C8.06667 15 7.14167 15.1125 6.225 15.3375C5.30833 15.5625 4.4 15.9 3.5 16.35C3.35 16.4333 3.22917 16.55 3.1375 16.7C3.04583 16.85 3 17.0167 3 17.2V18ZM9 10C9.55 10 10.0208 9.80417 10.4125 9.4125C10.8042 9.02083 11 8.55 11 8C11 7.45 10.8042 6.97917 10.4125 6.5875C10.0208 6.19583 9.55 6 9 6C8.45 6 7.97917 6.19583 7.5875 6.5875C7.19583 6.97917 7 7.45 7 8C7 8.55 7.19583 9.02083 7.5875 9.4125C7.97917 9.80417 8.45 10 9 10Z" />
                                 </svg></span>
-                            <figcaption class="text-h6 mod-pl-3">5. Open Your Bank Account</figcaption>
+                            <figcaption class="text-h6 mod-pl-3">5. GST Certificate</figcaption>
                         </div>
-                        <p class="mod-mt-1 text-gray-600">Use your company’s documents to open a bank account and start
-                            your business operations.</p>
+                        <p class="mod-mt-1 text-gray-600">Upon approval, you will receive your GST Registration Certificate, which includes your GSTIN and other relevant registration details.</p>
                     </figure>
                 </div>
                 <div>

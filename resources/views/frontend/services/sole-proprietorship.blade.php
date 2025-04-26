@@ -377,11 +377,11 @@
 </section>
 
 <section class="container my-40" id="compliances">
-    <h1 class="display-6 mb-32 mod-font-semibold mod-text-s-28">Compliance Required for Forming a Sole Proprietorship
+    <h1 class="display-6 mb-32 mod-font-semibold mod-text-s-28">Annual Compliance for Sole Proprietorship
         Company</h1>
 
-    <div class="mod-grid mod-mt-4 mod-gap-8 mod-grid-template-col-2 sm:mod-grid-template-col-2">
-        <div class="mod-pr-8 mod-flex mod-flex-col">
+    <div class="mod-grid mod-mt-4 mod-gap-8 mod-grid-template-col-2 sm:mod-grid-template-col-1">
+        <div class="mod-pr-8 mod-flex mod-flex-col sm:mod-order-2">
             <h3 class="mod-font-semibold mod-leading-loose">Why Compliance Matters</h3>
             <p class="mod-mt-2 mod-pr-24">
                 For sole proprietors, compliance ensures smooth business operations, reduces legal risks, and builds credibility with
@@ -414,24 +414,24 @@
                 </a>
             </div>
         </div>
-        <div class="mod-px-2 mod-flex mod-flex-col mod-gap-2">
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-gap-12 mod-px-2 mod-py-4 mod-border-bottom-2">
+        <div class="mod-px-2 mod-flex mod-flex-col mod-gap-2 sm:mod-order-1">
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
                 <h3 class="mod-mb-0">Income Tax Returns</h3>
                 <p class="mod-ml-16 mod-mb-0 mod-text-right">Form ITR-3 to be filed by 31st July of the assessment year.</p>
             </div>
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-gap-12 mod-px-2 mod-py-4 mod-border-bottom-2">
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
                 <h3 class="mod-mb-0">GST Returns (if applicable)</h3>
                 <p class="mod-ml-16 mod-mb-0 mod-text-right">Forms GSTR-1 and GSTR-3B must be filed monthly or quarterly based on turnover.</p>
             </div>
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-gap-12 mod-px-2 mod-py-4 mod-border-bottom-2">
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
                 <h3 class="mod-mb-0">Professional Tax</h3>
                 <p class="mod-ml-16 mod-mb-0 mod-text-right">Compliances vary by state, usually quarterly or annually.</p>
             </div>
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-gap-12 mod-px-2 mod-py-4 mod-border-bottom-2">
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
                 <h3 class="mod-mb-0">Maintain Books of Accounts</h3>
                 <p class="mod-ml-16 mod-mb-0 mod-text-right">Financial records should be updated regularly as per business activity.</p>
             </div>
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-gap-12 mod-px-2 mod-py-4">
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4">
                 <h3 class="mod-mb-0">Audit Requirement</h3>
                 <p class="mod-ml-16 mod-mb-0 mod-text-right">Applicable only if turnover exceeds ₹1 crore (GST) or ₹50 lakh (business income).</p>
             </div>

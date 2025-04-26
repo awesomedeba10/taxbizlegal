@@ -1,6 +1,6 @@
 <nav id="headerNavbar" class="mod-nav nav-bg navbar" data-navbar>
     <span id="pageCategory" style="display: none">homeV2</span>
-    <div class="mod-container mod-h-full mod-w-full mod-flex sm:mod-px-4 mod-z-500" id="navbarContainer">
+    <div class="mod-container mod-h-full mod-w-full mod-flex sm:mod-px-0 mod-z-500" id="navbarContainer">
         <div class="sm:mod-hidden mod-flex mod-justify-between mod-items-center mod-h-full mod-w-1/5">
             <a data-label="Clear" class="mod-flex mod-items-center" href="{{ route('front.home') }}">
 
@@ -51,7 +51,8 @@
                                                                 class="group mod-items-center mod-flex mod-items-start mod-py-2 mod-pl-4 mod-dropdown-menu-item ">
                                                                 <div class="mod-w-2/12">
                                                                     <img src="{{ asset('images/img/navbar_icon.png') }}"
-                                                                        height="42" width="42" alt="GST">
+                                                                        height="42" width="42"
+                                                                        alt="{{ $service['name'] }}">
                                                                 </div>
                                                                 <div class="mod-w-10/12">
                                                                     <p
@@ -120,32 +121,6 @@
                                     <div class="mod-ml-6"></div>
                                 </div>
                             </div>
-                            <div class="sm:mod-px-0 mod-px-2 mod-py-3 mod-font-medium mod-whitespace-no-wrap mod-dropdown-menu-item mod-text-compact "
-                                style="margin-top: 0px; margin-bottom: 0px; align-items: flex-start;">
-
-                                <div class="mod-w-full">
-                                    <a target="_blank"
-                                        class="mod-text-font-500 mod-flex mod-items-start mod-gap-2 mod-w-full mod-px-2"
-                                        href="">
-
-                                        <span>Media &amp; Press</span>
-                                    </a>
-                                    <div class="mod-ml-6"></div>
-                                </div>
-                            </div>
-                            <div class="sm:mod-px-0 mod-px-2 mod-py-3 mod-font-medium mod-whitespace-no-wrap mod-dropdown-menu-item mod-text-compact "
-                                style="margin-top: 0px; margin-bottom: 0px; align-items: flex-start;">
-
-                                <div class="mod-w-full">
-                                    <a target="_blank"
-                                        class="mod-text-font-500 mod-flex mod-items-start mod-gap-2 mod-w-full mod-px-2"
-                                        href="https:/taxbizlegal.com/s/trust?utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar">
-
-                                        <span>Trust &amp; Safety</span>
-                                    </a>
-                                    <div class="mod-ml-6"></div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -183,8 +158,7 @@
                         </span>
                     </button>
                     <div class="header-button mod-flex mod-justify-end">
-                        <a class="btn-custom-medium" href="{{ route('front.contact') }}"
-                            target="_self">
+                        <a class="btn-custom-medium" href="{{ route('front.contact') }}" target="_self">
                             <span class="btn-text btn-text--back">Get In Touch</span>
                             <span class="btn-icon btn-icon--blue">
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -302,336 +276,92 @@
         </div>
 
         {{-- Mobile Header Starts here --}}
-        <div class="mod-hidden sm:mod-flex mod-h-full mod-w-3/4">
+        <div class="mod-hidden sm:mod-flex mod-h-full mod-w-3/5">
             <a data-label="Clear" class="mod-flex mod-items-center" href="{{ route('front.home') }}">
-
                 <img class="mod-mr-6 sm:mod-m-0 sm:mod-w-10/12" width="136"
-                    src="{{ asset('images/svg/tbl_logo.svg') }}" alt="clear">
-
-
+                    src="{{ asset('images/svg/tbl_logo.svg') }}" alt="TaxBizLegal">
             </a>
-
-            <div
-                class="mod-flex mod-text-s-14 mod-font-medium mod-py-3 mod-cursor-pointer mod-w-1/3  mobile-spcl-sidenav-toggle">
-                Services
-                <span class="mod-inline-block mod-caret mod-caret-down mod-ml-3 md:mod-ml-0"></span>
-            </div>
-            <div class="mod-sidenav mod-p-4 header-sidenav mobile-spcl-sidenav">
-                <div class="mod-flex mod-flex-wrap mod-pb-8 mod-mb-8">
-                    <div class="mod-w-full ">
-                        <div class="mod-mb-4">
-                            <div class="mod-flex mod-flex-wrap mod-justify-between mod-pt-4 mod-pb-2">
-                                <div class="mod-w-1/2  mod-text-font-200 mod-text-s-14">BUSINESS</div>
-                                <div class="mod-w-1/2 mod-text-s-14 mod-text-right mod-pr-4"></div>
-                            </div>
-                            <hr class="divider">
-                            <div class="mod-block mod-py-4">
-                                <a data-label="GST" target="_blank" referrerpolicy="no-referrer-when-downgrade">
-                                    <div class="mod-flex mod-items-center mod-p-2">
-                                        <div class="mod-w-1/12">
-                                            <img src="https://assets1.cleartax-cdn.com/cleartax/images/1683875669_cleargst.png"
-                                                height="30" width="30" alt="GST">
-                                        </div>
-                                        <div class="mod-w-11/12">
-                                            <p class="mod-text-s-14 mod-font-medium mod-text-font-500">GST</p>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a data-label="Accounts Payable"
-                                    onclick="handleTrack({label: 'navbar_Products_Dropdown_button_INDIVIDUAL PRODUCTS', obj: this})"
-                                    target="_blank" href="" referrerpolicy="no-referrer-when-downgrade">
-                                    <div class="mod-flex mod-items-center mod-p-2">
-                                        <div class="mod-w-1/12">
-                                            <img src="https://assets.clear.in/cleartax/images/1702036465_group181447822.png"
-                                                height="30" width="30" alt="Accounts Payable">
-                                        </div>
-                                        <div class="mod-w-11/12">
-                                            <p class="mod-text-s-14 mod-font-medium mod-text-font-500">Accounts Payable
-                                            </p>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a data-label="Vendor Management"
-                                    onclick="handleTrack({label: 'navbar_Products_Dropdown_button_INDIVIDUAL PRODUCTS', obj: this})"
-                                    target="_blank"
-                                    href="https:/taxbizlegal.com/vendor-management-software?utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar"
-                                    referrerpolicy="no-referrer-when-downgrade">
-                                    <div class="mod-flex mod-items-center mod-p-2">
-                                        <div class="mod-w-1/12">
-                                            <img src="https://cdn.prod.website-files.com/6093bce33d9b4bae841b04e3/667addb87d1a644b52ef6af2_Vendor%20management%20(1).png"
-                                                height="30" width="30" alt="Vendor Management">
-                                        </div>
-                                        <div class="mod-w-11/12">
-                                            <p class="mod-text-s-14 mod-font-medium mod-text-font-500">Vendor
-                                                Management</p>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a data-label="MaxITC"
-                                    onclick="handleTrack({label: 'navbar_Products_Dropdown_button_INDIVIDUAL PRODUCTS', obj: this})"
-                                    target="_blank" href="" referrerpolicy="no-referrer-when-downgrade">
-                                    <div class="mod-flex mod-items-center mod-p-2">
-                                        <div class="mod-w-1/12">
-                                            <img src="https://assets1.cleartax-cdn.com/cleartax/images/1676974439_group1000004144.png"
-                                                height="30" width="30" alt="MaxITC">
-                                        </div>
-                                        <div class="mod-w-11/12">
-                                            <p class="mod-text-s-14 mod-font-medium mod-text-font-500">MaxITC</p>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a data-label="E-Invoicing &amp; E-Way Bill"
-                                    onclick="handleTrack({label: 'navbar_Products_Dropdown_button_INDIVIDUAL PRODUCTS', obj: this})"
-                                    target="_blank"
-                                    href="https:/taxbizlegal.com/s/e-invoicing-enterprise-software?utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar"
-                                    referrerpolicy="no-referrer-when-downgrade">
-                                    <div class="mod-flex mod-items-center mod-p-2">
-                                        <div class="mod-w-1/12">
-                                            <img src="https://assets1.cleartax-cdn.com/cleartax/images/1676974427_group1000004146.png"
-                                                height="30" width="30" alt="E-Invoicing &amp; E-Way Bill">
-                                        </div>
-                                        <div class="mod-w-11/12">
-                                            <p class="mod-text-s-14 mod-font-medium mod-text-font-500">E-Invoicing
-                                                &amp; E-Way Bill</p>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a data-label="TDS"
-                                    onclick="handleTrack({label: 'navbar_Products_Dropdown_button_INDIVIDUAL PRODUCTS', obj: this})"
-                                    target="_blank"
-                                    href="https:/taxbizlegal.com/tds?utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar"
-                                    referrerpolicy="no-referrer-when-downgrade">
-                                    <div class="mod-flex mod-items-center mod-p-2">
-                                        <div class="mod-w-1/12">
-                                            <img src=" https://assets1.cleartax-cdn.com/cleartax/images/1683875525_id.png"
-                                                height="30" width="30" alt="TDS">
-                                        </div>
-                                        <div class="mod-w-11/12">
-                                            <p class="mod-text-s-14 mod-font-medium mod-text-font-500">TDS</p>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a data-label="Invoice Discounting"
-                                    onclick="handleTrack({label: 'navbar_Products_Dropdown_button_INDIVIDUAL PRODUCTS', obj: this})"
-                                    target="_blank" href="" referrerpolicy="no-referrer-when-downgrade">
-                                    <div class="mod-flex mod-items-center mod-p-2">
-                                        <div class="mod-w-1/12">
-                                            <img src="https://assets1.cleartax-cdn.com/cleartax/images/1683875611_cleartds.png"
-                                                height="30" width="30" alt="Invoice Discounting">
-                                        </div>
-                                        <div class="mod-w-11/12">
-                                            <p class="mod-text-s-14 mod-font-medium mod-text-font-500">Invoice
-                                                Discounting</p>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a data-label="Financing"
-                                    onclick="handleTrack({label: 'navbar_Products_Dropdown_button_INDIVIDUAL PRODUCTS', obj: this})"
-                                    target="_blank" href="" referrerpolicy="no-referrer-when-downgrade">
-                                    <div class="mod-flex mod-items-center mod-p-2">
-                                        <div class="mod-w-1/12">
-                                            <img src="https://assets.clear.in/cleartax/images/1702036542_financing.png"
-                                                height="30" width="30" alt="Financing">
-                                        </div>
-                                        <div class="mod-w-11/12">
-                                            <p class="mod-text-s-14 mod-font-medium mod-text-font-500">Financing</p>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a data-label="Cimplyfive"
-                                    onclick="handleTrack({label: 'navbar_Products_Dropdown_button_INDIVIDUAL PRODUCTS', obj: this})"
-                                    target="_blank" href="" referrerpolicy="no-referrer-when-downgrade">
-                                    <div class="mod-flex mod-items-center mod-p-2">
-                                        <div class="mod-w-1/12">
-                                            <img src="https://assets1.cleartax-cdn.com/cleartax/images/1683876414_cimplyfive.png"
-                                                height="30" width="30" alt="Cimplyfive">
-                                        </div>
-                                        <div class="mod-w-11/12">
-                                            <p class="mod-text-s-14 mod-font-medium mod-text-font-500">Cimplyfive</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="mod-mb-4">
-                            <div class="mod-flex mod-flex-wrap mod-justify-between mod-pt-4 mod-pb-2">
-                                <div class="mod-w-1/2 mod-text-font-200 mod-text-s-14">PRODUCT SUITES</div>
-                                <div class="mod-w-1/2 mod-text-s-14 mod-text-right mod-pr-4"></div>
-                            </div>
-                            <hr class="divider">
-                            <div class="mod-block mod-py-4">
-                                <a data-label="Clear Finance Cloud"
-                                    onclick="handleTrack({label: 'navbar_Products_Dropdown_button_PRODUCT SUITES', obj: this})"
-                                    target="_blank" href="" referrerpolicy="no-referrer-when-downgrade">
-                                    <div class="mod-flex mod-items-center mod-p-2">
-                                        <div class="mod-w-1/12">
-                                            <img src="https://assets1.cleartax-cdn.com/cleartax/images/1683876315_cfc.png"
-                                                height="30" width="30" alt="Clear Finance Cloud">
-                                        </div>
-                                        <div class="mod-w-11/12">
-                                            <p class="mod-text-s-14 mod-font-medium mod-text-font-500">Clear Finance
-                                                Cloud</p>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a data-label="Clear Compliance Cloud"
-                                    onclick="handleTrack({label: 'navbar_Products_Dropdown_button_PRODUCT SUITES', obj: this})"
-                                    target="_blank"
-                                    href="https:/taxbizlegal.com/s/clear-compliance-cloud?utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar"
-                                    referrerpolicy="no-referrer-when-downgrade">
-                                    <div class="mod-flex mod-items-center mod-p-2">
-                                        <div class="mod-w-1/12">
-                                            <img src="https://assets1.cleartax-cdn.com/cleartax/images/1683876341_ccc.png"
-                                                height="30" width="30" alt="Clear Compliance Cloud">
-                                        </div>
-                                        <div class="mod-w-11/12">
-                                            <p class="mod-text-s-14 mod-font-medium mod-text-font-500">Clear Compliance
-                                                Cloud</p>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a data-label="Clear Supply Chain Cloud"
-                                    onclick="handleTrack({label: 'navbar_Products_Dropdown_button_PRODUCT SUITES', obj: this})"
-                                    target="_blank" href="" referrerpolicy="no-referrer-when-downgrade">
-                                    <div class="mod-flex mod-items-center mod-p-2">
-                                        <div class="mod-w-1/12">
-                                            <img src="https://assets.clear.in/cleartax/images/1716990871_supplaychain_.svg"
-                                                height="30" width="30" alt="Clear Supply Chain Cloud">
-                                        </div>
-                                        <div class="mod-w-11/12">
-                                            <p class="mod-text-s-14 mod-font-medium mod-text-font-500">Clear Supply
-                                                Chain Cloud</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="mod-mb-4">
-                            <div class="mod-flex mod-flex-wrap mod-justify-between mod-pt-4 mod-pb-2">
-                                <div class="mod-w-1/2 mod-text-font-200 mod-text-s-14">CONSUMER PRODUCTS</div>
-                                <div class="mod-w-1/2 mod-text-s-14 mod-text-right mod-pr-4"></div>
-                            </div>
-                            <hr class="divider">
-                            <div class="mod-block mod-py-4">
-                                <a data-label="ITR Filing"
-                                    onclick="handleTrack({label: 'navbar_Products_Dropdown_button_CONSUMER PRODUCTS', obj: this})"
-                                    target="_blank"
-                                    href="https:/taxbizlegal.com/income-tax-efiling?utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar"
-                                    referrerpolicy="no-referrer-when-downgrade">
-                                    <div class="mod-flex mod-items-center mod-p-2">
-                                        <div class="mod-w-1/12">
-                                            <img src="https://assets1.cleartax-cdn.com/cleartax/images/1683875678_fileitr.png"
-                                                height="30" width="30" alt="ITR Filing">
-                                        </div>
-                                        <div class="mod-w-11/12">
-                                            <p class="mod-text-s-14 mod-font-medium mod-text-font-500">ITR Filing</p>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a data-label="Tax Consultant Services"
-                                    onclick="handleTrack({label: 'navbar_Products_Dropdown_button_CONSUMER PRODUCTS', obj: this})"
-                                    target="_blank"
-                                    href="https:/taxbizlegal.com/services/?utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar"
-                                    referrerpolicy="no-referrer-when-downgrade">
-                                    <div class="mod-flex mod-items-center mod-p-2">
-                                        <div class="mod-w-1/12">
-                                            <img src="https://assets1.cleartax-cdn.com/cleartax/images/1683876285_taxconsultant.png"
-                                                height="30" width="30" alt="Tax Consultant Services">
-                                        </div>
-                                        <div class="mod-w-11/12">
-                                            <p class="mod-text-s-14 mod-font-medium mod-text-font-500">Tax Consultant
-                                                Services</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
-        <div class="mod-w-1/5 mod-hidden mod-items-center sm:mod-flex sm:mod-justify-end mobile-sidenav">
+        <div class="mod-w-1/5 mod-hidden mod-items-center mod-ml-12 sm:mod-flex sm:mod-justify-end mobile-sidenav">
             <div class="mod-toggle mobile-sidenav-bc">
                 <div class="mod-toggle-bar"></div>
                 <div class="mod-toggle-bar"></div>
                 <div class="mod-toggle-bar mod-toggle-bar-half"></div>
             </div>
             <div class="mod-sidenav mobile-sidenav-content mod-p-4 header-sidenav">
-                <div class="mod-flex mod-flex-wrap mod-pb-8 mod-mb-8">
+                <div class="mod-flex mod-flex-wrap mod-pb-8 mod-mb-8 mod-gap-3">
+                    @foreach (config('headers') as $headers)
+                    <div class="mod-mb-4 mod-w-full ">
+                        <details class="mod-w-full mod-accordian">
+                            <summary class="mod-cursor-pointer">
+                                <div class="mod-flex mod-items-center">
+                                    <p class="mod-w-11/12 mod-text-compact mod-ml-1 mod-my-0 mod-text-font-500 mod-font-medium focus:mod-text-blue-350">
+                                        {{ $headers['title'] }}
+                                    </p>
+                                    <div class="mod-w-1/12 mod-accordian-caret mod-order-3 mod-ml-auto"></div>
+                                </div>
+                            </summary>
+                            <div class="mod-flex mod-flex-wrap mod-pb-2 mod-mb-2">
+                                <div class="mod-w-full ">
+                                    @foreach ($headers['sub_headers'] as $sub)
+                                    <div class="mod-ml-5">
+                                        <div class="mod-flex mod-flex-wrap mod-justify-between mod-pt-4 mod-pb-2">
+                                            <div class="mod-w-1/2  mod-text-font-200 mod-text-s-14">{{ $sub['title'] }}</div>
+                                            <div class="mod-w-1/2 mod-text-s-14 mod-text-right mod-pr-4"></div>
+                                        </div>
+                                        <hr class="divider mod-my-3">
+                                        <div class="mod-block">
+                                            @foreach ($sub['services'] as $service)
+                                            <a data-label="{{ $service['name'] }}" target="_blank"
+                                                referrerpolicy="no-referrer-when-downgrade">
+                                                <div class="mod-flex mod-items-center mod-pl-4 mod-py-2">
+                                                    <div class="mod-w-1/12">
+                                                        <img src="{{ asset('images/img/navbar_icon.png') }}"
+                                                            height="30" width="30" alt="{{ $service['name'] }}">
+                                                    </div>
+                                                    <div class="mod-w-11/12">
+                                                        <p class="mod-text-s-14 mod-font-medium mod-text-font-500 mod-mb-0">{{ $service['name'] }}</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            @endforeach
+                                        </div>
+                                    </div>
+                                    @endforeach
+                                </div>
+                            </div>
+                        </details>
+                    </div>
+                    @endforeach
                     <div class="mod-mb-4 mod-w-full ">
                         <details class="mod-w-full mod-accordian">
                             <summary class="mod-cursor-pointer">
                                 <div class="mod-flex mod-items-center">
                                     <p
-                                        class="mod-w-11/12 mod-text-compact mod-ml-4 mod-my-0 mod-text-font-500 mod-font-medium focus:mod-text-blue-350">
+                                        class="mod-w-11/12 mod-text-compact mod-ml-1 mod-my-0 mod-text-font-500 mod-font-medium focus:mod-text-blue-350">
                                         Explore Us</p>
                                     <div class="mod-w-1/12 mod-accordian-caret mod-order-3 mod-ml-auto"></div>
                                 </div>
                             </summary>
                             <div class="mod-block mod-px-6 mod-mt-4">
                                 <div class="mod-p-2 mod-text-font-500 mod-text-s-14 mod-font-medium">
-                                    <a onclick="handleTrack({label: 'navbar_Company_Dropdown_button', obj: this})"
-                                        target="_blank" class="hover:mod-text-blue-350"
-                                        href="https://www.clear.in/s/careers?utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar">Careers</a>
+                                    <a {{-- onclick="handleTrack({label: 'navbar_Company_Dropdown_button', obj: this})" --}} target="_blank" class="hover:mod-text-blue-350"
+                                        href="{{ route('front.contact') }}">Contact Us</a>
                                 </div>
                                 <div class="mod-p-2 mod-text-font-500 mod-text-s-14 mod-font-medium">
-                                    <a onclick="handleTrack({label: 'navbar_Company_Dropdown_button', obj: this})"
-                                        target="_blank" class="hover:mod-text-blue-350"
-                                        href="https://www.clear.in/s/press?utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar">Media
-                                        &amp; Press</a>
+                                    <a target="_blank" class="hover:mod-text-blue-350"
+                                        href="{{ route('front.about') }}">About Us</a>
                                 </div>
                                 <div class="mod-p-2 mod-text-font-500 mod-text-s-14 mod-font-medium">
-                                    <a onclick="handleTrack({label: 'navbar_Company_Dropdown_button', obj: this})"
-                                        target="_blank" class="hover:mod-text-blue-350"
-                                        href="https:/taxbizlegal.com/s/trust?utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar">Trust
-                                        &amp; Safety</a>
+                                    <a target="_blank" class="hover:mod-text-blue-350" href="">Careers</a>
                                 </div>
                             </div>
                         </details>
                     </div>
                     <div
-                        class="mod-flex mod-h-full mod-items-center sm:mod-w-1/2 sm:mod-mt-8 sm:mod-px-2 nav-logged-out-container ">
-                        <a onclick="handleTrack({label: 'navbar_button', modal: 'get-started', obj: this});"
-                            class="home-file-now mod-btn mod-btn-blue mod-cursor-pointer mod-whitespace-no-wrap  mod-ml-6 lg:mod-ml-2 md:mod-ml-1 sm:mod-ml-0  sm:mod-w-full sm:mod-hidden"
+                        class="mod-flex mod-h-full mod-items-center sm:mod-w-1/2 sm:mod-mt-4 nav-logged-out-container ">
+                        <a class="home-file-now mod-btn mod-btn-blue mod-cursor-pointer mod-whitespace-no-wrap mod-ml-6 lg:mod-ml-2 md:mod-ml-1 sm:mod-ml-0 sm:mod-w-full"
                             referrerpolicy="no-referrer-when-downgrade">Get started</a>
-                    </div>
-                    <div class="mod-mb-4 mod-w-full nav-logged-in-container mod-hidden">
-                        <details class="mod-w-full mod-accordian">
-                            <summary class="mod-cursor-pointer">
-                                <div class="mod-flex mod-items-center">
-                                    <p
-                                        class="mod-w-11/12 mod-text-compact mod-ml-4 mod-text-font-500 mod-font-medium focus:mod-text-blue-350">
-                                        My Account</p>
-                                    <div class="mod-w-1/12 mod-accordian-caret mod-order-3 mod-ml-auto"></div>
-                                </div>
-                            </summary>
-                            <div class="mod-block mod-px-6 mod-mt-4">
-                                <div class="mod-p-2 mod-text-font-500 mod-text-s-14 mod-font-medium">
-                                    <a onclick="handleTrack({label: 'navbar_My Account_Dropdown_button', obj: this})"
-                                        target="_blank" class="hover:mod-text-blue-350"
-                                        href="https:/taxbizlegal.com/services/my_orders?utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar">My
-                                        orders</a>
-                                </div>
-                                <div class="mod-p-2 mod-text-font-500 mod-text-s-14 mod-font-medium">
-                                    <a onclick="handleTrack({label: 'navbar_My Account_Dropdown_button', obj: this})"
-                                        target="_blank" class="hover:mod-text-blue-350" href="">My
-                                        GST</a>
-                                </div>
-                                <div class="mod-p-2 mod-text-font-500 mod-text-s-14 mod-font-medium">
-                                    <a onclick="handleTrack({label: 'navbar_My Account_Dropdown_button', obj: this})"
-                                        target="_blank" class="hover:mod-text-blue-350"
-                                        href="https:/taxbizlegal.com/launchpad?source=home&amp;utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar">All
-                                        Products</a>
-                                </div>
-                                <div class="mod-w-full mod-p-2 nav-logged-in-container mod-hidden">
-                                    <a href="https:/taxbizlegal.com/?utm_ref=%2Fs%2Fv2%2Fhomev2%2F_pages_navbar#"
-                                        onclick="logout()">
-                                        <p class="mod-inline-block mod-text-font-500 mod-text-s-14 mod-font-medium">
-                                            Logout</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </details>
                     </div>
                 </div>
             </div>
