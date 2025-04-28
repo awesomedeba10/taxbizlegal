@@ -34,20 +34,22 @@
                 </div>
                 <div class="col-lg-2 col-md-2 col-sm-6 col-12">
                     <div class="footer-items">
-                        <h3>Company Registration</h3>
+                        <h3>Company Setup</h3>
                         <p><a href="{{ route('front.services', ['slug' => Str::slug('Private Limited Company', '-')]) }}">Private Limited Company</a></p>
                         <p><a href="{{ route('front.services', ['slug' => Str::slug('One Person Company', '-')]) }}">One Person Company</a></p>
-                        <p><a href="{{ route('front.privacy') }}">Privacy Policy</a></p>
-                        <p><a href="{{ route('front.terms') }}">Terms &amp; conditions</a></p>
+                        <p><a href="{{ route('front.services', ['slug' => Str::slug('Limited Liability Partnership', '-')]) }}">Limited Liability Partnership</a></p>
+                        <p><a href="{{ route('front.services', ['slug' => Str::slug('Section 8 Company', '-')]) }}">Section 8 Company</a></p>
+                        <p><a href="{{ route('front.services', ['slug' => Str::slug('Public Limited Company', '-')]) }}">Public Limited Company</a></p>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-2 col-sm-6 col-12">
                     <div class="footer-items">
-                        <h3>Services</h3>
-                        <p><a href="{{ route('front.about') }}">About Us</a></p>
-                        <p><a href="contact.html">Contact Us</a></p>
-                        <p><a href="{{ route('front.privacy') }}">Privacy Policy</a></p>
-                        <p><a href="{{ route('front.terms') }}">Terms &amp; conditions</a></p>
+                        <h3>Business Essentials</h3>
+                        <p><a href="{{ route('front.services', ['slug' => Str::slug('GST Registration', '-')]) }}">GST Registration</a></p>
+                        <p><a href="{{ route('front.services', ['slug' => Str::slug('Income Tax Returns', '-')]) }}">Income Tax Returns</a></p>
+                        <p><a href="{{ route('front.services', ['slug' => Str::slug('Trademark Registration', '-')]) }}">Trademark Registration</a></p>
+                        <p><a href="{{ route('front.services', ['slug' => Str::slug('FSSAI Registration', '-')]) }}">FSSAI Registration</a></p>
+                        <p><a href="{{ route('front.services', ['slug' => Str::slug('Digital Signature Certificate', '-')]) }}">Digital Signature Certificate</a></p>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-2 col-sm-6 col-12">

@@ -371,5 +371,71 @@ return [
             'question' => 'How long does a trademark last?',
             'answer' => '10 years from the date of application, renewable indefinitely.',
         ],
+    ],
+    'digital-signature-certificate' => [
+        [
+            'question' => 'Is DSC mandatory for company directors?',
+            'answer' => 'Yes. DSC is required for signing MCA forms and filings.',
+        ],
+        [
+            'question' => 'Can DSC be used on multiple portals?',
+            'answer' => 'Yes. Class 3 DSC works across MCA, GST, ITR, DGFT, EPFO, etc.',
+        ],
+        [
+            'question' => 'What is the validity of a DSC?',
+            'answer' => 'DSCs are valid for 1 or 2 years, depending on selection.',
+        ],
+        [
+            'question' => 'Can I get DSC without Aadhaar?',
+            'answer' => 'Yes, with PAN and video verification (manual KYC process).',
+        ],
+        [
+            'question' => 'What is a USB token?',
+            'answer' => 'A secure cryptographic device used to store and use DSC safely.',
+        ],
+    ],
+    'fssai-registration' => [
+        [
+            'question' => 'Is FSSAI registration mandatory for home-based food businesses?',
+            'answer' => 'Yes, if selling food to consumers, even home kitchens need registration.',
+        ],
+        [
+            'question' => 'What happens if FSSAI license is not obtained?',
+            'answer' => 'The business can be fined up to ₹5 lakh or shut down by authorities.',
+        ],
+        [
+            'question' => 'Is the FSSAI license transferable?',
+            'answer' => 'No, it is non-transferable and unique to the specific FBO.',
+        ],
+        [
+            'question' => 'What if business expands to multiple states?',
+            'answer' => 'A Central License is required for operations across multiple states.',
+        ],
+        [
+            'question' => 'How to renew an FSSAI license?',
+            'answer' => 'Apply for renewal online at least 30 days before expiry.',
+        ],
+    ],
+    "income-tax-returns" => [
+        [
+            "question" => "Who is required to file Income Tax Returns?",
+            "answer" => "Individuals whose income exceeds the prescribed threshold limit (e.g., ₹2.5 lakh in India) are required to file ITR. Additionally, companies, firms, and other legal entities are also required to file."
+        ],
+        [
+            "question" => "Can I file Income Tax Returns without Form 16?",
+            "answer" => "Yes, you can file ITR without Form 16 by manually entering your income details from your salary, TDS, and other income sources."
+        ],
+        [
+            "question" => "What if I miss the ITR filing deadline?",
+            "answer" => "You can still file a late return but will incur penalties, and your chances of claiming refunds may be delayed."
+        ],
+        [
+            "question" => "Can I file ITR if I have no income?",
+            "answer" => "Yes, you can file a 'nil return' if you have no income but wish to maintain a record for future transactions or to comply with other legal requirements."
+        ],
+        [
+            "question" => "How can I check the status of my ITR?",
+            "answer" => "You can check the status of your ITR on the Income Tax e-Filing portal or use the acknowledgment number to track the processing."
+        ]
     ]
 ];

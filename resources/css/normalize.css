@@ -2453,6 +2453,10 @@ img, video {
     grid-gap: 3rem;
     gap: 3rem;
 }
+.mod-gap-16 {
+    grid-gap: 4rem;
+    gap: 4rem;
+}
 @media (min-width: 768px) and (max-width: 1023px) {
     .md\:mod-gap-10 {
         grid-gap: 2.5rem;

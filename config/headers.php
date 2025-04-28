@@ -131,7 +131,7 @@ return [
                     ["name" => "IEC Registration", "description" => "Get your Import Export Code (IEC) and go global."],
                     ["name" => "ESIC", "description" => "Register your company under Employee State Insurance (ESIC)."],
                     ["name" => "EPF", "description" => "Register for Employee Provident Fund (EPF) for your workforce."],
-                    ["name" => "FSSAI", "description" => "Obtain FSSAI license for your food business legally."],
+                    ["name" => "FSSAI Registration", "description" => "Obtain FSSAI license for your food business legally."],
                     ["name" => "LEI", "description" => "Get your Legal Entity Identifier (LEI) for global compliance."]
                 ]
             ],
@@ -139,7 +139,7 @@ return [
                 "title" => "Digital Tools",
                 "background" => "#ffffff",
                 "services" => [
-                    ["name" => "Digital Signature", "description" => "Get your Digital Signature Certificate (DSC) issued quickly."],
+                    ["name" => "Digital Signature Certificate", "description" => "Get your Digital Signature Certificate (DSC) issued quickly."],
                     ["name" => "PAN Application", "description" => "Apply for your Permanent Account Number (PAN) easily."],
                     ["name" => "TAN Application", "description" => "Register your Tax Deduction Account Number (TAN) smoothly."]
                 ]

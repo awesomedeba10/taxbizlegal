@@ -310,7 +310,7 @@
 <section class="bg-blue-100 py-40 py-xxl-40" id="doc-required">
     <div class="doc-required container mod-flex mod-flex-col mod-gap-8">
         <h2 class="mod-font-semibold mod-text-s-28 mod-mb-0 mod-leading-semi-loose mod-space-light-semi">
-            Documents Required for Registering <span class="text-blue">Your</span> Pvt Ltd. Company
+            Documents Required for Registering <span class="text-blue">Your</span> GST
         </h2>
         <div class="section-content mod-grid-12">
             <div class="img mod-flex mod-justify-center mod-overflow-hidden mod-items-center" data-fade="in">
