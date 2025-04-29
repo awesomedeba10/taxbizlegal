@@ -164,7 +164,7 @@
         <div class="col-12 col-md-6 col-xxl-5 sm:mod-order-2">
             <div class="mod-py-8">
 
-                <h1 class="mod-text-s-24">All you need to know about Private Limted Company Registration</h1>
+                <h1 class="mod-text-s-24">All you need to know about Private Limited Company Registration</h1>
                 <p>A Private Limited Company (PLC) in India is one of the most popular and simplest forms of company
                     registration. It offers limited liability and legal protection to its shareholders, making it an
                     ideal choice for many entrepreneurs. Positioned as a hybrid entity between a partnership firm and a
@@ -330,7 +330,7 @@
 <section class="bg-blue-100 py-40 py-xxl-40" id="doc-required">
     <div class="doc-required container mod-flex mod-flex-col mod-gap-8">
         <h2 class="mod-font-semibold mod-text-s-28 mod-mb-0 mod-leading-semi-loose mod-space-light-semi">
-            Documents Required for Registering <span class="text-blue">Your</span> Pvt Ltd. Company
+            Documents Required for Registering <span class="text-blue">Your</span> Private Limited Company
         </h2>
         <div class="section-content mod-grid-12">
             <div class="img mod-flex mod-justify-center mod-overflow-hidden mod-items-center" data-fade="in">
@@ -384,7 +384,7 @@
                 <div class="mod-grid-2 mod-gap-2">
                     <span class="mod-items-center mod-py-2 mod-space-semi">TDS/TCS Payment</span>
                     <span class="mod-items-center mod-py-2 mod-space-semi">GST Payment & GST Filing</span>
-                    <span class="mod-items-center mod-py-2 mod-space-semi">Filing of quarterly TDS Teturns</span>
+                    <span class="mod-items-center mod-py-2 mod-space-semi">Filing of quarterly TDS Returns</span>
                     <span class="mod-items-center mod-py-2 mod-space-semi">Advanced Tax Payment</span>
                     <span class="mod-items-center mod-py-2 mod-space-semi">Filing of IT Returns</span>
                     <span class="mod-items-center mod-py-2 mod-space-semi">Filing of Tax Audit Reports</span>
@@ -416,7 +416,7 @@
             </div>
             <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
                 <h3 class="mod-mb-0">Auditor Appointment</h3>
-                <p class="mod-ml-16 mod-mb-0 mod-text-right">An auditor must be appointed within 15 days of incorporation by filing Form ADT-1 with the RoC.</p>
+                <p class="mod-ml-16 mod-mb-0 mod-text-right">An auditor must be appointed within 15 days of incorporation by filing Form ADT-1 with the ROC.</p>
             </div>
             <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
                 <h3 class="mod-mb-0">Financial Reporting</h3>

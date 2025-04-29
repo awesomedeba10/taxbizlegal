@@ -1,22 +1,22 @@
 <section class="services-intro nav-bg mod-items-center mod-w-full mod-my-12 mod-flex mod-justify-center mod-relative">
     <div
         class="mod-items-center mod-px-24 mod-grid-12 mod-w-full sm:mod-gap-10 sm:mod-flex sm:mod-flex-col
-        sm:mod-px-10 md:mod-px-12 md:mod-items-start ">
+    sm:mod-px-10 md:mod-px-12 md:mod-items-start ">
         <div class="section-heading">
-            <p class="h5 text-primary mb-2">Start Your Private Limited Company with Ease!</p>
+            <p class="h5 text-primary mb-2">Form Your HUF with Ease!</p>
             <h1 class="section-title mod-font-bold mod-leading-semi-loose mod-space-light-semi mod-mb-8" data-fade="up">
-                Register Your <span class="text-blue">Private Limited Company</span> & Unlock Growth Opportunities!</h1>
+                Register Your <span class="text-blue">Hindu Undivided Family (HUF)</span> & Maximize Tax Benefits!</h1>
             <div class="mod-flex mod-flex-col mod-gap-10">
                 <div class="text mod-font-medium mod-leading-loose" data-fade="up">
                     <ul class="mod-ml-0 mod-mb-1 mod-pl-1 mod-list-none mod-flex mod-flex-col mod-gap-2 mod-text-base">
-                        <li>👉 100% Online, Hassle-Free Registration Process</li>
-                        <li>👉 Expert Guidance & Legal Compliance Assistance</li>
-                        <li>👉 Quick Turnaround & Transparent Pricing</li>
+                        <li>👉 100% Online, Easy HUF Creation Process</li>
+                        <li>👉 Expert Legal Support & Documentation Assistance</li>
+                        <li>👉 Faster Processing with Transparent Pricing</li>
                     </ul>
                 </div>
-                <p class="mb-0 mod-leading-light-loose">Experience seamless private limited company registration with
-                    our expert consultants. We handle paperwork, legal formalities, and compliance, ensuring a smooth
-                    process. Focus on growth while we simplify your journey. Get started today!</p>
+                <p class="mb-0 mod-leading-light-loose">Simplify your HUF registration with our dedicated experts.
+                    From drafting the HUF deed to PAN application and compliance advisory — we handle it all.
+                    Build your family's financial legacy the smart way. Start your HUF today!</p>
             </div>
         </div>
         <div class="section-content mod-pr-12 md:mod-pr-0 sm:mod-pr-0">
@@ -24,7 +24,7 @@
                 <div class="col-md-12">
                     <h1 class="h2 mb-lg-20">
                         <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;">Register Today, Secure Your Future</font>
+                            <font style="vertical-align: inherit;">Register Your HUF Now & Unlock Tax Savings</font>
                         </font>
                     </h1>
                     <x-user-form></x-user-form>
@@ -32,6 +32,7 @@
             </div>
         </div>
     </div>
+
 </section>
 
 <section
@@ -40,8 +41,8 @@
         class="mod-w-full mod-max-w-screen-xl mod-px-32 mod-mx-auto mod-overflow-hidden md:mod-px-5 lg:mod-px-6 sm:mod-px-0">
         <div
             class="mod-flex services-nav-container mod-items-center mod-justify-between mod-cursor-pointer mod-rounded-lg mod-border-sm mod-overflow-hidden mod-text-s-14 mod-font-medium">
-            <div class="mod-whitespace-nowrap mod-py-4 mod-sticky mod-left-0">
-                <span class="services-nav-title mod-pl-6 mod-pr-3 mod-border-r-sm">PVT LTD COMPANY</span>
+            <div class="mod-whitespace-nowrap mod-py-4 mod-sticky mod-left-0 mod-pl-6">
+                <span class="services-nav-title mod-pl-6 mod-pr-3 mod-border-r-sm mod-contents">HUF</span>
             </div>
             <ul class="services-nav-ul mod-flex mod-items-center mod-my-0 mod-justify-center mod-list-none">
                 <li data-target="pricing"
@@ -94,12 +95,12 @@
                 class="mod-text-s-32 mod-nav-text mod-font-semibold mod-word-break-normal mod-text-center mod-leading-loose">
                 <span>Choose the Right Plan</span>
                 <div class="mod-text-s-44">
-                    For your <span class="text-blue">Private Limited Company</span>
+                    For your <span class="text-blue">HUF Registration</span>
                 </div>
             </h1>
             <p class="mod-nav-text mod-mt-2 mod-leading-loose mod-text-center">
-                Get your Private Limited Company registered effortlessly with our tailored pricing plans. Start your
-                journey today!
+                Get your Hindu Undivided Family (HUF) registered effortlessly with our expert-curated plans. Build your
+                legacy today!
             </p>
         </div>
     </div>
@@ -108,10 +109,12 @@
 
         <x-pricing-wrapper page="{{ $slug }}"></x-pricing-wrapper>
 
-        <div class="card-more-plan bg-blue-100 mod-flex mod-w-full mod-justify-center mod-items-center mod-overflow-hidden mod-relative mod-mt-12 mod-py-12" data-theme="dark">
+        <div class="card-more-plan bg-blue-100 mod-flex mod-w-full mod-justify-center mod-items-center mod-overflow-hidden mod-relative mod-mt-12 mod-py-12"
+            data-theme="dark">
             <div class="mod-flex mod-flex-col mod-items-center">
-                <h4 class="mod-text-s-32 mod-font-semibold mod-word-break-normal mod-text-center mod-leading-semi-loose">
-                    Still not sure yet? <br> 
+                <h4
+                    class="mod-text-s-32 mod-font-semibold mod-word-break-normal mod-text-center mod-leading-semi-loose">
+                    Still not sure yet? <br>
                     <span class="mod-text-s-24">Let our Experts help you find the right Plan</span>
                 </h4>
                 <div class="mod-flex sm:mod-flex-col mod-flex-row mod-gap-8 mod-my-4">
@@ -125,30 +128,31 @@
                         <p class="mod-mb-0">Clear & Transparent Process</p>
                     </div>
                     <div class="mod-flex mod-items-center mod-justify-center mod-gap-2">
-                        <img
-                            src="https://carrier.formcarry.com/website-assets/unlimited-uploads-icon.svg"
+                        <img src="https://carrier.formcarry.com/website-assets/unlimited-uploads-icon.svg"
                             width="24">
                         <p class="mod-mb-0">Real-Time Updates</p>
                     </div>
                 </div>
                 <div class="mod-flex sm:mod-flex-col mod-flex-row mod-gap-8 mod-mb-8">
                     <div class="mod-flex mod-items-center mod-justify-center mod-gap-2">
-                        <img
-                            src="https://carrier.formcarry.com/website-assets/migration-support-icon.svg"
+                        <img src="https://carrier.formcarry.com/website-assets/migration-support-icon.svg"
                             width="24">
                         <p class="mod-mb-0">100% Moneyback Gurantee*</p>
                     </div>
                     <div class="mod-flex mod-items-center mod-justify-center mod-gap-2">
                         <img src="https://carrier.formcarry.com/website-assets/customer-support-icon.svg"
-                        width="24">
+                            width="24">
                         <p class="mod-mb-0">Lightning-Fast Customer Support</p>
                     </div>
                 </div>
                 <a class="btn-custom-medium" href="http://127.0.0.1:8000/contact-us" target="_self">
                     <span class="btn-text btn-text--back">Get In Touch</span>
                     <span class="btn-icon btn-icon--red">
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4a1 1 0 0 1 0-2h11v11a1 1 0 1 1-2 0V5.414l-8.293 8.293a1 1 0 0 1-1.414-1.414L10.586 4H3Z" fill="white"></path>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3 4a1 1 0 0 1 0-2h11v11a1 1 0 1 1-2 0V5.414l-8.293 8.293a1 1 0 0 1-1.414-1.414L10.586 4H3Z"
+                                fill="white"></path>
                         </svg>
                         <span class="btn-text btn-text--front">Request a Callback</span>
                     </span>
@@ -163,23 +167,10 @@
     <div class="row justify-content-between">
         <div class="col-12 col-md-6 col-xxl-5 sm:mod-order-2">
             <div class="mod-py-8">
-
-                <h1 class="mod-text-s-24">All you need to know about Private Limted Company Registration</h1>
-                <p>A Private Limited Company (PLC) in India is one of the most popular and simplest forms of company
-                    registration. It offers limited liability and legal protection to its shareholders, making it an
-                    ideal choice for many entrepreneurs. Positioned as a hybrid entity between a partnership firm and a
-                    public company, it allows businesses to enjoy the benefits of both forms.</p>
-                <p>To register a PLC, at least two individuals are required, and one individual can serve both as the
-                    director and shareholder. The liability of the company’s members is confined to the value of their
-                    shares, providing protection for personal assets. Once the Certificate of Incorporation is received,
-                    the company can commence its operations. The entire registration process typically takes around 15
-                    working days to complete.</p>
-                <p>Taxbizlegal.com is a trusted platform that provides end-to-end services for Private Limited Company
-                    registration, including incorporation, compliance, advisory, and consultancy. The process is quick,
-                    affordable, and simple. Additionally, we offer services for Partnership Registration, LLP
-                    Incorporation, One Person Company registration, and more. Contact us for a free consultation at
-                    info@taxbizlegal.com or call our compliance manager at 09*********.</p>
-
+                <h1 class="mod-text-s-24">All you need to know about Hindu Undivided Family (HUF)</h1>
+                <p>A Hindu Undivided Family (HUF) is a unique form of business structure and tax entity in India, recognized under Hindu law. It consists of individuals who are lineal descendants of a common ancestor, including their wives and unmarried daughters. An HUF is treated as a separate legal entity for income tax purposes, which allows it to own assets and earn income independently of its members.</p>
+                <p>This structure is governed by the Hindu Succession Act and is primarily used for managing family-owned businesses or ancestral properties. HUFs can be beneficial for tax planning, as they are eligible for tax exemptions and deductions similar to individual taxpayers. . This structure is ideal for managing ancestral wealth, family businesses, and effective tax planning; applicable for Hindu, Buddhist, Jain, and Sikh families.</p>
+                <p>Taxbizlegal.com offers comprehensive services for HUF registration, including deed drafting, PAN application, and legal advisory. Our experts ensure a seamless and hassle-free registration process with complete compliance support. We also assist with Partnership Registration, LLP Incorporation, Private Limited Company formation, and more. Reach out for a free consultation at info@taxbizlegal.com or speak with our compliance manager at 09*********.</p>
             </div>
         </div>
         <div class="col-12 col-md-6 sm:mod-order-1 mod-pl-16 md:mod-pl-0 sm:mod-pl-0">
@@ -195,7 +186,7 @@
         <div class="section-heading">
             <h2 class="section-title mod-text-s-28 mod-font-bold mod-leading-semi-loose mod-space-light-semi"
                 data-fade="up">
-                Advantages of Private Limited Company
+                Advantages of HUF
             </h2>
         </div>
         <div class="section-content mod-grid-4">
@@ -217,9 +208,8 @@
                     </svg>
                 </div>
                 <div class="item-content">
-                    <h3 class="item-title">No Minimum Capital Requirement</h3>
-                    <p class="item-text">A Private Limited Company can be registered with a minimum authorized share
-                        capital of just Rs. 10,000, making it highly accessible for startups and small businesses.</p>
+                    <h3 class="item-title">Separate Tax Entity</h3>
+                    <p class="item-text">An HUF is treated as a separate taxpayer with its own PAN, allowing it to enjoy tax exemptions and slab benefits just like an individual.</p>
                 </div>
             </div>
             <div class="mod-flex mod-flex-col mod-gap-4 xl:mod-pr-20 lg:mod-pr-8 sm:mod-pr-4 sm:mod-flex-row"
@@ -230,11 +220,11 @@
                         <path
                             d="M14 11h-1v-1a1 1 0 0 0-2 0v1h-1a1 1 0 0 0 0 2h1v1a1 1 0 0 0 2 0v-1h1a1 1 0 0 0 0-2Zm5.63-7.35a1.007 1.007 0 0 0-.835-.203 7.98 7.98 0 0 1-6.223-1.267.999.999 0 0 0-1.144 0 7.976 7.976 0 0 1-6.223 1.267A1 1 0 0 0 4 4.427v7.456a9.019 9.019 0 0 0 3.769 7.324l3.65 2.607a1 1 0 0 0 1.162 0l3.65-2.607A9.018 9.018 0 0 0 20 11.883V4.426a1 1 0 0 0-.37-.776ZM18 11.883a7.017 7.017 0 0 1-2.93 5.696L12 19.771 8.93 17.58A7.017 7.017 0 0 1 6 11.883v-6.3a9.955 9.955 0 0 0 6-1.391 9.955 9.955 0 0 0 6 1.391v6.3Z"
                             fill="#0B1126"></path>
-                    </svg></div>
+                    </svg>
+                </div>
                 <div class="item-content">
-                    <h3 class="item-title">Limited Liability</h3>
-                    <p class="item-text">It operates as an independent legal entity, ensuring that directors' personal
-                        assets remain safeguarded against company debts or financial obligations.</p>
+                    <h3 class="item-title">Tax Planning Tool</h3>
+                    <p class="item-text">Since the HUF's income is taxed separately from its members, it serves as an effective tool for families to reduce their overall tax burden legally.</p>
                 </div>
             </div>
             <div class="mod-flex mod-flex-col mod-gap-4 xl:mod-pr-20 lg:mod-pr-8 sm:mod-pr-4 sm:mod-flex-row"
@@ -252,9 +242,8 @@
                     </svg>
                 </div>
                 <div class="item-content">
-                    <h3 class="item-title">Fundraising Opportunities</h3>
-                    <p class="item-text">Its structured legal framework makes it easier to secure funding from venture
-                        capitalists, angel investors, and financial institutions, enhancing growth opportunities.</p>
+                    <h3 class="item-title">Asset Pooling and Succession</h3>
+                    <p class="item-text">HUF allows pooling of family assets and income, ensuring centralized management while enabling smooth succession across generations.</p>
                 </div>
             </div>
             <div class="mod-flex mod-flex-col mod-gap-4 xl:mod-pr-20 lg:mod-pr-8 sm:mod-pr-4 sm:mod-flex-row"
@@ -269,11 +258,8 @@
                     </svg>
                 </div>
                 <div class="item-content">
-                    <h3 class="item-title">Enhanced Credibility</h3>
-                    <p class="item-text">
-                        Since company information is publicly available, it builds trust and credibility among
-                        customers, investors, and financial partners, improving business reputation.
-                    </p>
+                    <h3 class="item-title">Perpetual Existence</h3>
+                    <p class="item-text">An HUF continues to exist even after the death of its Karta, with the senior-most male member assuming leadership to maintain continuity.</p>
                 </div>
             </div>
         </div>
@@ -283,87 +269,71 @@
 <section class="container my-80 my-xxl-120" id="resources">
 
     <h1 class="display-6 mb-32 mod-font-semibold mod-text-s-24">
-        Selecting the Ideal Business Structure for Your Company
+        Key Features of a <span class="text-primary mod-font-bold">HUF</span>
     </h1>
     <div class="row gy-40 gx-lg-40">
         <div class="col-lg-4">
             <div class="d-flex flex-column gap-12 gap-lg-3 mx-auto">
-                <h2 class="mb-0">Company Limited by
-                    <span class="text-primary mod-font-bold">Shares</span>
-                </h2>
-                <p class="mb-0 text-lg">A company limited by shares is a distinct legal entity from its shareholders
-                    and directors. It can enter into contracts, own assets, and operate independently under its business
-                    name.</p>
-                <p class="mb-0 text-lg">Shareholders’ liability is limited to their investment, ensuring their
-                    personal assets remain protected from the company’s financial obligations. This structure is widely
-                    chosen for its security and credibility.</p>
+                <h2 class="mb-0">Automatic Formation, <span class="text-primary mod-font-bold">Formal Recognition</span></h2>
+                <p class="mb-0 text-lg mod-text-justify">A Hindu Undivided Family (HUF) is created automatically after marriage, but needs formal steps like obtaining a PAN and opening a bank account to be recognized legally for tax purposes.</p>
+                <p class="mb-0 text-lg mod-text-justify">This legal recognition allows the HUF to operate as a separate tax entity and manage assets independently.</p>
             </div>
         </div>
         <div class="col-lg-4">
             <div class="d-flex flex-column gap-12 gap-lg-3 mx-auto">
-                <h2 class="mb-0">Company Limited by
-                    <span class="text-primary mod-font-bold">Guarantee</span>
-                </h2>
-                <p class="mb-0 text-lg">A company limited by guarantee does not have shareholders or share capital.
-                    Instead, it is backed by guarantors who commit a fixed amount towards company debts if necessary.
-                </p>
-                <p class="mb-0 text-lg">Such companies usually operate as non-profits, with profits reinvested into
-                    the business to support its objectives. Guarantors do not receive a share of the profits.</p>
+                <h2 class="mb-0">Karta Leadership, <span class="text-primary mod-font-bold">Structured Management</span></h2>
+                <p class="mb-0 text-lg mod-text-justify">The senior-most male member, or eldest female after the 2016 amendment, acts as the Karta and manages the HUF’s affairs, ensuring efficient leadership and decision-making.</p>
+                <p class="mb-0 text-lg mod-text-justify">This structured leadership ensures continuity and centralized control of the family's financial and legal activities.</p>
             </div>
         </div>
         <div class="col-lg-4">
             <div class="d-flex flex-column gap-12 gap-lg-3 mx-auto">
-                <h2 class="mb-0">
-                    <span class="text-primary mod-font-bold">Unlimited</span> Company
-                </h2>
-                <p class="mb-0 text-lg">An unlimited company, as per Section 2(92) of the Companies Act, 2013, does
-                    not impose financial liability limits on its shareholders.</p>
-                <p class="mb-0 text-lg">In case of dissolution, shareholders are fully responsible for covering all
-                    company debts, even beyond their initial investment. This structure offers operational flexibility
-                    but comes with higher financial risk.</p>
+                <h2 class="mb-0">Coparceners' Rights, <span class="text-primary mod-font-bold">Family-Centric Structure</span></h2>
+                <p class="mb-0 text-lg mod-text-justify">Coparceners, including sons, daughters, and grandchildren, have a birthright in the family property, while members like spouses are part of the HUF without property rights.</p>
+                <p class="mb-0 text-lg mod-text-justify">The HUF is fundamentally based on common ancestry, making it a traditional yet legally recognized entity for managing family wealth.</p>
             </div>
         </div>
     </div>
 
 </section>
 
+
 <section class="bg-blue-100 py-40 py-xxl-40" id="doc-required">
     <div class="doc-required container mod-flex mod-flex-col mod-gap-8">
         <h2 class="mod-font-semibold mod-text-s-28 mod-mb-0 mod-leading-semi-loose mod-space-light-semi">
-            Documents Required for Registering <span class="text-blue">Your</span> Pvt Ltd. Company
+            Documents Required for <span class="text-blue">Setting Up</span> Your HUF
         </h2>
         <div class="section-content mod-grid-12">
             <div class="img mod-flex mod-justify-center mod-overflow-hidden mod-items-center" data-fade="in">
                 <img decoding="async" width="714" height="402"
                     src="{{ asset('images/svg/customer-doc-required-service-banner.svg') }}"
-                    class="attachment-large size-large" alt=""
-                    sizes="auto, (max-width: 714px) 100vw, 714px" loading="lazy">
+                    class="attachment-large size-large" alt="" sizes="auto, (max-width: 714px) 100vw, 714px"
+                    loading="lazy">
             </div>
             <div class="items mod-grid-4">
                 <div class="mod-flex mod-flex-col mod-gap-2" data-fade="up">
                     <div class="item-number">01.</div>
-                    <p class="item-text">Passport Size Photograph</p>
+                    <p class="item-text">HUF Deed declaring Karta, members, and activities.</p>
                 </div>
                 <div class="mod-flex mod-flex-col mod-gap-2" data-fade="up">
                     <div class="item-number">02.</div>
-                    <p class="item-text">Individual PAN Card</p>
+                    <p class="item-text">PAN Card application for the HUF entity.</p>
                 </div>
-                <div class="mod-flex mod-flex-col mod-gap-2" data-fade="up"
-                    style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1; visibility: inherit;">
+                <div class="mod-flex mod-flex-col mod-gap-2" data-fade="up">
                     <div class="item-number">03.</div>
-                    <p class="item-text">Registered Office Proof</p>
+                    <p class="item-text">Bank Account opened under the HUF’s name.</p>
                 </div>
                 <div class="mod-flex mod-flex-col mod-gap-2" data-fade="up">
                     <div class="item-number">04.</div>
-                    <p class="item-text">Aadhar Card</p>
+                    <p class="item-text">Capital Contribution from gifts or ancestral assets.</p>
                 </div>
                 <div class="mod-flex mod-flex-col mod-gap-2" data-fade="up">
                     <div class="item-number">05.</div>
-                    <p class="item-text">Address Proof</p>
+                    <p class="item-text">Proof of business or investment activities.</p>
                 </div>
                 <div class="mod-flex mod-flex-col mod-gap-2" data-fade="up">
                     <div class="item-number">06.</div>
-                    <p class="item-text">No Objection Certificate / NOC</p>
+                    <p class="item-text">Karta’s ID and address proof documents.</p>
                 </div>
             </div>
         </div>
@@ -371,25 +341,26 @@
 </section>
 
 <section class="container my-40" id="compliances">
-    <h1 class="display-6 mb-32 mod-font-semibold mod-text-s-28">Compliance Required for Forming a Private Limited Company</h1>
+    <h1 class="display-6 mb-32 mod-font-semibold mod-text-s-28">Annual Compliance for Hindu Undivided Family (HUF)</h1>
 
-    <div class="mod-grid mod-mt-4 mod-gap-8 mod-grid-template-col-2 sm:mod-grid-template-col-2">
-        <div class="mod-pr-8 mod-flex mod-flex-col">
+    <div class="mod-grid mod-mt-4 mod-gap-8 mod-grid-template-col-2 sm:mod-grid-template-col-1">
+        <div class="mod-pr-8 mod-flex mod-flex-col sm:mod-order-2">
             <h3 class="mod-font-semibold mod-leading-loose">Why Compliance Matters</h3>
-            <p class="mod-mt-2 mod-pr-24">
-                Staying compliant not only builds credibility for your private limited company but also ensures smooth functioning, legal protection, and better funding opportunities. Here’s a quick guide to help you understand what’s needed right after registration.
+            <p class="mod-mt-2 mod-pr-16">
+                Maintaining compliance is crucial for the legal and smooth operation of your HUF. By fulfilling necessary tax, accounting, and regulatory requirements, your HUF can avoid penalties, maintain good standing with authorities, and qualify for government benefits like exemptions and schemes. Consistent compliance also enhances trust with financial institutions and ensures smooth functioning in family business or asset management activities.
             </p>
             <div class="mod-grid mod-items-start mod-my-6">
-                <h4>Other Non-ROC Business Compliances</h4>
+                <h4>Additional Non-ROC Compliances for HUF</h4>
                 <div class="mod-grid-2 mod-gap-2">
-                    <span class="mod-items-center mod-py-2 mod-space-semi">TDS/TCS Payment</span>
-                    <span class="mod-items-center mod-py-2 mod-space-semi">GST Payment & GST Filing</span>
-                    <span class="mod-items-center mod-py-2 mod-space-semi">Filing of quarterly TDS Teturns</span>
-                    <span class="mod-items-center mod-py-2 mod-space-semi">Advanced Tax Payment</span>
-                    <span class="mod-items-center mod-py-2 mod-space-semi">Filing of IT Returns</span>
-                    <span class="mod-items-center mod-py-2 mod-space-semi">Filing of Tax Audit Reports</span>
+                    <span class="mod-items-center mod-py-2 mod-space-semi">Family Property Records Maintenance</span>
+                    <span class="mod-items-center mod-py-2 mod-space-semi">Submission of Ancestral Property Returns</span>
+                    <span class="mod-items-center mod-py-2 mod-space-semi">Bank Account Reconciliation for HUF Transactions</span>
+                    <span class="mod-items-center mod-py-2 mod-space-semi">File Capital Gains Return for Assets Sale</span>
+                    <span class="mod-items-center mod-py-2 mod-space-semi">Comply with HUF Wealth Tax Filing (if applicable)</span>
+                    <span class="mod-items-center mod-py-2 mod-space-semi">Ensure Family Asset Pool Compliance under HUF Regulations</span>
                 </div>
             </div>
+            
             <div>
                 <a class="btn-custom-medium" href="{{ route('front.contact') }}" target="_self">
                     <span class="btn-text btn-text--back">Get Help with Compliance</span>
@@ -405,28 +376,29 @@
                 </a>
             </div>
         </div>
-        <div class="mod-px-2 mod-flex mod-flex-col mod-gap-2">
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-gap-12 mod-px-2 mod-py-4 mod-border-bottom-2">
-                <h3 class="mod-mb-0">Board Meetings</h3>
-                <p class="mod-ml-16 mod-mb-0 mod-text-right">At least 2 board meetings each year with a minimum of 2 directors or 1/3rd of the total.</p>
+        <div class="mod-px-2 mod-flex mod-flex-col mod-gap-2 sm:mod-order-1">
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
+                <h3 class="mod-mb-0">Income Tax Return (ITR)</h3>
+                <p class="mod-ml-16 mod-mb-0 mod-text-right">Form ITR-2 or ITR-3 to be filed by 31st July (non-audit), 31st Oct (audit).</p>
             </div>
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-gap-12 mod-px-2 mod-py-4 mod-border-bottom-2">
-                <h3 class="mod-mb-0">Annual General Meeting (AGM)</h3>
-                <p class="mod-ml-16 mod-mb-0 mod-text-right">Must be held once every year, with a gap of no more than 15 months between two AGMs.</p>
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
+                <h3 class="mod-mb-0">Tax Audit (if applicable)</h3>
+                <p class="mod-ml-16 mod-mb-0 mod-text-right">Required if turnover exceeds ₹1 crore (business) or ₹50 lakh (profession).</p>
             </div>
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-gap-12 mod-px-2 mod-py-4 mod-border-bottom-2">
-                <h3 class="mod-mb-0">Auditor Appointment</h3>
-                <p class="mod-ml-16 mod-mb-0 mod-text-right">An auditor must be appointed within 15 days of incorporation by filing Form ADT-1 with the RoC.</p>
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
+                <h3 class="mod-mb-0">GST Registration</h3>
+                <p class="mod-ml-16 mod-mb-0 mod-text-right">Required if annual turnover exceeds ₹40 lakh (goods) or ₹20 lakh (services).</p>
             </div>
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-gap-12 mod-px-2 mod-py-4 mod-border-bottom-2">
-                <h3 class="mod-mb-0">Financial Reporting</h3>
-                <p class="mod-ml-16 mod-mb-0 mod-text-right">File annual returns (Form MGT-7) and financial statements (Form AOC-4) every financial year.</p>
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
+                <h3 class="mod-mb-0">Maintain Books of Account</h3>
+                <p class="mod-ml-16 mod-mb-0 mod-text-right">As per Income Tax Act (Sec 44AA), ongoing throughout the year.</p>
             </div>
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-gap-12 mod-px-2 mod-py-4">
-                <h3 class="mod-mb-0">Statutory Records</h3>
-                <p class="mod-ml-16 mod-mb-0 mod-text-right">Maintain key registers and ensure accounts are audited by a certified statutory auditor.</p>
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
+                <h3 class="mod-mb-0">Investments Declaration</h3>
+                <p class="mod-ml-16 mod-mb-0 mod-text-right">For capital gains, interest, etc., to be filed annually.</p>
             </div>
         </div>
+
     </div>
 </section>
 
@@ -434,91 +406,9 @@
 <section class="container mod-my-16 lg:mod-my-24">
     <article class="banner bg-blue-100 mod-overflow-hidden py-40 px-4 p-lg-5 lg:mod-px-12 pb-xxl-4">
         <div class="row gy-32 gx-xl-40 mod-relative justify-content-center align-items-center">
-            <div class="col-lg-12 d-flex flex-column mod-gap-8">
-                <h2 class="display-6 fw-bold mb-0">Register your Private Limited Company with <span
-                        class="text-blue mod-font-semibold">Us</span> in 5 Simple Steps</h2>
-                <p class="text-lg mb-0 pe-xl-80 me-xxl-4 mod-w-5/6 sm:mod-w-full">Starting your own private limited
-                    company is now easier than ever! Just follow these 5 simple steps, and we will handle the process
-                    with accuracy and efficiency. Let us guide you through every step!</p>
-                <div
-                    class="d-flex justify-content-center mod-mt-4 justify-content-lg-start gap-2 gap-sm-3 gap-xl-4 text-center svg-scale scale-4 sm:mod-flex-col sm:mod-w-full">
-                    <figure class="mb-0 mod-flex mod-flex-col mod-items-start mod-text-left mod-gap-4">
-                        <div class="mod-flex ">
-                            <span class="text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                    height="24" fill="none" viewBox="0 0 24 24">
-                                    <path fill="currentColor"
-                                        d="M1 20V17.2C1 16.6333 1.14583 16.1125 1.4375 15.6375C1.72917 15.1625 2.11667 14.8 2.6 14.55C3.63333 14.0333 4.68333 13.6458 5.75 13.3875C6.81667 13.1292 7.9 13 9 13C10.1 13 11.1833 13.1292 12.25 13.3875C13.3167 13.6458 14.3667 14.0333 15.4 14.55C15.8833 14.8 16.2708 15.1625 16.5625 15.6375C16.8542 16.1125 17 16.6333 17 17.2V20H1ZM19 20V17C19 16.2667 18.7958 15.5625 18.3875 14.8875C17.9792 14.2125 17.4 13.6333 16.65 13.15C17.5 13.25 18.3 13.4208 19.05 13.6625C19.8 13.9042 20.5 14.2 21.15 14.55C21.75 14.8833 22.2083 15.2542 22.525 15.6625C22.8417 16.0708 23 16.5167 23 17V20H19ZM9 12C7.9 12 6.95833 11.6083 6.175 10.825C5.39167 10.0417 5 9.1 5 8C5 6.9 5.39167 5.95833 6.175 5.175C6.95833 4.39167 7.9 4 9 4C10.1 4 11.0417 4.39167 11.825 5.175C12.6083 5.95833 13 6.9 13 8C13 9.1 12.6083 10.0417 11.825 10.825C11.0417 11.6083 10.1 12 9 12ZM19 8C19 9.1 18.6083 10.0417 17.825 10.825C17.0417 11.6083 16.1 12 15 12C14.8167 12 14.5833 11.9792 14.3 11.9375C14.0167 11.8958 13.7833 11.85 13.6 11.8C14.05 11.2667 14.3958 10.675 14.6375 10.025C14.8792 9.375 15 8.7 15 8C15 7.3 14.8792 6.625 14.6375 5.975C14.3958 5.325 14.05 4.73333 13.6 4.2C13.8333 4.11667 14.0667 4.0625 14.3 4.0375C14.5333 4.0125 14.7667 4 15 4C16.1 4 17.0417 4.39167 17.825 5.175C18.6083 5.95833 19 6.9 19 8ZM3 18H15V17.2C15 17.0167 14.9542 16.85 14.8625 16.7C14.7708 16.55 14.65 16.4333 14.5 16.35C13.6 15.9 12.6917 15.5625 11.775 15.3375C10.8583 15.1125 9.93333 15 9 15C8.06667 15 7.14167 15.1125 6.225 15.3375C5.30833 15.5625 4.4 15.9 3.5 16.35C3.35 16.4333 3.22917 16.55 3.1375 16.7C3.04583 16.85 3 17.0167 3 17.2V18ZM9 10C9.55 10 10.0208 9.80417 10.4125 9.4125C10.8042 9.02083 11 8.55 11 8C11 7.45 10.8042 6.97917 10.4125 6.5875C10.0208 6.19583 9.55 6 9 6C8.45 6 7.97917 6.19583 7.5875 6.5875C7.19583 6.97917 7 7.45 7 8C7 8.55 7.19583 9.02083 7.5875 9.4125C7.97917 9.80417 8.45 10 9 10Z" />
-                                </svg></span>
-                            <figcaption class="text-h6 mod-pl-3">1. Submit Your Documents</figcaption>
-                        </div>
-                        <p class="mod-mt-1 text-gray-600">Share your documents with us, and we’ll verify them for the
-                            next steps in the process.</p>
-                    </figure>
-                    <figure class="mb-0 mod-flex mod-flex-col mod-items-start mod-text-left mod-gap-4">
-                        <div class="mod-flex ">
-                            <span class="text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                    height="24" fill="none" viewBox="0 0 24 24">
-                                    <path fill="currentColor"
-                                        d="M1 20V17.2C1 16.6333 1.14583 16.1125 1.4375 15.6375C1.72917 15.1625 2.11667 14.8 2.6 14.55C3.63333 14.0333 4.68333 13.6458 5.75 13.3875C6.81667 13.1292 7.9 13 9 13C10.1 13 11.1833 13.1292 12.25 13.3875C13.3167 13.6458 14.3667 14.0333 15.4 14.55C15.8833 14.8 16.2708 15.1625 16.5625 15.6375C16.8542 16.1125 17 16.6333 17 17.2V20H1ZM19 20V17C19 16.2667 18.7958 15.5625 18.3875 14.8875C17.9792 14.2125 17.4 13.6333 16.65 13.15C17.5 13.25 18.3 13.4208 19.05 13.6625C19.8 13.9042 20.5 14.2 21.15 14.55C21.75 14.8833 22.2083 15.2542 22.525 15.6625C22.8417 16.0708 23 16.5167 23 17V20H19ZM9 12C7.9 12 6.95833 11.6083 6.175 10.825C5.39167 10.0417 5 9.1 5 8C5 6.9 5.39167 5.95833 6.175 5.175C6.95833 4.39167 7.9 4 9 4C10.1 4 11.0417 4.39167 11.825 5.175C12.6083 5.95833 13 6.9 13 8C13 9.1 12.6083 10.0417 11.825 10.825C11.0417 11.6083 10.1 12 9 12ZM19 8C19 9.1 18.6083 10.0417 17.825 10.825C17.0417 11.6083 16.1 12 15 12C14.8167 12 14.5833 11.9792 14.3 11.9375C14.0167 11.8958 13.7833 11.85 13.6 11.8C14.05 11.2667 14.3958 10.675 14.6375 10.025C14.8792 9.375 15 8.7 15 8C15 7.3 14.8792 6.625 14.6375 5.975C14.3958 5.325 14.05 4.73333 13.6 4.2C13.8333 4.11667 14.0667 4.0625 14.3 4.0375C14.5333 4.0125 14.7667 4 15 4C16.1 4 17.0417 4.39167 17.825 5.175C18.6083 5.95833 19 6.9 19 8ZM3 18H15V17.2C15 17.0167 14.9542 16.85 14.8625 16.7C14.7708 16.55 14.65 16.4333 14.5 16.35C13.6 15.9 12.6917 15.5625 11.775 15.3375C10.8583 15.1125 9.93333 15 9 15C8.06667 15 7.14167 15.1125 6.225 15.3375C5.30833 15.5625 4.4 15.9 3.5 16.35C3.35 16.4333 3.22917 16.55 3.1375 16.7C3.04583 16.85 3 17.0167 3 17.2V18ZM9 10C9.55 10 10.0208 9.80417 10.4125 9.4125C10.8042 9.02083 11 8.55 11 8C11 7.45 10.8042 6.97917 10.4125 6.5875C10.0208 6.19583 9.55 6 9 6C8.45 6 7.97917 6.19583 7.5875 6.5875C7.19583 6.97917 7 7.45 7 8C7 8.55 7.19583 9.02083 7.5875 9.4125C7.97917 9.80417 8.45 10 9 10Z" />
-                                </svg></span>
-                            <figcaption class="text-h6 mod-pl-3">2. Name Approval</figcaption>
-                        </div>
-                        <p class="mod-mt-1 text-gray-600">Suggest two names, and we’ll apply for name approval through
-                            the SPICe Plus form.</p>
-                    </figure>
-                    <figure class="mb-0 mod-flex mod-flex-col mod-items-start mod-text-left mod-gap-4">
-                        <div class="mod-flex ">
-                            <span class="text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                    height="24" fill="none" viewBox="0 0 24 24">
-                                    <path fill="currentColor"
-                                        d="M1 20V17.2C1 16.6333 1.14583 16.1125 1.4375 15.6375C1.72917 15.1625 2.11667 14.8 2.6 14.55C3.63333 14.0333 4.68333 13.6458 5.75 13.3875C6.81667 13.1292 7.9 13 9 13C10.1 13 11.1833 13.1292 12.25 13.3875C13.3167 13.6458 14.3667 14.0333 15.4 14.55C15.8833 14.8 16.2708 15.1625 16.5625 15.6375C16.8542 16.1125 17 16.6333 17 17.2V20H1ZM19 20V17C19 16.2667 18.7958 15.5625 18.3875 14.8875C17.9792 14.2125 17.4 13.6333 16.65 13.15C17.5 13.25 18.3 13.4208 19.05 13.6625C19.8 13.9042 20.5 14.2 21.15 14.55C21.75 14.8833 22.2083 15.2542 22.525 15.6625C22.8417 16.0708 23 16.5167 23 17V20H19ZM9 12C7.9 12 6.95833 11.6083 6.175 10.825C5.39167 10.0417 5 9.1 5 8C5 6.9 5.39167 5.95833 6.175 5.175C6.95833 4.39167 7.9 4 9 4C10.1 4 11.0417 4.39167 11.825 5.175C12.6083 5.95833 13 6.9 13 8C13 9.1 12.6083 10.0417 11.825 10.825C11.0417 11.6083 10.1 12 9 12ZM19 8C19 9.1 18.6083 10.0417 17.825 10.825C17.0417 11.6083 16.1 12 15 12C14.8167 12 14.5833 11.9792 14.3 11.9375C14.0167 11.8958 13.7833 11.85 13.6 11.8C14.05 11.2667 14.3958 10.675 14.6375 10.025C14.8792 9.375 15 8.7 15 8C15 7.3 14.8792 6.625 14.6375 5.975C14.3958 5.325 14.05 4.73333 13.6 4.2C13.8333 4.11667 14.0667 4.0625 14.3 4.0375C14.5333 4.0125 14.7667 4 15 4C16.1 4 17.0417 4.39167 17.825 5.175C18.6083 5.95833 19 6.9 19 8ZM3 18H15V17.2C15 17.0167 14.9542 16.85 14.8625 16.7C14.7708 16.55 14.65 16.4333 14.5 16.35C13.6 15.9 12.6917 15.5625 11.775 15.3375C10.8583 15.1125 9.93333 15 9 15C8.06667 15 7.14167 15.1125 6.225 15.3375C5.30833 15.5625 4.4 15.9 3.5 16.35C3.35 16.4333 3.22917 16.55 3.1375 16.7C3.04583 16.85 3 17.0167 3 17.2V18ZM9 10C9.55 10 10.0208 9.80417 10.4125 9.4125C10.8042 9.02083 11 8.55 11 8C11 7.45 10.8042 6.97917 10.4125 6.5875C10.0208 6.19583 9.55 6 9 6C8.45 6 7.97917 6.19583 7.5875 6.5875C7.19583 6.97917 7 7.45 7 8C7 8.55 7.19583 9.02083 7.5875 9.4125C7.97917 9.80417 8.45 10 9 10Z" />
-                                </svg></span>
-                            <figcaption class="text-h6 mod-pl-3">3. Company Registration</figcaption>
-                        </div>
-                        <p class="mod-mt-1 text-gray-600">We’ll file MOA, AOA, and SPICe Plus form, and submit to MCA
-                            for company registration.
-                        </p>
-                    </figure>
-                    <figure class="mb-0 mod-flex mod-flex-col mod-items-start mod-text-left mod-gap-4">
-                        <div class="mod-flex ">
-                            <span class="text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                    height="24" fill="none" viewBox="0 0 24 24">
-                                    <path fill="currentColor"
-                                        d="M1 20V17.2C1 16.6333 1.14583 16.1125 1.4375 15.6375C1.72917 15.1625 2.11667 14.8 2.6 14.55C3.63333 14.0333 4.68333 13.6458 5.75 13.3875C6.81667 13.1292 7.9 13 9 13C10.1 13 11.1833 13.1292 12.25 13.3875C13.3167 13.6458 14.3667 14.0333 15.4 14.55C15.8833 14.8 16.2708 15.1625 16.5625 15.6375C16.8542 16.1125 17 16.6333 17 17.2V20H1ZM19 20V17C19 16.2667 18.7958 15.5625 18.3875 14.8875C17.9792 14.2125 17.4 13.6333 16.65 13.15C17.5 13.25 18.3 13.4208 19.05 13.6625C19.8 13.9042 20.5 14.2 21.15 14.55C21.75 14.8833 22.2083 15.2542 22.525 15.6625C22.8417 16.0708 23 16.5167 23 17V20H19ZM9 12C7.9 12 6.95833 11.6083 6.175 10.825C5.39167 10.0417 5 9.1 5 8C5 6.9 5.39167 5.95833 6.175 5.175C6.95833 4.39167 7.9 4 9 4C10.1 4 11.0417 4.39167 11.825 5.175C12.6083 5.95833 13 6.9 13 8C13 9.1 12.6083 10.0417 11.825 10.825C11.0417 11.6083 10.1 12 9 12ZM19 8C19 9.1 18.6083 10.0417 17.825 10.825C17.0417 11.6083 16.1 12 15 12C14.8167 12 14.5833 11.9792 14.3 11.9375C14.0167 11.8958 13.7833 11.85 13.6 11.8C14.05 11.2667 14.3958 10.675 14.6375 10.025C14.8792 9.375 15 8.7 15 8C15 7.3 14.8792 6.625 14.6375 5.975C14.3958 5.325 14.05 4.73333 13.6 4.2C13.8333 4.11667 14.0667 4.0625 14.3 4.0375C14.5333 4.0125 14.7667 4 15 4C16.1 4 17.0417 4.39167 17.825 5.175C18.6083 5.95833 19 6.9 19 8ZM3 18H15V17.2C15 17.0167 14.9542 16.85 14.8625 16.7C14.7708 16.55 14.65 16.4333 14.5 16.35C13.6 15.9 12.6917 15.5625 11.775 15.3375C10.8583 15.1125 9.93333 15 9 15C8.06667 15 7.14167 15.1125 6.225 15.3375C5.30833 15.5625 4.4 15.9 3.5 16.35C3.35 16.4333 3.22917 16.55 3.1375 16.7C3.04583 16.85 3 17.0167 3 17.2V18ZM9 10C9.55 10 10.0208 9.80417 10.4125 9.4125C10.8042 9.02083 11 8.55 11 8C11 7.45 10.8042 6.97917 10.4125 6.5875C10.0208 6.19583 9.55 6 9 6C8.45 6 7.97917 6.19583 7.5875 6.5875C7.19583 6.97917 7 7.45 7 8C7 8.55 7.19583 9.02083 7.5875 9.4125C7.97917 9.80417 8.45 10 9 10Z" />
-                                </svg></span>
-                            <figcaption class="text-h6 mod-pl-3">4. Incorporation Certificate</figcaption>
-                        </div>
-                        <p class="mod-mt-1 text-gray-600">MCA approves the registration, and you’ll receive your
-                            Incorporation Certificate, CIN, PAN, and TAN.</p>
-                    </figure>
-                    <figure class="mb-0 mod-flex mod-flex-col mod-items-start mod-text-left mod-gap-4">
-                        <div class="mod-flex ">
-                            <span class="text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                    height="24" fill="none" viewBox="0 0 24 24">
-                                    <path fill="currentColor"
-                                        d="M1 20V17.2C1 16.6333 1.14583 16.1125 1.4375 15.6375C1.72917 15.1625 2.11667 14.8 2.6 14.55C3.63333 14.0333 4.68333 13.6458 5.75 13.3875C6.81667 13.1292 7.9 13 9 13C10.1 13 11.1833 13.1292 12.25 13.3875C13.3167 13.6458 14.3667 14.0333 15.4 14.55C15.8833 14.8 16.2708 15.1625 16.5625 15.6375C16.8542 16.1125 17 16.6333 17 17.2V20H1ZM19 20V17C19 16.2667 18.7958 15.5625 18.3875 14.8875C17.9792 14.2125 17.4 13.6333 16.65 13.15C17.5 13.25 18.3 13.4208 19.05 13.6625C19.8 13.9042 20.5 14.2 21.15 14.55C21.75 14.8833 22.2083 15.2542 22.525 15.6625C22.8417 16.0708 23 16.5167 23 17V20H19ZM9 12C7.9 12 6.95833 11.6083 6.175 10.825C5.39167 10.0417 5 9.1 5 8C5 6.9 5.39167 5.95833 6.175 5.175C6.95833 4.39167 7.9 4 9 4C10.1 4 11.0417 4.39167 11.825 5.175C12.6083 5.95833 13 6.9 13 8C13 9.1 12.6083 10.0417 11.825 10.825C11.0417 11.6083 10.1 12 9 12ZM19 8C19 9.1 18.6083 10.0417 17.825 10.825C17.0417 11.6083 16.1 12 15 12C14.8167 12 14.5833 11.9792 14.3 11.9375C14.0167 11.8958 13.7833 11.85 13.6 11.8C14.05 11.2667 14.3958 10.675 14.6375 10.025C14.8792 9.375 15 8.7 15 8C15 7.3 14.8792 6.625 14.6375 5.975C14.3958 5.325 14.05 4.73333 13.6 4.2C13.8333 4.11667 14.0667 4.0625 14.3 4.0375C14.5333 4.0125 14.7667 4 15 4C16.1 4 17.0417 4.39167 17.825 5.175C18.6083 5.95833 19 6.9 19 8ZM3 18H15V17.2C15 17.0167 14.9542 16.85 14.8625 16.7C14.7708 16.55 14.65 16.4333 14.5 16.35C13.6 15.9 12.6917 15.5625 11.775 15.3375C10.8583 15.1125 9.93333 15 9 15C8.06667 15 7.14167 15.1125 6.225 15.3375C5.30833 15.5625 4.4 15.9 3.5 16.35C3.35 16.4333 3.22917 16.55 3.1375 16.7C3.04583 16.85 3 17.0167 3 17.2V18ZM9 10C9.55 10 10.0208 9.80417 10.4125 9.4125C10.8042 9.02083 11 8.55 11 8C11 7.45 10.8042 6.97917 10.4125 6.5875C10.0208 6.19583 9.55 6 9 6C8.45 6 7.97917 6.19583 7.5875 6.5875C7.19583 6.97917 7 7.45 7 8C7 8.55 7.19583 9.02083 7.5875 9.4125C7.97917 9.80417 8.45 10 9 10Z" />
-                                </svg></span>
-                            <figcaption class="text-h6 mod-pl-3">5. Open Your Bank Account</figcaption>
-                        </div>
-                        <p class="mod-mt-1 text-gray-600">Use your company’s documents to open a bank account and start
-                            your business operations.</p>
-                    </figure>
-                </div>
-                <div>
-                    <a class="btn-custom-medium" href="{{ route('front.contact') }}" target="_self">
-                        <span class="btn-text btn-text--back">Get In Touch</span>
-                        <span class="btn-icon btn-icon--blue">
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M3 4a1 1 0 0 1 0-2h11v11a1 1 0 1 1-2 0V5.414l-8.293 8.293a1 1 0 0 1-1.414-1.414L10.586 4H3Z"
-                                    fill="white"></path>
-                            </svg>
-                            <span class="btn-text btn-text--front">Request a Callback</span>
-                        </span>
-                    </a>
-                </div>
-            </div>
+
+            <x-steps-wrapper page="{{ $slug }}"></x-steps-wrapper>
+
             <div class="sm:mod-hidden icon-bg">
                 <div class="asterisk-1 mod-absolute mod-w-6/12">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 217.14 205.43">

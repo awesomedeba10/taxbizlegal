@@ -7,7 +7,7 @@ use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\Config;
 use Illuminate\View\Component;
 
-class FaqWrapper extends Component
+class StepsWrapper extends Component
 {
     public $page;
     /**
@@ -23,11 +23,10 @@ class FaqWrapper extends Component
      */
     public function render(): View|Closure|string
     {
-        $faqs = Config::get('services.faqs.' . $this->page, []);
+        $steps = Config::get('services.steps.' . $this->page, []);
 
-        return view('components.faq-wrapper', [
-            'faqs' => $faqs, 
-            'slug' => $this->page
+        return view('components.steps-wrapper', [
+            'steps' => $steps
         ]);
     }
 }

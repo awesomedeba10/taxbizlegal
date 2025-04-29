@@ -100,7 +100,7 @@
                 </div>
             </h1>
             <p class="mod-nav-text mod-mt-2 mod-leading-loose mod-text-center">
-                Get yourDigital Signature Certificate quickly and securely with our flexible pricing plans. Start your
+                Get your Digital Signature Certificate quickly and securely with our flexible pricing plans. Start your
                 application today!
             </p>
         </div>
@@ -419,7 +419,7 @@
 
     <div class="mod-grid mod-mt-4 mod-gap-8 mod-grid-template-col-2 sm:mod-grid-template-col-1">
         <div class="mod-pr-8 mod-flex mod-flex-col sm:mod-order-2">
-            <h3 class="mod-font-semibold mod-leading-loose">Why Having a DSC Matterss</h3>
+            <h3 class="mod-font-semibold mod-leading-loose">Why Having a DSC Matters</h3>
             <p class="mod-mt-2 mod-pr-24">
                 A Digital Signature Certificate (DSC) enables secure online document signing, legal form submissions, tender filings, and tax compliance. It ensures authenticity, data integrity, and regulatory trust across multiple platforms.
             </p>

@@ -4,7 +4,7 @@
         <div class="section-heading">
             <p class="h5 text-primary mb-2">Get Your FSSAI Registration Done with Ease!</p>
             <h1 class="section-title mod-font-bold mod-leading-semi-loose mod-space-light-semi mod-mb-8" data-fade="up">
-                Register Your <span class="text-blue">Food Business for FSSAI</span> & Stay Compliant with Confidence!
+                Register Your <span class="text-blue">Food Business with FSSAI</span> & Stay Compliant with Confidence!
             </h1>
             <div class="mod-flex mod-flex-col mod-gap-10">
                 <div class="text mod-font-medium mod-leading-loose" data-fade="up">

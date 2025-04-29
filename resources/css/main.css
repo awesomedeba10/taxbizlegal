@@ -4447,7 +4447,7 @@ textarea.form-control {
     }
 }
 .text-lg {
-    font-size: calc(0.8216666667rem + 0.4044444444vmin);
+    font-size: calc(0.816666667rem + 0.4044444444vmin);
     --line-height: 1.3;
     line-height: var(--line-height);
     --font-weight: 500;
@@ -4691,9 +4691,10 @@ body:not(.topMenu-opened).topMenu-hidden .sticky-top {
 .h-scale {
     height: var(--bs-scale, 1.5rem);
 }
-.svg-scale svg {
+.svg-scale svg , .svg-scale img.svg {
     width: var(--bs-scale, 1.5rem);
     height: var(--bs-scale, 1.5rem);
+    filter: invert(30%) sepia(100%) saturate(700%) hue-rotate(190deg);
 }
 .max-w-scale {
     max-width: var(--bs-scale);

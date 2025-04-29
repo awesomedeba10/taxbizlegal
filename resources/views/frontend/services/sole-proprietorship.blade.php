@@ -3,9 +3,9 @@
         class="mod-items-center mod-px-24 mod-grid-12 mod-w-full sm:mod-gap-10 sm:mod-flex sm:mod-flex-col
         sm:mod-px-10 md:mod-px-12 md:mod-items-start ">
         <div class="section-heading">
-            <p class="h5 text-primary mb-2">Start Your Sole Proprietorship Company with Ease!</p>
+            <p class="h5 text-primary mb-2">Start Your Sole Proprietorship with Ease!</p>
             <h1 class="section-title mod-font-bold mod-leading-semi-loose mod-space-light-semi mod-mb-8" data-fade="up">
-                Register Your <span class="text-blue">Sole Proprietorship Company</span> & Unlock Growth Opportunities!</h1>
+                Register Your <span class="text-blue">Sole Proprietorship</span> & Unlock Growth Opportunities!</h1>
             <div class="mod-flex mod-flex-col mod-gap-10">
                 <div class="text mod-font-medium mod-leading-loose" data-fade="up">
                     <ul class="mod-ml-0 mod-mb-1 mod-pl-1 mod-list-none mod-flex mod-flex-col mod-gap-2 mod-text-base">
@@ -14,7 +14,7 @@
                         <li>👉 Quick Turnaround & Transparent Pricing</li>
                     </ul>
                 </div>
-                <p class="mb-0 mod-leading-light-loose">Experience seamless public limited company registration with
+                <p class="mb-0 mod-leading-light-loose">Experience seamless sole proprietorship registration with
                     our expert consultants. We handle paperwork, legal formalities, and compliance, ensuring a smooth
                     process. Focus on growth while we simplify your journey. Get started today!</p>
             </div>
@@ -167,7 +167,7 @@
         <div class="col-12 col-md-6 col-xxl-5 sm:mod-order-2">
             <div class="mod-py-8">
 
-                <h1 class="mod-text-s-24">All you need to know about Public Limted Company Registration</h1>
+                <h1 class="mod-text-s-24">All you need to know about Sole Proprietorship</h1>
                 <p>A Sole Proprietorship is one of the simplest and most common forms of business structures in India. As the name suggests, it is owned, managed, and controlled by a single individual. It is not a separate legal entity like a private limited company or LLP but a business run by an individual. The owner has complete control over the business, makes all decisions, and retains all profits. This structure is best suited for small-scale businesses, freelancers, and individual entrepreneurs. It is easy to set up and offers flexibility in terms of operations but comes with the drawback of unlimited liability for the owner.</p>
                 <p>Taxbizlegal.com is a trusted platform that provides end-to-end services for Sole Proprietorship Company
                     registration, including incorporation, compliance, advisory, and consultancy. The process is quick,
@@ -445,10 +445,10 @@
     <article class="banner bg-blue-100 mod-overflow-hidden py-40 px-4 p-lg-5 lg:mod-px-12 pb-xxl-4">
         <div class="row gy-32 gx-xl-40 mod-relative justify-content-center align-items-center">
             <div class="col-lg-12 d-flex flex-column mod-gap-8">
-                <h2 class="display-6 fw-bold mb-0">Register your Sole Proprietorship Company with <span
+                <h2 class="display-6 fw-bold mb-0">Register your Sole Proprietorship with <span
                         class="text-blue mod-font-semibold">Us</span> in 5 Simple Steps</h2>
-                <p class="text-lg mb-0 pe-xl-80 me-xxl-4 mod-w-5/6 sm:mod-w-full">Starting your own public limited
-                    company is now easier than ever! Just follow these 5 simple steps, and we will handle the process
+                <p class="text-lg mb-0 pe-xl-80 me-xxl-4 mod-w-5/6 sm:mod-w-full">Starting your own sole
+                    proprietorship is now easier than ever! Just follow these 5 simple steps, and we will handle the process
                     with accuracy and efficiency. Let us guide you through every step!</p>
                 <div
                     class="d-flex justify-content-center mod-mt-4 justify-content-lg-start gap-2 gap-sm-3 gap-xl-4 text-center svg-scale scale-4 sm:mod-flex-col sm:mod-w-full">

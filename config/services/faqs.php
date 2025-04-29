@@ -437,5 +437,49 @@ return [
             "question" => "How can I check the status of my ITR?",
             "answer" => "You can check the status of your ITR on the Income Tax e-Filing portal or use the acknowledgment number to track the processing."
         ]
+    ],
+    "huf" => [
+        [
+            "question" => "What is an HUF?",
+            "answer" => "A Hindu Undivided Family (HUF) is a separate tax entity comprising a family descended from a common ancestor. It is commonly used to manage ancestral property and joint family businesses."
+        ],
+        [
+            "question" => "Who can create an HUF?",
+            "answer" => "Any Hindu, Sikh, Jain, or Buddhist family can create an HUF. The family must consist of at least two members, typically created after marriage or childbirth."
+        ],
+        [
+            "question" => "Who is the Karta of the HUF?",
+            "answer" => "The Karta is the head of the HUF, traditionally the eldest male member. Post-2016, the eldest female member can also become the Karta if she is the senior-most coparcener."
+        ],
+        [
+            "question" => "What kind of income can an HUF earn?",
+            "answer" => "HUF can earn income from business, investments, rent from property, capital gains, and interest."
+        ],
+        [
+            "question" => "Can HUF receive gifts?",
+            "answer" => "Yes, HUF can receive gifts from relatives or other HUFs. However, gifts exceeding ₹50,000 from non-relatives are taxable unless covered under exemptions."
+        ],
+        [
+            "question" => "Can a HUF be dissolved?",
+            "answer" => "Yes, through mutual agreement among coparceners or by filing a partition deed. Assets are divided, and the HUF ceases to exist."
+        ],
+        [
+            "question" => "What are the tax benefits of forming an HUF?",
+            "answer" => "<ul>
+                           <li>Separate tax exemption limit under income tax slabs.</li>
+                           <li>Eligible for deductions under sections like 80C, 80D, etc.</li>
+                           <li>Helps reduce the tax liability of individual members by shifting income to HUF.</li>
+                         </ul>"
+        ],
+
+        [
+            "question" => "Can HUF be a partner in a firm or company?",
+            "answer" => "An HUF cannot be a partner in a firm, but the Karta can represent the HUF in a partnership."
+        ],
+
+        [
+            "question" => "Can a daughter be a coparcener in HUF?",
+            "answer" => "Yes, after the 2005 amendment to the Hindu Succession Act, daughters have the same rights as sons to be coparceners."
+        ]
     ]
 ];
