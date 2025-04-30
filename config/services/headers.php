@@ -21,7 +21,8 @@ return [
                 "background" => "#ffffff",
                 "services" => [
                     ["name" => "Section 8 Company", "description" => "Incorporate a non-profit company to drive your social mission."],
-                    ["name" => "Nidhi Company", "description" => "Create a company focused on savings and credit among members."]
+                    ["name" => "Nidhi Company", "description" => "Create a company focused on savings and credit among members."],
+                    ["name" => "Public Limited Company", "description" => "Establish a company with limited liability that can raise capital from the public through shares and enjoys higher credibility."]
                 ]
             ],
             [

@@ -4695,6 +4695,7 @@ body:not(.topMenu-opened).topMenu-hidden .sticky-top {
     width: var(--bs-scale, 1.5rem);
     height: var(--bs-scale, 1.5rem);
     filter: invert(30%) sepia(100%) saturate(700%) hue-rotate(190deg);
+    flex-shrink: 0;
 }
 .max-w-scale {
     max-width: var(--bs-scale);

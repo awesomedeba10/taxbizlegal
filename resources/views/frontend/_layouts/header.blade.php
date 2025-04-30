@@ -59,7 +59,7 @@
                                                                         class="mod-text-s-14 mod-font-medium mod-text-font-500 mod-my-2">
                                                                         {{ $service['name'] }}</p>
                                                                     <p
-                                                                        class="mod-text-s-12 mod-text-medium mod-hidden childDisplayHover">
+                                                                        class="mod-text-s-12 mod-text-medium mod-hidden mod-pr-2 childDisplayHover">
                                                                         {{ $service['description'] }}</p>
                                                                 </div>
                                                             </div>

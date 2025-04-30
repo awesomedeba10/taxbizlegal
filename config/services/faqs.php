@@ -266,32 +266,46 @@ return [
     ],
     "section-8-company" => [
         [
-            'question' => 'What is a Public Limited Company?',
-            'answer' => 'A Public Limited Company is a type of company whose shares are publicly traded on stock exchanges, and it can offer its shares to the general public. It is subject to strict regulations and requires a minimum of seven members to start.'
+            "question" => "What is a Section 8 Company?",
+            "answer" => "A Section 8 company is a non-profit organization formed with the objective of promoting social, educational, or charitable causes. It operates without distributing profits to its members and reinvests income into furthering its objectives."
         ],
         [
-            'question' => 'What are the requirements to register a Public Limited Company?',
-            'answer' => 'To register a Public Limited Company, you need at least seven members and a minimum authorized share capital, as per the regulatory requirements. The company must have at least three directors, two of whom must be Indian citizens.'
+            "question" => "What are the advantages of forming a Section 8 Company?",
+            "answer" => "<ul>
+                            <li>Limited liability protection for members.</li>
+                            <li>Legal recognition and credibility.</li>
+                            <li>Tax exemptions under Income Tax Act.</li>
+                            <li>Eligibility for government grants and funding.</li>
+                            <li>Enhanced trustworthiness among donors and the public.</li>
+                         </ul>"
         ],
         [
-            'question' => 'What are the advantages of a Public Limited Company?',
-            'answer' => 'Public Limited Companies offer several advantages such as:\n<ul><li>Ability to raise capital through the public sale of shares.</li><li>Limited liability for shareholders, which protects their personal assets.</li><li>Increased credibility and trust due to stricter regulatory oversight.</li><li>Broader access to financing options from investors and banks.</li></ul>'
+            "question" => "Can a Section 8 Company make a profit?",
+            "answer" => "Yes, a Section 8 company can generate income, but it cannot distribute profits to its members. Any profits made must be reinvested to further the company's objectives."
         ],
         [
-            'question' => 'What is the process of listing a Public Limited Company on the stock exchange?',
-            'answer' => 'The process of listing a Public Limited Company on a stock exchange includes the following steps:\n<ol><li>Preparation of a prospectus and approval from regulatory authorities.</li><li>Due diligence and compliance with the stock exchange listing requirements.</li><li>Public offering of shares (IPO) and trading of shares on the stock exchange.</li></ol>'
+            "question" => "Can a Section 8 company become a for-profit business?",
+            "answer" => "No, a Section 8 company cannot operate for profit. Its purpose is to serve public or charitable interests. If it wishes to become a for-profit entity, it must comply with the conversion process as per the Companies Act."
         ],
         [
-            'question' => 'What is the minimum capital required for a Public Limited Company?',
-            'answer' => 'The minimum authorized share capital required for a Public Limited Company is Rs. 5 lakh, as per the Companies Act. However, the actual capital needed may vary depending on the company’s nature and its financial goals.'
+            "question" => "Can foreigners be directors of a Section 8 Company?",
+            "answer" => "Yes, foreign nationals can become directors of a Section 8 company, provided they obtain a Director Identification Number (DIN) and comply with applicable provisions under the Companies Act."
         ],
         [
-            'question' => 'What are the compliance requirements for a Public Limited Company?',
-            'answer' => 'A Public Limited Company has to adhere to stringent compliance requirements, including:\n<ul><li>Annual filing of financial statements with the Ministry of Corporate Affairs (MCA).</li><li>Regular disclosures to the stock exchange if the company is listed.</li><li>Holding Annual General Meetings (AGMs) and passing necessary resolutions.</li><li>Maintaining proper corporate governance practices.</li></ul>'
+            "question" => "Is it necessary to have a physical office for a Section 8 Company?",
+            "answer" => "Yes, a registered office address is mandatory for a Section 8 company. It can be a residential or commercial address as long as it fulfills legal requirements and serves as the official communication point."
         ],
         [
-            'question' => 'Can a Public Limited Company raise funds from foreign investors?',
-            'answer' => 'Yes, a Public Limited Company can raise funds from foreign investors through Foreign Direct Investment (FDI) or by offering shares in public offerings (IPOs) as per government regulations and guidelines.'
+            "question" => "What are the tax exemptions available for Section 8 Companies?",
+            "answer" => "<ul>
+                            <li>Tax exemption under Section 12A for income earned by the company.</li>
+                            <li>Donors can claim deductions under Section 80G for donations made.</li>
+                            <li>Exemption from certain other taxes applicable to charitable organizations.</li>
+                         </ul>"
+        ],
+        [
+            "question" => "Can a Section 8 Company convert into a private limited company?",
+            "answer" => "Yes, a Section 8 company can convert into a private limited company by following the prescribed procedure, which includes seeking approval from the Regional Director and amending its memorandum and articles of association."
         ]
     ],
     "sole-proprietorship" => [
@@ -481,5 +495,57 @@ return [
             "question" => "Can a daughter be a coparcener in HUF?",
             "answer" => "Yes, after the 2005 amendment to the Hindu Succession Act, daughters have the same rights as sons to be coparceners."
         ]
+    ],
+    'partnership-firm' => [
+        ["question" => "What is a Partnership Firm?", "answer" => "A partnership firm is a business structure where two or more individuals manage and operate a business according to the terms outlined in a partnership deed."],
+
+        ["question" => "Is registration of a partnership firm mandatory?", "answer" => "No, registration of a partnership firm is optional. However, only a registered partnership firm can enforce its contractual rights in a court of law."],
+
+        ["question" => "How is a partnership firm taxed?", "answer" => "Partnership firms are taxed as separate entities at a flat rate of 30%, along with applicable cess and surcharge. Additionally, partners are taxed individually on the salary and interest received from the firm."],
+
+        ["question" => "Can a partnership firm have employees?", "answer" => "Yes, a partnership firm can hire employees and must comply with applicable labor laws such as Provident Fund (PF), Employees' State Insurance (ESI), gratuity, and other statutory regulations."],
+
+        ["question" => "What is the minimum and maximum number of partners allowed?", "answer" => "A partnership firm must have a minimum of 2 partners and can have a maximum of 50 partners, as per the Companies Act, 2013."],
+
+        ["question" => "Can a partnership firm be converted into an LLP or company?", "answer" => "Yes, a partnership firm can be converted into a Limited Liability Partnership (LLP) or a Private Limited Company by following the relevant procedures under the LLP Act or the Companies Act."],
+
+        ["question" => "What are the disadvantages of a partnership firm?", "answer" => "<ul><li>Unlimited Liability: Partners’ personal assets are at risk.</li><li>Limited Capital: Capital depends on partners’ contributions.</li><li>Disputes: Possibility of internal disagreements among partners.</li><li>No Perpetual Succession: Dissolves upon death, insolvency, or retirement of a partner unless reconstituted.</li></ul>"],
+
+        ["question" => "Can a foreigner be a partner in an Indian partnership firm?", "answer" => "Generally, foreigners cannot become partners in a traditional Indian partnership firm unless they comply with specific RBI and FEMA regulations. A Limited Liability Partnership (LLP) is usually a more suitable option for foreign participation."]
+    ],
+    "e-commerce-business-setup" => [
+    [
+        "question" => "What is an e-commerce business?",
+        "answer" => "An e-commerce business involves selling goods or services online through dedicated websites, mobile apps, or online marketplaces."
+    ],
+    [
+        "question" => "Do I need to register a company for an e-commerce business?",
+        "answer" => "While not mandatory for small sellers, registering as an LLP or Private Limited Company offers greater credibility and scalability."
+    ],
+    [
+        "question" => "Is GST registration compulsory for online selling?",
+        "answer" => "Yes, GST registration is mandatory for all online sellers, even if the annual turnover is below ₹40 lakh."
+    ],
+    [
+        "question" => "Can I sell on multiple platforms like Amazon and my website?",
+        "answer" => "Yes, you can sell on multiple platforms simultaneously. However, you must efficiently manage your inventory and pricing across all channels."
+    ],
+    [
+        "question" => "What licenses are required for an e-commerce business?",
+        "answer" => "The essential licenses include:<ul><li>GST Registration</li><li>FSSAI License (for food-related businesses)</li><li>Import Export Code (for international selling)</li><li>Professional Tax Registration (if applicable)</li></ul>"
+    ],
+    [
+        "question" => "How do I handle shipping and logistics?",
+        "answer" => "Partner with reliable logistics aggregators or courier companies that offer integrated solutions for delivery, returns, and order tracking."
+    ],
+    [
+        "question" => "What are the legal compliances specific to e-commerce?",
+        "answer" => "You must comply with Consumer Protection (E-Commerce) Rules, 2020, IT Act regulations, data privacy norms, and display return/refund/cancellation policies clearly."
+    ],
+    [
+        "question" => "Can a foreign national start an e-commerce business in India?",
+        "answer" => "Yes, foreign nationals can start marketplace-based models under the FDI policy. Inventory-led models need prior government approval."
     ]
+],
+
 ];
