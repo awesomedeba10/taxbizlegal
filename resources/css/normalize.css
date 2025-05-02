@@ -242,10 +242,20 @@ img, video {
     margin-top: 0.25rem;
     margin-bottom: 0.25rem;
 }
+.mod-dropdown-menu .mod-dropdown-menu-item p:last-child {
+    color: rgb(86 114 144);
+}
+.mod-dropdown-menu .mod-dropdown-menu-item p img {
+    transition: transform 0.3s ease;
+}
 .mod-dropdown-menu .mod-dropdown-menu-item:hover {
     --bg-opacity:  1;
-    background-color: #E7F1FE;
     background-color: rgba(231,  241,  254,  var(--bg-opacity));
+    border-radius: 8px;
+    border: 1px solid rgba(149, 162, 175, 0.25);
+}
+.mod-dropdown-menu .mod-dropdown-menu-item:hover p img {
+    transform: translateX(5px);
 }
 .mod-toggle {
     width: 1rem;

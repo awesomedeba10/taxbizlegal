@@ -1,6 +1,32 @@
 <?php
 
 return [
+    "private-limited-company" => [
+        "title" => "Register your Private Limited Company with <span class=\"text-blue mod-font-semibold\">Us</span> in 5 Simple Steps",
+        "description" => "Starting your own private limited company is now easier than ever! Just follow these 5 simple steps, and we will handle the process with accuracy and efficiency. Let us guide you through every step!",
+        "steps" => [
+            [
+                "title" => "Submit Your Documents",
+                "description" => "Share scanned copies of your KYC documents, and we’ll verify them for accuracy before proceeding with the registration process."
+            ],
+            [
+                "title" => "Name Approval",
+                "description" => "Provide two preferred names for your business, and we’ll apply for name approval through the SPICe+ form on MCA portal."
+            ],
+            [
+                "title" => "Company Registration",
+                "description" => "We’ll draft and file your MOA, AOA, and SPICe+ Part B with the Ministry of Corporate Affairs for company incorporation."
+            ],
+            [
+                "title" => "Incorporation Certificate",
+                "description" => "Upon approval by MCA, you’ll receive your Incorporation Certificate along with CIN, PAN, and TAN issued by the authorities."
+            ],
+            [
+                "title" => "Open Your Bank Account",
+                "description" => "Use the incorporation documents to open a business bank account and officially begin your company’s operations."
+            ]
+        ]
+    ],
     "huf" => [
         "title" => "Register your HUF with <span class='text-blue mod-font-semibold'>Us</span> in 5 Simple Steps",
         "description" => "Setting up your Hindu Undivided Family (HUF) is now simple and seamless! Just follow these 5 easy steps, and we’ll assist you with all the formalities, ensuring a smooth registration process.",
@@ -79,4 +105,31 @@ return [
             ],
         ]
     ],
+    "private-ltd-annual-filings" => [
+        "title" => "Complete Your Annual Company Filings in <span class=\"text-blue mod-font-semibold\">5 Easy Steps</span>",
+        "description" => "Ensure 100% compliance with MCA and income tax laws. Follow these simple steps to complete your Private Limited Company’s annual filings hassle-free.",
+        "steps" => [
+            [
+                "title" => "Conduct Board Meeting",
+                "description" => "Hold a board meeting to approve financial statements and schedule the Annual General Meeting (AGM) within the statutory deadline."
+            ],
+            [
+                "title" => "Hold the AGM",
+                "description" => "Conduct your company’s AGM within 6 months of the financial year-end to present financials and pass necessary resolutions."
+            ],
+            [
+                "title" => "File AOC-4 with MCA",
+                "description" => "Submit audited financial statements including Balance Sheet and Profit & Loss to the Registrar of Companies (ROC) using Form AOC-4."
+            ],
+            [
+                "title" => "Submit MGT-7 or MGT-7A",
+                "description" => "File the company’s annual return detailing shareholding structure, director details, and key disclosures using MGT-7/MGT-7A form."
+            ],
+            [
+                "title" => "Complete Director KYC & Other Forms",
+                "description" => "File DIR-3 KYC for directors and applicable forms like ADT-1, DPT-3, and MSME Form I to ensure full legal compliance."
+            ]
+        ]
+    ]
+
 ];

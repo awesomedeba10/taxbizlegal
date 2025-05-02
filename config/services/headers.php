@@ -41,7 +41,7 @@ return [
                 "title" => "Annual Filings",
                 "background" => "#ffffff",
                 "services" => [
-                    ["name" => "Private Ltd Annual Filing", "description" => "Stay compliant with ROC filing for your Private Limited Company."],
+                    ["name" => "Private Ltd Annual Filings", "description" => "Stay compliant with ROC filing for your Private Limited Company."],
                     ["name" => "LLP Annual Filing", "description" => "Complete your LLP's annual compliance smoothly."],
                     ["name" => "Public Ltd Filing", "description" => "File mandatory returns for your Public Limited Company on time."],
                     ["name" => "OPC Filing", "description" => "Ensure your OPC stays compliant with easy filing services."],

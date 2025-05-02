@@ -37,12 +37,14 @@
 <meta name="twitter:image" content="images/img/home/editor.png" /> --}}
 
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('images/favicon/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ asset('images/favicon/favicon-32x32.png') }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/favicon/favicon-32x32.png') }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('images/favicon/favicon-16x16.png') }}">
     <link rel="manifest" href="{{ asset('images/favicon/manifest.json') }}">
-    <link rel="mask-icon" href="{{ asset('images/favicon/safari-pinned-tab.svg') }}" color="#006EEC">
+    <link rel="mask-icon" href="{{ asset('images/favicon/favicon.svg') }}" color="#006EEC">
     <link rel="shortcut icon" href="{{ asset('images/favicon/favicon.ico') }}">
 
+    <meta name="apple-mobile-web-app-title" content="TaxBizLegal" />
     <meta name="msapplication-TileColor" content="#006eec">
     <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
     <meta name="theme-color" content="#3e78c6">

@@ -10,13 +10,13 @@ ScrollReveal().reveal('.reveal-me', {
     easing: 'ease-in-out',
 });
 
-$(function() {
-    $(".mod-flex > .mod-dropdown-submenu > a").hover(
+$(function () {
+    $(".mod-dropdown-submenu a").hover(
         function () {
-            $(this).find(".childDisplayHover").removeClass("mod-hidden");
+            $(this).find(".childDisplayHover").removeClass("mod-invisible");
         },
         function () {
-            $(this).find(".childDisplayHover").addClass("mod-hidden");
+            $(this).find(".childDisplayHover").addClass("mod-invisible");
         }
     );
 });
@@ -65,5 +65,29 @@ document.querySelectorAll('.services-nav-item').forEach(item => {
     });
 });
 
+const focusBtn = document.querySelector('[data-id="focus-first-input-btn"]');
 
+if (focusBtn) {
+    document.querySelector('[data-id="focus-first-input-btn"]').addEventListener('click', function () {
+        const form = document.getElementById('frm-adeptRegistrationForm-form');
 
+        form.querySelector('button[name="_submit"]').click();
+
+        detectScrollOnClick().then(scrolled => {
+            if (!scrolled) {
+                document.getElementById('frm-enquiryForm-form-user-mail').focus();
+            }
+        });
+    });
+}
+
+function detectScrollOnClick() {
+    const initialScroll = window.scrollY;
+
+    return new Promise(resolve => {
+        setTimeout(() => {
+            const currentScroll = window.scrollY;
+            resolve(currentScroll !== initialScroll);
+        }, 200);
+    });
+}

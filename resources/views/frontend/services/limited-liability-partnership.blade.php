@@ -147,18 +147,14 @@
                         <p class="mod-mb-0">Lightning-Fast Customer Support</p>
                     </div>
                 </div>
-                <a class="btn-custom-medium" href="http://127.0.0.1:8000/contact-us" target="_self">
-                    <span class="btn-text btn-text--back">Get In Touch</span>
-                    <span class="btn-icon btn-icon--red">
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M3 4a1 1 0 0 1 0-2h11v11a1 1 0 1 1-2 0V5.414l-8.293 8.293a1 1 0 0 1-1.414-1.414L10.586 4H3Z"
-                                fill="white"></path>
-                        </svg>
-                        <span class="btn-text btn-text--front">Request a Callback</span>
-                    </span>
-                </a>
+                <x-custom-mod-btn
+                    class="btn-custom-medium"
+                    data-id="focus-first-input-btn"
+                    btn-icon="btn-icon--red"
+                >
+                    <x-slot:hoverTitle>Request a Callback</x-slot>
+                    Get in Touch
+                </x-custom-mod-btn>
             </div>
         </div>
     </div>
@@ -543,18 +539,13 @@
                     </figure>
                 </div>
                 <div>
-                    <a class="btn-custom-medium" href="{{ route('front.contact') }}" target="_self">
-                        <span class="btn-text btn-text--back">Get In Touch</span>
-                        <span class="btn-icon btn-icon--blue">
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M3 4a1 1 0 0 1 0-2h11v11a1 1 0 1 1-2 0V5.414l-8.293 8.293a1 1 0 0 1-1.414-1.414L10.586 4H3Z"
-                                    fill="white"></path>
-                            </svg>
-                            <span class="btn-text btn-text--front">Request a Callback</span>
-                        </span>
-                    </a>
+                    <x-custom-mod-btn
+                        class="btn-custom-medium"
+                        data-id="focus-first-input-btn"
+                    >
+                        <x-slot:hoverTitle>Request a Callback</x-slot>
+                        Get in Touch
+                    </x-custom-mod-btn>
                 </div>
             </div>
             <div class="sm:mod-hidden icon-bg">

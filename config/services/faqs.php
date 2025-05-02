@@ -514,38 +514,76 @@ return [
         ["question" => "Can a foreigner be a partner in an Indian partnership firm?", "answer" => "Generally, foreigners cannot become partners in a traditional Indian partnership firm unless they comply with specific RBI and FEMA regulations. A Limited Liability Partnership (LLP) is usually a more suitable option for foreign participation."]
     ],
     "e-commerce-business-setup" => [
-    [
-        "question" => "What is an e-commerce business?",
-        "answer" => "An e-commerce business involves selling goods or services online through dedicated websites, mobile apps, or online marketplaces."
+        [
+            "question" => "What is an e-commerce business?",
+            "answer" => "An e-commerce business involves selling goods or services online through dedicated websites, mobile apps, or online marketplaces."
+        ],
+        [
+            "question" => "Do I need to register a company for an e-commerce business?",
+            "answer" => "While not mandatory for small sellers, registering as an LLP or Private Limited Company offers greater credibility and scalability."
+        ],
+        [
+            "question" => "Is GST registration compulsory for online selling?",
+            "answer" => "Yes, GST registration is mandatory for all online sellers, even if the annual turnover is below ₹40 lakh."
+        ],
+        [
+            "question" => "Can I sell on multiple platforms like Amazon and my website?",
+            "answer" => "Yes, you can sell on multiple platforms simultaneously. However, you must efficiently manage your inventory and pricing across all channels."
+        ],
+        [
+            "question" => "What licenses are required for an e-commerce business?",
+            "answer" => "The essential licenses include:<ul><li>GST Registration</li><li>FSSAI License (for food-related businesses)</li><li>Import Export Code (for international selling)</li><li>Professional Tax Registration (if applicable)</li></ul>"
+        ],
+        [
+            "question" => "How do I handle shipping and logistics?",
+            "answer" => "Partner with reliable logistics aggregators or courier companies that offer integrated solutions for delivery, returns, and order tracking."
+        ],
+        [
+            "question" => "What are the legal compliances specific to e-commerce?",
+            "answer" => "You must comply with Consumer Protection (E-Commerce) Rules, 2020, IT Act regulations, data privacy norms, and display return/refund/cancellation policies clearly."
+        ],
+        [
+            "question" => "Can a foreign national start an e-commerce business in India?",
+            "answer" => "Yes, foreign nationals can start marketplace-based models under the FDI policy. Inventory-led models need prior government approval."
+        ]
     ],
-    [
-        "question" => "Do I need to register a company for an e-commerce business?",
-        "answer" => "While not mandatory for small sellers, registering as an LLP or Private Limited Company offers greater credibility and scalability."
-    ],
-    [
-        "question" => "Is GST registration compulsory for online selling?",
-        "answer" => "Yes, GST registration is mandatory for all online sellers, even if the annual turnover is below ₹40 lakh."
-    ],
-    [
-        "question" => "Can I sell on multiple platforms like Amazon and my website?",
-        "answer" => "Yes, you can sell on multiple platforms simultaneously. However, you must efficiently manage your inventory and pricing across all channels."
-    ],
-    [
-        "question" => "What licenses are required for an e-commerce business?",
-        "answer" => "The essential licenses include:<ul><li>GST Registration</li><li>FSSAI License (for food-related businesses)</li><li>Import Export Code (for international selling)</li><li>Professional Tax Registration (if applicable)</li></ul>"
-    ],
-    [
-        "question" => "How do I handle shipping and logistics?",
-        "answer" => "Partner with reliable logistics aggregators or courier companies that offer integrated solutions for delivery, returns, and order tracking."
-    ],
-    [
-        "question" => "What are the legal compliances specific to e-commerce?",
-        "answer" => "You must comply with Consumer Protection (E-Commerce) Rules, 2020, IT Act regulations, data privacy norms, and display return/refund/cancellation policies clearly."
-    ],
-    [
-        "question" => "Can a foreign national start an e-commerce business in India?",
-        "answer" => "Yes, foreign nationals can start marketplace-based models under the FDI policy. Inventory-led models need prior government approval."
+    "private-ltd-annual-filings" => [
+        [
+            "question" => "Is annual filing mandatory for all private limited companies?",
+            "answer" => "Yes, annual filing is mandatory for all private limited companies, even if the company is inactive or has no turnover."
+        ],
+        [
+            "question" => "Can I skip filing if the company didn’t do any business?",
+            "answer" => "No, ROC filings are compulsory regardless of business activity. Failure to file can result in penalties and defaulter status."
+        ],
+        [
+            "question" => "What is the difference between AOC-4 and MGT-7?",
+            "answer" => "<ul><li><strong>AOC-4:</strong> Used for submitting audited financial statements.</li><li><strong>MGT-7/MGT-7A:</strong> Used to file annual return covering shareholding, management, and company details.</li></ul>"
+        ],
+        [
+            "question" => "Who is responsible for MCA compliance?",
+            "answer" => "The company’s directors are responsible for ensuring that all MCA filings are completed on time and in compliance with regulations."
+        ],
+        [
+            "question" => "What is DIR-3 KYC and who needs to file it?",
+            "answer" => "DIR-3 KYC is an annual KYC form that must be filed by all directors holding a Director Identification Number (DIN) to keep it active."
+        ],
+        [
+            "question" => "Can a company file AOC-4 or MGT-7 before holding an AGM?",
+            "answer" => "No, the Annual General Meeting (AGM) must be conducted first as the resolutions passed form the basis for these filings."
+        ],
+        [
+            "question" => "What is the penalty for late filing of AOC-4 and MGT-7?",
+            "answer" => "A penalty of ₹100 per day per form is levied for late filing, with no upper limit. Delays can result in heavy financial penalties."
+        ],
+        [
+            "question" => "What is a “Small Company” for MGT-7A?",
+            "answer" => "<ul><li>Paid-up capital less than or equal to ₹2 crore</li><li>Turnover less than or equal to ₹20 crore</li></ul>"
+        ],
+        [
+            "question" => "Can annual filings be done manually?",
+            "answer" => "No, all annual filings must be submitted digitally via the MCA21 portal: <a href=\"https://www.mca.gov.in\" target=\"_blank\">https://www.mca.gov.in</a>"
+        ]
     ]
-],
 
 ];

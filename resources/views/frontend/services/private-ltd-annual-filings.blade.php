@@ -3,20 +3,22 @@
         class="mod-items-center mod-px-24 mod-grid-12 mod-w-full sm:mod-gap-10 sm:mod-flex sm:mod-flex-col
         sm:mod-px-10 md:mod-px-12 md:mod-items-start ">
         <div class="section-heading">
-            <p class="h5 text-primary mb-2">Start Your Private Limited Company with Ease!</p>
+            <p class="h5 text-primary mb-2">Stay Compliant. Stay Ahead.</p>
             <h1 class="section-title mod-font-bold mod-leading-semi-loose mod-space-light-semi mod-mb-8" data-fade="up">
-                Register Your <span class="text-blue">Private Limited Company</span> & Unlock Growth Opportunities!</h1>
+                Annual Filings for Your <span class="text-blue">Private Limited Company</span> Made Easy</h1>
             <div class="mod-flex mod-flex-col mod-gap-10">
                 <div class="text mod-font-medium mod-leading-loose" data-fade="up">
                     <ul class="mod-ml-0 mod-mb-1 mod-pl-1 mod-list-none mod-flex mod-flex-col mod-gap-2 mod-text-base">
-                        <li>👉 100% Online, Hassle-Free Registration Process</li>
-                        <li>👉 Expert Guidance & Legal Compliance Assistance</li>
-                        <li>👉 Quick Turnaround & Transparent Pricing</li>
+                        <li>👉 ROC Filing, Director Reports, and Compliance in One Place</li>
+                        <li>👉 Expert CA & CS Support Throughout the Year</li>
+                        <li>👉 Transparent Pricing with Timely Alerts & Zero Penalties</li>
                     </ul>
                 </div>
-                <p class="mb-0 mod-leading-light-loose">Experience seamless private limited company registration with
-                    our expert consultants. We handle paperwork, legal formalities, and compliance, ensuring a smooth
-                    process. Focus on growth while we simplify your journey. Get started today!</p>
+                <p class="mb-0 mod-leading-light-loose">Ensure smooth annual compliance for your Pvt Ltd Company with
+                    our
+                    end-to-end support. From drafting financial statements to MCA ROC filings, we take care of it all so
+                    you can focus on growth. Don’t let missed filings cost you penalties — let’s get compliant today.
+                </p>
             </div>
         </div>
         <div class="section-content mod-pr-12 md:mod-pr-0 sm:mod-pr-0">
@@ -24,7 +26,7 @@
                 <div class="col-md-12">
                     <h1 class="h2 mb-lg-20">
                         <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;">Register Today, Secure Your Future</font>
+                            <font style="vertical-align: inherit;">Get Your Annual Compliance Sorted Today</font>
                         </font>
                     </h1>
                     <x-user-form></x-user-form>
@@ -32,6 +34,7 @@
             </div>
         </div>
     </div>
+
 </section>
 
 <section
@@ -41,7 +44,7 @@
         <div
             class="mod-flex services-nav-container mod-items-center mod-justify-between mod-cursor-pointer mod-rounded-lg mod-border-sm mod-overflow-hidden mod-text-s-14 mod-font-medium">
             <div class="mod-whitespace-nowrap mod-py-4 mod-sticky mod-left-0 mod-pl-6">
-                <span class="services-nav-title mod-pl-6 mod-pr-3 mod-border-r-sm mod-contents">PVT LTD COMPANY</span>
+                <span class="services-nav-title mod-pl-6 mod-pr-3 mod-border-r-sm mod-contents">PVT LTD ANNUAL FILINGS</span>
             </div>
             <ul class="services-nav-ul mod-flex mod-items-center mod-my-0 mod-justify-center mod-list-none">
                 <li data-target="pricing"
@@ -56,9 +59,6 @@
                 <li class="services-nav-item mod-px-5 mod-py-4 mod-border-t-md mod-border-none mod-whitespace-nowrap mod-font-medium text-blue-350 border-blue-350"
                     data-target="resources">
                     Resources</li>
-                <li class="services-nav-item mod-px-5 mod-py-4 mod-border-t-md mod-border-none mod-whitespace-nowrap mod-font-medium text-blue-350 border-blue-350"
-                    data-target="doc-required">
-                    Required Documents</li>
                 <li class="services-nav-item mod-px-5 mod-py-4 mod-border-t-md mod-border-none mod-whitespace-nowrap mod-font-medium text-blue-350 border-blue-350"
                     data-target="compliances">
                     Compliances to Follow</li>
@@ -90,16 +90,15 @@
         <h4 class="mod-text-s-14 text-blue mod-leading-semi-loose mod-space-semi mod-uppercase mod-m-0">Transparent
             Pricing, No Hidden Charges</h4>
         <div>
-            <h1
-                class="mod-text-s-32 mod-nav-text mod-font-semibold mod-word-break-normal mod-text-center mod-leading-loose">
-                <span>Choose the Right Plan</span>
+            <h1 class="mod-text-s-32 mod-nav-text mod-font-semibold mod-word-break-normal mod-text-center mod-leading-loose">
+                <span>Pick a Plan</span>
                 <div class="mod-text-s-44">
-                    For your <span class="text-blue">Private Limited Company</span>
+                    For Your <span class="text-blue">Pvt Ltd Company</span>
                 </div>
             </h1>
             <p class="mod-nav-text mod-mt-2 mod-leading-loose mod-text-center">
-                Get your Private Limited Company registered effortlessly with our tailored pricing plans. Start your
-                journey today!
+                Simple, transparent pricing for all your annual filing needs. Whether you're a growing startup or an established company,
+                our expert-backed plans ensure complete compliance, timely filings, and peace of mind — so you can focus on scaling your business.
             </p>
         </div>
     </div>
@@ -108,10 +107,12 @@
 
         <x-pricing-wrapper page="{{ $slug }}"></x-pricing-wrapper>
 
-        <div class="card-more-plan bg-blue-100 mod-flex mod-w-full mod-justify-center mod-items-center mod-overflow-hidden mod-relative mod-mt-12 mod-py-12" data-theme="dark">
+        <div class="card-more-plan bg-blue-100 mod-flex mod-w-full mod-justify-center mod-items-center mod-overflow-hidden mod-relative mod-mt-12 mod-py-12"
+            data-theme="dark">
             <div class="mod-flex mod-flex-col mod-items-center">
-                <h4 class="mod-text-s-32 mod-font-semibold mod-word-break-normal mod-text-center mod-leading-semi-loose">
-                    Still not sure yet? <br> 
+                <h4
+                    class="mod-text-s-32 mod-font-semibold mod-word-break-normal mod-text-center mod-leading-semi-loose">
+                    Still not sure yet? <br>
                     <span class="mod-text-s-24">Let our Experts help you find the right Plan</span>
                 </h4>
                 <div class="mod-flex sm:mod-flex-col mod-flex-row mod-gap-8 mod-my-4">
@@ -125,30 +126,24 @@
                         <p class="mod-mb-0">Clear & Transparent Process</p>
                     </div>
                     <div class="mod-flex mod-items-center mod-justify-center mod-gap-2">
-                        <img
-                            src="https://carrier.formcarry.com/website-assets/unlimited-uploads-icon.svg"
+                        <img src="https://carrier.formcarry.com/website-assets/unlimited-uploads-icon.svg"
                             width="24">
                         <p class="mod-mb-0">Real-Time Updates</p>
                     </div>
                 </div>
                 <div class="mod-flex sm:mod-flex-col mod-flex-row mod-gap-8 mod-mb-8">
                     <div class="mod-flex mod-items-center mod-justify-center mod-gap-2">
-                        <img
-                            src="https://carrier.formcarry.com/website-assets/migration-support-icon.svg"
+                        <img src="https://carrier.formcarry.com/website-assets/migration-support-icon.svg"
                             width="24">
                         <p class="mod-mb-0">100% Moneyback Gurantee*</p>
                     </div>
                     <div class="mod-flex mod-items-center mod-justify-center mod-gap-2">
                         <img src="https://carrier.formcarry.com/website-assets/customer-support-icon.svg"
-                        width="24">
+                            width="24">
                         <p class="mod-mb-0">Lightning-Fast Customer Support</p>
                     </div>
                 </div>
-                <x-custom-mod-btn
-                    class="btn-custom-medium"
-                    data-id="focus-first-input-btn"
-                    btn-icon="btn-icon--red"
-                >
+                <x-custom-mod-btn class="btn-custom-medium" data-id="focus-first-input-btn" btn-icon="btn-icon--red">
                     <x-slot:hoverTitle>Request a Callback</x-slot>
                     Get in Touch
                 </x-custom-mod-btn>
@@ -162,23 +157,10 @@
     <div class="row justify-content-between">
         <div class="col-12 col-md-6 col-xxl-5 sm:mod-order-2">
             <div class="mod-py-8">
-
-                <h1 class="mod-text-s-24">All you need to know about Private Limited Company Registration</h1>
-                <p>A Private Limited Company (PLC) in India is one of the most popular and simplest forms of company
-                    registration. It offers limited liability and legal protection to its shareholders, making it an
-                    ideal choice for many entrepreneurs. Positioned as a hybrid entity between a partnership firm and a
-                    public company, it allows businesses to enjoy the benefits of both forms.</p>
-                <p>To register a PLC, at least two individuals are required, and one individual can serve both as the
-                    director and shareholder. The liability of the company’s members is confined to the value of their
-                    shares, providing protection for personal assets. Once the Certificate of Incorporation is received,
-                    the company can commence its operations. The entire registration process typically takes around 15
-                    working days to complete.</p>
-                <p>Taxbizlegal.com is a trusted platform that provides end-to-end services for Private Limited Company
-                    registration, including incorporation, compliance, advisory, and consultancy. The process is quick,
-                    affordable, and simple. Additionally, we offer services for Partnership Registration, LLP
-                    Incorporation, One Person Company registration, and more. Contact us for a free consultation at
-                    info@taxbizlegal.com or call our compliance manager at 09*********.</p>
-
+                <h1 class="mod-text-s-24">Everything You Should Know About Annual Filings for Private Limited Companies</h1>
+                <p>A Private Limited Company registered under the Companies Act, 2013 is required to comply with certain annual filing requirements with the Ministry of Corporate Affairs (MCA). These filings are mandatory, regardless of the company’s turnover, activity level, or profits. Non-compliance may result in heavy penalties and even disqualification of directors in some cases.</p>
+                <p>Annual compliance ensures legal recognition, operational transparency, and builds investor trust. Companies must file their financial statements in Form AOC-4, annual return in Form MGT-7, and director disclosures under DIR-8. In addition, they are also required to file their Income Tax Returns (ITR) and conduct statutory audits, even in the absence of active operations.</p>
+                <p>Our team at Taxbizlegal.com provides end-to-end support for fulfilling annual compliance, including document preparation, filing, and audit coordination. We also assist with ROC filings, secretarial services, and legal compliance tracking. Connect with our experts for a free compliance check at info@taxbizlegal.com or speak to our filings advisor at 09*********.</p>
             </div>
         </div>
         <div class="col-12 col-md-6 sm:mod-order-1 mod-pl-16 md:mod-pl-0 sm:mod-pl-0">
@@ -194,7 +176,7 @@
         <div class="section-heading">
             <h2 class="section-title mod-text-s-28 mod-font-bold mod-leading-semi-loose mod-space-light-semi"
                 data-fade="up">
-                Advantages of Private Limited Company
+                Advantages of Annual Compliance
             </h2>
         </div>
         <div class="section-content mod-grid-4">
@@ -216,9 +198,8 @@
                     </svg>
                 </div>
                 <div class="item-content">
-                    <h3 class="item-title">No Minimum Capital Requirement</h3>
-                    <p class="item-text">A Private Limited Company can be registered with a minimum authorized share
-                        capital of just Rs. 10,000, making it highly accessible for startups and small businesses.</p>
+                    <h3 class="item-title">Legal Standing</h3>
+                    <p class="item-text">Annual filings maintain your company’s active status with the Registrar of Companies (ROC), ensuring it remains in good legal standing and is officially recognized.</p>
                 </div>
             </div>
             <div class="mod-flex mod-flex-col mod-gap-4 xl:mod-pr-20 lg:mod-pr-8 sm:mod-pr-4 sm:mod-flex-row"
@@ -229,12 +210,12 @@
                         <path
                             d="M14 11h-1v-1a1 1 0 0 0-2 0v1h-1a1 1 0 0 0 0 2h1v1a1 1 0 0 0 2 0v-1h1a1 1 0 0 0 0-2Zm5.63-7.35a1.007 1.007 0 0 0-.835-.203 7.98 7.98 0 0 1-6.223-1.267.999.999 0 0 0-1.144 0 7.976 7.976 0 0 1-6.223 1.267A1 1 0 0 0 4 4.427v7.456a9.019 9.019 0 0 0 3.769 7.324l3.65 2.607a1 1 0 0 0 1.162 0l3.65-2.607A9.018 9.018 0 0 0 20 11.883V4.426a1 1 0 0 0-.37-.776ZM18 11.883a7.017 7.017 0 0 1-2.93 5.696L12 19.771 8.93 17.58A7.017 7.017 0 0 1 6 11.883v-6.3a9.955 9.955 0 0 0 6-1.391 9.955 9.955 0 0 0 6 1.391v6.3Z"
                             fill="#0B1126"></path>
-                    </svg></div>
-                <div class="item-content">
-                    <h3 class="item-title">Limited Liability</h3>
-                    <p class="item-text">It operates as an independent legal entity, ensuring that directors' personal
-                        assets remain safeguarded against company debts or financial obligations.</p>
+                    </svg>
                 </div>
+                    <div class="item-content">
+                        <h3 class="item-title">Avoid Penalties</h3>
+                        <p class="item-text">Timely compliance helps you avoid hefty government penalties and prevents the disqualification of directors due to missed or delayed statutory filings.</p>
+                    </div>
             </div>
             <div class="mod-flex mod-flex-col mod-gap-4 xl:mod-pr-20 lg:mod-pr-8 sm:mod-pr-4 sm:mod-flex-row"
                 data-fade="up"
@@ -251,9 +232,8 @@
                     </svg>
                 </div>
                 <div class="item-content">
-                    <h3 class="item-title">Fundraising Opportunities</h3>
-                    <p class="item-text">Its structured legal framework makes it easier to secure funding from venture
-                        capitalists, angel investors, and financial institutions, enhancing growth opportunities.</p>
+                    <h3 class="item-title">Investor Trust</h3>
+                    <p class="item-text">Consistent annual compliance enhances your company’s credibility, building confidence among investors, clients, and financial institutions.</p>
                 </div>
             </div>
             <div class="mod-flex mod-flex-col mod-gap-4 xl:mod-pr-20 lg:mod-pr-8 sm:mod-pr-4 sm:mod-flex-row"
@@ -268,11 +248,8 @@
                     </svg>
                 </div>
                 <div class="item-content">
-                    <h3 class="item-title">Enhanced Credibility</h3>
-                    <p class="item-text">
-                        Since company information is publicly available, it builds trust and credibility among
-                        customers, investors, and financial partners, improving business reputation.
-                    </p>
+                    <h3 class="item-title">Financial Transparency</h3>
+                    <p class="item-text">Filing financials and returns provides a clear picture of company performance and governance, helping monitor overall business health.</p>
                 </div>
             </div>
         </div>
@@ -282,149 +259,112 @@
 <section class="container my-80 my-xxl-120" id="resources">
 
     <h1 class="display-6 mb-32 mod-font-semibold mod-text-s-24">
-        Selecting the Ideal Business Structure for Your Company
+        Essential Features of Annual Filing for Pvt. Ltd. Company
     </h1>
     <div class="row gy-40 gx-lg-40">
         <div class="col-lg-4">
             <div class="d-flex flex-column gap-12 gap-lg-3 mx-auto">
-                <h2 class="mb-0">Company Limited by
-                    <span class="text-primary mod-font-bold">Shares</span>
-                </h2>
-                <p class="mb-0 text-lg mod-text-justify">A company limited by shares is a distinct legal entity from its shareholders
-                    and directors. It can enter into contracts, own assets, and operate independently under its business
-                    name.</p>
-                <p class="mb-0 text-lg mod-text-justify">Shareholders’ liability is limited to their investment, ensuring their
-                    personal assets remain protected from the company’s financial obligations. This structure is widely
-                    chosen for its security and credibility.</p>
+                <h2 class="mb-0">Mandatory for All, <span class="text-primary mod-font-bold">Regardless of Activity</span></h2>
+                <p class="mb-0 text-lg mod-text-justify">Annual filing is a legal obligation for every Private Limited Company, even if there are no active operations or income during the financial year.</p>
+                <p class="mb-0 text-lg mod-text-justify">It ensures your company stays compliant and avoids legal complications with the Registrar of Companies (ROC).</p>
             </div>
         </div>
         <div class="col-lg-4">
             <div class="d-flex flex-column gap-12 gap-lg-3 mx-auto">
-                <h2 class="mb-0">Company Limited by
-                    <span class="text-primary mod-font-bold">Guarantee</span>
-                </h2>
-                <p class="mb-0 text-lg mod-text-justify">A company limited by guarantee does not have shareholders or share capital.
-                    Instead, it is backed by guarantors who commit a fixed amount towards company debts if necessary.
-                </p>
-                <p class="mb-0 text-lg mod-text-justify">Such companies usually operate as non-profits, with profits reinvested into
-                    the business to support its objectives. Guarantors do not receive a share of the profits.</p>
+                <h2 class="mb-0">Fully Digital, <span class="text-primary mod-font-bold">Filed on MCA Portal</span></h2>
+                <p class="mb-0 text-lg mod-text-justify">All annual returns and documents are submitted electronically through the MCA’s online filing system, making the process paperless and efficient.</p>
+                <p class="mb-0 text-lg mod-text-justify">Digital signatures and MCA credentials are used to authenticate filings securely.</p>
             </div>
         </div>
         <div class="col-lg-4">
             <div class="d-flex flex-column gap-12 gap-lg-3 mx-auto">
-                <h2 class="mb-0">
-                    <span class="text-primary mod-font-bold">Unlimited</span> Company
-                </h2>
-                <p class="mb-0 text-lg mod-text-justify">An unlimited company, as per Section 2(92) of the Companies Act, 2013, does
-                    not impose financial liability limits on its shareholders.</p>
-                <p class="mb-0 text-lg mod-text-justify">In case of dissolution, shareholders are fully responsible for covering all
-                    company debts, even beyond their initial investment. This structure offers operational flexibility
-                    but comes with higher financial risk.</p>
+                <h2 class="mb-0">Timely Filing, <span class="text-primary mod-font-bold">Separate from ITR</span></h2>
+                <p class="mb-0 text-lg mod-text-justify">Annual compliance must be completed within 30 to 60 days of the AGM and is distinct from Income Tax Return submissions.</p>
+                <p class="mb-0 text-lg mod-text-justify">Both MCA and tax filings must be done independently to ensure full legal compliance.</p>
             </div>
         </div>
     </div>
 
 </section>
 
-<section class="bg-blue-100 py-40 py-xxl-40" id="doc-required">
-    <div class="doc-required container mod-flex mod-flex-col mod-gap-8">
-        <h2 class="mod-font-semibold mod-text-s-28 mod-mb-0 mod-leading-semi-loose mod-space-light-semi">
-            Documents Required for Registering <span class="text-blue">Your</span> Private Limited Company
-        </h2>
-        <div class="section-content mod-grid-12">
-            <div class="img mod-flex mod-justify-center mod-overflow-hidden mod-items-center" data-fade="in">
-                <img decoding="async" width="714" height="402"
-                    src="{{ asset('images/svg/customer-doc-required-service-banner.svg') }}"
-                    class="attachment-large size-large" alt=""
-                    sizes="auto, (max-width: 714px) 100vw, 714px" loading="lazy">
-            </div>
-            <div class="items mod-grid-4">
-                <div class="mod-flex mod-flex-col mod-gap-2" data-fade="up">
-                    <div class="item-number">01.</div>
-                    <p class="item-text">Passport Size Photograph</p>
-                </div>
-                <div class="mod-flex mod-flex-col mod-gap-2" data-fade="up">
-                    <div class="item-number">02.</div>
-                    <p class="item-text">Individual PAN Card</p>
-                </div>
-                <div class="mod-flex mod-flex-col mod-gap-2" data-fade="up"
-                    style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1; visibility: inherit;">
-                    <div class="item-number">03.</div>
-                    <p class="item-text">Registered Office Proof</p>
-                </div>
-                <div class="mod-flex mod-flex-col mod-gap-2" data-fade="up">
-                    <div class="item-number">04.</div>
-                    <p class="item-text">Aadhar Card</p>
-                </div>
-                <div class="mod-flex mod-flex-col mod-gap-2" data-fade="up">
-                    <div class="item-number">05.</div>
-                    <p class="item-text">Address Proof</p>
-                </div>
-                <div class="mod-flex mod-flex-col mod-gap-2" data-fade="up">
-                    <div class="item-number">06.</div>
-                    <p class="item-text">No Objection Certificate / NOC</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
 <section class="container my-40" id="compliances">
     <h1 class="display-6 mb-32 mod-font-semibold mod-text-s-28">Annual Compliance for Private Limited Company</h1>
 
-    <div class="mod-grid mod-mt-4 mod-gap-8 mod-grid-template-col-2 sm:mod-grid-template-col-1">
-        <div class="mod-pr-8 mod-flex mod-flex-col sm:mod-order-2">
-            <h3 class="mod-font-semibold mod-leading-loose">Why Compliance Matters</h3>
-            <p class="mod-mt-2 mod-pr-24">
-                Staying compliant not only builds credibility for your private limited company but also ensures smooth functioning, legal protection, and better funding opportunities. Here’s a quick guide to help you understand what’s needed right after registration.
-            </p>
-            <div class="mod-grid mod-items-start mod-my-6">
-                <h4>Other Non-ROC Business Compliances</h4>
-                <div class="mod-grid-2 mod-gap-2">
-                    <span class="mod-items-center mod-py-2 mod-space-semi">TDS/TCS Payment</span>
-                    <span class="mod-items-center mod-py-2 mod-space-semi">GST Payment & GST Filing</span>
-                    <span class="mod-items-center mod-py-2 mod-space-semi">Filing of quarterly TDS Returns</span>
-                    <span class="mod-items-center mod-py-2 mod-space-semi">Advanced Tax Payment</span>
-                    <span class="mod-items-center mod-py-2 mod-space-semi">Filing of IT Returns</span>
-                    <span class="mod-items-center mod-py-2 mod-space-semi">Filing of Tax Audit Reports</span>
-                </div>
+    <div class="mod-grid mod-mt-4 mod-gap-4 mod-grid-template-col-2 sm:mod-grid-template-col-1">
+        <div class="mod-pr-8 mod-flex mod-flex-col mod-contents sm:mod-order-2">
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
+                <h3 class="mod-mb-0">Non-Disqualification Declaration (DIR-8)</h3>
+                <p class="mod-ml-16 mod-mb-0 mod-text-right">Filed before appointment/reappointment of directors to confirm eligibility under the Companies Act.</p>
             </div>
-            <div>
-                <a class="btn-custom-medium" href="javascript:void(0)" target="_self" id="focus-first-input-btn">
-                    <span class="btn-text btn-text--back">Get Help with Compliance</span>
-                    <span class="btn-icon btn-custom-w btn-icon--blue">
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M3 4a1 1 0 0 1 0-2h11v11a1 1 0 1 1-2 0V5.414l-8.293 8.293a1 1 0 0 1-1.414-1.414L10.586 4H3Z"
-                                fill="white"></path>
-                        </svg>
-                        <span class="btn-text btn-text--front">Get Help with Compliance</span>
-                    </span>
-                </a>
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
+                <h3 class="mod-mb-0">Return of Deposits / Loans (DPT-3)</h3>
+                <p class="mod-ml-16 mod-mb-0 mod-text-right">File by 30th June 2025 if company holds any loans or financial liabilities.</p>
+            </div>
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
+                <h3 class="mod-mb-0">MSME Payment Reporting</h3>
+                <p class="mod-ml-16 mod-mb-0 mod-text-right">Form I to be filed by 30th April and 31st October, for unpaid MSME dues over 45 days.</p>
+            </div>
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
+                <h3 class="mod-mb-0">Income Tax Return (ITR-6 / ITR-5)</h3>
+                <p class="mod-ml-16 mod-mb-0 mod-text-right">Must be filed by 31st October 2025 if company is subject to audit.</p>
+            </div>
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
+                <h3 class="mod-mb-0">Tax Audit Report</h3>
+                <p class="mod-ml-16 mod-mb-0 mod-text-right">Applicable if turnover exceeds ₹1 crore. File Form 3CA/3CB and 3CD by 30th September 2025.</p>
+            </div>
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
+                <h3 class="mod-mb-0">TDS Return (Quarterly)</h3>
+                <p class="mod-ml-16 mod-mb-0 mod-text-right">Form 24Q/26Q due on 31st Jul, 31st Oct, 31st Jan & 31st May for respective quarters.</p>
+            </div>
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
+                <h3 class="mod-mb-0">GST Returns (If Applicable)</h3>
+                <p class="mod-ml-16 mod-mb-0 mod-text-right">File GSTR-1 by 11th and GSTR-3B by 20th of every month or as per turnover-based schedule.</p>
             </div>
         </div>
-        <div class="mod-px-2 mod-flex mod-flex-col mod-gap-2 sm:mod-order-1">
+        <div class="mod-px-2 mod-flex mod-flex-col mod-contents mod-gap-2 sm:mod-order-1">
             <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
-                <h3 class="mod-mb-0">Board Meetings</h3>
-                <p class="mod-ml-16 mod-mb-0 mod-text-right">At least 2 board meetings each year with a minimum of 2 directors or 1/3rd of the total.</p>
+                <h3 class="mod-mb-0">Statutory Audit</h3>
+                <p class="mod-ml-16 mod-mb-0 mod-text-right">Mandatory audit by a Chartered Accountant, to be completed by 30th September 2025.</p>
             </div>
             <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
                 <h3 class="mod-mb-0">Annual General Meeting (AGM)</h3>
-                <p class="mod-ml-16 mod-mb-0 mod-text-right">Must be held once every year, with a gap of no more than 15 months between two AGMs.</p>
+                <p class="mod-ml-16 mod-mb-0 mod-text-right">Must be conducted by 30th September 2025, except in the first year of incorporation.</p>
             </div>
             <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
-                <h3 class="mod-mb-0">Auditor Appointment</h3>
-                <p class="mod-ml-16 mod-mb-0 mod-text-right">An auditor must be appointed within 15 days of incorporation by filing Form ADT-1 with the ROC.</p>
+                <h3 class="mod-mb-0">Filing of Financial Statements (AOC-4)</h3>
+                <p class="mod-ml-16 mod-mb-0 mod-text-right">File within 30 days of AGM, includes Balance Sheet, P&L, and Auditor’s Report.</p>
             </div>
             <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
-                <h3 class="mod-mb-0">Financial Reporting</h3>
-                <p class="mod-ml-16 mod-mb-0 mod-text-right">File annual returns (Form MGT-7) and financial statements (Form AOC-4) every financial year.</p>
+                <h3 class="mod-mb-0">Annual Return Filing (MGT-7 / MGT-7A)</h3>
+                <p class="mod-ml-16 mod-mb-0 mod-text-right">File within 60 days of AGM, MGT-7A applicable for OPCs and Small Companies.</p>
             </div>
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4">
-                <h3 class="mod-mb-0">Statutory Records</h3>
-                <p class="mod-ml-16 mod-mb-0 mod-text-right">Maintain key registers and ensure accounts are audited by a certified statutory auditor.</p>
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
+                <h3 class="mod-mb-0">Auditor Appointment (ADT-1)</h3>
+                <p class="mod-ml-16 mod-mb-0 mod-text-right">File within 15 days of AGM, auditor appointment valid for up to 5 years.</p>
             </div>
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
+                <h3 class="mod-mb-0">Director KYC (DIR-3 KYC)</h3>
+                <p class="mod-ml-16 mod-mb-0 mod-text-right">Mandatory KYC filing for all directors by 30th September 2025 to keep DIN active.</p>
+            </div>
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
+                <h3 class="mod-mb-0">Disclosure of Interest (MBP-1)</h3>
+                <p class="mod-ml-16 mod-mb-0 mod-text-right">Directors must disclose interests in the first board meeting of the financial year.</p>
+            </div>
+        </div>
+        <div class="mod-mt-4">
+            <a class="btn-custom-medium" href="javascript:void(0)" target="_self" id="focus-first-input-btn">
+                <span class="btn-text btn-text--back">Get Help with Compliance</span>
+                <span class="btn-icon btn-custom-w btn-icon--blue">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M3 4a1 1 0 0 1 0-2h11v11a1 1 0 1 1-2 0V5.414l-8.293 8.293a1 1 0 0 1-1.414-1.414L10.586 4H3Z"
+                            fill="white"></path>
+                    </svg>
+                    <span class="btn-text btn-text--front">Get Help with Compliance</span>
+                </span>
+            </a>
         </div>
     </div>
 </section>

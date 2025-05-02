@@ -31,7 +31,7 @@
                                                 <div class="{{ count($headers['sub_headers']) == 2 ? 'mod-w-1/2' : 'mod-w-1/3' }} mod-pl-8 mod-flex mod-pt-2 mod-items-center mod-pt-6"
                                                     style="background: {{ $sub['background'] }}">
                                                     <div class="mod-w-full">
-                                                        <h6 class="mod-text-compact mod-text-blue-400 mod-pb-4">
+                                                        <h6 class="mod-text-compact mod-text-blue-400 mod-pb-2">
                                                             {{ $sub['title'] }}</h6>
                                                         <hr class="divider">
                                                     </div>
@@ -48,7 +48,7 @@
                                                             href="{{ route('front.services', ['slug' => Str::slug($service['name'], '-')]) }}"
                                                             referrerpolicy="no-referrer-when-downgrade">
                                                             <div
-                                                                class="group mod-items-center mod-flex mod-items-start mod-py-2 mod-pl-4 mod-dropdown-menu-item ">
+                                                                class="group mod-items-center mod-flex mod-pl-2 mod-dropdown-menu-item ">
                                                                 <div class="mod-w-2/12">
                                                                     <img src="{{ asset('images/img/navbar_icon.png') }}"
                                                                         height="42" width="42"
@@ -56,11 +56,20 @@
                                                                 </div>
                                                                 <div class="mod-w-10/12">
                                                                     <p
-                                                                        class="mod-text-s-14 mod-font-medium mod-text-font-500 mod-my-2">
-                                                                        {{ $service['name'] }}</p>
+                                                                        class="mod-text-s-14 mod-font-semibold mod-text-font-500 mod-my-2 mod-flex">
+                                                                        {{ $service['name'] }}
+                                                                        @env('local')
+                                                                            @if (view()->exists('frontend.services.' . Str::slug($service['name'])))
+                                                                                <span style="padding-left: 7px">✅</span>
+                                                                            @endif
+                                                                        @endenv
+                                                                        <img class="childDisplayHover mod-invisible mod-ml-4" src="{{ asset('images/svg/right-arrow.svg') }}"
+                                                                            height="24" width="24">
+                                                                    </p>
                                                                     <p
-                                                                        class="mod-text-s-12 mod-text-medium mod-hidden mod-pr-2 childDisplayHover">
-                                                                        {{ $service['description'] }}</p>
+                                                                        class="mod-text-s-12 mod-text-medium mod-pr-2 mod-mb-2">
+                                                                        {{ $service['description'] }}
+                                                                    </p>
                                                                 </div>
                                                             </div>
                                                         </a>
