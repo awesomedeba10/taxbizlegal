@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
+import { visualizer } from 'rollup-plugin-visualizer';
 import fs from 'fs';
 import path from 'path';
 
@@ -27,5 +28,6 @@ export default defineConfig({
             input: ['resources/js/app.js'],
             refresh: true,
         }),
+        visualizer({ open: true })
     ],
 });

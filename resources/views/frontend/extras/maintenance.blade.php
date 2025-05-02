@@ -7,8 +7,8 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <meta name="author" content="SoonLaunch">
-		<link rel="shortcut icon" type="image/x-icon" href="{{ asset('extras/img/favicon.png') }}">
+        <meta name="author" content="Debanjan Ganguly">
+        <link rel="shortcut icon" href="{{ asset('images/favicon/favicon.ico') }}">
         <!-- Place favicon.ico in the root directory -->
 
 		<!-- ========================= CSS here ========================= -->
