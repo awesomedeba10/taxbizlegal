@@ -2,11 +2,10 @@
     <span id="pageCategory" style="display: none">homeV2</span>
     <div class="mod-container mod-h-full mod-w-full mod-flex sm:mod-px-0 mod-z-500" id="navbarContainer">
         <div class="sm:mod-hidden mod-flex mod-justify-between mod-items-center mod-h-full mod-w-1/5">
-            <a data-label="Clear" class="mod-flex mod-items-center" href="{{ route('front.home') }}">
+            <a data-label="TBL" class="mod-flex mod-items-center" href="{{ route('front.home') }}">
 
-                <img class="mod-mr-6 sm:mod-m-0 sm:mod-w-10/12" width="150" height="50"
-                    src="{{ asset('images/svg/tbl_logo.svg') }}" alt="clear">
-
+                <img class="mod-mr-6 sm:mod-m-4 sm:mod-w-10/12" width="150" height="50"
+                    src="{{ asset('images/svg/tbl_logo.svg') }}" alt="taxbizlegal logo">
 
             </a>
         </div>
@@ -274,7 +273,7 @@
         {{-- Mobile Header Starts here --}}
         <div class="mod-hidden sm:mod-flex mod-h-full mod-w-3/5">
             <a data-label="Clear" class="mod-flex mod-items-center" href="{{ route('front.home') }}">
-                <img class="mod-mr-6 sm:mod-m-0 sm:mod-w-10/12" width="136"
+                <img class="mod-mr-6 sm:mod-m-4 sm:mod-w-10/12" width="136"
                     src="{{ asset('images/svg/tbl_logo.svg') }}" alt="TaxBizLegal">
             </a>
         </div>
@@ -309,6 +308,7 @@
                                         <div class="mod-block">
                                             @foreach ($sub['services'] as $service)
                                             <a data-label="{{ $service['name'] }}" target="_blank"
+                                                href="{{ route('front.services', ['slug' => Str::slug($service['name'], '-')]) }}"
                                                 referrerpolicy="no-referrer-when-downgrade">
                                                 <div class="mod-flex mod-items-center mod-pl-4 mod-py-2">
                                                     <div class="mod-w-1/12">

@@ -4,18 +4,23 @@ namespace App\View\Components;
 
 use Closure;
 use Illuminate\Contracts\View\View;
-use Illuminate\Support\Facades\Config;
 use Illuminate\View\Component;
+use App\Traits\ServiceComponents;
+use Illuminate\Support\Str;
+use Illuminate\Support\Facades\URL;
 
 class StepsWrapper extends Component
 {
+    use ServiceComponents;
+
     public $page;
+    protected $primary_util_name = 'steps';
     /**
      * Create a new component instance.
      */
-    public function __construct($page)
+    public function __construct()
     {
-        $this->page = $page;
+        $this->page = Str::afterLast(URL::current(), '/');
     }
 
     /**
@@ -23,7 +28,8 @@ class StepsWrapper extends Component
      */
     public function render(): View|Closure|string
     {
-        $steps = Config::get('services.steps.' . $this->page, []);
+        $steps = $this->get_utils(
+            $this->primary_util_name , $this->page);
 
         return view('components.steps-wrapper', [
             'steps' => $steps

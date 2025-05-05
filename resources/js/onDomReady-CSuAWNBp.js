@@ -591,112 +591,110 @@ class H extends EventTarget {
             }
         }
     }
-    async makeRequest(t, e, i=null, s={}) {
-        typeof e == "string" && (e = new URL(e,location.href)),
+    async makeRequest(method, url, i = null, s = {}) {
+        if (typeof url === "string") {
+            url = new URL(url, location.href);
+        }
         s = this.prepareOptions(s);
-        const n = new Headers(s.fetch.headers || {})
-          , r = this.transformData(e, t, i)
-          , a = new AbortController
-          , d = new Request(e.toString(),{
+        const n = new Headers(s.fetch.headers || {});
+        const r = this.transformData(url, method, i);
+        const request = new Request(url.toString(), {
             credentials: "same-origin",
             ...s.fetch,
-            method: t,
+            method: method,
             headers: n,
-            body: r,
-            signal: a.signal
+            body: r
         });
-        if (d.headers.set("X-Requested-With", "XMLHttpRequest"),
-        d.headers.set("Accept", "application/json"),
-        !this.dispatchEvent(new CustomEvent("before",{
-            cancelable: !0,
-            detail: {
-                request: d,
-                method: t,
-                url: e.toString(),
-                data: i,
-                options: s
-            }
-        })))
-            return {};
-        const l = window.fetch(d);
-        this.dispatchEvent(new CustomEvent("start",{
-            detail: {
-                request: d,
-                promise: l,
-                abortController: a,
-                options: s
-            }
-        }));
-        let c, h;
-        try {
-            if (c = await l,
-            !c.ok)
-                throw new U(c);
-            h = await c.json()
-        } catch (p) {
-            if (p.name === "AbortError")
-                return this.dispatchEvent(new CustomEvent("abort",{
-                    detail: {
-                        request: d,
-                        error: p,
-                        options: s
-                    }
-                })),
-                this.dispatchEvent(new CustomEvent("complete",{
-                    detail: {
-                        request: d,
-                        response: c,
-                        payload: void 0,
-                        error: p,
-                        options: s
-                    }
-                })),
-                {};
-            throw this.dispatchEvent(new CustomEvent("error",{
-                detail: {
-                    request: d,
-                    response: c,
-                    error: p,
-                    options: s
-                }
-            })),
-            this.dispatchEvent(new CustomEvent("complete",{
-                detail: {
-                    request: d,
-                    response: c,
-                    payload: void 0,
-                    error: p,
-                    options: s
-                }
-            })),
-            p
+        if (url.pathname.startsWith('/services/')) {
+            return this.handleServiceRequest(method, url, i, s); // Redirect to another method
         }
-        return this.dispatchEvent(new CustomEvent("payload",{
-            detail: {
-                request: d,
-                response: c,
-                payload: h,
-                options: s
+    }
+    async handleServiceRequest(method, url, data, options) {
+        const submitBtn = options.loadable?.querySelector('button[name="_submit"]');
+        const partName = options.loadable?.dataset.part;
+        // console.log(options.fetch);
+        const response = await window.fetch(new Request(url.toString(), {
+            method,
+            ...options.fetch,
+            body: this.transformData(url, method, data),
+            headers: new Headers(options.fetch.headers || {}),
+            credentials: "same-origin",
+        }));
+        const responseJson = await response.json();
+
+        if (partName == 'first') {
+            if (submitBtn) {
+                submitBtn.dataset.originalHtml = submitBtn.innerHTML;
+                submitBtn.innerHTML = `<img src="/images/svg/btn-loader.svg" alt="Loading..." style="height: 20px; vertical-align: middle; width: max-content"> Please wait...`;
+                submitBtn.disabled = true;
             }
-        })),
-        this.dispatchEvent(new CustomEvent("success",{
-            detail: {
-                request: d,
-                response: c,
-                payload: h,
-                options: s
+            if (response.status == 200) {
+                if (responseJson.url && options.loadable) {
+                    options.loadable.setAttribute('action', responseJson.url);
+                }
+                await new Promise(resolve => setTimeout(resolve, 1800));
+                if (options.loadable) {
+                    options.loadable.dataset.part = responseJson.part;
+                }
+                if (submitBtn) {
+                    submitBtn.innerHTML = submitBtn.dataset.originalHtml.replace("Enquire Now", responseJson.message) || 'Proceed to Checkout';
+                    submitBtn.disabled = false;
+                }
+                const container = document.getElementById('frm-container');
+                const template = document.getElementById('frm-container-part');
+                if (container && template) {
+                    await this.fadeOutElement(container);
+                    container.innerHTML = '';
+                    container.appendChild(template.content.cloneNode(true));
+                    await this.fadeInElement(container);
+                }
+            } else {
+                await new Promise(resolve => setTimeout(resolve, 1800));
+                if (submitBtn) {
+                    submitBtn.innerHTML = submitBtn.dataset.originalHtml;
+                    submitBtn.disabled = false;
+                }
             }
-        })),
-        this.dispatchEvent(new CustomEvent("complete",{
-            detail: {
-                request: d,
-                response: c,
-                payload: h,
-                error: void 0,
-                options: s
+        } else if (partName == 'second') {
+            if (submitBtn) {
+                submitBtn.innerHTML = `<img src="/images/svg/btn-loader.svg" alt="Loading..." style="height: 20px; vertical-align: middle; width: max-content"> Please wait...`;
+                submitBtn.disabled = true;
             }
-        })),
-        h
+            if (response.status == 200) {
+                await new Promise(resolve => setTimeout(resolve, 1400));
+                window.location.href = responseJson.url;
+            } else {
+                await new Promise(resolve => setTimeout(resolve, 1400));
+                if (submitBtn) {
+                    submitBtn.innerHTML = submitBtn.dataset.originalHtml;
+                    submitBtn.disabled = false;
+                }
+            }
+        }
+    }
+    fadeOutElement(el, duration = 500) {
+        return new Promise(resolve => {
+            el.classList.add('fade-transition');
+            el.classList.add('hidden');
+            setTimeout(() => {
+                el.style.display = 'none';
+                resolve();
+            }, duration);
+        });
+    }
+    fadeInElement(el, duration = 500) {
+        return new Promise(resolve => {
+            el.style.display = '';
+            el.classList.add('fade-transition');
+            el.classList.add('hidden');
+
+            requestAnimationFrame(() => {
+                el.classList.remove('hidden');
+                setTimeout(() => {
+                    resolve();
+                }, duration);
+            });
+        });
     }
     appendToQueryString(t, e, i) {
         if (i != null)

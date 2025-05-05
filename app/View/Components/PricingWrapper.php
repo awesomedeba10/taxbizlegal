@@ -4,22 +4,23 @@ namespace App\View\Components;
 
 use Closure;
 use Illuminate\Contracts\View\View;
-use Illuminate\Support\Facades\Storage;
-use Illuminate\Support\Facades\Crypt;
 use Illuminate\View\Component;
-use Illuminate\Support\Arr;
-use Illuminate\Support\Facades\File;
+use App\Traits\ServiceComponents;
+use Illuminate\Support\Str;
+use Illuminate\Support\Facades\URL;
 
 class PricingWrapper extends Component
 {
+    use ServiceComponents;
+
     public $page;
-    public $file = 'company_plans.txt';
+    protected $primary_util_name = 'service_plans';
     /**
      * Create a new component instance.
      */
-    public function __construct($page)
+    public function __construct()
     {
-        $this->page = $page;
+        $this->page = Str::afterLast(URL::current(), '/');
     }
 
     /**
@@ -27,10 +28,9 @@ class PricingWrapper extends Component
      */
     public function render(): View|Closure|string
     {
-        $decryptedData = Crypt::decryptString(File::get(public_path('storage/' . $this->file)));
-
-        $plans = Arr::get(unserialize($decryptedData), $this->page, []);
-
-        return view('components.pricing-wrapper', ['plans' => $plans]);
+        return view('components.pricing-wrapper', [
+            'plans' => $this->get_utils(
+                $this->primary_util_name , $this->page)
+        ]);
     }
 }

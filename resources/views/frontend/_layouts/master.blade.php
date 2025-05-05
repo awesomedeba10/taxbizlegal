@@ -61,6 +61,7 @@
 
     @yield('content')
 
+    @if (request()->path() !== 'orders/checkout')
     @include('frontend._layouts.footer')
 
     <div class="btn-float">
@@ -71,6 +72,7 @@
         </a>
         <p class="text_icon">Talk to us?</p>
     </div>
+    @endif
 
     <div id="snippet-logInModal-modal">
     </div>

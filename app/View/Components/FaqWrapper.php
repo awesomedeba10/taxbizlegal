@@ -4,18 +4,23 @@ namespace App\View\Components;
 
 use Closure;
 use Illuminate\Contracts\View\View;
-use Illuminate\Support\Facades\Config;
 use Illuminate\View\Component;
+use Illuminate\Support\Str;
+use Illuminate\Support\Facades\URL;
+use App\Traits\ServiceComponents;
 
 class FaqWrapper extends Component
 {
+    use ServiceComponents;
+
     public $page;
+    protected $primary_util_name = 'faqs';
     /**
      * Create a new component instance.
      */
-    public function __construct($page)
+    public function __construct()
     {
-        $this->page = $page;
+        $this->page = Str::afterLast(URL::current(), '/');
     }
 
     /**
@@ -23,10 +28,11 @@ class FaqWrapper extends Component
      */
     public function render(): View|Closure|string
     {
-        $faqs = Config::get('services.faqs.' . $this->page, []);
+        $faqs = $this->get_utils(
+            $this->primary_util_name , $this->page);
 
         return view('components.faq-wrapper', [
-            'faqs' => $faqs, 
+            'faqs' => $faqs,
             'slug' => $this->page
         ]);
     }
