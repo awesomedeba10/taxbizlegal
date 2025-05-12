@@ -7869,6 +7869,16 @@ fieldset + fieldset:not(.accordion-item) {
     opacity: 0.2; 
     pointer-events: none; 
 }
+.staging-new-tag {
+    margin-left: 7px;
+    color: #05703a;
+    background-color: #7edeaee9;
+    padding: 2px 4px 2px 4px;
+    border-radius: 5px;
+    font-size: 8px;
+    height: fit-content;
+    margin-top: 2px;
+}
 .accordion {
     --accordion-button-border: #898d8d;
     --accordion-gap: 1rem;

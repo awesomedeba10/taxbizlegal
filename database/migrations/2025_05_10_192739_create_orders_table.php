@@ -25,6 +25,9 @@ return new class extends Migration
             $table->string('rzp_order_id')->nullable();
             $table->timestamp('rzp_order_created_at')->nullable();
             $table->string('rzp_payment_id')->nullable();
+            $table->decimal('rzp_paid_amt', 10, 2)->nullable();
+            $table->string('rzp_payment_status')->nullable();
+            $table->timestamp('rzp_payment_created_at')->nullable();
         });
     }
 

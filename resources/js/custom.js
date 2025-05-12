@@ -51,26 +51,6 @@ $(function() {
     });
 });
 
-// document.addEventListener("DOMContentLoaded", function () {
-//     const form = document.getElementById("frm-adeptRegistrationForm-form");
-
-//     if (form) {
-//         form.addEventListener("submit", function (event) {
-//             console.log('heyyyy')
-//             event.stopImmediatePropagation(); // ✅ Stops other 'submit' handlers
-//             event.preventDefault(); // optional, if you want to handle manually
-
-//             // ✅ Your custom logic
-//             console.log("My form submit logic runs first.");
-
-//             // ...do validations or AJAX...
-
-//             // ✅ Optionally submit the form if all good
-//             // form.submit();
-//         }, true); // ✅ Capture phase to run before others
-//     }
-// });
-
 document.querySelectorAll('.services-nav-item').forEach(item => {
     item.addEventListener('click', function () {
         const targetId = this.getAttribute('data-target'); // Get target section ID
@@ -100,6 +80,89 @@ if (focusBtn) {
         });
     });
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Check if current URL contains 'checkout'
+    if (window.location.pathname.includes('/checkout')) {
+        const razorpayScript = document.createElement('script');
+        razorpayScript.src = "https://checkout.razorpay.com/v1/checkout.js";
+        document.head.appendChild(razorpayScript);
+
+        razorpayScript.onload = function () {
+            document.querySelectorAll('.btn-pmt').forEach(button => {
+                button.addEventListener('click', function () {
+                    const csrfToken = document.querySelector('meta[name="csrf-token"]').getAttribute('content'),
+                        url = window.location.href;
+
+                    fetch('/orders/create', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'X-CSRF-TOKEN': csrfToken
+                        },
+                        body: JSON.stringify({ order_id: url })
+                    })
+                        .then(response => response.json())
+                        .then(data => {
+                            const options = {
+                                key: data.key,
+                                amount: data.amount,
+                                currency: data.currency,
+                                name: data.company_name,
+                                description: data.description,
+                                image: data.logo,
+                                order_id: data.rzp_order_id,
+                                prefil: {
+                                    name: data.cus_name,
+                                    email: data.cus_email,
+                                    contact: data.cus_phone
+                                },
+                                handler: function (response) {
+                                    fetch('/orders/verify', {
+                                        method: 'POST',
+                                        headers: {
+                                            'Content-Type': 'application/json',
+                                            'X-CSRF-TOKEN': csrfToken
+                                        },
+                                        body: JSON.stringify({
+                                            razorpay_order_id: response.razorpay_order_id,
+                                            razorpay_payment_id: response.razorpay_payment_id,
+                                            razorpay_signature: response.razorpay_signature
+                                        })
+                                    })
+                                        .then(res => res.json())
+                                        .then(res => {
+                                            if (res.success) {
+                                                alert('Payment Received', 'success');
+                                                window.location.href = res.redirect_url;
+                                            } else {
+                                                alert('Payment Verification Failed.', 'error');
+                                            }
+                                        })
+                                        .catch(() => alert('Error Verifying Payment.', 'error'));
+                                },
+                                modal: {
+                                    ondismiss: function() {
+                                        alert('Payment Cancelled, Please try again!', 'error')
+                                    }
+                                },
+                                theme: {
+                                    color: "#0c488d",
+                                    backdrop_color: "#ccf8ff"
+                                },
+                                send_sms_hash: true,
+                                allow_rotation: true
+                            };
+
+                            const rzp = new Razorpay(options);
+                            rzp.open();
+                        })
+                        .catch(() => alert('Error creating Razorpay order.', 'error'));
+                });
+            });
+        };
+    }
+});
 
 function detectScrollOnClick() {
     const initialScroll = window.scrollY;

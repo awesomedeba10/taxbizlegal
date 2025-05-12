@@ -57,11 +57,15 @@
                                                                     <p
                                                                         class="mod-text-s-14 mod-font-semibold mod-text-font-500 mod-my-2 mod-flex">
                                                                         {{ $service['name'] }}
-                                                                        @env('local')
-                                                                            @if (view()->exists('frontend.services.' . Str::slug($service['name'])))
+                                                                        @if (view()->exists('frontend.services.' . Str::slug($service['name'])))
+                                                                                @env('local')
                                                                                 <span style="padding-left: 7px">✅</span>
-                                                                            @endif
-                                                                        @endenv
+                                                                                @endenv
+
+                                                                                @env('staging')
+                                                                                <span class="staging-new-tag">NEW</span>
+                                                                                @endenv
+                                                                        @endif
                                                                         <img class="childDisplayHover mod-invisible mod-ml-4" src="{{ asset('images/svg/right-arrow.svg') }}"
                                                                             height="24" width="24">
                                                                     </p>
@@ -122,7 +126,7 @@
                 <div
                     class="mod-flex mod-h-full mod-items-center sm:mod-w-1/2 sm:mod-mt-8 sm:mod-px-2 nav-logged-out-container ">
                     <a class="header-nav-phone mod-inline-flex mod-items-center mod-justify-center mod-flex-none mod-font-semibold"
-                        href="tel:910000110000" data-wpel-link="internal">
+                        href="tel:91{{ config('app.site_info.support_phone') }}" data-wpel-link="internal">
                         <span class="icon icon-24">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -131,7 +135,7 @@
                                     fill="#0B1126"></path>
                             </svg>
                         </span>
-                        <span class="text">+91 00001 10000</span>
+                        <span class="text">+91 {{ substr(config('app.site_info.support_phone'), 0, 5) . ' ' . substr(config('app.site_info.support_phone'), 5) }}</span>
                     </a>
                     <button class="header-nav-wp mod-justify-center mod-flex mod-items-center" data-search-open=""
                         title="Search">

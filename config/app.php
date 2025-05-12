@@ -131,6 +131,11 @@ return [
         'company_cin' => 'U69202WB2025PTC277397',
         'support_email' => 'support@' . strtolower(env('APP_NAME', 'Laravel')) . '.com',
         'support_phone' => '9035504487',
+        'social_links' => [
+            'meta' => 'https://www.facebook.com/profile.php?id=61572967894678',
+            'linkedin' => 'https://www.linkedin.com/company/tax-biz-legal/',
+            'instagram' => 'https://www.instagram.com/tax_biz_legal?igsh=MXhldDF4MDhkeXFraw%3D%3D&utm_source=qr'
+        ]
     ]
 
 ];

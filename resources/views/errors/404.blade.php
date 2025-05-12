@@ -11,11 +11,19 @@
                     <div class="mod-absolute">
                         <div class="">
                             <h1 class="mod-my-4 text-gray-800 font-bold text-2xl">
+                                @if(request()->segment(1) === 'services')
+                                We're working on it! The service you're looking for is coming soon.
+                                @else
                                 Oops! The page you're looking for isn't available.
+                                @endif
                             </h1>
                             <p class="mod-my-8 text-gray-800">
+                                @if(request()->segment(1) === 'services')
+                                Our team is actively building this feature to offer you a seamless and hassle-free experience. In the meantime, feel free to <a href="{{ route('front.contact') }}">contact us</a> for assistance or explore our other services like Company Registration, GST Filing, and ITR.
+                                @else
                                 It seems you’ve taken a wrong turn. Head back to our homepage to explore services like
                                 Company Registration, GST Filing, ITR, and more.
+                                @endif
                             </p>
                             <div>
                                 <a class="btn-custom-medium" href="{{ route('front.home') }}" target="_self">

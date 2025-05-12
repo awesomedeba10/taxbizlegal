@@ -6,6 +6,7 @@ use Exception;
 use Illuminate\Http\Request;
 use Razorpay\Api\Api;
 use App\Models\Order;
+use Illuminate\Support\Facades\Log;
 
 class PaymentController extends Controller
 {
@@ -16,7 +17,7 @@ class PaymentController extends Controller
         endif;
 
         $order = Order::where('order_id', base64_decode($request->query('orderid')))
-            ->first();
+            ->whereNull('rzp_payment_id')->first();
 
         if (!$order):
             abort(404, 'Invalid or expired checkout link.');
@@ -43,9 +44,11 @@ class PaymentController extends Controller
             abort(403);
         endif;
 
+        $pmt_amount = round($order->service_price*0.18) + $order->service_price;
+
         if (!$order->rzp_order_id):
             $orderData = [
-                'amount'          => $order->service_price*100,
+                'amount'          => $pmt_amount*100,
                 'currency'        => 'INR',
                 'receipt'         => $orderId,
                 'notes' => [
@@ -56,11 +59,11 @@ class PaymentController extends Controller
             ];
 
             $rzp_order = $api->order->create($orderData);
-            $order = Order::updatePaymentStatus($orderId, $rzp_order);
+            $order = Order::updateOrderStatus($orderId, $rzp_order);
         endif;
 
         return response()->json(array_merge($order->toArray(), [
-            'amount'     => $order->service_price*100,
+            'amount'     => $pmt_amount*100,
             'description' => 'Order #' . $orderId . '. Service Plan : ' . $order->service_plan_name,
             'currency'  => 'INR',
             'key'       => config('services.razorpay.key_id'),
@@ -79,21 +82,39 @@ class PaymentController extends Controller
                 'razorpay_payment_id' => $request->input('razorpay_payment_id'),
                 'razorpay_signature' => $request->input('razorpay_signature'),
             ];
-
             $api->utility->verifyPaymentSignature($attributes);
+            $payment = $api->payment->fetch($request->input('razorpay_payment_id'));
 
-            // Log payment or save to DB
-            // You can access more data using $api->payment->fetch($request->input('razorpay_payment_id'))
+            $order = Order::updatePaymentStatus($attributes['razorpay_order_id'], $payment);
 
-            return response()->json(['success' => true, 'redirect_url' => route('front.payment.success')]);
+            return response()->json([
+                'success' => true,
+                'redirect_url' => route('front.payment.success', [
+                    'orderid' => base64_encode($order->order_id)
+                ])
+            ]);
         } catch (\Exception $e) {
-            // Log::error('Payment verification failed: ' . $e->getMessage());
+            Log::error('Payment verification failed: ' . $e->getMessage());
             return response()->json(['success' => false, 'message' => 'Payment verification failed.']);
         }
     }
 
-    public function success() {
-        dd('payment success');
+    public function success(Request $request) {
+        if (!$request->query('orderid')):
+            return redirect()->route('front.home');
+        endif;
+
+        $order = Order::where('order_id', base64_decode($request->query('orderid')))
+            ->where('rzp_payment_status', 'Captured')
+            ->first();
+
+        if (!$order):
+            return redirect()->route('front.home');
+        endif;
+
+        return view('frontend.orders.success', [
+            'order' => $order
+        ]);
     }
 
     // public function handle(Request $request)

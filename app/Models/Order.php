@@ -17,7 +17,12 @@ class Order extends Model
         'service_plan_name',
         'service_price',
         'current_stage',
-        'payment_id',
+        'rzp_order_id',
+        'rzp_order_created_at',
+        'rzp_payment_id',
+        'rzp_paid_amt',
+        'rzp_payment_status',
+        'rzp_payment_created_at'
     ];
 
     public static function submitBasicDetails($request)
@@ -47,7 +52,7 @@ class Order extends Model
         return $order;
     }
 
-    public static function updatePaymentStatus(string $orderId , $response) {
+    public static function updateOrderStatus(string $orderId , $response) {
         $order = self::where('order_id', $orderId)->first();
 
         if (!$order):
@@ -57,6 +62,25 @@ class Order extends Model
         $order->rzp_order_id = $response['id'] ?? null;
         $order->rzp_order_created_at = date('Y-m-d H:i:s', $response['created_at'] + (330 * 60));
         $order->current_stage = 'payment_initiated';
+        $order->save();
+
+        return $order;
+    }
+
+    public static function updatePaymentStatus(string $orderId , $response)
+    {
+        $order = self::where('rzp_order_id', $orderId)->first();
+
+        if (!$order):
+            return null;
+        endif;
+
+        $order->rzp_payment_id = $response->id;
+        $order->rzp_paid_amt = $response->amount/100;
+        $order->rzp_payment_status = $response->status;
+        $order->rzp_payment_created_at = date('Y-m-d H:i:s', $response->created_at + (330 * 60));
+        $order->current_stage = 'payment_received';
+
         $order->save();
 
         return $order;

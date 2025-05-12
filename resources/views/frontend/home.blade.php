@@ -17,24 +17,28 @@
                                 <div class="slideshow-fade">
                                     <div class="service-grid">
                                         <div class="service-item">
-                                            <a href="{{ route('front.services', ['slug' => Str::slug('Private Limited Company', '-')]) }}">
+                                            <a
+                                                href="{{ route('front.services', ['slug' => Str::slug('Private Limited Company', '-')]) }}">
                                                 <img src="{{ asset('images/svg/service-company.svg') }}">Company
                                                 Registration
                                             </a>
                                         </div>
                                         <div class="service-item">
-                                            <a href="{{ route('front.services', ['slug' => Str::slug('GST Registration', '-')]) }}">
+                                            <a
+                                                href="{{ route('front.services', ['slug' => Str::slug('GST Registration', '-')]) }}">
                                                 <img src="{{ asset('images/svg/service-gst.svg') }}">
                                                 GST & Tax Filings</a>
                                         </div>
                                         <div class="service-item">
-                                            <a href="{{ route('front.services', ['slug' => Str::slug('Trademark Registration', '-')]) }}">
+                                            <a
+                                                href="{{ route('front.services', ['slug' => Str::slug('Trademark Registration', '-')]) }}">
                                                 <img src="{{ asset('images/svg/service-trademark.svg') }}">
                                                 Trademark Registration
                                             </a>
                                         </div>
                                         <div class="service-item">
-                                            <a href="{{ route('front.services', ['slug' => Str::slug('ROC Search Reports', '-')]) }}">
+                                            <a
+                                                href="{{ route('front.services', ['slug' => Str::slug('ROC Search Reports', '-')]) }}">
                                                 <img src="{{ asset('images/svg/service-legal.svg') }}">
                                                 Legal & Compliance
                                             </a>
@@ -67,8 +71,8 @@
                                 <figure class="slideshow-figure slideshow-figure--custom">
                                     <img alt="Kdo řekl, že novou práci musíte hledat?"
                                         class="slideshow-img slideshow-img--custom"
-                                        src="{{ asset('images/img/home/home-banner-company.webp') }}"
-                                        width="1184" height="837">
+                                        src="{{ asset('images/img/home/home-banner-company.webp') }}" width="1184"
+                                        height="837">
                                 </figure>
                             </div>
                         </div>
@@ -80,14 +84,15 @@
                                 <p class="mb-0 slideshow-fade">Avoid penalties and maximize tax savings with our
                                     expert-assisted ITR filing service.</p>
                                 <div class="slideshow-fade">
-                                    <a href="registrace/adept.html" class="d-block btn btn-lg btn-primary">File ITR Now</a>
+                                    <a href="{{ route('front.services', ['slug' => 'income-tax-returns']) }}" class="d-block btn btn-lg btn-primary">File ITR Now</a>
                                 </div>
                             </div>
                             <div class="slideshow-media slideshow-media--custom">
                                 <figure class="slideshow-figure slideshow-figure--custom">
                                     <img alt="Kdo řekl, že novou práci musíte hledat?"
                                         class="slideshow-img slideshow-img--custom"
-                                        src="{{ asset('images/img/home/home-banner-itr.webp') }}" width="1184" height="837">
+                                        src="{{ asset('images/img/home/home-banner-itr.webp') }}" width="1184"
+                                        height="837">
                                 </figure>
                             </div>
                         </div>
@@ -134,9 +139,8 @@
                             <p class="display-6 mod-font-semibold mb-2 text-primary"><span data-counter="100">1</span> %
                                 Moneyback Guarantee</p>
                             <p class="mb-0">Zero-risk Moneyback Guaranteed with our hassle free Full-Refund policy
-                                <span
-                                    class="mod-pl-3 mod-font-semibold moneyback-conditon">*Conditions
-                                    Apply</span>
+                                <a href="{{ route('front.refund') }}" class="mod-pl-3 mod-font-semibold moneyback-conditon" target="_blank">*Conditions
+                                    Apply</a>
                             </p>
                         </div>
 
@@ -270,7 +274,8 @@
                                 <div class="mod-relative">
                                     <div class="timeline-circle-wrapper">
                                         <div class="timeline-circle">
-                                            <img src="{{ asset('images/svg/count-number-1.svg') }}" loading="lazy" alt="golf success icon" class="timeline-icon">
+                                            <img src="{{ asset('images/svg/count-number-1.svg') }}" loading="lazy"
+                                                alt="golf success icon" class="timeline-icon">
                                         </div>
                                     </div>
                                     <div class="timeline-item">
@@ -284,7 +289,8 @@
                                 <div class="mod-relative">
                                     <div class="timeline-circle-wrapper">
                                         <div class="timeline-circle">
-                                            <img src="{{ asset('images/svg/count-number-2.svg') }}" loading="lazy" alt="golf success icon" class="timeline-icon">
+                                            <img src="{{ asset('images/svg/count-number-2.svg') }}" loading="lazy"
+                                                alt="golf success icon" class="timeline-icon">
                                         </div>
                                     </div>
                                     <div class="timeline-item">
@@ -301,7 +307,8 @@
                                 <div class="mod-relative">
                                     <div class="timeline-circle-wrapper">
                                         <div class="timeline-circle">
-                                            <img src="{{ asset('images/svg/count-number-3.svg') }}" loading="lazy" alt="golf success icon" class="timeline-icon">
+                                            <img src="{{ asset('images/svg/count-number-3.svg') }}" loading="lazy"
+                                                alt="golf success icon" class="timeline-icon">
                                         </div>
                                     </div>
                                     <div class="timeline-item">
@@ -362,96 +369,122 @@
                     <div class="col-12 col-lg-4 mb-3 col-md-6">
                         <div class="top-service-card-grid mod-relative mod-rounded-xxl mod-p-8 md:mod-p-4 sm:mod-p-4">
                             <h2 class="mod-flex mod-justify-start mod-gap-4 mod-items-center mod-mb-4">
-                                <img decoding="async" width="129" height="110" src="{{ asset('images/svg/service-gst.svg') }}" alt="" loading="lazy">
+                                <img decoding="async" width="129" height="110"
+                                    src="{{ asset('images/svg/service-gst.svg') }}" alt="" loading="lazy">
                                 GST Registration
                                 <span class="arrow">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM297 385c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l71-71L120 280c-13.3 0-24-10.7-24-24s10.7-24 24-24l214.1 0-71-71c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L409 239c9.4 9.4 9.4 24.6 0 33.9L297 385z"></path>
+                                        <path
+                                            d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM297 385c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l71-71L120 280c-13.3 0-24-10.7-24-24s10.7-24 24-24l214.1 0-71-71c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L409 239c9.4 9.4 9.4 24.6 0 33.9L297 385z">
+                                        </path>
                                     </svg>
                                 </span>
                             </h2>
                             <p>Get your GST registration done quickly and effortlessly with our expert assistance.</p>
-                            <a href="your-service-url"> <span class="visually-hidden"> Read More</span> </a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-12 col-lg-4 mb-3 col-md-6">
-                        <div class="top-service-card-grid mod-relative mod-rounded-xxl mod-p-8 md:mod-p-4 sm:mod-p-4">
-                            <h2 class="mod-flex mod-justify-start mod-gap-4 mod-items-center mod-mb-4">
-                                <img decoding="async" width="129" height="110" src="{{ asset('images/svg/service-company.svg') }}" alt="" loading="lazy">
-                                Company Registration
-                                <span class="arrow">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM297 385c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l71-71L120 280c-13.3 0-24-10.7-24-24s10.7-24 24-24l214.1 0-71-71c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L409 239c9.4 9.4 9.4 24.6 0 33.9L297 385z"></path>
-                                    </svg>
-                                </span>
-                            </h2>
-                            <p>Start your business the right way with hassle-free company registration services.</p>
-                            <a href="your-service-url"> <span class="visually-hidden"> Read More</span> </a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-12 col-lg-4 mb-3 col-md-6">
-                        <div class="top-service-card-grid mod-relative mod-rounded-xxl mod-p-8 md:mod-p-4 sm:mod-p-4">
-                            <h2 class="mod-flex mod-justify-start mod-gap-4 mod-items-center mod-mb-4">
-                                <img decoding="async" width="129" height="110" src="{{ asset('images/svg/service-compliance.svg') }}" alt="" loading="lazy">
-                                Compliance Services
-                                <span class="arrow">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM297 385c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l71-71L120 280c-13.3 0-24-10.7-24-24s10.7-24 24-24l214.1 0-71-71c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L409 239c9.4 9.4 9.4 24.6 0 33.9L297 385z"></path>
-                                    </svg>
-                                </span>
-                            </h2>
-                            <p>Ensure legal compliance with expert solutions tailored to your business needs.</p>
-                            <a href="your-service-url"> <span class="visually-hidden"> Read More</span> </a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-12 col-lg-4 mb-3 col-md-6">
-                        <div class="top-service-card-grid mod-relative mod-rounded-xxl mod-p-8 md:mod-p-4 sm:mod-p-4">
-                            <h2 class="mod-flex mod-justify-start mod-gap-4 mod-items-center mod-mb-4">
-                                <img decoding="async" width="129" height="110" src="{{ asset('images/svg/service-trademark.svg') }}" alt="" loading="lazy">
-                                Trademark Registration
-                                <span class="arrow">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM297 385c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l71-71L120 280c-13.3 0-24-10.7-24-24s10.7-24 24-24l214.1 0-71-71c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L409 239c9.4 9.4 9.4 24.6 0 33.9L297 385z"></path>
-                                    </svg>
-                                </span>
-                            </h2>
-                            <p>Protect your brand identity with a hassle-free trademark registration process.</p>
-                            <a href="your-service-url"> <span class="visually-hidden"> Read More</span> </a>
+                            <a href="{{ route('front.services', ['slug' => 'gst-registration']) }}"> <span
+                                    class="visually-hidden"> Read More</span> </a>
                         </div>
                     </div>
 
                     <div class="col-12 col-lg-4 mb-3 col-md-6">
                         <div class="top-service-card-grid mod-relative mod-rounded-xxl mod-p-8 md:mod-p-4 sm:mod-p-4">
                             <h2 class="mod-flex mod-justify-start mod-gap-4 mod-items-center mod-mb-4">
-                                <img decoding="async" width="129" height="110" src="{{ asset('images/svg/service-tax.svg') }}" alt="" loading="lazy">
+                                <img decoding="async" width="129" height="110"
+                                    src="{{ asset('images/svg/service-company.svg') }}" alt="" loading="lazy">
+                                Company Registration
+                                <span class="arrow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path
+                                            d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM297 385c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l71-71L120 280c-13.3 0-24-10.7-24-24s10.7-24 24-24l214.1 0-71-71c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L409 239c9.4 9.4 9.4 24.6 0 33.9L297 385z">
+                                        </path>
+                                    </svg>
+                                </span>
+                            </h2>
+                            <p>Start your business the right way with hassle-free company registration services.</p>
+                            <a href="{{ route('front.services', ['slug' => 'private-limited-company']) }}"> <span
+                                    class="visually-hidden"> Read More</span> </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 mb-3 col-md-6">
+                        <div class="top-service-card-grid mod-relative mod-rounded-xxl mod-p-8 md:mod-p-4 sm:mod-p-4">
+                            <h2 class="mod-flex mod-justify-start mod-gap-4 mod-items-center mod-mb-4">
+                                <img decoding="async" width="129" height="110"
+                                    src="{{ asset('images/svg/service-compliance.svg') }}" alt=""
+                                    loading="lazy">
+                                FSSAI Registration
+                                <span class="arrow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path
+                                            d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM297 385c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l71-71L120 280c-13.3 0-24-10.7-24-24s10.7-24 24-24l214.1 0-71-71c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L409 239c9.4 9.4 9.4 24.6 0 33.9L297 385z">
+                                        </path>
+                                    </svg>
+                                </span>
+                            </h2>
+                            <p>Ensure your food business meets legal standards with expert FSSAI registration services
+                                tailored to your requirements.</p>
+                            <a href="{{ route('front.services', ['slug' => 'fssai-registration']) }}"> <span
+                                    class="visually-hidden"> Read More</span> </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 mb-3 col-md-6">
+                        <div class="top-service-card-grid mod-relative mod-rounded-xxl mod-p-8 md:mod-p-4 sm:mod-p-4">
+                            <h2 class="mod-flex mod-justify-start mod-gap-4 mod-items-center mod-mb-4">
+                                <img decoding="async" width="129" height="110"
+                                    src="{{ asset('images/svg/service-trademark.svg') }}" alt="" loading="lazy">
+                                Trademark Registration
+                                <span class="arrow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path
+                                            d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM297 385c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l71-71L120 280c-13.3 0-24-10.7-24-24s10.7-24 24-24l214.1 0-71-71c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L409 239c9.4 9.4 9.4 24.6 0 33.9L297 385z">
+                                        </path>
+                                    </svg>
+                                </span>
+                            </h2>
+                            <p>Protect your brand identity with a hassle-free trademark registration process.</p>
+                            <a href="{{ route('front.services', ['slug' => 'trademark-registration']) }}"> <span
+                                    class="visually-hidden"> Read More</span> </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 mb-3 col-md-6">
+                        <div class="top-service-card-grid mod-relative mod-rounded-xxl mod-p-8 md:mod-p-4 sm:mod-p-4">
+                            <h2 class="mod-flex mod-justify-start mod-gap-4 mod-items-center mod-mb-4">
+                                <img decoding="async" width="129" height="110"
+                                    src="{{ asset('images/svg/service-tax.svg') }}" alt="" loading="lazy">
                                 Income Tax Return
                                 <span class="arrow">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM297 385c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l71-71L120 280c-13.3 0-24-10.7-24-24s10.7-24 24-24l214.1 0-71-71c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L409 239c9.4 9.4 9.4 24.6 0 33.9L297 385z"></path>
+                                        <path
+                                            d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM297 385c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l71-71L120 280c-13.3 0-24-10.7-24-24s10.7-24 24-24l214.1 0-71-71c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L409 239c9.4 9.4 9.4 24.6 0 33.9L297 385z">
+                                        </path>
                                     </svg>
                                 </span>
                             </h2>
                             <p>File your Income Tax Return accurately and on time with our expert assistance.</p>
-                            <a href="your-service-url"> <span class="visually-hidden"> Read More</span> </a>
+                            <a href="{{ route('front.services', ['slug' => 'income-tax-returns']) }}"> <span
+                                    class="visually-hidden"> Read More</span> </a>
                         </div>
                     </div>
-                    
+
                     <div class="col-12 col-lg-4 mb-3 col-md-6">
                         <div class="top-service-card-grid mod-relative mod-rounded-xxl mod-p-8 md:mod-p-4 sm:mod-p-4">
                             <h2 class="mod-flex mod-justify-start mod-gap-4 mod-items-center mod-mb-4">
-                                <img decoding="async" width="129" height="110" src="{{ asset('images/svg/service-legal.svg') }}" alt="" loading="lazy">
+                                <img decoding="async" width="129" height="110"
+                                    src="{{ asset('images/svg/service-legal.svg') }}" alt="" loading="lazy">
                                 Legal Drafting
                                 <span class="arrow">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM297 385c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l71-71L120 280c-13.3 0-24-10.7-24-24s10.7-24 24-24l214.1 0-71-71c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L409 239c9.4 9.4 9.4 24.6 0 33.9L297 385z"></path>
+                                        <path
+                                            d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM297 385c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l71-71L120 280c-13.3 0-24-10.7-24-24s10.7-24 24-24l214.1 0-71-71c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L409 239c9.4 9.4 9.4 24.6 0 33.9L297 385z">
+                                        </path>
                                     </svg>
                                 </span>
                             </h2>
                             <p>Get professionally drafted legal documents tailored to your business needs.</p>
-                            <a href="your-service-url"> <span class="visually-hidden"> Read More</span> </a>
+                            <a href="{{ route('front.services', ['slug' => 'legal-drafting']) }}"> <span
+                                    class="visually-hidden"> Read More</span> </a>
                         </div>
                     </div>
 
@@ -499,7 +532,7 @@
                                 </svg>
                                 <p class="text-h3 mt-1 mb-2 mb-sm-3 mt-lg-3">Filing my ITR was so easy! Quick process and
                                     great support.</p>
-                                <cite class="text-h5 text-secondary">#User1</cite>
+                                <cite class="text-h5 text-secondary">Keerthana Nair</cite>
                             </div>
                         </div>
                     </blockquote>
@@ -526,7 +559,7 @@
                                 </svg>
                                 <p class="text-h3 mt-1 mb-2 mb-sm-3 mt-lg-3">Seamless and hassle-free! Registered my
                                     company in no time. Highly recommend!</p>
-                                <cite class="text-h5 text-secondary">#user2</cite>
+                                <cite class="text-h5 text-secondary">Arvind Singh</cite>
                             </div>
                         </div>
                     </blockquote>

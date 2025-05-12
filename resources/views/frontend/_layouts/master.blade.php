@@ -65,12 +65,12 @@
     @include('frontend._layouts.footer')
 
     <div class="btn-float">
-        <a target="_blank" href="https://wa.me/7098908674?text=Hello,%20I%20need%20some%20assistance!">
+        <a target="_blank" href="https://wa.me/{{ config('app.site_info.support_phone') }}?text=Hello,%20I%20need%20some%20assistance!">
             <div class="contact-icon">
                 <img src="{{ asset('images/svg/whatsapp.svg') }}" alt="">
             </div>
         </a>
-        <p class="text_icon">Talk to us?</p>
+        <p class="text_icon">Talk to Us?</p>
     </div>
     @endif
 
