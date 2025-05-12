@@ -920,33 +920,40 @@ class Qt {
 }
 class Xt {
     initialize(s) {
-        window.alert = t => this.alert(t),
-        _( () => this.refresh()),
-        s.snippetHandler.addEventListener("afterUpdate", t => this.refresh(t.detail.snippet))
+        (window.alert = (t, k) => this.alert(t, k)),
+            _(() => this.refresh()),
+            s.snippetHandler.addEventListener("afterUpdate", (t) =>
+                this.refresh(t.detail.snippet)
+            );
     }
-    refresh(s=document) {
-        s.querySelectorAll(".toast").forEach(r => {
+    refresh(s = document) {
+        s.querySelectorAll(".toast").forEach((r) => {
             const a = oe.getOrCreateInstance(r);
-            a.isShown() || (a.show(),
-            r.addEventListener("hidden.bs.toast", () => r.remove()))
-        }
-        ),
-        s.querySelectorAll(".form-error").forEach(r => {
+            a.isShown() ||
+                (a.show(),
+                r.addEventListener("hidden.bs.toast", () => r.remove()));
+        }),
+        s.querySelectorAll(".form-error").forEach((r) => {
             const a = r.innerHTML;
-            r.remove(),
-            this.alert(a)
-        }
-        )
+            r.remove(), this.alert(a);
+        });
     }
-    alert(s) {
+    alert(s, k) {
         var c;
-        const n = document.getElementById("alertTemplate").content.cloneNode(!0).children[0]
-          , r = n.querySelector("[data-tpl-alert-content]");
-        r && (r.innerHTML = s.trim().replaceAll(`
-`, "<br>")),
-        (c = document.getElementById("flashes")) == null || c.append(n),
-        oe.getOrCreateInstance(n).show(),
-        n.addEventListener("hidden.bs.toast", () => n.remove())
+        const n = document.getElementById("alertTemplate").content.cloneNode(true).children[0];
+
+        if (k === 'success') {
+            n.classList.add('toast-success');
+        } else if (k === 'error') {
+            n.classList.add('toast-error');
+        }
+        const r = n.querySelector("[data-tpl-alert-content]");
+        if (r) {
+            r.innerHTML = s.trim().replaceAll(`\n`, "<br>");
+        }
+        (c = document.getElementById("flashes"))?.append(n);
+        oe.getOrCreateInstance(n).show();
+        n.addEventListener("hidden.bs.toast", () => n.remove());
     }
 }
 class Yt {

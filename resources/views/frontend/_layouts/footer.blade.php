@@ -1,5 +1,5 @@
 <footer class="footer mod-pb-0">
-    <div class="container">
+    <div class="mod-container">
         <div class="footer-options">
             <div class="row gy-40 g-sm-40 g-lg-32 mb-32">
                 <div class="col-lg-4 col-md-4 col-sm-6 col-12">
@@ -59,20 +59,19 @@
                         <p><a href="contact.html">Contact Us</a></p>
                         <p><a href="{{ route('front.privacy') }}">Privacy Policy</a></p>
                         <p><a href="{{ route('front.terms') }}">Terms &amp; conditions</a></p>
+                        <p><a href="{{ route('front.refund') }}">Refund Policy</a></p>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-3 col-sm-6 col-12">
                     <div class="footer-items">
                         <h3>Info</h3>
-                        <p>
-                            <a href="tel:+911234554321">+91 12345 54321</a>
+                        <p class="mod-text-s-13">
+                            <a href="tel:{{ config('app.site_info.support_phone') }}">+91 {{ config('app.site_info.support_phone') }}</a>
                         </p>
-                        <p>
-                            <a href="mailto:support@taxbizlegal.com">support@taxbizlegal.com</a>
+                        <p class="mod-text-s-13">
+                            <a href="mailto:{{ config('app.site_info.support_email') }}">{{ config('app.site_info.support_email') }}</a>
                         </p>
-                        <p>
-                            <a href="#">Kolkata, IN</a>
-                        </p>
+                        <p class="mod-text-s-11">CIN : {{ config('app.site_info.company_cin') }}</p>
                         <figure
                             class="col-lg-auto mb-0 mod-pt-2 d-flex gap-3 align-items-center">
                             <img class="img-fluid" alt="VISA" src="{{ asset('images/svg/visa-white.svg') }}" width="74"

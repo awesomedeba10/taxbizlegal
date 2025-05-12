@@ -375,8 +375,8 @@ a {
 }
 a:not(.btn-custom-medium):hover {
     --bs-link-color-rgb: var(--bs-link-hover-color-rgb);
-    -webkit-text-decoration: underline transparent;
-    text-decoration: underline transparent;
+    -webkit-text-decoration: none;
+    text-decoration: none;
 }
 a:not([href]):not([class]),
 a:not([href]):not([class]):hover {
@@ -2339,6 +2339,12 @@ textarea.form-control {
     border: var(--bs-toast-border-width) solid var(--bs-toast-border-color);
     box-shadow: var(--bs-toast-box-shadow);
     border-radius: var(--bs-toast-border-radius);
+}
+.toast.toast-error {
+    background-color: var(--bs-danger);
+}
+.toast.toast-success {
+    background-color: var(--bs-success);
 }
 @media (min-width: 1200px) and (min-height: 1200px) {
     .toast {
@@ -8756,10 +8762,8 @@ body:not(.topMenu-opened).topMenu-hidden .navbar {
         --half-padding-right: var(--container-margin);
     }
 }
-@media (min-width: 992px) {
-    .half--lg-bg {
-        background-color: #ebf4ff;
-    }
+.half--lg-bg {
+    background-color: #ebf4ff;
 }
 .half--withNav {
     --half-nav-width: 0px;
@@ -10248,12 +10252,57 @@ img {
     font-weight: 600;
     line-height: 1.25rem;
 }
+.checkout-method-wrapper {
+    border: 1px solid #f6efef;
+    margin: auto;
+    border-radius: 5px;
+}
+.checkout-method-wrapper .safe-text {
+    font-weight: 700;
+    color: var(--bs-blue-600);
+}
+.checkout-method-wrapper img {
+    max-height: 40px;
+    max-width: 20%;
+}
 .btn-footer-sticky-pay {
     min-width: 200px;
     background-color: var(--bs-dark);
     --bs-bg-opacity: 1;
     color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity));
     letter-spacing: 1px;
+}
+.checkout-strength-item {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity));
+    border-radius: 15px;
+}
+.small-secure-txt {
+    font-size: 10px;
+    color: var(--bs-gray-gray-500);
+}
+.checkout-contact-item {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity));
+    border-radius: 15px;
+    transition: all 0.2s ease-in-out;
+}
+.checkout-contact-item p {
+    color: var(--bs-blue-600);
+    font-size: 1.55rem;
+}
+.checkout-contact-item:hover {
+    background-color: #0f1832;
+    color: var(--bs-gray-gray-300);
+}
+.checkout-contact-item:hover p {
+    color: var(--bs-gray-gray-200);
+}
+.checkout-contact-item img {
+    transition: transform 0.4s ease;
+}
+.checkout-contact-item:hover img {
+    transform: rotate(-45deg);
 }
 .benefits .section-heading {
     grid-area: 1/1/2/4;

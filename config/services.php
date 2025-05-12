@@ -35,4 +35,10 @@ return [
         ],
     ],
 
+    'razorpay' => [
+        'mode' => env('RAZORPAY_APP_ENV', 'test'),
+        'key_id' => env('RAZORPAY_KEY_ID'),
+        'key_secret' => env('RAZORPAY_KEY_SECRET'),
+    ],
+
 ];

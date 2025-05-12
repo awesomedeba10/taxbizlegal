@@ -2,7 +2,7 @@
     id="frm-adeptRegistrationForm-form" class="loadable loadable-overlayed ajax" data-part="first" novalidate="">
     <div id="frm-container">
         <div class="form-floating required">
-            <input type="text" name="user[name]" maxlength="128" placeholder="" class="form-control text"
+            <input type="text" name="name" maxlength="128" placeholder="" class="form-control text"
                 id="frm-enquiryForm-form-user-name" required
                 data-nette-rules='[{"op":":filled","msg":"Please type your Full Name"}]'>
             <label for="frm-enquiryForm-form-user-name" class="required">
@@ -10,8 +10,8 @@
             </label>
         </div>
     
-        {{-- <div class="form-floating required">
-            <input type="tel" name="user[phone]" pattern="^[+\(\) 0-9]+$" placeholder=" " class="form-control"
+        <div class="form-floating required">
+            <input type="tel" name="phone" pattern="^[+\(\) 0-9]+$" placeholder=" " class="form-control"
                 id="frm-enquiryForm-form-user-phone" required=""
                 data-nette-rules="[
                     {&quot;op&quot;:&quot;:filled&quot;, &quot;msg&quot;:&quot;Please share your contact number.&quot;},
@@ -25,9 +25,8 @@
             </label>
         </div>
     
-    
         <div class="form-floating required">
-            <input type="email" name="user[mail]" placeholder=" " class="form-control text"
+            <input type="email" name="email" placeholder=" " class="form-control text"
                 id="frm-enquiryForm-form-user-mail" required=""
                 data-nette-rules="[
                     {&quot;op&quot;:&quot;:filled&quot;, &quot;msg&quot;:&quot;Please share your email.&quot;},
@@ -87,7 +86,6 @@
             <label for="frm-enquiryForm-form-user-state" class="required form-text">State</label>
         </div>
     
-    
         <div class="form-check required mt-4">
             <input type="checkbox" name="_comply" class="form-check-input" id="frm-enquiryForm-form-_comply" required=""
                 data-nette-rules="[
@@ -113,7 +111,7 @@
                     </font>
                 </a>
             </label>
-        </div> --}}
+        </div>
     </div>
 
     <div class="form-submit">

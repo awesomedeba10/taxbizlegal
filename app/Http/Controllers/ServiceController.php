@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Traits\ServiceComponents;
 use Illuminate\Support\Str;
+use App\Models\Order;
 
 class ServiceController extends Controller
 {
@@ -28,12 +29,19 @@ class ServiceController extends Controller
         }
 
         if($part == 'first'):
+            $order = Order::submitBasicDetails(
+                $request->merge([
+                    'service_name' => $slug
+                ])
+            );
+
             return response()->json([
                 'message' => 'Proceed to Checkout',
                 'part' => 'second',
                 'url' => route('front.services.get-leads', [
                     'part' => base64_encode('second'),
-                    'slug' => base64_encode($slug)
+                    'slug' => base64_encode($slug),
+                    'order_id' => base64_encode($order->order_id)
                 ])
             ], 200);
         elseif($part == 'second'):
@@ -47,12 +55,17 @@ class ServiceController extends Controller
                 abort(403);
             }
 
+            $order = Order::updatePlanDetails(
+                $request->merge([
+                    'plan_name' => $plan['plan_name'],
+                    'price' => $plan['price']
+                ])
+            );
+
             return response()->json([
                 'message' => 'Ready to Redirect',
                 'url' => route('front.payment.show', [
-                    'price' => $plan['price'],
-                    'plan_name' => $plan['plan_name'],
-                    'service' => Str::title(str_replace('-', ' ', $slug))
+                    'orderid' => base64_encode($order->order_id)
                 ])
             ], 200);
         endif;

@@ -26,4 +26,8 @@ class PageController extends Controller
     public function terms() {
         return view('frontend.terms');
     }
+
+    public function refund() {
+        return view('frontend.refund');
+    }
 }

@@ -78,7 +78,7 @@
     </div>
     <div id="snippet-lostPasswordModal-modal">
     </div>
-    <div id="flashes" class="toast-container position-fixed translate-middle-x bottom-footbar start-50">
+    <div id="flashes" class="toast-container position-fixed translate-middle-x start-50">
 
         <div id="snippet--flashes" data-naja-snippet-append class="toast-container position-static mb-2">
         </div>
@@ -102,7 +102,8 @@
                         d="M13.0002 17.0009C13.0002 17.5532 12.5525 18.0009 12.0002 18.0009C11.4479 18.0009 11.0002 17.5532 11.0002 17.0009C11.0002 16.4486 11.4479 16.0009 12.0002 16.0009C12.5525 16.0009 13.0002 16.4486 13.0002 17.0009Z" />
                 </svg>
                 <div class="toast-content" data-tpl-alert-content></div>
-                <button type="button" class="btn btn-close" data-bs-dismiss="toast" aria-label="Zavřít"><svg
+                <button type="button" class="btn btn-close" data-bs-dismiss="toast" aria-label="Zavřít">
+                    <svg
                         xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
                         viewBox="0 0 24 24">
                         <path fill="currentColor" fill-rule="evenodd"
@@ -111,7 +112,8 @@
                         <path fill="currentColor" fill-rule="evenodd"
                             d="M18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289Z"
                             clip-rule="evenodd" />
-                    </svg></button>
+                    </svg>
+                </button>
             </div>
         </div>
 
@@ -152,6 +154,8 @@
             }
         };
     </script>
+
+    @stack('script')
 </body>
 
 </html>

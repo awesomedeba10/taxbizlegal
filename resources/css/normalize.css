@@ -1300,6 +1300,9 @@ img, video {
 .mod-text-s-10 {
     font-size: 10px;
 }
+.mod-text-s-11 {
+    font-size: 11px;
+}
 .mod-text-s-12 {
     font-size: 12px;
 }
@@ -2054,6 +2057,9 @@ img, video {
 }
 .mod-pt-32 {
     padding-top: 8rem;
+}
+.mod-pr-32 {
+    padding-right: 8rem;
 }
 .mod-pb-32 {
     padding-bottom: 8rem;

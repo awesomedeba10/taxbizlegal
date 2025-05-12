@@ -51,25 +51,25 @@ $(function() {
     });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-    const form = document.getElementById("frm-adeptRegistrationForm-form");
+// document.addEventListener("DOMContentLoaded", function () {
+//     const form = document.getElementById("frm-adeptRegistrationForm-form");
 
-    if (form) {
-        form.addEventListener("submit", function (event) {
-            console.log('heyyyy')
-            event.stopImmediatePropagation(); // ✅ Stops other 'submit' handlers
-            event.preventDefault(); // optional, if you want to handle manually
+//     if (form) {
+//         form.addEventListener("submit", function (event) {
+//             console.log('heyyyy')
+//             event.stopImmediatePropagation(); // ✅ Stops other 'submit' handlers
+//             event.preventDefault(); // optional, if you want to handle manually
 
-            // ✅ Your custom logic
-            console.log("My form submit logic runs first.");
+//             // ✅ Your custom logic
+//             console.log("My form submit logic runs first.");
 
-            // ...do validations or AJAX...
+//             // ...do validations or AJAX...
 
-            // ✅ Optionally submit the form if all good
-            // form.submit();
-        }, true); // ✅ Capture phase to run before others
-    }
-});
+//             // ✅ Optionally submit the form if all good
+//             // form.submit();
+//         }, true); // ✅ Capture phase to run before others
+//     }
+// });
 
 document.querySelectorAll('.services-nav-item').forEach(item => {
     item.addEventListener('click', function () {
