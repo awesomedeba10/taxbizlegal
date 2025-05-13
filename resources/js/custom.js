@@ -66,16 +66,52 @@ document.querySelectorAll('.services-nav-item').forEach(item => {
 });
 
 const focusBtn = document.querySelector('[data-id="focus-first-input-btn"]');
-
 if (focusBtn) {
-    document.querySelector('[data-id="focus-first-input-btn"]').addEventListener('click', function () {
-        const form = document.getElementById('frm-adeptRegistrationForm-form');
+    document.querySelectorAll('[data-id="focus-first-input-btn"]').forEach(button => {
+        button.addEventListener('click', function () {
+            const form = document.getElementById('frm-adeptRegistrationForm-form');
+            if (form) {
+                const formPart = form.getAttribute('data-part');
+                if (typeof formPart !== null && formPart == 'first') {
+                    form.querySelector('button[name="_submit"]').click();
+                    detectScrollOnClick().then(scrolled => {
+                        if (!scrolled) {
+                            const emailField = document.getElementById('frm-enquiryForm-form-user-mail');
+                            if (emailField) {
+                                emailField.focus();
+                            }
+                        }
+                    });
+                } else if (typeof formPart !== null && formPart == 'second') {
+                    const planAmt = button.getAttribute('data-amount') ?? '0';
+                    const radios = form.querySelectorAll('input[type="radio"][name="selected_plan"]');
+                    let matched = false;
 
-        form.querySelector('button[name="_submit"]').click();
+                    detectScrollOnClick().then(scrolled => {
+                        if (!scrolled) {
+                            radios.forEach(radio => {
+                                if (radio.dataset.amount === String(planAmt)) {
+                                    radio.checked = true;
+                                    radio.focus();
+                                    matched = true;
+                                }
+                            });
 
-        detectScrollOnClick().then(scrolled => {
-            if (!scrolled) {
-                document.getElementById('frm-enquiryForm-form-user-mail').focus();
+                            if (!matched && radios.length > 0) {
+                                const checkedRadio = Array.from(radios).find(r => r.checked);
+                                if (checkedRadio) {
+                                    checkedRadio.focus();
+                                }
+                            }
+                        }
+                    });
+                
+                    const radio = form.querySelector(`input[type="radio"][data-amount="${planAmt}"]`);
+                    if (radio) {
+                        radio.checked = true;
+                        radio.focus();
+                    }
+                }
             }
         });
     });

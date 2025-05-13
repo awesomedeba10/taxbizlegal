@@ -141,7 +141,7 @@
             @foreach ($plans as $plan)
             <label class="form-check mod-w-full mod-rounded-lg mod-cursor-pointer mod-py-2 mod-pl-2">
                 <input type="radio" name="selected_plan" class="form-check-input"
-                    required="" @if($loop->first) checked @endif
+                    required="" @if($loop->first) checked @endif data-amount="{{ $plan['price'] }}"
                     data-nette-rules="[{&quot;op&quot;:&quot;:filled&quot;,&quot;msg&quot;:&quot;Please select a plan to proceed.&quot;}]"
                     value="{{ $plan['uuid'] }}" data-autosubmit-handled="1">
                 <div class="form-check-label mod-flex mod-pr-2 mod-font-semibold mod-text-s-22">

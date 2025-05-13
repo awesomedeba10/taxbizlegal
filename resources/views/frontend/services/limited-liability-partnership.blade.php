@@ -411,16 +411,14 @@
             <div class="mod-grid mod-items-start mod-my-6">
                 <h4>Other Non-ROC Business Compliances for LLP</h4>
                 <div class="mod-grid-2 mod-gap-2">
-                    <span class="mod-items-center mod-py-2 mod-space-semi">TDS Deduction & Payment (if applicable)</span>
-                    <span class="mod-items-center mod-py-2 mod-space-semi">GST Registration (if turnover exceeds threshold)</span>
-                    <span class="mod-items-center mod-py-2 mod-space-semi">Monthly/Quarterly GST Returns Filing</span>
-                    <span class="mod-items-center mod-py-2 mod-space-semi">Advance Tax Payment (if liable)</span>
-                    <span class="mod-items-center mod-py-2 mod-space-semi">Filing of Income Tax Return (ITR-5)</span>
-                    <span class="mod-items-center mod-py-2 mod-space-semi">Tax Audit Report (if turnover exceeds ₹1 crore)</span>
+                    <span class="mod-items-center mod-py-2 mod-space-semi">GST Returns Filing (GSTR-1, GSTR-3B, GSTR-9 as applicable)</span>
+                    <span class="mod-items-center mod-py-2 mod-space-semi">Quarterly TDS Returns Filing and Issuance of TDS Certificates</span>
+                    <span class="mod-items-center mod-py-2 mod-space-semi">Professional Tax Returns (based on applicable state regulations)</span>
+                    <span class="mod-items-center mod-py-2 mod-space-semi">Labour Law Compliances under EPF, ESIC, Shops & Establishments Act</span>
                 </div>
             </div>
             <div>
-                <a class="btn-custom-medium" href="{{ route('front.contact') }}" target="_self">
+                <a class="btn-custom-medium" href="javascript:void(0)" data-id="focus-first-input-btn" target="_self">
                     <span class="btn-text btn-text--back">Get Help with Compliance</span>
                     <span class="btn-icon btn-custom-w btn-icon--blue">
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -435,37 +433,23 @@
             </div>
         </div>
         <div class="mod-px-2 mod-flex mod-flex-col mod-gap-2 sm:mod-order-1">
-            <div
-                class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
-                <h3 class="mod-mb-0">Board Meetings</h3>
-                <p class="mod-ml-16 mod-mb-0 mod-text-right">At least 2 board meetings each year with a minimum of 2
-                    directors or 1/3rd of the total.</p>
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
+                <h3 class="mod-mb-0">Annual Return Filing (Form 11)</h3>
+                <p class="mod-ml-16 mod-mb-0 mod-text-right">Due by 30th May, this form discloses partner and LLP structure details annually to the ROC.</p>
             </div>
-            <div
-                class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
-                <h3 class="mod-mb-0">Annual General Meeting (AGM)</h3>
-                <p class="mod-ml-16 mod-mb-0 mod-text-right">Must be held once every year, with a gap of no more than
-                    15 months between two AGMs.</p>
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
+                <h3 class="mod-mb-0">Statement of Accounts & Solvency (Form 8)</h3>
+                <p class="mod-ml-16 mod-mb-0 mod-text-right">Must be filed by 30th October, it includes LLP’s financial statements and solvency declaration.</p>
             </div>
-            <div
-                class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
-                <h3 class="mod-mb-0">Auditor Appointment</h3>
-                <p class="mod-ml-16 mod-mb-0 mod-text-right">An auditor must be appointed within 15 days of
-                    incorporation by filing Form ADT-1 with the RoC.</p>
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
+                <h3 class="mod-mb-0">Income Tax Return (ITR-5)</h3>
+                <p class="mod-ml-16 mod-mb-0 mod-text-right">File ITR-5 by 31st July (non-audit) or 31st October (audit) based on LLP's income and turnover.</p>
             </div>
-            <div
-                class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
-                <h3 class="mod-mb-0">Financial Reporting</h3>
-                <p class="mod-ml-16 mod-mb-0 mod-text-right">File annual returns (Form MGT-7) and financial statements
-                    (Form AOC-4) every financial year.</p>
-            </div>
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4">
-                <h3 class="mod-mb-0">Statutory Records</h3>
-                <p class="mod-ml-16 mod-mb-0 mod-text-right">Maintain key registers and ensure accounts are audited by
-                    a certified statutory auditor.</p>
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
+                <h3 class="mod-mb-0">Director KYC (DIR-3 KYC)</h3>
+                <p class="mod-ml-16 mod-mb-0 mod-text-right">Every designated partner must submit DIR-3 KYC annually to keep their DIN active and compliant.</p>
             </div>
         </div>
-        
     </div>
 </section>
 
@@ -473,81 +457,9 @@
 <section class="container mod-my-16 lg:mod-my-24">
     <article class="banner bg-blue-100 mod-overflow-hidden py-40 px-4 p-lg-5 lg:mod-px-12 pb-xxl-4">
         <div class="row gy-32 gx-xl-40 mod-relative justify-content-center align-items-center">
-            <div class="col-lg-12 d-flex flex-column mod-gap-8">
-                <h2 class="display-6 fw-bold mb-0">Register your Limited Liability Partnership with <span
-                        class="text-blue mod-font-semibold">Us</span> in 5 Simple Steps</h2>
-                <p class="text-lg mb-0 pe-xl-80 me-xxl-4 mod-w-5/6 sm:mod-w-full">Starting your own limited
-                    liability partnership company is now easier than ever! Just follow these 5 simple steps, and we will handle the process
-                    with accuracy and efficiency. Let us guide you through every step!</p>
-                <div
-                    class="d-flex justify-content-center mod-mt-4 justify-content-lg-start gap-2 gap-sm-3 gap-xl-4 text-center svg-scale scale-4 sm:mod-flex-col sm:mod-w-full">
-                    <figure class="mb-0 mod-flex mod-flex-col mod-items-start mod-text-left mod-gap-4">
-                        <div class="mod-flex ">
-                            <span class="text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                    height="24" fill="none" viewBox="0 0 24 24">
-                                    <path fill="currentColor"
-                                        d="M1 20V17.2C1 16.6333 1.14583 16.1125 1.4375 15.6375C1.72917 15.1625 2.11667 14.8 2.6 14.55C3.63333 14.0333 4.68333 13.6458 5.75 13.3875C6.81667 13.1292 7.9 13 9 13C10.1 13 11.1833 13.1292 12.25 13.3875C13.3167 13.6458 14.3667 14.0333 15.4 14.55C15.8833 14.8 16.2708 15.1625 16.5625 15.6375C16.8542 16.1125 17 16.6333 17 17.2V20H1ZM19 20V17C19 16.2667 18.7958 15.5625 18.3875 14.8875C17.9792 14.2125 17.4 13.6333 16.65 13.15C17.5 13.25 18.3 13.4208 19.05 13.6625C19.8 13.9042 20.5 14.2 21.15 14.55C21.75 14.8833 22.2083 15.2542 22.525 15.6625C22.8417 16.0708 23 16.5167 23 17V20H19ZM9 12C7.9 12 6.95833 11.6083 6.175 10.825C5.39167 10.0417 5 9.1 5 8C5 6.9 5.39167 5.95833 6.175 5.175C6.95833 4.39167 7.9 4 9 4C10.1 4 11.0417 4.39167 11.825 5.175C12.6083 5.95833 13 6.9 13 8C13 9.1 12.6083 10.0417 11.825 10.825C11.0417 11.6083 10.1 12 9 12ZM19 8C19 9.1 18.6083 10.0417 17.825 10.825C17.0417 11.6083 16.1 12 15 12C14.8167 12 14.5833 11.9792 14.3 11.9375C14.0167 11.8958 13.7833 11.85 13.6 11.8C14.05 11.2667 14.3958 10.675 14.6375 10.025C14.8792 9.375 15 8.7 15 8C15 7.3 14.8792 6.625 14.6375 5.975C14.3958 5.325 14.05 4.73333 13.6 4.2C13.8333 4.11667 14.0667 4.0625 14.3 4.0375C14.5333 4.0125 14.7667 4 15 4C16.1 4 17.0417 4.39167 17.825 5.175C18.6083 5.95833 19 6.9 19 8ZM3 18H15V17.2C15 17.0167 14.9542 16.85 14.8625 16.7C14.7708 16.55 14.65 16.4333 14.5 16.35C13.6 15.9 12.6917 15.5625 11.775 15.3375C10.8583 15.1125 9.93333 15 9 15C8.06667 15 7.14167 15.1125 6.225 15.3375C5.30833 15.5625 4.4 15.9 3.5 16.35C3.35 16.4333 3.22917 16.55 3.1375 16.7C3.04583 16.85 3 17.0167 3 17.2V18ZM9 10C9.55 10 10.0208 9.80417 10.4125 9.4125C10.8042 9.02083 11 8.55 11 8C11 7.45 10.8042 6.97917 10.4125 6.5875C10.0208 6.19583 9.55 6 9 6C8.45 6 7.97917 6.19583 7.5875 6.5875C7.19583 6.97917 7 7.45 7 8C7 8.55 7.19583 9.02083 7.5875 9.4125C7.97917 9.80417 8.45 10 9 10Z" />
-                                </svg></span>
-                            <figcaption class="text-h6 mod-pl-3">1. Choose a Company Name</figcaption>
-                        </div>
-                        <p class="mod-mt-1 text-gray-600">Ensure that the name is available and complies with legal rules.</p>
-                    </figure>
-                    <figure class="mb-0 mod-flex mod-flex-col mod-items-start mod-text-left mod-gap-4">
-                        <div class="mod-flex ">
-                            <span class="text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                    height="24" fill="none" viewBox="0 0 24 24">
-                                    <path fill="currentColor"
-                                        d="M1 20V17.2C1 16.6333 1.14583 16.1125 1.4375 15.6375C1.72917 15.1625 2.11667 14.8 2.6 14.55C3.63333 14.0333 4.68333 13.6458 5.75 13.3875C6.81667 13.1292 7.9 13 9 13C10.1 13 11.1833 13.1292 12.25 13.3875C13.3167 13.6458 14.3667 14.0333 15.4 14.55C15.8833 14.8 16.2708 15.1625 16.5625 15.6375C16.8542 16.1125 17 16.6333 17 17.2V20H1ZM19 20V17C19 16.2667 18.7958 15.5625 18.3875 14.8875C17.9792 14.2125 17.4 13.6333 16.65 13.15C17.5 13.25 18.3 13.4208 19.05 13.6625C19.8 13.9042 20.5 14.2 21.15 14.55C21.75 14.8833 22.2083 15.2542 22.525 15.6625C22.8417 16.0708 23 16.5167 23 17V20H19ZM9 12C7.9 12 6.95833 11.6083 6.175 10.825C5.39167 10.0417 5 9.1 5 8C5 6.9 5.39167 5.95833 6.175 5.175C6.95833 4.39167 7.9 4 9 4C10.1 4 11.0417 4.39167 11.825 5.175C12.6083 5.95833 13 6.9 13 8C13 9.1 12.6083 10.0417 11.825 10.825C11.0417 11.6083 10.1 12 9 12ZM19 8C19 9.1 18.6083 10.0417 17.825 10.825C17.0417 11.6083 16.1 12 15 12C14.8167 12 14.5833 11.9792 14.3 11.9375C14.0167 11.8958 13.7833 11.85 13.6 11.8C14.05 11.2667 14.3958 10.675 14.6375 10.025C14.8792 9.375 15 8.7 15 8C15 7.3 14.8792 6.625 14.6375 5.975C14.3958 5.325 14.05 4.73333 13.6 4.2C13.8333 4.11667 14.0667 4.0625 14.3 4.0375C14.5333 4.0125 14.7667 4 15 4C16.1 4 17.0417 4.39167 17.825 5.175C18.6083 5.95833 19 6.9 19 8ZM3 18H15V17.2C15 17.0167 14.9542 16.85 14.8625 16.7C14.7708 16.55 14.65 16.4333 14.5 16.35C13.6 15.9 12.6917 15.5625 11.775 15.3375C10.8583 15.1125 9.93333 15 9 15C8.06667 15 7.14167 15.1125 6.225 15.3375C5.30833 15.5625 4.4 15.9 3.5 16.35C3.35 16.4333 3.22917 16.55 3.1375 16.7C3.04583 16.85 3 17.0167 3 17.2V18ZM9 10C9.55 10 10.0208 9.80417 10.4125 9.4125C10.8042 9.02083 11 8.55 11 8C11 7.45 10.8042 6.97917 10.4125 6.5875C10.0208 6.19583 9.55 6 9 6C8.45 6 7.97917 6.19583 7.5875 6.5875C7.19583 6.97917 7 7.45 7 8C7 8.55 7.19583 9.02083 7.5875 9.4125C7.97917 9.80417 8.45 10 9 10Z" />
-                                </svg></span>
-                            <figcaption class="text-h6 mod-pl-3">2. Obtain Director Identification Number (DIN)</figcaption>
-                        </div>
-                        <p class="mod-mt-1 text-gray-600">If not already obtained, the sole director must apply for a DIN.</p>
-                    </figure>
-                    <figure class="mb-0 mod-flex mod-flex-col mod-items-start mod-text-left mod-gap-4">
-                        <div class="mod-flex ">
-                            <span class="text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                    height="24" fill="none" viewBox="0 0 24 24">
-                                    <path fill="currentColor"
-                                        d="M1 20V17.2C1 16.6333 1.14583 16.1125 1.4375 15.6375C1.72917 15.1625 2.11667 14.8 2.6 14.55C3.63333 14.0333 4.68333 13.6458 5.75 13.3875C6.81667 13.1292 7.9 13 9 13C10.1 13 11.1833 13.1292 12.25 13.3875C13.3167 13.6458 14.3667 14.0333 15.4 14.55C15.8833 14.8 16.2708 15.1625 16.5625 15.6375C16.8542 16.1125 17 16.6333 17 17.2V20H1ZM19 20V17C19 16.2667 18.7958 15.5625 18.3875 14.8875C17.9792 14.2125 17.4 13.6333 16.65 13.15C17.5 13.25 18.3 13.4208 19.05 13.6625C19.8 13.9042 20.5 14.2 21.15 14.55C21.75 14.8833 22.2083 15.2542 22.525 15.6625C22.8417 16.0708 23 16.5167 23 17V20H19ZM9 12C7.9 12 6.95833 11.6083 6.175 10.825C5.39167 10.0417 5 9.1 5 8C5 6.9 5.39167 5.95833 6.175 5.175C6.95833 4.39167 7.9 4 9 4C10.1 4 11.0417 4.39167 11.825 5.175C12.6083 5.95833 13 6.9 13 8C13 9.1 12.6083 10.0417 11.825 10.825C11.0417 11.6083 10.1 12 9 12ZM19 8C19 9.1 18.6083 10.0417 17.825 10.825C17.0417 11.6083 16.1 12 15 12C14.8167 12 14.5833 11.9792 14.3 11.9375C14.0167 11.8958 13.7833 11.85 13.6 11.8C14.05 11.2667 14.3958 10.675 14.6375 10.025C14.8792 9.375 15 8.7 15 8C15 7.3 14.8792 6.625 14.6375 5.975C14.3958 5.325 14.05 4.73333 13.6 4.2C13.8333 4.11667 14.0667 4.0625 14.3 4.0375C14.5333 4.0125 14.7667 4 15 4C16.1 4 17.0417 4.39167 17.825 5.175C18.6083 5.95833 19 6.9 19 8ZM3 18H15V17.2C15 17.0167 14.9542 16.85 14.8625 16.7C14.7708 16.55 14.65 16.4333 14.5 16.35C13.6 15.9 12.6917 15.5625 11.775 15.3375C10.8583 15.1125 9.93333 15 9 15C8.06667 15 7.14167 15.1125 6.225 15.3375C5.30833 15.5625 4.4 15.9 3.5 16.35C3.35 16.4333 3.22917 16.55 3.1375 16.7C3.04583 16.85 3 17.0167 3 17.2V18ZM9 10C9.55 10 10.0208 9.80417 10.4125 9.4125C10.8042 9.02083 11 8.55 11 8C11 7.45 10.8042 6.97917 10.4125 6.5875C10.0208 6.19583 9.55 6 9 6C8.45 6 7.97917 6.19583 7.5875 6.5875C7.19583 6.97917 7 7.45 7 8C7 8.55 7.19583 9.02083 7.5875 9.4125C7.97917 9.80417 8.45 10 9 10Z" />
-                                </svg></span>
-                            <figcaption class="text-h6 mod-pl-3">3. Prepare and File Documents</figcaption>
-                        </div>
-                        <p class="mod-mt-1 text-gray-600">Submit the MOA, AOA, and other necessary forms with the Registrar of Companies.
-                        </p>
-                    </figure>
-                    <figure class="mb-0 mod-flex mod-flex-col mod-items-start mod-text-left mod-gap-4">
-                        <div class="mod-flex ">
-                            <span class="text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                    height="24" fill="none" viewBox="0 0 24 24">
-                                    <path fill="currentColor"
-                                        d="M1 20V17.2C1 16.6333 1.14583 16.1125 1.4375 15.6375C1.72917 15.1625 2.11667 14.8 2.6 14.55C3.63333 14.0333 4.68333 13.6458 5.75 13.3875C6.81667 13.1292 7.9 13 9 13C10.1 13 11.1833 13.1292 12.25 13.3875C13.3167 13.6458 14.3667 14.0333 15.4 14.55C15.8833 14.8 16.2708 15.1625 16.5625 15.6375C16.8542 16.1125 17 16.6333 17 17.2V20H1ZM19 20V17C19 16.2667 18.7958 15.5625 18.3875 14.8875C17.9792 14.2125 17.4 13.6333 16.65 13.15C17.5 13.25 18.3 13.4208 19.05 13.6625C19.8 13.9042 20.5 14.2 21.15 14.55C21.75 14.8833 22.2083 15.2542 22.525 15.6625C22.8417 16.0708 23 16.5167 23 17V20H19ZM9 12C7.9 12 6.95833 11.6083 6.175 10.825C5.39167 10.0417 5 9.1 5 8C5 6.9 5.39167 5.95833 6.175 5.175C6.95833 4.39167 7.9 4 9 4C10.1 4 11.0417 4.39167 11.825 5.175C12.6083 5.95833 13 6.9 13 8C13 9.1 12.6083 10.0417 11.825 10.825C11.0417 11.6083 10.1 12 9 12ZM19 8C19 9.1 18.6083 10.0417 17.825 10.825C17.0417 11.6083 16.1 12 15 12C14.8167 12 14.5833 11.9792 14.3 11.9375C14.0167 11.8958 13.7833 11.85 13.6 11.8C14.05 11.2667 14.3958 10.675 14.6375 10.025C14.8792 9.375 15 8.7 15 8C15 7.3 14.8792 6.625 14.6375 5.975C14.3958 5.325 14.05 4.73333 13.6 4.2C13.8333 4.11667 14.0667 4.0625 14.3 4.0375C14.5333 4.0125 14.7667 4 15 4C16.1 4 17.0417 4.39167 17.825 5.175C18.6083 5.95833 19 6.9 19 8ZM3 18H15V17.2C15 17.0167 14.9542 16.85 14.8625 16.7C14.7708 16.55 14.65 16.4333 14.5 16.35C13.6 15.9 12.6917 15.5625 11.775 15.3375C10.8583 15.1125 9.93333 15 9 15C8.06667 15 7.14167 15.1125 6.225 15.3375C5.30833 15.5625 4.4 15.9 3.5 16.35C3.35 16.4333 3.22917 16.55 3.1375 16.7C3.04583 16.85 3 17.0167 3 17.2V18ZM9 10C9.55 10 10.0208 9.80417 10.4125 9.4125C10.8042 9.02083 11 8.55 11 8C11 7.45 10.8042 6.97917 10.4125 6.5875C10.0208 6.19583 9.55 6 9 6C8.45 6 7.97917 6.19583 7.5875 6.5875C7.19583 6.97917 7 7.45 7 8C7 8.55 7.19583 9.02083 7.5875 9.4125C7.97917 9.80417 8.45 10 9 10Z" />
-                                </svg></span>
-                            <figcaption class="text-h6 mod-pl-3">4. Nominee Director</figcaption>
-                        </div>
-                        <p class="mod-mt-1 text-gray-600">Appoint a nominee director who will take over in case the sole member is incapacitated or passes away.</p>
-                    </figure>
-                    <figure class="mb-0 mod-flex mod-flex-col mod-items-start mod-text-left mod-gap-4">
-                        <div class="mod-flex ">
-                            <span class="text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                    height="24" fill="none" viewBox="0 0 24 24">
-                                    <path fill="currentColor"
-                                        d="M1 20V17.2C1 16.6333 1.14583 16.1125 1.4375 15.6375C1.72917 15.1625 2.11667 14.8 2.6 14.55C3.63333 14.0333 4.68333 13.6458 5.75 13.3875C6.81667 13.1292 7.9 13 9 13C10.1 13 11.1833 13.1292 12.25 13.3875C13.3167 13.6458 14.3667 14.0333 15.4 14.55C15.8833 14.8 16.2708 15.1625 16.5625 15.6375C16.8542 16.1125 17 16.6333 17 17.2V20H1ZM19 20V17C19 16.2667 18.7958 15.5625 18.3875 14.8875C17.9792 14.2125 17.4 13.6333 16.65 13.15C17.5 13.25 18.3 13.4208 19.05 13.6625C19.8 13.9042 20.5 14.2 21.15 14.55C21.75 14.8833 22.2083 15.2542 22.525 15.6625C22.8417 16.0708 23 16.5167 23 17V20H19ZM9 12C7.9 12 6.95833 11.6083 6.175 10.825C5.39167 10.0417 5 9.1 5 8C5 6.9 5.39167 5.95833 6.175 5.175C6.95833 4.39167 7.9 4 9 4C10.1 4 11.0417 4.39167 11.825 5.175C12.6083 5.95833 13 6.9 13 8C13 9.1 12.6083 10.0417 11.825 10.825C11.0417 11.6083 10.1 12 9 12ZM19 8C19 9.1 18.6083 10.0417 17.825 10.825C17.0417 11.6083 16.1 12 15 12C14.8167 12 14.5833 11.9792 14.3 11.9375C14.0167 11.8958 13.7833 11.85 13.6 11.8C14.05 11.2667 14.3958 10.675 14.6375 10.025C14.8792 9.375 15 8.7 15 8C15 7.3 14.8792 6.625 14.6375 5.975C14.3958 5.325 14.05 4.73333 13.6 4.2C13.8333 4.11667 14.0667 4.0625 14.3 4.0375C14.5333 4.0125 14.7667 4 15 4C16.1 4 17.0417 4.39167 17.825 5.175C18.6083 5.95833 19 6.9 19 8ZM3 18H15V17.2C15 17.0167 14.9542 16.85 14.8625 16.7C14.7708 16.55 14.65 16.4333 14.5 16.35C13.6 15.9 12.6917 15.5625 11.775 15.3375C10.8583 15.1125 9.93333 15 9 15C8.06667 15 7.14167 15.1125 6.225 15.3375C5.30833 15.5625 4.4 15.9 3.5 16.35C3.35 16.4333 3.22917 16.55 3.1375 16.7C3.04583 16.85 3 17.0167 3 17.2V18ZM9 10C9.55 10 10.0208 9.80417 10.4125 9.4125C10.8042 9.02083 11 8.55 11 8C11 7.45 10.8042 6.97917 10.4125 6.5875C10.0208 6.19583 9.55 6 9 6C8.45 6 7.97917 6.19583 7.5875 6.5875C7.19583 6.97917 7 7.45 7 8C7 8.55 7.19583 9.02083 7.5875 9.4125C7.97917 9.80417 8.45 10 9 10Z" />
-                                </svg></span>
-                            <figcaption class="text-h6 mod-pl-3">5. Get Certificate of Incorporation</figcaption>
-                        </div>
-                        <p class="mod-mt-1 text-gray-600">After the Registrar approves the submission, the Certificate of Incorporation is issued.</p>
-                    </figure>
-                </div>
-                <div>
-                    <x-custom-mod-btn
-                        class="btn-custom-medium"
-                        data-id="focus-first-input-btn"
-                    >
-                        <x-slot:hoverTitle>Request a Callback</x-slot>
-                        Get in Touch
-                    </x-custom-mod-btn>
-                </div>
-            </div>
+
+            <x-steps-wrapper page="{{ $slug }}"></x-steps-wrapper>
+
             <div class="sm:mod-hidden icon-bg">
                 <div class="asterisk-1 mod-absolute mod-w-6/12">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 217.14 205.43">

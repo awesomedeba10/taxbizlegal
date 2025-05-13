@@ -19,7 +19,7 @@
                             </h1>
                             <p class="mod-my-8 text-gray-800">
                                 @if(request()->segment(1) === 'services')
-                                Our team is actively building this feature to offer you a seamless and hassle-free experience. In the meantime, feel free to <a href="{{ route('front.contact') }}">contact us</a> for assistance or explore our other services like Company Registration, GST Filing, and ITR.
+                                The service you're looking for isn't live on the website yet, but our representatives will be happy to assist you if you <a href="{{ route('front.contact') }}">reach out</a>. Feel free to connect with us at +91{{ config('app.site_info.support_phone') }}.
                                 @else
                                 It seems you’ve taken a wrong turn. Head back to our homepage to explore services like
                                 Company Registration, GST Filing, ITR, and more.

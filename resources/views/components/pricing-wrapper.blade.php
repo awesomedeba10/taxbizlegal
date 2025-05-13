@@ -17,7 +17,8 @@
                 <p class="plan-price">₹{{ $plan['price'] }}
                     <span class="plan-gst">+ 18% GST</span>
                 </p>
-                <a href="http://127.0.0.1:8000/contact-us"
+                <a href="javascript:void(0)" data-id="focus-first-input-btn"
+                    data-amount="{{ $plan['price'] }}"
                     class="mod-flex btn btn-sm btn-primary icon-hover-right">
                     Get {{ $plan['plan_name'] }}
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
@@ -62,7 +63,7 @@
                 </div>
                 @endforeach
             </div>
-            <a href="http://127.0.0.1:8000/contact-us"
+            <a href="javascript:void(0)" data-id="focus-first-input-btn" data-amount="{{ $plan['price'] }}"
                 class="mod-flex btn btn-sm btn-primary mod-mt-4 icon-hover-right">
                 Get {{ $plan['plan_name'] }}
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"

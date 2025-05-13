@@ -7,6 +7,11 @@ use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\MaintenanceController;
 use App\Http\Controllers\PaymentController;
 
+use App\Models\Order;
+use App\Mail\PaymentReceived;
+
+use Illuminate\Support\Facades\Mail;
+
 
 Route::group(['as' => 'front.'], function() {
 
@@ -31,6 +36,16 @@ Route::group(['as' => 'front.'], function() {
 
 Route::get('coming-soon', [MaintenanceController::class, 'up'])->name('maintenance');
 Route::post('coming-soon', [MaintenanceController::class, 'access'])->name('maintenance.access');
+
+Route::get('/test-mailtrap-yoo', function () {
+    // $order = Order::where('order_id', 'tbl-gANJGzTe7fq')->first();
+    $order = Order::where('order_id', 'tbl-CXWVLSgt9Xc')->first();
+
+    Mail::to($order->cus_email)->send(new PaymentReceived($order));
+
+    return 'Email sent!';
+});
+
 
 
 

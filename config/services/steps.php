@@ -130,6 +130,31 @@ return [
                 "description" => "File DIR-3 KYC for directors and applicable forms like ADT-1, DPT-3, and MSME Form I to ensure full legal compliance."
             ]
         ]
-    ]
-
+    ],
+    "limited-liability-partnership" => [
+        "title" => "Complete Your Limited Liability Partnership Registration in <span class=\"text-blue mod-font-semibold\">5 Easy Steps</span>",
+        "description" => "Registering your Limited Liability Partnership (LLP) is now seamless with our expert assistance. Follow these five simple steps to legally establish your LLP and start your business journey without hassle.",
+        "steps" => [
+            [
+                "title" => "Get Digital Signatures (DSC)",
+                "description" => "Obtain DSC for all designated partners, which is mandatory for digitally signing documents during the LLP registration process."
+            ],
+            [
+                "title" => "Reserve Your LLP Name",
+                "description" => "File the RUN-LLP form on the MCA portal to reserve a unique and compliant name for your LLP."
+            ],
+            [
+                "title" => "Submit FiLLiP Form",
+                "description" => "File the FiLLiP form for LLP incorporation, and simultaneously apply for DPIN, PAN, and TAN for partners."
+            ],
+            [
+                "title" => "File LLP Agreement",
+                "description" => "Draft and file the LLP agreement within 30 days of incorporation using Form 3, outlining roles, rights, and responsibilities."
+            ],
+            [
+                "title" => "Receive Incorporation Certificate",
+                "description" => "Get your Certificate of Incorporation from the Registrar of Companies (ROC) to officially launch your LLP."
+            ]
+        ]
+    ],
 ];
