@@ -584,6 +584,27 @@ return [
             "question" => "Can annual filings be done manually?",
             "answer" => "No, all annual filings must be submitted digitally via the MCA21 portal: <a href=\"https://www.mca.gov.in\" target=\"_blank\">https://www.mca.gov.in</a>"
         ]
+    ],
+    "legal-drafting" => [
+        [
+            "question" => "Can I draft legal documents myself?",
+            "answer" => "Yes, you can. However, it is highly recommended to consult a legal expert to ensure the document is valid, legally compliant, and enforceable in court."
+        ],
+        [
+            "question" => "What’s the difference between notarization and registration?",
+            "answer" => "Notarization is the process of attestation by a Notary Public, primarily to confirm authenticity. Registration involves officially recording the document with the Sub-Registrar as per legal requirements."
+        ],
+        [
+            "question" => "Are oral agreements enforceable?",
+            "answer" => "Some oral agreements are legally enforceable, but <strong>written and signed agreements</strong> are always preferred as they offer better clarity, proof, and enforceability."
+        ],
+        [
+            "question" => "Is stamp duty mandatory on every agreement?",
+            "answer" => "Yes, stamp duty is mandatory where applicable under the <strong>Indian Stamp Act</strong> or the respective <strong>state-specific laws</strong>."
+        ],
+        [
+            "question" => "What makes a contract legally binding?",
+            "answer" => "A contract becomes legally binding when it includes the following essential elements:<br><ul><li>Offer and Acceptance</li><li>Lawful Consideration</li><li>Legal Purpose</li><li>Consent of Competent Parties</li><li>Proper Documentation and Signature</li></ul>"
+        ]
     ]
-
 ];

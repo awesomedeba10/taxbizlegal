@@ -12,7 +12,7 @@
                             class="mod-flex mod-flex-wrap mod-w-full justify-content-center mod-mt-4 svg-scale scale-4 sm:mod-flex-col sm:mod-w-full">
                             <figure class="mod-w-1/3 mod-p-2 md:mod-w-1/4 sm:mod-w-full sm:mod-p-0">
                                 <div class="mod-flex">
-                                    <img class="text-primary svg" src="http://127.0.0.1:8000/images/svg/1-circle-icon.svg"
+                                    <img class="text-primary svg" src="{{ asset('images/svg/1-circle-icon.svg') }}"
                                         alt="step 1">
                                     <figcaption class="mod-flex text-h6 mod-pl-3 mod-items-center">Instant Confirmation
                                     </figcaption>
@@ -23,7 +23,7 @@
                             </figure>
                             <figure class="mod-w-1/3 mod-p-2 md:mod-w-1/4 sm:mod-w-full sm:mod-p-0">
                                 <div class="mod-flex">
-                                    <img class="text-primary svg" src="http://127.0.0.1:8000/images/svg/2-circle-icon.svg"
+                                    <img class="text-primary svg" src="{{ asset('images/svg/2-circle-icon.svg') }}"
                                         alt="step 2">
                                     <figcaption class="mod-flex text-h6 mod-pl-3 mod-items-center">Expert Assignment
                                     </figcaption>
@@ -34,7 +34,7 @@
                             </figure>
                             <figure class="mod-w-1/3 mod-p-2 md:mod-w-1/4 sm:mod-w-full sm:mod-p-0">
                                 <div class="mod-flex">
-                                    <img class="text-primary svg" src="http://127.0.0.1:8000/images/svg/3-circle-icon.svg"
+                                    <img class="text-primary svg" src="{{ asset('images/svg/3-circle-icon.svg') }}"
                                         alt="step 3">
                                     <figcaption class="mod-flex text-h6 mod-pl-3 mod-items-center">Document Collection
                                     </figcaption>

@@ -568,7 +568,7 @@
             </div>
         </section>
 
-        <section class="templateShowcase mb-80 mb-xxl-120">
+        <section class="templateShowcase mb-80 mb-xxl-120 sm:mod-mb-10">
 
             <div class="splide" id="templateShowcase" aria-label="Ukázka šablon CV">
                 <div class="splide__arrows">

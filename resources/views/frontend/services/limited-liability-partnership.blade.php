@@ -319,7 +319,7 @@
 <section class="container my-80 my-xxl-120" id="resources">
 
     <h1 class="display-6 mb-32 mod-font-semibold mod-text-s-24">
-        Selecting the Ideal Business Structure for Your Company
+        Key Features of Limited Liability Partnership (LLP)
     </h1>
     <div class="row gy-40 gx-lg-40">
         <div class="col-lg-4">

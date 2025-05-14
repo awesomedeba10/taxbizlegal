@@ -157,4 +157,59 @@ return [
             ]
         ]
     ],
+    "one-person-company" => [
+        'title' => "Register your One Person Company with <span
+                        class=\"text-blue mod-font-semibold\">Us</span> in 5 Simple Steps",
+        "description" => "Starting your own one person
+                    company is now easier than ever! Just follow these 5 simple steps, and we will handle the process
+                    with accuracy and efficiency. Let us guide you through every step!",
+        "steps" => [
+            [
+                "title" => "Submit Your Documents",
+                "description" => "Share your documents with us for verification. Our experts ensure everything is accurate to proceed seamlessly with the OPC registration process."
+            ],
+            [
+                "title" => "Choose Your Company Name",
+                "description" => "Pick a unique name for your One Person Company. We assist with checking availability and filing for name approval with MCA."
+            ],
+            [
+                "title" => "Company Registration",
+                "description" => "We prepare MOA, AOA, and other legal documentation to ensure full compliance with the Companies Act for your OPC setup."
+            ],
+            [
+                "title" => "File Application with Registrar of Companies",
+                "description" => "Once documents are ready, we file your incorporation application with the RoC and handle all related filings."
+            ],
+            [
+                "title" => "Get Your Certificate of Incorporation",
+                "description" => "After approval by the RoC, receive your official Certificate of Incorporation and start operating as a recognized One Person Company."
+            ]
+        ]
+    ],
+    "legal-drafting" => [
+        "title" => "Get Professionally Drafted Legal Documents <span class=\"text-blue mod-font-semibold\">in 5 Easy Steps</span>",
+        "description" => "Our legal drafting process ensures your documents are valid, enforceable, and tailored to your needs. Follow these 5 simple steps for hassle-free service.",
+        "steps" => [
+            [
+                "title" => "Understand Legal Requirements",
+                "description" => "We begin by analyzing your legal needs, purpose of the document, and key parties involved to ensure accuracy and relevance."
+            ],
+            [
+                "title" => "Gather Required Details",
+                "description" => "We collect all essential information like party names, clauses, timelines, property details, and financial terms for legal clarity."
+            ],
+            [
+                "title" => "Draft and Customize the Document",
+                "description" => "Our legal experts create a draft using correct clauses, formatting, and legal terminology, tailored to your specific situation."
+            ],
+            [
+                "title" => "Review and Finalize",
+                "description" => "We review the draft with you, make necessary revisions, and finalize the document for execution and legal compliance."
+            ],
+            [
+                "title" => "Stamping and Execution",
+                "description" => "We assist with stamping, notarization, and registration, as needed under state law, to make your document legally valid."
+            ]
+        ]
+    ]
 ];
