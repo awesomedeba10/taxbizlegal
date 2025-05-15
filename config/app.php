@@ -129,8 +129,8 @@ return [
         'company_name' => 'Sai Vigneshwara Legal And Business Solutions Private Limited',
         'company_address' => 'Sai Shivalik Complex, Jagannathpur, Bamunari, Hooghly- 712250, West Bengal',
         'company_cin' => 'U69202WB2025PTC277397',
-        'support_email' => 'support@' . strtolower(env('APP_NAME', 'Laravel')) . '.com',
-        'support_phone' => '9035504487',
+        'support_email' => 'info@' . strtolower(env('APP_NAME', 'Laravel')) . '.com',
+        'support_phone' => '0000000000',
         'social_links' => [
             'meta' => 'https://www.facebook.com/profile.php?id=61572967894678',
             'linkedin' => 'https://www.linkedin.com/company/tax-biz-legal/',

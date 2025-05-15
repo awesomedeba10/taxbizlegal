@@ -10,7 +10,6 @@ use Illuminate\Mail\Mailables\Address;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Support\Str;
-use App\Models\Order;
 
 class PaymentReceived extends Mailable
 {

@@ -38,8 +38,8 @@ Route::get('coming-soon', [MaintenanceController::class, 'up'])->name('maintenan
 Route::post('coming-soon', [MaintenanceController::class, 'access'])->name('maintenance.access');
 
 Route::get('/test-mailtrap-yoo', function () {
-    // $order = Order::where('order_id', 'tbl-gANJGzTe7fq')->first();
-    $order = Order::where('order_id', 'tbl-CXWVLSgt9Xc')->first();
+    $order = Order::where('order_id', 'tbl-ioVONcBPyEz')->first();
+    // $order = Order::where('order_id', 'tbl-CXWVLSgt9Xc')->first();
 
     Mail::to($order->cus_email)->send(new PaymentReceived($order));
 

@@ -128,7 +128,17 @@ document.addEventListener("DOMContentLoaded", function () {
             document.querySelectorAll('.btn-pmt').forEach(button => {
                 button.addEventListener('click', function () {
                     const csrfToken = document.querySelector('meta[name="csrf-token"]').getAttribute('content'),
-                        url = window.location.href;
+                        url = window.location.href,
+                        overlayClass = 'page-overlay';
+
+                    const overlay = document.createElement('div');
+                    overlay.className = overlayClass;
+                    overlay.id = overlayClass;
+                    overlay.innerHTML = `
+                            <img src="/images/svg/gear-spinner.svg" alt="Loading...">
+                            <span class="mod-text-s-20 mod-font-semibold mod-text-blue-800">Payment Processing...</span>
+                        `;
+                    document.body.appendChild(overlay);
 
                     fetch('/orders/create', {
                         method: 'POST',
@@ -169,16 +179,22 @@ document.addEventListener("DOMContentLoaded", function () {
                                         .then(res => res.json())
                                         .then(res => {
                                             if (res.success) {
+                                                document.querySelector(`${overlayClass} span`).textContent = 'Payment Received';
                                                 alert('Payment Received', 'success');
                                                 window.location.href = res.redirect_url;
                                             } else {
+                                                document.getElementById(overlayClass)?.remove();
                                                 alert('Payment Verification Failed.', 'error');
                                             }
                                         })
-                                        .catch(() => alert('Error Verifying Payment.', 'error'));
+                                        .catch(() => {
+                                            document.getElementById(overlayClass)?.remove();
+                                            alert('Error Verifying Payment.', 'error');
+                                        });
                                 },
                                 modal: {
                                     ondismiss: function() {
+                                        document.getElementById(overlayClass)?.remove();
                                         alert('Payment Cancelled, Please try again!', 'error')
                                     }
                                 },
@@ -198,6 +214,19 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         };
     }
+});
+
+document.querySelectorAll('.copy-text').forEach(el => {
+    el.addEventListener('click', () => {
+        const textToCopy = el.textContent;
+        navigator.clipboard.writeText(textToCopy).then(() => {
+            setTimeout(() => {
+                alert('Copied to Clipboard !!')
+            }, 1000);
+        }).catch(err => {
+            console.error('Failed to copy: ', err);
+        });
+    });
 });
 
 function detectScrollOnClick() {

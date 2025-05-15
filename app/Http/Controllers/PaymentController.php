@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 use Razorpay\Api\Api;
 use App\Models\Order;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Mail;
+use App\Jobs\SendPaymentEmail;
 
 class PaymentController extends Controller
 {
@@ -86,6 +88,7 @@ class PaymentController extends Controller
             $payment = $api->payment->fetch($request->input('razorpay_payment_id'));
 
             $order = Order::updatePaymentStatus($attributes['razorpay_order_id'], $payment);
+            SendPaymentEmail::dispatch($order);
 
             return response()->json([
                 'success' => true,

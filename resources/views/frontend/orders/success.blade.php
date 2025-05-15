@@ -17,15 +17,19 @@
             <div class="mod-mt-4 mod-mb-8 mod-box-shadow-32 mod-bg-white mod-rounded-lg mod-p-6 mod-w-1/3 sm:mod-w-full sm:mod-text-s-12">
                 <div class="mod-flex mod-justify-between">
                     <span class="mod-text-left">Order Reference Number:</span>
-                    <span class="mod-text-right">{{ Str::upper($order->order_id) }}</span>
+                    <span class="mod-text-right copy-text mod-cursor-pointer" title="Copy Order Id">{{ Str::upper($order->order_id) }}</span>
+                </div>
+                <div class="mod-flex mod-justify-between">
+                    <span class="mod-text-left">Payment Reference Id:</span>
+                    <span class="mod-text-right copy-text mod-cursor-pointer" title="Copy Payment Id">{{ $order->rzp_payment_id }}</span>
                 </div>
                 <div class="mod-flex mod-justify-between mod-mt-1">
                     <span class="mod-text-left">Service Plan:</span>
                     <span class="mod-text-right">{{ $order->service_plan_name }}</span>
                 </div>
                 <div class="mod-flex mod-justify-between mod-mt-1">
-                    <span class="mod-text-left">Amount Paid:</span>
-                    <span class="mod-text-right">₹ {{ $order->rzp_paid_amt }}</span>
+                    <span class="mod-text-left">Total Amount Paid:</span>
+                    <span class="mod-text-right">₹ {{ number_format($order->rzp_paid_amt, 2, '.', ',') }}</span>
                 </div>
                 <div class="mod-flex mod-justify-between mod-mt-1">
                     <span class="mod-text-left">Payment Date:</span>

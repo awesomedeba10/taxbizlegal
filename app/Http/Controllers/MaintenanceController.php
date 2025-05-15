@@ -7,6 +7,10 @@ use Illuminate\Http\Request;
 class MaintenanceController extends Controller
 {
     public function up() {
+        if (config('app.maintenance.mode') == false):
+            return redirect()->route('front.home');
+        endif;
+
         return view('frontend.extras.maintenance');
     }
 
