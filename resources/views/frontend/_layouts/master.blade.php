@@ -120,37 +120,37 @@
     </template>
     <script>
         const JS_LOCALIZE = {
-            delete: "Smazat",
-            deleteIcon: "<img alt='\"Smazat\"' src=\"/images/svg/remove.svg\" width=\"24\" height=\"24\">",
-            typeToSearch: "Začněte psát pro hledání",
-            typeToSearchOrAdd: "Začněte psát pro hledání nebo vytvoření",
-            clickPlusToAdd: "Nic nenalezeno. Klikněte na plus pro vytvoření",
+            delete: "Delete",
+            deleteIcon: "<img alt='\"Delete\"' src=\"/images/svg/remove.svg\" width=\"24\" height=\"24\">",
+            typeToSearch: "Start typing to search",
+            typeToSearchOrAdd: "Start typing to search or create",
+            clickPlusToAdd: "Nothing found. Click the plus to create",
             choices: {
-                loadingText: "Načítám...",
-                noResultsText: "Nic nenalezeno",
-                noChoicesText: "Žádné položky k výběru",
+                loadingText: "Loading...",
+                noResultsText: "No results found",
+                noChoicesText: "No items to choose from",
                 itemSelectText: "",
-                uniqueItemText: "Mohou být vybrány pouze unikátní hodnoty",
-                customAddItemText: "Mohou být vybrány pouze hodnoty splňující podmínky",
+                uniqueItemText: "Only unique values can be selected",
+                customAddItemText: "Only values meeting the criteria can be selected",
                 addItemText: (value) => {
-                    return "Stiskněte Enter pro výběr __value__".replace('__value__', value);
+                    return "Press Enter to select __value__".replace('__value__', value);
                 },
                 maxItemText: (maxItemCount) => {
-                    return "Maximální počet vybraných položek je __value__".replace('__value__', maxItemCount);
+                    return "The maximum number of selected items is __value__".replace('__value__', maxItemCount);
                 }
             },
             dropzone: {
-                dictDefaultMessage: "Přetáhněte soubor",
-                dictFallbackMessage: "Váš prohlížeč nepodporuje drag'n'drop nahrávání souborů.",
-                dictFallbackText: "Pro nahrávání souborů použijte níže uvedený záložní formulář.",
-                dictFileTooBig: "Soubor je příliš velký (5MB). Maximální velikost je 5MB.",
-                dictInvalidFileType: "Tento typ souboru není podporován.",
-                dictResponseError: "Server odpověděl chybou s kódem statusCode.",
-                dictCancelUpload: "Zrušit nahrávání",
-                dictUploadCanceled: "Nahrání zrušeno.",
-                dictCancelUploadConfirmation: "Opravdu chcete toto nahrávání zrušit?",
-                dictRemoveFile: "Odebrat soubor",
-                dictMaxFilesExceeded: "Další soubory již nelze nahrát."
+                dictDefaultMessage: "Drag the file here",
+                dictFallbackMessage: "Your browser does not support drag'n'drop file uploads.",
+                dictFallbackText: "Please use the fallback form below to upload your files.",
+                dictFileTooBig: "The file is too large (5MB). Maximum size is 5MB.",
+                dictInvalidFileType: "This file type is not supported.",
+                dictResponseError: "The server responded with an error code statusCode.",
+                dictCancelUpload: "Cancel upload",
+                dictUploadCanceled: "Upload canceled.",
+                dictCancelUploadConfirmation: "Are you sure you want to cancel this upload?",
+                dictRemoveFile: "Remove file",
+                dictMaxFilesExceeded: "No more files can be uploaded."
             }
         };
     </script>

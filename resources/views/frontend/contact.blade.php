@@ -87,41 +87,42 @@
                                 </font>
                             </font>
                         </p>
-                        <form action="/registrace/adept" method="post" id="frm-adeptRegistrationForm-form"
+                        <form action="{{ route('front.contact.leads') }}" method="post" id="frm-adeptRegistrationForm-form"
                             class="loadable loadable-overlayed ajax" novalidate="">
 
 
                             <div class="form-floating required">
-                                <input type="text" name="user[name]" maxlength="128" placeholder=" "
-                                    class="form-control text" id="frm-adeptRegistrationForm-form-user-name"
-                                    required=""
-                                    data-nette-rules="[{&quot;op&quot;:&quot;:filled&quot;,&quot;msg&quot;:&quot;Pole 'Jméno' je povinné.&quot;}]">
-
-                                <label for="frm-adeptRegistrationForm-form-user-name" class="required">
-                                    <font style="vertical-align: inherit;">
-                                        <font style="vertical-align: inherit;">Name</font>
-                                    </font>
+                                <input type="text" name="name" maxlength="128" placeholder="" class="form-control text"
+                                    id="frm-enquiryForm-form-user-name" required
+                                    data-nette-rules='[{"op":":filled","msg":"Please type your Full Name"}]'>
+                                <label for="frm-enquiryForm-form-user-name" class="required">
+                                    Name
                                 </label>
                             </div>
 
                             <div class="form-floating required">
-                                <input type="tel" name="user[phone]" pattern="^[+\(\) 0-9]+$" placeholder=" "
-                                    class="form-control" id="frm-adeptRegistrationForm-form-user-phone" required=""
-                                    data-nette-rules="[{&quot;op&quot;:&quot;:filled&quot;,&quot;msg&quot;:&quot;Pole 'Telefonní číslo' je povinné.&quot;},{&quot;op&quot;:&quot;:pattern&quot;,&quot;msg&quot;:&quot;Telefonní číslo může obsahovat pouze čísla, mezeru a znak +.&quot;,&quot;arg&quot;:&quot;^[+\\(\\) 0-9]+$&quot;}]">
-
-                                <label for="frm-adeptRegistrationForm-form-user-phone" class="required">
+                                <input type="tel" name="phone" pattern="^[+\(\) 0-9]+$" placeholder=" " class="form-control"
+                                    id="frm-enquiryForm-form-user-phone" required=""
+                                    data-nette-rules="[
+                                        {&quot;op&quot;:&quot;:filled&quot;, &quot;msg&quot;:&quot;Please share your contact number.&quot;},
+                                        {&quot;op&quot;:&quot;:pattern&quot;, &quot;msg&quot;:&quot;The mobile number may contain only digits, spaces, and the + symbol.&quot;, &quot;arg&quot;:&quot;^[+\\(\\) 0-9]+$&quot;}
+                                    ]">
+                        
+                                <label for="frm-enquiryForm-form-user-phone" class="required">
                                     <font style="vertical-align: inherit;">
-                                        <font style="vertical-align: inherit;">Mobile</font>
+                                        <font style="vertical-align: inherit;">Mobile number</font>
                                     </font>
                                 </label>
                             </div>
-
+                        
                             <div class="form-floating required">
-                                <input type="email" name="user[mail]" placeholder=" " class="form-control text"
-                                    id="frm-adeptRegistrationForm-form-user-mail" required=""
-                                    data-nette-rules="[{&quot;op&quot;:&quot;:filled&quot;,&quot;msg&quot;:&quot;Pole 'E-mail' je povinné.&quot;},{&quot;op&quot;:&quot;:email&quot;,&quot;msg&quot;:&quot;E-mailová adresa v poli 'E-mail' není ve správném formátu.&quot;}]">
-
-                                <label for="frm-adeptRegistrationForm-form-user-mail" class="required">
+                                <input type="email" name="email" placeholder=" " class="form-control text"
+                                    id="frm-enquiryForm-form-user-mail" required=""
+                                    data-nette-rules="[
+                                        {&quot;op&quot;:&quot;:filled&quot;, &quot;msg&quot;:&quot;Please share your email.&quot;},
+                                        {&quot;op&quot;:&quot;:email&quot;, &quot;msg&quot;:&quot;The email address formnat is not valid.&quot;}
+                                    ]">
+                                <label for="frm-enquiryForm-form-user-mail" class="required">
                                     <font style="vertical-align: inherit;">
                                         <font style="vertical-align: inherit;">E-mail</font>
                                     </font>
@@ -129,9 +130,11 @@
                             </div>
 
                             <div class="form-check required mt-40 mod-items-start">
-                                <input type="checkbox" name="_comply" class="form-check-input"
-                                    id="frm-adeptRegistrationForm-form-_comply" required=""
-                                    data-nette-rules="[{&quot;op&quot;:&quot;:filled&quot;,&quot;msg&quot;:&quot;Please agree to submit&quot;}]">
+                                <input type="checkbox" name="_comply" class="form-check-input" id="frm-enquiryForm-form-_comply" required=""
+                                data-nette-rules="[
+                                    {&quot;op&quot;:&quot;:filled&quot;, 
+                                    &quot;msg&quot;:&quot;Please agree to T&C to continue.&quot;}
+                            ]">
 
                                 <label class="form-check-label required" for="frm-adeptRegistrationForm-form-_comply">
                                     <font style="vertical-align: inherit;">
@@ -159,12 +162,11 @@
                             <div class="form-submit">
 
 
-                                <button type="submit" name="_submit"
-                                    class="icon-hover-right btn btn-primary loadable-disabled">
+                                <button type="submit" name="_submit" class="icon-hover-right btn btn-sm btn-primary loadable-disabled">
                                     <font style="vertical-align: inherit;">
-                                        <font style="vertical-align: inherit;">Register</font>
-                                    </font><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                        fill="none" viewBox="0 0 24 24">
+                                        <font style="vertical-align: inherit;">Send Your Inquiry</font>
+                                    </font><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                        viewBox="0 0 24 24">
                                         <path fill="currentColor"
                                             d="M16.175 13L10.575 18.6L12 20L20 12L12 4L10.575 5.4L16.175 11L4 11L4 13L16.175 13Z">
                                         </path>

@@ -179,7 +179,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                         .then(res => res.json())
                                         .then(res => {
                                             if (res.success) {
-                                                document.querySelector(`${overlayClass} span`).textContent = 'Payment Received';
+                                                document.querySelector(`.${overlayClass} span`).textContent = 'Payment Received';
                                                 alert('Payment Received', 'success');
                                                 window.location.href = res.redirect_url;
                                             } else {
@@ -189,7 +189,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                         })
                                         .catch(() => {
                                             document.getElementById(overlayClass)?.remove();
-                                            alert('Error Verifying Payment.', 'error');
+                                            alert('SOmething Went Wrong, PLease contact Support!!', 'error');
                                         });
                                 },
                                 modal: {

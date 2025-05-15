@@ -606,11 +606,47 @@ class H extends EventTarget {
             body: r
         });
         if (url.pathname.startsWith('/services/')) {
-            return this.handleServiceRequest(method, url, i, s); // Redirect to another method
+            return this.handleServiceRequests(method, url, i, s);
+        } else if (url.pathname.startsWith('/contact-us/')) {
+            return this.handleContactRequests(method, url, i, s);
         }
     }
-    async handleServiceRequest(method, url, data, options) {
+    async handleContactRequests(method, url, data, options) {
         const submitBtn = options.loadable?.querySelector('button[name="_submit"]');
+        if (submitBtn) {
+            submitBtn.dataset.originalHtml = submitBtn.innerHTML;
+            submitBtn.innerHTML = `<img src="/images/svg/btn-loader.svg" alt="Loading..." style="height: 20px; vertical-align: middle; width: max-content"> Please wait...`;
+            submitBtn.disabled = true;
+        }
+        const response = await window.fetch(new Request(url.toString(), {
+            method,
+            ...options.fetch,
+            body: this.transformData(url, method, data),
+            headers: new Headers(options.fetch.headers || {}),
+            credentials: "same-origin",
+        }));
+        const responseJson = await response.json();
+        await new Promise(resolve => setTimeout(resolve, 1500));
+        if (response.status == 200) {
+            var msg = 'Thanks for reaching out! We\'ll be in touch shortly.',
+            alertClass = 'success';
+        } else {
+            var msg = 'Something Went Wrong, PLease contact Support!!',
+                alertClass = 'error';
+        }
+        alert(msg, alertClass);
+        if (submitBtn) {
+            submitBtn.innerHTML = submitBtn.dataset.originalHtml;
+            submitBtn.disabled = false;
+        }
+    }
+    async handleServiceRequests(method, url, data, options) {
+        const submitBtn = options.loadable?.querySelector('button[name="_submit"]');
+        if (submitBtn) {
+            submitBtn.dataset.originalHtml = submitBtn.innerHTML;
+            submitBtn.innerHTML = `<img src="/images/svg/btn-loader.svg" alt="Loading..." style="height: 20px; vertical-align: middle; width: max-content"> Please wait...`;
+            submitBtn.disabled = true;
+        }
         const partName = options.loadable?.dataset.part;
         // console.log(options.fetch);
         const response = await window.fetch(new Request(url.toString(), {
@@ -623,11 +659,6 @@ class H extends EventTarget {
         const responseJson = await response.json();
 
         if (partName == 'first') {
-            if (submitBtn) {
-                submitBtn.dataset.originalHtml = submitBtn.innerHTML;
-                submitBtn.innerHTML = `<img src="/images/svg/btn-loader.svg" alt="Loading..." style="height: 20px; vertical-align: middle; width: max-content"> Please wait...`;
-                submitBtn.disabled = true;
-            }
             if (response.status == 200) {
                 if (responseJson.url && options.loadable) {
                     options.loadable.setAttribute('action', responseJson.url);
@@ -656,10 +687,6 @@ class H extends EventTarget {
                 }
             }
         } else if (partName == 'second') {
-            if (submitBtn) {
-                submitBtn.innerHTML = `<img src="/images/svg/btn-loader.svg" alt="Loading..." style="height: 20px; vertical-align: middle; width: max-content"> Please wait...`;
-                submitBtn.disabled = true;
-            }
             if (response.status == 200) {
                 await new Promise(resolve => setTimeout(resolve, 1400));
                 window.location.href = responseJson.url;

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Enquiry;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
@@ -29,5 +30,16 @@ class PageController extends Controller
 
     public function refund() {
         return view('frontend.refund');
+    }
+
+    public function contact_leads(Request $request) {
+        Enquiry::submitLeads( $request->merge([
+            'redirected_from' => 'contact-page'
+        ]));
+
+        return response()->json([
+            'status' => 200,
+            'message' => 'Success'
+        ]);
     }
 }

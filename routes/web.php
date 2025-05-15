@@ -19,6 +19,8 @@ Route::group(['as' => 'front.'], function() {
     Route::get('about-us', [PageController::class, 'about'])->name('about');
     Route::get('contact-us', [PageController::class, 'contact'])->name('contact');
 
+    Route::post('contact-us/get-leads', [PageController::class, 'contact_leads'])->name('contact.leads');
+
     Route::group(['prefix' => 'meta'], function() {
         Route::get('privacy-policy', [PageController::class, 'privacy'])->name('privacy');
         Route::get('terms-and-conditions', [PageController::class, 'terms'])->name('terms');
