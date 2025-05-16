@@ -2511,7 +2511,10 @@ img, video {
         grid-gap: 2.5rem;
         gap: 2.5rem;
     }
-
+    .sm\:mod-gap-2 {
+        grid-gap: 0.5rem;
+        gap: 0.5rem;
+    }
     .sm\:mod-gap-4 {
         grid-gap: 1rem;
         gap: 1rem;

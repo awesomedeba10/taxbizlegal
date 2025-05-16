@@ -108,10 +108,12 @@
 
         <x-pricing-wrapper page="{{ $slug }}"></x-pricing-wrapper>
 
-        <div class="card-more-plan bg-blue-100 mod-flex mod-w-full mod-justify-center mod-items-center mod-overflow-hidden mod-relative mod-mt-12 mod-py-12" data-theme="dark">
+        <div class="card-more-plan bg-blue-100 mod-flex mod-w-full mod-justify-center mod-items-center mod-overflow-hidden mod-relative mod-mt-12 mod-py-12"
+            data-theme="dark">
             <div class="mod-flex mod-flex-col mod-items-center">
-                <h4 class="mod-text-s-32 mod-font-semibold mod-word-break-normal mod-text-center mod-leading-semi-loose">
-                    Still not sure yet? <br> 
+                <h4
+                    class="mod-text-s-32 mod-font-semibold mod-word-break-normal mod-text-center mod-leading-semi-loose">
+                    Still not sure yet? <br>
                     <span class="mod-text-s-24">Let our Experts help you find the right Plan</span>
                 </h4>
                 <div class="mod-flex sm:mod-flex-col mod-flex-row mod-gap-8 mod-my-4">
@@ -125,30 +127,24 @@
                         <p class="mod-mb-0">Clear & Transparent Process</p>
                     </div>
                     <div class="mod-flex mod-items-center mod-justify-center mod-gap-2">
-                        <img
-                            src="https://carrier.formcarry.com/website-assets/unlimited-uploads-icon.svg"
+                        <img src="https://carrier.formcarry.com/website-assets/unlimited-uploads-icon.svg"
                             width="24">
                         <p class="mod-mb-0">Real-Time Updates</p>
                     </div>
                 </div>
                 <div class="mod-flex sm:mod-flex-col mod-flex-row mod-gap-8 mod-mb-8">
                     <div class="mod-flex mod-items-center mod-justify-center mod-gap-2">
-                        <img
-                            src="https://carrier.formcarry.com/website-assets/migration-support-icon.svg"
+                        <img src="https://carrier.formcarry.com/website-assets/migration-support-icon.svg"
                             width="24">
                         <p class="mod-mb-0">100% Moneyback Gurantee*</p>
                     </div>
                     <div class="mod-flex mod-items-center mod-justify-center mod-gap-2">
                         <img src="https://carrier.formcarry.com/website-assets/customer-support-icon.svg"
-                        width="24">
+                            width="24">
                         <p class="mod-mb-0">Lightning-Fast Customer Support</p>
                     </div>
                 </div>
-                <x-custom-mod-btn
-                    class="btn-custom-medium"
-                    data-id="focus-first-input-btn"
-                    btn-icon="btn-icon--red"
-                >
+                <x-custom-mod-btn class="btn-custom-medium" data-id="focus-first-input-btn" btn-icon="btn-icon--red">
                     <x-slot:hoverTitle>Request a Callback</x-slot>
                     Get in Touch
                 </x-custom-mod-btn>
@@ -290,10 +286,12 @@
                 <h2 class="mb-0">Company Limited by
                     <span class="text-primary mod-font-bold">Shares</span>
                 </h2>
-                <p class="mb-0 text-lg mod-text-justify">A company limited by shares is a distinct legal entity from its shareholders
+                <p class="mb-0 text-lg mod-text-justify">A company limited by shares is a distinct legal entity from
+                    its shareholders
                     and directors. It can enter into contracts, own assets, and operate independently under its business
                     name.</p>
-                <p class="mb-0 text-lg mod-text-justify">Shareholders’ liability is limited to their investment, ensuring their
+                <p class="mb-0 text-lg mod-text-justify">Shareholders’ liability is limited to their investment,
+                    ensuring their
                     personal assets remain protected from the company’s financial obligations. This structure is widely
                     chosen for its security and credibility.</p>
             </div>
@@ -303,10 +301,12 @@
                 <h2 class="mb-0">Company Limited by
                     <span class="text-primary mod-font-bold">Guarantee</span>
                 </h2>
-                <p class="mb-0 text-lg mod-text-justify">A company limited by guarantee does not have shareholders or share capital.
+                <p class="mb-0 text-lg mod-text-justify">A company limited by guarantee does not have shareholders or
+                    share capital.
                     Instead, it is backed by guarantors who commit a fixed amount towards company debts if necessary.
                 </p>
-                <p class="mb-0 text-lg mod-text-justify">Such companies usually operate as non-profits, with profits reinvested into
+                <p class="mb-0 text-lg mod-text-justify">Such companies usually operate as non-profits, with profits
+                    reinvested into
                     the business to support its objectives. Guarantors do not receive a share of the profits.</p>
             </div>
         </div>
@@ -315,9 +315,11 @@
                 <h2 class="mb-0">
                     <span class="text-primary mod-font-bold">Unlimited</span> Company
                 </h2>
-                <p class="mb-0 text-lg mod-text-justify">An unlimited company, as per Section 2(92) of the Companies Act, 2013, does
+                <p class="mb-0 text-lg mod-text-justify">An unlimited company, as per Section 2(92) of the Companies
+                    Act, 2013, does
                     not impose financial liability limits on its shareholders.</p>
-                <p class="mb-0 text-lg mod-text-justify">In case of dissolution, shareholders are fully responsible for covering all
+                <p class="mb-0 text-lg mod-text-justify">In case of dissolution, shareholders are fully responsible for
+                    covering all
                     company debts, even beyond their initial investment. This structure offers operational flexibility
                     but comes with higher financial risk.</p>
             </div>
@@ -335,8 +337,8 @@
             <div class="img mod-flex mod-justify-center mod-overflow-hidden mod-items-center" data-fade="in">
                 <img decoding="async" width="714" height="402"
                     src="{{ asset('images/svg/customer-doc-required-service-banner.svg') }}"
-                    class="attachment-large size-large" alt=""
-                    sizes="auto, (max-width: 714px) 100vw, 714px" loading="lazy">
+                    class="attachment-large size-large" alt="" sizes="auto, (max-width: 714px) 100vw, 714px"
+                    loading="lazy">
             </div>
             <div class="items mod-grid-4">
                 <div class="mod-flex mod-flex-col mod-gap-2" data-fade="up">
@@ -373,23 +375,20 @@
     <h1 class="display-6 mb-32 mod-font-semibold mod-text-s-28">Annual Compliance for Private Limited Company</h1>
 
     <div class="mod-grid mod-mt-4 mod-gap-8 mod-grid-template-col-2 sm:mod-grid-template-col-1">
-        <div class="mod-pr-8 mod-flex mod-flex-col sm:mod-order-2">
+        <div class="mod-pr-8 mod-flex mod-flex-col sm:mod-order-1 sm:mod-pr-0">
             <h3 class="mod-font-semibold mod-leading-loose">Why Compliance Matters</h3>
-            <p class="mod-mt-2 mod-pr-24">
-                Staying compliant not only builds credibility for your private limited company but also ensures smooth functioning, legal protection, and better funding opportunities. Here’s a quick guide to help you understand what’s needed right after registration.
+            <p class="mod-mt-2 mod-pr-8 sm:mod-pl-0 sm:mod-pr-4">
+                Staying compliant not only builds credibility for your private limited company but also ensures smooth
+                functioning, legal protection, and better funding opportunities. Here’s a quick guide to help you
+                understand what’s needed right after registration.
             </p>
-            <div class="mod-grid mod-items-start mod-my-6">
-                <h4>Other Non-ROC Business Compliances</h4>
-                <div class="mod-grid-2 mod-gap-2">
-                    <span class="mod-items-center mod-py-2 mod-space-semi">TDS/TCS Payment</span>
-                    <span class="mod-items-center mod-py-2 mod-space-semi">GST Payment & GST Filing</span>
-                    <span class="mod-items-center mod-py-2 mod-space-semi">Filing of quarterly TDS Returns</span>
-                    <span class="mod-items-center mod-py-2 mod-space-semi">Advanced Tax Payment</span>
-                    <span class="mod-items-center mod-py-2 mod-space-semi">Filing of IT Returns</span>
-                    <span class="mod-items-center mod-py-2 mod-space-semi">Filing of Tax Audit Reports</span>
-                </div>
-            </div>
-            <div>
+            <x-compliance-lists title="GST Registration"
+                description="Required within 30 days if turnover exceeds ₹40L or for e commerce / interstate business." />
+            <x-compliance-lists title="GST Return Filing"
+                description="File GST returns monthly, quarterly, or annually based on registration and scheme type." />
+            <x-compliance-lists title="Trademark Registration (TM)"
+                description="Protect your brand name, logo, or slogan legally with a registered trademark." />
+            <div class="mod-mt-8">
                 <a class="btn-custom-medium" href="javascript:void(0)" target="_self" id="focus-first-input-btn">
                     <span class="btn-text btn-text--back">Get Help with Compliance</span>
                     <span class="btn-icon btn-custom-w btn-icon--blue">
@@ -404,27 +403,19 @@
                 </a>
             </div>
         </div>
-        <div class="mod-px-2 mod-flex mod-flex-col mod-gap-2 sm:mod-order-1">
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
-                <h3 class="mod-mb-0">Board Meetings</h3>
-                <p class="mod-ml-16 mod-mb-0 mod-text-right">At least 2 board meetings each year with a minimum of 2 directors or 1/3rd of the total.</p>
-            </div>
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
-                <h3 class="mod-mb-0">Annual General Meeting (AGM)</h3>
-                <p class="mod-ml-16 mod-mb-0 mod-text-right">Must be held once every year, with a gap of no more than 15 months between two AGMs.</p>
-            </div>
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
-                <h3 class="mod-mb-0">Auditor Appointment</h3>
-                <p class="mod-ml-16 mod-mb-0 mod-text-right">An auditor must be appointed within 15 days of incorporation by filing Form ADT-1 with the ROC.</p>
-            </div>
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
-                <h3 class="mod-mb-0">Financial Reporting</h3>
-                <p class="mod-ml-16 mod-mb-0 mod-text-right">File annual returns (Form MGT-7) and financial statements (Form AOC-4) every financial year.</p>
-            </div>
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4">
-                <h3 class="mod-mb-0">Statutory Records</h3>
-                <p class="mod-ml-16 mod-mb-0 mod-text-right">Maintain key registers and ensure accounts are audited by a certified statutory auditor.</p>
-            </div>
+        <div class="mod-px-2 mod-flex mod-flex-col mod-gap-2 sm:mod-order-2">
+            <x-compliance-lists title="Statutory Audit"
+                description="Mandatory annual audit for all Private Limited Companies under Companies Act." />
+            <x-compliance-lists title="MAT Audit"
+                description="Ensures minimum tax on book profits despite tax exemptions or deductions." />
+            <x-compliance-lists title="Income Tax Audit"
+                description="Required if turnover exceeds ₹1 Cr (₹5 Cr with 95% digital transactions)." />
+            <x-compliance-lists title="ROC Annual Filing"
+                description="Submit AOC-4, MGT-7, and ADT-1 annually for ROC compliance." />
+            <x-compliance-lists title="IEC Registration"
+                description="Mandatory for import/export businesses to clear customs and receive export benefits." />
+            <x-compliance-lists title="Accounting"
+                description="Maintain proper books of accounts for audits, tax filing, and compliance purposes." />
         </div>
     </div>
 </section>

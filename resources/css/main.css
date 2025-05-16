@@ -6565,13 +6565,17 @@ fieldset:disabled .btn-close {
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     font-size: calc(.8216666667rem + .4044444444vmin)
 }
-
 @media (prefers-reduced-motion: reduce) {
     .choices__inner {
         transition: none
     }
 }
-
+@media (max-width: 375px) {
+    .choices__inner {
+      padding-bottom: 2.5rem !important;
+    }
+  }
+  
 @media (min-width: 1200px) and (min-height: 1200px) {
     .choices__inner {
         font-size:1.125rem
@@ -6598,17 +6602,14 @@ fieldset:disabled .btn-close {
     transform: translateY(var(--choices-caret-move));
     transition: transform .25s ease-in-out
 }
-
 @media (prefers-reduced-motion: reduce) {
     .choices[data-type*=select-one]:not(.has-search):after {
         transition: none
     }
 }
-
 .choices[data-type*=select-one] .choices__inner {
     height: 3.75rem
 }
-
 .choices[data-type*=select-one] .choices__input {
     padding: .75rem;
     border-color: #006eec;

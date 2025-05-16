@@ -294,7 +294,7 @@
                         <details class="mod-w-full mod-accordian">
                             <summary class="mod-cursor-pointer">
                                 <div class="mod-flex mod-items-center">
-                                    <p class="mod-w-11/12 mod-text-compact mod-ml-1 mod-my-0 mod-text-font-500 mod-font-medium focus:mod-text-blue-350">
+                                    <p class="mod-w-11/12 mod-text-s-14 mod-ml-1 mod-my-0 mod-text-font-500 mod-font-semibold mod-space-semi focus:mod-text-blue-350">
                                         {{ $headers['title'] }}
                                     </p>
                                     <div class="mod-w-1/12 mod-accordian-caret mod-order-3 mod-ml-auto"></div>
@@ -305,10 +305,10 @@
                                     @foreach ($headers['sub_headers'] as $sub)
                                     <div class="mod-ml-5">
                                         <div class="mod-flex mod-flex-wrap mod-justify-between mod-pt-4 mod-pb-2">
-                                            <div class="mod-w-1/2  mod-text-font-200 mod-text-s-14">{{ $sub['title'] }}</div>
+                                            <div class="mod-w-4/5 mod-text-blue-400 mod-font-semibold mod-space-semi">{{ $sub['title'] }}</div>
                                             <div class="mod-w-1/2 mod-text-s-14 mod-text-right mod-pr-4"></div>
                                         </div>
-                                        <hr class="divider mod-my-3">
+                                        <hr class="divider mod-my-1">
                                         <div class="mod-block">
                                             @foreach ($sub['services'] as $service)
                                             <a data-label="{{ $service['name'] }}" target="_blank"
@@ -338,7 +338,7 @@
                             <summary class="mod-cursor-pointer">
                                 <div class="mod-flex mod-items-center">
                                     <p
-                                        class="mod-w-11/12 mod-text-compact mod-ml-1 mod-my-0 mod-text-font-500 mod-font-medium focus:mod-text-blue-350">
+                                        class="mod-w-11/12 mod-text-s-14 mod-ml-1 mod-my-0 mod-text-font-500 mod-font-semibold mod-space-semi focus:mod-text-blue-350">
                                         Explore Us</p>
                                     <div class="mod-w-1/12 mod-accordian-caret mod-order-3 mod-ml-auto"></div>
                                 </div>
@@ -354,11 +354,6 @@
                                 </div>
                             </div>
                         </details>
-                    </div>
-                    <div
-                        class="mod-flex mod-h-full mod-items-center sm:mod-w-1/2 sm:mod-mt-4 nav-logged-out-container ">
-                        <a class="home-file-now mod-btn mod-btn-blue mod-cursor-pointer mod-whitespace-no-wrap mod-ml-6 lg:mod-ml-2 md:mod-ml-1 sm:mod-ml-0 sm:mod-w-full"
-                            referrerpolicy="no-referrer-when-downgrade">Get started</a>
                     </div>
                 </div>
             </div>

@@ -211,5 +211,34 @@ return [
                 "description" => "We assist with stamping, notarization, and registration, as needed under state law, to make your document legally valid."
             ]
         ]
-    ]
+    ],
+    "digital-signature-certificate" => [
+        "title" => "Get Your Digital Signature Certificate in <span class=\"text-blue mod-font-semibold\">5 Simple Steps</span>",
+        "description" => "Getting
+                    your Digital Signature Certificate (DSC) is quick and easy! Follow these 5
+                    simple steps, and we will help you obtain your DSC in no time. From document
+                    submission to receiving your DSC, we ensure a hassle-free process.",
+        "steps" => [
+            [
+                "title" => "Choose Your DSC Type and Validity",
+                "description" => "Select the suitable DSC type (Class 2 or Class 3) based on your need, and choose its validity (usually 1–2 years)."
+            ],
+            [
+                "title" => "Provide the Required Documents",
+                "description" => "Submit documents like PAN, Aadhaar, photo, and contact details. Business DSCs may need additional company documents."
+            ],
+            [
+                "title" => "Complete eKYC / Video Verification",
+                "description" => "Verify your identity through a secure eKYC or video process. This step is crucial for confirming your DSC application."
+            ],
+            [
+                "title" => "Make Payment",
+                "description" => "Proceed with the payment through available methods. We ensure a seamless and secure transaction process."
+            ],
+            [
+                "title" => "DSC Process Completion",
+                "description" => "After payment, your DSC will be issued and saved in a secure USB token, ready for use on official platforms."
+            ],
+        ]
+    ],
 ];

@@ -149,7 +149,7 @@
 
                         <div class="h-100 shadow-primary rounded-35 bg-white p-4 p-lg-32">
                             <p class="display-6 mod-font-semibold mb-2 text-primary">Expert Guidance</p>
-                            <p class="mb-0">Get Profesisons helps from our Trusted Experts for all your business needs
+                            <p class="mb-0">Get Professional helps from our Trusted Experts for all your business needs
                             </p>
                         </div>
 
