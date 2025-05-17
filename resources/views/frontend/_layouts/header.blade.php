@@ -138,7 +138,7 @@
                         <span class="text">+91 {{ substr(config('app.site_info.support_phone'), 0, 5) . ' ' . substr(config('app.site_info.support_phone'), 5) }}</span>
                     </a>
                     <button class="header-nav-wp mod-justify-center mod-flex mod-items-center"
-                        onclick="window.open('https://wa.me/{{ config('app.site_info.support_phone') }}?text=Hello,%20I%20need%20some%20assistance!', '_blank')">
+                        onclick="window.open('https://wa.me/{{ config('app.site_info.support_wp_phone') }}?text=Hello,%20I%20need%20some%20assistance!', '_blank')">
                         <span class="wp-icon mod-items-center mod-flex mod-flex-none mod-justify-center">
                             <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 240 241.19">

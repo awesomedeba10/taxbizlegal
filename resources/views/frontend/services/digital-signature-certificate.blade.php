@@ -146,11 +146,7 @@
                         <p class="mod-mb-0">Lightning-Fast Customer Support</p>
                     </div>
                 </div>
-                <x-custom-mod-btn
-                    class="btn-custom-medium"
-                    data-id="focus-first-input-btn"
-                    btn-icon="btn-icon--red"
-                >
+                <x-custom-mod-btn class="btn-custom-medium" data-id="focus-first-input-btn" btn-icon="btn-icon--red">
                     <x-slot:hoverTitle>Request a Callback</x-slot>
                     Get in Touch
                 </x-custom-mod-btn>
@@ -359,8 +355,10 @@
                     <h2 class="mb-0">Certified
                         <span class="text-primary mod-font-bold">Identity Details</span>
                     </h2>
-                    <p class="mb-0 text-lg">Every DSC contains verified details such as the holder’s Name, PAN, Email ID, and the issuing Certificate Authority’s official seal and signature.</p>
-                    <p class="mb-0 text-lg">Available primarily as Class 3 certificates, DSCs come with a validity of 1 to 2 years and can be easily renewed upon expiration.</p>
+                    <p class="mb-0 text-lg">Every DSC contains verified details such as the holder’s Name, PAN, Email
+                        ID, and the issuing Certificate Authority’s official seal and signature.</p>
+                    <p class="mb-0 text-lg">Available primarily as Class 3 certificates, DSCs come with a validity of 1
+                        to 2 years and can be easily renewed upon expiration.</p>
                 </div>
             </div>
         </div>
@@ -417,7 +415,9 @@
         <div class="mod-pr-8 mod-flex mod-flex-col sm:mod-order-2">
             <h3 class="mod-font-semibold mod-leading-loose">Why Having a DSC Matters</h3>
             <p class="mod-mt-2 mod-pr-24">
-                A Digital Signature Certificate (DSC) enables secure online document signing, legal form submissions, tender filings, and tax compliance. It ensures authenticity, data integrity, and regulatory trust across multiple platforms.
+                A Digital Signature Certificate (DSC) enables secure online document signing, legal form submissions,
+                tender filings, and tax compliance. It ensures authenticity, data integrity, and regulatory trust across
+                multiple platforms.
             </p>
             <div class="mod-grid mod-items-start mod-my-6">
                 <h4>Who Should Apply for a DSC?</h4>
@@ -433,7 +433,8 @@
                 </div>
             </div>
             <div>
-                <a class="btn-custom-medium" href="javascript:void(0)" target="_self" data-id="focus-first-input-btn">
+                <a class="btn-custom-medium" href="javascript:void(0)" target="_self"
+                    data-id="focus-first-input-btn">
                     <span class="btn-text btn-text--back">Get Help with Compliance</span>
                     <span class="btn-icon btn-custom-w btn-icon--blue">
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -448,30 +449,18 @@
             </div>
         </div>
         <div class="mod-px-2 mod-flex mod-flex-col mod-gap-2 sm:mod-order-1">
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
-                <h3 class="mod-mb-0">Class 3 DSC</h3>
-                <p class="mod-ml-16 mod-mb-0 mod-text-right">Used for MCA, GST, Income Tax, DGFT, EPFO, and tender filings.</p>
-            </div>
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
-                <h3 class="mod-mb-0">DGFT DSC</h3>
-                <p class="mod-ml-16 mod-mb-0 mod-text-right">Specially issued for transactions on the DGFT portal for exporters.</p>
-            </div>
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
-                <h3 class="mod-mb-0">Fast Application Process</h3>
-                <p class="mod-ml-16 mod-mb-0 mod-text-right">Apply and submit documents the same day, eKYC in 10–15 minutes.</p>
-            </div>
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
-                <h3 class="mod-mb-0">Quick Issuance</h3>
-                <p class="mod-ml-16 mod-mb-0 mod-text-right">DSC gets issued and ready for download within 1 working day.</p>
-            </div>
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
-                <h3 class="mod-mb-0">DSC Renewal</h3>
-                <p class="mod-ml-16 mod-mb-0 mod-text-right">Renew before expiry with simple verification and minimal documents.</p>
-            </div>
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4">
-                <h3 class="mod-mb-0">Reissue on Token Loss</h3>
-                <p class="mod-ml-16 mod-mb-0 mod-text-right">Get your DSC reissued quickly if your USB token is damaged or lost.</p>
-            </div>
+            <x-component-lists title="Class 3 DSC"
+                description="Used for MCA, GST, Income Tax, DGFT, EPFO, and tender filings." />
+            <x-component-lists title="DGFT DSC"
+                description="Specially issued for transactions on the DGFT portal for exporters." />
+            <x-component-lists title="Fast Application Process"
+                description="Apply and submit documents the same day, eKYC in 10–15 minutes." />
+            <x-component-lists title="Quick Issuance"
+                description="DSC gets issued and ready for download within 1 working day." />
+            <x-component-lists title="DSC Renewal"
+                description="Renew before expiry with simple verification and minimal documents." />
+            <x-component-lists title="Reissue on Token Loss"
+                description="Get your DSC reissued quickly if your USB token is damaged or lost." />
         </div>
     </div>
 </section>

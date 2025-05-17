@@ -4,8 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Traits\ServiceComponents;
-use Illuminate\Support\Str;
 use App\Models\Order;
+use Illuminate\Support\Facades\Cache;
 
 class ServiceController extends Controller
 {

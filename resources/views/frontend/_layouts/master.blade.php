@@ -65,7 +65,7 @@
     @include('frontend._layouts.footer')
 
     <div class="btn-float">
-        <a target="_blank" href="https://wa.me/{{ config('app.site_info.support_phone') }}?text=Hello,%20I%20need%20some%20assistance!">
+        <a target="_blank" href="https://wa.me/{{ config('app.site_info.support_wp_phone') }}?text=Hello,%20I%20need%20some%20assistance!">
             <div class="contact-icon">
                 <img src="{{ asset('images/svg/whatsapp.svg') }}" alt="">
             </div>

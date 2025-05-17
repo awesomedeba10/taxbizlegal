@@ -6,14 +6,9 @@ use App\Http\Controllers\PageController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\MaintenanceController;
 use App\Http\Controllers\PaymentController;
+use App\Models\Service;
 
-use App\Models\Order;
-use App\Mail\PaymentReceived;
-
-use Illuminate\Support\Facades\Mail;
-
-
-Route::group(['as' => 'front.'], function() {
+Route::group(['as' => 'front.'], function () {
 
     Route::get('/', [PageController::class, 'index'])->name('home');
     Route::get('about-us', [PageController::class, 'about'])->name('about');
@@ -21,7 +16,7 @@ Route::group(['as' => 'front.'], function() {
 
     Route::post('contact-us/get-leads', [PageController::class, 'contact_leads'])->name('contact.leads');
 
-    Route::group(['prefix' => 'meta'], function() {
+    Route::group(['prefix' => 'meta'], function () {
         Route::get('privacy-policy', [PageController::class, 'privacy'])->name('privacy');
         Route::get('terms-and-conditions', [PageController::class, 'terms'])->name('terms');
         Route::get('refund-policy', [PageController::class, 'refund'])->name('refund');
@@ -40,15 +35,31 @@ Route::get('coming-soon', [MaintenanceController::class, 'up'])->name('maintenan
 Route::post('coming-soon', [MaintenanceController::class, 'access'])->name('maintenance.access');
 
 Route::get('/test-mailtrap-yoo', function () {
-    $order = Order::where('order_id', 'tbl-ioVONcBPyEz')->first();
-    // $order = Order::where('order_id', 'tbl-CXWVLSgt9Xc')->first();
+    // $flatServices = [];
 
-    Mail::to($order->cus_email)->send(new PaymentReceived($order));
+    // $headers = config('services.headers');
+    // $counter = 1;
+    // foreach ($headers as $mainHeader) {
+    //     $mainTitle = $mainHeader['title'];
 
-    return 'Email sent!';
+    //     foreach ($mainHeader['sub_headers'] as $subHeader) {
+    //         $subTitle = $subHeader['title'];
+    //         $background = $subHeader['background'];
+
+    //         foreach ($subHeader['services'] as $service) {
+    //             $flatServices[] = [
+    //                 'main_header' => $mainTitle,
+    //                 'sub_header' => $subTitle,
+    //                 'background' => $background,
+    //                 'name' => $service['name'],
+    //                 'description' => $service['description'],
+    //                 'sort_order' => $counter++,
+    //                 'created_at' => now(),
+    //                 'updated_at' => now()
+    //             ];
+    //         }
+    //     }
+    // }
+
+    // Service::insert($flatServices);
 });
-
-
-
-
-

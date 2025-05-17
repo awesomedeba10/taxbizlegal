@@ -65,6 +65,7 @@
                 <div class="col-lg-2 col-md-3 col-sm-6 col-12">
                     <div class="footer-items">
                         <h3>Info</h3>
+                        <p class="mod-text-s-13">{{ config('app.site_info.company_name') }}</p>
                         <p class="mod-text-s-13">
                             <a href="tel:{{ config('app.site_info.support_phone') }}">+91 {{ config('app.site_info.support_phone') }}</a>
                         </p>
@@ -86,7 +87,7 @@
 
         <div class="copyright mod-text-center mod-my-2">
             <p class="mod-m-none mod-text-s-12">
-                Copyright @ {{ now()->year }}. Powered by TaxBizLegal v{{ substr(Illuminate\Foundation\Application::VERSION, 0, 2) }}.{{ substr(PHP_VERSION, 0, 3) }}
+                Copyright @ {{ now()->year }}. Powered by {{ config('app.site_info.company_name') }} v{{ substr(Illuminate\Foundation\Application::VERSION, 0, 2) }}.{{ substr(PHP_VERSION, 0, 3) }}
             </p>
         </div>
     </div>

@@ -16,7 +16,7 @@ trait ServiceComponents
         'faqs',
         'steps'
     ];
-    protected $default_cache_store_time = 6;
+    protected $default_cache_store_time = 2;
 
     public function init(string $page)
     {
