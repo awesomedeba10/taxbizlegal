@@ -28,7 +28,6 @@ class PricingWrapper extends Component
      */
     public function render(): View|Closure|string
     {
-        dd($this->primary_util_name , $this->page);
         return view('components.pricing-wrapper', [
             'plans' => $this->get_utils(
                 $this->primary_util_name , $this->page)
