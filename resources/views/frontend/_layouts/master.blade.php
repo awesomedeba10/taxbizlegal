@@ -7,14 +7,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <meta name="author" content="Debanjan Ganguly">
+    <meta name="author" content="iamawesome!">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="current-path" content="{{ url()->current() }}">
 
     <title>@yield('title')@hasSection('title') | @endif Tax Biz Legal</title>
 
-    {{-- <meta name="robots" content="index,follow">    
-    <meta name="description"
+    <meta name="description" content="@yield('meta_description', 'Get Top-Rated Business Services, Company registration, Compliance Solutions under One Roof in Just a Few Taps')">
+    <meta name="keywords" content="@yield('meta_keywords', 'TaxBizLegal, tax services, legal services, GST registration, company registration, income tax filing, business consultancy')">
+    <meta name="robots" content="index,follow">
+
+    {{-- <meta name="description"
         content="Vytvořte profesionální životopis a zvyšte své šance na pohovor! Už žádné složité formátování, díky jednoduchému editor CV.">
     <link rel="canonical" href="index.html"> --}}
 
@@ -47,7 +50,7 @@
     <meta name="apple-mobile-web-app-title" content="TaxBizLegal" />
     <meta name="msapplication-TileColor" content="#006eec">
     <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
-    <meta name="theme-color" content="#3e78c6">
+    <meta name="theme-color" content="#0f1832">
 
     @vite(['resources/js/app.js'])
 

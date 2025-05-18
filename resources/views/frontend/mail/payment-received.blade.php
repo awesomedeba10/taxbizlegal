@@ -274,7 +274,7 @@
                 <div class="email-header__content">
                     <div class="email-header__logo">
                         <img style="width: 180px; margin-bottom: 10px; height: 50px"
-                            src="{{ asset('images/svg/tbl_logo.svg') }}" alt="TaxBizLegal Logo">
+                            src="{{ $message->embed(asset('images/svg/tbl_logo.svg')) }}" alt="TaxBizLegal Logo">
                     </div>
                     <h1 class="email-header__content__title" style="color: #334ac0;">
                         Payment Successful 🎉
@@ -344,7 +344,7 @@
                     </table>
                     <div class="line"></div>
                     <div style="display: flex;">
-                        <img src="{{ asset('images/svg/customer-support.svg') }}"
+                        <img src="{{ $message->embed(asset('images/svg/customer-support.svg')) }}"
                             style="width: 50px;height: 50px;padding: 10px;" />
                         <p style="font-size: 12px; color: #2b2a35;">
                             If you have any questions or need support, feel free to <a
