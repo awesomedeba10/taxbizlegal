@@ -61,7 +61,7 @@ class Order extends Model
         endif;
 
         $order->rzp_order_id = $response['id'] ?? null;
-        $order->rzp_order_created_at = date('Y-m-d H:i:s', $response['created_at'] + (330 * 60));
+        $order->rzp_order_created_at = date('Y-m-d H:i:s', $response['created_at']);
         $order->current_stage = 'payment_initiated';
         $order->save();
 
@@ -79,7 +79,7 @@ class Order extends Model
         $order->rzp_payment_id = $response->id;
         $order->rzp_paid_amt = $response->amount/100;
         $order->rzp_payment_status = $response->status;
-        $order->rzp_payment_created_at = date('Y-m-d H:i:s', $response->created_at + (330 * 60));
+        $order->rzp_payment_created_at = date('Y-m-d H:i:s', $response->created_at);
         $order->current_stage = 'payment_received';
 
         $order->save();
