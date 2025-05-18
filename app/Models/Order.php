@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
+use Carbon\Carbon;
 
 class Order extends Model
 {
@@ -84,5 +85,9 @@ class Order extends Model
         $order->save();
 
         return $order;
+    }
+
+    public static function getLatestLeads(int $minutes = 60) {
+        return self::where('created_at', '>=', Carbon::now()->subMinutes($minutes))->get();
     }
 }

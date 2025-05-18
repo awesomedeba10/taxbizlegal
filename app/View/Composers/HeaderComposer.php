@@ -19,10 +19,7 @@ class HeaderComposer
      */
     public function compose(View $view): void
     {
-        $headers = $this->service::where('is_active', 1)
-                ->orderBy('sort_order')
-                ->get()
-                ->groupBy(['main_header', 'sub_header']);
+        $headers = $this->service::getServices();
 
         $view->with('serviceHeaders', $headers);
     }

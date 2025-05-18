@@ -19,6 +19,7 @@
                 <p class="plan-price">₹{{ $plan['price'] }}
                     <span class="plan-gst">+ 18% GST</span>
                 </p>
+                @if(count($plan['services']) > 3)
                 <a href="javascript:void(0)" data-id="focus-first-input-btn"
                     data-amount="{{ $plan['price'] }}"
                     class="mod-flex btn btn-sm btn-primary icon-hover-right">
@@ -30,6 +31,7 @@
                         </path>
                     </svg>
                 </a>
+                @endif
             </div>
             <div class="card-plan-features">
                 @foreach ($plan['services'] as $service)

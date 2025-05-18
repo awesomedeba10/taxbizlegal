@@ -10,4 +10,11 @@ class Service extends Model
         'main_header', 'sub_header', 'background', 'name', 
         'description', 'sort_order' , 'is_active'
     ];
+
+    public static function getServices() {
+        return self::where('is_active', 1)
+                ->orderBy('sort_order')
+                ->get()
+                ->groupBy(['main_header', 'sub_header']);
+    }
 }
