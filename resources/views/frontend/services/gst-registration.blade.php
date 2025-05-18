@@ -14,7 +14,10 @@
                         <li>👉 Quick Approval & Transparent Pricing</li>
                     </ul>
                 </div>
-                <p class="mb-0 mod-leading-light-loose">Experience seamless GST registration with our expert consultants. We manage documentation, government filings, and compliance, ensuring a smooth and stress-free process. Focus on running your business while we handle your GST needs. Get started today!</p>
+                <p class="mb-0 mod-leading-light-loose">Experience seamless GST registration with our expert
+                    consultants. We manage documentation, government filings, and compliance, ensuring a smooth and
+                    stress-free process. Focus on running your business while we handle your GST needs. Get started
+                    today!</p>
             </div>
         </div>
         <div class="section-content mod-pr-12 md:mod-pr-0 sm:mod-pr-0">
@@ -64,7 +67,7 @@
                     data-target="faq">
                     FAQ</li>
             </ul>
-            <a href="" rel="noreferrer"
+            <a href="javascript:void(0)" target="_self" data-id="focus-first-input-btn" rel="noreferrer"
                 class="services-nav-link mod-whitespace-nowrap mod-px-6 mod-my-2 mod-leading-loose mod-flex mod-items-center mod-gap-2">File
                 Now<svg width="16" height="14" viewBox="0 0 18 18" fill="none"
                     xmlns="http://www.w3.org/2000/svg" class="">
@@ -106,10 +109,12 @@
 
         <x-pricing-wrapper page="{{ $slug }}"></x-pricing-wrapper>
 
-        <div class="card-more-plan bg-blue-100 mod-flex mod-w-full mod-justify-center mod-items-center mod-overflow-hidden mod-relative mod-mt-12 mod-py-12" data-theme="dark">
+        <div class="card-more-plan bg-blue-100 mod-flex mod-w-full mod-justify-center mod-items-center mod-overflow-hidden mod-relative mod-mt-12 mod-py-12"
+            data-theme="dark">
             <div class="mod-flex mod-flex-col mod-items-center">
-                <h4 class="mod-text-s-32 mod-font-semibold mod-word-break-normal mod-text-center mod-leading-semi-loose">
-                    Still not sure yet? <br> 
+                <h4
+                    class="mod-text-s-32 mod-font-semibold mod-word-break-normal mod-text-center mod-leading-semi-loose">
+                    Still not sure yet? <br>
                     <span class="mod-text-s-24">Let our Experts help you find the right Plan</span>
                 </h4>
                 <div class="mod-flex sm:mod-flex-col mod-flex-row mod-gap-8 mod-my-4">
@@ -123,30 +128,24 @@
                         <p class="mod-mb-0">Clear & Transparent Process</p>
                     </div>
                     <div class="mod-flex mod-items-center mod-justify-center mod-gap-2">
-                        <img
-                            src="https://carrier.formcarry.com/website-assets/unlimited-uploads-icon.svg"
+                        <img src="https://carrier.formcarry.com/website-assets/unlimited-uploads-icon.svg"
                             width="24">
                         <p class="mod-mb-0">Real-Time Updates</p>
                     </div>
                 </div>
                 <div class="mod-flex sm:mod-flex-col mod-flex-row mod-gap-8 mod-mb-8">
                     <div class="mod-flex mod-items-center mod-justify-center mod-gap-2">
-                        <img
-                            src="https://carrier.formcarry.com/website-assets/migration-support-icon.svg"
+                        <img src="https://carrier.formcarry.com/website-assets/migration-support-icon.svg"
                             width="24">
                         <p class="mod-mb-0">100% Moneyback Gurantee*</p>
                     </div>
                     <div class="mod-flex mod-items-center mod-justify-center mod-gap-2">
                         <img src="https://carrier.formcarry.com/website-assets/customer-support-icon.svg"
-                        width="24">
+                            width="24">
                         <p class="mod-mb-0">Lightning-Fast Customer Support</p>
                     </div>
                 </div>
-                <x-custom-mod-btn
-                    class="btn-custom-medium"
-                    data-id="focus-first-input-btn"
-                    btn-icon="btn-icon--red"
-                >
+                <x-custom-mod-btn class="btn-custom-medium" data-id="focus-first-input-btn" btn-icon="btn-icon--red">
                     <x-slot:hoverTitle>Request a Callback</x-slot>
                     Get in Touch
                 </x-custom-mod-btn>
@@ -162,10 +161,20 @@
             <div class="mod-py-8">
 
                 <h1 class="mod-text-s-24">All you need to know about GST Registration</h1>
-                <p>Goods and Services Tax (GST) Registration is a legal requirement under the GST Act, 2017 for businesses involved in the supply of goods or services in India. Any individual or entity whose annual turnover exceeds the prescribed threshold must register for GST. However, even businesses with lower turnover may opt for voluntary registration to avail benefits such as Input Tax Credit (ITC) and enhanced credibility.</p>
-                <p>Upon successful registration, businesses are issued a unique GST Identification Number (GSTIN) which enables them to legally collect GST from customers and remit it to the government. GST registration provides official recognition to businesses, facilitates seamless interstate trade, and ensures compliance with tax laws.</p>
-                <p>Registered businesses are required to file regular GST returns and comply with ongoing obligations as per the Central Goods and Services Tax (CGST) Act and associated rules. Any subsequent changes in business particulars—such as address, legal name, ownership structure, or contact information—must be reported through a formal process of GST modification.</p>
-                <p>Taxbizlegal.com is a trusted platform that provides end-to-end services for GST 
+                <p>Goods and Services Tax (GST) Registration is a legal requirement under the GST Act, 2017 for
+                    businesses involved in the supply of goods or services in India. Any individual or entity whose
+                    annual turnover exceeds the prescribed threshold must register for GST. However, even businesses
+                    with lower turnover may opt for voluntary registration to avail benefits such as Input Tax Credit
+                    (ITC) and enhanced credibility.</p>
+                <p>Upon successful registration, businesses are issued a unique GST Identification Number (GSTIN) which
+                    enables them to legally collect GST from customers and remit it to the government. GST registration
+                    provides official recognition to businesses, facilitates seamless interstate trade, and ensures
+                    compliance with tax laws.</p>
+                <p>Registered businesses are required to file regular GST returns and comply with ongoing obligations as
+                    per the Central Goods and Services Tax (CGST) Act and associated rules. Any subsequent changes in
+                    business particulars—such as address, legal name, ownership structure, or contact information—must
+                    be reported through a formal process of GST modification.</p>
+                <p>Taxbizlegal.com is a trusted platform that provides end-to-end services for GST
                     Registration. The process is quick,
                     affordable, and simple. Additionally, we offer services for Partnership Registration, LLP
                     Incorporation, One Person Company registration, and more. Contact us for a free consultation at
@@ -209,7 +218,8 @@
                 </div>
                 <div class="item-content">
                     <h3 class="item-title">Legally Compliant</h3>
-                    <p class="item-text">GST registration ensures that your business operates lawfully under the GST Act, meeting all required tax regulations and government mandates.</p>
+                    <p class="item-text">GST registration ensures that your business operates lawfully under the GST
+                        Act, meeting all required tax regulations and government mandates.</p>
                 </div>
             </div>
             <div class="mod-flex mod-flex-col mod-gap-4 xl:mod-pr-20 lg:mod-pr-8 sm:mod-pr-4 sm:mod-flex-row"
@@ -223,7 +233,8 @@
                     </svg></div>
                 <div class="item-content">
                     <h3 class="item-title">Input Tax Credit Benefit</h3>
-                    <p class="item-text">Registered businesses can claim Input Tax Credit (ITC) on GST paid for purchases, helping reduce overall tax liability and improve profitability.</p>
+                    <p class="item-text">Registered businesses can claim Input Tax Credit (ITC) on GST paid for
+                        purchases, helping reduce overall tax liability and improve profitability.</p>
                 </div>
             </div>
             <div class="mod-flex mod-flex-col mod-gap-4 xl:mod-pr-20 lg:mod-pr-8 sm:mod-pr-4 sm:mod-flex-row"
@@ -242,7 +253,8 @@
                 </div>
                 <div class="item-content">
                     <h3 class="item-title">Facilitates B2B Transactions</h3>
-                    <p class="item-text">GST registration is essential for businesses looking to deal with registered vendors and clients, ensuring smoother B2B operations and credibility.</p>
+                    <p class="item-text">GST registration is essential for businesses looking to deal with registered
+                        vendors and clients, ensuring smoother B2B operations and credibility.</p>
                 </div>
             </div>
             <div class="mod-flex mod-flex-col mod-gap-4 xl:mod-pr-20 lg:mod-pr-8 sm:mod-pr-4 sm:mod-flex-row"
@@ -259,7 +271,8 @@
                 <div class="item-content">
                     <h3 class="item-title">Ease in Banking & Funding</h3>
                     <p class="item-text">
-                        Having a GST registration makes it easier to open a current bank account, apply for business loans, and secure funding from financial institutions.
+                        Having a GST registration makes it easier to open a current bank account, apply for business
+                        loans, and secure funding from financial institutions.
                     </p>
                 </div>
             </div>
@@ -276,29 +289,35 @@
         <div class="row gy-40 gx-lg-40">
             <div class="col-lg-4">
                 <div class="d-flex flex-column gap-12 gap-lg-3 mx-auto">
-                    <h2 class="mb-0">PAN-Based 
+                    <h2 class="mb-0">PAN-Based
                         <span class="text-primary mod-font-bold">State Registration</span>
                     </h2>
-                    <p class="mb-0 text-lg">GST registration is PAN-based and required separately for each state where a business operates. A unique 15-digit GSTIN is allotted post-registration.</p>
-                    <p class="mb-0 text-lg">This system ensures proper tax compliance across states and allows businesses to manage interstate operations efficiently under a unified tax regime.</p>
+                    <p class="mb-0 text-lg">GST registration is PAN-based and required separately for each state where
+                        a business operates. A unique 15-digit GSTIN is allotted post-registration.</p>
+                    <p class="mb-0 text-lg">This system ensures proper tax compliance across states and allows
+                        businesses to manage interstate operations efficiently under a unified tax regime.</p>
                 </div>
             </div>
             <div class="col-lg-4">
                 <div class="d-flex flex-column gap-12 gap-lg-3 mx-auto">
-                    <h2 class="mb-0">Threshold-Based 
+                    <h2 class="mb-0">Threshold-Based
                         <span class="text-primary mod-font-bold">Registration</span>
                     </h2>
-                    <p class="mb-0 text-lg">Businesses must register for GST once their aggregate turnover exceeds ₹40 lakh, ₹20 lakh, or ₹10 lakh, depending on their state and type of goods or services.</p>
-                    <p class="mb-0 text-lg">Additionally, GST registration is mandatory for interstate suppliers, e-commerce operators, and businesses engaged in notified activities, regardless of turnover.</p>
+                    <p class="mb-0 text-lg">Businesses must register for GST once their aggregate turnover exceeds ₹40
+                        lakh, ₹20 lakh, or ₹10 lakh, depending on their state and type of goods or services.</p>
+                    <p class="mb-0 text-lg">Additionally, GST registration is mandatory for interstate suppliers,
+                        e-commerce operators, and businesses engaged in notified activities, regardless of turnover.</p>
                 </div>
             </div>
             <div class="col-lg-4">
                 <div class="d-flex flex-column gap-12 gap-lg-3 mx-auto">
-                    <h2 class="mb-0">Digital 
+                    <h2 class="mb-0">Digital
                         <span class="text-primary mod-font-bold">Certificate Issuance</span>
                     </h2>
-                    <p class="mb-0 text-lg">After successful registration, a digital GST Registration Certificate is issued via the GST portal, eliminating the need for physical copies.</p>
-                    <p class="mb-0 text-lg">The GSTIN enables businesses to file returns, claim input tax credit, issue GST-compliant invoices, and strengthen their market credibility with ease.</p>
+                    <p class="mb-0 text-lg">After successful registration, a digital GST Registration Certificate is
+                        issued via the GST portal, eliminating the need for physical copies.</p>
+                    <p class="mb-0 text-lg">The GSTIN enables businesses to file returns, claim input tax credit, issue
+                        GST-compliant invoices, and strengthen their market credibility with ease.</p>
                 </div>
             </div>
         </div>
@@ -315,8 +334,8 @@
             <div class="img mod-flex mod-justify-center mod-overflow-hidden mod-items-center" data-fade="in">
                 <img decoding="async" width="714" height="402"
                     src="{{ asset('images/svg/customer-doc-required-service-banner.svg') }}"
-                    class="attachment-large size-large" alt=""
-                    sizes="auto, (max-width: 714px) 100vw, 714px" loading="lazy">
+                    class="attachment-large size-large" alt="" sizes="auto, (max-width: 714px) 100vw, 714px"
+                    loading="lazy">
             </div>
             <div class="items mod-grid-4">
                 <div class="mod-flex mod-flex-col mod-gap-2" data-fade="up">
@@ -350,13 +369,15 @@
 </section>
 
 <section class="container my-40" id="compliances">
-    <h1 class="display-6 mb-32 mod-font-semibold mod-text-s-28">Compliance Required for Forming a Private Limited Company</h1>
+    <h1 class="display-6 mb-32 mod-font-semibold mod-text-s-28">Compliance Required after GST Registration</h1>
 
     <div class="mod-grid mod-mt-4 mod-gap-8 mod-grid-template-col-2 sm:mod-grid-template-col-1">
-        <div class="mod-pr-8 mod-flex mod-flex-col sm:mod-order-2">
+        <div class="mod-pr-8 mod-flex mod-flex-col sm:mod-order-1 sm:mod-pr-0">
             <h3 class="mod-font-semibold mod-leading-loose">Why Compliance Matters</h3>
-            <p class="mod-mt-2 mod-pr-24">
-                Proper GST compliance strengthens your business credibility, avoids penalties, ensures seamless operations, and boosts trust with customers and partners. Here’s what you need to manage after GST registration.
+            <p class="mod-mt-2 mod-pr-8 sm:mod-pl-0 sm:mod-pr-4">
+                Proper GST compliance strengthens your business credibility, avoids penalties, ensures seamless
+                operations, and boosts trust with customers and partners. Here’s what you need to manage after GST
+                registration.
             </p>
             <div class="mod-grid mod-items-start mod-my-6">
                 <h4>Other Non-ROC Business Compliances</h4>
@@ -366,13 +387,15 @@
                     <span class="mod-items-center mod-py-2 mod-space-semi">Maintenance of Books & Records</span>
                     <span class="mod-items-center mod-py-2 mod-space-semi">Input Tax Credit (ITC) Reconciliation</span>
                     <span class="mod-items-center mod-py-2 mod-space-semi">Filing Income Tax Return (ITR)</span>
-                    <span class="mod-items-center mod-py-2 mod-space-semi">Authorized Signatory Details (if applicable)</span>
+                    <span class="mod-items-center mod-py-2 mod-space-semi">Authorized Signatory Details (if
+                        applicable)</span>
                     <span class="mod-items-center mod-py-2 mod-space-semi">TDS under GST (If applicable)</span>
                     <span class="mod-items-center mod-py-2 mod-space-semi">E-Invoicing (If applicable)</span>
                 </div>
             </div>
             <div>
-                <a class="btn-custom-medium" href="javascript:void(0)" target="_self" data-id="focus-first-input-btn">
+                <a class="btn-custom-medium" href="javascript:void(0)" target="_self"
+                    data-id="focus-first-input-btn">
                     <span class="btn-text btn-text--back">Get Help with Compliance</span>
                     <span class="btn-icon btn-custom-w btn-icon--blue">
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -386,27 +409,22 @@
                 </a>
             </div>
         </div>
-        <div class="mod-px-2 mod-flex mod-flex-col mod-gap-2 sm:mod-order-1">
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
-                <h3 class="mod-mb-0">Maintain Proper Records</h3>
-                <p class="mod-ml-16 mod-mb-0 mod-text-right">Keep detailed records of all sales, purchases, and input-output tax credits as per GST laws.</p>
-            </div>
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
-                <h3 class="mod-mb-0">Issue GST-Compliant Invoices</h3>
-                <p class="mod-ml-16 mod-mb-0 mod-text-right">Generate and issue invoices with correct GST details for every taxable sale of goods or services.</p>
-            </div>
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
-                <h3 class="mod-mb-0">Timely GST Payment</h3>
-                <p class="mod-ml-16 mod-mb-0 mod-text-right">Pay GST dues accurately and on time based on the tax periods applicable to your business.</p>
-            </div>
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
-                <h3 class="mod-mb-0">File GST Returns</h3>
-                <p class="mod-ml-16 mod-mb-0 mod-text-right">Submit monthly, quarterly, and annual GST returns (like GSTR-1, GSTR-3B, GSTR-9) within due dates.</p>
-            </div>
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4">
-                <h3 class="mod-mb-0">Annual Reconciliation</h3>
-                <p class="mod-ml-16 mod-mb-0 mod-text-right">Perform yearly reconciliation of GST returns with financial statements and file GST Annual Return.</p>
-            </div>
+        <div class="mod-px-2 mod-flex mod-flex-col mod-gap-2 sm:mod-order-2">
+            <x-compliance-lists title="Maintain Proper Records"
+                description="Keep detailed records of all sales, purchases, and input-output tax credits as required under GST regulations." />
+
+            <x-compliance-lists title="Issue GST-Compliant Invoices"
+                description="Generate and issue proper GST invoices for every taxable supply, ensuring all mandatory fields and tax details are included." />
+
+            <x-compliance-lists title="Timely GST Payment"
+                description="Pay your GST liabilities on or before the due dates applicable to your filing frequency to avoid penalties or interest." />
+
+            <x-compliance-lists title="File GST Returns"
+                description="File monthly, quarterly, and annual GST returns such as GSTR-1, GSTR-3B, and GSTR-9 within the prescribed deadlines." />
+
+            <x-compliance-lists title="Annual Reconciliation"
+                description="Reconcile your books with filed GST returns annually and ensure timely submission of the GST Annual Return." />
+
         </div>
     </div>
 </section>
@@ -415,86 +433,9 @@
 <section class="container mod-my-16 lg:mod-my-24">
     <article class="banner bg-blue-100 mod-overflow-hidden py-40 px-4 p-lg-5 lg:mod-px-12 pb-xxl-4">
         <div class="row gy-32 gx-xl-40 mod-relative justify-content-center align-items-center">
-            <div class="col-lg-12 d-flex flex-column mod-gap-8">
-                <h2 class="display-6 fw-bold mb-0">Register for GST with 
-                    <span class="text-blue mod-font-semibold">Us</span> in 5 Simple Steps
-                </h2>
-                <p class="text-lg mb-0 pe-xl-80 me-xxl-4 mod-w-5/6 sm:mod-w-full">Registering for GST is now a hassle-free process! Simply follow these 5 easy steps, and we will take care of everything for you. From filing the required forms to obtaining your GSTIN, we ensure a smooth and efficient process at every step!
-                </p>
-                <div
-                    class="d-flex justify-content-center mod-mt-4 justify-content-lg-start gap-2 gap-sm-3 gap-xl-4 text-center svg-scale scale-4 sm:mod-flex-col sm:mod-w-full">
-                    <figure class="mb-0 mod-flex mod-flex-col mod-items-start mod-text-left mod-gap-4">
-                        <div class="mod-flex ">
-                            <span class="text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                    height="24" fill="none" viewBox="0 0 24 24">
-                                    <path fill="currentColor"
-                                        d="M1 20V17.2C1 16.6333 1.14583 16.1125 1.4375 15.6375C1.72917 15.1625 2.11667 14.8 2.6 14.55C3.63333 14.0333 4.68333 13.6458 5.75 13.3875C6.81667 13.1292 7.9 13 9 13C10.1 13 11.1833 13.1292 12.25 13.3875C13.3167 13.6458 14.3667 14.0333 15.4 14.55C15.8833 14.8 16.2708 15.1625 16.5625 15.6375C16.8542 16.1125 17 16.6333 17 17.2V20H1ZM19 20V17C19 16.2667 18.7958 15.5625 18.3875 14.8875C17.9792 14.2125 17.4 13.6333 16.65 13.15C17.5 13.25 18.3 13.4208 19.05 13.6625C19.8 13.9042 20.5 14.2 21.15 14.55C21.75 14.8833 22.2083 15.2542 22.525 15.6625C22.8417 16.0708 23 16.5167 23 17V20H19ZM9 12C7.9 12 6.95833 11.6083 6.175 10.825C5.39167 10.0417 5 9.1 5 8C5 6.9 5.39167 5.95833 6.175 5.175C6.95833 4.39167 7.9 4 9 4C10.1 4 11.0417 4.39167 11.825 5.175C12.6083 5.95833 13 6.9 13 8C13 9.1 12.6083 10.0417 11.825 10.825C11.0417 11.6083 10.1 12 9 12ZM19 8C19 9.1 18.6083 10.0417 17.825 10.825C17.0417 11.6083 16.1 12 15 12C14.8167 12 14.5833 11.9792 14.3 11.9375C14.0167 11.8958 13.7833 11.85 13.6 11.8C14.05 11.2667 14.3958 10.675 14.6375 10.025C14.8792 9.375 15 8.7 15 8C15 7.3 14.8792 6.625 14.6375 5.975C14.3958 5.325 14.05 4.73333 13.6 4.2C13.8333 4.11667 14.0667 4.0625 14.3 4.0375C14.5333 4.0125 14.7667 4 15 4C16.1 4 17.0417 4.39167 17.825 5.175C18.6083 5.95833 19 6.9 19 8ZM3 18H15V17.2C15 17.0167 14.9542 16.85 14.8625 16.7C14.7708 16.55 14.65 16.4333 14.5 16.35C13.6 15.9 12.6917 15.5625 11.775 15.3375C10.8583 15.1125 9.93333 15 9 15C8.06667 15 7.14167 15.1125 6.225 15.3375C5.30833 15.5625 4.4 15.9 3.5 16.35C3.35 16.4333 3.22917 16.55 3.1375 16.7C3.04583 16.85 3 17.0167 3 17.2V18ZM9 10C9.55 10 10.0208 9.80417 10.4125 9.4125C10.8042 9.02083 11 8.55 11 8C11 7.45 10.8042 6.97917 10.4125 6.5875C10.0208 6.19583 9.55 6 9 6C8.45 6 7.97917 6.19583 7.5875 6.5875C7.19583 6.97917 7 7.45 7 8C7 8.55 7.19583 9.02083 7.5875 9.4125C7.97917 9.80417 8.45 10 9 10Z" />
-                                </svg></span>
-                            <figcaption class="text-h6 mod-pl-3">1. Online Application</figcaption>
-                        </div>
-                        <p class="mod-mt-1 text-gray-600">Start by visiting the GST portal and filling out the GST REG-01 form. Provide necessary business details, including PAN card, nature of business, and other required information.</p>
-                    </figure>
-                    <figure class="mb-0 mod-flex mod-flex-col mod-items-start mod-text-left mod-gap-4">
-                        <div class="mod-flex ">
-                            <span class="text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                    height="24" fill="none" viewBox="0 0 24 24">
-                                    <path fill="currentColor"
-                                        d="M1 20V17.2C1 16.6333 1.14583 16.1125 1.4375 15.6375C1.72917 15.1625 2.11667 14.8 2.6 14.55C3.63333 14.0333 4.68333 13.6458 5.75 13.3875C6.81667 13.1292 7.9 13 9 13C10.1 13 11.1833 13.1292 12.25 13.3875C13.3167 13.6458 14.3667 14.0333 15.4 14.55C15.8833 14.8 16.2708 15.1625 16.5625 15.6375C16.8542 16.1125 17 16.6333 17 17.2V20H1ZM19 20V17C19 16.2667 18.7958 15.5625 18.3875 14.8875C17.9792 14.2125 17.4 13.6333 16.65 13.15C17.5 13.25 18.3 13.4208 19.05 13.6625C19.8 13.9042 20.5 14.2 21.15 14.55C21.75 14.8833 22.2083 15.2542 22.525 15.6625C22.8417 16.0708 23 16.5167 23 17V20H19ZM9 12C7.9 12 6.95833 11.6083 6.175 10.825C5.39167 10.0417 5 9.1 5 8C5 6.9 5.39167 5.95833 6.175 5.175C6.95833 4.39167 7.9 4 9 4C10.1 4 11.0417 4.39167 11.825 5.175C12.6083 5.95833 13 6.9 13 8C13 9.1 12.6083 10.0417 11.825 10.825C11.0417 11.6083 10.1 12 9 12ZM19 8C19 9.1 18.6083 10.0417 17.825 10.825C17.0417 11.6083 16.1 12 15 12C14.8167 12 14.5833 11.9792 14.3 11.9375C14.0167 11.8958 13.7833 11.85 13.6 11.8C14.05 11.2667 14.3958 10.675 14.6375 10.025C14.8792 9.375 15 8.7 15 8C15 7.3 14.8792 6.625 14.6375 5.975C14.3958 5.325 14.05 4.73333 13.6 4.2C13.8333 4.11667 14.0667 4.0625 14.3 4.0375C14.5333 4.0125 14.7667 4 15 4C16.1 4 17.0417 4.39167 17.825 5.175C18.6083 5.95833 19 6.9 19 8ZM3 18H15V17.2C15 17.0167 14.9542 16.85 14.8625 16.7C14.7708 16.55 14.65 16.4333 14.5 16.35C13.6 15.9 12.6917 15.5625 11.775 15.3375C10.8583 15.1125 9.93333 15 9 15C8.06667 15 7.14167 15.1125 6.225 15.3375C5.30833 15.5625 4.4 15.9 3.5 16.35C3.35 16.4333 3.22917 16.55 3.1375 16.7C3.04583 16.85 3 17.0167 3 17.2V18ZM9 10C9.55 10 10.0208 9.80417 10.4125 9.4125C10.8042 9.02083 11 8.55 11 8C11 7.45 10.8042 6.97917 10.4125 6.5875C10.0208 6.19583 9.55 6 9 6C8.45 6 7.97917 6.19583 7.5875 6.5875C7.19583 6.97917 7 7.45 7 8C7 8.55 7.19583 9.02083 7.5875 9.4125C7.97917 9.80417 8.45 10 9 10Z" />
-                                </svg></span>
-                            <figcaption class="text-h6 mod-pl-3">2. Documents Submission</figcaption>
-                        </div>
-                        <p class="mod-mt-1 text-gray-600">Upload the required documents such as proof of identity, address, and business constitution as per GST guidelines.</p>
-                    </figure>
-                    <figure class="mb-0 mod-flex mod-flex-col mod-items-start mod-text-left mod-gap-4">
-                        <div class="mod-flex ">
-                            <span class="text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                    height="24" fill="none" viewBox="0 0 24 24">
-                                    <path fill="currentColor"
-                                        d="M1 20V17.2C1 16.6333 1.14583 16.1125 1.4375 15.6375C1.72917 15.1625 2.11667 14.8 2.6 14.55C3.63333 14.0333 4.68333 13.6458 5.75 13.3875C6.81667 13.1292 7.9 13 9 13C10.1 13 11.1833 13.1292 12.25 13.3875C13.3167 13.6458 14.3667 14.0333 15.4 14.55C15.8833 14.8 16.2708 15.1625 16.5625 15.6375C16.8542 16.1125 17 16.6333 17 17.2V20H1ZM19 20V17C19 16.2667 18.7958 15.5625 18.3875 14.8875C17.9792 14.2125 17.4 13.6333 16.65 13.15C17.5 13.25 18.3 13.4208 19.05 13.6625C19.8 13.9042 20.5 14.2 21.15 14.55C21.75 14.8833 22.2083 15.2542 22.525 15.6625C22.8417 16.0708 23 16.5167 23 17V20H19ZM9 12C7.9 12 6.95833 11.6083 6.175 10.825C5.39167 10.0417 5 9.1 5 8C5 6.9 5.39167 5.95833 6.175 5.175C6.95833 4.39167 7.9 4 9 4C10.1 4 11.0417 4.39167 11.825 5.175C12.6083 5.95833 13 6.9 13 8C13 9.1 12.6083 10.0417 11.825 10.825C11.0417 11.6083 10.1 12 9 12ZM19 8C19 9.1 18.6083 10.0417 17.825 10.825C17.0417 11.6083 16.1 12 15 12C14.8167 12 14.5833 11.9792 14.3 11.9375C14.0167 11.8958 13.7833 11.85 13.6 11.8C14.05 11.2667 14.3958 10.675 14.6375 10.025C14.8792 9.375 15 8.7 15 8C15 7.3 14.8792 6.625 14.6375 5.975C14.3958 5.325 14.05 4.73333 13.6 4.2C13.8333 4.11667 14.0667 4.0625 14.3 4.0375C14.5333 4.0125 14.7667 4 15 4C16.1 4 17.0417 4.39167 17.825 5.175C18.6083 5.95833 19 6.9 19 8ZM3 18H15V17.2C15 17.0167 14.9542 16.85 14.8625 16.7C14.7708 16.55 14.65 16.4333 14.5 16.35C13.6 15.9 12.6917 15.5625 11.775 15.3375C10.8583 15.1125 9.93333 15 9 15C8.06667 15 7.14167 15.1125 6.225 15.3375C5.30833 15.5625 4.4 15.9 3.5 16.35C3.35 16.4333 3.22917 16.55 3.1375 16.7C3.04583 16.85 3 17.0167 3 17.2V18ZM9 10C9.55 10 10.0208 9.80417 10.4125 9.4125C10.8042 9.02083 11 8.55 11 8C11 7.45 10.8042 6.97917 10.4125 6.5875C10.0208 6.19583 9.55 6 9 6C8.45 6 7.97917 6.19583 7.5875 6.5875C7.19583 6.97917 7 7.45 7 8C7 8.55 7.19583 9.02083 7.5875 9.4125C7.97917 9.80417 8.45 10 9 10Z" />
-                                </svg></span>
-                            <figcaption class="text-h6 mod-pl-3">3. GST Application Reference Number (ARN)</figcaption>
-                        </div>
-                        <p class="mod-mt-1 text-gray-600">After submission, an ARN (GST Application Reference Number) will be generated. This number allows you to track your application status.
-                        </p>
-                    </figure>
-                    <figure class="mb-0 mod-flex mod-flex-col mod-items-start mod-text-left mod-gap-4">
-                        <div class="mod-flex ">
-                            <span class="text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                    height="24" fill="none" viewBox="0 0 24 24">
-                                    <path fill="currentColor"
-                                        d="M1 20V17.2C1 16.6333 1.14583 16.1125 1.4375 15.6375C1.72917 15.1625 2.11667 14.8 2.6 14.55C3.63333 14.0333 4.68333 13.6458 5.75 13.3875C6.81667 13.1292 7.9 13 9 13C10.1 13 11.1833 13.1292 12.25 13.3875C13.3167 13.6458 14.3667 14.0333 15.4 14.55C15.8833 14.8 16.2708 15.1625 16.5625 15.6375C16.8542 16.1125 17 16.6333 17 17.2V20H1ZM19 20V17C19 16.2667 18.7958 15.5625 18.3875 14.8875C17.9792 14.2125 17.4 13.6333 16.65 13.15C17.5 13.25 18.3 13.4208 19.05 13.6625C19.8 13.9042 20.5 14.2 21.15 14.55C21.75 14.8833 22.2083 15.2542 22.525 15.6625C22.8417 16.0708 23 16.5167 23 17V20H19ZM9 12C7.9 12 6.95833 11.6083 6.175 10.825C5.39167 10.0417 5 9.1 5 8C5 6.9 5.39167 5.95833 6.175 5.175C6.95833 4.39167 7.9 4 9 4C10.1 4 11.0417 4.39167 11.825 5.175C12.6083 5.95833 13 6.9 13 8C13 9.1 12.6083 10.0417 11.825 10.825C11.0417 11.6083 10.1 12 9 12ZM19 8C19 9.1 18.6083 10.0417 17.825 10.825C17.0417 11.6083 16.1 12 15 12C14.8167 12 14.5833 11.9792 14.3 11.9375C14.0167 11.8958 13.7833 11.85 13.6 11.8C14.05 11.2667 14.3958 10.675 14.6375 10.025C14.8792 9.375 15 8.7 15 8C15 7.3 14.8792 6.625 14.6375 5.975C14.3958 5.325 14.05 4.73333 13.6 4.2C13.8333 4.11667 14.0667 4.0625 14.3 4.0375C14.5333 4.0125 14.7667 4 15 4C16.1 4 17.0417 4.39167 17.825 5.175C18.6083 5.95833 19 6.9 19 8ZM3 18H15V17.2C15 17.0167 14.9542 16.85 14.8625 16.7C14.7708 16.55 14.65 16.4333 14.5 16.35C13.6 15.9 12.6917 15.5625 11.775 15.3375C10.8583 15.1125 9.93333 15 9 15C8.06667 15 7.14167 15.1125 6.225 15.3375C5.30833 15.5625 4.4 15.9 3.5 16.35C3.35 16.4333 3.22917 16.55 3.1375 16.7C3.04583 16.85 3 17.0167 3 17.2V18ZM9 10C9.55 10 10.0208 9.80417 10.4125 9.4125C10.8042 9.02083 11 8.55 11 8C11 7.45 10.8042 6.97917 10.4125 6.5875C10.0208 6.19583 9.55 6 9 6C8.45 6 7.97917 6.19583 7.5875 6.5875C7.19583 6.97917 7 7.45 7 8C7 8.55 7.19583 9.02083 7.5875 9.4125C7.97917 9.80417 8.45 10 9 10Z" />
-                                </svg></span>
-                            <figcaption class="text-h6 mod-pl-3">4. Verification and Approval</figcaption>
-                        </div>
-                        <p class="mod-mt-1 text-gray-600">The GST department will verify the application and documents. If everything is in order, your GST registration will be approved, and you will receive your GSTIN.</p>
-                    </figure>
-                    <figure class="mb-0 mod-flex mod-flex-col mod-items-start mod-text-left mod-gap-4">
-                        <div class="mod-flex ">
-                            <span class="text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                    height="24" fill="none" viewBox="0 0 24 24">
-                                    <path fill="currentColor"
-                                        d="M1 20V17.2C1 16.6333 1.14583 16.1125 1.4375 15.6375C1.72917 15.1625 2.11667 14.8 2.6 14.55C3.63333 14.0333 4.68333 13.6458 5.75 13.3875C6.81667 13.1292 7.9 13 9 13C10.1 13 11.1833 13.1292 12.25 13.3875C13.3167 13.6458 14.3667 14.0333 15.4 14.55C15.8833 14.8 16.2708 15.1625 16.5625 15.6375C16.8542 16.1125 17 16.6333 17 17.2V20H1ZM19 20V17C19 16.2667 18.7958 15.5625 18.3875 14.8875C17.9792 14.2125 17.4 13.6333 16.65 13.15C17.5 13.25 18.3 13.4208 19.05 13.6625C19.8 13.9042 20.5 14.2 21.15 14.55C21.75 14.8833 22.2083 15.2542 22.525 15.6625C22.8417 16.0708 23 16.5167 23 17V20H19ZM9 12C7.9 12 6.95833 11.6083 6.175 10.825C5.39167 10.0417 5 9.1 5 8C5 6.9 5.39167 5.95833 6.175 5.175C6.95833 4.39167 7.9 4 9 4C10.1 4 11.0417 4.39167 11.825 5.175C12.6083 5.95833 13 6.9 13 8C13 9.1 12.6083 10.0417 11.825 10.825C11.0417 11.6083 10.1 12 9 12ZM19 8C19 9.1 18.6083 10.0417 17.825 10.825C17.0417 11.6083 16.1 12 15 12C14.8167 12 14.5833 11.9792 14.3 11.9375C14.0167 11.8958 13.7833 11.85 13.6 11.8C14.05 11.2667 14.3958 10.675 14.6375 10.025C14.8792 9.375 15 8.7 15 8C15 7.3 14.8792 6.625 14.6375 5.975C14.3958 5.325 14.05 4.73333 13.6 4.2C13.8333 4.11667 14.0667 4.0625 14.3 4.0375C14.5333 4.0125 14.7667 4 15 4C16.1 4 17.0417 4.39167 17.825 5.175C18.6083 5.95833 19 6.9 19 8ZM3 18H15V17.2C15 17.0167 14.9542 16.85 14.8625 16.7C14.7708 16.55 14.65 16.4333 14.5 16.35C13.6 15.9 12.6917 15.5625 11.775 15.3375C10.8583 15.1125 9.93333 15 9 15C8.06667 15 7.14167 15.1125 6.225 15.3375C5.30833 15.5625 4.4 15.9 3.5 16.35C3.35 16.4333 3.22917 16.55 3.1375 16.7C3.04583 16.85 3 17.0167 3 17.2V18ZM9 10C9.55 10 10.0208 9.80417 10.4125 9.4125C10.8042 9.02083 11 8.55 11 8C11 7.45 10.8042 6.97917 10.4125 6.5875C10.0208 6.19583 9.55 6 9 6C8.45 6 7.97917 6.19583 7.5875 6.5875C7.19583 6.97917 7 7.45 7 8C7 8.55 7.19583 9.02083 7.5875 9.4125C7.97917 9.80417 8.45 10 9 10Z" />
-                                </svg></span>
-                            <figcaption class="text-h6 mod-pl-3">5. GST Certificate</figcaption>
-                        </div>
-                        <p class="mod-mt-1 text-gray-600">Upon approval, you will receive your GST Registration Certificate, which includes your GSTIN and other relevant registration details.</p>
-                    </figure>
-                </div>
-                <div>
-                    <a class="btn-custom-medium" href="{{ route('front.contact') }}" target="_self">
-                        <span class="btn-text btn-text--back">Get In Touch</span>
-                        <span class="btn-icon btn-icon--blue">
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M3 4a1 1 0 0 1 0-2h11v11a1 1 0 1 1-2 0V5.414l-8.293 8.293a1 1 0 0 1-1.414-1.414L10.586 4H3Z"
-                                    fill="white"></path>
-                            </svg>
-                            <span class="btn-text btn-text--front">Request a Callback</span>
-                        </span>
-                    </a>
-                </div>
-            </div>
+
+            <x-steps-wrapper page="{{ $slug }}"></x-steps-wrapper>
+
             <div class="sm:mod-hidden icon-bg">
                 <div class="asterisk-1 mod-absolute mod-w-6/12">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 217.14 205.43">

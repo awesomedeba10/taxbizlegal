@@ -35,8 +35,8 @@
                                     <span class="office-title">Sales</span>
                                     <div class="office-info">
                                         <div class="office-emails">
-                                            <a class="email" href="">
-                                                sales@taxbizlegal.com </a>
+                                            <a class="email" href="mailto:{{ config('app.site_info.sales_email') }}">
+                                                {{ config('app.site_info.sales_email') }} </a>
                                         </div>
                                     </div>
                                 </div>
@@ -44,26 +44,26 @@
                                     <span class="office-title">Customer Support</span>
                                     <div class="office-info">
                                         <div class="office-emails">
-                                            <a class="email" href="">
-                                                support@taxbizlegal.com </a>
+                                            <a class="email" href="mailto:{{ config('app.site_info.support_email') }}">
+                                                {{ config('app.site_info.support_email') }} </a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="mod-flex mod-flex-col mod-gap-2">
-                                    <span class="office-title">Raise Complaints</span>
+                                    <span class="office-title">Call Support</span>
                                     <div class="office-info">
                                         <div class="office-emails">
-                                            <a class="email" href="">
-                                                support@taxbizlegal.com </a>
+                                            <a class="email" href="tel:91{{ config('app.site_info.support_phone') }}">
+                                                +91 {{ config('app.site_info.support_phone') }}</a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="mod-flex mod-flex-col mod-gap-2">
-                                    <span class="office-title">Contact</span>
+                                    <span class="office-title">WhatsApp Support</span>
                                     <div class="office-info">
                                         <div class="office-emails">
-                                            <a class="email" href="">
-                                                +91 1234554321</a>
+                                            <a class="email" href="https://wa.me/{{ config('app.site_info.support_wp_phone') }}?text=Hello,%20I%20need%20some%20assistance!" target="_blank">
+                                                +91 {{ config('app.site_info.support_wp_phone') }}</a>
                                         </div>
                                     </div>
                                 </div>

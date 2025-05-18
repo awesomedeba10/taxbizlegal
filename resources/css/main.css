@@ -10392,6 +10392,9 @@ img {
     letter-spacing: -.01em;
     line-height: 1.45;
 }
+.doc-required .section-content .items .item-number.small-icon {
+    font-size: clamp(24px, 1.625vw, 44px);
+}
 .doc-required .section-content .items .item-text {
     font-weight: 600;
     letter-spacing: 0.75px;

@@ -606,5 +606,27 @@ return [
             "question" => "What makes a contract legally binding?",
             "answer" => "A contract becomes legally binding when it includes the following essential elements:<br><ul><li>Offer and Acceptance</li><li>Lawful Consideration</li><li>Legal Purpose</li><li>Consent of Competent Parties</li><li>Proper Documentation and Signature</li></ul>"
         ]
+    ],
+    "gst-returns" => [
+        [
+            "question" => "Is GST return filing mandatory even for zero sales?",
+            "answer" => "Yes, it is mandatory to file <strong>NIL GST returns</strong> even if there are no sales or purchase transactions in the tax period."
+        ],
+        [
+            "question" => "What happens if GST returns are not filed?",
+            "answer" => "Non-filing may result in <ul><li>Late fees</li><li>Interest on due tax</li><li>Suspension or cancellation of GSTIN</li></ul> as per GST law."
+        ],
+        [
+            "question" => "Can GST returns be revised?",
+            "answer" => "No, GST returns cannot be revised. However, any errors can be corrected in the return of the following tax period."
+        ],
+        [
+            "question" => "Is offline return filing allowed?",
+            "answer" => "No, GST returns can only be filed online through the official <a href=\"https://www.gst.gov.in\" target=\"_blank\">GST portal</a>."
+        ],
+        [
+            "question" => "Can a return be filed without paying taxes?",
+            "answer" => "No, returns must be filed with payment. Exceptions apply for <strong>NIL returns</strong> or when sufficient <strong>Input Tax Credit (ITC)</strong> is available."
+        ]
     ]
 ];

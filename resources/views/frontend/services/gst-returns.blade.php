@@ -2,30 +2,36 @@
     <div
         class="mod-items-center mod-px-24 mod-grid-12 mod-w-full sm:mod-gap-10 sm:mod-flex sm:mod-flex-col
     sm:mod-px-10 md:mod-px-12 md:mod-items-start ">
+
         <div class="section-heading">
-            <p class="h5 text-primary mb-2">Launch Your Online Store with Ease!</p>
+            <p class="h5 text-primary mb-2">Simplify Your Tax Filing with Our Expert Support!</p>
             <h1 class="section-title mod-font-bold mod-leading-semi-loose mod-space-light-semi mod-mb-8" data-fade="up">
-                Start Your <span class="text-blue">E-Commerce Business</span> & Sell Across India!</h1>
+                File Your <span class="text-blue">GST Returns</span> Accurately & On Time with Ease!</h1>
+
             <div class="mod-flex mod-flex-col mod-gap-10">
                 <div class="text mod-font-medium mod-leading-loose" data-fade="up">
                     <ul class="mod-ml-0 mod-mb-1 mod-pl-1 mod-list-none mod-flex mod-flex-col mod-gap-2 mod-text-base">
-                        <li>👉 Complete Online Setup and Business Registration Support</li>
-                        <li>👉 Assistance with GST Registration, Website Policies & Marketplace Compliance</li>
-                        <li>👉 Expert Consultation for Legal, Tax, and Operational Readiness</li>
+                        <li>👉 End-to-End GST Return Filing Support – Monthly, Quarterly & Annually</li>
+                        <li>👉 Ensure Accurate Input Tax Credit & Error-Free Filing</li>
+                        <li>👉 Avoid Late Fees, Notices, and Penalties with Timely Filing</li>
                     </ul>
                 </div>
-                <p class="mb-0 mod-leading-light-loose">Kickstart your e-commerce journey with our dedicated experts.
-                    From company registration, GST filing, website policy drafting to ensuring complete compliance — we
-                    take care of everything.
-                    Launch your online business confidently and grow across India’s thriving digital marketplace!</p>
+
+                <p class="mb-0 mod-leading-light-loose">
+                    Experience stress-free GST return filing with our expert team. We help you stay fully compliant by
+                    managing invoices, tax reconciliation, and online submission of GSTR-1, GSTR-3B, GSTR-9 and more.
+                    Our professionals ensure your filings are accurate, timely, and in full compliance with GST norms.
+                    Focus on growing your business—leave the filings to us!
+                </p>
             </div>
         </div>
+
         <div class="section-content mod-pr-12 md:mod-pr-0 sm:mod-pr-0">
             <div class="row justify-content-center">
                 <div class="col-md-12">
                     <h1 class="h2 mb-lg-20">
                         <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;">Get Your E-Commerce Business Started Today!</font>
+                            <font style="vertical-align: inherit;">Start Filing Your GST Returns Today</font>
                         </font>
                     </h1>
                     <x-user-form></x-user-form>
@@ -41,8 +47,8 @@
         class="mod-w-full mod-max-w-screen-xl mod-px-32 mod-mx-auto mod-overflow-hidden md:mod-px-5 lg:mod-px-6 sm:mod-px-0">
         <div
             class="mod-flex services-nav-container mod-items-center mod-justify-between mod-cursor-pointer mod-rounded-lg mod-border-sm mod-overflow-hidden mod-text-s-14 mod-font-medium">
-            <div class="mod-whitespace-nowrap mod-py-4 mod-sticky mod-left-0 mod-pl-6">
-                <span class="services-nav-title mod-pl-6 mod-pr-3 mod-border-r-sm mod-contents">E-COMMERCE</span>
+            <div class="mod-whitespace-nowrap mod-py-4 mod-sticky mod-left-0">
+                <span class="services-nav-title mod-pl-6 mod-pr-3 mod-border-r-sm">GST RETURNS</span>
             </div>
             <ul class="services-nav-ul mod-flex mod-items-center mod-my-0 mod-justify-center mod-list-none">
                 <li data-target="pricing"
@@ -55,8 +61,8 @@
                     class="services-nav-item mod-px-5 mod-py-4 mod-border-t-md mod-border-none mod-whitespace-nowrap mod-font-medium text-blue-350 border-blue-350">
                     Advantages</li>
                 <li class="services-nav-item mod-px-5 mod-py-4 mod-border-t-md mod-border-none mod-whitespace-nowrap mod-font-medium text-blue-350 border-blue-350"
-                    data-target="features">
-                    Features</li>
+                    data-target="resources">
+                    Resources</li>
                 <li class="services-nav-item mod-px-5 mod-py-4 mod-border-t-md mod-border-none mod-whitespace-nowrap mod-font-medium text-blue-350 border-blue-350"
                     data-target="doc-required">
                     Required Documents</li>
@@ -95,12 +101,12 @@
                 class="mod-text-s-32 mod-nav-text mod-font-semibold mod-word-break-normal mod-text-center mod-leading-loose">
                 <span>Choose the Right Plan</span>
                 <div class="mod-text-s-44">
-                    For your <span class="text-blue">E-Commerce Business</span>
+                    For your <span class="text-blue">GST Returns Filing</span>
                 </div>
             </h1>
             <p class="mod-nav-text mod-mt-2 mod-leading-loose mod-text-center">
-                Setup your e-commerce business effortlessly with our expert-curated plans. Build your
-                legacy today!
+                File your GST Returns effortlessly with our tailored pricing plans. Start your
+                journey today!
             </p>
         </div>
     </div>
@@ -145,11 +151,7 @@
                         <p class="mod-mb-0">Lightning-Fast Customer Support</p>
                     </div>
                 </div>
-                <x-custom-mod-btn
-                    class="btn-custom-medium"
-                    data-id="focus-first-input-btn"
-                    btn-icon="btn-icon--red"
-                >
+                <x-custom-mod-btn class="btn-custom-medium" data-id="focus-first-input-btn" btn-icon="btn-icon--red">
                     <x-slot:hoverTitle>Request a Callback</x-slot>
                     Get in Touch
                 </x-custom-mod-btn>
@@ -163,24 +165,33 @@
     <div class="row justify-content-between">
         <div class="col-12 col-md-6 col-xxl-5 sm:mod-order-2">
             <div class="mod-py-8">
-                <h1 class="mod-text-s-24">All you need to know about E-Commerce Business</h1>
-                <p>An E-Commerce Business refers to buying and selling goods or services over the internet. In India,
-                    the e-commerce industry has witnessed rapid growth, driven by increased internet penetration,
-                    smartphone usage, and digital payment adoption. Starting an e-commerce business involves not just
-                    launching a website or selling on platforms like Amazon or Flipkart, but also complying with
-                    specific legal, financial, and operational requirements.</p>
-                <p>This business model is regulated by laws such as the Consumer Protection (E-Commerce) Rules, 2020,
-                    and requires adherence to GST norms, data protection guidelines, and marketplace compliance.
-                    E-commerce businesses must focus on logistics management, secure payment gateways, and transparent
-                    customer policies. It is ideal for startups, SMEs, and established brands aiming to tap into wider
-                    markets through online channels and digital strategies.</p>
-                <p>Taxbizlegal.com provides complete assistance for setting up your E-Commerce Business, from business
-                    registration, GST filing, and drafting of website policies to compliance advisory. Our experts
-                    ensure your business meets all legal obligations and runs smoothly. We also offer services like
-                    Trademark Registration, Private Limited Company formation, and Business Compliance Management.
-                    Contact us at info@taxbizlegal.com or speak to our advisor at 09********* for a free consultation.
+                <h1 class="mod-text-s-24">All You Need to Know About GST Return Filing</h1>
+
+                <p>
+                    GST (Goods and Services Tax) is a unified indirect tax system implemented in India to streamline
+                    taxation on the supply of goods and services. As per the CGST Act, 2017, all registered businesses
+                    are required to file GST returns that capture their sales, purchases, tax liability, and input tax
+                    credit. These returns are crucial for tax assessment and compliance under the GST regime.
+                </p>
+
+                <p>
+                    GST returns play a vital role in ensuring transparency and accountability within the tax framework.
+                    Businesses must regularly submit different types of returns, such as GSTR-1, GSTR-3B, and GSTR-9,
+                    based on their turnover and registration category. Filing accurate returns helps avoid penalties,
+                    interest charges, and legal notices. It also enables businesses to claim eligible input tax credits
+                    and maintain compliance across the supply chain.
+                </p>
+
+                <p>
+                    We offer complete assistance with GST return filing, including invoice reconciliation, ITC
+                    validation, online submission, and compliance monitoring. Our experts handle everything—from data
+                    preparation to final filing—ensuring timely and error-free submissions. We also provide services for
+                    GST registration, company incorporation, and annual compliance filings. Reach out to our team at <a
+                        href="mailto:info@yourwebsite.com">info@yourwebsite.com</a> or call us for expert GST support
+                    tailored to your business needs.
                 </p>
             </div>
+
         </div>
         <div class="col-12 col-md-6 sm:mod-order-1 mod-pl-16 md:mod-pl-0 sm:mod-pl-0">
             <img decoding="async" width="1024" height="681"
@@ -195,7 +206,7 @@
         <div class="section-heading">
             <h2 class="section-title mod-text-s-28 mod-font-bold mod-leading-semi-loose mod-space-light-semi"
                 data-fade="up">
-                Advantages of E-Commerce Business
+                Advantages of Filing GST Returns
             </h2>
         </div>
         <div class="section-content mod-grid-4">
@@ -217,8 +228,9 @@
                     </svg>
                 </div>
                 <div class="item-content">
-                    <h3 class="item-title">Wider Reach</h3>
-                    <p class="item-text">E-commerce lets you tap into customers from different cities, states, and even global markets without the need for multiple physical locations.</p>
+                    <h3 class="item-title">Legal Compliance</h3>
+                    <p class="item-text">Regularly filing GST returns helps businesses stay legally compliant, avoiding
+                        hefty penalties and potential cancellation of GST registration.</p>
                 </div>
             </div>
             <div class="mod-flex mod-flex-col mod-gap-4 xl:mod-pr-20 lg:mod-pr-8 sm:mod-pr-4 sm:mod-flex-row"
@@ -229,11 +241,11 @@
                         <path
                             d="M14 11h-1v-1a1 1 0 0 0-2 0v1h-1a1 1 0 0 0 0 2h1v1a1 1 0 0 0 2 0v-1h1a1 1 0 0 0 0-2Zm5.63-7.35a1.007 1.007 0 0 0-.835-.203 7.98 7.98 0 0 1-6.223-1.267.999.999 0 0 0-1.144 0 7.976 7.976 0 0 1-6.223 1.267A1 1 0 0 0 4 4.427v7.456a9.019 9.019 0 0 0 3.769 7.324l3.65 2.607a1 1 0 0 0 1.162 0l3.65-2.607A9.018 9.018 0 0 0 20 11.883V4.426a1 1 0 0 0-.37-.776ZM18 11.883a7.017 7.017 0 0 1-2.93 5.696L12 19.771 8.93 17.58A7.017 7.017 0 0 1 6 11.883v-6.3a9.955 9.955 0 0 0 6-1.391 9.955 9.955 0 0 0 6 1.391v6.3Z"
                             fill="#0B1126"></path>
-                    </svg>
-                </div>
+                    </svg></div>
                 <div class="item-content">
-                    <h3 class="item-title">24/7 Availability</h3>
-                    <p class="item-text">Your online store remains open round-the-clock, allowing customers to shop anytime and boosting your sales opportunities without time restrictions.</p>
+                    <h3 class="item-title">Input Tax Credit</h3>
+                    <p class="item-text">By filing GST returns on time, businesses can claim eligible Input Tax Credit,
+                        effectively reducing their overall tax burden and increasing savings.</p>
                 </div>
             </div>
             <div class="mod-flex mod-flex-col mod-gap-4 xl:mod-pr-20 lg:mod-pr-8 sm:mod-pr-4 sm:mod-flex-row"
@@ -251,8 +263,9 @@
                     </svg>
                 </div>
                 <div class="item-content">
-                    <h3 class="item-title">Lower Operational Costs</h3>
-                    <p class="item-text">Running an e-commerce business eliminates the high costs of renting, staffing, and maintaining a physical shop, helping you save significantly.</p>
+                    <h3 class="item-title">Business Transparency</h3>
+                    <p class="item-text">Filing GST returns ensures greater transparency in transactions, helping
+                        businesses build trust with vendors, customers, and government authorities.</p>
                 </div>
             </div>
             <div class="mod-flex mod-flex-col mod-gap-4 xl:mod-pr-20 lg:mod-pr-8 sm:mod-pr-4 sm:mod-flex-row"
@@ -267,82 +280,101 @@
                     </svg>
                 </div>
                 <div class="item-content">
-                    <h3 class="item-title">Data-Driven Insights</h3>
-                    <p class="item-text">Online platforms make it easy to monitor customer preferences, buying habits, and sales patterns, enabling smarter business decisions and strategies.</p>
+                    <h3 class="item-title">Better Cash Flow</h3>
+                    <p class="item-text">Timely GST return filing facilitates quicker tax refunds and smooth ITC
+                        claims, improving overall cash flow and business liquidity.</p>
                 </div>
             </div>
             <div class="mod-flex mod-flex-col mod-gap-4 xl:mod-pr-20 lg:mod-pr-8 sm:mod-pr-4 sm:mod-flex-row"
                 data-fade="up"
                 style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1; visibility: inherit;">
                 <div class="item-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"
-                        text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd"
-                        clip-rule="evenodd" viewBox="0 0 469 511.98">
-                        <path
-                            d="M60.21 401.42c5.6 0 10.14 4.54 10.14 10.14 0 5.6-4.54 10.14-10.14 10.14-5.6 0-10.15-4.54-10.15-10.14 0-5.6 4.55-10.14 10.15-10.14zM242.87 216.1h4.21c3.83 0 6.95-3.12 6.95-6.95v-11.3c0-3.82-3.12-6.94-6.95-6.94h-25.16c-3.83 0-6.95 3.12-6.95 6.94v11.3c0 3.83 3.12 6.95 6.95 6.95h4.28l-2.04 18.06c6.19-2.68 12.83-4.63 20.02-5.95l-1.31-12.11zM92.16 257.65c.76-25.52 3.33-43.67 29.18-53.36 17.66-6.63 40.25-15.03 56.5-25.13l20.25 73.33c-1.41 1.46-2.8 3-4.16 4.61-20.15.31-37.41 6.66-54.41 17.1h-13.35c-9.07-9.78-21.1-14.86-34.01-16.55zM198.88 154.9c.77-6.5-18.47-31.27-21.98-43.15-7.53-12-10.2-31.01-1.99-43.69 3.28-5.02 1.86-9.44 1.86-16.36 0-68.92 120.76-68.95 120.76 0 0 8.72-2 10.79 2.73 17.65 7.92 11.45 3.83 31.75-2.83 42.4-4.28 12.49-24.48 36.07-23.07 43.15 1.19 35.39-75.7 34.2-75.48 0zm93.69 20.62c14.84 9.49 35.88 17.29 52.71 22.91 25.45 8.5 31.24 29.75 32.45 60.56-6.19.53-12.22 1.82-18.02 4.19-30.92-20.1-50.25-34.48-81.19-36.82l14.05-50.84zm62.77 137.42c0-1.92.12-3.75.36-5.47l-19.94-13.31c-2.88-1.92-6.01-4.12-9.16-6.32-11.34-7.95-23.02-16.13-35.6-19.44a98.312 98.312 0 0 0-22.68-3.13c-7-.13-14.15.53-20.86 2.27-4.01 1.03-7.88 2.48-11.48 4.37-3.19 1.69-6.17 3.76-8.82 6.23l-13.39 15.93a5.87 5.87 0 0 1-1.67 1.99l-36.93 43.95c.55 2.8 1.65 5.15 3.17 7.04 1.76 2.17 4.1 3.79 6.81 4.81 2.85 1.07 6.15 1.48 9.64 1.19 5.57-.46 11.51-2.74 16.86-6.98l10.26-8.48c2.6-2.14 4.75-4.12 6.9-6.08 4.73-4.33 9.47-8.65 14.44-11.61 11.51-6.87 22.95-7.09 34.28 11.91l58.06 104.72h19.74l.01-123.59zm4.68-16.76c.89-1.25 1.92-2.39 3.07-3.43 5.08-4.56 12.33-6.79 21.63-6.8v-.02l50.48.02c10.55-.04 19.15 1.89 25.1 6.46 6.61 5.1 9.72 12.87 8.4 23.99l-11.16 115.32c-.81 10.29-3.54 18.36-8.38 23.93-5.16 5.93-12.34 8.85-21.75 8.46l-45.39.01c-6.35.33-11.74-1.4-16.25-5-3.31-2.63-6.04-6.24-8.23-10.74h-15.69c2.11 6.18 2 12.05.32 17.26-1.74 5.36-5.13 9.93-9.44 13.35-4.22 3.35-9.38 5.64-14.76 6.53-5.27.86-10.78.39-15.9-1.74-5.95 6.22-12.22 10.15-18.77 11.95-6.56 1.8-13.21 1.44-19.94-.92-6.39 7.08-13.46 11.52-21.24 13.21-7.92 1.71-16.34.53-25.27-3.68-2.77 2.18-5.69 3.9-8.72 5.15a32.666 32.666 0 0 1-13.56 2.47c-11.31-.33-18.93-3.68-25-9.1-5.78-5.17-9.67-11.81-14.05-19.45l-25.03-43.64h-19.4c-1.08 5.46-2.97 10.12-5.75 13.84l-.27.39c-4.95 6.36-12.22 9.74-22.26 9.53l-42.32.01c-8.39 1.36-15.58-.7-21.21-7.22-4.98-5.77-8.39-15.12-9.84-28.88l-.06-.5L.63 318.58c-1.73-11.7.18-19.96 4.89-25.61 4.74-5.7 11.89-8.28 20.7-8.69l.72-.04h53.59v.02c8.47-.09 15.74 1.3 21.25 4.86v.02c4.44 2.87 7.62 6.92 9.27 12.42h36.46c9.16-6.18 17.74-11.04 27.24-13.99 9.31-2.9 19.31-3.93 31.24-2.5l12.48-14.84.46-.5c3.48-3.3 7.38-6.02 11.57-8.23 4.39-2.32 9.12-4.08 14.01-5.35 7.79-2.01 16-2.77 23.99-2.63 9.06.17 17.86 1.51 25.47 3.5h.02c14.55 3.82 27.13 12.63 39.33 21.18 2.93 2.05 5.83 4.08 8.97 6.18l17.73 11.8zm-259.58 12.95a6.11 6.11 0 0 1-.24-1.66c0-.16.01-.32.02-.47-.65-3.81-2.32-6.39-4.78-7.99-3.46-2.21-8.58-3.07-14.84-3h-.07v.03l-53.81-.01c-5.54.26-9.79 1.59-12.17 4.45-2.55 3.06-3.47 8.35-2.23 16.54l.06.53 8.77 108.65c1.18 11.23 3.6 18.45 7.03 22.43 2.71 3.14 6.41 4.03 10.85 3.22.36-.06.71-.09 1.06-.09l42.39-.02.63.03c5.93.11 10.05-1.67 12.64-5.01l.21-.25c2.87-3.89 4.28-9.9 4.5-17.6l-.02-119.78zm11.8 118.84h21.67c2.29 0 4.27 1.31 5.25 3.21l26.59 46.37c3.89 6.8 7.33 12.68 11.66 16.55 4.05 3.62 9.35 5.87 17.49 6.11 3.05.09 5.97-.45 8.76-1.6 1.7-.7 3.38-1.65 5.02-2.84l-17.33-32.42c-1.52-2.86-.44-6.43 2.42-7.95a5.879 5.879 0 0 1 7.96 2.42l18.83 35.23c7.01 3.57 13.36 4.68 19.08 3.44 5.22-1.13 10.15-4.27 14.78-9.33l-27.14-42.6c-1.74-2.73-.93-6.37 1.8-8.11 2.74-1.74 6.38-.94 8.12 1.8l28.6 44.9c5.01 2.03 9.83 2.5 14.42 1.24 4.38-1.21 8.77-4.01 13.15-8.55l-25.92-48.78a5.91 5.91 0 0 1 2.45-7.98 5.9 5.9 0 0 1 7.97 2.45l26.81 50.45c3.48 2.03 7.52 2.55 11.4 1.92 3.39-.56 6.65-2.01 9.32-4.13 2.58-2.05 4.58-4.7 5.56-7.73 1.08-3.32.97-7.23-.88-11.48-.39-.89-.54-1.82-.48-2.72a5.906 5.906 0 0 1-3.35-3.89l-58.83-106.13c-6.54-10.94-12.44-11.22-18.13-7.83-4.05 2.41-8.3 6.3-12.55 10.19-2.58 2.35-5.17 4.72-7.32 6.49l-10.43 8.6c-7.28 5.78-15.47 8.89-23.23 9.53-5.17.43-10.2-.23-14.72-1.93-4.67-1.75-8.76-4.59-11.87-8.45-3.35-4.16-5.54-9.43-6.06-15.7-.15-1.8.52-3.47 1.71-4.65l31.79-37.83c-6.76-.1-12.74.82-18.36 2.57-8.56 2.67-16.55 7.32-25.3 13.29-1 .79-2.27 1.26-3.65 1.26h-37.06v114.61zm294.94-26.55c5.6 0 10.15 4.54 10.15 10.14 0 5.6-4.55 10.14-10.15 10.14-5.6 0-10.14-4.54-10.14-10.14 0-5.6 4.54-10.14 10.14-10.14z" />
+                    <?xml version="1.0" encoding="utf-8"?><svg version="1.1" id="Layer_1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 122.88 68.04" style="enable-background:new 0 0 122.88 68.04"
+                        xml:space="preserve">
+                        <g>
+                            <path
+                                d="M2.03,56.52c-2.66,2.58-2.72,6.83-0.13,9.49c2.58,2.66,6.83,2.72,9.49,0.13l27.65-26.98l23.12,22.31 c2.67,2.57,6.92,2.49,9.49-0.18l37.77-38.22v19.27c0,3.72,3.01,6.73,6.73,6.73s6.73-3.01,6.73-6.73V6.71h-0.02 c0-1.74-0.67-3.47-2-4.78c-1.41-1.39-3.29-2.03-5.13-1.91H82.4c-3.72,0-6.73,3.01-6.73,6.73c0,3.72,3.01,6.73,6.73,6.73h17.63 L66.7,47.2L43.67,24.97c-2.6-2.5-6.73-2.51-9.33,0.03L2.03,56.52L2.03,56.52z" />
+                        </g>
                     </svg>
                 </div>
                 <div class="item-content">
-                    <h3 class="item-title">Scalability</h3>
-                    <p class="item-text">E-commerce businesses can expand their product lines, customer base, and reach rapidly without the heavy investments required by traditional retail.</p>
+                    <h3 class="item-title">Loan & Tender Eligibility</h3>
+                    <p class="item-text">Most financial institutions and government contracts require proof of regular
+                        GST return filing to assess business credibility and compliance.</p>
                 </div>
             </div>
             <div class="mod-flex mod-flex-col mod-gap-4 xl:mod-pr-20 lg:mod-pr-8 sm:mod-pr-4 sm:mod-flex-row"
                 data-fade="up"
                 style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1; visibility: inherit;">
                 <div class="item-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"
-                        text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd"
-                        clip-rule="evenodd" viewBox="0 0 469 511.98">
-                        <path
-                            d="M60.21 401.42c5.6 0 10.14 4.54 10.14 10.14 0 5.6-4.54 10.14-10.14 10.14-5.6 0-10.15-4.54-10.15-10.14 0-5.6 4.55-10.14 10.15-10.14zM242.87 216.1h4.21c3.83 0 6.95-3.12 6.95-6.95v-11.3c0-3.82-3.12-6.94-6.95-6.94h-25.16c-3.83 0-6.95 3.12-6.95 6.94v11.3c0 3.83 3.12 6.95 6.95 6.95h4.28l-2.04 18.06c6.19-2.68 12.83-4.63 20.02-5.95l-1.31-12.11zM92.16 257.65c.76-25.52 3.33-43.67 29.18-53.36 17.66-6.63 40.25-15.03 56.5-25.13l20.25 73.33c-1.41 1.46-2.8 3-4.16 4.61-20.15.31-37.41 6.66-54.41 17.1h-13.35c-9.07-9.78-21.1-14.86-34.01-16.55zM198.88 154.9c.77-6.5-18.47-31.27-21.98-43.15-7.53-12-10.2-31.01-1.99-43.69 3.28-5.02 1.86-9.44 1.86-16.36 0-68.92 120.76-68.95 120.76 0 0 8.72-2 10.79 2.73 17.65 7.92 11.45 3.83 31.75-2.83 42.4-4.28 12.49-24.48 36.07-23.07 43.15 1.19 35.39-75.7 34.2-75.48 0zm93.69 20.62c14.84 9.49 35.88 17.29 52.71 22.91 25.45 8.5 31.24 29.75 32.45 60.56-6.19.53-12.22 1.82-18.02 4.19-30.92-20.1-50.25-34.48-81.19-36.82l14.05-50.84zm62.77 137.42c0-1.92.12-3.75.36-5.47l-19.94-13.31c-2.88-1.92-6.01-4.12-9.16-6.32-11.34-7.95-23.02-16.13-35.6-19.44a98.312 98.312 0 0 0-22.68-3.13c-7-.13-14.15.53-20.86 2.27-4.01 1.03-7.88 2.48-11.48 4.37-3.19 1.69-6.17 3.76-8.82 6.23l-13.39 15.93a5.87 5.87 0 0 1-1.67 1.99l-36.93 43.95c.55 2.8 1.65 5.15 3.17 7.04 1.76 2.17 4.1 3.79 6.81 4.81 2.85 1.07 6.15 1.48 9.64 1.19 5.57-.46 11.51-2.74 16.86-6.98l10.26-8.48c2.6-2.14 4.75-4.12 6.9-6.08 4.73-4.33 9.47-8.65 14.44-11.61 11.51-6.87 22.95-7.09 34.28 11.91l58.06 104.72h19.74l.01-123.59zm4.68-16.76c.89-1.25 1.92-2.39 3.07-3.43 5.08-4.56 12.33-6.79 21.63-6.8v-.02l50.48.02c10.55-.04 19.15 1.89 25.1 6.46 6.61 5.1 9.72 12.87 8.4 23.99l-11.16 115.32c-.81 10.29-3.54 18.36-8.38 23.93-5.16 5.93-12.34 8.85-21.75 8.46l-45.39.01c-6.35.33-11.74-1.4-16.25-5-3.31-2.63-6.04-6.24-8.23-10.74h-15.69c2.11 6.18 2 12.05.32 17.26-1.74 5.36-5.13 9.93-9.44 13.35-4.22 3.35-9.38 5.64-14.76 6.53-5.27.86-10.78.39-15.9-1.74-5.95 6.22-12.22 10.15-18.77 11.95-6.56 1.8-13.21 1.44-19.94-.92-6.39 7.08-13.46 11.52-21.24 13.21-7.92 1.71-16.34.53-25.27-3.68-2.77 2.18-5.69 3.9-8.72 5.15a32.666 32.666 0 0 1-13.56 2.47c-11.31-.33-18.93-3.68-25-9.1-5.78-5.17-9.67-11.81-14.05-19.45l-25.03-43.64h-19.4c-1.08 5.46-2.97 10.12-5.75 13.84l-.27.39c-4.95 6.36-12.22 9.74-22.26 9.53l-42.32.01c-8.39 1.36-15.58-.7-21.21-7.22-4.98-5.77-8.39-15.12-9.84-28.88l-.06-.5L.63 318.58c-1.73-11.7.18-19.96 4.89-25.61 4.74-5.7 11.89-8.28 20.7-8.69l.72-.04h53.59v.02c8.47-.09 15.74 1.3 21.25 4.86v.02c4.44 2.87 7.62 6.92 9.27 12.42h36.46c9.16-6.18 17.74-11.04 27.24-13.99 9.31-2.9 19.31-3.93 31.24-2.5l12.48-14.84.46-.5c3.48-3.3 7.38-6.02 11.57-8.23 4.39-2.32 9.12-4.08 14.01-5.35 7.79-2.01 16-2.77 23.99-2.63 9.06.17 17.86 1.51 25.47 3.5h.02c14.55 3.82 27.13 12.63 39.33 21.18 2.93 2.05 5.83 4.08 8.97 6.18l17.73 11.8zm-259.58 12.95a6.11 6.11 0 0 1-.24-1.66c0-.16.01-.32.02-.47-.65-3.81-2.32-6.39-4.78-7.99-3.46-2.21-8.58-3.07-14.84-3h-.07v.03l-53.81-.01c-5.54.26-9.79 1.59-12.17 4.45-2.55 3.06-3.47 8.35-2.23 16.54l.06.53 8.77 108.65c1.18 11.23 3.6 18.45 7.03 22.43 2.71 3.14 6.41 4.03 10.85 3.22.36-.06.71-.09 1.06-.09l42.39-.02.63.03c5.93.11 10.05-1.67 12.64-5.01l.21-.25c2.87-3.89 4.28-9.9 4.5-17.6l-.02-119.78zm11.8 118.84h21.67c2.29 0 4.27 1.31 5.25 3.21l26.59 46.37c3.89 6.8 7.33 12.68 11.66 16.55 4.05 3.62 9.35 5.87 17.49 6.11 3.05.09 5.97-.45 8.76-1.6 1.7-.7 3.38-1.65 5.02-2.84l-17.33-32.42c-1.52-2.86-.44-6.43 2.42-7.95a5.879 5.879 0 0 1 7.96 2.42l18.83 35.23c7.01 3.57 13.36 4.68 19.08 3.44 5.22-1.13 10.15-4.27 14.78-9.33l-27.14-42.6c-1.74-2.73-.93-6.37 1.8-8.11 2.74-1.74 6.38-.94 8.12 1.8l28.6 44.9c5.01 2.03 9.83 2.5 14.42 1.24 4.38-1.21 8.77-4.01 13.15-8.55l-25.92-48.78a5.91 5.91 0 0 1 2.45-7.98 5.9 5.9 0 0 1 7.97 2.45l26.81 50.45c3.48 2.03 7.52 2.55 11.4 1.92 3.39-.56 6.65-2.01 9.32-4.13 2.58-2.05 4.58-4.7 5.56-7.73 1.08-3.32.97-7.23-.88-11.48-.39-.89-.54-1.82-.48-2.72a5.906 5.906 0 0 1-3.35-3.89l-58.83-106.13c-6.54-10.94-12.44-11.22-18.13-7.83-4.05 2.41-8.3 6.3-12.55 10.19-2.58 2.35-5.17 4.72-7.32 6.49l-10.43 8.6c-7.28 5.78-15.47 8.89-23.23 9.53-5.17.43-10.2-.23-14.72-1.93-4.67-1.75-8.76-4.59-11.87-8.45-3.35-4.16-5.54-9.43-6.06-15.7-.15-1.8.52-3.47 1.71-4.65l31.79-37.83c-6.76-.1-12.74.82-18.36 2.57-8.56 2.67-16.55 7.32-25.3 13.29-1 .79-2.27 1.26-3.65 1.26h-37.06v114.61zm294.94-26.55c5.6 0 10.15 4.54 10.15 10.14 0 5.6-4.55 10.14-10.15 10.14-5.6 0-10.14-4.54-10.14-10.14 0-5.6 4.54-10.14 10.14-10.14z" />
+                    <?xml version="1.0" encoding="utf-8"?><svg version="1.1" id="Layer_1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 122.88 68.04" style="enable-background:new 0 0 122.88 68.04"
+                        xml:space="preserve">
+                        <g>
+                            <path
+                                d="M2.03,56.52c-2.66,2.58-2.72,6.83-0.13,9.49c2.58,2.66,6.83,2.72,9.49,0.13l27.65-26.98l23.12,22.31 c2.67,2.57,6.92,2.49,9.49-0.18l37.77-38.22v19.27c0,3.72,3.01,6.73,6.73,6.73s6.73-3.01,6.73-6.73V6.71h-0.02 c0-1.74-0.67-3.47-2-4.78c-1.41-1.39-3.29-2.03-5.13-1.91H82.4c-3.72,0-6.73,3.01-6.73,6.73c0,3.72,3.01,6.73,6.73,6.73h17.63 L66.7,47.2L43.67,24.97c-2.6-2.5-6.73-2.51-9.33,0.03L2.03,56.52L2.03,56.52z" />
+                        </g>
                     </svg>
                 </div>
                 <div class="item-content">
-                    <h3 class="item-title">Multiple Sales Channels</h3>
-                    <p class="item-text">You can sell products through your website, mobile apps, or major marketplaces like Amazon and Flipkart, reaching more customers through different channels.</p>
+                    <h3 class="item-title">Avoid Penalties</h3>
+                    <p class="item-text">Failing to file GST returns on time attracts late fees and interest, which can
+                        be avoided through timely and accurate compliance practices.</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section class="container my-80 my-xxl-120" id="features">
+<section class="container my-80 my-xxl-120" id="resources">
 
     <h1 class="display-6 mb-32 mod-font-semibold mod-text-s-24">
-        Key Features of an <span class="text-primary mod-font-bold">E-Commerce Business</span>
+        Key Features of GST Registration
     </h1>
     <div class="row gy-40 gx-lg-40">
-        <div class="col-lg-4">
-            <div class="d-flex flex-column gap-12 gap-lg-3 mx-auto">
-                <h2 class="mb-0">Online Presence & <span class="text-primary mod-font-bold">Digital Payments</span></h2>
-                <p class="mb-0 text-lg mod-text-justify">An e-commerce business operates through a dedicated website or platform where products and services are showcased to customers nationwide or globally.</p>
-                <p class="mb-0 text-lg mod-text-justify">It also enables seamless payment collection using credit cards, debit cards, UPI, net banking, and popular digital wallets, enhancing convenience and trust.</p>
+        <div class="row gy-40 gx-lg-40">
+            <div class="col-lg-4">
+                <div class="d-flex flex-column gap-12 gap-lg-3 mx-auto">
+                    <h2 class="mb-0">Monthly, Quarterly, or <span class="text-primary mod-font-bold">Annual
+                            Filings</span></h2>
+                    <p class="mb-0 text-lg mod-text-justify">GST returns must be filed monthly, quarterly, or annually
+                        based on your turnover and registration type under GST law.</p>
+                    <p class="mb-0 text-lg mod-text-justify">Timely filing helps maintain compliance and eligibility
+                        for input tax credit and smooth business operations.</p>
+                </div>
             </div>
-        </div>
-        <div class="col-lg-4">
-            <div class="d-flex flex-column gap-12 gap-lg-3 mx-auto">
-                <h2 class="mb-0">Logistics Support & <span class="text-primary mod-font-bold">Technology Integration</span></h2>
-                <p class="mb-0 text-lg mod-text-justify">Efficient logistics, including inventory management, shipping, and returns, are essential to ensure smooth operations and customer satisfaction in e-commerce.</p>
-                <p class="mb-0 text-lg mod-text-justify">A robust technological backbone, with a strong website, CRM systems, SEO optimization, and analytics tools, drives performance and scalability.</p>
+            <div class="col-lg-4">
+                <div class="d-flex flex-column gap-12 gap-lg-3 mx-auto">
+                    <h2 class="mb-0">Different Returns for <span class="text-primary mod-font-bold">Different
+                            Taxpayers</span></h2>
+                    <p class="mb-0 text-lg mod-text-justify">Returns like GSTR-1, GSTR-3B, and GSTR-9 are used by
+                        regular taxpayers, while GSTR-4 and CMP-08 apply to composition dealers.</p>
+                    <p class="mb-0 text-lg mod-text-justify">Filing is entirely online via the official GST Portal,
+                        ensuring accessibility and efficiency for all types of businesses.</p>
+                </div>
             </div>
-        </div>
-        <div class="col-lg-4">
-            <div class="d-flex flex-column gap-12 gap-lg-3 mx-auto">
-                <h2 class="mb-0">Consumer Focus & <span class="text-primary mod-font-bold">Legal Compliance</span></h2>
-                <p class="mb-0 text-lg mod-text-justify">Customer experience is critical, requiring responsive support, user reviews, and trust-building features like secure checkouts and transparent policies.</p>
-                <p class="mb-0 text-lg mod-text-justify">E-commerce businesses must also comply with regulations such as the Consumer Protection (E-Commerce) Rules, 2020, ensuring fair practices and accountability.</p>
+            <div class="col-lg-4">
+                <div class="d-flex flex-column gap-12 gap-lg-3 mx-auto">
+                    <h2 class="mb-0">Mandatory for <span class="text-primary mod-font-bold">All Registered
+                            Taxpayers</span></h2>
+                    <p class="mb-0 text-lg mod-text-justify">Businesses registered under GST—whether traders,
+                        manufacturers, service providers, or e-commerce sellers—must file returns regularly.</p>
+                    <p class="mb-0 text-lg mod-text-justify">Even ISDs, exporters, importers, and non-resident taxable
+                        persons are required to comply with GST return filing regulations.</p>
+                </div>
             </div>
         </div>
     </div>
 
 </section>
-
 
 <section class="bg-blue-100 py-40 py-xxl-40" id="doc-required">
     <div class="doc-required container mod-flex mod-flex-col mod-gap-8">
         <h2 class="mod-font-semibold mod-text-s-28 mod-mb-0 mod-leading-semi-loose mod-space-light-semi">
-            Documents Required for <span class="text-blue">Setting Up</span> Your E-Commerce Business
+            Documents Required for Registering <span class="text-blue">Your</span> GST
         </h2>
         <div class="section-content mod-grid-12">
             <div class="img mod-flex mod-justify-center mod-overflow-hidden mod-items-center" data-fade="in">
@@ -353,76 +385,102 @@
             </div>
             <div class="items mod-grid-4">
                 <div class="mod-flex mod-flex-col mod-gap-2" data-fade="up">
-                    <div class="item-number">01.</div>
-                    <p class="item-text">Certificate of Company Registration</p>
+                    <div class="item-number small-icon">01. GSTR-1</div>
+                    <p class="item-text">Details of outward supplies filed monthly or quarterly by all regular
+                        taxpayers.</p>
                 </div>
+
                 <div class="mod-flex mod-flex-col mod-gap-2" data-fade="up">
-                    <div class="item-number">02.</div>
-                    <p class="item-text">GST Registration</p>
+                    <div class="item-number small-icon">02. GSTR-3B</div>
+                    <p class="item-text">Summary return with tax payment submitted monthly by all regular taxpayers.
+                    </p>
                 </div>
+
                 <div class="mod-flex mod-flex-col mod-gap-2" data-fade="up">
-                    <div class="item-number">03.</div>
-                    <p class="item-text">Current Bank A/c of Business</p>
+                    <div class="item-number small-icon">03. GSTR-4</div>
+                    <p class="item-text">Annual return filed by taxpayers under the composition scheme.</p>
                 </div>
+
                 <div class="mod-flex mod-flex-col mod-gap-2" data-fade="up">
-                    <div class="item-number">04.</div>
-                    <p class="item-text">Address proof of business place</p>
+                    <div class="item-number small-icon">04. CMP-08</div>
+                    <p class="item-text">Quarterly statement-cum-challan for composition taxpayers to pay taxes.</p>
                 </div>
+
                 <div class="mod-flex mod-flex-col mod-gap-2" data-fade="up">
-                    <div class="item-number">05.</div>
-                    <p class="item-text">FSSAI License (If Selling Food Items)</p>
+                    <div class="item-number small-icon">05. GSTR-9</div>
+                    <p class="item-text">Annual return for businesses with turnover exceeding ₹2 crore.</p>
                 </div>
+
                 <div class="mod-flex mod-flex-col mod-gap-2" data-fade="up">
-                    <div class="item-number">06.</div>
-                    <p class="item-text">Trademark Registration (Optional)</p>
+                    <div class="item-number small-icon">06. GSTR-9C</div>
+                    <p class="item-text">Annual reconciliation statement and audit for turnover above ₹5 crore.</p>
                 </div>
+
+                <div class="mod-flex mod-flex-col mod-gap-2" data-fade="up">
+                    <div class="item-number small-icon">07. GSTR-2B</div>
+                    <p class="item-text">Auto-drafted Input Tax Credit (ITC) statement available monthly for all
+                        recipients.</p>
+                </div>
+
+                <div class="mod-flex mod-flex-col mod-gap-2" data-fade="up">
+                    <div class="item-number small-icon">08. GSTR-7</div>
+                    <p class="item-text">Monthly TDS return filed under GST by tax deductors.</p>
+                </div>
+
+                <div class="mod-flex mod-flex-col mod-gap-2" data-fade="up">
+                    <div class="item-number small-icon">09. GSTR-8</div>
+                    <p class="item-text">Monthly TCS return submitted by e-commerce platforms.</p>
+                </div>
+
             </div>
         </div>
     </div>
 </section>
 
 <section class="container my-40" id="compliances">
-    <h1 class="display-6 mb-32 mod-font-semibold mod-text-s-28">Annual Compliance for Setting up E-Commerce Business</h1>
+    <h1 class="display-6 mb-32 mod-font-semibold mod-text-s-28">Compliance Required after GST Registration</h1>
 
     <div class="mod-grid mod-mt-4 mod-gap-8 mod-grid-template-col-2 sm:mod-grid-template-col-1">
-        <div class="mod-pr-8 mod-flex mod-flex-col sm:mod-order-2">
+        <div class="mod-pr-8 mod-flex mod-flex-col sm:mod-order-1 sm:mod-pr-0">
             <h3 class="mod-font-semibold mod-leading-loose">Why Compliance Matters</h3>
-            <p class="mod-mt-2 mod-pr-16">
-                Maintaining compliance is essential for the legal and smooth functioning of your business entity. Timely tax, accounting, and regulatory filings help avoid heavy penalties, enhance business credibility, and make you eligible for various government benefits. Good compliance practices also build trust with customers, investors, banks, and regulators, paving the way for stable and sustainable business growth.
+            <p class="mod-mt-2 mod-pr-8 sm:mod-pl-0 sm:mod-pr-4">
+                Staying GST compliant boosts your business credibility, prevents legal penalties, ensures uninterrupted
+                operations, and builds trust with both customers and stakeholders. Below are key compliance tasks you
+                must manage post GST registration.
             </p>
+
             <div class="mod-grid mod-items-start mod-my-6">
-                <h4>Essential Post-Setup Tasks for E-Commerce Businesses</h4>
-                <p>Once your e-commerce business is established, focusing on critical tasks like website optimization, logistics setup, product listings, and marketing strategies is key to ensuring smooth operations and long-term growth.</p>
+                <h4>Timeline of GST Return Filing</h4>
                 <div class="mod-grid-2 mod-gap-2">
-                    <span class="mod-items-center mod-py-2 mod-space-semi">
-                        <strong>Mobile-Responsive Website</strong>
-                        <p>Ensure your website is optimized for mobile users for better accessibility and higher conversion rates.</p>
-                    </span>
-                    <span class="mod-items-center mod-py-2 mod-space-semi">
-                        <strong>Payment Gateway Integration</strong>
-                        <p>Integrate a reliable payment system to offer secure and seamless transactions for customers.</p>
-                    </span>
-                    <span class="mod-items-center mod-py-2 mod-space-semi">
-                        <strong>Logistics and Shipping</strong>
-                        <p>Partner with trusted couriers to ensure timely deliveries and hassle-free returns for customers.</p>
-                    </span>
-                    <span class="mod-items-center mod-py-2 mod-space-semi">
-                        <strong>Product Listings</strong>
-                        <p>List products with clear images and detailed descriptions to boost customer trust and sales.</p>
-                    </span>
-                    <span class="mod-items-center mod-py-2 mod-space-semi">
-                        <strong>Digital Marketing Campaigns</strong>
-                        <p>Use SEO, Google Ads, and social media to increase brand visibility and drive targeted traffic.</p>
-                    </span>
-                    <span class="mod-items-center mod-py-2 mod-space-semi">
-                        <strong>Legal Compliance</strong>
-                        <p>Ensure compliance with privacy policies, return policies, and other legal requirements for transparency.</p>
-                    </span>
+                    <span class="mod-items-center mod-py-0 mod-space-semi"><strong>Return Type</strong></span>
+                    <span class="mod-items-center mod-py-0 mod-space-semi"><strong>Due Date</strong></span>
+
+                    <span class="mod-items-center mod-py-2 mod-space-semi">GSTR-1</span>
+                    <span class="mod-items-center mod-py-2 mod-space-semi">11th of the next month / quarter</span>
+
+                    <span class="mod-items-center mod-py-2 mod-space-semi">GSTR-3B</span>
+                    <span class="mod-items-center mod-py-2 mod-space-semi">20th of the next month</span>
+
+                    <span class="mod-items-center mod-py-2 mod-space-semi">CMP-08</span>
+                    <span class="mod-items-center mod-py-2 mod-space-semi">18th of the month after quarter end</span>
+
+                    <span class="mod-items-center mod-py-2 mod-space-semi">GSTR-4</span>
+                    <span class="mod-items-center mod-py-2 mod-space-semi">30th April of the following financial
+                        year</span>
+
+                    <span class="mod-items-center mod-py-2 mod-space-semi">GSTR-9</span>
+                    <span class="mod-items-center mod-py-2 mod-space-semi">31st December of the following financial
+                        year</span>
+
+                    <span class="mod-items-center mod-py-2 mod-space-semi">GSTR-9C</span>
+                    <span class="mod-items-center mod-py-2 mod-space-semi">31st December of the following financial
+                        year</span>
                 </div>
             </div>
 
             <div>
-                <a class="btn-custom-medium" href="javascript:void(0)" target="_self" data-id="focus-first-input-btn">
+                <a class="btn-custom-medium" href="javascript:void(0)" target="_self"
+                    data-id="focus-first-input-btn">
                     <span class="btn-text btn-text--back">Get Help with Compliance</span>
                     <span class="btn-icon btn-custom-w btn-icon--blue">
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -436,37 +494,20 @@
                 </a>
             </div>
         </div>
-        <div class="mod-px-2 mod-flex mod-flex-col mod-gap-2 sm:mod-order-1">
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
-                <h3 class="mod-mb-0">Income Tax Returns (ITR)</h3>
-                <p class="mod-ml-16 mod-mb-0 mod-text-right">File ITR-3, ITR-5, or ITR-6 depending on your business structure by 31st July (non-audit) or 31st October (audit cases).</p>
-            </div>
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
-                <h3 class="mod-mb-0">GST Returns Filing</h3>
-                <p class="mod-ml-16 mod-mb-0 mod-text-right">GSTR-1 and GSTR-3B must be filed monthly or quarterly as per GST norms.</p>
-            </div>
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
-                <h3 class="mod-mb-0">Annual GST Return</h3>
-                <p class="mod-ml-16 mod-mb-0 mod-text-right">GSTR-9 annual GST return must be filed by 31st December of the next financial year.</p>
-            </div>
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
-                <h3 class="mod-mb-0">Professional Tax Compliance</h3>
-                <p class="mod-ml-16 mod-mb-0 mod-text-right">Professional Tax returns, if applicable, must be filed monthly or quarterly depending on state regulations.</p>
-            </div>
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
-                <h3 class="mod-mb-0">TDS Returns Filing</h3>
-                <p class="mod-ml-16 mod-mb-0 mod-text-right">Quarterly filing of Form 24Q and Form 26Q is mandatory if TDS is deducted.</p>
-            </div>
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
-                <h3 class="mod-mb-0">ROC Filings (LLP & Pvt Ltd)</h3>
-                <p class="mod-ml-16 mod-mb-0 mod-text-right">ROC forms like AOC-4, MGT-7, and DIR-3 KYC must be filed, generally by October or November.</p>
-            </div>
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
-                <h3 class="mod-mb-0">Books of Accounts Maintenance</h3>
-                <p class="mod-ml-16 mod-mb-0 mod-text-right">Businesses must maintain proper books of accounts and inventory records on an ongoing basis as per law.</p>
-            </div>
+        <div class="mod-px-2 mod-flex mod-flex-col mod-gap-2 sm:mod-order-2">
+            <x-compliance-lists title="Bookkeeping"
+                description="Keep your books and GST invoices updated regularly for audit and compliance readiness." />
+            <x-compliance-lists title="Input Tax Credit Reconciliation"
+                description="Match GSTR-2B with your purchase records monthly to claim accurate ITC benefits." />
+            <x-compliance-lists title="Error Correction"
+                description="Correct any filing mistakes using amendments in the next applicable return period." />
+            <x-compliance-lists title="Response to GST Notices"
+                description="Promptly respond to GST authority notices and assessments to avoid penalties or delays." />
+            <x-compliance-lists title="E-Invoicing Compliance"
+                description="Eligible businesses must generate invoices through the GSTN's mandatory e-invoicing system." />
+            <x-compliance-lists title="Avoid Mismatches"
+                description="Ensure data consistency to prevent credit mismatches between buyers and suppliers under GST." />
         </div>
-
     </div>
 </section>
 

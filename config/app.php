@@ -129,7 +129,8 @@ return [
         'company_name' => 'Sai Vigneshwara Legal And Business Solutions Pvt Ltd',
         'company_address' => 'Sai Shivalik Complex, Jagannathpur, Bamunari, Hooghly- 712250, West Bengal',
         'company_cin' => 'U69202WB2025PTC277397',
-        'support_email' => 'info@' . strtolower(env('APP_NAME', 'Laravel')) . '.com',
+        'support_email' => 'support@' . strtolower(env('APP_NAME', 'Laravel')) . '.com',
+        'sales_email' => 'sales@' . strtolower(env('APP_NAME', 'Laravel')) . '.com',
         'support_phone' => '9403892279',
         'support_wp_phone' => '6290788499',
         'social_links' => [

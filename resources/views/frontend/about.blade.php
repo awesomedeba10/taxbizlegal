@@ -7,7 +7,7 @@
                 <div class="mod-py-3">
                     <p class="h5 text-primary mb-2">WHO WE ARE</p>
                     <h1 class="mod-font-semibold mod-leading-semi-loose mod-mb-6">About <span
-                            class="text-blue">TaxBixLegal</span></h1>
+                            class="text-blue">TaxBizLegal</span></h1>
                     <h3 class="mod-mb-4 mod-leading-light-loose mod-space-semi mod-text-justify mod-text-indent-rem">
                         Welcome to TaxBizLegal.com, your trustworthy resource for compliance, tax, and legal solutions!
                     </h3>
@@ -178,7 +178,7 @@
                         Got questions?<br>
                         We're just a call away!
                     </h2>
-                    <a class="btn-custom-medium" href="http://127.0.0.1:8000/contact-us" target="_self">
+                    <a class="btn-custom-medium" href="{{ route('front.contact') }}" target="_self">
                         <span class="btn-text btn-text--back">Get In Touch</span>
                         <span class="btn-icon btn-icon--red">
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"

@@ -69,7 +69,7 @@
                         <font style="vertical-align: inherit;">
                             <ul>
                                 <li>Include your name, service details, date of transaction, and reason for the refund request</li>
-                                <li>Once approved, the refund will be processed within 10 business days to the original payment method.</li>
+                                <li>Once approved, the refund will be processed within 10 to 15 business days to the original payment method.</li>
                             </ul>
                         </font>
                     </p>

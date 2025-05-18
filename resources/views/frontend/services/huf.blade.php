@@ -67,7 +67,7 @@
                     data-target="faq">
                     FAQ</li>
             </ul>
-            <a href="" rel="noreferrer"
+            <a href="javascript:void(0)" target="_self" data-id="focus-first-input-btn" rel="noreferrer"
                 class="services-nav-link mod-whitespace-nowrap mod-px-6 mod-my-2 mod-leading-loose mod-flex mod-items-center mod-gap-2">File
                 Now<svg width="16" height="14" viewBox="0 0 18 18" fill="none"
                     xmlns="http://www.w3.org/2000/svg" class="">

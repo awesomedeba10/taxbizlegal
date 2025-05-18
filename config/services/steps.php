@@ -241,4 +241,58 @@ return [
             ],
         ]
     ],
+    "gst-registration" => [
+        "title" => "Register for GST with <span class=\"text-blue mod-font-semibold\">Us</span> in 5 Simple Steps",
+        "description" => "Registering for GST is now fast, easy, and hassle-free! Follow these 5 simple steps and get your GSTIN without delays.",
+        "steps" => [
+            [
+                "title" => "Online GST Application",
+                "description" => "Begin by submitting the GST REG-01 form on the GST portal with essential business details like PAN, type, and contact information."
+            ],
+            [
+                "title" => "Submit Required Documents",
+                "description" => "Upload documents such as PAN, identity proof, business address, and ownership proof to support your GST application securely and quickly."
+            ],
+            [
+                "title" => "Receive ARN Confirmation",
+                "description" => "After submission, you will receive a unique ARN to help you track the GST registration application status anytime from the portal."
+            ],
+            [
+                "title" => "Application Review & Approval",
+                "description" => "The GST officer will verify your documents and details. Once verified, your GST application gets approved within a few working days."
+            ],
+            [
+                "title" => "Get GST Certificate",
+                "description" => "Upon approval, download your GST registration certificate, which contains your GSTIN, confirming your business is GST-compliant and legal."
+            ]
+        ]
+    ],
+    "gst-returns" => [
+        "title" => "File Your GST Returns with <span class=\"text-blue mod-font-semibold\">Us</span> in 5 Simple Steps",
+        "description" => "Filing GST returns is now effortless with our expert support. Follow these 5 simple steps to stay compliant and avoid penalties.",
+        "steps" => [
+            [
+                "title" => "Login to GST Portal",
+                "description" => "Access the official GST portal using your login credentials to begin your GST return filing process for the applicable tax period."
+            ],
+            [
+                "title" => "Select the Return Type",
+                "description" => "Choose the correct return form such as GSTR-1, GSTR-3B, or others based on your business category and filing requirements."
+            ],
+            [
+                "title" => "Upload Invoices and Data",
+                "description" => "Enter and upload invoice-wise sales and purchase data, ensuring complete accuracy for correct tax calculation and reconciliation."
+            ],
+            [
+                "title" => "Reconcile and Review Details",
+                "description" => "Reconcile input tax credit with GSTR-2A, review all return data, and preview the summary before final submission and payment."
+            ],
+            [
+                "title" => "Make Payment and File",
+                "description" => "Pay any applicable tax dues, then file your return securely using DSC or EVC and receive acknowledgment from the GST portal."
+            ]
+        ]
+    ]
+
+
 ];
