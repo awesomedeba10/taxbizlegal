@@ -17,18 +17,29 @@ class IncomingLeads extends Mailable
     use Queueable, SerializesModels;
 
     public $leads;
-    public string $fileName;
+    public $enquiries;
+    public string $leadsFileName;
+    public string $enquiriesFileName;
 
     /**
      * Create a new message instance.
      */
-    public function __construct($leads)
+    public function __construct($leads, $enquiries)
     {
         $this->leads = $leads;
-        $this->fileName = 'tbl-leads-' . now()->format('Y-m-d_H-i') . '.csv';
+        $this->enquiries = $enquiries;
 
-        $csvData = $this->generateCsv($leads);
-        Storage::disk('local')->put($this->fileName, $csvData);
+        if ($leads->isNotEmpty()):
+            $this->leadsFileName = 'tbl-leads-' . now()->format('Y-m-d_H-i') . '.csv';
+            $csv = $this->generateCsv($leads, 'leads');
+            Storage::put($this->leadsFileName, $csv);
+        endif;
+
+        if ($enquiries->isNotEmpty()):
+            $this->enquiriesFileName = 'tbl-enquiries-' . now()->format('Y-m-d_H-i') . '.csv';
+            $csv = $this->generateCsv($enquiries, 'enquiries');
+            Storage::put($this->enquiriesFileName, $csv);
+        endif;
     }
 
     /**
@@ -38,7 +49,7 @@ class IncomingLeads extends Mailable
     {
         return new Envelope(
             from: new Address(config('mail.from.address'), config('mail.from.name')),
-            subject: 'TaxBIzLegal <> Leads Received in the Last 30 Minutes',
+            subject: 'TaxBIzLegal <> Leads & Enquiries from the Last 30 Minutes',
         );
     }
 
@@ -50,7 +61,8 @@ class IncomingLeads extends Mailable
         return new Content(
             view: 'frontend.mail.incoming-leads',
             with: [
-                'leadCount' => $this->leads->count()
+                'leadCount' => $this->leads->count(),
+                'enquiryCount' => $this->enquiries->count()
             ]
         );
     }
@@ -62,34 +74,61 @@ class IncomingLeads extends Mailable
      */
     public function attachments(): array
     {
-        return [
-            Attachment::fromPath(Storage::path($this->fileName))
-                ->as($this->fileName)
-                ->withMime('text/csv'),
-        ];
+        $attachments = [];
+
+        if(!empty($this->leadsFileName)):
+            $attachments[] = Attachment::fromPath(Storage::path($this->leadsFileName))
+                ->as($this->leadsFileName)
+                ->withMime('text/csv');
+        endif;
+
+        if(!empty($this->enquiriesFileName)):
+            $attachments[] = Attachment::fromPath(Storage::path($this->enquiriesFileName))
+                ->as($this->enquiriesFileName)
+                ->withMime('text/csv');
+        endif;
+
+        return $attachments;
     }
 
-    private function generateCsv($leads): string
+    private function generateCsv($data, $type): string
     {
         $csv = fopen('php://temp', 'r+');
-        fputcsv($csv, ['Order Id' , 'Name', 'Email', 'Phone', 'State' ,
-            'Service Name' , 'Current Stage' , 'Service Plan' , 'Service Plan Price' ,
-            'Lead Submitted At']);
 
-        foreach ($leads as $lead) {
-            fputcsv($csv, [
-                '#' . Str::upper($lead->order_id),
-                $lead->cus_name,
-                $lead->cus_email,
-                $lead->cus_phone,
-                $lead->cus_state,
-                Str::title(str_replace('-', ' ', $lead->service_name)),
-                Str::title(str_replace('_', ' ', $lead->current_stage)),
-                $lead->service_plan_name,
-                $lead->service_price,
-                $lead->created_at
-            ]);
-        }
+        if($type == 'leads'):
+            fputcsv($csv, ['Order Id' , 'Name', 'Email', 'Phone', 'State' ,
+                'Service Name' , 'Current Stage' , 'Service Plan' , 'Service Plan Price' ,
+                'Lead Submitted At']);
+
+            foreach ($data as $lead):
+                fputcsv($csv, [
+                    '#' . Str::upper($lead->order_id),
+                    $lead->cus_name,
+                    $lead->cus_email,
+                    $lead->cus_phone,
+                    $lead->cus_state,
+                    Str::title(str_replace('-', ' ', $lead->service_name)),
+                    Str::title(str_replace('_', ' ', $lead->current_stage)),
+                    $lead->service_plan_name,
+                    $lead->service_price,
+                    $lead->created_at
+                ]);
+            endforeach;
+        elseif($type == 'enquiries'):
+            fputcsv($csv, ['Name', 'Email', 'Phone', 'State', 'Message', 'Redirected From', 'Submitted At']);
+
+            foreach ($data as $item):
+                fputcsv($csv, [
+                    $item->name,
+                    $item->email,
+                    $item->phone,
+                    $item->state,
+                    $item->message,
+                    Str::title(str_replace('_', ' ', $item->redirected_from)),
+                    $item->created_at
+                ]);
+            endforeach;
+        endif;
 
         rewind($csv);
         return stream_get_contents($csv);

@@ -34,10 +34,11 @@
     <p>You have received new leads in the last 30 minutes.</p>
 
     <div class="panel">
-        <strong>Total Leads Captured:</strong> {{ $leadCount }}
+        <strong>Total Leads Captured:</strong> {{ $leadCount }} <br>
+        <strong>Total Enquiries Received:</strong> {{ $enquiryCount }}
     </div>
 
-    <p>The CSV file containing lead details is attached with this email.</p>
+    <p>The CSV files containing lead details is attached with this email.</p>
 
     <div class="footer">
         Thanks,<br>

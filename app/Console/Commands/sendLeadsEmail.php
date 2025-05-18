@@ -3,6 +3,7 @@
 namespace App\Console\Commands;
 
 use App\Mail\IncomingLeads;
+use App\Models\Enquiry;
 use App\Models\Order;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Mail;
@@ -32,19 +33,24 @@ class sendLeadsEmail extends Command
     public function handle()
     {
         $leads = Order::getLatestLeads($this->scheduledMinutes);
-        if($leads->isEmpty()):
-            $this->info('No new leads to send at ' . now()->format('F j, Y, g:i A'));
+        $enquiries = Enquiry::getLatestLeads($this->scheduledMinutes);
+        if($leads->isEmpty() && $enquiries->isEmpty()):
+            $this->info('No new leads/enquiries to send at ' . now()->format('F j, Y, g:i A'));
             return Command::SUCCESS;
         endif;
 
-        $mail = new IncomingLeads($leads);
+        $mail = new IncomingLeads($leads, $enquiries);
         Mail::to($this->sender)->send($mail);
 
-        if (Storage::fileExists($mail->fileName)):
-            Storage::delete($mail->fileName);
+        if (!empty($mail->leadsFileName) && Storage::fileExists($mail->leadsFileName)):
+            Storage::delete($mail->leadsFileName);
         endif;
 
-        $this->info('Leads email sent at ' . now()->format('F j, Y, g:i A'));
+        if (!empty($mail->enquiriesFileName) && Storage::fileExists($mail->enquiriesFileName)):
+            Storage::delete($mail->enquiriesFileName);
+        endif;
+
+        $this->info('Leads/Enquiries email sent at ' . now()->format('F j, Y, g:i A'));
         return Command::SUCCESS;
     }
 }

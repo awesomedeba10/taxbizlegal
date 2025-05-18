@@ -33,33 +33,3 @@ Route::group(['as' => 'front.'], function () {
 
 Route::get('coming-soon', [MaintenanceController::class, 'up'])->name('maintenance');
 Route::post('coming-soon', [MaintenanceController::class, 'access'])->name('maintenance.access');
-
-Route::get('/test-mailtrap-yoo', function () {
-    // $flatServices = [];
-
-    // $headers = config('services.headers');
-    // $counter = 1;
-    // foreach ($headers as $mainHeader) {
-    //     $mainTitle = $mainHeader['title'];
-
-    //     foreach ($mainHeader['sub_headers'] as $subHeader) {
-    //         $subTitle = $subHeader['title'];
-    //         $background = $subHeader['background'];
-
-    //         foreach ($subHeader['services'] as $service) {
-    //             $flatServices[] = [
-    //                 'main_header' => $mainTitle,
-    //                 'sub_header' => $subTitle,
-    //                 'background' => $background,
-    //                 'name' => $service['name'],
-    //                 'description' => $service['description'],
-    //                 'sort_order' => $counter++,
-    //                 'created_at' => now(),
-    //                 'updated_at' => now()
-    //             ];
-    //         }
-    //     }
-    // }
-
-    // Service::insert($flatServices);
-});
