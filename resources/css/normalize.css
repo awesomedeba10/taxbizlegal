@@ -2438,6 +2438,9 @@ img, video {
 .mod-w-full {
     width: 100%
 }
+.mod-w-custom-30 {
+    width: 30%;
+}
 .mod-max-w-full {
     max-width: 100%;
 }
@@ -2478,6 +2481,10 @@ img, video {
 .mod-gap-4 {
     grid-gap: 1rem;
     gap: 1rem;
+}
+.mod-gap-6 {
+    grid-gap: 1.5rem;
+    gap: 1.5rem;
 }
 .mod-gap-8 {
     grid-gap: 2rem;

@@ -1,9 +1,11 @@
 <div class="mod-w-full">
-    <div class="mod-pt-8 sm:mod-flex mod-grid-3 mod-flex-col">
+    <div class="mod-pt-8 mod-flex mod-justify-center mod-flex-wrap mod-gap-8 sm:mod-flex-col">
         @foreach ($plans as $plan)
-        <div class="card-plan @if($plan['is_popular'] === true) card-plan-popular @endif">
-            @if($plan['is_popular'] === true)
+        <div class="card-plan mod-w-custom-30 sm:mod-w-full @if($plan['is_popular'] !== null && $plan['is_popular'] != 0) card-plan-popular @endif">
+            @if($plan['is_popular'] == 1)
                 <div class="tag-popular">POPULAR</div>
+            @elseif($plan['is_popular'] == 2)
+            <div class="tag-popular">NRI</div>
             @endif
             <div class="card-plan-title">
                 <img alt="Plan {{ $plan['plan_name'] }}" class="mod-inline"

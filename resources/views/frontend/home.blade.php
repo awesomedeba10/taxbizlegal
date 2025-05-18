@@ -38,7 +38,7 @@
                                         </div>
                                         <div class="service-item">
                                             <a
-                                                href="{{ route('front.services', ['slug' => Str::slug('ROC Search Reports', '-')]) }}">
+                                                href="{{ route('front.services', ['slug' => Str::slug('Legal Drafting', '-')]) }}">
                                                 <img src="{{ asset('images/svg/service-legal.svg') }}">
                                                 Legal & Compliance
                                             </a>
@@ -297,7 +297,7 @@
                                         <div class="mod-text-left">
                                             <h1 class="mod-mb-4">Pick the Right Service</h1>
                                             <p>
-                                                No Hidden Fess - Select from a wide range of professional services tailored
+                                                No Hidden Fees - Select from a wide range of professional services tailored
                                                 to your needs. Our transparent process ensures you get exactly what you’re
                                                 looking for.
                                             </p>
@@ -500,7 +500,7 @@
                         <div class="slide"><img src="{{ asset('images/svg/meta.svg') }}" alt="" /></div>
                         <div class="slide"><img src="{{ asset('images/svg/google.svg') }}" alt="" /></div>
                         <div class="slide"><img src="{{ asset('images/svg/godaddy.svg') }}" alt="" /></div>
-                        <div class="slide"><img src="{{ asset('images/svg/payu.svg') }}" alt="" /></div>
+                        <div class="slide"><img src="{{ asset('images/svg/razorpay.svg') }}" alt="" /></div>
                         <div class="slide"><img src="{{ asset('images/svg/trustpilot.svg') }}" alt="" /></div>
                     @endfor
                 </div>
