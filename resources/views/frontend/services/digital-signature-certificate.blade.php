@@ -449,17 +449,17 @@
             </div>
         </div>
         <div class="mod-px-2 mod-flex mod-flex-col mod-gap-2 sm:mod-order-1">
-            <x-component-lists title="Class 3 DSC"
+            <x-compliance-lists title="Class 3 DSC"
                 description="Used for MCA, GST, Income Tax, DGFT, EPFO, and tender filings." />
-            <x-component-lists title="DGFT DSC"
+            <x-compliance-lists title="DGFT DSC"
                 description="Specially issued for transactions on the DGFT portal for exporters." />
-            <x-component-lists title="Fast Application Process"
+            <x-compliance-lists title="Fast Application Process"
                 description="Apply and submit documents the same day, eKYC in 10–15 minutes." />
-            <x-component-lists title="Quick Issuance"
+            <x-compliance-lists title="Quick Issuance"
                 description="DSC gets issued and ready for download within 1 working day." />
-            <x-component-lists title="DSC Renewal"
+            <x-compliance-lists title="DSC Renewal"
                 description="Renew before expiry with simple verification and minimal documents." />
-            <x-component-lists title="Reissue on Token Loss"
+            <x-compliance-lists title="Reissue on Token Loss"
                 description="Get your DSC reissued quickly if your USB token is damaged or lost." />
         </div>
     </div>

@@ -142,11 +142,9 @@
                         <p class="mod-mb-0">Lightning-Fast Customer Support</p>
                     </div>
                 </div>
-                <x-custom-mod-btn class="btn-custom-medium" href="javascript:void(0)" id="focus-first-input-btn">
-                    <x-slot:hover-title>
-                        Request a Callback
-                    </x-slot>
-                    Get In Touch
+                <x-custom-mod-btn class="btn-custom-medium" data-id="focus-first-input-btn" btn-icon="btn-icon--red">
+                    <x-slot:hoverTitle>Request a Callback</x-slot>
+                    Get in Touch
                 </x-custom-mod-btn>
             </div>
         </div>
