@@ -18,11 +18,14 @@ class PaymentController extends Controller
             abort(404);
         endif;
 
-        $order = Order::where('order_id', base64_decode($request->query('orderid')))
-            ->whereNull('rzp_payment_id')->first();
-
+        $order = Order::where('order_id', base64_decode($request->query('orderid')))->first();
         if (!$order):
             abort(404, 'Invalid or expired checkout link.');
+        endif;
+        if ($order->rzp_payment_status == 'captured'):
+            return redirect()->route('front.payment.success', [
+                'orderid' => base64_encode($order->order_id)
+            ]);
         endif;
 
         return view('frontend.orders.checkout',[
