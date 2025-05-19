@@ -20,7 +20,6 @@
     {{-- <meta name="description"
         content="Vytvořte profesionální životopis a zvyšte své šance na pohovor! Už žádné složité formátování, díky jednoduchému editor CV.">
     <link rel="canonical" href="index.html"> --}}
-
     {{-- <meta property="og:locale" content="cs_CZ" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Huntee - knihovna kontaktů" />
@@ -33,7 +32,6 @@
 <meta property="og:image:width" content="1305" />
 <meta property="og:image:height" content="786" />
 <meta property="og:image:alt" content="Ukázka CV editor na počítači a telefonu" />
-
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Huntee - knihovna kontaktů" />
 <meta name="twitter:description" content="Vytvořte profesionální životopis a zvyšte své šance na pohovor! Už žádné složité formátování, díky jednoduchému editor CV." />
@@ -49,7 +47,7 @@
 
     <meta name="apple-mobile-web-app-title" content="TaxBizLegal" />
     <meta name="msapplication-TileColor" content="#006eec">
-    <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
+    <meta name="msapplication-config" content="{{ asset('images/favicon/browserconfig.xml') }}">
     <meta name="theme-color" content="#0f1832">
 
     @vite(['resources/js/app.js'])

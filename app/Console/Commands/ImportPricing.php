@@ -54,7 +54,7 @@ class ImportPricing extends Command
             $companyKey = strtolower(str_replace(' ', '-', $row['Company Type']));
             $planName = $row['Plan Name'];
             $price = (int) $row['Price'];
-            $isPopular = strtolower($row['Is Popular']) === 'true';
+            $isPopular = $row['Is Popular'];
             $serviceName = $row['Service Name'];
             $isActive = (int) $row['Is Active'];
 

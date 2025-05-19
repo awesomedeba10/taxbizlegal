@@ -5,7 +5,7 @@
             @if($plan['is_popular'] == 1)
                 <div class="tag-popular">POPULAR</div>
             @elseif($plan['is_popular'] == 2)
-            <div class="tag-popular">NRI</div>
+            <div class="tag-popular" style="right: -3rem">NRI</div>
             @endif
             <div class="card-plan-title">
                 <img alt="Plan {{ $plan['plan_name'] }}" class="mod-inline"
