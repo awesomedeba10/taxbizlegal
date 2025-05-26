@@ -177,7 +177,7 @@
                     individuals, professionals, and businesses. Our process is simple, quick, and affordable. We also
                     assist with Company Registration, GST Registration, Trademark Registration, and more. For
                     personalized assistance, email us at info@taxbizlegal.com or speak directly with our compliance
-                    manager at 09*********.</p>
+                    manager at <a href="tel:91{{ config('app.site_info.support_phone') }}">{{ config('app.site_info.support_phone') }}</a>.</p>
 
             </div>
         </div>

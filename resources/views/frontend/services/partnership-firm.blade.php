@@ -183,7 +183,7 @@
                     seamless registration process with complete compliance support. We also assist with LLP
                     Incorporation, Private Limited Company formation, GST Registration, and more. For a free
                     consultation, contact us at info@taxbizlegal.com or connect with our compliance manager at
-                    09*********.</p>
+                    <a href="tel:91{{ config('app.site_info.support_phone') }}">{{ config('app.site_info.support_phone') }}</a>.</p>
             </div>
         </div>
         <div class="col-12 col-md-6 sm:mod-order-1 mod-pl-16 md:mod-pl-0 sm:mod-pl-0">

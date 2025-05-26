@@ -186,8 +186,7 @@
                     We offer complete assistance with GST return filing, including invoice reconciliation, ITC
                     validation, online submission, and compliance monitoring. Our experts handle everything—from data
                     preparation to final filing—ensuring timely and error-free submissions. We also provide services for
-                    GST registration, company incorporation, and annual compliance filings. Reach out to our team at <a
-                        href="mailto:info@yourwebsite.com">info@yourwebsite.com</a> or call us for expert GST support
+                    GST registration, company incorporation, and annual compliance filings. Reach out to our team at <a href="tel:91{{ config('app.site_info.support_phone') }}">{{ config('app.site_info.support_phone') }}</a> for expert GST support
                     tailored to your business needs.
                 </p>
             </div>

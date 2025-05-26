@@ -168,7 +168,7 @@
                     <p>An Income Tax Return (ITR) is a formal document that individuals, businesses, and entities file with the government to report their income, expenses, deductions, and taxes for a specific financial year. Filing ITR is mandatory for those who meet the income criteria under the Income Tax Act, 1961.</p>
                     <p>ITR filing ensures transparency and compliance with tax regulations. It allows taxpayers to declare their financial activities officially and helps authorities assess tax liabilities accurately. Filing timely returns is crucial to avoid penalties and to maintain a good financial record.</p>
                     <p>Filing an Income Tax Return also enables taxpayers to claim eligible deductions and refunds, carry forward losses, and serve as a valid income proof for loans, visas, and other financial transactions. It plays a vital role in personal and business financial management.</p>
-                    <p>Taxbizlegal.com offers a quick, easy, and affordable ITR Filing service. Reach out to us for a consultation at info@taxbizlegal.com or call our tax experts at 09*********.</p>
+                    <p>Taxbizlegal.com offers a quick, easy, and affordable ITR Filing service. Reach out to us for a consultation at info@taxbizlegal.com or call our tax experts at <a href="tel:91{{ config('app.site_info.support_phone') }}">{{ config('app.site_info.support_phone') }}</a>.</p>
                 </div>
 
             </div>

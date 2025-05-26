@@ -178,7 +178,7 @@
                     registration, GST filing, and drafting of website policies to compliance advisory. Our experts
                     ensure your business meets all legal obligations and runs smoothly. We also offer services like
                     Trademark Registration, Private Limited Company formation, and Business Compliance Management.
-                    Contact us at info@taxbizlegal.com or speak to our advisor at 09********* for a free consultation.
+                    Contact us at info@taxbizlegal.com or speak to our advisor at <a href="tel:91{{ config('app.site_info.support_phone') }}">{{ config('app.site_info.support_phone') }}</a> for a free consultation.
                 </p>
             </div>
         </div>

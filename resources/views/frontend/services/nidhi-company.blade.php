@@ -174,7 +174,7 @@
                     step from documentation and filing to compliance and post-incorporation support. Our team ensures a
                     smooth and hassle-free experience at an affordable cost. We also offer assistance with Private
                     Limited Company registration, LLP incorporation, GST filings, and more. For a free consultation,
-                    write to us at info@taxbizlegal.com or connect with our compliance manager at 09*********.</p>
+                    write to us at info@taxbizlegal.com or connect with our compliance manager at <a href="tel:91{{ config('app.site_info.support_phone') }}">{{ config('app.site_info.support_phone') }}</a>.</p>
 
             </div>
         </div>

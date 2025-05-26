@@ -178,7 +178,7 @@
                         enhance credibility. This registration is crucial for maintaining consumer trust and compliance
                         with food safety regulations.</p>
                     <p>Taxbizlegal.com offers a quick, affordable FSSAI Registration process. Contact us for
-                        consultation at info@taxbizlegal.com or call our compliance manager at 09*********.</p>
+                        consultation at info@taxbizlegal.com or call our compliance manager at <a href="tel:91{{ config('app.site_info.support_phone') }}">{{ config('app.site_info.support_phone') }}</a>.</p>
                 </div>
 
             </div>

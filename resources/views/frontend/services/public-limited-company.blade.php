@@ -177,7 +177,7 @@
                     registration, including incorporation, compliance, advisory, and consultancy. The process is quick,
                     affordable, and simple. Additionally, we offer services for Partnership Registration, LLP
                     Incorporation, One Person Company registration, and more. Contact us for a free consultation at
-                    info@taxbizlegal.com or call our compliance manager at 09*********.</p>
+                    info@taxbizlegal.com or call our compliance manager at <a href="tel:91{{ config('app.site_info.support_phone') }}">{{ config('app.site_info.support_phone') }}</a>.</p>
             </div>
         </div>
         <div class="col-12 col-md-6 sm:mod-order-1 mod-pl-16 md:mod-pl-0 sm:mod-pl-0">
