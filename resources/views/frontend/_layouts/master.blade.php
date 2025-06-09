@@ -21,21 +21,21 @@
         content="Vytvořte profesionální životopis a zvyšte své šance na pohovor! Už žádné složité formátování, díky jednoduchému editor CV.">
     <link rel="canonical" href="index.html"> --}}
     {{-- <meta property="og:locale" content="cs_CZ" />
-<meta property="og:type" content="website" />
-<meta property="og:title" content="Huntee - knihovna kontaktů" />
-<meta property="og:description" content="Vytvořte profesionální životopis a zvyšte své šance na pohovor! Už žádné složité formátování, díky jednoduchému editor CV." />
-<meta property="og:url" content="index.html" />
-<meta property="og:site_name" content="Huntee" />
-<meta property="og:updated_time" content="2025-02-21T17:42:44+01:00" />
-<meta property="og:image" content="images/img/home/editor.png" />
-<meta property="og:image:secure_url" content="images/img/home/editor.png" />
-<meta property="og:image:width" content="1305" />
-<meta property="og:image:height" content="786" />
-<meta property="og:image:alt" content="Ukázka CV editor na počítači a telefonu" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Huntee - knihovna kontaktů" />
-<meta name="twitter:description" content="Vytvořte profesionální životopis a zvyšte své šance na pohovor! Už žádné složité formátování, díky jednoduchému editor CV." />
-<meta name="twitter:image" content="images/img/home/editor.png" /> --}}
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Huntee - knihovna kontaktů" />
+    <meta property="og:description" content="Vytvořte profesionální životopis a zvyšte své šance na pohovor! Už žádné složité formátování, díky jednoduchému editor CV." />
+    <meta property="og:url" content="index.html" />
+    <meta property="og:site_name" content="Huntee" />
+    <meta property="og:updated_time" content="2025-02-21T17:42:44+01:00" />
+    <meta property="og:image" content="images/img/home/editor.png" />
+    <meta property="og:image:secure_url" content="images/img/home/editor.png" />
+    <meta property="og:image:width" content="1305" />
+    <meta property="og:image:height" content="786" />
+    <meta property="og:image:alt" content="Ukázka CV editor na počítači a telefonu" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Huntee - knihovna kontaktů" />
+    <meta name="twitter:description" content="Vytvořte profesionální životopis a zvyšte své šance na pohovor! Už žádné složité formátování, díky jednoduchému editor CV." />
+    <meta name="twitter:image" content="images/img/home/editor.png" /> --}}
 
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('images/favicon/apple-touch-icon.png') }}">
     <link rel="icon" type="image/png" sizes="96x96" href="{{ asset('images/favicon/favicon-32x32.png') }}">

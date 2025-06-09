@@ -7,7 +7,6 @@ use Illuminate\Http\Request;
 use Razorpay\Api\Api;
 use App\Models\Order;
 use Illuminate\Support\Facades\Log;
-use Illuminate\Support\Facades\Mail;
 use App\Jobs\SendPaymentEmail;
 
 class PaymentController extends Controller

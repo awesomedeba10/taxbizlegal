@@ -12,12 +12,22 @@
         "laravel-vite-plugin": "^1.2.0",
         "postcss": "^8.4.47",
         "rollup-plugin-visualizer": "^5.14.0",
+        "sass": "^1.89.1",
         "tailwindcss": "^3.4.13",
         "vite": "^6.0.11"
     },
     "dependencies": {
+        "@popperjs/core": "^2.11.8",
+        "@simonwep/pickr": "^1.9.1",
+        "apexcharts": "^3.42.0",
+        "bootstrap": "^5.3.6",
+        "chart.js": "^3.9.1",
+        "choices.js": "^11.1.0",
+        "flatpickr": "^4.6.13",
         "jquery": "^3.7.1",
+        "node-waves": "^0.7.6",
         "scrollreveal": "^4.0.9",
+        "simplebar": "^6.3.1",
         "swiper": "^11.2.6"
     }
 }

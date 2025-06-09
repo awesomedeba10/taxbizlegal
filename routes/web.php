@@ -6,7 +6,9 @@ use App\Http\Controllers\PageController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\MaintenanceController;
 use App\Http\Controllers\PaymentController;
-use App\Models\Service;
+
+use App\Http\Controllers\Admin\Auth\LoginController as AdminLoginController;
+use App\Http\Controllers\Admin\DashboardController;
 
 Route::group(['as' => 'front.'], function () {
 
@@ -29,6 +31,16 @@ Route::group(['as' => 'front.'], function () {
     Route::post('/orders/create', [PaymentController::class, 'create'])->name('payment.create');
     Route::post('/orders/verify', [PaymentController::class, 'verify'])->name('payment.verify');
     Route::get('/orders/success', [PaymentController::class, 'success'])->name('payment.success');
+});
+
+Route::group(['as' => 'admin.', 'prefix' => config('app.admin_url_prefix')], function () {
+    Route::get('login', [AdminLoginController::class, 'show'])->name('login');
+    Route::post('login', [AdminLoginController::class, 'login'])->name('login.submit');
+    Route::post('logout', [AdminLoginController::class, 'logout'])->name('logout');
+
+    Route::middleware(['auth:admin'])->group(function () {
+        Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+    });
 });
 
 Route::get('coming-soon', [MaintenanceController::class, 'up'])->name('maintenance');

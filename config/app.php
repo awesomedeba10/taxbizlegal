@@ -53,6 +53,7 @@ return [
     */
 
     'url' => env('APP_URL', 'http://localhost'),
+    'admin_url_prefix' => env('APP_CRM_PREFIX', '/'),
 
     /*
     |--------------------------------------------------------------------------
