@@ -10,6 +10,7 @@
     <meta name="Description" content="Bootstrap Blazor Server Responsive Admin Web Dashboard HTML5 Template">
     <meta name="Author" content="iamawesome! again">
     <meta name="keywords" content="who,cares">
+    <meta name="robots" content="noindex, nofollow">
     <!-- Favicon -->
     <link rel="icon" href="https://spruko.com/demo/ynex/blazor/dist/assets/images/brand-logos/favicon.ico"
         type="image/x-icon">
