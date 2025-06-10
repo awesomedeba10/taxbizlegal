@@ -31,6 +31,7 @@ Route::group(['as' => 'front.'], function () {
     Route::post('/orders/create', [PaymentController::class, 'create'])->name('payment.create');
     Route::post('/orders/verify', [PaymentController::class, 'verify'])->name('payment.verify');
     Route::get('/orders/success', [PaymentController::class, 'success'])->name('payment.success');
+    Route::post('/orders/gstin/capture', [PaymentController::class, 'gstin'])->name('gstin.capture');
 });
 
 Route::group(['as' => 'admin.', 'prefix' => config('app.admin_url_prefix')], function () {

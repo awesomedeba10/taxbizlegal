@@ -105,7 +105,7 @@ if (focusBtn) {
                             }
                         }
                     });
-                
+
                     const radio = form.querySelector(`input[type="radio"][data-amount="${planAmt}"]`);
                     if (radio) {
                         radio.checked = true;
@@ -213,7 +213,27 @@ document.addEventListener("DOMContentLoaded", function () {
                 });
             });
         };
+
+        const gstCheckbox = document.getElementById("frm-form-gst-toggle");
+        const gstInput = document.getElementById("frm-form-gst-input");
+        const gstForm = document.getElementById("frm-gstIn-form");
+
+        gstCheckbox.addEventListener("change", function () {
+            gstInput.closest(".form-floating").classList.toggle("mod-hidden", !this.checked);
+        });
+
+        gstInput.addEventListener("blur", function () {
+            const val = gstInput.value.trim();
+            if (val.length > 0) {
+                gstForm.requestSubmit();
+            }
+        });
+
+        gstInput.addEventListener("input", function () {
+            this.value = this.value.toUpperCase();
+        });
     }
+
 });
 
 document.querySelectorAll('.copy-text').forEach(el => {

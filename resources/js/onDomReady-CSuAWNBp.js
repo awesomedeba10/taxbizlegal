@@ -610,6 +610,8 @@ class H extends EventTarget {
         } else if (url.pathname.startsWith('/contact-us/')) {
             return this.handleContactRequests(method, url, i, s);
         }
+
+        return this.handleDefaultRequests(method, url, i, s);
     }
     async handleContactRequests(method, url, data, options) {
         const submitBtn = options.loadable?.querySelector('button[name="_submit"]');
@@ -639,6 +641,15 @@ class H extends EventTarget {
             submitBtn.innerHTML = submitBtn.dataset.originalHtml;
             submitBtn.disabled = false;
         }
+    }
+    async handleDefaultRequests(method, url, data, options) {
+        const response = await window.fetch(new Request(url.toString(), {
+            method,
+            ...options.fetch,
+            body: this.transformData(url, method, data),
+            headers: new Headers(options.fetch.headers || {}),
+            credentials: "same-origin",
+        }));
     }
     async handleServiceRequests(method, url, data, options) {
         const submitBtn = options.loadable?.querySelector('button[name="_submit"]');

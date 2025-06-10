@@ -23,6 +23,7 @@ return new class extends Migration
             $table->decimal('service_price', 10, 2)->nullable();
             $table->string('current_stage')->default('basic_details_submitted'); // optional default
             $table->string('rzp_order_id')->nullable();
+            $table->string('cus_gst_no')->nullable();
             $table->timestamp('rzp_order_created_at')->nullable();
             $table->string('rzp_payment_id')->nullable();
             $table->decimal('rzp_paid_amt', 10, 2)->nullable();

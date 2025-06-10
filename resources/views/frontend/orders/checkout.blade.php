@@ -222,7 +222,28 @@
                             </svg>
                         </a>
                         <p class="small-secure-txt mod-my-1">* Secure and encrypted</p>
-                        <div class="checkout-method-wrapper mod-text-center mod-mt-3">
+                        <form method="post" action="{{ route('front.gstin.capture', ['orderid' => base64_encode($order->order_id)]) }}" id="frm-gstIn-form" class="ajax" novalidate="">
+                            @csrf
+                            <div class="form-floating @if(is_null($order->cus_gst_no)) mod-hidden @endif">
+                                <input type="text" name="gst" maxlength="128" placeholder=""
+                                    class="form-control text" id="frm-form-gst-input"
+                                    value="{{ $order->cus_gst_no }}" data-nette-rules='[
+                                    {"op":":pattern", "arg":"^[0-9]{2}[A-Z]{5}[0-9]{4}[A-Z]{1}[1-9A-Z]{1}Z[0-9A-Z]{1}$", "msg":"Enter a valid GSTIN (e.g., 27ABCDE1234F1Z5)."}
+                                ]'>
+                                <label for="frm-form-gst-input">
+                                    Enter GSTIN
+                                </label>
+                            </div>
+                        </form>
+                        <label class="form-check mod-mt-2">
+                            <input type="checkbox" class="form-check-input" id="frm-form-gst-toggle" @if(isset($order->cus_gst_no)) checked @endif>
+                            <span class="form-check-label">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Enter GSTIN to get 18% GST Credit</font>
+                                </font>
+                            </span>
+                        </label>
+                        <div class="checkout-method-wrapper mod-text-center mod-mt-4">
                             <p class="mod-mb-0 mod-pt-1">🔒 <span class="safe-text">Secure</span> Checkout Guaranteed</p>
                             <div
                                 class="mb-0 mod-py-2 mod-px-1 mod-flex sm:mod-gap-2 mod-justify-center mod-flex-row align-items-center mod-w-full">

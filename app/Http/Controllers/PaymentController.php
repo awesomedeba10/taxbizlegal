@@ -122,59 +122,23 @@ class PaymentController extends Controller
         ]);
     }
 
-    // public function handle(Request $request)
-    // {
-    //     $input = $request->all();
+    public function gstin(Request $request) {
+        if (!$request->query('orderid')):
+            abort(404);
+        endif;
 
+        $referrerQuery = parse_url($request->headers->get('referer'), PHP_URL_QUERY);
+        parse_str($referrerQuery, $referrerParams);
+        $referrerOrderId = $referrerParams['orderid'] ?? null;
 
+        if (!$referrerOrderId || $referrerOrderId !== $request->orderid):
+            abort(403, 'Invalid or expired link.');
+        endif;
 
-    //     $api = new Api(env('RAZORPAY_KEY'), env('RAZORPAY_SECRET'));
+        Order::captureGst($request);
 
-
-
-    //     $payment = $api->payment->fetch($input['razorpay_payment_id']);
-
-
-
-    //     if (count($input)  && !empty($input['razorpay_payment_id'])) {
-
-    //         try {
-
-    //             $response = $api->payment->fetch($input['razorpay_payment_id'])->capture(array('amount' => $payment['amount']));
-    //         } catch (Exception $e) {
-
-    //             return  $e->getMessage();
-
-    //             Session::put('error', $e->getMessage());
-
-    //             return redirect()->back();
-    //         }
-    //     }
-
-
-
-    //     Session::put('success', 'Payment successful');
-
-    //     return redirect()->back();
-    // }
-
-    // public function verify(Request $request)
-    // {
-    //     $input = $request->all();
-    //     $api = new Api(env('RAZOR_KEY'), env('RAZOR_SECRET'));
-    //     $payment = $api->payment->fetch($input['razorpay_payment_id']);
-
-    //     if (count($input)  && !empty($input['razorpay_payment_id'])) {
-    //         try {
-    //             $response = $api->payment->fetch($input['razorpay_payment_id'])->capture(array('amount' => $payment['amount']));
-    //         } catch (\Exception $e) {
-    //             return  $e->getMessage();
-    //             Session::put('error', $e->getMessage());
-    //             return redirect()->back();
-    //         }
-    //     }
-
-    //     Session::put('success', 'Payment successful, your order will be despatched in the next 48 hours.');
-    //     return redirect()->back();
-    // }
+        return response()->json([
+            'message' => 'Success'
+        ], 200);
+    }
 }

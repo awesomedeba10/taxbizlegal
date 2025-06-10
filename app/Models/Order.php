@@ -14,6 +14,7 @@ class Order extends Model
         'cus_email',
         'cus_phone',
         'cus_state',
+        'cus_gst_no',
         'service_name',
         'service_plan_name',
         'service_price',
@@ -89,5 +90,16 @@ class Order extends Model
 
     public static function getLatestLeads(int $minutes = 60) {
         return self::where('created_at', '>=', Carbon::now()->subMinutes($minutes))->get();
+    }
+
+    public static function captureGst($request) {
+        $order = self::where('order_id', base64_decode($request->orderid))->first();
+
+        if (!$order):
+            return null;
+        endif;
+
+        $order->cus_gst_no = $request->gst;
+        $order->save();
     }
 }
