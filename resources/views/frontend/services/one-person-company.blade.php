@@ -405,7 +405,7 @@
                 </div>
             </div>
             <div>
-                <a class="btn-custom-medium" href="javascript:void(0)" target="_self" id="focus-first-input-btn">
+                <a class="btn-custom-medium" href="javascript:void(0)" target="_self" data-id="focus-first-input-btn">
                     <span class="btn-text btn-text--back">Get Help with Compliance</span>
                     <span class="btn-icon btn-custom-w btn-icon--blue">
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"

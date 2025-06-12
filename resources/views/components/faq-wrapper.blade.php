@@ -18,11 +18,7 @@
         <div id="faqList-{{ $slug }}-item{{ $loop->iteration }}" class="accordion-collapse collapse"
             data-bs-parent="#faqList-{{ $slug }}">
             <div class="accordion-body content">
-            @if(Str::startsWith(trim($faq['answer']), '<'))
-                {!! $faq['answer'] !!}
-            @else
-                <p>{{ $faq['answer'] }}</p>
-            @endif
+            {!! $faq['answer'] !!}
             </div>
         </div>
     </div>

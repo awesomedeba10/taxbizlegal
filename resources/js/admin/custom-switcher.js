@@ -11,18 +11,14 @@ let mainContent;
     setTimeout(() => {
         checkOptions();
     }, 1000);
-    /* LTR to RTL */
-    // html.setAttribute("dir" , "rtl") // for rtl version
 
 })();
 
 function switcherClick() {
-    let ltrBtn, rtlBtn, verticalBtn, horiBtn, lightBtn, darkBtn, boxedBtn, fullwidthBtn, scrollHeaderBtn, scrollMenuBtn, fixedHeaderBtn, fixedMenuBtn, lightHeaderBtn, darkHeaderBtn, colorHeaderBtn, gradientHeaderBtn, lightMenuBtn, darkMenuBtn, colorMenuBtn, gradientMenuBtn, transparentMenuBtn, transparentHeaderBtn, regular, classic, modern, defaultBtn, closedBtn, iconTextBtn, detachedBtn, overlayBtn, doubleBtn, menuClickBtn, menuHoverBtn, iconClickBtn, iconHoverBtn, primaryDefaultColor1Btn, primaryDefaultColor2Btn, primaryDefaultColor3Btn, primaryDefaultColor4Btn, primaryDefaultColor5Btn, bgDefaultColor1Btn, bgDefaultColor2Btn, bgDefaultColor3Btn, bgDefaultColor4Btn, bgDefaultColor5Btn, bgImage1Btn, bgImage2Btn, bgImage3Btn, bgImage4Btn, bgImage5Btn, ResetAll, resetBtn;
+    let verticalBtn, horiBtn, lightBtn, darkBtn, boxedBtn, fullwidthBtn, scrollHeaderBtn, scrollMenuBtn, fixedHeaderBtn, fixedMenuBtn, lightHeaderBtn, darkHeaderBtn, colorHeaderBtn, gradientHeaderBtn, lightMenuBtn, darkMenuBtn, colorMenuBtn, gradientMenuBtn, transparentMenuBtn, transparentHeaderBtn, regular, classic, modern, defaultBtn, closedBtn, iconTextBtn, detachedBtn, overlayBtn, doubleBtn, menuClickBtn, menuHoverBtn, iconClickBtn, iconHoverBtn, primaryDefaultColor1Btn, primaryDefaultColor2Btn, primaryDefaultColor3Btn, primaryDefaultColor4Btn, primaryDefaultColor5Btn, bgDefaultColor1Btn, bgDefaultColor2Btn, bgDefaultColor3Btn, bgDefaultColor4Btn, bgDefaultColor5Btn, bgImage1Btn, bgImage2Btn, bgImage3Btn, bgImage4Btn, bgImage5Btn, ResetAll, resetBtn;
     let html = document.querySelector('html');
     lightBtn = document.querySelector('#switcher-light-theme');
     darkBtn = document.querySelector('#switcher-dark-theme');
-    ltrBtn = document.querySelector('#switcher-ltr');
-    rtlBtn = document.querySelector('#switcher-rtl');
     verticalBtn = document.querySelector('#switcher-vertical');
     horiBtn = document.querySelector('#switcher-horizontal');
     boxedBtn = document.querySelector('#switcher-boxed');
@@ -548,34 +544,6 @@ function switcherClick() {
     });
     /* horizontal end*/
 
-    /* rtl start */
-    let rtlVar = rtlBtn.addEventListener('click', () => {
-        localStorage.setItem("ynexrtl", true);
-        localStorage.removeItem("ynexltr");
-        rtlFn();
-        if (document.querySelector(".noUi-target")) {
-            console.log("working");
-            document.querySelectorAll(".noUi-origin").forEach((e) => {
-              e.classList.add("transform-none");
-            });
-        }
-    });
-    /* rtl end */
-
-    /* ltr start */
-    let ltrVar = ltrBtn.addEventListener('click', () => {
-        //    local storage
-        localStorage.setItem("ynexltr", true);
-        localStorage.removeItem("ynexrtl");
-        ltrFn();
-        if (document.querySelector(".noUi-target")) {
-            document.querySelectorAll(".noUi-origin").forEach((e) => {
-              e.classList.remove("transform-none");
-            });
-          }
-    });
-    /* ltr end */
-
     // reset all start
     let resetVar = ResetAll.addEventListener('click', () => {
         ResetAllFn();
@@ -592,23 +560,6 @@ function switcherClick() {
         });
     })
     // reset all end
-}
-
-function ltrFn() {
-    let html = document.querySelector('html')
-    if(!document.querySelector("#style").href.includes('bootstrap.min.css')){
-        document.querySelector("#style")?.setAttribute("href", "../assets/libs/bootstrap/css/bootstrap.min.css");
-    }
-    html.setAttribute("dir", "ltr");
-    document.querySelector('#switcher-ltr').checked = true;
-    checkOptions();
-}
-
-function rtlFn() {
-    let html = document.querySelector('html');
-    html.setAttribute("dir", "rtl");
-    document.querySelector("#style")?.setAttribute("href", "../assets/libs/bootstrap/css/bootstrap.rtl.min.css");
-    checkOptions();
 }
 
 function lightFn() {
@@ -751,9 +702,6 @@ function ResetAllFn() {
     html.style.removeProperty(`--primary-rgb`);
     html.style.removeProperty(`--body-bg-rgb`);
 
-    // reseting to ltr
-    ltrFn();
-
     // reseting to vertical
     verticalFn();
     mainContent.removeEventListener('click', clearNavDropdown);
@@ -821,14 +769,6 @@ function checkOptions() {
     }
     else {
         document.querySelector('#switcher-vertical').checked = true;
-    }
-
-    //RTL
-    if (localStorage.getItem('ynexrtl')) {
-        document.querySelector('#switcher-rtl').checked = true;
-    }
-    else {
-        document.querySelector('#switcher-ltr').checked = true;
     }
 
     // light header
@@ -959,101 +899,17 @@ function checkOptions() {
 
 // chart colors
 let myVarVal,primaryRGB
-// function updateColors() {
-//     'use strict'
-//     primaryRGB = getComputedStyle(document.documentElement).getPropertyValue('--primary-rgb').trim();
+function updateColors() {
+    'use strict'
+    primaryRGB = getComputedStyle(document.documentElement).getPropertyValue('--primary-rgb').trim();
 
-//     //get variable
-//     myVarVal = localStorage.getItem("primaryRGB") || primaryRGB;
-//     if (document.querySelector("#salesOverview") !== null) {
-//         salesOverview();
-//     }
-//     if (document.querySelector("#sale-value") !== null) {
-//         saleValue();
-//     }
-//     if (document.querySelector("#earnings") !== null) {
-//         Earnings();
-//     }
-//     if (document.querySelector("#total-visitors") !== null) {
-//         visitors();
-//     }
-//     if (document.querySelector("#crypto") !== null) {
-//         cryptoCurrency();
-//     }
-//     if (document.querySelector("#subscriptionOverview") !== null) {
-//         subOverview();
-//     }
-//     if (document.querySelector("#candidates-chart") !== null) {
-//         Candidates();
-//     }
-//     if (document.querySelector("#nft-balance-chart") !== null) {
-//         nftBalane();
-//     }
-//     if (document.querySelector("#nft-statistics") !== null) {
-//         nftStatistics();
-//     }
-//     if (document.querySelector("#report") !== null) {
-//         targetReport();
-//     }
-//     if (document.querySelector("#views") !== null) {
-//         pageviews();
-//     }
-//     if (document.querySelector("#sessions") !== null) {
-//         Sessions();
-//     }
-//     if (document.querySelector("#analytics-bouncerate") !== null) {
-//         bounceRate();
-//     }
-//     if (document.querySelector("#audienceReport") !== null) {
-//         audienceReport();
-//     }
-//     if (document.querySelector("#country-sessions") !== null) {
-//         countrySessions();
-//     }
-//     if (document.querySelector("#session-users") !== null) {
-//         userSession();
-//     }
-//     if (document.querySelector("#projectAnalysis") !== null) {
-//         projectAnalysis();
-//     }
-//     if (document.querySelector("#crm-total-customers") !== null) {
-//         crmtotalCustomers();
-//     }
-//     if (document.querySelector("#crm-revenue-analytics") !== null) {
-//         revenueAnalytics();
-//     }
-//     if (document.querySelector("#crm-profits-earned") !== null) {
-//         crmProfitsearned();
-//     }
-//     if (document.querySelector("#leads-source") !== null) {
-//         leads(myVarVal);
-//     }
-//     if (document.querySelector("#performanceReport") !== null) {
-//         hrmperformanceReport();
-//     }
-//     if (document.querySelector("#jobs-summary") !== null) {
-//         JobsSummary();
-//     }
-//     if (document.querySelector("#total-invested") !== null) {
-//         stockstotalInvested();
-//     }
-//     if (document.querySelector("#totalInvestmentsStats") !== null) {
-//         totalInvestmentsStats();
-//     }
-//     if (document.querySelector("#stocks-marketcap") !== null) {
-//         stocksMarketcap();
-//     }
-//     if (document.querySelector("#courses-earnings") !== null) {
-//         earningsReport();
-//     }
-//     if (document.querySelector("#course-payouts") !== null) {
-//         coursePayouts();
-//     }
-//     if (document.querySelector("#waterTrack") !== null) {
-//         waterTrack();
-//     }
-// }
-// updateColors()
+    //get variable
+    myVarVal = localStorage.getItem("primaryRGB") || primaryRGB;
+
+    // if (document.querySelector("#waterTrack") !== null) {
+    //     waterTrack();
+    // }
+}
 
 function localStorageBackup2(){
     if (localStorage.bodyBgRGB || localStorage.bodylightRGB){

@@ -628,5 +628,36 @@ return [
             "question" => "Can a return be filed without paying taxes?",
             "answer" => "No, returns must be filed with payment. Exceptions apply for <strong>NIL returns</strong> or when sufficient <strong>Input Tax Credit (ITC)</strong> is available."
         ]
+    ],
+    "annual-compliance-for-llp" => [
+        [
+            "question" => "Is annual filing mandatory for all LLPs?",
+            "answer" => "Yes, annual filing is mandatory for all LLPs, even if there is no business activity during the financial year."
+        ],
+        [
+            "question" => "Can Form 11 be filed without filing Form 8?",
+            "answer" => "Yes. Form 11 is an annual return related to partner and capital details and must be filed by <strong>30th May</strong>. Form 8 is filed later."
+        ],
+        [
+            "question" => "Is audit mandatory for LLPs?",
+            "answer" => "Audit is required only if the LLP’s annual turnover exceeds ₹40 lakh or the total partner contribution exceeds ₹25 lakh."
+        ],
+        [
+            "question" => "Can LLPs file returns manually?",
+            "answer" => "No. All LLP filings must be submitted electronically via the <a href=\"https://www.mca.gov.in\" target=\"_blank\">MCA Portal</a> using digital signatures."
+        ],
+        [
+            "question" => "What happens if an LLP fails to file Form 11 or Form 8 on time?",
+            "answer" => "A penalty of ₹100 per day is levied for each delayed filing, with <strong>no maximum cap</strong>, leading to substantial fines if not addressed promptly."
+        ],
+        [
+            "question" => "Do LLPs need to file MGT-7 or AOC-4 like companies?",
+            "answer" => "No. LLPs have separate simplified compliance forms — <strong>Form 11</strong> for Annual Return and <strong>Form 8</strong> for Statement of Account & Solvency."
+        ],
+        [
+            "question" => "Who is responsible for LLP compliance?",
+            "answer" => "The <strong>Designated Partners (DPs)</strong> are legally responsible for ensuring that all annual filings are completed accurately and on time."
+        ]
     ]
+
 ];

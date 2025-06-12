@@ -3,24 +3,22 @@
         class="mod-items-center mod-px-24 mod-grid-12 mod-w-full sm:mod-gap-10 sm:mod-flex sm:mod-flex-col
     sm:mod-px-10 md:mod-px-12 md:mod-items-start ">
         <div class="section-heading">
-            <p class="h5 text-primary mb-2">Get Legal Documents Drafted Professionally!</p>
+            <p class="h5 text-primary mb-2">Stay Compliant. Stay Ahead.</p>
             <h1 class="section-title mod-font-bold mod-leading-semi-loose mod-space-light-semi mod-mb-8" data-fade="up">
-                Expert <span class="text-blue">Legal Drafting Services</span> for Your Business & Personal Needs</h1>
+                Annual Compliance for Your <span class="text-blue">LLP Company</span> Made Easy</h1>
             <div class="mod-flex mod-flex-col mod-gap-10">
                 <div class="text mod-font-medium mod-leading-loose" data-fade="up">
                     <ul class="mod-ml-0 mod-mb-1 mod-pl-1 mod-list-none mod-flex mod-flex-col mod-gap-2 mod-text-base">
-                        <li>👉 Drafting Services for Agreements, MoUs, Contracts & Affidavits</li>
-                        <li>👉 100% Legally Vetted Documents Prepared by Legal Experts</li>
-                        <li>👉 Fast Turnaround with Transparent, Affordable Pricing</li>
+                        <li>👉 MCA Filings (Form 8 & Form 11) by Experts</li>
+                        <li>👉 Dedicated CA & CS Support for Error-Free Compliance</li>
+                        <li>👉 Avoid Penalties with Timely Filing and Updates</li>
                     </ul>
                 </div>
-                <p class="mb-0 mod-leading-light-loose">Whether you're starting a business or managing legal
-                    requirements,
-                    our legal drafting services cover all your needs — from shareholder agreements to NDAs, employment
-                    contracts,
-                    partnership deeds, and beyond. Ensure your documents are compliant, enforceable, and professionally
-                    prepared.
-                    Let our experts take care of the legal writing, so you focus on what matters.</p>
+                <p class="mb-0 mod-leading-light-loose">
+                    Ensure your LLP stays compliant with all annual legal requirements. From preparing Statement of
+                    Accounts to filing Annual Return with the Registrar, our expert team handles it all with precision.
+                    Avoid late fees and government notices—stay ahead with our reliable LLP compliance services.
+                </p>
             </div>
         </div>
         <div class="section-content mod-pr-12 md:mod-pr-0 sm:mod-pr-0">
@@ -28,7 +26,7 @@
                 <div class="col-md-12">
                     <h1 class="h2 mb-lg-20">
                         <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;">Request Your Legal Document Drafting Now</font>
+                            <font style="vertical-align: inherit;">Get Your LLP Annual Compliance Sorted Today</font>
                         </font>
                     </h1>
                     <x-user-form></x-user-form>
@@ -36,6 +34,7 @@
             </div>
         </div>
     </div>
+
 </section>
 
 <section
@@ -45,7 +44,8 @@
         <div
             class="mod-flex services-nav-container mod-items-center mod-justify-between mod-cursor-pointer mod-rounded-lg mod-border-sm mod-overflow-hidden mod-text-s-14 mod-font-medium">
             <div class="mod-whitespace-nowrap mod-py-4 mod-sticky mod-left-0 mod-pl-6">
-                <span class="services-nav-title mod-pl-6 mod-pr-3 mod-border-r-sm mod-contents">PVT LTD COMPANY</span>
+                <span class="services-nav-title mod-pl-6 mod-pr-3 mod-border-r-sm mod-contents">ANNUAL COMPLIANCES
+                    LLP</span>
             </div>
             <ul class="services-nav-ul mod-flex mod-items-center mod-my-0 mod-justify-center mod-list-none">
                 <li data-target="pricing"
@@ -91,16 +91,21 @@
         <h4 class="mod-text-s-14 text-blue mod-leading-semi-loose mod-space-semi mod-uppercase mod-m-0">Transparent
             Pricing, No Hidden Charges</h4>
         <div>
-            <h1 class="mod-text-s-32 mod-nav-text mod-font-semibold mod-word-break-normal mod-text-center mod-leading-loose">
-                <span>Choose the Right Plan</span>
+            <h1
+                class="mod-text-s-32 mod-nav-text mod-font-semibold mod-word-break-normal mod-text-center mod-leading-loose">
+                <span>Pick a Plan</span>
                 <div class="mod-text-s-44">
-                    For your <span class="text-blue">Legal Drafting Needs</span>
+                    For Your <span class="text-blue">LLP Company</span>
                 </div>
             </h1>
             <p class="mod-nav-text mod-mt-2 mod-leading-loose mod-text-center">
-                Get your legal documents drafted professionally with our customized pricing plans. Start your legal journey with confidence today!
+                Clear and affordable pricing for all your LLP annual compliance needs. Whether you're a small
+                professional firm or an expanding business,
+                our expert-driven plans cover every MCA requirement — ensuring you stay fully compliant, avoid
+                penalties, and focus on your growth.
             </p>
         </div>
+
     </div>
 
     <div class="pricing-wrapper mod-relative">
@@ -157,13 +162,30 @@
     <div class="row justify-content-between">
         <div class="col-12 col-md-6 col-xxl-5 sm:mod-order-2">
             <div class="mod-py-8">
-                <h1 class="mod-text-s-24">All you need to know about Legal Drafting Services</h1>
-                <p>Legal drafting refers to the structured and precise preparation of legally enforceable documents such as deeds, contracts, agreements, affidavits, declarations, and more. These documents are crucial in defining the legal rights, duties, obligations, and remedies of the parties involved. Professionally drafted legal documents minimize ambiguity, protect interests, and help avoid future disputes. From business contracts to property deeds and legal notices, each document must be well-articulated and compliant with applicable law to hold weight in court and protect all parties involved.</p>
-
-                <p>Drafting must adhere to proper language, structure, legal standards, and formatting to be valid and effective. A well-drafted document ensures enforceability and reduces the risk of misinterpretation. Legal drafting plays a key role in various personal and business situations — from starting a company and executing employment contracts to resolving family matters or entering into commercial deals. Every document is governed by specific laws like the Indian Contract Act, Companies Act, or relevant state legislation, depending on the nature of the transaction or agreement.</p>
-
-                <p>Our expert team at Taxbizlegal.com specializes in accurate and compliant legal drafting services tailored to your needs. Whether you require NDAs, partnership deeds, rent agreements, terms of service, or affidavits, we ensure every clause is clear, valid, and legally sound. We also assist with Company Incorporation, GST Registration, Income Tax Filings, and other business legalities. Get in touch for a quick consultation at info@taxbizlegal.com or speak with our legal specialist directly at <a href="tel:91{{ config('app.site_info.support_phone') }}">{{ config('app.site_info.support_phone') }}</a> to get started with your drafting needs.</p>
+                <h1 class="mod-text-s-24">Everything You Should Know About Annual Compliance for LLPs (Limited Liability
+                    Partnerships) under MCA</h1>
+                <p>
+                    A Limited Liability Partnership (LLP) registered under the LLP Act, 2008 is required to comply with
+                    specific annual filing requirements with the Ministry of Corporate Affairs (MCA). These filings are
+                    mandatory, even if the LLP has not carried out any business during the financial year. Proper
+                    compliance ensures the LLP’s active legal status and avoids penalties levied for delays or defaults.
+                </p>
+                <p>
+                    LLPs must file two key forms annually with the MCA — Form 11 (Annual Return) and Form 8 (Statement
+                    of Account & Solvency). Additionally, LLPs are required to file their Income Tax Return (ITR) and
+                    undergo audits if turnover or capital contributions exceed prescribed limits. These requirements
+                    apply to all LLPs, regardless of their size, nature of business, or revenue status.
+                </p>
+                <p>
+                    Taxbizlegal.com offers end-to-end assistance for LLP Annual Compliance, including ROC filings, ITR
+                    submissions, and audit facilitation. Our legal and financial experts ensure timely and accurate
+                    filings, saving you from late fees and compliance stress. We also provide support for LLP
+                    Incorporation, GST Registration, and Company Annual Filings. Get in touch at info@taxbizlegal.com or
+                    call our compliance desk at <a
+                        href="tel:91{{ config('app.site_info.support_phone') }}">{{ config('app.site_info.support_phone') }}</a>.
+                </p>
             </div>
+
         </div>
         <div class="col-12 col-md-6 sm:mod-order-1 mod-pl-16 md:mod-pl-0 sm:mod-pl-0">
             <img decoding="async" width="1024" height="681"
@@ -178,7 +200,7 @@
         <div class="section-heading">
             <h2 class="section-title mod-text-s-28 mod-font-bold mod-leading-semi-loose mod-space-light-semi"
                 data-fade="up">
-                Advantages of Professional Legal Drafting
+                Advantages of Annual Compliance
             </h2>
         </div>
         <div class="section-content mod-grid-4">
@@ -200,8 +222,9 @@
                     </svg>
                 </div>
                 <div class="item-content">
-                    <h3 class="item-title">Legal Validity</h3>
-                    <p class="item-text">Professionally drafted documents comply with Indian legal standards, ensuring they are recognized and enforceable by courts and government authorities.</p>
+                    <h3 class="item-title">Maintains Active Legal Status</h3>
+                    <p class="item-text">Filing your annual returns on time keeps your LLP compliant and prevents it
+                        from being marked as “defaulting” or “inactive” in MCA records.</p>
                 </div>
             </div>
             <div class="mod-flex mod-flex-col mod-gap-4 xl:mod-pr-20 lg:mod-pr-8 sm:mod-pr-4 sm:mod-flex-row"
@@ -215,8 +238,9 @@
                     </svg>
                 </div>
                 <div class="item-content">
-                    <h3 class="item-title">Clarity & Precision</h3>
-                    <p class="item-text">Clear language and precise terms reduce misinterpretations, making the document easier to understand and enforce by all parties involved.</p>
+                    <h3 class="item-title">Avoids Penalties</h3>
+                    <p class="item-text">Stay ahead of legal deadlines to avoid hefty penalties, additional late fees,
+                        and prosecution risks for designated partners of the LLP.</p>
                 </div>
             </div>
             <div class="mod-flex mod-flex-col mod-gap-4 xl:mod-pr-20 lg:mod-pr-8 sm:mod-pr-4 sm:mod-flex-row"
@@ -234,8 +258,9 @@
                     </svg>
                 </div>
                 <div class="item-content">
-                    <h3 class="item-title">Risk Mitigation</h3>
-                    <p class="item-text">Avoids future legal issues by identifying and addressing potential risks and disputes at the time of drafting itself.</p>
+                    <h3 class="item-title">Boosts Credibility</h3>
+                    <p class="item-text">Regular compliance builds a trustworthy image with clients, banks, and
+                        investors — a strong step toward long-term business stability.</p>
                 </div>
             </div>
             <div class="mod-flex mod-flex-col mod-gap-4 xl:mod-pr-20 lg:mod-pr-8 sm:mod-pr-4 sm:mod-flex-row"
@@ -250,43 +275,9 @@
                     </svg>
                 </div>
                 <div class="item-content">
-                    <h3 class="item-title">Customised Clauses</h3>
-                    <p class="item-text">Documents can be tailored to meet unique personal, commercial, or industry-specific requirements for better protection and efficiency.</p>
-                </div>
-            </div>
-            <div class="mod-flex mod-flex-col mod-gap-4 xl:mod-pr-20 lg:mod-pr-8 sm:mod-pr-4 sm:mod-flex-row"
-                data-fade="up"
-                style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1; visibility: inherit;">
-                <div class="item-icon">
-                    <?xml version="1.0" encoding="utf-8"?><svg version="1.1" id="Layer_1"
-                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        viewBox="0 0 122.88 68.04" style="enable-background:new 0 0 122.88 68.04"
-                        xml:space="preserve">
-                        <g>
-                            <path
-                                d="M2.03,56.52c-2.66,2.58-2.72,6.83-0.13,9.49c2.58,2.66,6.83,2.72,9.49,0.13l27.65-26.98l23.12,22.31 c2.67,2.57,6.92,2.49,9.49-0.18l37.77-38.22v19.27c0,3.72,3.01,6.73,6.73,6.73s6.73-3.01,6.73-6.73V6.71h-0.02 c0-1.74-0.67-3.47-2-4.78c-1.41-1.39-3.29-2.03-5.13-1.91H82.4c-3.72,0-6.73,3.01-6.73,6.73c0,3.72,3.01,6.73,6.73,6.73h17.63 L66.7,47.2L43.67,24.97c-2.6-2.5-6.73-2.51-9.33,0.03L2.03,56.52L2.03,56.52z" />
-                        </g>
-                    </svg>
-                </div>
-                <div class="item-content">
-                    <h3 class="item-title">Enforceability</h3>
-                    <p class="item-text">A well-structured document strengthens its legal force, increasing the chance of favorable outcomes in courts or legal forums.</p>
-                </div>
-            </div>
-            <div class="mod-flex mod-flex-col mod-gap-4 xl:mod-pr-20 lg:mod-pr-8 sm:mod-pr-4 sm:mod-flex-row"
-                data-fade="up"
-                style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1; visibility: inherit;">
-                <div class="item-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"
-                        text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd"
-                        clip-rule="evenodd" viewBox="0 0 469 511.98">
-                        <path
-                            d="M60.21 401.42c5.6 0 10.14 4.54 10.14 10.14 0 5.6-4.54 10.14-10.14 10.14-5.6 0-10.15-4.54-10.15-10.14 0-5.6 4.55-10.14 10.15-10.14zM242.87 216.1h4.21c3.83 0 6.95-3.12 6.95-6.95v-11.3c0-3.82-3.12-6.94-6.95-6.94h-25.16c-3.83 0-6.95 3.12-6.95 6.94v11.3c0 3.83 3.12 6.95 6.95 6.95h4.28l-2.04 18.06c6.19-2.68 12.83-4.63 20.02-5.95l-1.31-12.11zM92.16 257.65c.76-25.52 3.33-43.67 29.18-53.36 17.66-6.63 40.25-15.03 56.5-25.13l20.25 73.33c-1.41 1.46-2.8 3-4.16 4.61-20.15.31-37.41 6.66-54.41 17.1h-13.35c-9.07-9.78-21.1-14.86-34.01-16.55zM198.88 154.9c.77-6.5-18.47-31.27-21.98-43.15-7.53-12-10.2-31.01-1.99-43.69 3.28-5.02 1.86-9.44 1.86-16.36 0-68.92 120.76-68.95 120.76 0 0 8.72-2 10.79 2.73 17.65 7.92 11.45 3.83 31.75-2.83 42.4-4.28 12.49-24.48 36.07-23.07 43.15 1.19 35.39-75.7 34.2-75.48 0zm93.69 20.62c14.84 9.49 35.88 17.29 52.71 22.91 25.45 8.5 31.24 29.75 32.45 60.56-6.19.53-12.22 1.82-18.02 4.19-30.92-20.1-50.25-34.48-81.19-36.82l14.05-50.84zm62.77 137.42c0-1.92.12-3.75.36-5.47l-19.94-13.31c-2.88-1.92-6.01-4.12-9.16-6.32-11.34-7.95-23.02-16.13-35.6-19.44a98.312 98.312 0 0 0-22.68-3.13c-7-.13-14.15.53-20.86 2.27-4.01 1.03-7.88 2.48-11.48 4.37-3.19 1.69-6.17 3.76-8.82 6.23l-13.39 15.93a5.87 5.87 0 0 1-1.67 1.99l-36.93 43.95c.55 2.8 1.65 5.15 3.17 7.04 1.76 2.17 4.1 3.79 6.81 4.81 2.85 1.07 6.15 1.48 9.64 1.19 5.57-.46 11.51-2.74 16.86-6.98l10.26-8.48c2.6-2.14 4.75-4.12 6.9-6.08 4.73-4.33 9.47-8.65 14.44-11.61 11.51-6.87 22.95-7.09 34.28 11.91l58.06 104.72h19.74l.01-123.59zm4.68-16.76c.89-1.25 1.92-2.39 3.07-3.43 5.08-4.56 12.33-6.79 21.63-6.8v-.02l50.48.02c10.55-.04 19.15 1.89 25.1 6.46 6.61 5.1 9.72 12.87 8.4 23.99l-11.16 115.32c-.81 10.29-3.54 18.36-8.38 23.93-5.16 5.93-12.34 8.85-21.75 8.46l-45.39.01c-6.35.33-11.74-1.4-16.25-5-3.31-2.63-6.04-6.24-8.23-10.74h-15.69c2.11 6.18 2 12.05.32 17.26-1.74 5.36-5.13 9.93-9.44 13.35-4.22 3.35-9.38 5.64-14.76 6.53-5.27.86-10.78.39-15.9-1.74-5.95 6.22-12.22 10.15-18.77 11.95-6.56 1.8-13.21 1.44-19.94-.92-6.39 7.08-13.46 11.52-21.24 13.21-7.92 1.71-16.34.53-25.27-3.68-2.77 2.18-5.69 3.9-8.72 5.15a32.666 32.666 0 0 1-13.56 2.47c-11.31-.33-18.93-3.68-25-9.1-5.78-5.17-9.67-11.81-14.05-19.45l-25.03-43.64h-19.4c-1.08 5.46-2.97 10.12-5.75 13.84l-.27.39c-4.95 6.36-12.22 9.74-22.26 9.53l-42.32.01c-8.39 1.36-15.58-.7-21.21-7.22-4.98-5.77-8.39-15.12-9.84-28.88l-.06-.5L.63 318.58c-1.73-11.7.18-19.96 4.89-25.61 4.74-5.7 11.89-8.28 20.7-8.69l.72-.04h53.59v.02c8.47-.09 15.74 1.3 21.25 4.86v.02c4.44 2.87 7.62 6.92 9.27 12.42h36.46c9.16-6.18 17.74-11.04 27.24-13.99 9.31-2.9 19.31-3.93 31.24-2.5l12.48-14.84.46-.5c3.48-3.3 7.38-6.02 11.57-8.23 4.39-2.32 9.12-4.08 14.01-5.35 7.79-2.01 16-2.77 23.99-2.63 9.06.17 17.86 1.51 25.47 3.5h.02c14.55 3.82 27.13 12.63 39.33 21.18 2.93 2.05 5.83 4.08 8.97 6.18l17.73 11.8zm-259.58 12.95a6.11 6.11 0 0 1-.24-1.66c0-.16.01-.32.02-.47-.65-3.81-2.32-6.39-4.78-7.99-3.46-2.21-8.58-3.07-14.84-3h-.07v.03l-53.81-.01c-5.54.26-9.79 1.59-12.17 4.45-2.55 3.06-3.47 8.35-2.23 16.54l.06.53 8.77 108.65c1.18 11.23 3.6 18.45 7.03 22.43 2.71 3.14 6.41 4.03 10.85 3.22.36-.06.71-.09 1.06-.09l42.39-.02.63.03c5.93.11 10.05-1.67 12.64-5.01l.21-.25c2.87-3.89 4.28-9.9 4.5-17.6l-.02-119.78zm11.8 118.84h21.67c2.29 0 4.27 1.31 5.25 3.21l26.59 46.37c3.89 6.8 7.33 12.68 11.66 16.55 4.05 3.62 9.35 5.87 17.49 6.11 3.05.09 5.97-.45 8.76-1.6 1.7-.7 3.38-1.65 5.02-2.84l-17.33-32.42c-1.52-2.86-.44-6.43 2.42-7.95a5.879 5.879 0 0 1 7.96 2.42l18.83 35.23c7.01 3.57 13.36 4.68 19.08 3.44 5.22-1.13 10.15-4.27 14.78-9.33l-27.14-42.6c-1.74-2.73-.93-6.37 1.8-8.11 2.74-1.74 6.38-.94 8.12 1.8l28.6 44.9c5.01 2.03 9.83 2.5 14.42 1.24 4.38-1.21 8.77-4.01 13.15-8.55l-25.92-48.78a5.91 5.91 0 0 1 2.45-7.98 5.9 5.9 0 0 1 7.97 2.45l26.81 50.45c3.48 2.03 7.52 2.55 11.4 1.92 3.39-.56 6.65-2.01 9.32-4.13 2.58-2.05 4.58-4.7 5.56-7.73 1.08-3.32.97-7.23-.88-11.48-.39-.89-.54-1.82-.48-2.72a5.906 5.906 0 0 1-3.35-3.89l-58.83-106.13c-6.54-10.94-12.44-11.22-18.13-7.83-4.05 2.41-8.3 6.3-12.55 10.19-2.58 2.35-5.17 4.72-7.32 6.49l-10.43 8.6c-7.28 5.78-15.47 8.89-23.23 9.53-5.17.43-10.2-.23-14.72-1.93-4.67-1.75-8.76-4.59-11.87-8.45-3.35-4.16-5.54-9.43-6.06-15.7-.15-1.8.52-3.47 1.71-4.65l31.79-37.83c-6.76-.1-12.74.82-18.36 2.57-8.56 2.67-16.55 7.32-25.3 13.29-1 .79-2.27 1.26-3.65 1.26h-37.06v114.61zm294.94-26.55c5.6 0 10.15 4.54 10.15 10.14 0 5.6-4.55 10.14-10.15 10.14-5.6 0-10.14-4.54-10.14-10.14 0-5.6 4.54-10.14 10.14-10.14z" />
-                    </svg>
-                </div>
-                <div class="item-content">
-                    <h3 class="item-title">Evidentiary Value</h3>
-                    <p class="item-text">Well-drafted legal papers act as solid evidence in disputes, proving terms and intentions clearly in legal proceedings.</p>
+                    <h3 class="item-title">Ensures Transparency</h3>
+                    <p class="item-text">Accurate annual disclosures enhance the financial clarity and governance
+                        reputation of your LLP in the public domain.</p>
                 </div>
             </div>
         </div>
@@ -296,89 +287,145 @@
 <section class="container my-80 my-xxl-120" id="resources">
 
     <h1 class="display-6 mb-32 mod-font-semibold mod-text-s-24">
-        Explore the Core Features of Legal Document Drafting
+        Essential Features of Annual Filing for Pvt. Ltd. Company
     </h1>
     <div class="row gy-40 gx-lg-40">
         <div class="col-lg-4">
             <div class="d-flex flex-column gap-12 gap-lg-3 mx-auto">
-                <h2 class="mb-0">Comprehensive Coverage of <span class="text-primary mod-font-bold">Legal Documents</span></h2>
-                <p class="mb-0 text-lg mod-text-justify">Our drafting service includes agreements like Employment, NDA, Vendor, and Partnership, as well as critical deeds such as Sale, Lease, Mortgage, and Power of Attorney.</p>
-                <p class="mb-0 text-lg mod-text-justify">We also prepare affidavits, declarations, and legal notices for court, banking, business, and personal needs with complete legal clarity.</p>
+                <h2 class="mb-0">Mandatory for All, <span class="text-primary mod-font-bold">No Exceptions</span>
+                </h2>
+                <p class="mb-0 text-lg mod-text-justify">Annual compliance is mandatory for every LLP registered in
+                    India, regardless of its operational status. Even dormant or inactive LLPs must file their annual
+                    returns to remain legally active and avoid penalties.</p>
+                <p class="mb-0 text-lg mod-text-justify">Neglecting these filings can lead to fines and the LLP being
+                    marked as defaulting by the Ministry of Corporate Affairs (MCA).</p>
             </div>
         </div>
         <div class="col-lg-4">
             <div class="d-flex flex-column gap-12 gap-lg-3 mx-auto">
-                <h2 class="mb-0">Legally Compliant, <span class="text-primary mod-font-bold">Professionally Structured</span></h2>
-                <p class="mb-0 text-lg mod-text-justify">Every document is drafted in accordance with Indian laws like the Indian Contract Act, Transfer of Property Act, and the Indian Evidence Act for maximum validity.</p>
-                <p class="mb-0 text-lg mod-text-justify">Our legal team ensures that each draft aligns with judicial standards, improving enforceability and clarity.</p>
+                <h2 class="mb-0">100% Online, <span class="text-primary mod-font-bold">Fully Digital Process</span>
+                </h2>
+                <p class="mb-0 text-lg mod-text-justify">All LLP annual filings must be completed online through the
+                    MCA21 portal. The use of digital signatures and e-filing simplifies the compliance process and
+                    ensures better transparency.</p>
+                <p class="mb-0 text-lg mod-text-justify">This digital approach makes it easier for LLPs to stay
+                    compliant without physical paperwork or in-person visits.</p>
             </div>
         </div>
         <div class="col-lg-4">
             <div class="d-flex flex-column gap-12 gap-lg-3 mx-auto">
-                <h2 class="mb-0">Prepared for <span class="text-primary mod-font-bold">Official Execution</span></h2>
-                <p class="mb-0 text-lg mod-text-justify">Depending on the document, we guide you on necessary actions such as notarization, stamping, or registration with the relevant authorities.</p>
-                <p class="mb-0 text-lg mod-text-justify">This ensures your drafted documents are legally binding, admissible, and ready for formal use across jurisdictions.</p>
+                <h2 class="mb-0">Simplified Filing, <span class="text-primary mod-font-bold">Tax Separate</span>
+                </h2>
+                <p class="mb-0 text-lg mod-text-justify">LLP annual compliance requires fewer forms compared to
+                    companies, making the filing process less complex. Key ROC forms include Form 8 and Form 11, which
+                    focus on annual returns and financial summaries.</p>
+                <p class="mb-0 text-lg mod-text-justify">These filings are independent of Income Tax returns and must
+                    be filed separately to meet both ROC and tax compliance requirements.</p>
             </div>
         </div>
     </div>
 
 </section>
 
-<section class="container my-40" id="compliances">
-    <h1 class="display-6 mb-32 mod-font-semibold mod-text-s-28">Essential Compliance and Document Requirements Post-Drafting</h1>
 
-    <div class="mod-grid mod-mt-4 mod-gap-8 mod-grid-template-col-2 sm:mod-grid-template-col-1">
-        <div class="mod-pr-8 mod-flex mod-flex-col sm:mod-order-2">
-            <div class="mod-grid mod-items-start mod-my-6">
-                <h4>Common Legal Documents & Their Purpose</h4>
-                <p>Legal documents are essential to protect your interests in various personal, business, and property matters. Below is a list of common legal documents and their purposes.</p>
-                <div class="mod-grid-2 mod-gap-2">
-                    <span class="mod-items-center mod-py-2 mod-space-semi">Sale Deed: Transfer ownership of property or assets</span>
-                    <span class="mod-items-center mod-py-2 mod-space-semi">Lease Agreement: Define tenancy terms between landlord and tenant</span>
-                    <span class="mod-items-center mod-py-2 mod-space-semi">Affidavit: Sworn statement used in courts or government processes</span>
-                    <span class="mod-items-center mod-py-2 mod-space-semi">Service Agreement: Define deliverables, payment, and obligations of service providers</span>
-                    <span class="mod-items-center mod-py-2 mod-space-semi">Non-Disclosure Agreement (NDA): Protect confidential information</span>
-                    <span class="mod-items-center mod-py-2 mod-space-semi">Legal Notice: Intimate action before filing a case</span>
-                    <span class="mod-items-center mod-py-2 mod-space-semi">Partnership Agreement: Terms and roles in a business partnership</span>
-                    <span class="mod-items-center mod-py-2 mod-space-semi">Gift Deed: Voluntary transfer of property without consideration</span>
-                </div>
+<section class="container my-40" id="compliances">
+    <h1 class="display-6 mb-32 mod-font-semibold mod-text-s-28">Annual Compliance Calendar for LLPs (FY 2024–25)</h1>
+
+    <div class="mod-grid mod-mt-4 mod-gap-4 mod-grid-template-col-2 sm:mod-grid-template-col-1">
+        <div class="mod-pr-8 mod-flex mod-flex-col mod-contents sm:mod-order-2">
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
+                <h3 class="mod-mb-0">Annual Return (Form 11)</h3>
+                <p class="mod-ml-16 mod-mb-0 mod-text-right">To be filed by 30th May 2025 annually, this form provides
+                    details of LLP partners, contributions, and changes during the year.</p>
             </div>
-            <div>
-                <a class="btn-custom-medium" href="javascript:void(0)" target="_self" data-id="focus-first-input-btn">
-                    <span class="btn-text btn-text--back">Get Help with Compliance</span>
-                    <span class="btn-icon btn-custom-w btn-icon--blue">
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M3 4a1 1 0 0 1 0-2h11v11a1 1 0 1 1-2 0V5.414l-8.293 8.293a1 1 0 0 1-1.414-1.414L10.586 4H3Z"
-                                fill="white"></path>
-                        </svg>
-                        <span class="btn-text btn-text--front">Get Help with Compliance</span>
-                    </span>
-                </a>
+
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
+                <h3 class="mod-mb-0">Statement of Account & Solvency (Form 8)</h3>
+                <p class="mod-ml-16 mod-mb-0 mod-text-right">Must be filed by 30th October 2025 every year. It includes
+                    the LLP’s financial statements and a declaration of solvency by the designated partners.</p>
+            </div>
+
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
+                <h3 class="mod-mb-0">Income Tax Return (ITR-5)</h3>
+                <p class="mod-ml-16 mod-mb-0 mod-text-right">Due by 31st October 2025 if audit is applicable. LLPs must
+                    file ITR-5 annually; audit is mandatory if turnover exceeds ₹1 crore.</p>
+            </div>
+
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
+                <h3 class="mod-mb-0">Audit of Accounts (if applicable)</h3>
+                <p class="mod-ml-16 mod-mb-0 mod-text-right">Audit must be completed before 30th September 2025 if the
+                    LLP’s turnover exceeds ₹40 lakh or contribution exceeds ₹25 lakh.</p>
+            </div>
+
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
+                <h3 class="mod-mb-0">DIR-3 KYC / Web KYC</h3>
+                <p class="mod-ml-16 mod-mb-0 mod-text-right">To be submitted by 30th September 2025 by all designated
+                    partners holding a DPIN to update their KYC details with MCA.</p>
+            </div>
+
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
+                <h3 class="mod-mb-0">TDS Returns (Form 24Q / 26Q)</h3>
+                <p class="mod-ml-16 mod-mb-0 mod-text-right">Quarterly filings due on 31st July, 31st October, 31st
+                    January, and 31st May if the LLP deducts TDS on payments.</p>
+            </div>
+
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
+                <h3 class="mod-mb-0">GST Returns (GSTR-1 / GSTR-3B)</h3>
+                <p class="mod-ml-16 mod-mb-0 mod-text-right">Filed monthly or quarterly by 11th and 20th of each month,
+                    depending on turnover, for LLPs registered under GST.</p>
+            </div>
+
+        </div>
+        <div class="mod-px-2 mod-flex mod-flex-col mod-contents mod-gap-2 sm:mod-order-1">
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
+                <h3 class="mod-mb-0">Statutory Audit</h3>
+                <p class="mod-ml-16 mod-mb-0 mod-text-right">Mandatory audit by a Chartered Accountant, to be completed
+                    by 30th September 2025.</p>
+            </div>
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
+                <h3 class="mod-mb-0">Annual General Meeting (AGM)</h3>
+                <p class="mod-ml-16 mod-mb-0 mod-text-right">Must be conducted by 30th September 2025, except in the
+                    first year of incorporation.</p>
+            </div>
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
+                <h3 class="mod-mb-0">Filing of Financial Statements (AOC-4)</h3>
+                <p class="mod-ml-16 mod-mb-0 mod-text-right">File within 30 days of AGM, includes Balance Sheet, P&L,
+                    and Auditor’s Report.</p>
+            </div>
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
+                <h3 class="mod-mb-0">Annual Return Filing (MGT-7 / MGT-7A)</h3>
+                <p class="mod-ml-16 mod-mb-0 mod-text-right">File within 60 days of AGM, MGT-7A applicable for OPCs and
+                    Small Companies.</p>
+            </div>
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
+                <h3 class="mod-mb-0">Auditor Appointment (ADT-1)</h3>
+                <p class="mod-ml-16 mod-mb-0 mod-text-right">File within 15 days of AGM, auditor appointment valid for
+                    up to 5 years.</p>
+            </div>
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
+                <h3 class="mod-mb-0">Director KYC (DIR-3 KYC)</h3>
+                <p class="mod-ml-16 mod-mb-0 mod-text-right">Mandatory KYC filing for all directors by 30th September
+                    2025 to keep DIN active.</p>
+            </div>
+            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
+                <h3 class="mod-mb-0">Disclosure of Interest (MBP-1)</h3>
+                <p class="mod-ml-16 mod-mb-0 mod-text-right">Directors must disclose interests in the first board
+                    meeting of the financial year.</p>
             </div>
         </div>
-        <div class="mod-px-2 mod-flex mod-flex-col mod-gap-2 sm:mod-order-1">
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
-                <h3 class="mod-mb-0">Stamp Duty Payment</h3>
-                <p class="mod-ml-16 mod-mb-0 mod-text-right">Pay applicable stamp duty as per your state’s Stamp Act for legal validity.</p>
-            </div>
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
-                <h3 class="mod-mb-0">Document Registration</h3>
-                <p class="mod-ml-16 mod-mb-0 mod-text-right">Register deeds like sale or lease (>1 year) at Sub-Registrar Office for enforceability.</p>
-            </div>
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
-                <h3 class="mod-mb-0">Notarization</h3>
-                <p class="mod-ml-16 mod-mb-0 mod-text-right">Affidavits, declarations, and POA must be notarized to confirm authenticity and legal standing.</p>
-            </div>
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
-                <h3 class="mod-mb-0">Safekeeping of Documents</h3>
-                <p class="mod-ml-16 mod-mb-0 mod-text-right">Securely store originals and provide certified copies to parties or authorities when required.</p>
-            </div>
-            <div class="mod-flex mod-items-center mod-justify-space-between mod-px-2 mod-py-4 mod-border-bottom-2">
-                <h3 class="mod-mb-0">Renewals or Updates</h3>
-                <p class="mod-ml-16 mod-mb-0 mod-text-right">Update contracts and agreements to reflect changes in terms, parties, or obligations promptly.</p>
-            </div>
+        <div class="mod-mt-4">
+            <a class="btn-custom-medium" href="javascript:void(0)" target="_self" data-id="focus-first-input-btn">
+                <span class="btn-text btn-text--back">Get Help with Compliance</span>
+                <span class="btn-icon btn-custom-w btn-icon--blue">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M3 4a1 1 0 0 1 0-2h11v11a1 1 0 1 1-2 0V5.414l-8.293 8.293a1 1 0 0 1-1.414-1.414L10.586 4H3Z"
+                            fill="white"></path>
+                    </svg>
+                    <span class="btn-text btn-text--front">Get Help with Compliance</span>
+                </span>
+            </a>
         </div>
     </div>
 </section>

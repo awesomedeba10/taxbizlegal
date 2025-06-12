@@ -292,7 +292,32 @@ return [
                 "description" => "Pay any applicable tax dues, then file your return securely using DSC or EVC and receive acknowledgment from the GST portal."
             ]
         ]
+    ],
+    "annual-compliance-for-llp" => [
+        "title" => "LLP Annual Filing in <span class=\"text-blue mod-font-semibold\">5 Simple Steps</span>",
+        "description" => "Stay compliant and avoid penalties with our streamlined process for LLP annual compliance. Follow these five easy steps for timely filing.",
+        "steps" => [
+            [
+                "title" => "Prepare and File Form 11 (Annual Return)",
+                "description" => "Gather partner and contribution details and file Form 11 online with a DSC before 30th May every financial year."
+            ],
+            [
+                "title" => "Draft and Submit Form 8 (Financial Statements)",
+                "description" => "Prepare financial statements, get partner approval, and file Form 8 with MCA by 30th October to confirm solvency."
+            ],
+            [
+                "title" => "Conduct Statutory Audit (If Applicable)",
+                "description" => "If your LLP crosses audit thresholds, appoint a Chartered Accountant and complete the audit before 30th September."
+            ],
+            [
+                "title" => "File Income Tax Return (ITR-5)",
+                "description" => "File ITR-5 with the Income Tax Department by 31st July or 31st October depending on audit applicability."
+            ],
+            [
+                "title" => "Complete DIR-3 KYC & Other Filings",
+                "description" => "Update KYC for all DPIN holders and submit additional filings like TDS, GST, and MSME returns if applicable."
+            ]
+        ]
     ]
-
 
 ];
