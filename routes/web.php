@@ -9,6 +9,7 @@ use App\Http\Controllers\PaymentController;
 
 use App\Http\Controllers\Admin\Auth\LoginController as AdminLoginController;
 use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\ServiceLeadsController;
 
 Route::group(['as' => 'front.'], function () {
 
@@ -41,6 +42,8 @@ Route::group(['as' => 'admin.', 'prefix' => config('app.admin_url_prefix')], fun
 
     Route::middleware(['auth:admin'])->group(function () {
         Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+
+        Route::get('inbound-service-leads', [ServiceLeadsController::class, 'index'])->name('service-leads.index');
     });
 });
 

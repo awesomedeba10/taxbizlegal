@@ -18,7 +18,6 @@ import './main.js';
 
 import './defaultMenu.js';
 import './sticky.js';
-import './crm-dashboard.js';
 import './custom.js';
 import './custom-switcher.js';
 
