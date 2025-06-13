@@ -710,17 +710,9 @@
             pointer-events: none
         }
     </style>
-    <style id="__web-inspector-hide-shortcut-style__">
-        .__web-inspector-hide-shortcut__,
-        .__web-inspector-hide-shortcut__ *,
-        .__web-inspector-hidebefore-shortcut__::before,
-        .__web-inspector-hideafter-shortcut__::after {
-            visibility: hidden !important;
-        }
-    </style>
 </head>
 
-<body style="">
+<body style="" class="{{ Route::currentRouteName() }}">
     @include('admin._layouts.theme-switcher')
 
     <div class="page">
@@ -746,9 +738,8 @@
                                 aria-label="Username"> <a aria-label="anchor" href="javascript:void(0);"
                                 class="input-group-text" id="voice-search"><i
                                     class="fe fe-mic header-link-icon"></i></a> <a aria-label="anchor"
-                                href="javascript:void(0);" class="btn btn-light btn-icon"
-                                data-bs-toggle="dropdown" aria-expanded="false"> <i
-                                    class="fe fe-more-vertical"></i> </a>
+                                href="javascript:void(0);" class="btn btn-light btn-icon" data-bs-toggle="dropdown"
+                                aria-expanded="false"> <i class="fe fe-more-vertical"></i> </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="javascript:void(0);">Action</a></li>
                                 <li><a class="dropdown-item" href="javascript:void(0);">Another action</a></li>
@@ -761,18 +752,17 @@
                         </div>
                         <div class="mt-4">
                             <p class="font-weight-semibold text-muted mb-2">Are You Looking For...</p>
-                            <span class="search-tags alert"><i class="fe fe-user me-2"></i>People<a
-                                    aria-label="anchor" href="javascript:void(0)" class="tag-addon"
-                                    data-bs-dismiss="alert"><i class="fe fe-x"></i></a></span> <span
-                                class="search-tags alert"><i class="fe fe-file-text me-2"></i>Pages<a
-                                    aria-label="anchor" href="javascript:void(0)" class="tag-addon"
-                                    data-bs-dismiss="alert"><i class="fe fe-x"></i></a></span> <span
-                                class="search-tags alert"><i class="fe fe-align-left me-2"></i>Articles<a
-                                    aria-label="anchor" href="javascript:void(0)" class="tag-addon"
-                                    data-bs-dismiss="alert"><i class="fe fe-x"></i></a></span> <span
-                                class="search-tags alert"><i class="fe fe-server me-2"></i>Tags<a
-                                    aria-label="anchor" href="javascript:void(0)" class="tag-addon"
-                                    data-bs-dismiss="alert"><i class="fe fe-x"></i></a></span>
+                            <span class="search-tags alert"><i class="fe fe-user me-2"></i>People<a aria-label="anchor"
+                                    href="javascript:void(0)" class="tag-addon" data-bs-dismiss="alert"><i
+                                        class="fe fe-x"></i></a></span> <span class="search-tags alert"><i
+                                    class="fe fe-file-text me-2"></i>Pages<a aria-label="anchor"
+                                    href="javascript:void(0)" class="tag-addon" data-bs-dismiss="alert"><i
+                                        class="fe fe-x"></i></a></span> <span class="search-tags alert"><i
+                                    class="fe fe-align-left me-2"></i>Articles<a aria-label="anchor"
+                                    href="javascript:void(0)" class="tag-addon" data-bs-dismiss="alert"><i
+                                        class="fe fe-x"></i></a></span> <span class="search-tags alert"><i
+                                    class="fe fe-server me-2"></i>Tags<a aria-label="anchor" href="javascript:void(0)"
+                                    class="tag-addon" data-bs-dismiss="alert"><i class="fe fe-x"></i></a></span>
                         </div>
                         <div class="my-4">
                             <p class="font-weight-semibold text-muted mb-2">Recent Search :</p>
@@ -803,125 +793,57 @@
         <footer aria-label="Main Footer" class="footer mt-auto py-3 bg-white text-center">
             <div class="container">
                 <span class="text-muted"> Copyright © <span id="year">{{ now()->year }}</span>
-                <a href="javascript:void(0);">
-                    <span class="fw-semibold text-primary text-decoration-underline">{{ config('app.site_info.company_name') }}</span> </a>.
-                        All rights reserved.
-                    </span>
-                </div>
+                    <a href="javascript:void(0);">
+                        <span
+                            class="fw-semibold text-primary text-decoration-underline">{{ config('app.site_info.company_name') }}</span>
+                    </a>.
+                    All rights reserved.
+                </span>
+            </div>
         </footer>
         <!-- Footer End -->
     </div>
+
+    @stack('html')
+
     <!-- Scroll To Top -->
-    <div class="scrollToTop" style="display: flex;"> <span class="arrow"><i
-                class="ri-arrow-up-s-fill fs-20"></i></span> </div>
+    <div class="scrollToTop" style="display: flex;">
+        <span class="arrow">
+            <i class="ri-arrow-up-s-fill fs-20"></i>
+        </span>
+    </div>
     <div id="responsive-overlay"></div>
 
-    <div class="pcr-app " data-theme="nano" aria-label="color picker dialog" role="window"
-        style="left: 0px; top: 8px;">
-        <div class="pcr-selection">
-            <div class="pcr-color-preview">
-                <button type="button" class="pcr-last-color" aria-label="use previous color"
-                    style="--pcr-color: rgba(132, 90, 223, 1);"></button>
-                <div class="pcr-current-color" style="--pcr-color: rgba(132, 90, 223, 1);"></div>
-            </div>
-            <div class="pcr-color-palette">
-                <div class="pcr-picker"
-                    style="left: calc(59.6413% - 9px); top: calc(12.549% - 9px); background: rgb(132, 90, 223);">
-                </div>
-                <div class="pcr-palette" tabindex="0" aria-label="color selection area" role="listbox"
-                    style="background: linear-gradient(to top, rgb(0, 0, 0), transparent), linear-gradient(to left, rgb(81, 0, 255), rgb(255, 255, 255));">
-                </div>
-            </div>
-            <div class="pcr-color-chooser">
-                <div class="pcr-picker" style="left: calc(71.9298% - 9px); background-color: rgb(81, 0, 255);">
-                </div>
-                <div class="pcr-hue pcr-slider" tabindex="0" aria-label="hue selection slider" role="slider">
-                </div>
-            </div>
-            <div class="pcr-color-opacity" style="display:none" hidden="">
-                <div class="pcr-picker"></div>
-                <div class="pcr-opacity pcr-slider" tabindex="0" aria-label="selection slider" role="slider">
-                </div>
-            </div>
-        </div>
-        <div class="pcr-swatches "></div>
-        <div class="pcr-interaction">
-            <input class="pcr-result" type="text" spellcheck="false" aria-label="color input field">
-            <input class="pcr-type" data-type="HEXA" value="HEXA" type="button" style="display:none"
-                hidden="">
-            <input class="pcr-type active" data-type="RGBA" value="RGBA" type="button">
-            <input class="pcr-type" data-type="HSLA" value="HSLA" type="button" style="display:none"
-                hidden="">
-            <input class="pcr-type" data-type="HSVA" value="HSVA" type="button" style="display:none"
-                hidden="">
-            <input class="pcr-type" data-type="CMYK" value="CMYK" type="button" style="display:none"
-                hidden="">
-            <input class="pcr-save" value="Save" type="button" style="display:none" hidden=""
-                aria-label="save and close">
-            <input class="pcr-cancel" value="Cancel" type="button" style="display:none" hidden=""
-                aria-label="cancel and close">
-            <input class="pcr-clear" value="Clear" type="button" style="display:none" hidden=""
-                aria-label="clear and close">
-        </div>
-    </div>
-    <div class="pcr-app " data-theme="nano" aria-label="color picker dialog" role="window"
-        style="left: 0px; top: 8px;">
-        <div class="pcr-selection">
-            <div class="pcr-color-preview">
-                <button type="button" class="pcr-last-color" aria-label="use previous color"
-                    style="--pcr-color: rgba(132, 90, 223, 1);"></button>
-                <div class="pcr-current-color" style="--pcr-color: rgba(132, 90, 223, 1);"></div>
-            </div>
-            <div class="pcr-color-palette">
-                <div class="pcr-picker"
-                    style="left: calc(59.6413% - 9px); top: calc(12.549% - 9px); background: rgb(132, 90, 223);">
-                </div>
-                <div class="pcr-palette" tabindex="0" aria-label="color selection area" role="listbox"
-                    style="background: linear-gradient(to top, rgb(0, 0, 0), transparent), linear-gradient(to left, rgb(81, 0, 255), rgb(255, 255, 255));">
-                </div>
-            </div>
-            <div class="pcr-color-chooser">
-                <div class="pcr-picker" style="left: calc(71.9298% - 9px); background-color: rgb(81, 0, 255);">
-                </div>
-                <div class="pcr-hue pcr-slider" tabindex="0" aria-label="hue selection slider" role="slider">
-                </div>
-            </div>
-            <div class="pcr-color-opacity" style="display:none" hidden="">
-                <div class="pcr-picker"></div>
-                <div class="pcr-opacity pcr-slider" tabindex="0" aria-label="selection slider" role="slider">
-                </div>
-            </div>
-        </div>
-        <div class="pcr-swatches "></div>
-        <div class="pcr-interaction">
-            <input class="pcr-result" type="text" spellcheck="false" aria-label="color input field">
-            <input class="pcr-type" data-type="HEXA" value="HEXA" type="button" style="display:none"
-                hidden="">
-            <input class="pcr-type active" data-type="RGBA" value="RGBA" type="button">
-            <input class="pcr-type" data-type="HSLA" value="HSLA" type="button" style="display:none"
-                hidden="">
-            <input class="pcr-type" data-type="HSVA" value="HSVA" type="button" style="display:none"
-                hidden="">
-            <input class="pcr-type" data-type="CMYK" value="CMYK" type="button" style="display:none"
-                hidden="">
-            <input class="pcr-save" value="Save" type="button" style="display:none" hidden=""
-                aria-label="save and close">
-            <input class="pcr-cancel" value="Cancel" type="button" style="display:none" hidden=""
-                aria-label="cancel and close">
-            <input class="pcr-clear" value="Clear" type="button" style="display:none" hidden=""
-                aria-label="clear and close">
-        </div>
-    </div>
+    @php
+        $types = ['success', 'danger', 'error', 'warning', 'info'];
+        $toastType = null;
+        $toastMessage = null;
 
-    <svg id="SvgjsSvg1483" width="2" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1"
-        xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev"
-        style="overflow: hidden; top: -100%; left: -100%; position: absolute; opacity: 0;">
-        <defs id="SvgjsDefs1484"></defs>
-        <polyline id="SvgjsPolyline1485" points="0,0"></polyline>
-        <path id="SvgjsPath1486"
-            d="M-1 245.59519881057736L-1 245.59519881057736C-1 245.59519881057736 44.023579597473145 245.59519881057736 44.023579597473145 245.59519881057736C44.023579597473145 245.59519881057736 88.04715919494629 245.59519881057736 88.04715919494629 245.59519881057736C88.04715919494629 245.59519881057736 132.07073879241943 245.59519881057736 132.07073879241943 245.59519881057736C132.07073879241943 245.59519881057736 176.09431838989258 245.59519881057736 176.09431838989258 245.59519881057736C176.09431838989258 245.59519881057736 220.1178979873657 245.59519881057736 220.1178979873657 245.59519881057736C220.1178979873657 245.59519881057736 264.14147758483887 245.59519881057736 264.14147758483887 245.59519881057736C264.14147758483887 245.59519881057736 308.165057182312 245.59519881057736 308.165057182312 245.59519881057736C308.165057182312 245.59519881057736 352.18863677978516 245.59519881057736 352.18863677978516 245.59519881057736C352.18863677978516 245.59519881057736 396.2122163772583 245.59519881057736 396.2122163772583 245.59519881057736C396.2122163772583 245.59519881057736 440.2357959747314 245.59519881057736 440.2357959747314 245.59519881057736C440.2357959747314 245.59519881057736 484.25937557220453 245.59519881057736 484.25937557220453 245.59519881057736C484.25937557220453 245.59519881057736 484.25937557220453 245.59519881057736 484.25937557220453 245.59519881057736 ">
-        </path>
-    </svg>
+        foreach ($types as $type):
+            if (session($type)):
+                $toastType = $type === 'error' ? 'danger' : $type; // treat 'error' as 'danger'
+                $toastMessage = session($type);
+                break;
+            endif;
+        endforeach;
+    @endphp
+
+    @if ($toastType && $toastMessage)
+        <div class="toast-container position-fixed top-0 end-0 p-3">
+            <div id="sessionMsgToast" class="toast colored-toast bg-{{ $toastType }}-transparent fade hide" role="alert" aria-live="assertive"
+                aria-atomic="true">
+                <div class="toast-header bg-{{ $toastType }} text-fixed-white">
+                    <i class="bi bi-bell"></i>
+                    <strong class="me-auto ms-1">1 New Notification</strong> <small>Just Now</small>
+                     <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                    {{ $toastMessage }}
+                </div>
+            </div>
+        </div>
+    @endif
+
 </body>
 
 </html>

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\AdminUserController;
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\PageController;
@@ -9,6 +10,7 @@ use App\Http\Controllers\PaymentController;
 
 use App\Http\Controllers\Admin\Auth\LoginController as AdminLoginController;
 use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\EnquiriesController;
 use App\Http\Controllers\Admin\ServiceLeadsController;
 
 Route::group(['as' => 'front.'], function () {
@@ -44,6 +46,13 @@ Route::group(['as' => 'admin.', 'prefix' => config('app.admin_url_prefix')], fun
         Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
         Route::get('inbound-service-leads', [ServiceLeadsController::class, 'index'])->name('service-leads.index');
+        Route::get('inbound-service-leads/paid', [ServiceLeadsController::class, 'paid_index'])->name('service-leads.paid.index');
+        Route::get('inbound-service-leads/export', [ServiceLeadsController::class, 'export'])->name('service-leads.export');
+
+        Route::get('incoming-contact-request', [EnquiriesController::class, 'index'])->name('enquiry-leads.index');
+
+        Route::get('manage-users', [AdminUserController::class, 'index'])->name('users.index');
+        Route::post('manage-users/create', [AdminUserController::class, 'create'])->name('users.create');
     });
 });
 

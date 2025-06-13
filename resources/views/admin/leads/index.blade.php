@@ -8,8 +8,8 @@
             <div class="ms-md-1 ms-0">
                 <nav>
                     <ol class="breadcrumb mb-0">
-                        <li class="breadcrumb-item"><a href="javascript:void(0);">Leads</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Summary</li>
+                        <li class="breadcrumb-item">Service</li>
+                        <li class="breadcrumb-item active" aria-current="page"><a href="javascript:void(0);">Leads</a></li>
                     </ol>
                 </nav>
             </div>
@@ -36,9 +36,12 @@
                                     class="btn btn-icon btn-sm btn-light" data-bs-toggle="dropdown" aria-expanded="false">
                                     <i class="fe fe-more-vertical"></i> </a>
                                 <ul class="dropdown-menu" style="">
-                                    <li><a class="dropdown-item" href="javascript:void(0);">Week</a></li>
-                                    <li><a class="dropdown-item" href="javascript:void(0);">Month</a></li>
-                                    <li><a class="dropdown-item" href="javascript:void(0);">Year</a></li>
+                                    <a class="dropdown-item" href="javascript:void(0);">
+                                        Add to Custom View
+                                    </a>
+                                    <a class="dropdown-item" href="{{ route('admin.service-leads.export') }}">
+                                        Export
+                                    </a>
                                 </ul>
                             </div>
                         </div>
@@ -80,7 +83,9 @@
                                             <td>
                                                 <div class="d-flex align-items-center">
                                                     <div>
-                                                        <div class="lh-1"> <span>{{ $order->service_name }}</span> </div>
+                                                        <div class="lh-1">
+                                                            <span>{{ ucfirst(str_replace('-', ' ', $order->service_name)) }}</span>
+                                                        </div>
                                                         @if (isset($order->service_plan_name))
                                                             <div class="lh-1">
                                                                 <span class="fs-11 text-muted">Plan: <span
@@ -91,8 +96,16 @@
                                                 </div>
                                             </td>
                                             <td>
-                                                <span
-                                                    class="badge bg-primary-transparent fs-12">{{ $order->current_stage }}</span>
+                                                @if ($order->current_stage == 'basic_details_submitted')
+                                                    <span class="badge bg-danger-transparent fs-12">Basic Details
+                                                        Submitted</span>
+                                                @elseif($order->current_stage == 'payment_pending')
+                                                    <span class="badge bg-info-transparent fs-12">Plan Selected</span>
+                                                @elseif($order->current_stage == 'payment_initiated')
+                                                    <span class="badge bg-warning-transparent fs-12">Payment Pending</span>
+                                                @elseif($order->current_stage == 'payment_received')
+                                                    <span class="badge bg-success-transparent fs-12">Payment Received</span>
+                                                @endif
                                             </td>
                                             <td>{{ $order->created_at }}</td>
                                             <td>
@@ -114,22 +127,7 @@
                         </div>
                     </div>
                     <div class="card-footer">
-                        <div class="d-flex align-items-center">
-                            <div> Showing 6 Entries <i class="bi bi-arrow-right ms-2 fw-semibold"></i> </div>
-                            <div class="ms-auto">
-                                <nav aria-label="Page navigation" class="pagination-style-4">
-                                    <ul class="pagination mb-0">
-                                        <li class="page-item disabled"> <a class="page-link" href="javascript:void(0);">
-                                                Prev </a> </li>
-                                        <li class="page-item active"><a class="page-link"
-                                                href="javascript:void(0);">1</a></li>
-                                        <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
-                                        <li class="page-item"> <a class="page-link text-primary"
-                                                href="javascript:void(0);"> next </a> </li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
+                        {{ $orders->links('vendor.pagination.custom-design-1') }}
                     </div>
                 </div>
             </div>

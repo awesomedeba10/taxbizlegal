@@ -46,6 +46,9 @@
                                             <li class="slide">
                                                 <a href="{{ route('admin.service-leads.index') }}" class="side-menu__item">View Incoming Leads</a>
                                             </li>
+                                            <li class="slide">
+                                                <a href="{{ route('admin.service-leads.paid.index') }}" class="side-menu__item">View Paid Leads</a>
+                                            </li>
                                         </ul>
                                     </li>
 
@@ -54,7 +57,7 @@
                                             <i class="fe fe-chevron-right side-menu__angle"></i> </a>
                                         <ul class="slide-menu child1" data-popper-placement="bottom" data-popper-reference-hidden="" data-popper-escaped="">
                                             <li class="slide">
-                                                <a href="task-kanban-board" class="side-menu__item">Incoming Contact Request</a>
+                                                <a href="{{ route('admin.enquiry-leads.index') }}" class="side-menu__item">Incoming Contact Request</a>
                                             </li>
                                         </ul>
                                     </li>
@@ -72,7 +75,23 @@
                                             <i class="fe fe-chevron-right side-menu__angle"></i>
                                         </a>
                                         <ul class="slide-menu child1 mega-menu" data-popper-placement="bottom" data-popper-reference-hidden="" data-popper-escaped="">
-                                            <li class="slide"> <a href="alerts" class="side-menu__item">View All</a>
+                                            <li class="slide">
+                                                <a href="{{ route('admin.users.index') }}" class="side-menu__item">View All</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="slide has-sub">
+                                        <a href="javascript:void(0);" class="side-menu__item">
+                                            <i class="bx bx-box side-menu__icon"></i>
+                                            <span class="side-menu__label">Manage Access</span>
+                                            <i class="fe fe-chevron-right side-menu__angle"></i>
+                                        </a>
+                                        <ul class="slide-menu child1 mega-menu" data-popper-placement="bottom" data-popper-reference-hidden="" data-popper-escaped="">
+                                            <li class="slide">
+                                                <a href="alerts" class="side-menu__item">Roles</a>
+                                            </li>
+                                            <li class="slide">
+                                                <a href="alerts" class="side-menu__item">Permissions</a>
                                             </li>
                                         </ul>
                                     </li>

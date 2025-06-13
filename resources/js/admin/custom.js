@@ -1,8 +1,8 @@
 import Choices from "choices.js";
-import { Tooltip, Popover } from "bootstrap";
-import Pickr from '@simonwep/pickr';
-import Waves from 'node-waves';
-import SimpleBar from 'simplebar';
+import { Tooltip, Popover, Toast } from "bootstrap";
+import Pickr from "@simonwep/pickr";
+import Waves from "node-waves";
+import SimpleBar from "simplebar";
 
 (function () {
     "use strict";
@@ -224,76 +224,14 @@ import SimpleBar from 'simplebar';
     nanoButtons1[0].click();
     /* for theme background */
 
-    /* header theme toggle */
-    function toggleTheme() {
-        let html = document.querySelector("html");
-        if (html.getAttribute("data-theme-mode") === "dark") {
-            html.setAttribute("data-theme-mode", "light");
-            html.setAttribute("data-header-styles", "light");
-            html.setAttribute("data-menu-styles", "light");
-            if (!localStorage.getItem("primaryRGB")) {
-                html.setAttribute("style", "");
-            }
-            html.removeAttribute("data-bg-theme");
-            document.querySelector("#switcher-light-theme").checked = true;
-            document.querySelector("#switcher-menu-light").checked = true;
-            document
-                .querySelector("html")
-                .style.removeProperty("--body-bg-rgb", localStorage.bodyBgRGB);
-            checkOptions();
-            html.style.removeProperty("--body-bg-rgb2");
-            html.style.removeProperty("--light-rgb");
-            html.style.removeProperty("--form-control-bg");
-            html.style.removeProperty("--input-border");
-            document.querySelector("#switcher-header-light").checked = true;
-            document.querySelector("#switcher-menu-light").checked = true;
-            document.querySelector("#switcher-light-theme").checked = true;
-            document.querySelector("#switcher-background4").checked = false;
-            document.querySelector("#switcher-background3").checked = false;
-            document.querySelector("#switcher-background2").checked = false;
-            document.querySelector("#switcher-background1").checked = false;
-            document.querySelector("#switcher-background").checked = false;
-            localStorage.removeItem("ynexdarktheme");
-            localStorage.removeItem("ynexMenu");
-            localStorage.removeItem("ynexHeader");
-            localStorage.removeItem("bodylightRGB");
-            localStorage.removeItem("bodyBgRGB");
-            if (localStorage.getItem("ynexlayout") != "horizontal") {
-                html.setAttribute("data-menu-styles", "dark");
-            }
-            html.setAttribute("data-header-styles", "light");
-        } else {
-            html.setAttribute("data-theme-mode", "dark");
-            html.setAttribute("data-header-styles", "dark");
-            if (!localStorage.getItem("primaryRGB")) {
-                html.setAttribute("style", "");
-            }
-            html.setAttribute("data-menu-styles", "dark");
-            document.querySelector("#switcher-dark-theme").checked = true;
-            document.querySelector("#switcher-menu-dark").checked = true;
-            document.querySelector("#switcher-header-dark").checked = true;
-            checkOptions();
-            document.querySelector("#switcher-menu-dark").checked = true;
-            document.querySelector("#switcher-header-dark").checked = true;
-            document.querySelector("#switcher-dark-theme").checked = true;
-            document.querySelector("#switcher-background4").checked = false;
-            document.querySelector("#switcher-background3").checked = false;
-            document.querySelector("#switcher-background2").checked = false;
-            document.querySelector("#switcher-background1").checked = false;
-            document.querySelector("#switcher-background").checked = false;
-            localStorage.setItem("ynexdarktheme", "true");
-            localStorage.setItem("ynexMenu", "dark");
-            localStorage.setItem("ynexHeader", "dark");
-            localStorage.removeItem("bodylightRGB");
-            localStorage.removeItem("bodyBgRGB");
-        }
-    }
-    let layoutSetting = document.querySelector(".layout-setting");
-    layoutSetting.addEventListener("click", toggleTheme);
-    /* header theme toggle */
-
     /* Choices JS */
     document.addEventListener("DOMContentLoaded", function () {
+        const sessionToast = document.getElementById('sessionMsgToast');
+        if (sessionToast) {
+            const toast = new Toast(sessionToast);
+            toast.show();
+        }
+
         var genericExamples = document.querySelectorAll("[data-trigger]");
         for (let i = 0; i < genericExamples.length; ++i) {
             var element = genericExamples[i];

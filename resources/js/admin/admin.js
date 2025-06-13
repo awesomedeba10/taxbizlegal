@@ -16,8 +16,11 @@ import '../../css/icon-fonts/boxicons/css/boxicons.css';
 
 import './main.js';
 
-import './defaultMenu.js';
 import './sticky.js';
 import './custom.js';
 import './custom-switcher.js';
+
+if (document.body.classList.contains('admin.dashboard')) {
+    import('./crm-dashboard.js');
+}
 

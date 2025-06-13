@@ -5106,6 +5106,11 @@ typography
   font-weight: 600;
   color: var(--default-text-color);
 }
+.form-label.required::after {
+    content: "*";
+    padding-left: 3px;
+    color: #d03d46;
+}
 
 .form-text {
   color: var(--text-muted);
@@ -9335,6 +9340,7 @@ button {
   background-color: var(--custom-white);
   color: var(--default-text-color);
   border-color: var(--default-border) !important;
+  z-index: 10001;
 }
 
 .offcanvas-body {
@@ -12254,7 +12260,7 @@ hr {
   content: "";
   height: 100%;
   width: 100%;
-  background-image: url(../images/media/media-65.png);
+  background-image: url(../../images/crm/media/media-65.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
