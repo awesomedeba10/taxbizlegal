@@ -194,7 +194,7 @@
                 <a href="javascript:void(0);" class="header-link dropdown-toggle" id="mainHeaderProfile"
                     data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
                     <div class="d-flex align-items-center">
-                        <div class="me-sm-2 me-0"> <img src="https://img.icons8.com/color/48/circled-user-male-skin-type-4--v1.png" alt="img"
+                        <div class="me-sm-2 me-0"> <img src="https://www.svgrepo.com/show/57853/avatar.svg" alt="img"
                             width="32" height="32" class="rounded-circle"> </div>
                         <div class="d-sm-block d-none">
                             <p class="fw-semibold mb-0 lh-1">{{ auth()->user()->first_name }} {{ auth()->user()->last_name }}</p>

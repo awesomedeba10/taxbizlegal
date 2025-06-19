@@ -93,7 +93,7 @@
                         </h2>
                         <font style="vertical-align: inherit;">
                             <ul>
-                                <li><strong>Registered Business Location: </strong>&nbsp;Kolkata, India</li>
+                                <li><strong>Registered Business Location: </strong>&nbsp;{{ config('app.site_info.company_address') }}</li>
                                 <li><strong>Support Email: </strong>&nbsp;{{ config('app.site_info.support_email') }}</li>
                                 <li><strong>Phone: </strong>&nbsp;{{ config('app.site_info.support_phone') }}</li>
                                 <li><strong>Website: </strong>&nbsp;{{ config('app.url') }}</li>

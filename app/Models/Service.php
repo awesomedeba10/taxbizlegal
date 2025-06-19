@@ -7,14 +7,20 @@ use Illuminate\Database\Eloquent\Model;
 class Service extends Model
 {
     protected $fillable = [
-        'main_header', 'sub_header', 'background', 'name', 
+        'main_header', 'sub_header', 'background', 'name',
         'description', 'sort_order' , 'is_active'
     ];
 
-    public static function getServices() {
+    public static function getHeaderServices() {
         return self::where('is_active', 1)
                 ->orderBy('sort_order')
                 ->get()
                 ->groupBy(['main_header', 'sub_header']);
+    }
+
+    public static function getActiveServices() {
+        return self::where('is_active', 1)
+                 ->orderBy('sort_order')
+                ->get();
     }
 }

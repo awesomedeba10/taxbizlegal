@@ -3,6 +3,7 @@
 namespace App\View\Composers;
 
 use Illuminate\View\View;
+use Illuminate\Support\Facades\Cache;
 use App\Models\Service;
 
 class HeaderComposer
@@ -19,7 +20,9 @@ class HeaderComposer
      */
     public function compose(View $view): void
     {
-        $headers = $this->service::getServices();
+        $headers = Cache::remember('service_headers', now()->addHours(4), function () {
+            return $this->service::getHeaderServices();
+        });
 
         $view->with('serviceHeaders', $headers);
     }

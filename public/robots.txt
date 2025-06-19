@@ -1,2 +1,6 @@
 User-agent: *
-Disallow: /internal/ops
+Disallow: /internal/ops/
+Disallow: /orders/
+Allow: /
+
+Sitemap: https://taxbizlegal.com/sitemap.xml

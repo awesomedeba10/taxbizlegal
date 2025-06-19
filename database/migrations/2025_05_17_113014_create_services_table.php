@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('sub_header');
             $table->string('background')->default('#ffffff');
             $table->string('name');
+            $table->string('slug');
             $table->text('description')->nullable();
             $table->integer('sort_order')->nullable();
             $table->boolean('is_active')->default(true);

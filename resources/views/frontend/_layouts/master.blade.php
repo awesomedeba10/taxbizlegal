@@ -11,31 +11,34 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="current-path" content="{{ url()->current() }}">
 
-    <title>@yield('title')@hasSection('title') | @endif Tax Biz Legal</title>
+    <title>@yield('title', slugToTitle(($slug = array_slice(explode('/', request()->path()), -1)[0]) === '' ? 'home' : $slug) . ' | ')
+        @hasSection('title')
+            |
+        @endif Tax Biz Legal
+    </title>
 
     <meta name="description" content="@yield('meta_description', 'Get Top-Rated Business Services, Company registration, Compliance Solutions under One Roof in Just a Few Taps')">
     <meta name="keywords" content="@yield('meta_keywords', 'TaxBizLegal, tax services, legal services, GST registration, company registration, income tax filing, business consultancy')">
     <meta name="robots" content="index,follow">
 
-    {{-- <meta name="description"
-        content="Vytvořte profesionální životopis a zvyšte své šance na pohovor! Už žádné složité formátování, díky jednoduchému editor CV.">
-    <link rel="canonical" href="index.html"> --}}
-    {{-- <meta property="og:locale" content="cs_CZ" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Huntee - knihovna kontaktů" />
-    <meta property="og:description" content="Vytvořte profesionální životopis a zvyšte své šance na pohovor! Už žádné složité formátování, díky jednoduchému editor CV." />
-    <meta property="og:url" content="index.html" />
-    <meta property="og:site_name" content="Huntee" />
-    <meta property="og:updated_time" content="2025-02-21T17:42:44+01:00" />
-    <meta property="og:image" content="images/img/home/editor.png" />
-    <meta property="og:image:secure_url" content="images/img/home/editor.png" />
-    <meta property="og:image:width" content="1305" />
-    <meta property="og:image:height" content="786" />
-    <meta property="og:image:alt" content="Ukázka CV editor na počítači a telefonu" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Huntee - knihovna kontaktů" />
-    <meta name="twitter:description" content="Vytvořte profesionální životopis a zvyšte své šance na pohovor! Už žádné složité formátování, díky jednoduchému editor CV." />
-    <meta name="twitter:image" content="images/img/home/editor.png" /> --}}
+    @env(['staging', 'production'])
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-NGBDBJ5T');
+    </script>
+    @endenv
 
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('images/favicon/apple-touch-icon.png') }}">
     <link rel="icon" type="image/png" sizes="96x96" href="{{ asset('images/favicon/favicon-32x32.png') }}">
@@ -57,22 +60,27 @@
 </head>
 
 <body>
+    @env(['staging', 'production'])
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NGBDBJ5T" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    @endenv
 
     @include('frontend._layouts.header')
 
     @yield('content')
 
     @if (request()->path() !== 'orders/checkout')
-    @include('frontend._layouts.footer')
+        @include('frontend._layouts.footer')
 
-    <div class="btn-float">
-        <a target="_blank" href="https://wa.me/{{ config('app.site_info.support_wp_phone') }}?text=Hello,%20I%20need%20some%20assistance!">
-            <div class="contact-icon">
-                <img src="{{ asset('images/svg/whatsapp.svg') }}" alt="">
-            </div>
-        </a>
-        <p class="text_icon">Talk to Us?</p>
-    </div>
+        <div class="btn-float">
+            <a target="_blank"
+                href="https://wa.me/{{ config('app.site_info.support_wp_phone') }}?text=Hello,%20I%20need%20some%20assistance!">
+                <div class="contact-icon">
+                    <img src="{{ asset('images/svg/whatsapp.svg') }}" alt="">
+                </div>
+            </a>
+            <p class="text_icon">Talk to Us?</p>
+        </div>
     @endif
 
     <div id="snippet-logInModal-modal">
@@ -104,8 +112,7 @@
                 </svg>
                 <div class="toast-content" data-tpl-alert-content></div>
                 <button type="button" class="btn btn-close" data-bs-dismiss="toast" aria-label="Zavřít">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
                         viewBox="0 0 24 24">
                         <path fill="currentColor" fill-rule="evenodd"
                             d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z"

@@ -191,9 +191,9 @@
                         </font>
                         <font style="vertical-align: inherit;">
                             <ul>
-                                <li><strong>Email: </strong></li>
-                                <li><strong>Phone: </strong></li>
-                                <li><strong>Address: </strong></li>
+                                <li><strong>Email: </strong>{{ config('app.site_info.support_email') }}</li>
+                                <li><strong>Phone: </strong>{{ config('app.site_info.support_phone') }}</li>
+                                <li><strong>Address: </strong>{{ config('app.site_info.company_address') }}</li>
                             </ul>
                         </font>
                     </p>

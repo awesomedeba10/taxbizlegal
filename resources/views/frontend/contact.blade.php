@@ -151,7 +151,7 @@
                                 <input type="checkbox" name="_comply" class="form-check-input"
                                     id="frm-enquiryForm-form-_comply" required=""
                                     data-nette-rules="[
-                                    {&quot;op&quot;:&quot;:filled&quot;, 
+                                    {&quot;op&quot;:&quot;:filled&quot;,
                                     &quot;msg&quot;:&quot;Please agree to T&C to continue.&quot;}
                             ]">
 
