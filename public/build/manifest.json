@@ -96,7 +96,7 @@
     "src": "resources/css/icon-fonts/tabler-icons/iconfont/fonts/tabler-icons.eot"
   },
   "resources/js/admin/admin.js": {
-    "file": "assets/admin-DfNuqzU8.js",
+    "file": "assets/admin-D_bH1Flu.js",
     "name": "admin",
     "src": "resources/js/admin/admin.js",
     "isEntry": true,
@@ -134,7 +134,7 @@
     ]
   },
   "resources/js/admin/crm-dashboard.js": {
-    "file": "assets/crm-dashboard-r5EQKPRq.js",
+    "file": "assets/crm-dashboard-ANMatT8P.js",
     "name": "crm-dashboard",
     "src": "resources/js/admin/crm-dashboard.js",
     "isDynamicEntry": true,

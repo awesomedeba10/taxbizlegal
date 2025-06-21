@@ -34,7 +34,7 @@
                                         data-bs-target="#offcanvasFilter" aria-controls="offcanvasFilter">
                                         Apply Filter
                                     </a>
-                                    <a class="dropdown-item" href="javascript:void(0);">
+                                    <a class="dropdown-item save-custom-view" href="javascript:void(0);">
                                         Add to Custom View
                                     </a>
                                     <a class="dropdown-item" href="{{ route('admin.service-leads.export') }}">

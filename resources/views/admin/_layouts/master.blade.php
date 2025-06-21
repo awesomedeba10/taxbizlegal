@@ -8,11 +8,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>TaxBizLegal CRM</title>
     <meta name="Description" content="Bootstrap Blazor Server Responsive Admin Web Dashboard HTML5 Template">
-    <meta name="Author" content="iamawesome! again">
+    <meta name="Author" content="officialdeba10 again!">
     <meta name="keywords" content="who,cares">
     <meta name="robots" content="noindex, nofollow">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
     <!-- Favicon -->
-    <link rel="icon" href="https://spruko.com/demo/ynex/blazor/dist/assets/images/brand-logos/favicon.ico"
+    <link rel="icon" href="{{ asset('images/favicon/favicon-32x32.png') }}"
         type="image/x-icon">
 
     @vite(['resources/js/admin/admin.js'])

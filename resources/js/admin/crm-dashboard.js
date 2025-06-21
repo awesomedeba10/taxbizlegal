@@ -1,5 +1,69 @@
-import ApexCharts from 'apexcharts';
-import { Chart, DoughnutController, ArcElement, Tooltip, Legend } from 'chart.js';
+import ApexCharts from "apexcharts";
+import {
+    Chart,
+    DoughnutController,
+    ArcElement,
+    Tooltip,
+    Legend,
+} from "chart.js";
+
+if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initDashboard);
+} else {
+    initDashboard();
+}
+
+function initDashboard() {
+    fetch("/internal/ops/charts/fetch-revenue")
+        .then((res) => res.json())
+        .then(({ data, today, percentage }) => {
+            // Init chart
+            const chartOptions = {
+                chart: {
+                    type: "line",
+                    height: 40,
+                    width: 100,
+                    sparkline: { enabled: true },
+                },
+                stroke: {
+                    curve: "smooth",
+                    width: 1.5,
+                },
+                fill: {
+                    type: "gradient",
+                    gradient: {
+                        opacityFrom: 0.9,
+                        opacityTo: 0.9,
+                        stops: [0, 98],
+                    },
+                },
+                series: [{ name: "Revenue", data }],
+                tooltip: { enabled: false },
+                colors: ["rgb(132, 90, 223)"],
+                yaxis: { show: false },
+                xaxis: { show: false },
+            };
+
+            document.getElementById("crm-total-revenue").innerHTML = "";
+            const chart = new ApexCharts(
+                document.querySelector("#crm-total-revenue"),
+                chartOptions
+            );
+            chart.render();
+
+            // Update revenue and percentage
+            document.querySelector("#total-revenue-amount").textContent =
+                "₹" + today.toLocaleString();
+            const percentageBox = document.querySelector(
+                "#total-revenue-percentage"
+            );
+            percentageBox.textContent = `${
+                percentage > 0 ? "+" : ""
+            }${percentage}%`;
+            percentageBox.classList.toggle("text-success", percentage > 0);
+            percentageBox.classList.toggle("text-danger", percentage <= 0);
+        });
+}
 
 /* Target Incomplete Chart */
 var options = {
@@ -16,31 +80,31 @@ var options = {
             hollow: {
                 margin: 0,
                 size: "55%",
-                background: "#fff"
+                background: "#fff",
             },
             dataLabels: {
                 name: {
                     offsetY: -10,
                     color: "#4b9bfa",
                     fontSize: ".625rem",
-                    show: false
+                    show: false,
                 },
                 value: {
                     offsetY: 5,
                     color: "#4b9bfa",
                     fontSize: ".875rem",
                     show: true,
-                    fontWeight: 600
-                }
-            }
-        }
+                    fontWeight: 600,
+                },
+            },
+        },
     },
     stroke: {
-        lineCap: "round"
+        lineCap: "round",
     },
-    labels: ["Status"]
+    labels: ["Status"],
 };
-document.querySelector("#crm-main").innerHTML = ""
+document.querySelector("#crm-main").innerHTML = "";
 var chart = new ApexCharts(document.querySelector("#crm-main"), options);
 chart.render();
 /* Target Incomplete Chart */
@@ -48,52 +112,54 @@ chart.render();
 /* Total Customers chart */
 var crm1 = {
     chart: {
-        type: 'line',
+        type: "line",
         height: 40,
         width: 100,
         sparkline: {
-            enabled: true
-        }
+            enabled: true,
+        },
     },
     stroke: {
         show: true,
-        curve: 'smooth',
-        lineCap: 'butt',
+        curve: "smooth",
+        lineCap: "butt",
         colors: undefined,
         width: 1.5,
         dashArray: 0,
     },
     fill: {
-        type: 'gradient',
+        type: "gradient",
         gradient: {
             opacityFrom: 0.9,
             opacityTo: 0.9,
             stops: [0, 98],
-        }
+        },
     },
-    series: [{
-        name: 'Value',
-        data: [20, 14, 19, 10, 23, 20, 22, 9, 12]
-    }],
+    series: [
+        {
+            name: "Value",
+            data: [1, 0, 1, 0, 1, 1, 0],
+        },
+    ],
     yaxis: {
         min: 0,
         show: false,
         axisBorder: {
-            show: false
+            show: false,
         },
     },
     xaxis: {
         show: false,
         axisBorder: {
-            show: false
+            show: false,
         },
     },
     tooltip: {
         enabled: false,
     },
     colors: ["rgb(132, 90, 223)"],
-}
-document.getElementById('crm-total-customers').innerHTML = '';
+};
+document.getElementById("crm-total-customers").innerHTML = "";
 var crm1 = new ApexCharts(document.querySelector("#crm-total-customers"), crm1);
 crm1.render();
 
@@ -104,164 +170,169 @@ function crmtotalCustomers() {
 }
 /* Total Customers chart */
 
-/* Total revenue chart */
-var crm2 = {
-    chart: {
-        type: 'line',
-        height: 40,
-        width: 100,
-        sparkline: {
-            enabled: true
-        }
-    },
-    stroke: {
-        show: true,
-        curve: 'smooth',
-        lineCap: 'butt',
-        colors: undefined,
-        width: 1.5,
-        dashArray: 0,
-    },
-    fill: {
-        type: 'gradient',
-        gradient: {
-            opacityFrom: 0.9,
-            opacityTo: 0.9,
-            stops: [0, 98],
-        }
-    },
-    series: [{
-        name: 'Value',
-        data: [20, 14, 20, 22, 9, 12, 19, 10, 25]
-    }],
-    yaxis: {
-        min: 0,
-        show: false,
-        axisBorder: {
-            show: false
-        },
-    },
-    xaxis: {
-        show: false,
-        axisBorder: {
-            show: false
-        },
-    },
-    tooltip: {
-        enabled: false,
-    },
-    colors: ["rgb(35, 183, 229)"],
+// /* Total revenue chart */
+// var crm2 = {
+//     chart: {
+//         type: 'line',
+//         height: 40,
+//         width: 100,
+//         sparkline: {
+//             enabled: true
+//         }
+//     },
+//     stroke: {
+//         show: true,
+//         curve: 'smooth',
+//         lineCap: 'butt',
+//         colors: undefined,
+//         width: 1.5,
+//         dashArray: 0,
+//     },
+//     fill: {
+//         type: 'gradient',
+//         gradient: {
+//             opacityFrom: 0.9,
+//             opacityTo: 0.9,
+//             stops: [0, 98],
+//         }
+//     },
+//     series: [{
+//         name: 'Value',
+//         data: [20, 14, 20, 22, 9, 12, 19, 10, 25]
+//     }],
+//     yaxis: {
+//         min: 0,
+//         show: false,
+//         axisBorder: {
+//             show: false
+//         },
+//     },
+//     xaxis: {
+//         show: false,
+//         axisBorder: {
+//             show: false
+//         },
+//     },
+//     tooltip: {
+//         enabled: false,
+//     },
+//     colors: ["rgb(35, 183, 229)"],
 
-}
-document.getElementById('crm-total-revenue').innerHTML = '';
-var crm2 = new ApexCharts(document.querySelector("#crm-total-revenue"), crm2);
-crm2.render();
-/* Total revenue chart */
+// }
+// document.getElementById('crm-total-revenue').innerHTML = '';
+// var crm2 = new ApexCharts(document.querySelector("#crm-total-revenue"), crm2);
+// crm2.render();
+// /* Total revenue chart */
 
 /* Conversion ratio Chart */
 var crm3 = {
     chart: {
-        type: 'line',
+        type: "line",
         height: 40,
         width: 100,
         sparkline: {
-            enabled: true
-        }
+            enabled: true,
+        },
     },
     stroke: {
         show: true,
-        curve: 'smooth',
-        lineCap: 'butt',
+        curve: "smooth",
+        lineCap: "butt",
         colors: undefined,
         width: 1.5,
         dashArray: 0,
     },
     fill: {
-        type: 'gradient',
+        type: "gradient",
         gradient: {
             opacityFrom: 0.9,
             opacityTo: 0.9,
             stops: [0, 98],
-        }
+        },
     },
-    series: [{
-        name: 'Value',
-        data: [20, 20, 22, 9, 14, 19, 10, 25, 12]
-    }],
+    series: [
+        {
+            name: "Value",
+            data: [0, 0, 1, 0, 1, 0, 1, 1],
+        },
+    ],
     yaxis: {
         min: 0,
         show: false,
         axisBorder: {
-            show: false
+            show: false,
         },
     },
     xaxis: {
         show: false,
         axisBorder: {
-            show: false
+            show: false,
         },
     },
     tooltip: {
         enabled: false,
     },
     colors: ["rgb(38, 191, 148)"],
-
-}
-document.getElementById('crm-conversion-ratio').innerHTML = '';
-var crm3 = new ApexCharts(document.querySelector("#crm-conversion-ratio"), crm3);
+};
+document.getElementById("crm-conversion-ratio").innerHTML = "";
+var crm3 = new ApexCharts(
+    document.querySelector("#crm-conversion-ratio"),
+    crm3
+);
 crm3.render();
 /* Conversion ratio Chart */
 
 /* Total Deals Chart */
 var crm4 = {
     chart: {
-        type: 'line',
+        type: "line",
         height: 40,
         width: 100,
         sparkline: {
-            enabled: true
-        }
+            enabled: true,
+        },
     },
     stroke: {
         show: true,
-        curve: 'smooth',
-        lineCap: 'butt',
+        curve: "smooth",
+        lineCap: "butt",
         colors: undefined,
         width: 1.5,
         dashArray: 0,
     },
     fill: {
-        type: 'gradient',
+        type: "gradient",
         gradient: {
             opacityFrom: 0.9,
             opacityTo: 0.9,
             stops: [0, 98],
-        }
+        },
     },
-    series: [{
-        name: 'Value',
-        data: [20, 20, 22, 9, 12, 14, 19, 10, 25]
-    }],
+    series: [
+        {
+            name: "Value",
+            data: [1, 1, 1, 0, 1, 0],
+        },
+    ],
     yaxis: {
         min: 0,
         show: false,
         axisBorder: {
-            show: false
+            show: false,
         },
     },
     xaxis: {
         show: false,
         axisBorder: {
-            show: false
+            show: false,
         },
     },
     tooltip: {
         enabled: false,
     },
     colors: ["rgb(245, 184, 73)"],
-
-}
-document.getElementById('crm-total-deals').innerHTML = '';
+};
+document.getElementById("crm-total-deals").innerHTML = "";
 var crm4 = new ApexCharts(document.querySelector("#crm-total-deals"), crm4);
 crm4.render();
 /* Total Deals Chart */
@@ -270,62 +341,62 @@ crm4.render();
 var options = {
     series: [
         {
-            type: 'line',
-            name: 'Profit',
+            type: "line",
+            name: "Profit",
             data: [
                 {
-                    x: 'Jan',
-                    y: 100
+                    x: "Jan",
+                    y: 100,
                 },
                 {
-                    x: 'Feb',
-                    y: 210
+                    x: "Feb",
+                    y: 210,
                 },
                 {
-                    x: 'Mar',
-                    y: 180
+                    x: "Mar",
+                    y: 180,
                 },
                 {
-                    x: 'Apr',
-                    y: 454
+                    x: "Apr",
+                    y: 454,
                 },
                 {
-                    x: 'May',
-                    y: 230
+                    x: "May",
+                    y: 230,
                 },
                 {
-                    x: 'Jun',
-                    y: 320
+                    x: "Jun",
+                    y: 320,
                 },
                 {
-                    x: 'Jul',
-                    y: 656
+                    x: "Jul",
+                    y: 656,
                 },
                 {
-                    x: 'Aug',
-                    y: 830
+                    x: "Aug",
+                    y: 830,
                 },
                 {
-                    x: 'Sep',
-                    y: 350
+                    x: "Sep",
+                    y: 350,
                 },
                 {
-                    x: 'Oct',
-                    y: 350
+                    x: "Oct",
+                    y: 350,
                 },
                 {
-                    x: 'Nov',
-                    y: 210
+                    x: "Nov",
+                    y: 210,
                 },
                 {
-                    x: 'Dec',
-                    y: 410
-                }
-            ]
+                    x: "Dec",
+                    y: 410,
+                },
+            ],
         },
         {
-            type: 'line',
-            name: 'Revenue',
+            type: "line",
+            name: "Revenue",
             chart: {
                 dropShadow: {
                     enabled: true,
@@ -333,64 +404,64 @@ var options = {
                     top: 5,
                     left: 0,
                     blur: 3,
-                    color: '#000',
-                    opacity: 0.1
-                }
+                    color: "#000",
+                    opacity: 0.1,
+                },
             },
             data: [
                 {
-                    x: 'Jan',
-                    y: 180
+                    x: "Jan",
+                    y: 180,
                 },
                 {
-                    x: 'Feb',
-                    y: 620
+                    x: "Feb",
+                    y: 620,
                 },
                 {
-                    x: 'Mar',
-                    y: 476
+                    x: "Mar",
+                    y: 476,
                 },
                 {
-                    x: 'Apr',
-                    y: 220
+                    x: "Apr",
+                    y: 220,
                 },
                 {
-                    x: 'May',
-                    y: 520
+                    x: "May",
+                    y: 520,
                 },
                 {
-                    x: 'Jun',
-                    y: 780
+                    x: "Jun",
+                    y: 780,
                 },
                 {
-                    x: 'Jul',
-                    y: 435
+                    x: "Jul",
+                    y: 435,
                 },
                 {
-                    x: 'Aug',
-                    y: 515
+                    x: "Aug",
+                    y: 515,
                 },
                 {
-                    x: 'Sep',
-                    y: 738
+                    x: "Sep",
+                    y: 738,
                 },
                 {
-                    x: 'Oct',
-                    y: 454
+                    x: "Oct",
+                    y: 454,
                 },
                 {
-                    x: 'Nov',
-                    y: 525
+                    x: "Nov",
+                    y: 525,
                 },
                 {
-                    x: 'Dec',
-                    y: 230
-                }
-            ]
+                    x: "Dec",
+                    y: 230,
+                },
+            ],
         },
         {
-            type: 'area',
-            name: 'Sales',
+            type: "area",
+            name: "Sales",
             chart: {
                 dropShadow: {
                     enabled: true,
@@ -398,66 +469,66 @@ var options = {
                     top: 5,
                     left: 0,
                     blur: 3,
-                    color: '#000',
-                    opacity: 0.1
-                }
+                    color: "#000",
+                    opacity: 0.1,
+                },
             },
             data: [
                 {
-                    x: 'Jan',
-                    y: 200
+                    x: "Jan",
+                    y: 200,
                 },
                 {
-                    x: 'Feb',
-                    y: 530
+                    x: "Feb",
+                    y: 530,
                 },
                 {
-                    x: 'Mar',
-                    y: 110
+                    x: "Mar",
+                    y: 110,
                 },
                 {
-                    x: 'Apr',
-                    y: 130
+                    x: "Apr",
+                    y: 130,
                 },
                 {
-                    x: 'May',
-                    y: 480
+                    x: "May",
+                    y: 480,
                 },
                 {
-                    x: 'Jun',
-                    y: 520
+                    x: "Jun",
+                    y: 520,
                 },
                 {
-                    x: 'Jul',
-                    y: 780
+                    x: "Jul",
+                    y: 780,
                 },
                 {
-                    x: 'Aug',
-                    y: 435
+                    x: "Aug",
+                    y: 435,
                 },
                 {
-                    x: 'Sep',
-                    y: 475
+                    x: "Sep",
+                    y: 475,
                 },
                 {
-                    x: 'Oct',
-                    y: 738
+                    x: "Oct",
+                    y: 738,
                 },
                 {
-                    x: 'Nov',
-                    y: 454
+                    x: "Nov",
+                    y: 454,
                 },
                 {
-                    x: 'Dec',
-                    y: 480
-                }
-            ]
-        }
+                    x: "Dec",
+                    y: 480,
+                },
+            ],
+        },
     ],
     chart: {
         height: 350,
         animations: {
-            speed: 500
+            speed: 500,
         },
         dropShadow: {
             enabled: true,
@@ -465,20 +536,24 @@ var options = {
             top: 8,
             left: 0,
             blur: 3,
-            color: '#000',
-            opacity: 0.1
+            color: "#000",
+            opacity: 0.1,
         },
     },
-    colors: ["rgb(132, 90, 223)", "rgba(35, 183, 229, 0.85)", "rgba(119, 119, 142, 0.05)"],
+    colors: [
+        "rgb(132, 90, 223)",
+        "rgba(35, 183, 229, 0.85)",
+        "rgba(119, 119, 142, 0.05)",
+    ],
     dataLabels: {
-        enabled: false
+        enabled: false,
     },
     grid: {
-        borderColor: '#f1f1f1',
-        strokeDashArray: 3
+        borderColor: "#f1f1f1",
+        strokeDashArray: 3,
     },
     stroke: {
-        curve: 'smooth',
+        curve: "smooth",
         width: [2, 2, 0],
         dashArray: [0, 5, 0],
     },
@@ -491,92 +566,109 @@ var options = {
         labels: {
             formatter: function (value) {
                 return "$" + value;
-            }
+            },
         },
     },
     tooltip: {
-        y: [{
-            formatter: function(e) {
-                return void 0 !== e ? "$" + e.toFixed(0) : e
-            }
-        }, {
-            formatter: function(e) {
-                return void 0 !== e ? "$" + e.toFixed(0) : e
-            }
-        }, {
-            formatter: function(e) {
-                return void 0 !== e ? e.toFixed(0) : e
-            }
-        }]
+        y: [
+            {
+                formatter: function (e) {
+                    return void 0 !== e ? "$" + e.toFixed(0) : e;
+                },
+            },
+            {
+                formatter: function (e) {
+                    return void 0 !== e ? "$" + e.toFixed(0) : e;
+                },
+            },
+            {
+                formatter: function (e) {
+                    return void 0 !== e ? e.toFixed(0) : e;
+                },
+            },
+        ],
     },
     legend: {
         show: true,
-        customLegendItems: ['Profit', 'Revenue', 'Sales'],
-        inverseOrder: true
+        customLegendItems: ["Profit", "Revenue", "Sales"],
+        inverseOrder: true,
     },
     title: {
-        text: 'Revenue Analytics with sales & profit (USD)',
-        align: 'left',
+        text: "Revenue Analytics with sales & profit (USD)",
+        align: "left",
         style: {
-            fontSize: '.8125rem',
-            fontWeight: 'semibold',
-            color: '#8c9097'
+            fontSize: ".8125rem",
+            fontWeight: "semibold",
+            color: "#8c9097",
         },
     },
     markers: {
         hover: {
-            sizeOffset: 5
-        }
-    }
+            sizeOffset: 5,
+        },
+    },
 };
-document.getElementById('crm-revenue-analytics').innerHTML = '';
-var chart = new ApexCharts(document.querySelector("#crm-revenue-analytics"), options);
+document.getElementById("crm-revenue-analytics").innerHTML = "";
+var chart = new ApexCharts(
+    document.querySelector("#crm-revenue-analytics"),
+    options
+);
 chart.render();
 
 function revenueAnalytics() {
     chart.updateOptions({
-        colors: ["rgba(" + myVarVal + ", 1)", "rgba(35, 183, 229, 0.85)", "rgba(119, 119, 142, 0.05)"],
+        colors: [
+            "rgba(" + myVarVal + ", 1)",
+            "rgba(35, 183, 229, 0.85)",
+            "rgba(119, 119, 142, 0.05)",
+        ],
     });
 }
 /* Revenue Analytics Chart */
 
 /* Profits Earned Chart */
 var options1 = {
-    series: [{
-        name: 'Profit Earned',
-        data: [44, 42, 57, 86, 58, 55, 70],
-    }, {
-        name: 'Total Sales',
-        data: [34, 22, 37, 56, 21, 35, 60],
-    }],
+    series: [
+        {
+            name: "Profit Earned",
+            data: [44, 42, 57, 86, 58, 55, 70],
+        },
+        {
+            name: "Total Sales",
+            data: [34, 22, 37, 56, 21, 35, 60],
+        },
+    ],
     chart: {
-        type: 'bar',
+        type: "bar",
         height: 180,
         toolbar: {
             show: false,
-        }
+        },
     },
     grid: {
-        borderColor: '#f1f1f1',
-        strokeDashArray: 3
+        borderColor: "#f1f1f1",
+        strokeDashArray: 3,
     },
     colors: ["rgb(132, 90, 223)", "#e4e7ed"],
     plotOptions: {
         bar: {
             colors: {
-                ranges: [{
-                    from: -100,
-                    to: -46,
-                    color: '#ebeff5'
-                }, {
-                    from: -45,
-                    to: 0,
-                    color: '#ebeff5'
-                }]
+                ranges: [
+                    {
+                        from: -100,
+                        to: -46,
+                        color: "#ebeff5",
+                    },
+                    {
+                        from: -45,
+                        to: 0,
+                        color: "#ebeff5",
+                    },
+                ],
             },
-            columnWidth: '60%',
+            columnWidth: "60%",
             borderRadius: 5,
-        }
+        },
     },
     dataLabels: {
         enabled: false,
@@ -588,48 +680,51 @@ var options1 = {
     },
     legend: {
         show: false,
-        position: 'top',
+        position: "top",
     },
     yaxis: {
         title: {
             style: {
-                color: '#adb5be',
-                fontSize: '13px',
-                fontFamily: 'poppins, sans-serif',
+                color: "#adb5be",
+                fontSize: "13px",
+                fontFamily: "poppins, sans-serif",
                 fontWeight: 600,
-                cssClass: 'apexcharts-yaxis-label',
+                cssClass: "apexcharts-yaxis-label",
             },
         },
         labels: {
             formatter: function (y) {
                 return y.toFixed(0) + "";
-            }
-        }
+            },
+        },
     },
     xaxis: {
-        type: 'week',
-        categories: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
+        type: "week",
+        categories: ["S", "M", "T", "W", "T", "F", "S"],
         axisBorder: {
             show: true,
-            color: 'rgba(119, 119, 142, 0.05)',
+            color: "rgba(119, 119, 142, 0.05)",
             offsetX: 0,
             offsetY: 0,
         },
         axisTicks: {
             show: true,
-            borderType: 'solid',
-            color: 'rgba(119, 119, 142, 0.05)',
+            borderType: "solid",
+            color: "rgba(119, 119, 142, 0.05)",
             width: 6,
             offsetX: 0,
-            offsetY: 0
+            offsetY: 0,
         },
         labels: {
-            rotate: -90
-        }
-    }
+            rotate: -90,
+        },
+    },
 };
-document.getElementById('crm-profits-earned').innerHTML = '';
-var chart1 = new ApexCharts(document.querySelector("#crm-profits-earned"), options1);
+document.getElementById("crm-profits-earned").innerHTML = "";
+var chart1 = new ApexCharts(
+    document.querySelector("#crm-profits-earned"),
+    options1
+);
 chart1.render();
 
 function crmProfitsearned() {
@@ -641,73 +736,78 @@ function crmProfitsearned() {
 
 Chart.register(DoughnutController, ArcElement, Tooltip, Legend);
 Chart.defaults.elements.arc.borderWidth = 0;
-Chart.defaults.datasets.doughnut.cutout = '85%';
+Chart.defaults.datasets.doughnut.cutout = "85%";
 
 /* Leads By Source Chart */
 var chartInstance = new Chart(document.getElementById("leads-source"), {
-    type: 'doughnut',
+    type: "doughnut",
     data: {
-        datasets: [{
-            label: 'My First Dataset',
-            data: [32, 27, 25, 16],
-            backgroundColor: [
-                'rgb(132, 90, 223)',
-                'rgb(35, 183, 229)',
-                'rgb(38, 191, 148)',
-                'rgb(245, 184, 73)',
-            ]
-        }]
+        datasets: [
+            {
+                label: "My First Dataset",
+                data: [32, 27, 25, 16],
+                backgroundColor: [
+                    "rgb(132, 90, 223)",
+                    "rgb(35, 183, 229)",
+                    "rgb(38, 191, 148)",
+                    "rgb(245, 184, 73)",
+                ],
+            },
+        ],
     },
-    plugins: [{
-        afterUpdate: function (chart) {
-            const arcs = chart.getDatasetMeta(0).data;
+    plugins: [
+        {
+            afterUpdate: function (chart) {
+                const arcs = chart.getDatasetMeta(0).data;
 
-            arcs.forEach(function (arc) {
-                arc.round = {
-                    x: (chart.chartArea.left + chart.chartArea.right) / 2,
-                    y: (chart.chartArea.top + chart.chartArea.bottom) / 2,
-                    radius: (arc.outerRadius + arc.innerRadius) / 2,
-                    thickness: (arc.outerRadius - arc.innerRadius) / 2,
-                    backgroundColor: arc.options.backgroundColor
-                }
-            });
+                arcs.forEach(function (arc) {
+                    arc.round = {
+                        x: (chart.chartArea.left + chart.chartArea.right) / 2,
+                        y: (chart.chartArea.top + chart.chartArea.bottom) / 2,
+                        radius: (arc.outerRadius + arc.innerRadius) / 2,
+                        thickness: (arc.outerRadius - arc.innerRadius) / 2,
+                        backgroundColor: arc.options.backgroundColor,
+                    };
+                });
+            },
+            afterDraw: (chart) => {
+                const { ctx, canvas } = chart;
+
+                chart.getDatasetMeta(0).data.forEach((arc) => {
+                    const startAngle = Math.PI / 2 - arc.startAngle;
+                    const endAngle = Math.PI / 2 - arc.endAngle;
+
+                    ctx.save();
+                    ctx.translate(arc.round.x, arc.round.y);
+                    ctx.fillStyle = arc.options.backgroundColor;
+                    ctx.beginPath();
+                    ctx.arc(
+                        arc.round.radius * Math.sin(endAngle),
+                        arc.round.radius * Math.cos(endAngle),
+                        arc.round.thickness,
+                        0,
+                        2 * Math.PI
+                    );
+                    ctx.closePath();
+                    ctx.fill();
+                    ctx.restore();
+                });
+            },
         },
-        afterDraw: (chart) => {
-            const {
-                ctx,
-                canvas
-            } = chart;
-
-            chart.getDatasetMeta(0).data.forEach(arc => {
-                const startAngle = Math.PI / 2 - arc.startAngle;
-                const endAngle = Math.PI / 2 - arc.endAngle;
-
-                ctx.save();
-                ctx.translate(arc.round.x, arc.round.y);
-                ctx.fillStyle = arc.options.backgroundColor;
-                ctx.beginPath();
-                ctx.arc(arc.round.radius * Math.sin(endAngle), arc.round.radius * Math.cos(endAngle), arc.round.thickness, 0, 2 * Math.PI);
-                ctx.closePath();
-                ctx.fill();
-                ctx.restore();
-            });
-        }
-    }]
+    ],
 });
 
 function leads(myVarVal) {
-
     chartInstance.data.datasets[0] = {
-        label: 'My First Dataset',
+        label: "My First Dataset",
         data: [32, 27, 25, 16],
         backgroundColor: [
             `rgb(${myVarVal})`,
-            'rgb(35, 183, 229)',
-            'rgb(245, 184, 73)',
-            'rgb(38, 191, 148)',
-        ]
-    }
+            "rgb(35, 183, 229)",
+            "rgb(245, 184, 73)",
+            "rgb(38, 191, 148)",
+        ],
+    };
     chartInstance.update();
-
 }
 /* Leads By Source Chart */

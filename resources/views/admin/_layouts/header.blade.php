@@ -5,7 +5,7 @@
         <div class="header-content-left">
             <!-- Start::header-element -->
             <div class="header-element">
-                <div class="horizontal-logo"> <a href="index" class="header-logo"> <img
+                <div class="horizontal-logo"> <a href="{{ route('admin.dashboard') }}" class="header-logo"> <img
                     src="{{ asset('images/svg/tbl_logo.svg') }}" alt="logo" class="desktop-logo"> <img
                     src="{{ asset('images/svg/tbl_logo.svg') }}" alt="logo" class="toggle-logo">
                     <img src="{{ asset('images/svg/tbl_logo.svg') }}" alt="logo" class="desktop-dark">

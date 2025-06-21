@@ -257,7 +257,6 @@ import flatpickr from "flatpickr";
         /* flatpickr date */
         const dateInputs = document.querySelectorAll(".flatpickr-date");
         if (dateInputs.length) {
-            console.log('hii');
             flatpickr(".flatpickr-date", {
                 altInput: true,
                 altFormat: "F j, Y",
@@ -278,13 +277,20 @@ import flatpickr from "flatpickr";
             });
         }
 
+        const saveViewButtons = document.querySelectorAll(".save-custom-view");
+        if (saveViewButtons.length) {
+            saveViewButtons.forEach(button => {
+                button.addEventListener("click", function () {
+                    saveCustomView();
+                });
+            });
+        }
+
     });
 
     /* footer year */
     document.getElementById("year").innerHTML = new Date().getFullYear();
     /* footer year */
-
-
 
     /* card with close button */
     let DIV_CARD = ".card";
@@ -395,6 +401,32 @@ function openFullscreen() {
     }
 }
 /* full screen */
+
+/* custom view */
+function saveCustomView() {
+    const url = window.location.href;
+
+    fetch("/internal/ops/custom-view/save", {
+        method: "POST",
+        headers: {
+            "X-CSRF-TOKEN": document.querySelector('meta[name="csrf-token"]')?.content,
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            url: url,
+            name: prompt("Name this view:") || null
+        })
+    })
+    .then(res => res.json())
+    .then(data => {
+        if (data.success) {
+            alert("View saved!");
+        } else {
+            alert("Something went wrong!");
+        }
+    });
+}
+/* custom view */
 
 /* toggle switches */
 let customSwitch = document.querySelectorAll(".toggle");

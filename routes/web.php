@@ -9,6 +9,7 @@ use App\Http\Controllers\MaintenanceController;
 use App\Http\Controllers\PaymentController;
 
 use App\Http\Controllers\Admin\Auth\LoginController as AdminLoginController;
+use App\Http\Controllers\Admin\CustomViewController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\EnquiriesController;
 use App\Http\Controllers\Admin\ServiceLeadsController;
@@ -44,6 +45,9 @@ Route::group(['as' => 'admin.', 'prefix' => config('app.admin_url_prefix')], fun
 
     Route::middleware(['auth:admin'])->group(function () {
         Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+        Route::get('/charts/fetch-revenue', [DashboardController::class, 'revenue_chart'])->name('chart.revenue');
+
+        Route::post('custom-view/save', [CustomViewController::class , 'saveView'])->name('custom-view.save');
 
         Route::get('inbound-service-leads', [ServiceLeadsController::class, 'index'])->name('service-leads.index');
         Route::get('inbound-service-leads/paid', [ServiceLeadsController::class, 'paid_index'])->name('service-leads.paid.index');
