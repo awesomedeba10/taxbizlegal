@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <meta name="author" content="iamawesome!">
+    <meta name="author" content="officialdeba10">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="current-path" content="{{ url()->current() }}">
 
@@ -16,6 +16,8 @@
             |
         @endif Tax Biz Legal
     </title>
+
+    <link rel="canonical" href="{{ url()->current() }}" />
 
     <meta name="description" content="@yield('meta_description', 'Get Top-Rated Business Services, Company registration, Compliance Solutions under One Roof in Just a Few Taps')">
     <meta name="keywords" content="@yield('meta_keywords', 'TaxBizLegal, tax services, legal services, GST registration, company registration, income tax filing, business consultancy')">

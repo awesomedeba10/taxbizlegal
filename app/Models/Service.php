@@ -11,6 +11,11 @@ class Service extends Model
         'description', 'sort_order' , 'is_active'
     ];
 
+    public function orders()
+    {
+        return $this->hasMany(Order::class, 'service_name', 'slug');
+    }
+
     public static function getHeaderServices() {
         return self::where('is_active', 1)
                 ->orderBy('sort_order')

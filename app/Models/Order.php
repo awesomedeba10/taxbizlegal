@@ -5,6 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
 use Carbon\Carbon;
+use Illuminate\Database\Eloquent\Casts\Attribute;
+
 
 class Order extends Model
 {
@@ -27,6 +29,20 @@ class Order extends Model
         'rzp_payment_created_at'
     ];
 
+    public function formattedCreatedAt(): Attribute
+    {
+        return Attribute::get(function () {
+            return $this->created_at
+                ? $this->created_at->format('d/m/y h:i:s A')
+                : null;
+        });
+    }
+
+    public function service()
+    {
+        return $this->belongsTo(Service::class, 'service_name', 'slug');
+    }
+
     public static function submitBasicDetails($request)
     {
         return self::create([
@@ -35,11 +51,12 @@ class Order extends Model
             'cus_phone' => $request->phone,
             'cus_state' => $request->state,
             'service_name' => $request->service_name,
-            'order_id' => 'tbl-'. Str::random(11)
+            'order_id' => 'tbl-' . Str::random(11)
         ]);
     }
 
-    public static function updatePlanDetails($request) {
+    public static function updatePlanDetails($request)
+    {
         $order = self::where('order_id', base64_decode($request->order_id))->first();
 
         if (!$order):
@@ -54,7 +71,8 @@ class Order extends Model
         return $order;
     }
 
-    public static function updateOrderStatus(string $orderId , $response) {
+    public static function updateOrderStatus(string $orderId, $response)
+    {
         $order = self::where('order_id', $orderId)->first();
 
         if (!$order):
@@ -69,7 +87,7 @@ class Order extends Model
         return $order;
     }
 
-    public static function updatePaymentStatus(string $orderId , $response)
+    public static function updatePaymentStatus(string $orderId, $response)
     {
         $order = self::where('rzp_order_id', $orderId)->first();
 
@@ -78,7 +96,7 @@ class Order extends Model
         endif;
 
         $order->rzp_payment_id = $response->id;
-        $order->rzp_paid_amt = $response->amount/100;
+        $order->rzp_paid_amt = $response->amount / 100;
         $order->rzp_payment_status = $response->status;
         $order->rzp_payment_created_at = date('Y-m-d H:i:s', $response->created_at);
         $order->current_stage = 'payment_received';
@@ -88,11 +106,13 @@ class Order extends Model
         return $order;
     }
 
-    public static function getLatestLeads(int $minutes = 60) {
+    public static function getLatestLeads(int $minutes = 60)
+    {
         return self::where('created_at', '>=', Carbon::now()->subMinutes($minutes))->get();
     }
 
-    public static function captureGst($request) {
+    public static function captureGst($request)
+    {
         $order = self::where('order_id', base64_decode($request->orderid))->first();
 
         if (!$order):

@@ -96,7 +96,7 @@
     "src": "resources/css/icon-fonts/tabler-icons/iconfont/fonts/tabler-icons.eot"
   },
   "resources/js/admin/admin.js": {
-    "file": "assets/admin-n0lTOoLO.js",
+    "file": "assets/admin-DfNuqzU8.js",
     "name": "admin",
     "src": "resources/js/admin/admin.js",
     "isEntry": true,
@@ -108,7 +108,7 @@
       "resources/js/admin/crm-dashboard.js"
     ],
     "css": [
-      "assets/admin-D9dGEPkM.css"
+      "assets/admin-G1uAqkdN.css"
     ],
     "assets": [
       "assets/remixicon0b0b-DiAulmZC.eot",

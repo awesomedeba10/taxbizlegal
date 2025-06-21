@@ -22,7 +22,6 @@ class AdminUserController extends Controller
                 });
             }
 
-            /** @noinspection PhpUndefinedMethodInspection */
             $users = $query->paginate(10)->withQueryString();
 
         return view('admin.users.index', [
@@ -41,6 +40,6 @@ class AdminUserController extends Controller
             'password'    => Hash::make($request->password),
         ]);
 
-    return redirect()->route('admin.users.index')->with('success', 'Admin user created successfully.');
+        return redirect()->route('admin.users.index')->with('success', 'Admin user created successfully.');
     }
 }

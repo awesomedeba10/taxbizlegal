@@ -125,45 +125,49 @@
         <div class="offcanvas-body p-0">
             <div class="card custom-card">
                 <div class="card-body">
-                    <form method="post" action="{{ route('admin.users.create') }}" autocomplete="off">
+                    <form method="post" action="{{ route('admin.users.create') }}" autocomplete="off"
+                        class="needs-validation row">
                         @csrf
-                        <div class="row">
-                            <div class="col-md-6 mb-3">
-                                <label class="form-label required">First Name*</label>
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label required">First Name</label>
+                            <div class="input-group has-validation">
                                 <input type="text" class="form-control" placeholder="First name" name="first_name"
                                     aria-label="First name" required>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <label class="form-label required">Last Name</label>
-                                <input type="text" class="form-control" placeholder="Last name" name="last_name"
-                                    aria-label="Last name" required>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <label class="form-label required">Contact Number</label>
-                                <input type="number" maxlength="10" class="form-control" placeholder="Phone number"
-                                    name="phone" aria-label="Phone number" required>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <label class="form-label" required>Email</label>
-                                <input type="text" class="form-control" placeholder="Email" name="email"
-                                    autocomplete="off" aria-label="Phone number" required>
-                            </div>
-                            <div class="col-md-12 mb-3">
-                                <label class="form-label required">Designation</label>
-                                <input type="text" class="form-control" placeholder="Designation" name="designation"
-                                    aria-label="Designation" required>
-                            </div>
-                            <div class="col-md-12 mb-3">
-                                <label class="form-label required">Password</label>
-                                <div class="input-group">
-                                    <div class="input-group-text"><i class="ri-lock-line"></i></div>
-                                    <input type="password" class="form-control" id="form-password1"
-                                        placeholder="Enter Password" autocomplete="new-password" required>
+                                <div class="invalid-feedback">
+                                    First Name is required
                                 </div>
                             </div>
-                            <div class="col-md-12">
-                                <button type="submit" class="btn btn-primary">Create</button>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label required">Last Name</label>
+                            <input type="text" class="form-control" placeholder="Last name" name="last_name"
+                                aria-label="Last name" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label required">Contact Number</label>
+                            <input type="number" maxlength="10" class="form-control" placeholder="Phone number"
+                                name="phone" aria-label="Phone number" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label" required>Email</label>
+                            <input type="text" class="form-control" placeholder="Email" name="email"
+                                autocomplete="off" aria-label="Phone number" required>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                            <label class="form-label required">Designation</label>
+                            <input type="text" class="form-control" placeholder="Designation" name="designation"
+                                aria-label="Designation" required>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                            <label class="form-label required">Password</label>
+                            <div class="input-group">
+                                <div class="input-group-text"><i class="ri-lock-line"></i></div>
+                                <input type="password" class="form-control" id="form-password1"
+                                    placeholder="Enter Password" autocomplete="new-password" required>
                             </div>
+                        </div>
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-primary">Create</button>
                         </div>
                     </form>
                 </div>

@@ -13800,7 +13800,8 @@ hr {
 }
 
 .flatpickr-calendar.open {
-  z-index: 105 !important;
+  z-index: 10001 !important;
+  position: fixed !important;
 }
 
 .flatpickr-current-month .flatpickr-monthDropdown-months {

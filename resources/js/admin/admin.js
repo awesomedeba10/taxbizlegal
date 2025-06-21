@@ -3,6 +3,7 @@ import 'choices.js/public/assets/styles/choices.min.css';
 import '@simonwep/pickr/dist/themes/nano.min.css';
 import 'node-waves/dist/waves.min.css';
 import 'simplebar/dist/simplebar.min.css';
+import 'flatpickr/dist/flatpickr.min.css';
 
 import '../../scss/admin.scss';
 import '../../css/admin-build.css';

@@ -3,6 +3,8 @@ import { Tooltip, Popover, Toast } from "bootstrap";
 import Pickr from "@simonwep/pickr";
 import Waves from "node-waves";
 import SimpleBar from "simplebar";
+import flatpickr from "flatpickr";
+
 
 (function () {
     "use strict";
@@ -224,41 +226,65 @@ import SimpleBar from "simplebar";
     nanoButtons1[0].click();
     /* for theme background */
 
-    /* Choices JS */
     document.addEventListener("DOMContentLoaded", function () {
-        const sessionToast = document.getElementById('sessionMsgToast');
+        const sessionToast = document.getElementById("sessionMsgToast");
         if (sessionToast) {
             const toast = new Toast(sessionToast);
             toast.show();
         }
 
-        var genericExamples = document.querySelectorAll("[data-trigger]");
-        for (let i = 0; i < genericExamples.length; ++i) {
-            var element = genericExamples[i];
+        /* Choices JS */
+        var choiceElements = document.querySelectorAll(".choices__select");
+        choiceElements.forEach((elm) => {
             if (
-                element.classList.contains("choices__input") ||
-                element.parentElement?.classList.contains("choices")
+                elm.classList.contains("choices__input") ||
+                elm.parentElement?.classList.contains("choices")
             ) {
-                continue;
+                return;
             }
 
-            new Choices(element, {
+            new Choices(elm, {
                 allowHTML: true,
-                placeholderValue: "This is a placeholder set in the config",
+                removeItemButton: true,
+                shouldSort: false,
+                placeholderValue:
+                    elm.getAttribute("data-placeholder") || "Select an option",
                 searchPlaceholderValue: "Search",
             });
+        });
+        /* Choices JS */
+
+        /* flatpickr date */
+        const dateInputs = document.querySelectorAll(".flatpickr-date");
+        if (dateInputs.length) {
+            console.log('hii');
+            flatpickr(".flatpickr-date", {
+                altInput: true,
+                altFormat: "F j, Y",
+                dateFormat: "Y-m-d",
+            });
         }
+        /* flatpickr date */
+
+        /* node waves */
+        Waves.attach(".btn-wave", ["waves-light"]);
+        Waves.init();
+        /* node waves */
+
+        const fs = document.querySelector(".header-fullscreen a");
+        if (fs) {
+            fs.addEventListener("click", function (e) {
+                openFullscreen();
+            });
+        }
+
     });
-    /* Choices JS */
 
     /* footer year */
     document.getElementById("year").innerHTML = new Date().getFullYear();
     /* footer year */
 
-    /* node waves */
-    Waves.attach(".btn-wave", ["waves-light"]);
-    Waves.init();
-    /* node waves */
+
 
     /* card with close button */
     let DIV_CARD = ".card";
@@ -329,16 +355,8 @@ import SimpleBar from "simplebar";
 })();
 
 /* full screen */
-var elem = document.documentElement;
-document.addEventListener("DOMContentLoaded", function () {
-    const fs = document.querySelector(".header-fullscreen a");
-    if (fs) {
-        fs.addEventListener("click", function (e) {
-            openFullscreen();
-        });
-    }
-});
 function openFullscreen() {
+    var elem = document.documentElement;
     let open = document.querySelector(".full-screen-open");
     let close = document.querySelector(".full-screen-close");
 
