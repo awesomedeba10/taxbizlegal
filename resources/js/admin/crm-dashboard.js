@@ -51,6 +51,8 @@ function initDashboard() {
             );
             chart.render();
 
+            console.log(data, today, percentage);
+
             // Update revenue and percentage
             document.querySelector("#total-revenue-amount").textContent =
                 "₹" + today.toLocaleString();

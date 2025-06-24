@@ -17,7 +17,7 @@ class DashboardController extends Controller
 
     public function revenue_chart()
     {
-        $data = Cache::remember('revenue_chart_30days', now()->addHours(4), function () {
+        // $data = Cache::remember('revenue_chart_30days', now()->addHours(4), function () {
             $now = Carbon::now();
             $startDate = $now->copy()->subDays(30)->startOfDay();
 
@@ -35,8 +35,10 @@ class DashboardController extends Controller
                 $revenues[] = (float) ($orders[$date]->total ?? 0);
             }
 
-            return $revenues;
-        });
+        //     return $revenues;
+        // });
+
+        $data = $revenues;
 
         $todayRevenue = $data[6]; // last element = today
         $avgPast6 = array_slice($data, 0, 6);

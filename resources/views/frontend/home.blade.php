@@ -163,8 +163,8 @@
                 <div class="col-3 col-label"> <span class="label">Explore our Top Services
                     </span>
                 </div>
-                <div class="col-9 mod-flex mod-flex-grow mod-w-auto mod-justify-around md:mod-flex-wrap sm:mod-flex-wra md:mod-gap-4 sm:mod-gap-4"> 
-                    <span class="mod-flex mod-justify-center mod-items-center"> 
+                <div class="col-9 mod-flex mod-flex-grow mod-w-auto mod-justify-around md:mod-flex-wrap sm:mod-flex-wra md:mod-gap-4 sm:mod-gap-4">
+                    <span class="mod-flex mod-justify-center mod-items-center">
                         <img width="124" height="49"
                             src="https://mo.work/wp-content/uploads/2024/10/ovo-energy-2.png"
                             class="attachment-full size-full" alt="" loading="lazy" decoding="async">
@@ -172,22 +172,22 @@
                     <span class="mod-flex mod-justify-center mod-items-center">
                             <img width="137" height="37"
                                 src="https://mo.work/wp-content/uploads/2024/10/gocarcredit.png"
-                                class="attachment-full size-full" alt="" loading="lazy" decoding="async"> 
-                    </span> 
-                    <span class="mod-flex mod-justify-center mod-items-center"> 
+                                class="attachment-full size-full" alt="" loading="lazy" decoding="async">
+                    </span>
+                    <span class="mod-flex mod-justify-center mod-items-center">
                             <img width="51" height="55"
                             src="https://mo.work/wp-content/uploads/2024/10/tottenham-1.png"
-                            class="attachment-full size-full" alt="" loading="lazy" decoding="async"> 
+                            class="attachment-full size-full" alt="" loading="lazy" decoding="async">
                     </span>
-                    <span class="mod-flex mod-justify-center mod-items-center"> 
+                    <span class="mod-flex mod-justify-center mod-items-center">
                         <img width="51" height="55"
                         src="https://mo.work/wp-content/uploads/2024/10/tottenham-1.png"
-                        class="attachment-full size-full" alt="" loading="lazy" decoding="async"> 
+                        class="attachment-full size-full" alt="" loading="lazy" decoding="async">
                     </span>
-                    <span class="mod-flex mod-justify-center mod-items-center"> 
+                    <span class="mod-flex mod-justify-center mod-items-center">
                         <img width="51" height="55"
                         src="https://mo.work/wp-content/uploads/2024/10/tottenham-1.png"
-                        class="attachment-full size-full" alt="" loading="lazy" decoding="async"> 
+                        class="attachment-full size-full" alt="" loading="lazy" decoding="async">
                     </span>
                 </div>
             </div>
@@ -604,3 +604,7 @@
         {{-- <x-article-list page="home"></x-article-list> --}}
     </main>
 @endsection
+
+@push('schema')
+<script id="organizationSchema" type="application/ld+json">{"@context":"https://schema.org","@graph":{"@type":["LegalService","Organization"],"@id":"https://taxbizlegal.com/#organization","name":"Tax Biz Legal","url":"https://taxbizlegal.com","logo":{"@type":"ImageObject","@id":"https://taxbizlegal.com/#logo","url":"https://taxbizlegal.com/images/svg/tbl_logo.svg","caption":"Taxbizlegal Logo","inLanguage":"en","width":"150","height":"50"},"openingHours":["Monday to Saturday 10:00-19:00"],"image":{"@id":"https://taxbizlegal.com/#logo"},"address":{"@type":"PostalAddress","streetAddress":"22/1, SH 13, Bangihati Village","addressLocality":"Hooghly","addressRegion":"West Bengal","postalCode":"712250","addressCountry":"IN"},"description":"TaxBizLegal is a trusted online platform offering simplified and affordable legal, tax, and business compliance services for startups, entrepreneurs, and small businesses across India.","contactPoint":[{"@type":"ContactPoint","contactType":"Customer Service","telephone":"+91-9403892279","email":"info@taxbizlegal.com"}],"sameAs":["https://www.facebook.com/people/Tax-Biz-Legal/61572967894678/","https://www.instagram.com/tax_biz_legal/","https://www.linkedin.com/company/tax-biz-legal/"]}}</script>
+@endpush

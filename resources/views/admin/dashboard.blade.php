@@ -997,7 +997,7 @@
                                                 class="d-flex align-items-center justify-content-between flex-wrap">
                                                 <div>
                                                     <p class="text-muted mb-0">Total Revenue</p>
-                                                    <h4 class="fw-semibold mt-1" id="total-revenue-amount">₹0</h4>
+                                                    <h4 class="fw-semibold mt-1" id="total-revenue-amount">₹100</h4>
                                                 </div>
                                                 <div id="crm-total-revenue">
                                                 </div>

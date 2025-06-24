@@ -59,6 +59,9 @@
 
     @stack('style')
 
+    @env(['staging', 'production'])
+    @stack('schema')
+    @endenv
 </head>
 
 <body>
