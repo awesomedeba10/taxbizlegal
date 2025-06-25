@@ -1,6 +1,6 @@
 <aside class="app-sidebar sticky sticky-pin" id="sidebar">
     <!-- Start::main-sidebar-header -->
-    <div class="main-sidebar-header"> <a href="index" class="header-logo"> <img src="{{ asset('images/svg/tbl_logo.svg') }}" alt="logo" class="desktop-logo">
+    <div class="main-sidebar-header"> <a href="{{ route('admin.dashboard') }}" class="header-logo"> <img src="{{ asset('images/svg/tbl_logo.svg') }}" alt="logo" class="desktop-logo">
             <img src="{{ asset('images/svg/tbl_logo.svg') }}" alt="logo" class="toggle-logo">
             <img src="{{ asset('images/svg/tbl_logo.svg') }}" alt="logo" class="desktop-dark">
             <img src="{{ asset('images/svg/tbl_logo.svg') }}" alt="logo" class="toggle-dark">

@@ -5,7 +5,6 @@ import Waves from "node-waves";
 import SimpleBar from "simplebar";
 import flatpickr from "flatpickr";
 
-
 (function () {
     "use strict";
 
@@ -279,13 +278,70 @@ import flatpickr from "flatpickr";
 
         const saveViewButtons = document.querySelectorAll(".save-custom-view");
         if (saveViewButtons.length) {
-            saveViewButtons.forEach(button => {
+            saveViewButtons.forEach((button) => {
                 button.addEventListener("click", function () {
                     saveCustomView();
                 });
             });
         }
 
+        const filterForm = document.getElementById("filterForm");
+        if (filterForm) {
+            filterForm.addEventListener("submit", function (e) {
+                e.preventDefault();
+
+                const formData = new FormData(filterForm);
+                const params = {};
+
+                const arrayFields = ["services[]", "current_status[]"];
+
+                for (const key of formData.keys()) {
+                    if (arrayFields.includes(key)) {
+                        const values = formData
+                            .getAll(key)
+                            .filter((val) => val);
+                        if (values.length > 0) {
+                            const cleanKey = key.replace("[]", "");
+                            params[cleanKey] = values;
+                        }
+                    } else {
+                        const value = formData.get(key);
+                        if (value) params[key] = value;
+                    }
+                }
+
+                const redirectUrl = filterForm.getAttribute("data-action");
+
+                fetch(
+                    window.location.origin +
+                        "/internal/ops/apply-filter-params",
+                    {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json",
+                            "X-CSRF-TOKEN": document.querySelector(
+                                'meta[name="csrf-token"]'
+                            ).content,
+                        },
+                        body: JSON.stringify(params),
+                    }
+                )
+                    .then((res) => res.json())
+                    .then(({ param }) => {
+                        if (param) {
+                            window.location.href = `${redirectUrl}?payload=${encodeURIComponent(
+                                param
+                            )}`;
+                        } else {
+                            alert("Something went wrong!");
+                        }
+                    })
+                    .catch((err) => {
+                        console.error("Encryption failed", err);
+                        alert("Request failed.");
+                    });
+            });
+        }
     });
 
     /* footer year */
@@ -409,22 +465,23 @@ function saveCustomView() {
     fetch("/internal/ops/custom-view/save", {
         method: "POST",
         headers: {
-            "X-CSRF-TOKEN": document.querySelector('meta[name="csrf-token"]')?.content,
-            "Content-Type": "application/json"
+            "X-CSRF-TOKEN": document.querySelector('meta[name="csrf-token"]')
+                ?.content,
+            "Content-Type": "application/json",
         },
         body: JSON.stringify({
             url: url,
-            name: prompt("Name this view:") || null
-        })
+            name: prompt("Name this view:") || null,
+        }),
     })
-    .then(res => res.json())
-    .then(data => {
-        if (data.success) {
-            alert("View saved!");
-        } else {
-            alert("Something went wrong!");
-        }
-    });
+        .then((res) => res.json())
+        .then((data) => {
+            if (data.success) {
+                alert("View saved!");
+            } else {
+                alert("Something went wrong!");
+            }
+        });
 }
 /* custom view */
 

@@ -1,3 +1,8 @@
 RewriteEngine On
+
+# Dynamically redirect www to non-www
+RewriteCond %{HTTP_HOST} ^www\.taxbizlegal\.com$ [NC]
+RewriteRule ^(.*)$ https://taxbizlegal.com/$1 [L,R=301]
+
 RewriteCond %{REQUEST_URI} !^/public/
 RewriteRule ^(.*)$ /public/$1 [L,QSA]

@@ -13,6 +13,8 @@ use App\Http\Controllers\Admin\CustomViewController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\EnquiriesController;
 use App\Http\Controllers\Admin\ServiceLeadsController;
+use App\Http\Middleware\DecodeAdminQueryString;
+use App\Http\Middleware\PreventBackHistory;
 
 Route::group(['as' => 'front.'], function () {
 
@@ -43,9 +45,15 @@ Route::group(['as' => 'admin.', 'prefix' => config('app.admin_url_prefix')], fun
     Route::post('login', [AdminLoginController::class, 'login'])->name('login.submit');
     Route::post('logout', [AdminLoginController::class, 'logout'])->name('logout');
 
-    Route::middleware(['auth:admin'])->group(function () {
+    Route::middleware(['auth:admin', PreventBackHistory::class, DecodeAdminQueryString::class])->group(function () {
         Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+        Route::post('/apply-filter-params', [DashboardController::class, 'filter'])->name('apply.filter');
         Route::get('/charts/fetch-revenue', [DashboardController::class, 'revenue_chart'])->name('chart.revenue');
+        Route::get('/charts/fetch-clients', [DashboardController::class, 'clients_chart'])->name('chart.clients');
+        Route::get('/charts/fetch-leads', [DashboardController::class, 'leads_chart'])->name('chart.leads');
+        Route::get('/charts/fetch-conversion', [DashboardController::class, 'conversion_chart'])->name('chart.conversion');
+        Route::get('/charts/fetch-leads-status', [DashboardController::class, 'leads_status_chart']);
+        Route::get('/charts/fetch-leads-by-service', [DashboardController::class, 'leads_by_services']);
 
         Route::post('custom-view/save', [CustomViewController::class , 'saveView'])->name('custom-view.save');
 

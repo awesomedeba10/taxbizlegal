@@ -14,10 +14,61 @@ if (document.readyState === "loading") {
 }
 
 function initDashboard() {
-    fetch("/internal/ops/charts/fetch-revenue")
+    renderSparklineChart({
+        url: "/internal/ops/charts/fetch-revenue",
+        chartElementId: "crm-total-revenue",
+        totalElementId: "total-revenue-amount",
+        percentageElementId: "total-revenue-percentage",
+        label: "Revenue",
+    });
+
+    renderSparklineChart({
+        url: "/internal/ops/charts/fetch-clients",
+        chartElementId: "crm-total-clients",
+        totalElementId: "total-clients-count",
+        percentageElementId: "total-clients-percentage",
+        color: "rgb(35, 183, 229)",
+        label: "Clients",
+    });
+
+    renderSparklineChart({
+        url: "/internal/ops/charts/fetch-leads",
+        chartElementId: "crm-total-leads",
+        totalElementId: "total-leads-count",
+        percentageElementId: "total-leads-percentage",
+        color: "rgb(245, 184, 73)",
+        label: "Leads",
+    });
+
+    renderSparklineChart({
+        url: "/internal/ops/charts/fetch-conversion",
+        chartElementId: "crm-conversion-ratio",
+        totalElementId: "total-conversion-percentage",
+        percentageElementId: "total-conversion-change",
+        color: "rgb(38, 191, 148)",
+        label: "Conversion %",
+    });
+
+    loadLeadsStatusChart();
+    renderLeadsByServiceChart();
+}
+
+function renderSparklineChart({
+    url,
+    chartElementId,
+    totalElementId,
+    percentageElementId,
+    color = "rgb(132, 90, 223)",
+    label = "Metric",
+}) {
+    const payload = getQueryParam("payload");
+    if (payload) {
+        url += `?payload=${encodeURIComponent(payload)}`;
+    }
+
+    fetch(url)
         .then((res) => res.json())
-        .then(({ data, today, percentage }) => {
-            // Init chart
+        .then(({ graph, total, percentage }) => {
             const chartOptions = {
                 chart: {
                     type: "line",
@@ -37,307 +88,162 @@ function initDashboard() {
                         stops: [0, 98],
                     },
                 },
-                series: [{ name: "Revenue", data }],
+                series: [{ name: label, data: graph }],
                 tooltip: { enabled: false },
-                colors: ["rgb(132, 90, 223)"],
+                colors: [color],
                 yaxis: { show: false },
                 xaxis: { show: false },
             };
 
-            document.getElementById("crm-total-revenue").innerHTML = "";
+            document.getElementById(chartElementId).innerHTML = "";
             const chart = new ApexCharts(
-                document.querySelector("#crm-total-revenue"),
+                document.querySelector(`#${chartElementId}`),
                 chartOptions
             );
             chart.render();
 
-            console.log(data, today, percentage);
+            if (totalElementId) {
+                document.getElementById(totalElementId).textContent =
+                    "₹" + total.toLocaleString();
+            }
 
-            // Update revenue and percentage
-            document.querySelector("#total-revenue-amount").textContent =
-                "₹" + today.toLocaleString();
-            const percentageBox = document.querySelector(
-                "#total-revenue-percentage"
-            );
-            percentageBox.textContent = `${
-                percentage > 0 ? "+" : ""
-            }${percentage}%`;
-            percentageBox.classList.toggle("text-success", percentage > 0);
-            percentageBox.classList.toggle("text-danger", percentage <= 0);
+            if (percentageElementId) {
+                const el = document.getElementById(percentageElementId);
+                el.textContent = `${percentage > 0 ? "+" : ""}${percentage}%`;
+                el.classList.toggle("text-success", percentage > 0);
+                el.classList.toggle("text-danger", percentage <= 0);
+            }
+        })
+        .catch((err) =>
+            console.error(`Error loading chart: ${chartElementId}`, err)
+        );
+}
+
+function loadLeadsStatusChart() {
+    const payload = getQueryParam("payload");
+    let url = "/internal/ops/charts/fetch-leads-status";
+    if (payload) {
+        url += `?payload=${encodeURIComponent(payload)}`;
+    }
+
+    fetch(url)
+        .then((res) => res.json())
+        .then(({ total, data, percentages }) => {
+            document.querySelector("#total-leads-count-heading").textContent =
+                total.toLocaleString();
+
+            const statusClasses = {
+                basic_details_submitted: "",
+                payment_pending: "bg-info",
+                payment_initiated: "bg-warning",
+                payment_received: "bg-success",
+            };
+
+            const progressContainer =
+                document.querySelector(".progress-stacked");
+            progressContainer.innerHTML = "";
+
+            for (const status in percentages) {
+                const div = document.createElement("div");
+                div.className = `progress-bar ${statusClasses[status]}`;
+                div.style.width = `${percentages[status]}%`;
+                div.setAttribute("role", "progressbar");
+                div.setAttribute("aria-valuenow", percentages[status]);
+                div.setAttribute("aria-valuemin", "0");
+                div.setAttribute("aria-valuemax", "100");
+                progressContainer.appendChild(div);
+            }
+
+            // Lead Breakdown List
+            document.querySelector(".crm-deals-status").innerHTML = `
+                <li class="primary">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div>Basic Details Submitted</div>
+                        <div class="fs-12 text-muted">${data.payment_received} Leads</div>
+                    </div>
+                </li>
+                <li class="info">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div>Payment Pending</div>
+                        <div class="fs-12 text-muted">${data.payment_pending} Leads</div>
+                    </div>
+                </li>
+                <li class="warning">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div>Payment Initiated</div>
+                        <div class="fs-12 text-muted">${data.payment_initiated} Leads</div>
+                    </div>
+                </li>
+                <li class="success">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div>Payment Received</div>
+                        <div class="fs-12 text-muted">${data.basic_details_submitted} Leads</div>
+                    </div>
+                </li>
+            `;
         });
 }
 
-/* Target Incomplete Chart */
-var options = {
-    chart: {
-        height: 127,
-        width: 100,
-        type: "radialBar",
-    },
+function renderLeadsByServiceChart() {
+    const payload = getQueryParam("payload");
+    let url = "/internal/ops/charts/fetch-leads-by-service";
+    if (payload) {
+        url += `?payload=${encodeURIComponent(payload)}`;
+    }
 
-    series: [48],
-    colors: ["rgba(255,255,255,0.9)"],
-    plotOptions: {
-        radialBar: {
-            hollow: {
-                margin: 0,
-                size: "55%",
-                background: "#fff",
-            },
-            dataLabels: {
-                name: {
-                    offsetY: -10,
-                    color: "#4b9bfa",
-                    fontSize: ".625rem",
-                    show: false,
+    fetch(url)
+        .then((res) => res.json())
+        .then(({ labels, data, total }) => {
+            document.querySelector(
+                ".lead-source-value span.fs-25"
+            ).textContent = total.toLocaleString();
+
+            const ctx = document
+                .getElementById("leads-source")
+                .getContext("2d");
+            const backgroundColors = [
+                "rgb(132, 90, 223)",
+                "rgb(35, 183, 229)",
+                "rgb(245, 184, 73)",
+                "rgb(38, 191, 148)",
+            ];
+
+            new Chart(ctx, {
+                type: "doughnut",
+                data: {
+                    labels: labels,
+                    datasets: [
+                        {
+                            label: "Revenue by Service",
+                            data: data,
+                            backgroundColor: backgroundColors,
+                            borderWidth: 0,
+                        },
+                    ],
                 },
-                value: {
-                    offsetY: 5,
-                    color: "#4b9bfa",
-                    fontSize: ".875rem",
-                    show: true,
-                    fontWeight: 600,
+                options: {
+                    cutout: "70%",
+                    plugins: {
+                        legend: { display: false },
+                        tooltip: { enabled: true },
+                    },
                 },
-            },
-        },
-    },
-    stroke: {
-        lineCap: "round",
-    },
-    labels: ["Status"],
-};
-document.querySelector("#crm-main").innerHTML = "";
-var chart = new ApexCharts(document.querySelector("#crm-main"), options);
-chart.render();
-/* Target Incomplete Chart */
+            });
 
-/* Total Customers chart */
-var crm1 = {
-    chart: {
-        type: "line",
-        height: 40,
-        width: 100,
-        sparkline: {
-            enabled: true,
-        },
-    },
-    stroke: {
-        show: true,
-        curve: "smooth",
-        lineCap: "butt",
-        colors: undefined,
-        width: 1.5,
-        dashArray: 0,
-    },
-    fill: {
-        type: "gradient",
-        gradient: {
-            opacityFrom: 0.9,
-            opacityTo: 0.9,
-            stops: [0, 98],
-        },
-    },
-    series: [
-        {
-            name: "Value",
-            data: [1, 0, 1, 0, 1, 1, 0],
-        },
-    ],
-    yaxis: {
-        min: 0,
-        show: false,
-        axisBorder: {
-            show: false,
-        },
-    },
-    xaxis: {
-        show: false,
-        axisBorder: {
-            show: false,
-        },
-    },
-    tooltip: {
-        enabled: false,
-    },
-    colors: ["rgb(132, 90, 223)"],
-};
-document.getElementById("crm-total-customers").innerHTML = "";
-var crm1 = new ApexCharts(document.querySelector("#crm-total-customers"), crm1);
-crm1.render();
-
-function crmtotalCustomers() {
-    crm1.updateOptions({
-        colors: ["rgb(" + myVarVal + ")"],
-    });
+            // Update legend values below the chart
+            const legends = document.querySelectorAll(".crm-lead-legend");
+            legends.forEach((el, index) => {
+                el.textContent = labels[index] || "-";
+                el.closest(".col").querySelector(".fs-16").textContent =
+                    data[index]?.toLocaleString() || "0";
+            });
+        });
 }
-/* Total Customers chart */
 
-// /* Total revenue chart */
-// var crm2 = {
-//     chart: {
-//         type: 'line',
-//         height: 40,
-//         width: 100,
-//         sparkline: {
-//             enabled: true
-//         }
-//     },
-//     stroke: {
-//         show: true,
-//         curve: 'smooth',
-//         lineCap: 'butt',
-//         colors: undefined,
-//         width: 1.5,
-//         dashArray: 0,
-//     },
-//     fill: {
-//         type: 'gradient',
-//         gradient: {
-//             opacityFrom: 0.9,
-//             opacityTo: 0.9,
-//             stops: [0, 98],
-//         }
-//     },
-//     series: [{
-//         name: 'Value',
-//         data: [20, 14, 20, 22, 9, 12, 19, 10, 25]
-//     }],
-//     yaxis: {
-//         min: 0,
-//         show: false,
-//         axisBorder: {
-//             show: false
-//         },
-//     },
-//     xaxis: {
-//         show: false,
-//         axisBorder: {
-//             show: false
-//         },
-//     },
-//     tooltip: {
-//         enabled: false,
-//     },
-//     colors: ["rgb(35, 183, 229)"],
-
-// }
-// document.getElementById('crm-total-revenue').innerHTML = '';
-// var crm2 = new ApexCharts(document.querySelector("#crm-total-revenue"), crm2);
-// crm2.render();
-// /* Total revenue chart */
-
-/* Conversion ratio Chart */
-var crm3 = {
-    chart: {
-        type: "line",
-        height: 40,
-        width: 100,
-        sparkline: {
-            enabled: true,
-        },
-    },
-    stroke: {
-        show: true,
-        curve: "smooth",
-        lineCap: "butt",
-        colors: undefined,
-        width: 1.5,
-        dashArray: 0,
-    },
-    fill: {
-        type: "gradient",
-        gradient: {
-            opacityFrom: 0.9,
-            opacityTo: 0.9,
-            stops: [0, 98],
-        },
-    },
-    series: [
-        {
-            name: "Value",
-            data: [0, 0, 1, 0, 1, 0, 1, 1],
-        },
-    ],
-    yaxis: {
-        min: 0,
-        show: false,
-        axisBorder: {
-            show: false,
-        },
-    },
-    xaxis: {
-        show: false,
-        axisBorder: {
-            show: false,
-        },
-    },
-    tooltip: {
-        enabled: false,
-    },
-    colors: ["rgb(38, 191, 148)"],
-};
-document.getElementById("crm-conversion-ratio").innerHTML = "";
-var crm3 = new ApexCharts(
-    document.querySelector("#crm-conversion-ratio"),
-    crm3
-);
-crm3.render();
-/* Conversion ratio Chart */
-
-/* Total Deals Chart */
-var crm4 = {
-    chart: {
-        type: "line",
-        height: 40,
-        width: 100,
-        sparkline: {
-            enabled: true,
-        },
-    },
-    stroke: {
-        show: true,
-        curve: "smooth",
-        lineCap: "butt",
-        colors: undefined,
-        width: 1.5,
-        dashArray: 0,
-    },
-    fill: {
-        type: "gradient",
-        gradient: {
-            opacityFrom: 0.9,
-            opacityTo: 0.9,
-            stops: [0, 98],
-        },
-    },
-    series: [
-        {
-            name: "Value",
-            data: [1, 1, 1, 0, 1, 0],
-        },
-    ],
-    yaxis: {
-        min: 0,
-        show: false,
-        axisBorder: {
-            show: false,
-        },
-    },
-    xaxis: {
-        show: false,
-        axisBorder: {
-            show: false,
-        },
-    },
-    tooltip: {
-        enabled: false,
-    },
-    colors: ["rgb(245, 184, 73)"],
-};
-document.getElementById("crm-total-deals").innerHTML = "";
-var crm4 = new ApexCharts(document.querySelector("#crm-total-deals"), crm4);
-crm4.render();
-/* Total Deals Chart */
+function getQueryParam(name) {
+    const url = new URL(window.location.href);
+    return url.searchParams.get(name);
+}
 
 /* Revenue Analytics Chart */
 var options = {
@@ -628,188 +534,7 @@ function revenueAnalytics() {
 }
 /* Revenue Analytics Chart */
 
-/* Profits Earned Chart */
-var options1 = {
-    series: [
-        {
-            name: "Profit Earned",
-            data: [44, 42, 57, 86, 58, 55, 70],
-        },
-        {
-            name: "Total Sales",
-            data: [34, 22, 37, 56, 21, 35, 60],
-        },
-    ],
-    chart: {
-        type: "bar",
-        height: 180,
-        toolbar: {
-            show: false,
-        },
-    },
-    grid: {
-        borderColor: "#f1f1f1",
-        strokeDashArray: 3,
-    },
-    colors: ["rgb(132, 90, 223)", "#e4e7ed"],
-    plotOptions: {
-        bar: {
-            colors: {
-                ranges: [
-                    {
-                        from: -100,
-                        to: -46,
-                        color: "#ebeff5",
-                    },
-                    {
-                        from: -45,
-                        to: 0,
-                        color: "#ebeff5",
-                    },
-                ],
-            },
-            columnWidth: "60%",
-            borderRadius: 5,
-        },
-    },
-    dataLabels: {
-        enabled: false,
-    },
-    stroke: {
-        show: true,
-        width: 2,
-        colors: undefined,
-    },
-    legend: {
-        show: false,
-        position: "top",
-    },
-    yaxis: {
-        title: {
-            style: {
-                color: "#adb5be",
-                fontSize: "13px",
-                fontFamily: "poppins, sans-serif",
-                fontWeight: 600,
-                cssClass: "apexcharts-yaxis-label",
-            },
-        },
-        labels: {
-            formatter: function (y) {
-                return y.toFixed(0) + "";
-            },
-        },
-    },
-    xaxis: {
-        type: "week",
-        categories: ["S", "M", "T", "W", "T", "F", "S"],
-        axisBorder: {
-            show: true,
-            color: "rgba(119, 119, 142, 0.05)",
-            offsetX: 0,
-            offsetY: 0,
-        },
-        axisTicks: {
-            show: true,
-            borderType: "solid",
-            color: "rgba(119, 119, 142, 0.05)",
-            width: 6,
-            offsetX: 0,
-            offsetY: 0,
-        },
-        labels: {
-            rotate: -90,
-        },
-    },
-};
-document.getElementById("crm-profits-earned").innerHTML = "";
-var chart1 = new ApexCharts(
-    document.querySelector("#crm-profits-earned"),
-    options1
-);
-chart1.render();
-
-function crmProfitsearned() {
-    chart1.updateOptions({
-        colors: ["rgba(" + myVarVal + ", 1)", "#ededed"],
-    });
-}
-/* Profits Earned Chart */
-
 Chart.register(DoughnutController, ArcElement, Tooltip, Legend);
 Chart.defaults.elements.arc.borderWidth = 0;
 Chart.defaults.datasets.doughnut.cutout = "85%";
 
-/* Leads By Source Chart */
-var chartInstance = new Chart(document.getElementById("leads-source"), {
-    type: "doughnut",
-    data: {
-        datasets: [
-            {
-                label: "My First Dataset",
-                data: [32, 27, 25, 16],
-                backgroundColor: [
-                    "rgb(132, 90, 223)",
-                    "rgb(35, 183, 229)",
-                    "rgb(38, 191, 148)",
-                    "rgb(245, 184, 73)",
-                ],
-            },
-        ],
-    },
-    plugins: [
-        {
-            afterUpdate: function (chart) {
-                const arcs = chart.getDatasetMeta(0).data;
-
-                arcs.forEach(function (arc) {
-                    arc.round = {
-                        x: (chart.chartArea.left + chart.chartArea.right) / 2,
-                        y: (chart.chartArea.top + chart.chartArea.bottom) / 2,
-                        radius: (arc.outerRadius + arc.innerRadius) / 2,
-                        thickness: (arc.outerRadius - arc.innerRadius) / 2,
-                        backgroundColor: arc.options.backgroundColor,
-                    };
-                });
-            },
-            afterDraw: (chart) => {
-                const { ctx, canvas } = chart;
-
-                chart.getDatasetMeta(0).data.forEach((arc) => {
-                    const startAngle = Math.PI / 2 - arc.startAngle;
-                    const endAngle = Math.PI / 2 - arc.endAngle;
-
-                    ctx.save();
-                    ctx.translate(arc.round.x, arc.round.y);
-                    ctx.fillStyle = arc.options.backgroundColor;
-                    ctx.beginPath();
-                    ctx.arc(
-                        arc.round.radius * Math.sin(endAngle),
-                        arc.round.radius * Math.cos(endAngle),
-                        arc.round.thickness,
-                        0,
-                        2 * Math.PI
-                    );
-                    ctx.closePath();
-                    ctx.fill();
-                    ctx.restore();
-                });
-            },
-        },
-    ],
-});
-
-function leads(myVarVal) {
-    chartInstance.data.datasets[0] = {
-        label: "My First Dataset",
-        data: [32, 27, 25, 16],
-        backgroundColor: [
-            `rgb(${myVarVal})`,
-            "rgb(35, 183, 229)",
-            "rgb(245, 184, 73)",
-            "rgb(38, 191, 148)",
-        ],
-    };
-    chartInstance.update();
-}
-/* Leads By Source Chart */

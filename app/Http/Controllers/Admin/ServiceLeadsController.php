@@ -12,6 +12,15 @@ use App\Models\Service;
 
 class ServiceLeadsController extends Controller
 {
+    protected $services;
+
+    public function __construct()
+    {
+        $this->services = Cache::remember('all_services_for_filter', now()->addHours(12), function () {
+            return Service::select('slug', 'name')->orderBy('sort_order')->get();
+        });
+    }
+
     public function index(Request $request)
     {
         $orders = Order::with(['service:id,slug,name'])
@@ -35,15 +44,11 @@ class ServiceLeadsController extends Controller
                 ]);
             })
             ->orderBy('created_at', 'desc')
-            ->paginate(10)->withQueryString();
-
-        $services = Cache::remember('all_services_for_filter', now()->addHours(4), function () {
-            return Service::select('slug', 'name')->orderBy('sort_order')->get();
-        });
+            ->paginate(10)->appends(['payload' => request('payload')]);
 
         return view('admin.leads.index', [
             'orders' => $orders,
-            'services' => $services
+            'services' => $this->services
         ]);
     }
 
@@ -51,10 +56,12 @@ class ServiceLeadsController extends Controller
     {
         $orders = Order::with(['service:id,slug,name'])
             ->where('current_stage', 'payment_received')
-            ->paginate(10);
+            ->orderBy('created_at', 'desc')
+            ->paginate(10)->appends(['payload' => request('payload')]);
 
         return view('admin.leads.index', [
-            'orders' => $orders
+            'orders' => $orders,
+            'services' => $this->services
         ]);
     }
 

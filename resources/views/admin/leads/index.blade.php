@@ -148,7 +148,8 @@
         <div class="offcanvas-body p-0">
             <div class="card custom-card">
                 <div class="card-body">
-                    <form action="{{ url()->current() }}" method="get" autocomplete="off">
+                    {{-- {{ dd(request()->input()) }} --}}
+                    <form data-action="{{ url()->current() }}" id="filterForm" autocomplete="off">
                         <div class="row">
                             <div class="col-md-12 mb-3">
                                 <label class="form-label">Services</label>
@@ -167,7 +168,7 @@
                                 <div class="input-group">
                                     <div class="input-group-text text-muted"> <i class="ri-calendar-line"></i> </div>
                                     <input type="text" class="form-control flatpickr-date" placeholder="Select start date to filter"
-                                        name="from_date" value="">
+                                        name="from_date" value="{{ request('from_date') }}">
                                 </div>
                             </div>
                             <div class="col-md-6 mb-3">
@@ -175,7 +176,7 @@
                                 <div class="input-group">
                                     <div class="input-group-text text-muted"> <i class="ri-calendar-line"></i> </div>
                                     <input type="text" class="form-control flatpickr-date" placeholder="Select end date to filter"
-                                        name="to_date" value="">
+                                        name="to_date" value="{{ request('to_date') ?? now()->format('Y-m-d') }}">
                                 </div>
                             </div>
                             <div class="col-md-12 mb-3">
