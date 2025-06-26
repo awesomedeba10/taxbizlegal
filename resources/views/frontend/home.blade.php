@@ -346,7 +346,7 @@
                             </div>
                         </div>
                         <div class="mod-flex mod-justify-start mod-w-full mod-mt-16">
-                            <a href="http://127.0.0.1:8000/contact-us"
+                            <a href="{{ route('front.contact') }}"
                                 class="btn btn-primary icon-hover-right d-flex d-lg-inline-flex">
                                 Talk to Expert Now
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
