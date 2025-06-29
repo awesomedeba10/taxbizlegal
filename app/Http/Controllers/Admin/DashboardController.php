@@ -223,16 +223,17 @@ class DashboardController extends Controller
             $startDate = $now->copy()->subDays(intval($request->input('date_range')) - 1)->startOfDay();
         }
 
-        $services = Order::select('service_name', DB::raw('SUM(service_price) as total'))
+        $services = Order::select('service_name', DB::raw('ROUND(SUM(service_price),0) as total'))
             ->whereBetween('created_at', [$startDate, $now])
             ->where('current_stage', 'payment_received')
             ->groupBy('service_name')
             ->orderByDesc('total')
-            ->limit(4)
+            ->limit(3)
+            ->with(['service:id,slug,name'])
             ->get();
 
         return response()->json([
-            'labels' => $services->pluck('service_name'),
+            'labels' => $services->pluck('service.name'),
             'data' => $services->pluck('total'),
             'total' => $services->sum('total'),
         ]);

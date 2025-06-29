@@ -6,12 +6,12 @@
             <!-- Start::header-element -->
             <div class="header-element">
                 <div class="horizontal-logo"> <a href="{{ route('admin.dashboard') }}" class="header-logo"> <img
-                    src="{{ asset('images/svg/tbl_logo.svg') }}" alt="logo" class="desktop-logo"> <img
-                    src="{{ asset('images/svg/tbl_logo.svg') }}" alt="logo" class="toggle-logo">
-                    <img src="{{ asset('images/svg/tbl_logo.svg') }}" alt="logo" class="desktop-dark">
-                    <img src="{{ asset('images/svg/tbl_logo.svg') }}" alt="logo" class="toggle-dark">
-                    <img src="{{ asset('images/svg/tbl_logo.svg') }}" alt="logo" class="desktop-white">
-                    <img src="{{ asset('images/svg/tbl_logo.svg') }}" alt="logo" class="toggle-white">
+                            src="{{ asset('images/svg/tbl_logo.svg') }}" alt="logo" class="desktop-logo"> <img
+                            src="{{ asset('images/svg/tbl_logo.svg') }}" alt="logo" class="toggle-logo">
+                        <img src="{{ asset('images/svg/tbl_logo.svg') }}" alt="logo" class="desktop-dark">
+                        <img src="{{ asset('images/svg/tbl_logo.svg') }}" alt="logo" class="toggle-dark">
+                        <img src="{{ asset('images/svg/tbl_logo.svg') }}" alt="logo" class="desktop-white">
+                        <img src="{{ asset('images/svg/tbl_logo.svg') }}" alt="logo" class="toggle-white">
                     </a>
                 </div>
             </div>
@@ -30,7 +30,7 @@
             <div class="header-element header-search">
                 <!-- Start::header-link --> <a aria-label="anchor" href="javascript:void(0);" class="header-link"
                     data-bs-toggle="modal" data-bs-target="#searchModal"> <i
-                    class="bx bx-search-alt-2 header-link-icon"></i> </a> <!-- End::header-link -->
+                        class="bx bx-search-alt-2 header-link-icon"></i> </a> <!-- End::header-link -->
             </div>
 
             <!-- End::header-element --> <!-- Start::header-element -->
@@ -73,105 +73,16 @@
                                     <div class="simplebar-content-wrapper" tabindex="0" role="region"
                                         aria-label="scrollable content" style="height: auto; overflow: hidden;">
                                         <div class="simplebar-content" style="padding: 8px;">
-                                            <div class="row g-2">
-                                                <div class="col-4">
-                                                    <a href="javascript:void(0);">
-                                                        <div class="text-center p-3 related-app"> <span
-                                                            class="avatar avatar-sm avatar-rounded"> <img
-                                                            src="{{ asset('images/crm/apps/figma.png') }}"
-                                                            alt=""> </span> <span
-                                                            class="d-block fs-12">Figma</span> </div>
-                                                    </a>
-                                                </div>
-                                                <div class="col-4">
-                                                    <a href="javascript:void(0);">
-                                                        <div class="text-center p-3 related-app"> <span
-                                                            class="avatar avatar-sm avatar-rounded"> <img
-                                                            src="{{ asset('images/crm/apps/microsoft-powerpoint.png') }}"
-                                                            alt=""> </span> <span
-                                                            class="d-block fs-12">Power Point</span> </div>
-                                                    </a>
-                                                </div>
-                                                <div class="col-4">
-                                                    <a href="javascript:void(0);">
-                                                        <div class="text-center p-3 related-app"> <span
-                                                            class="avatar avatar-sm avatar-rounded"> <img
-                                                            src="{{ asset('images/crm/apps/microsoft-word.png') }}"
-                                                            alt=""> </span> <span
-                                                            class="d-block fs-12">MS Word</span> </div>
-                                                    </a>
-                                                </div>
-                                                <div class="col-4">
-                                                    <a href="javascript:void(0);">
-                                                        <div class="text-center p-3 related-app"> <span
-                                                            class="avatar avatar-sm avatar-rounded"> <img
-                                                            src="{{ asset('images/crm/apps/calender.png') }}"
-                                                            alt=""> </span> <span
-                                                            class="d-block fs-12">Calendar</span> </div>
-                                                    </a>
-                                                </div>
-                                                <div class="col-4">
-                                                    <a href="javascript:void(0);">
-                                                        <div class="text-center p-3 related-app"> <span
-                                                            class="avatar avatar-sm avatar-rounded"> <img
-                                                            src="{{ asset('images/crm/apps/sketch.png') }}"
-                                                            alt=""> </span> <span
-                                                            class="d-block fs-12">Sketch</span> </div>
-                                                    </a>
-                                                </div>
-                                                <div class="col-4">
-                                                    <a href="javascript:void(0);">
-                                                        <div class="text-center p-3 related-app"> <span
-                                                            class="avatar avatar-sm avatar-rounded"> <img
-                                                            src="{{ asset('images/crm/apps/google-docs.png') }}"
-                                                            alt=""> </span> <span
-                                                            class="d-block fs-12">Docs</span> </div>
-                                                    </a>
-                                                </div>
-                                                <div class="col-4">
-                                                    <a href="javascript:void(0);">
-                                                        <div class="text-center p-3 related-app"> <span
-                                                            class="avatar avatar-sm avatar-rounded"> <img
-                                                            src="{{ asset('images/crm/apps/google.png') }}"
-                                                            alt=""> </span> <span
-                                                            class="d-block fs-12">Google</span> </div>
-                                                    </a>
-                                                </div>
-                                                <div class="col-4">
-                                                    <a href="javascript:void(0);">
-                                                        <div class="text-center p-3 related-app"> <span
-                                                            class="avatar avatar-sm avatar-rounded"> <img
-                                                            src="{{ asset('images/crm/apps/translate.png') }}"
-                                                            alt=""> </span> <span
-                                                            class="d-block fs-12">Translate</span> </div>
-                                                    </a>
-                                                </div>
-                                                <div class="col-4">
-                                                    <a href="javascript:void(0);">
-                                                        <div class="text-center p-3 related-app"> <span
-                                                            class="avatar avatar-sm avatar-rounded"> <img
-                                                            src="{{ asset('images/crm/apps/google-sheets.png') }}"
-                                                            alt=""> </span> <span
-                                                            class="d-block fs-12">Sheets</span> </div>
-                                                    </a>
+                                            <div class="row g-2" id="custom-views-container">
+                                                <div class="text-center text-muted w-100 py-4" id="empty-custom-views-div">
+                                                    No Custom Views Added
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="simplebar-placeholder" style="width: 0px; height: 0px;"></div>
-                        </div>
-                        <div class="simplebar-track simplebar-horizontal" style="visibility: hidden;">
-                            <div class="simplebar-scrollbar" style="width: 0px; display: none;"></div>
-                        </div>
-                        <div class="simplebar-track simplebar-vertical" style="visibility: hidden;">
-                            <div class="simplebar-scrollbar" style="height: 0px; display: none;"></div>
-                        </div>
-                    </div>
-                    <div class="p-3 border-top">
-                        <div class="d-grid"> <a href="javascript:void(0);" class="btn btn-primary">View
-                            All</a>
+                            <div class="simplebar-placeholder"></div>
                         </div>
                     </div>
                 </div>
@@ -180,13 +91,13 @@
             <div class="header-element">
                 <!-- Start::header-link|switcher-icon --> <a aria-label="anchor" href="javascript:void(0);"
                     class="header-link switcher-icon" data-bs-toggle="offcanvas" data-bs-target="#switcher-canvas">
-                <i class="bx bx-cog header-link-icon"></i> </a>
+                    <i class="bx bx-cog header-link-icon"></i> </a>
                 <!-- End::header-link|switcher-icon -->
             </div>
             <div class="header-element header-fullscreen">
                 <!-- Start::header-link --> <a aria-label="anchor" href="javascript:void(0);" class="header-link"> <i
-                    class="bx bx-fullscreen full-screen-open header-link-icon"></i> <i
-                    class="bx bx-exit-fullscreen full-screen-close header-link-icon d-none"></i> </a>
+                        class="bx bx-fullscreen full-screen-open header-link-icon"></i> <i
+                        class="bx bx-exit-fullscreen full-screen-close header-link-icon d-none"></i> </a>
                 <!-- End::header-link -->
             </div>
             <div class="header-element">
@@ -194,10 +105,11 @@
                 <a href="javascript:void(0);" class="header-link dropdown-toggle" id="mainHeaderProfile"
                     data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
                     <div class="d-flex align-items-center">
-                        <div class="me-sm-2 me-0"> <img src="https://www.svgrepo.com/show/57853/avatar.svg" alt="img"
-                            width="32" height="32" class="rounded-circle"> </div>
+                        <div class="me-sm-2 me-0"> <img src="https://www.svgrepo.com/show/57853/avatar.svg"
+                                alt="img" width="32" height="32" class="rounded-circle"> </div>
                         <div class="d-sm-block d-none">
-                            <p class="fw-semibold mb-0 lh-1">{{ auth()->user()->first_name }} {{ auth()->user()->last_name }}</p>
+                            <p class="fw-semibold mb-0 lh-1">{{ auth()->user()->first_name }}
+                                {{ auth()->user()->last_name }}</p>
                             <span class="op-7 fw-normal d-block fs-11">{{ auth()->user()->designation }}</span>
                         </div>
                     </div>
@@ -206,14 +118,14 @@
                 <ul class="main-header-dropdown dropdown-menu pt-0 overflow-hidden header-profile-dropdown dropdown-menu-end"
                     aria-labelledby="mainHeaderProfile">
                     <li><a class="dropdown-item d-flex" href="javascript:void(0);"><i
-                        class="ti ti-user-circle fs-18 me-2 op-7"></i>Profile</a></li>
+                                class="ti ti-user-circle fs-18 me-2 op-7"></i>Profile</a></li>
                     <li><a class="dropdown-item d-flex" href="javascript:void(0);"><i
-                        class="ti ti-inbox fs-18 me-2 op-7"></i>Inbox <span
-                        class="badge bg-success-transparent ms-auto">25</span></a></li>
+                                class="ti ti-inbox fs-18 me-2 op-7"></i>Inbox <span
+                                class="badge bg-success-transparent ms-auto">25</span></a></li>
                     <li><a class="dropdown-item d-flex" href="javascript:void(0);"><i
-                        class="ti ti-adjustments-horizontal fs-18 me-2 op-7"></i>Settings</a></li>
+                                class="ti ti-adjustments-horizontal fs-18 me-2 op-7"></i>Settings</a></li>
                     <li><a class="dropdown-item d-flex border-block-end" href="javascript:void(0);"><i
-                        class="ti ti-wallet fs-18 me-2 op-7"></i>Sales: ₹45,000</a></li>
+                                class="ti ti-wallet fs-18 me-2 op-7"></i>Sales: ₹45,000</a></li>
                     <li>
                         <form method="post" action="{{ route('admin.logout') }}">
                             @csrf

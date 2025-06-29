@@ -342,6 +342,8 @@ import flatpickr from "flatpickr";
                     });
             });
         }
+
+        fetchCustomViews();
     });
 
     /* footer year */
@@ -471,15 +473,42 @@ function saveCustomView() {
         },
         body: JSON.stringify({
             url: url,
-            name: prompt("Name this view:") || null,
+            name:
+                prompt(
+                    "Name this view (Something short-crisp to help you identifying):"
+                ) || null,
         }),
     })
         .then((res) => res.json())
         .then((data) => {
             if (data.success) {
-                alert("View saved!");
+                showToast("success", data.message);
+
+                let container = document.getElementById("custom-views-container");
+                let emptyDiv = document.getElementById("empty-custom-views-div");
+                if (emptyDiv) {
+                    emptyDiv.remove();
+                }
+                let col = document.createElement("div");
+                col.classList.add("col-4");
+                col.innerHTML = `
+                    <a href="${data.url}">
+                        <div class="text-center p-3 related-app">
+                            <span class="avatar avatar-sm avatar-rounded bg-primary-transparent">
+                                <i class="bi bi-bookmark fs-16"></i>
+                            </span>
+                            <span class="d-block fs-12">${
+                                data.name ?? "Untitled View"
+                            }</span>
+                        </div>
+                    </a>
+                `;
+                container.appendChild(col);
             } else {
-                alert("Something went wrong!");
+                showToast(
+                    "danger",
+                    "Something Went Wrong! View could not be saved."
+                );
             }
         });
 }
@@ -597,3 +626,57 @@ elements.forEach(function (element) {
     });
     element.choices = choices;
 });
+
+function fetchCustomViews() {
+    fetch('/internal/ops/custom-view/get', {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            "X-CSRF-TOKEN": document
+                .querySelector('meta[name="csrf-token"]')
+                .getAttribute("content"),
+        },
+    })
+        .then((response) => response.json())
+        .then((data) => {
+            if (!data || data.length === 0) { return; }
+
+            const container = document.getElementById("custom-views-container");
+            container.innerHTML = "";
+
+            data.forEach((view) => {
+                const col = document.createElement("div");
+                col.classList.add("col-4");
+                col.innerHTML = `
+                    <a href="${view.url}">
+                        <div class="text-center p-3 related-app">
+                            <span class="avatar avatar-sm avatar-rounded bg-primary-transparent">
+                                <i class="bi bi-bookmark fs-16"></i>
+                            </span>
+                            <span class="d-block fs-12">${
+                                view.name ?? "Untitled View"
+                            }</span>
+                        </div>
+                    </a>
+                `;
+                container.appendChild(col);
+            });
+        })
+        .catch((error) => {
+            console.error("Failed to load custom views:", error);
+        });
+}
+
+function showToast(toastType = "success", toastMessage = "Something happened") {
+    const toast = document.getElementById("customMsgToast");
+    const toastHeader = document.getElementById("customToastHeader");
+    const toastBody = document.getElementById("customToastBody");
+
+    toast.className = `toast colored-toast bg-${toastType}-transparent fade hide`;
+    toastHeader.className = `toast-header bg-${toastType} text-fixed-white`;
+
+    toastBody.innerText = toastMessage;
+
+    const bsToast = new Toast(toast);
+    bsToast.show();
+}

@@ -1,5 +1,25 @@
 @extends('admin._layouts.master')
 
+@php
+    use Carbon\Carbon;
+
+    $from = $to = null;
+    $days = 30;
+
+    if (request()->filled('from_date') && request()->filled('to_date')) {
+        $from = Carbon::parse(request()->input('from_date'))->startOfDay();
+        $to = Carbon::parse(request()->input('to_date'))->endOfDay();
+        $days = intval($from->diffInDays($to) + 1);
+    } elseif (request()->filled('date_range')) {
+        $days = intval(request()->input('date_range'));
+        $to = now()->endOfDay();
+        $from = $to->copy()->subDays($days - 1)->startOfDay();
+    } else {
+        $to = now()->endOfDay();
+        $from = $to->copy()->subDays(29)->startOfDay();
+    }
+@endphp
+
 @section('content')
     <div class="container-fluid">
         <!-- Start::page-header -->
@@ -7,7 +27,12 @@
             <div>
                 <p class="fw-semibold fs-18 mb-0">Welcome back, {{ auth()->user()->first_name }}
                     {{ auth()->user()->last_name }} !</p>
-                <span class="fs-semibold text-muted">Track your sales, activity, leads here.</span>
+                    {{-- {{ dd(request()->input()) }} --}}
+                <span class="fs-semibold text-muted">
+                    Track your sales, activity, leads here.
+                    Showing data of last {{ $days }} days,
+                    from {{ $from->format('j M Y') }} to {{ $to->format('j M Y') }}.
+                </span>
             </div>
             <div class="btn-list mt-md-0 mt-2">
                 <button type="button" class="btn btn-primary btn-wave waves-effect waves-light" data-bs-toggle="offcanvas"
@@ -158,7 +183,7 @@
                                                 <div class="d-flex align-items-center justify-content-between flex-wrap">
                                                     <div>
                                                         <p class="text-muted mb-0">Total Revenue</p>
-                                                        <h4 class="fw-semibold mt-1" id="total-revenue-amount">₹0</h4>
+                                                        <h4 class="fw-semibold mt-1" id="total-revenue-amount">Loading...</h4>
                                                     </div>
                                                     <div id="crm-total-revenue">
                                                     </div>
@@ -189,7 +214,7 @@
                                                 <div class="d-flex align-items-center justify-content-between flex-wrap">
                                                     <div>
                                                         <p class="text-muted mb-0">Total Leads</p>
-                                                        <h4 class="fw-semibold mt-1" id="total-leads-count">₹0</h4>
+                                                        <h4 class="fw-semibold mt-1" id="total-leads-count">Loading...</h4>
                                                     </div>
                                                     <div id="crm-total-leads">
                                                     </div>
@@ -219,7 +244,7 @@
                                                 <div class="d-flex align-items-center justify-content-between flex-wrap">
                                                     <div>
                                                         <p class="text-muted mb-0">Conversion %</p>
-                                                        <h4 class="fw-semibold mt-1" id="total-conversion-percentage">₹0
+                                                        <h4 class="fw-semibold mt-1" id="total-conversion-percentage">Loading...
                                                         </h4>
                                                     </div>
                                                     <div id="crm-conversion-ratio">
@@ -255,7 +280,7 @@
                                                 <div class="d-flex align-items-center justify-content-between flex-wrap">
                                                     <div>
                                                         <p class="text-muted mb-0">Total Clients</p>
-                                                        <h4 class="fw-semibold mt-1" id="total-clients-count">₹0</h4>
+                                                        <h4 class="fw-semibold mt-1" id="total-clients-count">Loading...</h4>
                                                     </div>
                                                     <div id="crm-total-clients">
                                                     </div>
@@ -306,40 +331,32 @@
                                         <div class="leads-source-chart d-flex align-items-center justify-content-center">
                                             <canvas id="leads-source" class="chartjs-chart w-100 p-4"></canvas>
                                             <div class="lead-source-value"> <span class="d-block fs-14">Total</span> <span
-                                                    class="d-block fs-25 fw-bold">4,145</span> </div>
+                                                    class="d-block fs-25 fw-bold">Loading...</span> </div>
                                         </div>
                                         <div class="row row-cols-12 border-top border-block-start-dashed">
                                             <div class="col p-0">
                                                 <div
                                                     class="ps-4 py-3 pe-3 text-center border-end border-inline-end-dashed">
                                                     <span
-                                                        class="text-muted fs-12 mb-1 crm-lead-legend mobile d-inline-block">GST
+                                                        class="text-muted fs-12 mb-1 crm-lead-legend mobile">Loading...
                                                     </span>
-                                                    <div><span class="fs-16 fw-semibold">1,624</span> </div>
+                                                    <div><span class="fs-16 fw-semibold">Loading...</span> </div>
                                                 </div>
                                             </div>
                                             <div class="col p-0">
                                                 <div class="p-3 text-center border-end border-inline-end-dashed">
                                                     <span
-                                                        class="text-muted fs-12 mb-1 crm-lead-legend desktop d-inline-block">FSSAI
+                                                        class="text-muted fs-12 mb-1 crm-lead-legend desktop">Loading...
                                                     </span>
-                                                    <div><span class="fs-16 fw-semibold">1,267</span></div>
+                                                    <div><span class="fs-16 fw-semibold">Loading...</span></div>
                                                 </div>
                                             </div>
                                             <div class="col p-0">
                                                 <div class="p-3 text-center border-end border-inline-end-dashed">
                                                     <span
-                                                        class="text-muted fs-12 mb-1 crm-lead-legend laptop d-inline-block">Company
+                                                        class="text-muted fs-12 mb-1 crm-lead-legend laptop">Loading...
                                                     </span>
-                                                    <div><span class="fs-16 fw-semibold">1,153</span> </div>
-                                                </div>
-                                            </div>
-                                            <div class="col p-0">
-                                                <div class="p-3 text-center">
-                                                    <span
-                                                        class="text-muted fs-12 mb-1 crm-lead-legend tablet d-inline-block">ITR
-                                                    </span>
-                                                    <div><span class="fs-16 fw-semibold">679</span></div>
+                                                    <div><span class="fs-16 fw-semibold">Loading...</span> </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -372,25 +389,25 @@
                                             <li class="primary">
                                                 <div class="d-flex align-items-center justify-content-between">
                                                     <div>Basic Details Submitted</div>
-                                                    <div class="fs-12 text-muted">987 Leads</div>
+                                                    <div class="fs-12 text-muted">Loading...</div>
                                                 </div>
                                             </li>
                                             <li class="info">
                                                 <div class="d-flex align-items-center justify-content-between">
                                                     <div>Payment Pending</div>
-                                                    <div class="fs-12 text-muted">1,073 Leads</div>
+                                                    <div class="fs-12 text-muted">Loading...</div>
                                                 </div>
                                             </li>
                                             <li class="warning">
                                                 <div class="d-flex align-items-center justify-content-between">
                                                     <div>Payment Initiated</div>
-                                                    <div class="fs-12 text-muted">1,674 Leads</div>
+                                                    <div class="fs-12 text-muted">Loading...</div>
                                                 </div>
                                             </li>
                                             <li class="success">
                                                 <div class="d-flex align-items-center justify-content-between">
                                                     <div>Payment Received</div>
-                                                    <div class="fs-12 text-muted">921 Leads</div>
+                                                    <div class="fs-12 text-muted">Loading...</div>
                                                 </div>
                                             </li>
                                         </ul>

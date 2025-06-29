@@ -3,8 +3,8 @@
     "file": "assets/_commonjsHelpers-Cpj98o6Y.js",
     "name": "_commonjsHelpers"
   },
-  "_bootstrap.esm-3K1dGwkz.js": {
-    "file": "assets/bootstrap.esm-3K1dGwkz.js",
+  "_bootstrap.esm-5AK_f7la.js": {
+    "file": "assets/bootstrap.esm-5AK_f7la.js",
     "name": "bootstrap.esm"
   },
   "_normalize-Rs90JzLB.css": {
@@ -96,19 +96,19 @@
     "src": "resources/css/icon-fonts/tabler-icons/iconfont/fonts/tabler-icons.eot"
   },
   "resources/js/admin/admin.js": {
-    "file": "assets/admin-DJWbAFfs.js",
+    "file": "assets/admin-DKunWbw2.js",
     "name": "admin",
     "src": "resources/js/admin/admin.js",
     "isEntry": true,
     "imports": [
-      "_bootstrap.esm-3K1dGwkz.js",
+      "_bootstrap.esm-5AK_f7la.js",
       "__commonjsHelpers-Cpj98o6Y.js"
     ],
     "dynamicImports": [
       "resources/js/admin/crm-dashboard.js"
     ],
     "css": [
-      "assets/admin-G1uAqkdN.css"
+      "assets/admin-BSWn081B.css"
     ],
     "assets": [
       "assets/remixicon0b0b-DiAulmZC.eot",
@@ -134,7 +134,7 @@
     ]
   },
   "resources/js/admin/crm-dashboard.js": {
-    "file": "assets/crm-dashboard-B_JrIPSz.js",
+    "file": "assets/crm-dashboard-Dy2Iq8Cd.js",
     "name": "crm-dashboard",
     "src": "resources/js/admin/crm-dashboard.js",
     "isDynamicEntry": true,
@@ -143,15 +143,15 @@
     ]
   },
   "resources/js/admin/login.js": {
-    "file": "assets/login-Dd3Vc4ET.js",
+    "file": "assets/login-KApZYemp.js",
     "name": "login",
     "src": "resources/js/admin/login.js",
     "isEntry": true,
     "imports": [
-      "_bootstrap.esm-3K1dGwkz.js"
+      "_bootstrap.esm-5AK_f7la.js"
     ],
     "css": [
-      "assets/login-BcM-BbjR.css",
+      "assets/login-DSORgZHz.css",
       "assets/normalize-Rs90JzLB.css"
     ]
   },

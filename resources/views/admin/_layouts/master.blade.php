@@ -14,8 +14,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- Favicon -->
-    <link rel="icon" href="{{ asset('images/favicon/favicon-32x32.png') }}"
-        type="image/x-icon">
+    <link rel="icon" href="{{ asset('images/favicon/favicon-32x32.png') }}" type="image/x-icon">
 
     @vite(['resources/js/admin/admin.js'])
 
@@ -832,12 +831,12 @@
 
     @if ($toastType && $toastMessage)
         <div class="toast-container position-fixed top-0 end-0 p-3">
-            <div id="sessionMsgToast" class="toast colored-toast bg-{{ $toastType }}-transparent fade hide" role="alert" aria-live="assertive"
-                aria-atomic="true">
+            <div id="sessionMsgToast" class="toast colored-toast bg-{{ $toastType }}-transparent fade hide"
+                role="alert" aria-live="assertive" aria-atomic="true">
                 <div class="toast-header bg-{{ $toastType }} text-fixed-white">
                     <i class="bi bi-bell"></i>
                     <strong class="me-auto ms-1">1 New Notification</strong> <small>Just Now</small>
-                     <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
                 </div>
                 <div class="toast-body">
                     {{ $toastMessage }}
@@ -845,6 +844,19 @@
             </div>
         </div>
     @endif
+
+    <div class="toast-container position-fixed top-0 end-0 p-3">
+        <div id="customMsgToast" class="toast colored-toast fade hide" role="alert" aria-live="assertive"
+            aria-atomic="true">
+            <div id="customToastHeader" class="toast-header">
+                <i class="bi bi-bell"></i>
+                <strong class="me-auto ms-1">1 New Notification</strong> <small>Just Now</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div id="customToastBody" class="toast-body"></div>
+        </div>
+    </div>
+
 
 </body>
 

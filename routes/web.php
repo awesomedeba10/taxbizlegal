@@ -55,6 +55,7 @@ Route::group(['as' => 'admin.', 'prefix' => config('app.admin_url_prefix')], fun
         Route::get('/charts/fetch-leads-status', [DashboardController::class, 'leads_status_chart']);
         Route::get('/charts/fetch-leads-by-service', [DashboardController::class, 'leads_by_services']);
 
+        Route::post('custom-view/get', [CustomViewController::class , 'getViews'])->name('custom-view.get');
         Route::post('custom-view/save', [CustomViewController::class , 'saveView'])->name('custom-view.save');
 
         Route::get('inbound-service-leads', [ServiceLeadsController::class, 'index'])->name('service-leads.index');

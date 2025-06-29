@@ -232,6 +232,7 @@ function renderLeadsByServiceChart() {
 
             // Update legend values below the chart
             const legends = document.querySelectorAll(".crm-lead-legend");
+            console.log(labels)
             legends.forEach((el, index) => {
                 el.textContent = labels[index] || "-";
                 el.closest(".col").querySelector(".fs-16").textContent =
