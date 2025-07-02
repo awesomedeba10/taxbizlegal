@@ -601,7 +601,7 @@
             </div>
         </section>
 
-        {{-- <x-article-list page="home"></x-article-list> --}}
+        <x-article-list page="home"></x-article-list>
     </main>
 @endsection
 

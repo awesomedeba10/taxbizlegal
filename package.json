@@ -26,6 +26,7 @@
         "flatpickr": "^4.6.13",
         "jquery": "^3.7.1",
         "node-waves": "^0.7.6",
+        "quill": "^2.0.3",
         "scrollreveal": "^4.0.9",
         "simplebar": "^6.3.1",
         "swiper": "^11.2.6"

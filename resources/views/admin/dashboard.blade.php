@@ -370,7 +370,7 @@
                                     </div>
                                     <div class="card-body">
                                         <div class="d-flex align-items-center mb-3">
-                                            <h4 id="total-leads-count-heading" class="fw-bold mb-0">0</h4>
+                                            <h4 id="total-leads-count-heading" class="fw-bold mb-0">Loading...</h4>
                                             <div class="ms-2">
                                                 <span class="text-muted ms-1">Total Leads Received</span>
                                             </div>

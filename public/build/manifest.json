@@ -96,7 +96,7 @@
     "src": "resources/css/icon-fonts/tabler-icons/iconfont/fonts/tabler-icons.eot"
   },
   "resources/js/admin/admin.js": {
-    "file": "assets/admin-DKunWbw2.js",
+    "file": "assets/admin-qjqJOGho.js",
     "name": "admin",
     "src": "resources/js/admin/admin.js",
     "isEntry": true,
@@ -105,10 +105,11 @@
       "__commonjsHelpers-Cpj98o6Y.js"
     ],
     "dynamicImports": [
-      "resources/js/admin/crm-dashboard.js"
+      "resources/js/admin/crm-dashboard.js",
+      "resources/js/admin/form-elements.js"
     ],
     "css": [
-      "assets/admin-BSWn081B.css"
+      "assets/admin-D_D7_Pgz.css"
     ],
     "assets": [
       "assets/remixicon0b0b-DiAulmZC.eot",
@@ -134,12 +135,26 @@
     ]
   },
   "resources/js/admin/crm-dashboard.js": {
-    "file": "assets/crm-dashboard-Dy2Iq8Cd.js",
+    "file": "assets/crm-dashboard-ChGDApPt.js",
     "name": "crm-dashboard",
     "src": "resources/js/admin/crm-dashboard.js",
     "isDynamicEntry": true,
     "imports": [
       "__commonjsHelpers-Cpj98o6Y.js"
+    ]
+  },
+  "resources/js/admin/form-elements.js": {
+    "file": "assets/form-elements-BCfF-o97.js",
+    "name": "form-elements",
+    "src": "resources/js/admin/form-elements.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "__commonjsHelpers-Cpj98o6Y.js",
+      "resources/js/admin/admin.js",
+      "_bootstrap.esm-5AK_f7la.js"
+    ],
+    "css": [
+      "assets/form-elements-tQH9kz2n.css"
     ]
   },
   "resources/js/admin/login.js": {

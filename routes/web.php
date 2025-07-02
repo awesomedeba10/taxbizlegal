@@ -15,6 +15,8 @@ use App\Http\Controllers\Admin\EnquiriesController;
 use App\Http\Controllers\Admin\ServiceLeadsController;
 use App\Http\Middleware\DecodeAdminQueryString;
 use App\Http\Middleware\PreventBackHistory;
+use App\Http\Controllers\Admin\BlogController as AdminBlogController;
+use App\Http\Controllers\BlogController;
 
 Route::group(['as' => 'front.'], function () {
 
@@ -23,6 +25,9 @@ Route::group(['as' => 'front.'], function () {
     Route::get('contact-us', [PageController::class, 'contact'])->name('contact');
 
     Route::post('contact-us/get-leads', [PageController::class, 'contact_leads'])->name('contact.leads');
+
+    Route::get('blogs', [BlogController::class, 'index'])->name('blogs');
+    Route::get('blogs/{slug}', [BlogController::class, 'view'])->name('blogs.view');
 
     Route::group(['prefix' => 'meta'], function () {
         Route::get('privacy-policy', [PageController::class, 'privacy'])->name('privacy');
@@ -66,6 +71,12 @@ Route::group(['as' => 'admin.', 'prefix' => config('app.admin_url_prefix')], fun
 
         Route::get('manage-users', [AdminUserController::class, 'index'])->name('users.index');
         Route::post('manage-users/create', [AdminUserController::class, 'create'])->name('users.create');
+
+        Route::get('manage-blogs', [AdminBlogController::class, 'index'])->name('blogs.index');
+        Route::get('manage-blogs/create', [AdminBlogController::class, 'create'])->name('blogs.create');
+        Route::post('manage-blogs/store', [AdminBlogController::class, 'store'])->name('blogs.store');
+        Route::get('manage-blogs/edit/{id}', [AdminBlogController::class, 'edit'])->name('blogs.edit');
+        Route::put('manage-blogs/update/{id}', [AdminBlogController::class, 'update'])->name('blogs.update');
     });
 });
 

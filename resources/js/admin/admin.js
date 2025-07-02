@@ -25,3 +25,8 @@ if (document.body.classList.contains('admin.dashboard')) {
     import('./crm-dashboard.js');
 }
 
+if (Array.from(document.body.classList).some(cls => cls.startsWith('admin.blogs'))) {
+    import('./form-elements.js');
+}
+
+
