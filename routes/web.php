@@ -16,6 +16,7 @@ use App\Http\Controllers\Admin\ServiceLeadsController;
 use App\Http\Middleware\DecodeAdminQueryString;
 use App\Http\Middleware\PreventBackHistory;
 use App\Http\Controllers\Admin\BlogController as AdminBlogController;
+use App\Http\Controllers\Admin\AsyncFileUploadController;
 use App\Http\Controllers\BlogController;
 
 Route::group(['as' => 'front.'], function () {
@@ -59,6 +60,9 @@ Route::group(['as' => 'admin.', 'prefix' => config('app.admin_url_prefix')], fun
         Route::get('/charts/fetch-conversion', [DashboardController::class, 'conversion_chart'])->name('chart.conversion');
         Route::get('/charts/fetch-leads-status', [DashboardController::class, 'leads_status_chart']);
         Route::get('/charts/fetch-leads-by-service', [DashboardController::class, 'leads_by_services']);
+
+        Route::post('async/uploads',   AsyncFileUploadController::class)->name('uploads.process');
+        Route::delete('async/uploads', AsyncFileUploadController::class)->name('uploads.revert');
 
         Route::post('custom-view/get', [CustomViewController::class , 'getViews'])->name('custom-view.get');
         Route::post('custom-view/save', [CustomViewController::class , 'saveView'])->name('custom-view.save');

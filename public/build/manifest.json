@@ -96,7 +96,7 @@
     "src": "resources/css/icon-fonts/tabler-icons/iconfont/fonts/tabler-icons.eot"
   },
   "resources/js/admin/admin.js": {
-    "file": "assets/admin-qjqJOGho.js",
+    "file": "assets/admin-N76ZCFkj.js",
     "name": "admin",
     "src": "resources/js/admin/admin.js",
     "isEntry": true,
@@ -109,7 +109,7 @@
       "resources/js/admin/form-elements.js"
     ],
     "css": [
-      "assets/admin-D_D7_Pgz.css"
+      "assets/admin-sEXrooMR.css"
     ],
     "assets": [
       "assets/remixicon0b0b-DiAulmZC.eot",
@@ -144,7 +144,7 @@
     ]
   },
   "resources/js/admin/form-elements.js": {
-    "file": "assets/form-elements-BCfF-o97.js",
+    "file": "assets/form-elements-HwBNE9dU.js",
     "name": "form-elements",
     "src": "resources/js/admin/form-elements.js",
     "isDynamicEntry": true,
@@ -154,7 +154,7 @@
       "_bootstrap.esm-5AK_f7la.js"
     ],
     "css": [
-      "assets/form-elements-tQH9kz2n.css"
+      "assets/form-elements-BWvn8wfL.css"
     ]
   },
   "resources/js/admin/login.js": {

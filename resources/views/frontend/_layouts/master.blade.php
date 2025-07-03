@@ -21,7 +21,11 @@
 
     <meta name="description" content="@yield('meta_description', 'Get Top-Rated Business Services, Company registration, Compliance Solutions under One Roof in Just a Few Taps')">
     <meta name="keywords" content="@yield('meta_keywords', 'TaxBizLegal, tax services, legal services, GST registration, company registration, income tax filing, business consultancy')">
+    @if(request()->is('services/*') && !view()->exists('frontend.services.' . last(request()->segments())))
+    <meta name="robots" content="noindex,nofollow">
+    @else
     <meta name="robots" content="index,follow">
+    @endif
 
     @env(['staging', 'production'])
     <script>

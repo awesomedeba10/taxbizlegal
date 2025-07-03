@@ -10180,12 +10180,11 @@ button {
 .timeline li:before {
   content: "";
   position: absolute;
-  inset-block-start: 4.625rem;
+  inset-block-start: 1.525rem;
   inset-block-end: -3rem;
   width: 1px;
   border: 1px dashed var(--primary02);
-  inset-inline-start: 20%;
-  margin-inline-start: -1.5px;
+  inset-inline-start: 23.75%
 }
 
 .timeline > li {
@@ -10197,8 +10196,8 @@ button {
 .timeline .timeline-time {
   position: absolute;
   inset-inline-start: 0;
-  width: 18%;
-  inset-block-start: 3.35rem;
+  width: 20%;
+  inset-block-start: 0.5rem;
 }
 
 .timeline .timeline-time .date,
@@ -10216,16 +10215,16 @@ button {
 
 .timeline .timeline-time .time {
   line-height: 1.5rem;
-  font-size: 1.125rem;
+  font-size: 0.85rem;
   color: var(--text-muted);
 }
 
 .timeline .timeline-icon {
-  inset-inline-start: 15%;
+  inset-inline-start: 19%;
   position: absolute;
   width: 10%;
   text-align: center;
-  inset-block-start: 3.188rem;
+  inset-block-start: 0.5rem;
 }
 
 .timeline .timeline-icon a {
@@ -10242,12 +10241,12 @@ button {
 
 .timeline .timeline-body {
   box-shadow: 0 1px 1rem rgba(0, 0, 0, 0.05);
-  margin-inline-start: 22%;
-  margin-inline-end: 18%;
+  margin-inline-start: 27%;
   background: var(--custom-white);
   position: relative;
-  padding: 0.875rem 1.25rem 0.875rem 1.25rem;
+  padding: 0.875rem 0.75rem 0.875rem 0.75rem;
   border-radius: 0.5rem;
+  inset-block-start: -3px;
 }
 
 .timeline .timeline-body > div + div {
@@ -10261,12 +10260,6 @@ button {
 
 .timeline li:last-child:before {
   display: none;
-}
-
-@media screen and (min-width: 576px) {
-  .timeline .timeline-body {
-    inset-block-start: 2.5rem;
-  }
 }
 @media (max-width: 575.98px) {
   .timeline .timeline-icon a {
