@@ -2,6 +2,7 @@ import Quill from "quill";
 import * as FilePond from "filepond";
 import FilePondPluginFileValidateType from "filepond-plugin-file-validate-type";
 import FilePondPluginImagePreview from "filepond-plugin-image-preview";
+import FilePondPluginFileValidateSize from 'filepond-plugin-file-validate-size';
 
 import "filepond/dist/filepond.min.css";
 import "filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css";
@@ -10,7 +11,8 @@ import "quill/dist/quill.bubble.css";
 
 FilePond.registerPlugin(
     FilePondPluginFileValidateType,
-    FilePondPluginImagePreview
+    FilePondPluginImagePreview,
+    FilePondPluginFileValidateSize
 );
 
 (function () {
@@ -28,7 +30,7 @@ FilePond.registerPlugin(
         [{ size: ["small", false, "large", "huge"] }],
         [{ color: [] }, { background: [] }],
         [{ align: [] }],
-        ["image", "video"],
+        ["link", "image", "video"],
         ["clean"],
     ];
 
@@ -53,7 +55,8 @@ FilePond.registerPlugin(
         });
     }
 
-    FilePond.create(document.querySelector('input[type="file"].filepond'), {
+    const fileInput = document.querySelector('input[type="file"].filepond');
+    const filePondInstance = FilePond.create(fileInput, {
         server: {
             process: {
                 url: "/internal/ops/async/uploads",
@@ -77,7 +80,20 @@ FilePond.registerPlugin(
         },
         acceptedFileTypes: ["image/*"],
         allowMultiple: false,
+        allowFileSizeValidation: true,
+        maxFileSize: '1MB',
         labelIdle:
             'Drag & Drop your image or <span class="filepond--label-action">Browse</span>',
     });
+
+    const existingFileUrl = fileInput.dataset.source;
+
+    if (existingFileUrl) {
+        console.warn(existingFileUrl);
+        filePondInstance.files = [
+            {
+                source: existingFileUrl
+            }
+        ];
+    }
 })();

@@ -128,7 +128,7 @@
                                                 <a href="{{ route('admin.blogs.index') }}" class="side-menu__item">View All</a>
                                             </li>
                                             <li class="slide">
-                                                <a href="alerts" class="side-menu__item">Create Blog</a>
+                                                <a href="{{ route('admin.blogs.create') }}" class="side-menu__item">Create Blog</a>
                                             </li>
                                         </ul>
                                     </li>

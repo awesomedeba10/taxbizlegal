@@ -61,7 +61,7 @@
                                 <tbody>
                                     @foreach ($orders as $order)
                                         <tr>
-                                            <th scope="row">
+                                            <th scope="row" class="copy-text">
                                                 {{ Str::upper($order->order_id) }}
                                             </th>
                                             <td>
@@ -223,7 +223,7 @@
             <div class="card custom-card">
                 <div class="card-body">
                     <div class="col-md-12">
-                        <p class="fs-18 fw-semibold mb-2">TBL Id - <span class="text-primary"
+                        <p class="fs-18 fw-semibold mb-2">TBL Id - <span class="text-primary copy-text cursor-pointer"
                                 id="tbl-id-div">#TBL-26352veh2</span></p>
                     </div>
                     <ul class="nav nav-tabs tab-style-2 nav-justified mb-3 d-sm-flex d-block" id="myTab1"

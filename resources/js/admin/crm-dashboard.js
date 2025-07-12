@@ -20,6 +20,7 @@ function initDashboard() {
         totalElementId: "total-revenue-amount",
         percentageElementId: "total-revenue-percentage",
         label: "Revenue",
+        unit: "₹"
     });
 
     renderSparklineChart({
@@ -47,6 +48,7 @@ function initDashboard() {
         percentageElementId: "total-conversion-change",
         color: "rgb(38, 191, 148)",
         label: "Conversion %",
+        unit: '%'
     });
 
     loadLeadsStatusChart();
@@ -60,6 +62,7 @@ function renderSparklineChart({
     percentageElementId,
     color = "rgb(132, 90, 223)",
     label = "Metric",
+    unit = null,
 }) {
     const payload = getQueryParam("payload");
     if (payload) {
@@ -103,8 +106,13 @@ function renderSparklineChart({
             chart.render();
 
             if (totalElementId) {
-                document.getElementById(totalElementId).textContent =
-                    "₹" + total.toLocaleString();
+                let formatted = total.toLocaleString();
+                if (unit === "₹") {
+                    formatted = "₹" + formatted;
+                } else if (unit === "%") {
+                    formatted = formatted + "%";
+                }
+                document.getElementById(totalElementId).textContent = formatted;
             }
 
             if (percentageElementId) {

@@ -120,6 +120,19 @@
                                     <div class="mod-ml-6"></div>
                                 </div>
                             </div>
+                            <div class="sm:mod-px-0 mod-px-2 mod-py-3 mod-font-medium mod-whitespace-no-wrap mod-dropdown-menu-item mod-text-compact "
+                                style="margin-top: 0px; margin-bottom: 0px; align-items: flex-start;">
+
+                                <div class="mod-w-full">
+                                    <a target="_blank"
+                                        class="mod-text-font-500 mod-flex mod-items-start mod-gap-2 mod-w-full mod-px-2"
+                                        href="{{ route('front.blogs') }}">
+
+                                        <span>Blogs</span>
+                                    </a>
+                                    <div class="mod-ml-6"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -351,6 +364,10 @@
                                 <div class="mod-p-2 mod-text-font-500 mod-text-s-14 mod-font-medium">
                                     <a target="_blank" class="hover:mod-text-blue-350"
                                         href="{{ route('front.about') }}">About Us</a>
+                                </div>
+                                <div class="mod-p-2 mod-text-font-500 mod-text-s-14 mod-font-medium">
+                                    <a target="_blank" class="hover:mod-text-blue-350"
+                                        href="{{ route('front.blogs') }}">Blogs</a>
                                 </div>
                             </div>
                         </details>

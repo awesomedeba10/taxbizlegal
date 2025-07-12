@@ -15,6 +15,8 @@ class Blog extends Model
         'content',
         'tags',
         'blog_type',
+        'related_services',
+        'estimated_reading_time',
         'user_id',
         'is_published',
         'published_at'

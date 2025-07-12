@@ -43,3 +43,9 @@ if (!function_exists('custom_decrypt')) {
         return json_decode(gzuncompress($decoded), true);
     }
 }
+
+if (!function_exists('clean_html_content')) {
+    function clean_html_content($html) {
+        return Str::replace('&nbsp;', ' ', $html, caseSensitive: false);
+    }
+}

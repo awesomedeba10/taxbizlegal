@@ -96,7 +96,7 @@
     "src": "resources/css/icon-fonts/tabler-icons/iconfont/fonts/tabler-icons.eot"
   },
   "resources/js/admin/admin.js": {
-    "file": "assets/admin-N76ZCFkj.js",
+    "file": "assets/admin-COPztQ-s.js",
     "name": "admin",
     "src": "resources/js/admin/admin.js",
     "isEntry": true,
@@ -109,7 +109,7 @@
       "resources/js/admin/form-elements.js"
     ],
     "css": [
-      "assets/admin-sEXrooMR.css"
+      "assets/admin-Cb1-5OXf.css"
     ],
     "assets": [
       "assets/remixicon0b0b-DiAulmZC.eot",
@@ -135,7 +135,7 @@
     ]
   },
   "resources/js/admin/crm-dashboard.js": {
-    "file": "assets/crm-dashboard-ChGDApPt.js",
+    "file": "assets/crm-dashboard-DaygqQPS.js",
     "name": "crm-dashboard",
     "src": "resources/js/admin/crm-dashboard.js",
     "isDynamicEntry": true,
@@ -144,7 +144,7 @@
     ]
   },
   "resources/js/admin/form-elements.js": {
-    "file": "assets/form-elements-HwBNE9dU.js",
+    "file": "assets/form-elements-Ch5QRvy1.js",
     "name": "form-elements",
     "src": "resources/js/admin/form-elements.js",
     "isDynamicEntry": true,

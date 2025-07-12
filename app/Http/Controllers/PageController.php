@@ -34,7 +34,7 @@ class PageController extends Controller
 
     public function contact_leads(Request $request) {
         Enquiry::submitLeads( $request->merge([
-            'redirected_from' => 'contact-page'
+            'redirected_from' => request()->headers->get('referer')
         ]));
 
         return response()->json([

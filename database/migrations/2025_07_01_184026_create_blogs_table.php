@@ -19,6 +19,7 @@ return new class extends Migration
             $table->text('excerpt')->nullable();
             $table->text('tags')->nullable();
             $table->text('blog_type')->nullable();
+            $table->text('related_services')->nullable();
             $table->integer('estimated_reading_time')->nullable();
             $table->longText('content');
             $table->unsignedBigInteger('user_id')->nullable();

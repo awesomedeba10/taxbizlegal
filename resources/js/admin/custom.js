@@ -225,6 +225,19 @@ import flatpickr from "flatpickr";
     nanoButtons1[0].click();
     /* for theme background */
 
+    document.querySelectorAll('.copy-text').forEach(el => {
+        el.addEventListener('click', () => {
+            const textToCopy = el.textContent;
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                setTimeout(() => {
+                    showToast("success", 'Copied to Clipboard !!');
+                }, 1000);
+            }).catch(err => {
+                console.error('Failed to copy: ', err);
+            });
+        });
+    });
+
     document.addEventListener("DOMContentLoaded", function () {
         const sessionToast = document.getElementById("sessionMsgToast");
         if (sessionToast) {

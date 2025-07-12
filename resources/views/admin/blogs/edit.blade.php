@@ -34,6 +34,7 @@
         'Audit',
     ];
     $selectedTags = is_array($blog->tags) ? $blog->tags : explode(',', $blog->tags);
+    $selectedrelatedServices = is_array($blog->related_services) ? $blog->related_services : explode(',', $blog->related_services);
 @endphp
 
 @section('content')
@@ -76,46 +77,65 @@
                                         value="{{ old('title', $blog->title) }}" required>
                                 </div>
                             </div>
-
                             <div class="mb-3">
                                 <label for="excerpt" class="form-label fs-14 text-dark required">Describe Blog
                                     Excerpt</label>
                                 <div class="input-group">
                                     <div class="input-group-text"><i class="ri-edit-line"></i></div>
-                                    <input type="text" class="form-control" id="excerpt" name="excerpt"
-                                        value="{{ old('excerpt', $blog->excerpt) }}"
-                                        placeholder="Write a short summary or preview of the blog post content." required>
+                                    <textarea type="text" class="form-control" id="excerpt" name="excerpt"
+                                        placeholder="Write a short summary or preview of the blog post content." required>{{ old('excerpt', $blog->excerpt) }}</textarea>
                                 </div>
                                 <div id="excerptHelp" class="form-text">This will be used as Meta Description for SEO,
                                     Social media previews & Related Article previews.</div>
                             </div>
-
                             <div class="row">
-                                <div class="col-md-6 mb-3">
-                                    <label class="form-label required">Tags</label>
-                                    <select class="form-select choices__select" name="tags[]" multiple required>
-                                        @foreach ($tagOptions as $tag)
-                                            <option value="{{ $tag }}"
-                                                {{ in_array($tag, $selectedTags) ? 'selected' : '' }}>
-                                                {{ $tag }}
-                                            </option>
-                                        @endforeach
-                                    </select>
-                                </div>
+                                <div class="mb-3 col-md-6">
+                                    <div class="col-md-12 mb-3">
+                                        <label class="form-label required">Tags</label>
+                                        <select class="form-select choices__select" name="tags[]" multiple required>
+                                            @foreach ($tagOptions as $tag)
+                                                <option value="{{ $tag }}"
+                                                    {{ in_array($tag, $selectedTags) ? 'selected' : '' }}>
+                                                    {{ $tag }}
+                                                </option>
+                                            @endforeach
+                                        </select>
+                                    </div>
 
+                                    <div class="col-md-12 mb-3">
+                                        <label class="form-label required">Blog Type</label>
+                                        <select class="form-select choices__select" name="blog_type" required>
+                                            @foreach (['Insights', 'Guidance', 'Resources', 'Tutorials', 'Case Studies'] as $type)
+                                                <option value="{{ $type }}"
+                                                    {{ $blog->blog_type == $type ? 'selected' : '' }}>
+                                                    {{ $type }}
+                                                </option>
+                                            @endforeach
+                                        </select>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <label class="form-label required">Related Service</label>
+                                        <select class="form-select choices__select" name="related_services[]"
+                                            data-placeholder="Choose Related Service" multiple required>
+                                            @foreach ($services as $service)
+                                                <option value="{{ $service->slug }}"
+                                                    {{ in_array($service->slug, $selectedrelatedServices) ? 'selected' : '' }}>{{ $service->name }}</option>
+                                            @endforeach
+                                        </select>
+                                    </div>
+                                </div>
                                 <div class="col-md-6 mb-3">
-                                    <label class="form-label required">Filter Leads From</label>
-                                    <select class="form-select choices__select" name="blog_type" required>
-                                        @foreach (['Insights', 'Guidance', 'Resources', 'Tutorials', 'Case Studies'] as $type)
-                                            <option value="{{ $type }}"
-                                                {{ $blog->blog_type == $type ? 'selected' : '' }}>
-                                                {{ $type }}
-                                            </option>
-                                        @endforeach
-                                    </select>
+                                    <label for="banner_img" class="form-label fs-14 text-dark">Upload File</label>
+                                    <input type="file" class="form-control filepond" name="banner_img" id="banner_img"
+                                        @if(isset($blog->banner_img))
+                                            data-source="{{ asset('storage/' . $blog->banner_img) }}"
+                                            data-file-name="{{ basename($blog->banner_img) }}"
+                                        @endif
+                                        accept="image/*">
+                                    <div class="form-text">You can upload an jpg, png or webp image.</div>
                                 </div>
                             </div>
-
                             <div class="mb-3">
                                 <label for="excerpt" class="form-label fs-14 text-dark required">Write Blog Content</label>
                                 <div id="quill-snow-container">{!! $blog->content !!}</div>

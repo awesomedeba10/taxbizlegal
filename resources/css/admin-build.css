@@ -21661,7 +21661,9 @@ a.link-underline-light {
 a.link-underline-dark {
   text-decoration-color: rgba(var(--dark-rgb), var(--bs-link-underline-opacity)) !important;
 }
-
+.cursor-pointer {
+    cursor: pointer;
+}
 /* End::links */
 /* Start::Colored Links */
 .link-primary {

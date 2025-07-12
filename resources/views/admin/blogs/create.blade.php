@@ -35,23 +35,23 @@
                                     <input type="text" class="form-control" id="title" name="title" required>
                                 </div>
                             </div>
+                            <div class="mb-3">
+                                <label for="excerpt"
+                                    class="form-label fs-14 text-dark required">Describe
+                                    Blog Excerpt</label>
+                                <div class="input-group">
+                                    <div class="input-group-text">
+                                        <i class="ri-edit-line"></i>
+                                    </div>
+                                    <textarea type="text" class="form-control" id="excerpt" name="excerpt"
+                                        placeholder="Write a short summary or preview of the blog post content." required></textarea>
+                                </div>
+                                <div id="excerptHelp" class="form-text">This will be used as Meta Description for
+                                    SEO,
+                                    Social media previews & Related Article previews.</div>
+                            </div>
                             <div class="row">
                                 <div class="col-md-6 mb-3">
-                                    <div class="col-md-12 mb-3"> <label for="excerpt"
-                                            class="form-label fs-14 text-dark required">Describe
-                                            Blog Excerpt</label>
-                                        <div class="input-group">
-                                            <div class="input-group-text">
-                                                <i class="ri-edit-line"></i>
-                                            </div>
-                                            <input type="text" class="form-control" id="excerpt" name="excerpt"
-                                                placeholder="Write a short summary or preview of the blog post content."
-                                                required>
-                                        </div>
-                                        <div id="excerptHelp" class="form-text">This will be used as Meta Description for
-                                            SEO,
-                                            Social media previews & Related Article previews.</div>
-                                    </div>
                                     <div class="col-md-12 mb-3">
                                         <label class="form-label required">Tags</label>
                                         <select class="form-select choices__select" name="tags[]" multiple
@@ -74,8 +74,8 @@
                                             <option value="Audit">Audit</option>
                                         </select>
                                     </div>
-                                    <div class="col-md-12">
-                                        <label class="form-label required">Filter Leads From</label>
+                                    <div class="col-md-12 mb-3">
+                                        <label class="form-label required">Blog Type</label>
                                         <select class="form-select choices__select" name="blog_type"
                                             data-placeholder="Choose blog type" required>
                                             <option value="Insights">Insights</option>
@@ -83,6 +83,15 @@
                                             <option value="Resources">Resources</option>
                                             <option value="Tutorials">Tutorials</option>
                                             <option value="Case Studies">Case Studies</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label class="form-label required">Related Service</label>
+                                        <select class="form-select choices__select" name="related_services[]"
+                                            data-placeholder="Choose Related Service" multiple required>
+                                            @foreach ($services as $service)
+                                                <option value="{{ $service->slug }}">{{ $service->name }}</option>
+                                            @endforeach
                                         </select>
                                     </div>
                                 </div>

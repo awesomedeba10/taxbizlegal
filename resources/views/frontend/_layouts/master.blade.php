@@ -11,15 +11,11 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="current-path" content="{{ url()->current() }}">
 
-    <title>@yield('title', slugToTitle(($slug = array_slice(explode('/', request()->path()), -1)[0]) === '' ? 'home' : $slug) . ' | ')
-        @hasSection('title')
-            |
-        @endif Tax Biz Legal
-    </title>
+    <title>{{ $meta['meta_title'] ?? config('app.name') }}</title>
 
     <link rel="canonical" href="{{ url()->current() }}" />
 
-    <meta name="description" content="@yield('meta_description', 'Get Top-Rated Business Services, Company registration, Compliance Solutions under One Roof in Just a Few Taps')">
+    <meta name="description" content="{{ $meta['meta_description'] ?? 'Get Top-Rated Business Services, Company registration, Compliance Solutions under One Roof in Just a Few Taps' }}">
     <meta name="keywords" content="@yield('meta_keywords', 'TaxBizLegal, tax services, legal services, GST registration, company registration, income tax filing, business consultancy')">
     @if(request()->is('services/*') && !view()->exists('frontend.services.' . last(request()->segments())))
     <meta name="robots" content="noindex,nofollow">
@@ -45,6 +41,16 @@
         })(window, document, 'script', 'dataLayer', 'GTM-NGBDBJ5T');
     </script>
     @endenv
+
+    @if(!empty($meta))
+    <meta property="og:title" content="{{ $meta['og_title'] ?? '' }}">
+    <meta property="og:description" content="{{ $meta['og_description'] ?? '' }}">
+    <meta property="og:url" content="{{ request()->url() }}">
+    <meta property="og:type" content="{{ $meta['og_type'] ?? 'website' }}">
+    <meta property="og:image" content="{{ $meta['og_image'] ?? asset('default.png') }}">
+    <meta property="og:site_name" content="{{ config('app.name') }}">
+    <meta property="og:locale" content="en-IN">
+    @endif
 
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('images/favicon/apple-touch-icon.png') }}">
     <link rel="icon" type="image/png" sizes="96x96" href="{{ asset('images/favicon/favicon-32x32.png') }}">
