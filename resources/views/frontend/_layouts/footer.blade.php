@@ -1,7 +1,7 @@
 <footer class="footer mod-pb-0">
     <div class="mod-container">
         <div class="footer-options">
-            <div class="row gy-40 g-sm-40 g-lg-32 mb-32">
+            <div class="row gy-40 g-sm-40 g-lg-32">
                 <div class="col-lg-4 col-md-4 col-sm-6 col-12">
                     <div class="mod-grid mod-gap-8 sm:mod-gap-4">
                         <a href="{{ route('front.home') }}" class="footer-logo">
@@ -81,6 +81,9 @@
                                 height="24">
                     </figure>
                     </div>
+                </div>
+                <div class="col-lg-10 col-md-10 col-sm-12 mod-mt-0">
+                    <p class="mod-text-s-11">Disclaimer: This website is operated by a private consultancy firm aand is not affiliated with or endorsed by any government authority. The form provided is solely intended to gather client information for internal asessment purposes and does not constitute an oficial registration. We offer professional consultancy services on a paid basisd and may collaborate with third-party experts when necessary to serve our clients efficiently.</p>
                 </div>
             </div>
         </div>
