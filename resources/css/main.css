@@ -1112,6 +1112,14 @@ cite {
         --bs-gutter-x: 5rem;
     }
 }
+.content td {
+    border-width: 1px;
+    padding: 2px 5px;
+}
+.content table {
+    width: 100%;
+    table-layout: fixed;
+}
 .form-text {
     margin-top: 0.25rem;
     font-size: 0.75rem;
@@ -4422,7 +4430,7 @@ textarea.form-control {
 }
 
 ::-webkit-scrollbar-track {
-    background-color: transparent; 
+    background-color: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -6575,7 +6583,7 @@ fieldset:disabled .btn-close {
       padding-bottom: 2.5rem !important;
     }
   }
-  
+
 @media (min-width: 1200px) and (min-height: 1200px) {
     .choices__inner {
         font-size:1.125rem
@@ -7867,8 +7875,8 @@ fieldset + fieldset:not(.accordion-item) {
     margin-top: 0;
     width: 25%;
     height: 50%;
-    opacity: 0.2; 
-    pointer-events: none; 
+    opacity: 0.2;
+    pointer-events: none;
 }
 .staging-new-tag {
     margin-left: 7px;
@@ -8570,7 +8578,7 @@ ver svg,
     }
 }
 body {
-    padding-top: 2.5rem; 
+    padding-top: 2.5rem;
 }
 .navbar {
     --navbar-translate: 0px;
@@ -9295,7 +9303,7 @@ nav.odin-menu-actions {
     height: 1.5rem;
     display: flex;
 }
-.testimonials_card .w-embed:before, 
+.testimonials_card .w-embed:before,
 .testimonials_card .w-embed:after {
     content: " ";
     grid-area: 1 / 1 / 2 / 2;
@@ -9386,7 +9394,7 @@ nav.odin-menu-actions {
 }
 
 /* Gradient fading effect on sides */
-.partner-box-logo-scroller::before, 
+.partner-box-logo-scroller::before,
 .partner-box-logo-scroller::after {
     content: "";
     position: absolute;
@@ -9431,7 +9439,7 @@ nav.odin-menu-actions {
     100% { transform: translateX(calc(-250px * 7)); }
 }
 
-.btn-float { 
+.btn-float {
     position: fixed;
     bottom: 30px;
     right: 30px;
@@ -9775,7 +9783,7 @@ nav.odin-menu-actions {
 .service-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px; 
+    gap: 20px;
     max-width: 600px;
     margin: 20px auto;
 }
@@ -10032,7 +10040,7 @@ nav.odin-menu-actions {
     font-weight: 800;
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 }
 
 .process .timeline-icon {
@@ -10140,7 +10148,7 @@ img {
     display: block;
     height: auto;
 }
-.pricing-wrapper .card-plan { 
+.pricing-wrapper .card-plan {
     border-radius: 16px;
     padding: 32px 24px 24px;
     position: relative;
@@ -10426,3 +10434,38 @@ img {
 .hidden {
     opacity: 0;
 }
+.share-btn {
+    display: inline-block;
+    color: #ffffff;
+    border: none;
+    padding: 0.5em;
+    width: 4em;
+    height: 4em;
+    opacity: 0.9;
+    box-shadow: 0 2px 0 0 rgba(0,0,0,0.2);
+    outline: none;
+    text-align: center;
+    border-radius: 4px;
+    margin: 0 5px;
+}
+
+.share-btn:hover {
+    color: #eeeeee;
+    opacity: 1;
+}
+
+.share-btn:active {
+    position: relative;
+    top: 2px;
+    box-shadow: none;
+    color: #e2e2e2;
+    outline: none;
+}
+
+.share-btn.twitter { background: #000000; } /* X (Twitter) color */
+.share-btn.facebook { background: #3B5998; } /* Meta (Facebook) color */
+.share-btn.linkedin { background: #4875B4; }
+.share-btn.instagram { background: #E1306C; }
+.share-btn.whatsapp { background: #25D366; }
+.share-btn.email { background: #444444; }
+.share-btn.whatsapp { background: #25D366; }

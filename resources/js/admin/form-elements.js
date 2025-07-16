@@ -96,4 +96,21 @@ FilePond.registerPlugin(
             }
         ];
     }
+
+    const slug_input = document.getElementById("blog-slug");
+    const slug_helper_div = document.getElementById('blogSlugHelp');
+
+    slug_input.addEventListener("input", function () {
+        let slug = slug_input.value
+            .toLowerCase()
+            .replace(/[^a-z0-9 -]/g, '')
+            .replace(/\s+/g, '-')
+            .replace(/-+/g, '-');
+
+        slug_input.value = slug;
+
+        slug_helper_div.innerHTML = "Blog URL will looks like : "
+            + slug_helper_div.dataset.url + "/" + slug;
+    });
+
 })();

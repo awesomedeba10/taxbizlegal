@@ -69,12 +69,39 @@
                             @csrf
                             @method('PUT')
 
-                            <div class="mb-3">
-                                <label for="title" class="form-label fs-14 text-dark required">Enter Blog Title</label>
-                                <div class="input-group">
-                                    <div class="input-group-text"><i class="ri-article-line"></i></div>
-                                    <input type="text" class="form-control" id="title" name="title"
-                                        value="{{ old('title', $blog->title) }}" required>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <div class="col-md-12">
+                                        <label for="title" class="form-label fs-14 text-dark required">Enter
+                                        Blog Title</label>
+                                        <div class="input-group">
+                                            <div class="input-group-text">
+                                                <i class="ri-article-line"></i>
+                                            </div>
+                                            <input type="text" class="form-control" id="title" name="title"
+                                                value="{{ old('title', $blog->title) }}" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="col-md-12">
+                                        <label for="title" class="form-label fs-14 text-dark required">Type
+                                        Blog URL Part</label>
+                                        <div class="input-group">
+                                            <div class="input-group-text">
+                                                <i class="ri-links-line"></i>
+                                            </div>
+                                            <input type="text" class="form-control" id="blog-slug" name="slug"
+                                                value="{{ old('slug', $blog->slug) }}"
+                                                placeholder="Write a SEO friendly slug" required>
+                                        </div>
+                                        @error('slug')
+                                            <div class="invalid-feedback">{{ $message }}</div>
+                                        @enderror
+                                        <div id="blogSlugHelp" class="form-text" data-url="{{ route('front.blogs') }}">
+                                            Blog URL will looks like : {{ route('front.blogs.view', $blog->slug) }}
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="mb-3">

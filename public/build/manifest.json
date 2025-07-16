@@ -96,7 +96,7 @@
     "src": "resources/css/icon-fonts/tabler-icons/iconfont/fonts/tabler-icons.eot"
   },
   "resources/js/admin/admin.js": {
-    "file": "assets/admin-COPztQ-s.js",
+    "file": "assets/admin-BhuQFYkb.js",
     "name": "admin",
     "src": "resources/js/admin/admin.js",
     "isEntry": true,
@@ -144,7 +144,7 @@
     ]
   },
   "resources/js/admin/form-elements.js": {
-    "file": "assets/form-elements-Ch5QRvy1.js",
+    "file": "assets/form-elements-BPaAts7l.js",
     "name": "form-elements",
     "src": "resources/js/admin/form-elements.js",
     "isDynamicEntry": true,
@@ -171,7 +171,7 @@
     ]
   },
   "resources/js/app.js": {
-    "file": "assets/app-BrgB8_r-.js",
+    "file": "assets/app-BmgC3HI9.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
@@ -179,7 +179,7 @@
       "__commonjsHelpers-Cpj98o6Y.js"
     ],
     "css": [
-      "assets/app-DN06X8IU.css",
+      "assets/app-CN1_jG-B.css",
       "assets/normalize-Rs90JzLB.css"
     ]
   }

@@ -9,6 +9,7 @@ use Illuminate\Support\Str;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\File;
 use Illuminate\Support\Facades\Cache;
 use App\Models\Service;
@@ -42,11 +43,20 @@ class BlogController extends Controller
 
     public function store(Request $request)
     {
+        $validator = Validator::make($request->all(), [
+            'title' => 'required|string|max:255',
+            'slug'  => 'required|string|max:255|alpha_dash|unique:blogs,slug',
+        ]);
+
+        if ($validator->fails()):
+            $firstError = $validator->errors()->first();
+            return redirect()->back()->withInput()->with('error', $firstError);
+        endif;
+
         $now = Carbon::now();
         $isPublished  = $request->input('type') == 1;
         $publishedAt = $isPublished ? $now : null;
         $msg = $isPublished ? 'Blog Published Successfully' : 'Blog is in draft, keep editing or make any changes';
-        $slug = Str::slug($request->input('title')) . '-' . Str::lower($now->format('Hi') . random_int(100, 999) . $now->format('m') . $now->format('s') . Str::random(4));
 
         if (!is_null($request->input('banner_img'))) {
             $fileName = Str::slug($request->input('title')) . '.' . pathinfo($request->input('banner_img'), PATHINFO_EXTENSION);
@@ -55,7 +65,7 @@ class BlogController extends Controller
 
         Blog::create([
             'title'             => $request->input('title'),
-            'slug'              => $slug,
+            'slug'              => $request->input('slug'),
             'excerpt'           => $request->input('excerpt'),
             'tags'              => $request->has('tags')
                 ? implode(',', $request->input('tags'))
@@ -73,7 +83,7 @@ class BlogController extends Controller
         ]);
 
         MetaTags::syncBlogTags([
-            'slug' => $slug,
+            'slug' => $request->input('slug'),
             'title' => $request->input('title'),
             'excerpt' => $request->input('excerpt'),
             'banner_img' => $filePath ?? null
@@ -94,6 +104,16 @@ class BlogController extends Controller
 
     public function update(Request $request, $id)
     {
+        $validator = Validator::make($request->all(), [
+            'title' => 'required|string|max:255',
+            'slug' => 'required|string|max:255|alpha_dash|unique:blogs,slug,' . $id,
+        ]);
+
+        if ($validator->fails()):
+            $firstError = $validator->errors()->first();
+            return redirect()->back()->withInput()->with('error', $firstError);
+        endif;
+
         $now = Carbon::now();
         $isPublished  = $request->input('type') == 1;
 
@@ -108,16 +128,9 @@ class BlogController extends Controller
             $filePath = Storage::disk('public')->putFileAs('upload/blogs', new File(Storage::path($request->input('banner_img'))), $fileName);
         }
 
-        if (strcasecmp($blog->title, $request->input('title')) === 0) {
-            $slug = $blog->slug;
-        } else {
-            $old_slug = $blog->slug;
-            $slug = Str::slug($request->input('title')) . '-' . Str::lower($now->format('Hi') . random_int(100, 999) . $now->format('m') . $now->format('s') . Str::random(4));
-        }
-
         $blog->update([
             'title'        => $request->input('title'),
-            'slug'         => $slug,
+            'slug'         => $request->input('slug'),
             'excerpt'      => $request->input('excerpt'),
             'tags'         => $request->has('tags')
                 ? implode(',', $request->input('tags'))
@@ -135,7 +148,7 @@ class BlogController extends Controller
         ]);
 
         MetaTags::syncBlogTags([
-            'slug' => $slug,
+            'slug' => $request->input('slug'),
             'title' => $request->input('title'),
             'excerpt' => $request->input('excerpt'),
             'banner_img' => $filePath ?? null

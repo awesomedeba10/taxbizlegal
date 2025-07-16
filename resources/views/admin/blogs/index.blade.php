@@ -91,7 +91,7 @@
                                                 <div class="hstack gap-2 fs-15">
                                                     <a type="button" href="{{ route('admin.blogs.edit', encrypt($blog->id)) }}"
                                                         class="btn btn-icon btn-primary-transparent btn-wave btn-sm waves-effect waves-light">
-                                                        <i class="bi bi-eye-fill"></i>
+                                                        <i class="bi bi-pencil-square"></i>
                                                     </a>
                                                 </div>
                                             </td>

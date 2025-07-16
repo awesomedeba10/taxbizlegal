@@ -26,13 +26,32 @@
                     <div class="card-body">
                         <form action="{{ route('admin.blogs.store') }}" method="post" enctype="multipart/form-data">
                             @csrf
-                            <div class="mb-3"> <label for="title" class="form-label fs-14 text-dark required">Enter
-                                    Blog Title</label>
-                                <div class="input-group">
-                                    <div class="input-group-text">
-                                        <i class="ri-article-line"></i>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <div class="col-md-12">
+                                        <label for="title" class="form-label fs-14 text-dark required">Enter
+                                        Blog Title</label>
+                                        <div class="input-group">
+                                            <div class="input-group-text">
+                                                <i class="ri-article-line"></i>
+                                            </div>
+                                            <input type="text" class="form-control" value="{{ old('title') }}" id="title" name="title" required>
+                                        </div>
                                     </div>
-                                    <input type="text" class="form-control" id="title" name="title" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="col-md-12">
+                                        <label for="title" class="form-label fs-14 text-dark required">Type
+                                        Blog URL Part</label>
+                                        <div class="input-group">
+                                            <div class="input-group-text">
+                                                <i class="ri-links-line"></i>
+                                            </div>
+                                            <input type="text" class="form-control" id="blog-slug" name="slug"
+                                                value="{{ old('slug') }}" placeholder="Write a SEO friendly slug" required>
+                                        </div>
+                                        <div id="blogSlugHelp" class="form-text" data-url="{{ route('front.blogs') }}"></div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="mb-3">
@@ -44,7 +63,7 @@
                                         <i class="ri-edit-line"></i>
                                     </div>
                                     <textarea type="text" class="form-control" id="excerpt" name="excerpt"
-                                        placeholder="Write a short summary or preview of the blog post content." required></textarea>
+                                        placeholder="Write a short summary or preview of the blog post content." required>{{ old('excerpt') }}</textarea>
                                 </div>
                                 <div id="excerptHelp" class="form-text">This will be used as Meta Description for
                                     SEO,
@@ -104,8 +123,8 @@
                             </div>
                             <div class="mb-3">
                                 <label for="excerpt" class="form-label fs-14 text-dark required">Write Blog Content</label>
-                                <div id="quill-snow-container"></div>
-                                <input type="hidden" name="content" id="quill-snow-inputholder">
+                                <div id="quill-snow-container">{!! old('content') !!}</div>
+                                <input type="hidden" name="content" id="quill-snow-inputholder" value="{{ old('content') }}">
                             </div>
                             <button class="btn btn-success me-2" value="1" name="type"
                                 type="submit">Publish</button>
