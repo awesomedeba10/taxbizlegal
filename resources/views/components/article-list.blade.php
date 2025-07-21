@@ -7,7 +7,7 @@
                 </p>
             </div>
             <div class="col-lg-4 text-lg-end">
-                <a href="{{ route('front.blogs') }}" class="btn btn-link icon-hover-right">
+                <a href="{{ route('front.blogs') }}" class="btn btn-link icon-hover-right mod-text-none">
                     Explore More
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
                         viewBox="0 0 24 24">
@@ -58,7 +58,7 @@
                         <div class="post-author mod-flex mod-mb-0 mod-items-center mod-gap-3">
                             <div class="avatar">
                                 <img alt="TBL"
-                                    src="https://avatar.iran.liara.run/public/24"
+                                    src="{{ asset('images/img/executive-avatar.png') }}"
                                     class="avatar avatar-30 photo" height="30" width="30">
                             </div>
                             <div class="name">

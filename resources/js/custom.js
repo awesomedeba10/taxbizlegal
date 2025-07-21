@@ -238,7 +238,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.querySelectorAll('.copy-text').forEach(el => {
     el.addEventListener('click', () => {
-        const textToCopy = el.textContent;
+        const textToCopy = el.getAttribute('data-copy-element') || el.textContent;
         navigator.clipboard.writeText(textToCopy).then(() => {
             setTimeout(() => {
                 alert('Copied to Clipboard !!')

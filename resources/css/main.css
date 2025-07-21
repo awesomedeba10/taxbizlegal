@@ -949,6 +949,10 @@ cite {
         flex: 0 0 auto;
         width: 91.66666667%;
     }
+    .col-md-12 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
     .gy-md-0 {
         --bs-gutter-y: 0;
     }
@@ -9321,7 +9325,8 @@ nav.odin-menu-actions {
     right: 1rem;
 }
 
-.article .article-card-image .tags a {
+.article .article-card-image .tags a,
+.article .article-card-image .tags button {
     display: inline-block;
     font-size: 0.75rem;
     text-decoration: none;
@@ -10434,19 +10439,26 @@ img {
 .hidden {
     opacity: 0;
 }
+@media (min-width: 1025px) {
+    .blog-sticky-section {
+        display: block;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 120px;
+        align-self: flex-start;
+        height: fit-content;
+    }
+}
 .share-btn {
-    display: inline-block;
-    color: #ffffff;
+    display: inline-flex;
     border: none;
-    padding: 0.5em;
-    width: 4em;
-    height: 4em;
+    width: 40px;
+    height: 40px;
     opacity: 0.9;
-    box-shadow: 0 2px 0 0 rgba(0,0,0,0.2);
-    outline: none;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    border-radius: 4px;
-    margin: 0 5px;
+    border-radius: 9px;
 }
 
 .share-btn:hover {
@@ -10462,10 +10474,10 @@ img {
     outline: none;
 }
 
-.share-btn.twitter { background: #000000; } /* X (Twitter) color */
-.share-btn.facebook { background: #3B5998; } /* Meta (Facebook) color */
-.share-btn.linkedin { background: #4875B4; }
-.share-btn.instagram { background: #E1306C; }
-.share-btn.whatsapp { background: #25D366; }
-.share-btn.email { background: #444444; }
-.share-btn.whatsapp { background: #25D366; }
+.share-btn.whatsapp {
+    background: #05ac49;
+}
+
+.share-btn.email {
+    background: #001c35e3;
+}

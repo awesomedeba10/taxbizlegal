@@ -8,18 +8,13 @@ use App\Models\Blog;
 class BlogController extends Controller
 {
     public function index() {
-        $blogs = Blog::where('is_published', true)->whereNotNull('published_at')->get();
-
         return view('frontend.blogs.index', [
-            'blogs' => $blogs
+            'blogs' => Blog::getBlogs()
         ]);
     }
 
     public function view($slug) {
-        $blog = Blog::where('slug', $slug)
-            ->where('is_published', true)
-            ->whereNotNull('published_at')
-            ->firstOrFail();
+        $blog = Blog::getBlogs($slug);
 
         return view('frontend.blogs.view', [
             'blog' => $blog

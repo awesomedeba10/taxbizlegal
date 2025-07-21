@@ -7,9 +7,9 @@
     "file": "assets/bootstrap.esm-5AK_f7la.js",
     "name": "bootstrap.esm"
   },
-  "_normalize-Rs90JzLB.css": {
-    "file": "assets/normalize-Rs90JzLB.css",
-    "src": "_normalize-Rs90JzLB.css"
+  "_normalize-B6Fr2dxf.css": {
+    "file": "assets/normalize-B6Fr2dxf.css",
+    "src": "_normalize-B6Fr2dxf.css"
   },
   "resources/css/icon-fonts/RemixIcons/fonts/remixicon0b0b.eot": {
     "file": "assets/remixicon0b0b-DiAulmZC.eot",
@@ -96,7 +96,7 @@
     "src": "resources/css/icon-fonts/tabler-icons/iconfont/fonts/tabler-icons.eot"
   },
   "resources/js/admin/admin.js": {
-    "file": "assets/admin-BhuQFYkb.js",
+    "file": "assets/admin-Dv2qbxBI.js",
     "name": "admin",
     "src": "resources/js/admin/admin.js",
     "isEntry": true,
@@ -109,7 +109,7 @@
       "resources/js/admin/form-elements.js"
     ],
     "css": [
-      "assets/admin-Cb1-5OXf.css"
+      "assets/admin-b1fruA-L.css"
     ],
     "assets": [
       "assets/remixicon0b0b-DiAulmZC.eot",
@@ -144,7 +144,7 @@
     ]
   },
   "resources/js/admin/form-elements.js": {
-    "file": "assets/form-elements-BPaAts7l.js",
+    "file": "assets/form-elements-BggGPrXy.js",
     "name": "form-elements",
     "src": "resources/js/admin/form-elements.js",
     "isDynamicEntry": true,
@@ -158,7 +158,7 @@
     ]
   },
   "resources/js/admin/login.js": {
-    "file": "assets/login-KApZYemp.js",
+    "file": "assets/login-IOznUULl.js",
     "name": "login",
     "src": "resources/js/admin/login.js",
     "isEntry": true,
@@ -167,11 +167,11 @@
     ],
     "css": [
       "assets/login-DSORgZHz.css",
-      "assets/normalize-Rs90JzLB.css"
+      "assets/normalize-B6Fr2dxf.css"
     ]
   },
   "resources/js/app.js": {
-    "file": "assets/app-BmgC3HI9.js",
+    "file": "assets/app-UxJDl_50.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
@@ -179,8 +179,8 @@
       "__commonjsHelpers-Cpj98o6Y.js"
     ],
     "css": [
-      "assets/app-CN1_jG-B.css",
-      "assets/normalize-Rs90JzLB.css"
+      "assets/app-BxvDwtIx.css",
+      "assets/normalize-B6Fr2dxf.css"
     ]
   }
 }

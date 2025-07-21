@@ -8,64 +8,16 @@
                     <font style="vertical-align: inherit;">Tax Biz Legal Blogs</font>
                 </font>
             </h1>
-            <div class="mt-32 mt-xxl-80">
-                <div class="row g-3 g-md-4 g-lg-40">
-                    @foreach ($blogs as $blog)
-                        <div class="col-6">
-                            <div class="mod-flex mod-flex-col card card--lg card--white article">
-                                <div class="article-card-image">
-                                    <div class="mod-absolute mod-z-5 tags">
-                                        @foreach (array_map('trim', explode(',', $blog->tags)) as $tag)
-                                            <a href="javascript:void(0)" class="tag">{{ $tag }}</a>
-                                        @endforeach
-                                    </div>
-                                    <img class="mod-w-full mod-h-full mod-object-contain" decoding="async" width="1024"
-                                        height="530" src="{{ asset('storage/' . $blog->banner_img) }}"
-                                        class="attachment-large size-large" alt="{{ $blog->title }}" loading="lazy"
-                                        sizes="auto, (max-width: 1024px) 100vw, 1024px" data-clarity-loaded="1ukpk4r">
-                                </div>
-                                <div class="article-card-body mod-p-6">
-                                    <div class="post-meta mod-mb-3 mod-flex mod-items-center mod-flex-nowwrap mod-gap-4">
-                                        <a href="javascript:void(0)">{{ $blog->blog_type }}</a>
-                                        <span class="hr"></span>
-                                        <span class="mod-inline-flex mod-items-center mod-gap-2">
-                                            <span class="icon">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                    <path
-                                                        d="M256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zM232 120l0 136c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2 280 120c0-13.3-10.7-24-24-24s-24 10.7-24 24z">
-                                                    </path>
-                                                </svg>
-                                            </span>
-                                            <span>
-                                                {{ $blog->estimated_reading_time }} min. reading</span>
-                                        </span>
-                                        <span class="mod-text-grey-500">Published On &nbsp;&nbsp;
-                                            <span class="mod-text-black">{{ $blog->created_at->format('d M. Y') }}</span>
-                                        </span>
-                                    </div>
-                                    <h3 class="article-heading mod-mb-4">
-                                        <a class="mod-text-none"
-                                            href="{{ route('front.blogs.view', $blog->slug) }}">{{ $blog->title }}</a>
-                                    </h3>
-                                    <p>{{ $blog->excerpt }}</p>
-                                    <div class="post-author mod-flex mod-mb-0 mod-items-center mod-gap-3">
-                                        <div class="avatar">
-                                            <img alt="TBL" src="https://avatar.iran.liara.run/public/24"
-                                                class="avatar avatar-30 photo" height="30" width="30">
-                                        </div>
-                                        <div class="name">
-                                            <p class="mod-mb-0 mod-leading-loose">
-                                                Admin <br><span class="mod-opacity-75">Tax Biz Legal</span> </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    @endforeach
-                </div>
-            </div>
 
-            {{-- <nav class="mt-32 mt-lg-40 mt-xxl-80">
+            {{-- Include the Livewire Filter Component --}}
+            <div class="mt-32 mt-xxl-80">
+                @livewire('blog-filter')
+            </div>
+        </section>
+    </main>
+@endsection
+
+{{-- <nav class="mt-32 mt-lg-40 mt-xxl-80">
                 <ul class="list-unstyled d-flex flex-wrap gap-2 align-items-center justify-content-center m-0 p-0">
                     <li class="me-2 me-md-3">
 
@@ -113,6 +65,3 @@
                     </li>
                 </ul>
             </nav> --}}
-        </section>
-    </main>
-@endsection

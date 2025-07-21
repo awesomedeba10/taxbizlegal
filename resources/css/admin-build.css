@@ -22348,3 +22348,20 @@ a.link-underline-dark {
 .wizard-body {
   padding: 3rem !important;
 }
+.xml-preview-vscode {
+    background: #1e1e1e;
+    color: #6a9955;
+    font-family: 'Cascadia Code', 'Fira Code', 'SF Mono', Consolas, monospace;
+    font-size: 14px;
+    line-height: 1.4;
+    padding: 16px 20px;
+    border-radius: 6px;
+    border-left: 4px solid #569cd6;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    tab-size: 4;
+    background-image: linear-gradient(135deg,
+            transparent 0%,
+            rgba(86, 156, 214, 0.05) 50%,
+            transparent 100%);
+}

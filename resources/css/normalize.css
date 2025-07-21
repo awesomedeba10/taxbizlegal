@@ -3407,7 +3407,7 @@ select {
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
 }
-.md\:mod-mx-8 { 
+.md\:mod-mx-8 {
     margin-left: 2rem;
     margin-right: 2rem;
 }
@@ -3676,7 +3676,7 @@ select {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
 }
-.lg\:mod-mx-8 { 
+.lg\:mod-mx-8 {
     margin-left: 2rem;
     margin-right: 2rem;
 }
@@ -3746,6 +3746,9 @@ select {
 .lg\:mod-px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
+}
+.lg\:mod-pl-10 {
+    padding-left: 2.5rem;
 }
 .lg\:mod-pr-12 {
     padding-right: 3rem;
@@ -3871,6 +3874,9 @@ select {
     padding-left: 2rem;
     padding-right: 2rem;
 }
+.xl\:mod-pl-10 {
+    padding-left: 2.5rem;
+}
 .xl\:mod-py-16 {
     padding-top: 4rem;
     padding-bottom: 4rem;
@@ -3913,15 +3919,15 @@ select {
     border-bottom: 2px solid #ddd;
 }
 .dropdown-size-limit {
-    
+
     max-width: 85%;
-    
+
     left: 9% !important;
-    
+
     height: fit-content !important;
-    
+
     border-radius: 8px !important;
-    
+
 }
 .nav-dropdown .mod-dropdown-menu  {
     top:  3.5rem;
@@ -3932,10 +3938,10 @@ select {
     top:  3rem;
 }
 .nav-bg  {
-    
+
     /* fallback for IE,  mozilla */
     background:  -moz-linear-gradient(#fff,  #fff);
-    
+
     background:  -ms-linear-gradient(#fff,  #fff);
-    
+
 }

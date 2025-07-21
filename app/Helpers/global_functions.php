@@ -49,3 +49,22 @@ if (!function_exists('clean_html_content')) {
         return Str::replace('&nbsp;', ' ', $html, caseSensitive: false);
     }
 }
+
+if (!function_exists('format_xml')) {
+    function format_xml($xml, $setIndent = false) {
+        $dom = new \DOMDocument();
+        $dom->preserveWhiteSpace = false;
+        $dom->formatOutput = true;
+        $dom->loadXML($xml);
+
+        $formatted = $dom->saveXML();
+
+        if ($setIndent):
+            $formatted = preg_replace_callback('/^( +)/m', function ($matches) {
+                return str_replace('  ', '    ', $matches[1]);
+            }, $formatted);
+        endif;
+
+        return $formatted;
+    }
+}

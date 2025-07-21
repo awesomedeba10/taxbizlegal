@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\AdminUserController;
+use App\Http\Controllers\Admin\AdminUtilController;
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\PageController;
@@ -81,6 +82,9 @@ Route::group(['as' => 'admin.', 'prefix' => config('app.admin_url_prefix')], fun
         Route::post('manage-blogs/store', [AdminBlogController::class, 'store'])->name('blogs.store');
         Route::get('manage-blogs/edit/{id}', [AdminBlogController::class, 'edit'])->name('blogs.edit');
         Route::put('manage-blogs/update/{id}', [AdminBlogController::class, 'update'])->name('blogs.update');
+
+        Route::get('view-sitemap', [AdminUtilController::class, 'sitemap'])->name('sitemap.index');
+        Route::post('view-sitemap', [AdminUtilController::class, 'generate_sitemap'])->name('sitemap.generate');
     });
 });
 

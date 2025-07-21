@@ -133,6 +133,13 @@
                                         </ul>
                                     </li>
 
+                                    <li class="slide">
+                                        <a href="{{ route('admin.sitemap.index') }}" class="side-menu__item">
+                                            <i class="bx bx-box side-menu__icon"></i>
+                                            <span class="side-menu__label">Generate Sitemap</span>
+                                        </a>
+                                    </li>
+
                                     {{-- <li class="slide has-sub">
                                         <a href="javascript:void(0);" class="side-menu__item"> <i class="bx bx-bar-chart-square side-menu__icon"></i> <span class="side-menu__label">Charts</span> <i class="fe fe-chevron-right side-menu__angle"></i> </a>
                                         <ul class="slide-menu child1" data-popper-placement="top" style="position: relative; left: 0px; top: 0px; margin: 0px; transform: translate3d(119.2px, 1772.8px, 0px);" data-popper-reference-hidden="" data-popper-escaped="">

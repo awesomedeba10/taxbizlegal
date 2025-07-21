@@ -204,5 +204,42 @@
 @endsection
 
 @push('schema')
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Tax Biz Legal","image":"https://taxbizlegal.com/images/svg/tbl_logo.svg","@id":"https://taxbizlegal.com","url":"https://taxbizlegal.com","telephone":"6290788499","priceRange":"1499","address":{"@type":"PostalAddress","streetAddress":"Sai Shivalik Complex, 22/1, SH 13, Bangihati Village, Bangihati","addressLocality":"Hooghly","postalCode":"712250","addressCountry":"IN"},"geo":{"@type":"GeoCoordinates","latitude":22.729208,"longitude":88.309555},"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"10:00","closes":"19:00"},"sameAs":["https://www.facebook.com/people/Tax-Biz-Legal/61572967894678/","https://www.instagram.com/tax_biz_legal/","https://www.linkedin.com/company/tax-biz-legal/"]}</script>
+<script type="application/ld+json">
+{!! json_encode([
+    '@context' => 'https://schema.org',
+    '@type'    => 'ProfessionalService',
+    'name'     => 'Tax Biz Legal',
+    'image'    => 'https://taxbizlegal.com/images/svg/tbl_logo.svg',
+    '@id'      => 'https://taxbizlegal.com',
+    'url'      => 'https://taxbizlegal.com',
+    'telephone'=> '6290788499',
+    'priceRange' => '1499',
+    'address' => [
+        '@type' => 'PostalAddress',
+        'streetAddress' => 'Sai Shivalik Complex, 22/1, SH 13, Bangihati Village, Bangihati',
+        'addressLocality' => 'Hooghly',
+        'postalCode' => '712250',
+        'addressCountry' => 'IN',
+    ],
+    'geo' => [
+        '@type' => 'GeoCoordinates',
+        'latitude' => 22.729208,
+        'longitude' => 88.309555,
+    ],
+    'openingHoursSpecification' => [
+        '@type' => 'OpeningHoursSpecification',
+        'dayOfWeek' => [
+            'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'
+        ],
+        'opens' => '10:00',
+        'closes' => '19:00',
+    ],
+    'sameAs' => [
+        'https://www.facebook.com/people/Tax-Biz-Legal/61572967894678/',
+        'https://www.instagram.com/tax_biz_legal/',
+        'https://www.linkedin.com/company/tax-biz-legal/'
+    ]
+], JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE|JSON_PRETTY_PRINT) !!}
+</script>
 @endpush
+

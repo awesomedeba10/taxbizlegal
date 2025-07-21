@@ -2,6 +2,7 @@
 
 namespace App\Console\Commands;
 
+use App\Models\Blog;
 use Carbon\Carbon;
 use Illuminate\Console\Command;
 use Spatie\Sitemap\Sitemap;
@@ -38,20 +39,20 @@ class GenerateSitemap extends Command
             $uri = $route->uri();
 
             if (
-                in_array($uri, ['/', 'about-us', 'contact-us']) ||
+                in_array($uri, ['/', 'about-us', 'contact-us', 'blogs']) ||
                 str_starts_with($uri, 'meta/')
             ):
                 $sitemap->add(
                     Url::create(url($uri))
                         ->setLastModificationDate(Carbon::now())
                         ->setPriority(
-                            $uri === '/' ? 1.0 : (in_array($uri, ['about-us', 'contact-us']) ? 0.9 : 0.7)
+                            $uri === '/' ? 1.0 : (in_array($uri, ['about-us', 'contact-us', 'blogs']) ? 0.9 : 0.6)
                         )
                 );
             endif;
         endforeach;
 
-        foreach (Service::getActiveServices() as $service) {
+        foreach (Service::getActiveServices() as $service):
             if(view()->exists('frontend.services.' . $service->slug)):
                 $sitemap->add(
                     Url::create(url('/services/' . $service->slug))
@@ -59,7 +60,15 @@ class GenerateSitemap extends Command
                         ->setPriority(0.8)
                 );
             endif;
-        }
+        endforeach;
+
+        foreach(Blog::getBlogs() as $blog):
+            $sitemap->add(
+                Url::create(url('/blogs/' . $blog->slug))
+                    ->setLastModificationDate($blog->updated_at ?? Carbon::now())
+                    ->setPriority(0.7)
+            );
+        endforeach;
 
 
         $sitemap->writeToFile(public_path('sitemap.xml'));
