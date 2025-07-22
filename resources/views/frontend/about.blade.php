@@ -198,5 +198,20 @@
 @endsection
 
 @push('schema')
-<script id="organizationSchema" type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Tax Biz Legal","url":"https://taxbizlegal.com","logo":"https://taxbizlegal.com/images/svg/tbl_logo.svg","sameAs":["https://www.facebook.com/people/Tax-Biz-Legal/61572967894678/", "https://www.instagram.com/tax_biz_legal/","https://www.linkedin.com/company/tax-biz-legal/"],"description":"TaxBizLegal is a trusted online platform offering simplified and affordable legal, tax, and business compliance services for startups, entrepreneurs, and small businesses across India."}</script>
+<script type="application/ld+json">
+{!! json_encode([
+    '@context'   => 'https://schema.org',
+    '@type'      => 'Organization',
+    'name'       => 'Tax Biz Legal',
+    'url'        => 'https://taxbizlegal.com',
+    'logo'       => 'https://taxbizlegal.com/images/svg/tbl_logo.svg',
+    'sameAs'     => [
+        'https://www.facebook.com/people/Tax-Biz-Legal/61572967894678/',
+        'https://www.instagram.com/tax_biz_legal/',
+        'https://www.linkedin.com/company/tax-biz-legal/'
+    ],
+    'description' => 'TaxBizLegal is a trusted online platform offering simplified and affordable legal, tax, and business compliance services for startups, entrepreneurs, and small businesses across India.'
+], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT) !!}
+</script>
 @endpush
+

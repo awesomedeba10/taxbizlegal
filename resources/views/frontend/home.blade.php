@@ -606,5 +606,53 @@
 @endsection
 
 @push('schema')
-<script id="organizationSchema" type="application/ld+json">{"@context":"https://schema.org","@graph":{"@type":["LegalService","Organization"],"@id":"https://taxbizlegal.com/#organization","name":"Tax Biz Legal","url":"https://taxbizlegal.com","logo":{"@type":"ImageObject","@id":"https://taxbizlegal.com/#logo","url":"https://taxbizlegal.com/images/svg/tbl_logo.svg","caption":"Taxbizlegal Logo","inLanguage":"en","width":"150","height":"50"},"openingHours":["Monday to Saturday 10:00-19:00"],"image":{"@id":"https://taxbizlegal.com/#logo"},"address":{"@type":"PostalAddress","streetAddress":"22/1, SH 13, Bangihati Village","addressLocality":"Hooghly","addressRegion":"West Bengal","postalCode":"712250","addressCountry":"IN"},"description":"TaxBizLegal is a trusted online platform offering simplified and affordable legal, tax, and business compliance services for startups, entrepreneurs, and small businesses across India.","contactPoint":[{"@type":"ContactPoint","contactType":"Customer Service","telephone":"+91-9403892279","email":"info@taxbizlegal.com"}],"sameAs":["https://www.facebook.com/people/Tax-Biz-Legal/61572967894678/","https://www.instagram.com/tax_biz_legal/","https://www.linkedin.com/company/tax-biz-legal/"]}}</script>
+<script id="organizationSchema" type="application/ld+json">
+{!! json_encode([
+    '@context' => 'https://schema.org',
+    '@graph' => [
+        [
+            '@type' => ['LegalService', 'Organization'],
+            '@id' => 'https://taxbizlegal.com/#organization',
+            'name' => 'Tax Biz Legal',
+            'url' => 'https://taxbizlegal.com',
+            'logo' => [
+                '@type' => 'ImageObject',
+                '@id' => 'https://taxbizlegal.com/#logo',
+                'url' => 'https://taxbizlegal.com/images/svg/tbl_logo.svg',
+                'caption' => 'Taxbizlegal Logo',
+                'inLanguage' => 'en',
+                'width' => '150',
+                'height' => '50',
+            ],
+            'openingHours' => ['Monday to Saturday 10:00-19:00'],
+            'image' => [
+                '@id' => 'https://taxbizlegal.com/#logo'
+            ],
+            'address' => [
+                '@type' => 'PostalAddress',
+                'streetAddress' => '22/1, SH 13, Bangihati Village',
+                'addressLocality' => 'Hooghly',
+                'addressRegion' => 'West Bengal',
+                'postalCode' => '712250',
+                'addressCountry' => 'IN'
+            ],
+            'description' => 'TaxBizLegal is a trusted online platform offering simplified and affordable legal, tax, and business compliance services for startups, entrepreneurs, and small businesses across India.',
+            'contactPoint' => [
+                [
+                    '@type' => 'ContactPoint',
+                    'contactType' => 'Customer Service',
+                    'telephone' => '+91-9403892279',
+                    'email' => 'info@taxbizlegal.com',
+                ]
+            ],
+            'sameAs' => [
+                'https://www.facebook.com/people/Tax-Biz-Legal/61572967894678/',
+                'https://www.instagram.com/tax_biz_legal/',
+                'https://www.linkedin.com/company/tax-biz-legal/'
+            ]
+        ],
+    ]
+], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT) !!}
+</script>
 @endpush
+
