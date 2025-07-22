@@ -7,9 +7,9 @@
     "file": "assets/bootstrap.esm-5AK_f7la.js",
     "name": "bootstrap.esm"
   },
-  "_normalize-B6Fr2dxf.css": {
-    "file": "assets/normalize-B6Fr2dxf.css",
-    "src": "_normalize-B6Fr2dxf.css"
+  "_normalize-DQ4mP6R-.css": {
+    "file": "assets/normalize-DQ4mP6R-.css",
+    "src": "_normalize-DQ4mP6R-.css"
   },
   "resources/css/icon-fonts/RemixIcons/fonts/remixicon0b0b.eot": {
     "file": "assets/remixicon0b0b-DiAulmZC.eot",
@@ -158,7 +158,7 @@
     ]
   },
   "resources/js/admin/login.js": {
-    "file": "assets/login-IOznUULl.js",
+    "file": "assets/login-B7P4hl3J.js",
     "name": "login",
     "src": "resources/js/admin/login.js",
     "isEntry": true,
@@ -167,11 +167,11 @@
     ],
     "css": [
       "assets/login-DSORgZHz.css",
-      "assets/normalize-B6Fr2dxf.css"
+      "assets/normalize-DQ4mP6R-.css"
     ]
   },
   "resources/js/app.js": {
-    "file": "assets/app-UxJDl_50.js",
+    "file": "assets/app-CtxrtGaM.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
@@ -179,8 +179,8 @@
       "__commonjsHelpers-Cpj98o6Y.js"
     ],
     "css": [
-      "assets/app-BxvDwtIx.css",
-      "assets/normalize-B6Fr2dxf.css"
+      "assets/app-BkgJ6Ts6.css",
+      "assets/normalize-DQ4mP6R-.css"
     ]
   }
 }

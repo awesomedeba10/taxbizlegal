@@ -5,7 +5,6 @@ namespace App\Livewire;
 use App\Models\Blog;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Collection;
-use Illuminate\Support\Facades\Cache;
 use Livewire\Attributes\Url;
 use Livewire\Component;
 use Livewire\WithPagination;
@@ -14,7 +13,11 @@ class BlogFilter extends Component
 {
     use WithPagination;
 
-    #[Url(as: 'tags', keep: true)]
+    // Use native Livewire URL binding with indexed format
+    #[Url(as: 'tags', except: '')]
+    public string $tagsString = '';
+
+    // Internal array for component logic
     public array $selectedTags = [];
 
     public Collection $availableTags;
@@ -25,10 +28,88 @@ class BlogFilter extends Component
     public function mount(): void
     {
         $this->loadAvailableTags();
+        $this->syncTagsFromString();
     }
 
+    public function paginationView(): string
+    {
+        return 'vendor.pagination.custom-design-frontend-livewire-1';
+    }
+
+    // Convert URL string to internal array format
+    private function syncTagsFromString(): void
+    {
+        if (empty($this->tagsString)) {
+            $this->selectedTags = [];
+            return;
+        }
+
+        // Parse indexed parameters from string format: "tags_1=Tag1&tags_2=Tag2"
+        $this->selectedTags = $this->parseIndexedTags($this->tagsString);
+    }
+
+    // Convert internal array to URL string format
+    private function syncStringFromTags(): void
+    {
+        if (empty($this->selectedTags)) {
+            $this->tagsString = '';
+            return;
+        }
+
+        // Convert to indexed format: "tags_1=Tag1&tags_2=Tag2"
+        $this->tagsString = $this->formatTagsAsIndexed($this->selectedTags);
+    }
+
+    // Parse "tags_1=Tag1&tags_2=Tag2" format
+    private function parseIndexedTags(string $tagsString): array
+    {
+        $tags = [];
+        $params = [];
+
+        // Handle both formats: indexed parameters or direct URL params
+        if (request()->has('tags_1')) {
+            // Load from current request indexed parameters
+            $index = 1;
+            while (request()->has("tags_{$index}")) {
+                $tags[] = request()->get("tags_{$index}");
+                $index++;
+            }
+        } elseif (!empty($tagsString)) {
+            // Parse from string format if available
+            parse_str($tagsString, $params);
+            foreach ($params as $key => $value) {
+                if (preg_match('/^tags_\d+$/', $key)) {
+                    $tags[] = $value;
+                }
+            }
+        }
+
+        return array_filter($tags);
+    }
+
+    // Format array as "tags_1=Tag1&tags_2=Tag2"
+    private function formatTagsAsIndexed(array $tags): string
+    {
+        $params = [];
+        foreach ($tags as $index => $tag) {
+            $params["tags_" . ($index + 1)] = $tag;
+        }
+
+        return http_build_query($params);
+    }
+
+    // Livewire lifecycle: when URL string changes
+    public function updatedTagsString(): void
+    {
+        $this->syncTagsFromString();
+        $this->resetPage();
+        $this->dispatch('tagsUpdated', $this->selectedTags);
+    }
+
+    // When internal tags change, update URL
     public function updatedSelectedTags(): void
     {
+        $this->syncStringFromTags();
         $this->resetPage();
         $this->dispatch('tagsUpdated', $this->selectedTags);
     }
@@ -49,8 +130,7 @@ class BlogFilter extends Component
     public function clearAllTags(): void
     {
         $this->selectedTags = [];
-        $this->resetPage();
-        $this->dispatch('tagsUpdated', []);
+        $this->updatedSelectedTags();
     }
 
     public function getFilteredBlogsProperty()
@@ -60,44 +140,14 @@ class BlogFilter extends Component
 
     private function getFilteredBlogs()
     {
-        $query = Blog::where('is_published', true)
-                    ->whereNotNull('published_at');
-
-        // Apply tag filtering using optimized FIND_IN_SET for multiple tags
-        if (!empty($this->selectedTags)) {
-            $query->where(function ($subQuery) {
-                foreach ($this->selectedTags as $tag) {
-                    $subQuery->whereRaw('FIND_IN_SET(?, tags)', [trim($tag)]);
-                }
-            });
-        }
-
-        $blogs = $query->orderBy('created_at', 'desc')
-                      ->paginate(6);
-
+        $blogs = Blog::scopeWithTags($this->selectedTags);
         $this->blogsCount = $blogs->total();
-
         return $blogs;
     }
 
     private function loadAvailableTags(): void
     {
-        $this->availableTags = Cache::remember('blog_tags_list', 3600, function () {
-            $allTags = Blog::where('is_published', true)
-                          ->whereNotNull('published_at')
-                          ->whereNotNull('tags')
-                          ->where('tags', '!=', '')
-                          ->pluck('tags')
-                          ->flatMap(function ($tags) {
-                              return array_map('trim', explode(',', $tags));
-                          })
-                          ->filter()
-                          ->unique()
-                          ->sort()
-                          ->values();
-
-            return $allTags;
-        });
+        $this->availableTags = Blog::getAllTags();
     }
 
     public function render(): View

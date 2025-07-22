@@ -91,6 +91,7 @@
     --bs-danger-bg-subtle: #f4cccc;
     --bs-light-bg-subtle: #fdfdfd;
     --bs-dark-bg-subtle: #bec0c0;
+    --bs-teal-bg-choices: #CCF8FF;
     --bs-primary-border-subtle: #99c5f7;
     --bs-secondary-border-subtle: #abb5bf;
     --bs-success-border-subtle: #99c1b5;
@@ -10438,6 +10439,45 @@ img {
 }
 .hidden {
     opacity: 0;
+}
+.clear-blog-filter button {
+    background-color: var(--bs-teal-bg-choices);
+    padding: .3125rem .4375rem;
+    color: var(--bs-gray-900);
+    box-shadow: 0 .5rem 1.5rem 0 rgba(0, 0, 0, .08);
+    letter-spacing: .04em;
+    border: 1px solid var(--bs-teal-bg-choices);
+    font-weight: 500;
+    border-radius: 5px;
+}
+.blog-filter input[type="checkbox"] {
+    position: absolute;
+    left: -9999px;
+}
+.blog-filter input[type="checkbox"],
+.blog-filter label {
+    padding: 0.2rem 0.8rem;
+    font-size: 13px;
+    color: var(--bs-gray-900);
+    border-radius: 7px;
+    border: 2px solid var(--bs-dark);
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.blog-filter > input[type="checkbox"]:hover + label {
+    background-color: var(--bs-blue-700);
+    border: 2px solid var(--bs-blue-700);
+    color: var(--bs-gray-gray-200);
+}
+.blog-filter > input[type="checkbox"]:checked + label {
+    background-color: var(--bs-blue-700);
+    border: 2px solid var(--bs-blue-700);
+    color: var(--bs-gray-gray-200);
+    font-weight: 600;
+}
+.blog-filter > input[type="checkbox"]:checked +  label::after {
+    content: "✖";
+    padding-left: 10px;
 }
 @media (min-width: 1025px) {
     .blog-sticky-section {

@@ -35,21 +35,24 @@ class Blog extends Model
     /**
      * Scope to filter blogs by tags using FIND_IN_SET for better performance
      *
-     * @param \Illuminate\Database\Eloquent\Builder $query
      * @param array $tags
-     * @return \Illuminate\Database\Eloquent\Builder
+     * @return \Illuminate\Database\Eloquent\Collection|\Illuminate\Database\Eloquent\Model
      */
-    public function scopeWithTags($query, array $tags)
+    public static function scopeWithTags(array $tags = [])
     {
-        if (empty($tags)) {
-            return $query;
-        }
+        $query = self::where('is_published', true)
+                ->whereNotNull('published_at');
 
-        return $query->where(function ($subQuery) use ($tags) {
-            foreach ($tags as $tag) {
-                $subQuery->whereRaw('FIND_IN_SET(?, tags)', [trim($tag)]);
-            }
-        });
+        if (!empty($tags)):
+            $query->where(function ($subQuery) use ($tags) {
+                foreach ($tags as $tag) {
+                    $subQuery->whereRaw('FIND_IN_SET(?, tags)', [trim($tag)]);
+                }
+            });
+        endif;
+
+        return $query->orderBy('created_at', 'desc')
+            ->paginate(6);
     }
 
     /**
