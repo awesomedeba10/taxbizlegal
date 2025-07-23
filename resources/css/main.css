@@ -50,7 +50,7 @@
     --bs-blue-500: #2d74d3;
     --bs-blue-600: #0058ba;
     --bs-blue-700: #0658a3;
-    --bs-blue-800: #0c488d;
+    --bs-blue-800: #060708;
     --bs-green-bg-300: #9ae6b4;
     --bs-primary-rgb: 0, 110, 236;
     --bs-secondary-rgb: 44, 70, 94;
@@ -8762,14 +8762,17 @@ body:not(.topMenu-opened).topMenu-hidden .navbar {
 }
 .halfs {
     --halfs-cols: 1;
-    --half-width: 100vw;
+    --left-ratio: 1fr;
+    --right-ratio: 1fr;
     display: grid;
-    grid-template-columns: repeat(var(--halfs-cols), minmax(0, 1fr));
+    grid-template-columns: var(--left-ratio);
 }
 @media (min-width: 992px) {
     .halfs {
         --halfs-cols: 2;
-        --half-width: 50vw;
+        --left-ratio: 3fr;   /* 60% */
+        --right-ratio: 2fr;  /* 40% */
+        grid-template-columns: var(--left-ratio) var(--right-ratio);
         height: 100%;
     }
 }
@@ -10345,6 +10348,40 @@ img {
 }
 .checkout-contact-item:hover img {
     transform: rotate(-45deg);
+}
+.contact-advisory-icon {
+    --icon-bg: #192341;
+    background: var(--icon-bg);
+    color: var(--bs-gray-gray-200);
+}
+.contact-advisory-icon svg {
+    height: clamp(14px, 0.8vw, 18px);
+    width: clamp(14px, 0.8vw, 18px);
+}
+.contact-advisory-icon svg path {
+    --icon-color: #b9c0d4;
+    fill: var(--icon-color);
+}
+.contact-transparency-div {
+    border-left: 1px dashed var(--bs-blue-300);
+}
+.contact-transparency-div li p:first-child {
+    padding-left: 1rem;
+    border-left: 2px solid var(--bs-blue-700);
+}
+.contact-transparency-div li p:not(:first-child) {
+    padding-left: 1rem;
+    color: #203144;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+@media (min-width: 768px) {
+    .contact-sticky-form {
+        top: 60px;
+        position: sticky;
+        align-self: flex-start;
+        height: fit-content;
+    }
 }
 .benefits .section-heading {
     grid-area: 1/1/2/4;

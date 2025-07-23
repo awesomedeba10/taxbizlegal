@@ -406,7 +406,7 @@
                 </div>
             </div> --}}
 
-            <a href="{{ route('front.blogs') }}" class="btn btn-link icon-hover-right mt-32 mt-lg-40">
+            <a href="{{ route('front.blogs') }}" class="btn btn-link icon-hover-right mt-32 mt-lg-40 mod-text-none">
                 <font style="vertical-align: inherit;">
                     <font style="vertical-align: inherit;">
                         All posts

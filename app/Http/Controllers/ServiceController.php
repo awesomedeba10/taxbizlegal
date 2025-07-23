@@ -16,6 +16,10 @@ class ServiceController extends Controller
             abort(404);
         }
 
+        if($redirect = $this->tempRedirect($slug, 'front.contact')):
+            return $redirect;
+        endif;
+
         $this->init($slug);
 
         return view('frontend.service', ['slug' => $slug]);
@@ -71,5 +75,28 @@ class ServiceController extends Controller
         endif;
 
         abort(403);
+    }
+
+    private function tempRedirect($slug, $destinationRoute, $message = 'This service is temporarily unavailable. Please contact us for assistance.') {
+        $redirectSlugs = [
+            'private-limited-company',
+            'limited-liability-partnership',
+            'one-person-company',
+            'partnership-firm',
+            'sole-proprietorship',
+            'section-8-company',
+            'nidhi-company',
+            'public-limited-company'
+        ];
+
+
+        if (in_array($slug, $redirectSlugs)):
+            return redirect()
+                ->route($destinationRoute)
+                ->with('message', $message)
+                ->setStatusCode(302);
+        endif;
+
+        return null;
     }
 }
